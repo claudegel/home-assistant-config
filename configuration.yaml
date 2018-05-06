@@ -1,7 +1,7 @@
 homeassistant: !include homeassistant.yaml
 
 # Show links to resources in log and frontend
-introduction:
+# introduction:
 
 # Enables the frontend
 frontend:
@@ -12,10 +12,12 @@ http: !include http.yaml
 updater:
 
 # Discover some devices automatically
-discovery:
+discovery: !include discovery.yaml
+
+config:
 
 # Allows you to issue voice commands from the frontend in enabled browsers
-conversation:
+# conversation:
 
 # Enables support for tracking state changes over time.
 history:
@@ -30,7 +32,12 @@ sun:
 sensor:
   platform: yr
 
+automation: !include automations.yaml
+
 panel_iframe: !include panel_iframe.yaml
 
 influxdb: !include influxdb.yaml
 
+hue: !include hue.yaml
+
+group: !include group.yaml
