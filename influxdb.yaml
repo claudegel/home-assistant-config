@@ -1,0 +1,6 @@
+host: 127.0.0.1
+port: 8086
+username: homeassistant
+database: homeassistant
+password: !secret influx__password
+

@@ -31,3 +31,6 @@ sensor:
   platform: yr
 
 panel_iframe: !include panel_iframe.yaml
+
+influxdb: !include influxdb.yaml
+
