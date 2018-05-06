@@ -1,0 +1,47 @@
+- platform: yr
+  name: Weather
+  forecast: 24
+  monitored_conditions:
+    - temperature
+    - symbol
+    - precipitation
+    - windSpeed
+    - pressure
+    - windDirection
+    - humidity
+    - fog
+    - cloudiness
+    - lowClouds
+    - mediumClouds
+    - highClouds
+    - dewpointTemperature
+
+- platform: wunderground
+  api_key: !secret sensor__wunderground__api_key
+  monitored_conditions:
+    - alerts
+    - dewpoint_c
+
+- platform: pi_hole
+  host: 192.168.0.3
+  name: Pi Hole
+  monitored_conditions:
+    - ads_blocked_today
+    - ads_percentage_today
+    - dns_queries_today
+    - domains_being_blocked
+    - queries_cached
+    - queries_forwarded
+    - unique_clients
+    - unique_domains
+
+- platform: synologydsm
+  host: 192.168.0.10
+  username: gaetan
+  password: !secret sensor__synologydsm__password
+  monitored_conditions:
+    - cpu_total_load
+    - memory_real_usage
+    - network_up
+      
+      

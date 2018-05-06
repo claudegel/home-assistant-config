@@ -1,10 +1,10 @@
-configurator:
-  title: Configurator (local)
-  icon: mdi:wrench
-  url: http://domot.local:3218
+# configurator_local:
+#   title: Configurator (local, for debug)
+#   icon: mdi:wrench
+#   url: http://domot.local:3218
 
-configurator_remote:
-  title: Configurator (remote)
+configurator:
+  title: Configurator
   icon: mdi:wrench
   url: https://stibbons.synology.me:32484
 

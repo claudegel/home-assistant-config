@@ -29,8 +29,7 @@ logbook:
 sun:
 
 # Weather Prediction
-sensor:
-  platform: yr
+sensor: !include sensor.yaml
 
 automation: !include automations.yaml
 
@@ -41,3 +40,7 @@ influxdb: !include influxdb.yaml
 hue: !include hue.yaml
 
 group: !include group.yaml
+
+media_player: !include media_player.yaml
+
+input_number: !include input_number.yaml
