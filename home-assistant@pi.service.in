@@ -1,0 +1,11 @@
+[Unit]
+Description=Home Assistant
+After=network.target
+
+[Service]
+Type=simple
+User=%i
+ExecStart=<path to homeassistant configuration directory>/start.sh
+
+[Install]
+WantedBy=multi-user.target
