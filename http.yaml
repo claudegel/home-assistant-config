@@ -1,0 +1,14 @@
+api_password: !secret http__api_password
+server_port: 8123
+cors_allowed_origins:
+  - https://google.com
+  - https://www.home-assistant.io
+use_x_forwarded_for: True
+#  trusted_networks:
+#    - 127.0.0.1
+#    - ::1
+#    - 192.168.0.0/24
+#    - 2001:DB8:ABCD::/48
+#ip_ban_enabled: True
+#login_attempts_threshold: 5
+#server_host: 0.0.0.0
