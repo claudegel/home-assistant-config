@@ -1,5 +1,6 @@
 api_password: !secret http__api_password
-server_port: 8123
+server_port: !secret http__server_port
+base_url: !secret http__base_url
 cors_allowed_origins:
   - https://google.com
   - https://www.home-assistant.io

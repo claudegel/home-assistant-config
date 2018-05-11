@@ -1,6 +1,15 @@
-slider1:
-  name: Delai Extinction Chambre
-  initial: 10
-  min: 1
-  max: 30
-  step: 1
+shed_gaetan_light_delay:
+  name: Delai Extinction Lumiere Gaetan
+  icon: mdi:clock
+  # initial: 45  # no initial to restore states by recorder
+  min: 5
+  max: 120
+  step: 5
+
+shed_aurelie_light_delay:
+  name: Delai Extinction Lumiere Aurelie
+  icon: mdi:clock
+  # initial: 25  # no initial to restore states by recorder
+  min: 5
+  max: 120
+  step: 5

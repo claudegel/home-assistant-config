@@ -1,0 +1,11 @@
+language: python
+
+python: "3.6.4"
+
+before_install:
+  - mv secrets.yaml.in secrets.yaml
+  - pip3 install --upgrade pip pipenv
+
+install: pipenv install
+
+script: pipenv run hass -c . --script check_config --info all

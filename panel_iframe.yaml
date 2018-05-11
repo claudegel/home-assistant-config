@@ -6,5 +6,5 @@
 configurator:
   title: Configurator
   icon: mdi:wrench
-  url: https://stibbons.synology.me:32484
+  url: !secret panel_iframe__configurator__url
 

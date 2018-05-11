@@ -1,3 +1,8 @@
+- platform: time_date
+  display_options:
+    - 'time'
+    - 'date'
+
 - platform: yr
   name: Weather
   forecast: 24
@@ -22,26 +27,14 @@
     - alerts
     - dewpoint_c
 
-- platform: pi_hole
-  host: 192.168.0.3
-  name: Pi Hole
-  monitored_conditions:
-    - ads_blocked_today
-    - ads_percentage_today
-    - dns_queries_today
-    - domains_being_blocked
-    - queries_cached
-    - queries_forwarded
-    - unique_clients
-    - unique_domains
 
-- platform: synologydsm
-  host: 192.168.0.10
-  username: gaetan
-  password: !secret sensor__synologydsm__password
-  monitored_conditions:
-    - cpu_total_load
-    - memory_real_usage
-    - network_up
+# - platform: synologydsm
+#   host: 192.168.0.10
+#   username: api
+#   password: !secret sensor__synologydsm__password
+#   monitored_conditions:
+#     - cpu_total_load
+#     - memory_real_usage
+#     - network_up
       
       

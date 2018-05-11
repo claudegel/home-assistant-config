@@ -10,6 +10,7 @@ http: !include http.yaml
 
 # Checks for available updates
 updater:
+  include_used_components: true
 
 # Discover some devices automatically
 discovery: !include discovery.yaml
@@ -28,12 +29,17 @@ logbook:
 # Track the sun
 sun:
 
+# Show map entry
+map:
+
 # Weather Prediction
 sensor: !include sensor.yaml
 
 automation: !include automations.yaml
 
 panel_iframe: !include panel_iframe.yaml
+
+device_tracker: !include device_tracker.yaml
 
 influxdb: !include influxdb.yaml
 
@@ -44,3 +50,5 @@ group: !include group.yaml
 media_player: !include media_player.yaml
 
 input_number: !include input_number.yaml
+
+recorder: !include recorder.yaml

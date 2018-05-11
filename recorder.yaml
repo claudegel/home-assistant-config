@@ -1,0 +1,10 @@
+purge_keep_days: 10
+purge_interval: 1
+db_url: sqlite:////mnt/storage/domotic/homeassistant/recorder.sqlite
+exclude:
+  # domains:
+  #   - automation
+  #   - weblink
+  #   - updater
+  entities:
+    - sun.sun  # Don't record sun data

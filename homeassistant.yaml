@@ -1,6 +1,5 @@
 # Name of the location where Home Assistant is running
 name: Home
-base_url: stibbons.synology.me:32483
 # Location required to calculate the time the sun rises and sets
 latitude: 43.5233
 longitude: 1.364488
@@ -10,3 +9,5 @@ elevation: 153
 unit_system: metric
 # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 time_zone: Europe/Paris
+customize: !include customize.yaml
+packages: !include_dir_named packages
