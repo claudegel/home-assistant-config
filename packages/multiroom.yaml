@@ -1,0 +1,13 @@
+media_player:
+  - platform: spotify
+    client_id: !secret media_player__spotify__client_id
+    client_secret: !secret media_player__spotify__client_secret
+    cache_path: /mnt/storage/domotic/homeassistant/tmp/.spotify-token-cache
+  
+  - platform: yamaha_musiccast
+    host: 192.168.0.24
+    name: "MusicCast Chambre Parentale"
+  
+  - platform: yamaha_musiccast
+    host: 192.168.0.20
+    name: "MusicCast Salon"

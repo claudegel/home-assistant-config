@@ -1,0 +1,60 @@
+sensor:
+  - platform: sonarr
+    api_key: secret! sensor__sonarr__api_key
+    host: 192.168.0.10
+    port: 32772
+    monitored_conditions:
+      - series
+      - upcoming
+      - diskspace
+    days: 2
+    include_paths:
+      - /series
+      - /animes
+
+  - platform: radarr
+    api_key: secret! sensor__radarr__api_key
+    host: 192.168.0.10
+    port: 32773
+    days: 2
+    include_paths:
+      - /movies
+
+
+media_player:
+  - platform: kodi
+    id: kodi_living_room
+    name: "Home Cinema Salon Kodi"
+    host: 192.168.0.22
+    #username: gaetan
+    #password: !secret media_player__kodi__password
+  
+  - platform: yamaha_musiccast
+    id: multicast_parent_bedroom
+    host: 192.168.0.24
+    name: "MusicCast Chambre Parentale"
+  
+  - platform: yamaha_musiccast
+    id: multicast_living_room
+    host: 192.168.0.20
+    name: "MusicCast Salon"
+  
+  - platform: emby
+    host: stibbons.synology.me
+    name: "Emby"
+    id: emby
+    port: 32492
+    ssl: True
+    api_key: !secret media_player__emby__api_key
+
+
+group:
+  pvr:
+    name: Smart PVR
+    entities:
+      - sensor.radarr_movies
+      - sensor.sonarr_upcoming
+      - sensor.sonarr_series
+      - sensor.sonarr_diskspace
+      - media_player.emby__kodi__osmc_2
+      - media_player.home_cinema_salon_kodi

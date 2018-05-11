@@ -1,0 +1,14 @@
+sensor:
+  - platform: time_date
+    display_options:
+      - 'time'
+      - 'date'
+
+group:
+  date:
+    name: Date
+    entities:
+      - sensor.date
+      - sensor.time
+  
+  

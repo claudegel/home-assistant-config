@@ -61,10 +61,14 @@ sensor:
     name: External IP
     value_template: '{{ value_json.ip }}'
 
+
 group:
   network:
+    name: Network
     entities:
       - sensor.ha_installed_version
       - sensor.ha_uptime
+      - sensor.external_ip
       - sensor.speedtest_download
       - sensor.speedtest_upload
+  

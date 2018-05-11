@@ -1,0 +1,44 @@
+sensor:
+  - platform: yr
+    name: Weather
+    forecast: 24
+    monitored_conditions:
+      - cloudiness
+      - dewpointTemperature
+      - fog
+      - highClouds
+      - humidity
+      - lowClouds
+      - mediumClouds
+      - precipitation
+      - pressure
+      - symbol
+      - temperature
+      - windDirection
+      - windSpeed
+  
+  - platform: wunderground
+    api_key: !secret sensor__wunderground__api_key
+    monitored_conditions:
+      - alerts
+      - dewpoint_c
+
+group:
+  weather:
+    name: Metéo
+    entities:
+      - sensor.pws_alerts
+      - sensor.pws_dewpoint_c
+      - sensor.weather_cloudiness
+      - sensor.weather_dewpointtemperature
+      - sensor.weather_fog
+      - sensor.weather_highclouds
+      - sensor.weather_humidity
+      - sensor.weather_lowclouds
+      - sensor.weather_mediumclouds
+      - sensor.weather_precipitation
+      - sensor.weather_pressure
+      - sensor.weather_symbol
+      - sensor.weather_temperature
+      - sensor.weather_winddirection
+      - sensor.weather_windspeed

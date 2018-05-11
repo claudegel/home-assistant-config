@@ -32,10 +32,9 @@ sun:
 # Show map entry
 map:
 
-# Weather Prediction
-sensor: !include sensor.yaml
+# sensor: !include sensor.yaml
 
-automation: !include automations.yaml
+# automation: !include automations.yaml
 
 panel_iframe: !include panel_iframe.yaml
 
@@ -47,7 +46,7 @@ hue: !include hue.yaml
 
 group: !include group.yaml
 
-media_player: !include media_player.yaml
+# media_player: !include media_player.yaml
 
 input_number: !include input_number.yaml
 

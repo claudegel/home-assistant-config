@@ -1,32 +1,3 @@
-- platform: time_date
-  display_options:
-    - 'time'
-    - 'date'
-
-- platform: yr
-  name: Weather
-  forecast: 24
-  monitored_conditions:
-    - temperature
-    - symbol
-    - precipitation
-    - windSpeed
-    - pressure
-    - windDirection
-    - humidity
-    - fog
-    - cloudiness
-    - lowClouds
-    - mediumClouds
-    - highClouds
-    - dewpointTemperature
-
-- platform: wunderground
-  api_key: !secret sensor__wunderground__api_key
-  monitored_conditions:
-    - alerts
-    - dewpoint_c
-
 
 # - platform: synologydsm
 #   host: 192.168.0.10

@@ -57,6 +57,7 @@ switch:
 #-------------------------------------------
 group:
   pihole:
+    name: Pi-Hole (ad-blocker)
     entities:
       # - sensor.carlopihole
       - sensor.pi_hole_version
