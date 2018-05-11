@@ -30,15 +30,16 @@ group:
       - sensor.pws_alerts
       - sensor.pws_dewpoint_c
       - sensor.weather_cloudiness
-      - sensor.weather_dewpointtemperature
+      - sensor.weather_dewpoint_temperature
       - sensor.weather_fog
-      - sensor.weather_highclouds
+      - sensor.weather_high_clouds
       - sensor.weather_humidity
-      - sensor.weather_lowclouds
-      - sensor.weather_mediumclouds
+      - sensor.weather_low_clouds
+      - sensor.weather_medium_clouds
       - sensor.weather_precipitation
       - sensor.weather_pressure
       - sensor.weather_symbol
       - sensor.weather_temperature
-      - sensor.weather_winddirection
-      - sensor.weather_windspeed
+      - sensor.weather_wind_direction
+      - sensor.weather_wind_speed
+  
