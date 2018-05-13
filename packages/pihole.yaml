@@ -1,8 +1,14 @@
 #-------------------------------------------
 #  PiHole ad Blocking Related Packages
+#
+# See also:
+#  https://github.com/Norien/Home-Assistant-Config/blob/624a59ebf45915f7e9a60853a3a7ea084175f4d3/packages/pihole.yaml
 #-------------------------------------------
 homeassistant:
   customize:
+    sensor.pi_hole_version:
+      friendly_name: Pi-Hole
+      entity_picture: /local/custom_icons/pihole.png
 
     sensor.pihole_ads_percentage_today:
       friendly_name: Percentage of Ad Traffic Blocked

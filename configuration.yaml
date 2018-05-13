@@ -3,6 +3,8 @@ homeassistant: !include homeassistant.yaml
 # Show links to resources in log and frontend
 # introduction:
 
+zone: !include zone.yaml
+
 # Enables the frontend
 frontend:
 
@@ -51,3 +53,5 @@ group: !include group.yaml
 input_number: !include input_number.yaml
 
 recorder: !include recorder.yaml
+
+notify: !include notify.yaml

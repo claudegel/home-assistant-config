@@ -51,6 +51,7 @@ media_player:
 group:
   pvr:
     name: Smart PVR
+    control: hidden
     entities:
       - sensor.radarr_movies
       - sensor.sonarr_upcoming

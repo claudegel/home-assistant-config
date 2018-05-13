@@ -8,3 +8,37 @@ configurator:
   icon: mdi:wrench
   url: !secret panel_iframe__configurator__url
 
+radarr:
+  title: Radarr
+  icon: mdi:download
+  url: !secret panel_iframe__radarr__url
+
+sonarr:
+  title: Sonarr
+  icon: mdi:download
+  url: !secret panel_iframe__sonarr__url
+
+pihole:
+  title: Pi-Hole
+  icon: mdi:auto-fix
+  url: http://192.168.0.3/admin/index.php
+
+transmission:
+  title: Transmission
+  icon: mdi:download
+  url: !secret panel_iframe__transmission__url
+
+sabnzbd:
+  title: SabNzbd
+  icon: mdi:download
+  url: !secret panel_iframe__sabnzbd__url
+
+domoticz:
+  title: Domoticz
+  icon: mdi:home-circle
+  url: !secret panel_iframe__domoticz__url
+
+grafana:
+  title: Grafana
+  icon: mdi:chart-areaspline
+  url: !secret panel_iframe__grafana__url

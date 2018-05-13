@@ -52,6 +52,7 @@ automation:
 group:
   bedroom_lights:
     name: Bedroom lights
+    control: hidden
     entities:
       - light.hue_iris_aurelie
       - input_number.shed_aurelie_light_delay
