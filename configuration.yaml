@@ -46,6 +46,8 @@ influxdb: !include influxdb.yaml
 
 hue: !include hue.yaml
 
+ios:
+
 group: !include group.yaml
 
 # media_player: !include media_player.yaml

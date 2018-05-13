@@ -1,8 +1,17 @@
+homeassistant:
+  customize:
+    sensor.stibphone2_battery_level:
+      friendly_name: Niveau Batterie IPhone de Gaetan
+    sensor.stibphone2_battery_state:
+      friendly_name: Etat Batterie IPhone de Gaetan
+      
 group:
   presence:
     name: Presence
     entities:
       - device_tracker.aurelie_iphone
-      - device_tracker.gaetan_iphone
-      - device_tracker.gaetan_macbookpro
       - device_tracker.aure_pc
+      - device_tracker.gaetan_iphone
+      - sensor.stibphone2_battery_level
+      - sensor.stibphone2_battery_state
+      - device_tracker.gaetan_macbookpro

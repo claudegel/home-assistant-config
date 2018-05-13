@@ -42,3 +42,11 @@ sensor.pws_dewpoint_c_2:
   name:
   platform: wunderground
   unique_id: '@1.393550,43.516940,dewpoint_c'
+sensor.stibphone2_battery_state:
+  name:
+  platform: ios
+  unique_id: state_Stibphone2
+sensor.stibphone2_battery_level:
+  name:
+  platform: ios
+  unique_id: level_Stibphone2
