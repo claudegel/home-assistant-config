@@ -23,13 +23,15 @@ config:
 # conversation:
 
 # Enables support for tracking state changes over time.
-history:
+history: !include history.yaml
 
 # View all events in a logbook
 logbook:
 
+logger: !include logger.yaml
+
 # Track the sun
-sun:
+# sun:
 
 # Show map entry
 map:
@@ -45,6 +47,8 @@ device_tracker: !include device_tracker.yaml
 influxdb: !include influxdb.yaml
 
 hue: !include hue.yaml
+
+history_graph: !include history_graph.yaml
 
 ios:
 

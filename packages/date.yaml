@@ -1,14 +1,23 @@
+sun:
+
 sensor:
   - platform: time_date
     display_options:
       - 'time'
       - 'date'
+      - 'time_utc'
+
+  - platform: season
+    type: meteorological
 
 group:
   date:
     name: Date
     entities:
       - sensor.date
+      - sensor.season
+      - sun.sun
       - sensor.time
+      - sensor.time_utc
   
   

@@ -20,8 +20,8 @@ sonarr:
 
 pihole:
   title: Pi-Hole
-  icon: mdi:auto-fix
-  url: http://192.168.0.3/admin/index.php
+  icon: mdi:block-helper
+  url: !secret panel_iframe__pihole__url
 
 transmission:
   title: Transmission
