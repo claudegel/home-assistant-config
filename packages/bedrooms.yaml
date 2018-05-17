@@ -22,10 +22,10 @@ automation:
     trigger:
       platform: state
       entity_id: light.hue_iris_aurelie
-      from: 'off'
+      # from: 'off'
       to: 'on'
-      # for:
-      #   minutes: 15
+      for:
+        minutes: 45
       #   # minutes: "{{ states('input_number.shed_aurelie_light_delay') | int }}"
     action:
       - delay: '00:{{ states.input_number.shed_aurelie_light_delay.state | int }}:00'
@@ -38,13 +38,13 @@ automation:
     trigger:
       platform: state
       entity_id: light.hue_iris_gaetan
-      from: 'off'
+      # from: 'off'
       to: 'on'
-      # for:
-      #   minutes: 20
+      for:
+        minutes: 60
       #   # minutes: "{{ states('input_number.shed_gaetan_light_delay') | int }}"
     action:
-      - delay: '00:{{ states.input_number.shed_gaetan_light_delay.state | int }}:00'
+      # - delay: '00:{{ states.input_number.shed_gaetan_light_delay.state | int }}:00'
       - service: homeassistant.turn_off
         entity_id: light.hue_iris_gaetan
 

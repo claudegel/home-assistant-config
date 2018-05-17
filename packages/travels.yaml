@@ -4,18 +4,53 @@ sensor:
     origin: !secret sensor__waze_travel_time__home
     destination: '2 Avenue du Docteur Maurice Grynfogel, Toulouse'
     region: 'EU'
+    filters:
+      - filter: time_simple_moving_average
+        window_size: 00:05
+        precision: 2
+
+  - platform: filter
+    name: "Filtered Gaetan's Work"
+    entity_id: sensor.gaetans_work
+    filters:
+      - filter: time_simple_moving_average
+        window_size: 00:05
+        precision: 2
+
 
   - platform: waze_travel_time
     name: "Aurelie's Work"
     origin: !secret sensor__waze_travel_time__home
     destination: "Hôpital Purpan, Place du Docteur Joseph Baylac, Toulouse"
     region: 'EU'
+    
+  - platform: filter
+    name: "Filtered Aurelie's Work"
+    entity_id: sensor.aurelies_work
+    filters:
+      - filter: time_simple_moving_average
+        window_size: 00:05
+        precision: 2
 
+history_graph:
+  travel_time_to_aurelies_work:
+    name: "Travel time to Aurelie's work"
+    entities:
+      - sensor.aurelies_work
+      - sensor.filtered_aurelies_work
+
+  travel_time_to_gaetans_work:
+    name: "Travel time to Gaetan's work"
+    entities:
+      - sensor.gaetans_work
+      - sensor.filtered_gaetans_work
 
 group:
   travels:
     name: Travel times
     control: hidden
     entities:
-      - sensor.gaetans_work
       - sensor.aurelies_work
+      - history_graph.aurelies_work
+      - sensor.gaetans_work
+      - history_graph.travel_time_to_gaetans_work
