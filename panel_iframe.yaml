@@ -18,11 +18,6 @@ sonarr:
   icon: mdi:download
   url: !secret panel_iframe__sonarr__url
 
-pihole:
-  title: Pi-Hole
-  icon: mdi:block-helper
-  url: !secret panel_iframe__pihole__url
-
 transmission:
   title: Transmission
   icon: mdi:download

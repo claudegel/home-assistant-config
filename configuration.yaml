@@ -7,6 +7,8 @@ zone: !include zone.yaml
 
 # Enables the frontend
 frontend:
+  themes: !include_dir_merge_named themes
+
 
 http: !include http.yaml
 

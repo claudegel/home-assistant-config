@@ -74,3 +74,8 @@ group:
       - sensor.pi_hole_ads_percentage_blocked_today
       - switch.pi_hole_temp_disable
 #-------------------------------------------
+panel_iframe:
+  pihole:
+    title: Pi-Hole
+    icon: mdi:block-helper
+    url: !secret panel_iframe__pihole__url

@@ -4,17 +4,13 @@ sensor:
     origin: !secret sensor__waze_travel_time__home
     destination: '2 Avenue du Docteur Maurice Grynfogel, Toulouse'
     region: 'EU'
-    filters:
-      - filter: time_simple_moving_average
-        window_size: 00:05
-        precision: 2
 
   - platform: filter
     name: "Filtered Gaetan's Work"
     entity_id: sensor.gaetans_work
     filters:
       - filter: time_simple_moving_average
-        window_size: 00:05
+        window_size: 00:15
         precision: 2
 
 
@@ -29,7 +25,7 @@ sensor:
     entity_id: sensor.aurelies_work
     filters:
       - filter: time_simple_moving_average
-        window_size: 00:05
+        window_size: 00:15
         precision: 2
 
 history_graph:
