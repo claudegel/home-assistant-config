@@ -1,5 +1,33 @@
-gateways:
+default_view:
   view: yes
   icon: mdi:home
   entities:
-    - configurator.philips_hue
+    - group.travels
+    - group.weather
+    - group.forecast
+
+multimedia_view:
+  view: yes
+  icon: mdi:play-network
+  entities:
+    - group.pvr
+    - media_player.home_cinema_salon_kodi
+    - media_player.emby__kodi__osmc
+    - media_player.chambre_parentale_main
+
+network_view:
+  view: yes
+  icon: mdi:server-network
+  entities:
+    - group.network
+    - group.pihole
+    - group.system
+    - group.cabinet
+    - group.presence
+
+weather_view:
+  view: yes
+  icon: mdi:weather-partlycloudy
+  entities:
+    - group.weather
+    - group.forecast

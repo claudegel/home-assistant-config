@@ -1,11 +1,18 @@
 input_number:
-  shed_gaetan_light_delay:
-    name: Delai Extinction Lumiere Gaetan
+  gaetan_light_timer_minutes:
+    name: Lumiere Gaetan - Minutes
     icon: mdi:clock
     # initial: 45  # no initial to restore states by recorder
-    min: 5
+    min: 0
     max: 59
-    step: 5
+    step: 1
+  gaetan_light_timer_hours:
+    name: Lumiere Gaetan - Heures
+    icon: mdi:clock
+    # initial: 45  # no initial to restore states by recorder
+    min: 0
+    max: 23
+    step: 1
   
   shed_aurelie_light_delay:
     name: Delai Extinction Lumiere Aurelie
@@ -25,8 +32,11 @@ automation:
       # from: 'off'
       to: 'on'
       for:
-        minutes: 45
-      #   # minutes: "{{ states('input_number.shed_aurelie_light_delay') | int }}"
+        minutes: 30
+        # minutes: "{{ states('input_number.shed_aurelie_light_delay') | int }}"
+    # trigger:
+    #   - platform: template
+    #     value_template: "{% if((as_timestamp(now())-as_timestamp(states.switch.sonoff__room_fan.last_updated)) | int /60) >  states.input_slider.bedroomfan_timer_minutes.state | int + states.input_slider.bedroomfan_timer_hours.state |int * 60 | int and states.switch.sonoff__room_fan.state == 'on' -%}true{% endif %}"
     action:
       - delay: '00:{{ states.input_number.shed_aurelie_light_delay.state | int }}:00'
       - service: homeassistant.turn_off
@@ -38,11 +48,12 @@ automation:
     trigger:
       platform: state
       entity_id: light.hue_iris_gaetan
-      # from: 'off'
       to: 'on'
       for:
-        minutes: 60
-      #   # minutes: "{{ states('input_number.shed_gaetan_light_delay') | int }}"
+        minutes: 45
+    # trigger:
+    #   - platform: template
+    #     value_template: "{% if((as_timestamp(now())-as_timestamp(states.switch.sonoff__room_fan.last_updated)) | int /60) >  states.input_slider.bedroomfan_timer_minutes.state | int + states.input_slider.bedroomfan_timer_hours.state |int * 60 | int and states.switch.sonoff__room_fan.state == 'on' -%}true{% endif %}"
     action:
       # - delay: '00:{{ states.input_number.shed_gaetan_light_delay.state | int }}:00'
       - service: homeassistant.turn_off

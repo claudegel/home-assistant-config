@@ -22,7 +22,20 @@ sensor:
     resource: http://ip.jsontest.com
     name: External IP
     value_template: '{{ value_json.ip }}'
+  - platform: iperf3
+    name: Local Speed
+    host: 192.168.0.10
+    port: 5201
+    monitored_conditions:
+      - download
+      - upload
 
+homeassistant:
+  customize:
+    sensor.download_192168010:
+      friendly_name: Local Download Speed
+    sensor.upload_192168010:
+      friendly_name: Local Upload Speed
 
 group:
   network:
@@ -31,3 +44,5 @@ group:
       - sensor.external_ip
       - sensor.speedtest_download
       - sensor.speedtest_upload
+      - sensor.download_192168010
+      - sensor.upload_192168010

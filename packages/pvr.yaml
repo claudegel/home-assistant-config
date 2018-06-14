@@ -20,6 +20,17 @@ sensor:
     include_paths:
       - /movies
 
+  - name: Home Cinema UPS
+    platform: nut
+    host: 192.168.0.22
+    port: 3493
+    alias: ups
+    resources:
+      - ups.load
+      - ups.realpower.nominal
+      - input.voltage
+      - battery.runtime
+
 
 media_player:
   - platform: kodi
@@ -59,3 +70,7 @@ group:
       - sensor.sonarr_diskspace
       - media_player.emby__kodi__osmc_2
       - media_player.home_cinema_salon_kodi
+      - sensor.home_cinema_ups_battery_runtime
+      - sensor.home_cinema_ups_input_voltage
+      - sensor.home_cinema_ups_realpower_nominal
+      - sensor.home_cinema_ups_load

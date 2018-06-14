@@ -1,0 +1,20 @@
+sensor:
+  - name: Cabinet UPS
+    platform: nut
+    host: 192.168.0.10
+    port: 3493
+    alias: ups
+    resources:
+      - ups.load
+      - ups.realpower.nominal
+      - input.voltage
+      - battery.runtime
+
+group:
+  cabinet:
+    name: Cabinet information
+    entities:
+      - sensor.cabinet_ups_battery_runtime
+      - sensor.cabinet_ups_input_voltage
+      - sensor.cabinet_ups_realpower_nominal
+      - sensor.cabinet_ups_load
