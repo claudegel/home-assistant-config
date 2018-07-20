@@ -23,11 +23,13 @@ network_view:
     - group.pihole
     - group.system
     - group.cabinet
+    - group.homecine_network
     - group.presence
 
 weather_view:
   view: yes
   icon: mdi:weather-partlycloudy
   entities:
+    - group.current
     - group.weather
     - group.forecast

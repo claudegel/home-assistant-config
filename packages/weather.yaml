@@ -35,6 +35,15 @@ sensor:
       - dewpoint_c
 
 group:
+  current:
+    name: Actuel
+    entities:
+      - sensor.season
+      - sensor.date
+      - sensor.time
+      - sensor.time_utc
+      - sun.sun
+
   weather:
     name: Metéo 1h
     entities:

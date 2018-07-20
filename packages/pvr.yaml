@@ -24,13 +24,13 @@ sensor:
     platform: nut
     host: 192.168.0.22
     port: 3493
-    alias: ups
+    alias: ups_homecine
     resources:
+      - ups.status.display
       - ups.load
       - ups.realpower.nominal
       - input.voltage
       - battery.runtime
-
 
 media_player:
   - platform: kodi
@@ -50,6 +50,11 @@ media_player:
     host: 192.168.0.20
     name: "MusicCast Salon"
   
+  - platform: yamaha_musiccast
+    id: multicast_bureau
+    host: 192.168.0.26
+    name: "MusicCast Bureaus"
+  
   - platform: emby
     host: stibbons.synology.me
     name: "Emby"
@@ -59,6 +64,12 @@ media_player:
     api_key: !secret media_player__emby__api_key
 
 
+remote:
+  - platform: harmony
+    name: Harmony Hub Home Cinema
+    host: 10.168.0.53
+
+    
 group:
   pvr:
     name: Smart PVR
@@ -70,7 +81,11 @@ group:
       - sensor.sonarr_diskspace
       - media_player.emby__kodi__osmc_2
       - media_player.home_cinema_salon_kodi
-      - sensor.home_cinema_ups_battery_runtime
+
+  homecine_network:
+    name: Home Cinema Networks
+    entities:
+      - sensor.home_cinema_ups_status
       - sensor.home_cinema_ups_input_voltage
-      - sensor.home_cinema_ups_realpower_nominal
+      - sensor.home_cinema_ups_battery_runtime
       - sensor.home_cinema_ups_load

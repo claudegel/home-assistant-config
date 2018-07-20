@@ -3,6 +3,11 @@
 #   icon: mdi:wrench
 #   url: http://domot.local:3218
 
+lovelace_ui:
+  title: Lovelace
+  icon: mdi:home-assistant
+  url: /lovelace
+
 configurator:
   title: Configurator
   icon: mdi:wrench
@@ -32,6 +37,11 @@ domoticz:
   title: Domoticz
   icon: mdi:home-circle
   url: !secret panel_iframe__domoticz__url
+
+emby:
+  title: Emby
+  icon: mdi:animation-play
+  url: !secret panel_iframe__emby__url
 
 grafana:
   title: Grafana

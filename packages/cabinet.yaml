@@ -5,6 +5,8 @@ sensor:
     port: 3493
     alias: ups
     resources:
+      - ups.status.display
+      - ups.status
       - ups.load
       - ups.realpower.nominal
       - input.voltage
@@ -14,7 +16,7 @@ group:
   cabinet:
     name: Cabinet information
     entities:
-      - sensor.cabinet_ups_battery_runtime
+      - sensor.cabinet_ups_status
       - sensor.cabinet_ups_input_voltage
-      - sensor.cabinet_ups_realpower_nominal
+      - sensor.cabinet_ups_battery_runtime
       - sensor.cabinet_ups_load

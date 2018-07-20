@@ -1,69 +1,104 @@
 light.hue_iris_aurelie:
+  config_entry_id:
   name:
   platform: hue
   unique_id: 00:17:88:01:01:23:53:18-0b
 light.hue_iris_gaetan:
+  config_entry_id:
   name:
   platform: hue
   unique_id: 00:17:88:01:00:12:19:72-0b
 media_player.emby__kodi__osmc:
+  config_entry_id:
   name:
   platform: emby
   unique_id: 2522C335CDD94CA6BD54F15B8FB98111.Kodi
 media_player.emby__emby_mobile__chrome:
+  config_entry_id:
   name:
   platform: emby
   unique_id: c24eba2ce432448fc555913d88626ae80168ac9f.Emby Mobile
 media_player.emby__home_assistant__homeassistant:
+  config_entry_id:
   name:
   platform: emby
   unique_id: 6d2a782da441410f8d16acede71fd75a.Home Assistant
 media_player.emby__emby_for_ios__iphone81:
+  config_entry_id:
   name:
   platform: emby
   unique_id: C8B0481D-0AA9-4648-B973-D9106F9E92AF.Emby for iOS
 media_player.emby__kodi__osmc_2:
+  config_entry_id:
   name:
   platform: emby
   unique_id: 700633E55117623ACC76B2BA6E9189D0193F15E9.Kodi
 sensor.pws_dewpoint_c:
+  config_entry_id:
   name:
   platform: wunderground
   unique_id: '@1.393588,43.517163,dewpoint_c'
 sensor.pws_alerts:
+  config_entry_id:
   name:
   platform: wunderground
   unique_id: '@1.393588,43.517163,alerts'
 sensor.pws_alerts_2:
+  config_entry_id:
   name:
   platform: wunderground
   unique_id: '@1.393550,43.516940,alerts'
 sensor.pws_dewpoint_c_2:
+  config_entry_id:
   name:
   platform: wunderground
   unique_id: '@1.393550,43.516940,dewpoint_c'
 sensor.stibphone2_battery_state:
+  config_entry_id:
   name:
   platform: ios
   unique_id: state_Stibphone2
 sensor.stibphone2_battery_level:
+  config_entry_id:
   name:
   platform: ios
   unique_id: level_Stibphone2
 media_player.emby__emby_mobile__chrome_2:
+  config_entry_id:
   name:
   platform: emby
   unique_id: 69db41325ef2a1ddb9c0abb1fd4074f48c37857b.Emby Mobile
 media_player.emby__emby_mobile__web_browser_iphone:
+  config_entry_id:
   name:
   platform: emby
   unique_id: 8db63153d7861257c4129f8b07c7b0dec53e29be.Emby Mobile
 media_player.emby__emby_mobile__chrome_3:
+  config_entry_id:
   name:
   platform: emby
   unique_id: 71314df330f865bcb38c2db60b475c1a0a1056ae.Emby Mobile
 media_player.emby__emby_mobile__web_browser_iphone_2:
+  config_entry_id:
   name:
   platform: emby
   unique_id: TW96aWxsYS81LjAgKGlQaG9uZTsgQ1BVIGlQaG9uZSBPUyAxMV8zIGxpa2UgTWFjIE9TIFgpIEFwcGxlV2ViS2l0LzYwNS4xLjE1IChLSFRNTCwgbGlrZSBHZWNrbykgVmVyc2lvbi8xMS4wIE1vYmlsZS8xNUUxNDggU2FmYXJpLzYwNC4xfDE1MjcyMDAzODQ2OTA1.Emby
+    Mobile
+media_player.emby__emby_mobile__chrome_android:
+  config_entry_id:
+  name:
+  platform: emby
+  unique_id: TW96aWxsYS81LjAgKExpbnV4OyBBbmRyb2lkIDguMC4wOyBCTkQtTDIxIEJ1aWxkL0hPTk9SQk5ELUwyMSkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY3LjAuMzM5Ni44NyBNb2JpbGUgU2FmYXJpLzUzNy4zNnwxNTI5NjQ1Njk1MDk4.Emby
+    Mobile
+media_player.emby__emby_mobile__chrome_4:
+  config_entry_id:
+  name:
+  platform: emby
+  unique_id: TW96aWxsYS81LjAgKE1hY2ludG9zaDsgSW50ZWwgTWFjIE9TIFggMTBfMTNfNCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY3LjAuMzM5Ni44NyBTYWZhcmkvNTM3LjM2fDE1Mjk3ODU1OTA1OTM1.Emby
+    Mobile
+media_player.emby__emby_mobile__chrome_android_2:
+  config_entry_id:
+  name:
+  platform: emby
+  unique_id: TW96aWxsYS81LjAgKExpbnV4OyBBbmRyb2lkIDcuMS4xOyBaVEUgQTIwMTdHIEJ1aWxkL05NRjI2VikgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY3LjAuMzM5Ni44NyBNb2JpbGUgU2FmYXJpLzUzNy4zNnwxNTI5MDY0NzUxMDMz.Emby
     Mobile
