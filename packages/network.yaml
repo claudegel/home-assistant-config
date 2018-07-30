@@ -29,6 +29,13 @@ sensor:
     monitored_conditions:
       - download
       - upload
+  - platform: iperf3
+    name: Local Speed
+    host: 192.168.0.22
+    port: 5201
+    monitored_conditions:
+      - download
+      - upload
 
 homeassistant:
   customize:
@@ -36,6 +43,10 @@ homeassistant:
       friendly_name: Local Download Speed
     sensor.upload_192168010:
       friendly_name: Local Upload Speed
+    sensor.download_192168022:
+      friendly_name: OSMC Download Speed
+    sensor.upload_192168022:
+      friendly_name: OSMC Upload Speed
 
 group:
   network:
@@ -46,3 +57,5 @@ group:
       - sensor.speedtest_upload
       - sensor.download_192168010
       - sensor.upload_192168010
+      - sensor.download_192168022
+      - sensor.upload_192168022

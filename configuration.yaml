@@ -51,6 +51,8 @@ influxdb: !include influxdb.yaml
 hue: !include hue.yaml
 
 # history_graph: !include history_graph.yaml
+mqtt:
+  broker: domot.local
 
 ios:
 
