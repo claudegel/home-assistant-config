@@ -18,8 +18,8 @@ sensor:
       - windSpeed
 
   - platform: yr
-    name: Forecast
-    forecast: 24
+    name: Forecast 6h
+    forecast: 6
     monitored_conditions:
       - cloudiness
       - precipitation
@@ -28,6 +28,17 @@ sensor:
       - temperature
       - windSpeed
   
+  - platform: yr
+    name: Forecast 24h
+    forecast: 24
+    monitored_conditions:
+      - cloudiness
+      - precipitation
+      - pressure
+      - symbol
+      - temperature
+      - windSpeed
+
   - platform: wunderground
     api_key: !secret sensor__wunderground__api_key
     monitored_conditions:
@@ -44,7 +55,7 @@ group:
       - sensor.time_utc
       - sun.sun
 
-  weather:
+  weather_1h:
     name: Metéo 1h
     entities:
       - sensor.weather_symbol
@@ -62,14 +73,24 @@ group:
       - sensor.weather_low_clouds
       - sensor.weather_medium_clouds
       - sensor.weather_wind_direction
-  
-  forecast:
+
+  forecast_6h:
+    name: Prevision 6h
+    entities:
+      - sensor.forecast_6h_symbol
+      - sensor.forecast_6h_temperature
+      - sensor.forecast_6h_precipitation
+      - sensor.forecast_6h_pressure
+      - sensor.forecast_6h_wind_speed
+      - sensor.forecast_6h_cloudiness
+
+  forecast_24h:
     name: Prevision 24h
     entities:
-      - sensor.forecast_symbol
-      - sensor.forecast_temperature
-      - sensor.forecast_precipitation
-      - sensor.forecast_pressure
-      - sensor.forecast_wind_speed
-      - sensor.forecast_cloudiness
+      - sensor.forecast_24h_symbol
+      - sensor.forecast_24h_temperature
+      - sensor.forecast_24h_precipitation
+      - sensor.forecast_24h_pressure
+      - sensor.forecast_24h_wind_speed
+      - sensor.forecast_24h_cloudiness
   

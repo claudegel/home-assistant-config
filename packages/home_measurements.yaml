@@ -1,0 +1,88 @@
+automation:
+
+  - alias: DZ temp+humidity
+    trigger:
+       - platform: mqtt
+         topic: 'domoticz/out'
+    condition: 
+       condition: template
+       value_template: '{{ trigger.payload_json.dtype == "Temp + Humidity" }}'
+    action:
+       - service: mqtt.publish
+         data_template:
+           topic: 'home/sensors/{{ trigger.payload_json.name | replace(" ", "_") | lower }}/temperature'
+           payload_template: '{{ trigger.payload_json.svalue1 }}'
+       - service: mqtt.publish
+         data_template:
+           topic: 'home/sensors/{{ trigger.payload_json.name | replace(" ", "_") | lower }}/humidity'
+           payload_template: '{{ trigger.payload_json.svalue2 }}'
+
+sensor:
+
+  # Temperatures
+  - platform: mqtt
+    name: "Temperature Garage"
+    state_topic: "home/sensors/garage/temperature"
+    unit_of_measurement: "˚C"
+
+  - platform: mqtt
+    name: "Temperature Bureau"
+    state_topic: "home/sensors/bureau/temperature"
+    unit_of_measurement: "˚C"
+  
+  - platform: mqtt
+    name: "Temperature Chambre Amis"
+    unit_of_measurement: "˚C"
+    state_topic: "home/sensors/chambre_amis/temperature"
+    unit_of_measurement: "˚C"
+      
+  - platform: mqtt
+    name: "Temperature Cave Cigare"
+    state_topic: "home/sensors/cave_cigare/temperature"
+    unit_of_measurement: "˚C"
+
+  - platform: mqtt
+    name: "Temperature Couloir Haut"
+    state_topic: "home/sensors/couloir_haut/temperature"
+    unit_of_measurement: "˚C"
+
+  - platform: mqtt
+    name: "Temperature Cuisine"
+    state_topic: "home/sensors/cuisine/temperature"
+    unit_of_measurement: "˚C"
+
+  - platform: mqtt
+    name: "Temperature Salon"
+    state_topic: "home/sensors/salon/temperature"
+    unit_of_measurement: "˚C"
+
+  - platform: mqtt
+    name: "Temperature Chambre Parentale"
+    state_topic: "home/sensors/chambre_parentale/temperature"
+    unit_of_measurement: "˚C"
+
+  # Humidity
+  - platform: mqtt
+    name: "Humidity Garage"
+    unit_of_measurement: "%"
+    state_topic: "home/sensors/garage/humidity"
+
+group:
+  home_temperatures:
+    name: Home Temperature
+    entities:
+      - sensor.temperature_chambre_parentale
+      - sensor.temperature_chambre_amis
+      - sensor.temperature_bureau
+      - sensor.temperature_couloir_haut
+      - sensor.temperature_salon
+      - sensor.temperature_cuisine
+      - sensor.temperature_cave_cigare
+      - sensor.temperature_garage
+
+  home_humidity:
+    name: Home Temperature
+    entities:
+      - sensor.temperature_garage
+      - sensor.humidity_garage
+      

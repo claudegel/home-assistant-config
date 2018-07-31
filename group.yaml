@@ -3,8 +3,13 @@ default_view:
   icon: mdi:home
   entities:
     - group.travels
-    - group.weather
-    - group.forecast
+    - group.forecast_6h
+
+measurement_view:
+  view: yes
+  icon: mdi:ruler
+  entities:
+    - group.home_temperatures
 
 multimedia_view:
   view: yes
@@ -31,5 +36,6 @@ weather_view:
   icon: mdi:weather-partlycloudy
   entities:
     - group.current
-    - group.weather
-    - group.forecast
+    - group.weather_1h
+    - group.forecast_6h
+    - group.forecast_24h
