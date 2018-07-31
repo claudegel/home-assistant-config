@@ -10,6 +10,8 @@ measurement_view:
   icon: mdi:ruler
   entities:
     - group.home_temperatures
+    - group.home_humidity
+    - group.home_power
 
 multimedia_view:
   view: yes
