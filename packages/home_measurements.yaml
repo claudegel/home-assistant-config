@@ -16,6 +16,10 @@ automation:
          data_template:
            topic: 'home/sensors/{{ trigger.payload_json.name | replace(" ", "_") | lower }}/humidity'
            payload_template: '{{ trigger.payload_json.svalue2 }}'
+       - service: mqtt.publish
+         data_template:
+           topic: 'home/sensors/{{ trigger.payload_json.name | replace(" ", "_") | lower }}/low_battery'
+           payload_template: '{{ trigger.payload_json.svalue3 }}'
 
   - alias: DZ Powermeter General
     trigger:
@@ -92,10 +96,155 @@ automation:
            # kWh
            topic: 'home/sensors/homecinema/electricity/total_power'
            payload_template: '{{ trigger.payload_json.svalue2 }}'
+
+  - id: "publish_temperatures"
+    alias: 'Send temperatures to MQTT'
+    trigger:
+       - platform: state
+         entity_id:
+          - sensor.rfxcom_bathroom_temperature
+          - sensor.rfxcom_cigare_cave_temperature
+          - sensor.rfxcom_friend_room_temperature
+          - sensor.rfxcom_garage_temperature
+          - sensor.rfxcom_kitchen_temperature
+          - sensor.rfxcom_living_room_temperature
+          - sensor.rfxcom_office_temperature
+          - sensor.rfxcom_outside_temperature
+          - sensor.rfxcom_parents_room_temperature
+          - sensor.rfxcom_upper_floor_corridor_temperature
+    action:
+      - service: mqtt.publish
+        data_template:
+          topic: >
+            home/sensors/
+            {{- trigger.entity_id | 
+            replace('sensor.rfxcom_', '') |
+            replace('_temperature', '/temperature') | lower }}
+          payload_template: >
+            {{ states(trigger.entity_id) }}
+
+  - id: "publish_humidity"
+    alias: 'Send humidity to MQTT'
+    trigger:
+       - platform: state
+         entity_id:
+          - sensor.rfxcom_bathroom_humidity
+          - sensor.rfxcom_cigare_cave_humidity
+          - sensor.rfxcom_friend_room_humidity
+          - sensor.rfxcom_garage_humidity
+          - sensor.rfxcom_kitchen_humidity
+          - sensor.rfxcom_living_room_humidity
+          - sensor.rfxcom_office_humidity
+          - sensor.rfxcom_outside_humidity
+          - sensor.rfxcom_parents_room_humidity
+          - sensor.rfxcom_upper_floor_corridor_humidity
+    action:
+      - service: mqtt.publish
+        data_template:
+          topic: >
+            home/sensors/
+            {{- trigger.entity_id | 
+            replace('sensor.rfxcom_', '') |
+            replace('_humidity', '/temperature') | lower }}
+          payload_template: >
+            {{ states(trigger.entity_id) }}
+            
            
+# influxdb:
+#   include:
+#     entities:
+#       - sensor.rfxcom_bathroom_humidity
+#       - sensor.rfxcom_bathroom_temperature
+#       - sensor.rfxcom_cigare_cave_humidity
+#       - sensor.rfxcom_cigare_cave_temperature
+#       - sensor.rfxcom_friend_room_humidity
+#       - sensor.rfxcom_friend_room_temperature
+#       - sensor.rfxcom_garage_humidity
+#       - sensor.rfxcom_garage_temperature
+#       - sensor.rfxcom_home_energy_energy_usage
+#       - sensor.rfxcom_home_energy_total_usage
+#       - sensor.rfxcom_kitchen_humidity
+#       - sensor.rfxcom_kitchen_temperature
+#       - sensor.rfxcom_living_room_humidity
+#       - sensor.rfxcom_living_room_temperature
+#       - sensor.rfxcom_office_humidity
+#       - sensor.rfxcom_office_temperature
+#       - sensor.rfxcom_outside_humidity
+#       - sensor.rfxcom_outside_temperature
+#       - sensor.rfxcom_parent_room_humidity
+#       - sensor.rfxcom_parents_room_temperature
+#       - sensor.rfxcom_upper_floor_corridor_humidity
+#       - sensor.rfxcom_upper_floor_corridor_temperature
+       
 sensor:
 
+  # Add all RFXcom sensors
+  - platform: rfxtrx
+    automatic_add: True
+    entity_namespace: rfxcom
+    devices:
+      '0a52010fee0101233e0079':
+        name: Outside
+        data_type:
+           - Temperature
+           - Humidity
+      '0a520115fb0401203f0079':
+        name: Upper Floor Corridor
+        data_type:
+           - Temperature
+           - Humidity
+      '0a5201163b02011e400079':
+        name: Friend Room
+        data_type:
+           - Temperature
+           - Humidity
+      '0a5202102a070119410079':
+        name: Bathroom
+        data_type:
+           - Temperature
+           - Humidity
+      '0a520211e603011e3e0069':
+        name: Parents Room
+        data_type:
+           - Temperature
+           - Humidity
+      '0a520212ba04011a3f0079':
+        name: Kitchen
+        data_type:
+           - Temperature
+           - Humidity
+      '0a520214320801203f0059':
+        name: Office
+        data_type:
+           - Temperature
+           - Humidity
+      '0a520217ff02013c330079':
+        name: Garage
+        data_type:
+           - Temperature
+           - Humidity
+      '0a520219730101213d0079':
+        name: Living Room
+        data_type:
+           - Temperature
+           - Humidity
+      '0a520227ec020114450079':
+        name: Cigare Cave
+        data_type:
+           - Temperature
+           - Humidity
+      '115a02138f02000000029300005c04035479':
+        name: Home Energy
+        data_type:
+           - Energy usage
+           - Total usage
+
   # Temperatures
+  - platform: mqtt
+    name: "Temperature Exterieur Maison"
+    state_topic: "home/sensors/exterieur_maison/temperature"
+    unit_of_measurement: "˚C"
+
   - platform: mqtt
     name: "Temperature Garage"
     state_topic: "home/sensors/garage/temperature"
@@ -108,7 +257,6 @@ sensor:
   
   - platform: mqtt
     name: "Temperature Chambre Amis"
-    unit_of_measurement: "˚C"
     state_topic: "home/sensors/chambre_amis/temperature"
     unit_of_measurement: "˚C"
       
@@ -140,10 +288,49 @@ sensor:
 
   # Humidity
   - platform: mqtt
-    name: "Humidity Garage"
+    name: "Humidity Exterieur Maison"
+    state_topic: "home/sensors/exterieur_maison/humidity"
     unit_of_measurement: "%"
-    state_topic: "home/sensors/garage/humidity"
 
+  - platform: mqtt
+    name: "Humidity Garage"
+    state_topic: "home/sensors/garage/humidity"
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    name: "Humidity Bureau"
+    state_topic: "home/sensors/bureau/humidity"
+    unit_of_measurement: "%"
+  
+  - platform: mqtt
+    name: "Humidity Chambre Amis"
+    state_topic: "home/sensors/chambre_amis/humidity"
+    unit_of_measurement: "%"
+      
+  - platform: mqtt
+    name: "Humidity Cave Cigare"
+    state_topic: "home/sensors/cave_cigare/humidity"
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    name: "Humidity Couloir Haut"
+    state_topic: "home/sensors/couloir_haut/humidity"
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    name: "Humidity Cuisine"
+    state_topic: "home/sensors/cuisine/humidity"
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    name: "Humidity Salon"
+    state_topic: "home/sensors/salon/humidity"
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    name: "Humidity Chambre Parentale"
+    state_topic: "home/sensors/chambre_parentale/humidity"
+    unit_of_measurement: "%"
 
   # Powermeters
   - platform: mqtt
@@ -161,28 +348,113 @@ sensor:
     unit_of_measurement: "kWh"
     state_topic: "home/sensors/cabinet/electricity/power"
 
+
+binary_sensor:
+
+  # Low Battery warning
+  - platform: mqtt
+    name: "Alerte Batterie Exterieur Maison"
+    state_topic: "home/sensors/exterieur_maison/low_battery"
+    payload_on: "1"
+    payload_off: "0"
+
+  - platform: mqtt
+    name: "Alerte Batterie Garage"
+    state_topic: "home/sensors/garage/low_battery"
+    payload_on: "1"
+    payload_off: "0"
+
+  - platform: mqtt
+    name: "Alerte Batterie Bureau"
+    state_topic: "home/sensors/bureau/low_battery"
+    payload_on: "1"
+    payload_off: "0"
+  
+  - platform: mqtt
+    name: "Alerte Batterie Chambre Amis"
+    state_topic: "home/sensors/chambre_amis/low_battery"
+    payload_on: "1"
+    payload_off: "0"
+      
+  - platform: mqtt
+    name: "Alerte Batterie Cave Cigare"
+    state_topic: "home/sensors/cave_cigare/low_battery"
+    payload_on: "1"
+    payload_off: "0"
+
+  - platform: mqtt
+    name: "Alerte Batterie Couloir Haut"
+    state_topic: "home/sensors/couloir_haut/low_battery"
+    payload_on: "1"
+    payload_off: "0"
+
+  - platform: mqtt
+    name: "Alerte Batterie Cuisine"
+    state_topic: "home/sensors/cuisine/low_battery"
+    payload_on: "1"
+    payload_off: "0"
+
+  - platform: mqtt
+    name: "Alerte Batterie Salon"
+    state_topic: "home/sensors/salon/low_battery"
+    payload_on: "1"
+    payload_off: "0"
+
+  - platform: mqtt
+    name: "Alerte Batterie Chambre Parentale"
+    state_topic: "home/sensors/chambre_parentale/low_battery"
+    payload_on: "1"
+    payload_off: "0"
+
+
 group:
   home_temperatures:
-    name: Home Temperature
+    name: Home Temperatures
     entities:
-      - sensor.temperature_chambre_parentale
-      - sensor.temperature_chambre_amis
-      - sensor.temperature_bureau
-      - sensor.temperature_couloir_haut
-      - sensor.temperature_salon
-      - sensor.temperature_cuisine
-      - sensor.temperature_cave_cigare
-      - sensor.temperature_garage
+      # - sensor.temperature_exterieur_maison
+      # - sensor.temperature_chambre_parentale
+      # - sensor.temperature_chambre_amis
+      # - sensor.temperature_bureau
+      # - sensor.temperature_couloir_haut
+      # - sensor.temperature_salon
+      # - sensor.temperature_cuisine
+      # - sensor.temperature_cave_cigare
+      # - sensor.temperature_garage
+      - sensor.rfxcom_bathroom_temperature
+      - sensor.rfxcom_cigare_cave_temperature
+      - sensor.rfxcom_friend_room_temperature
+      - sensor.rfxcom_garage_temperature
+      - sensor.rfxcom_kitchen_temperature
+      - sensor.rfxcom_living_room_temperature
+      - sensor.rfxcom_office_temperature
+      - sensor.rfxcom_outside_temperature
+      - sensor.rfxcom_parents_room_temperature
+      - sensor.rfxcom_upper_floor_corridor_temperature
 
   home_humidity:
-    name: Home Temperature
+    name: Home Humidity
     entities:
-      - sensor.humidity_garage
-      
+      - sensor.rfxcom_kitchen_humidity
+      - sensor.rfxcom_parents_room_temperature
+      - sensor.rfxcom_cigare_cave_humidity
+
   home_power:
     name: Home Power
     entities:
-      - sensor.powermeter_general
+      # - sensor.powermeter_general
       - sensor.powermeter_home_cinema
       - sensor.powermeter_cabinet
+      - sensor.rfxcom_home_energy_energy_usage
+      - sensor.rfxcom_home_energy_total_usage
       
+  sensors_battery_alert:
+    name: Alerte Batterie Sondes Temperature
+      - binary_sensor.alerte_batterie_bureau
+      - binary_sensor.alerte_batterie_cave_cigare
+      - binary_sensor.alerte_batterie_chambre_amis
+      - binary_sensor.alerte_batterie_chambre_parentale
+      - binary_sensor.alerte_batterie_couloir_haut
+      - binary_sensor.alerte_batterie_cuisine
+      - binary_sensor.alerte_batterie_exterieur_maison
+      - binary_sensor.alerte_batterie_garage
+      - binary_sensor.alerte_batterie_salon

@@ -22,17 +22,6 @@ multimedia_view:
     - media_player.emby__kodi__osmc
     - media_player.chambre_parentale_main
 
-network_view:
-  view: yes
-  icon: mdi:server-network
-  entities:
-    - group.network
-    - group.pihole
-    - group.system
-    - group.cabinet
-    - group.homecine_network
-    - group.presence
-
 weather_view:
   view: yes
   icon: mdi:weather-partlycloudy
@@ -41,3 +30,15 @@ weather_view:
     - group.weather_1h
     - group.forecast_6h
     - group.forecast_24h
+
+network_view:
+  view: yes
+  icon: mdi:server-network
+  entities:
+    - group.sensors_battery_alert
+    - group.network
+    - group.pihole
+    - group.system
+    - group.cabinet
+    - group.homecine_network
+    - group.presence

@@ -53,6 +53,12 @@ hue: !include hue.yaml
 # history_graph: !include history_graph.yaml
 mqtt:
   broker: domot.local
+  birth_message:
+    topic: 'home/hass/status'
+    payload: 'online'
+  will_message:
+    topic: 'home/hass/status'
+    payload: 'offline'
 
 ios:
 
@@ -65,3 +71,6 @@ input_number: !include input_number.yaml
 recorder: !include recorder.yaml
 
 notify: !include notify.yaml
+
+rfxtrx:
+  device: /dev/ttyUSB0

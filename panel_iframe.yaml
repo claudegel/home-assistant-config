@@ -47,3 +47,14 @@ grafana:
   title: Grafana
   icon: mdi:chart-areaspline
   url: !secret panel_iframe__grafana__url
+  
+influxdb:
+  title: Influx DB (local)
+  icon: mdi:chart-areaspline
+  url: !secret panel_iframe__influxdb__url
+
+nodered:
+  title: Node-Red
+  icon: mdi:chart-areaspline
+  url: !secret panel_iframe__nodered__url
+
