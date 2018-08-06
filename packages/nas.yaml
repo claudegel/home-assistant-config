@@ -1,12 +1,91 @@
 sensor:
-  # DSM > 5.2 not supported
   - platform: synologydsm
     host: !secret sensor__synologydsm__host
     port: !secret sensor__synologydsm__port
     ssl: !secret sensor__synologydsm__ssl
     username: !secret sensor__synologydsm__username
     password: !secret sensor__synologydsm__password
+    entity_namespace: nas
     monitored_conditions:
       - cpu_total_load
+      - cpu_5min_load
       - memory_real_usage
       - network_up
+      - disk_smart_status
+      - disk_status
+      - disk_exceed_bad_sector_thr
+      - disk_below_remain_life_thr
+      - disk_temp
+      - volume_status
+      - volume_size_used
+      - volume_size_total
+      - volume_percentage_used
+
+
+group:
+  nas_general:
+    name: NAS General
+    entities:
+      - sensor.nas_cpu_load_5_min
+      - sensor.nas_cpu_load_total
+      - sensor.nas_memory_usage_real
+      - sensor.nas_network_up
+    
+  nas_storage:
+    name: NAS Storage status
+    entities:
+      - sensor.nas_below_min_remaining_life_sda
+      - sensor.nas_below_min_remaining_life_sdb
+      - sensor.nas_below_min_remaining_life_sdc
+      - sensor.nas_below_min_remaining_life_sdd
+      - sensor.nas_below_min_remaining_life_sde
+      - sensor.nas_below_min_remaining_life_sdf
+      - sensor.nas_below_min_remaining_life_sdg
+      - sensor.nas_below_min_remaining_life_sdh
+      - sensor.nas_exceeded_max_bad_sectors_sda
+      - sensor.nas_exceeded_max_bad_sectors_sdb
+      - sensor.nas_exceeded_max_bad_sectors_sdc
+      - sensor.nas_exceeded_max_bad_sectors_sdd
+      - sensor.nas_exceeded_max_bad_sectors_sde
+      - sensor.nas_exceeded_max_bad_sectors_sdf
+      - sensor.nas_exceeded_max_bad_sectors_sdg
+      - sensor.nas_exceeded_max_bad_sectors_sdh
+      - sensor.nas_status_sda
+      - sensor.nas_status_sdb
+      - sensor.nas_status_sdc
+      - sensor.nas_status_sdd
+      - sensor.nas_status_sde
+      - sensor.nas_status_sdf
+      - sensor.nas_status_sdg
+      - sensor.nas_status_sdh
+      - sensor.nas_status_smart_sda
+      - sensor.nas_status_smart_sdb
+      - sensor.nas_status_smart_sdc
+      - sensor.nas_status_smart_sdd
+      - sensor.nas_status_smart_sde
+      - sensor.nas_status_smart_sdf
+      - sensor.nas_status_smart_sdg
+      - sensor.nas_status_smart_sdh
+      - sensor.nas_temperature_sda
+      - sensor.nas_temperature_sdb
+      - sensor.nas_temperature_sdc
+      - sensor.nas_temperature_sdd
+      - sensor.nas_temperature_sde
+      - sensor.nas_temperature_sdf
+      - sensor.nas_temperature_sdg
+      - sensor.nas_temperature_sdh
+
+  nas_volume1:
+    name: NAS Volume 1
+    entities:
+      - sensor.nas_status_volume_1
+      - sensor.nas_volume_used_volume_1
+      - sensor.nas_used_space_volume_1
+      - sensor.nas_total_size_volume_1
+  nas_volume2:
+    name: NAS Volume 2
+    entities:
+      - sensor.nas_status_volume_2
+      - sensor.nas_volume_used_volume_2
+      - sensor.nas_used_space_volume_2
+      - sensor.nas_total_size_volume_2
