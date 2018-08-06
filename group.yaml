@@ -1,7 +1,8 @@
-default_view:
+.default_view:
   view: yes
   icon: mdi:home
   entities:
+    - group.presence
     - group.travels
     - group.forecast_6h
 
@@ -19,9 +20,11 @@ multimedia_view:
   icon: mdi:play-network
   entities:
     - group.pvr
-    - media_player.home_cinema_salon_kodi
     - media_player.emby__kodi__osmc
+    - media_player.home_cinema_salon_kodi
     - media_player.chambre_parentale_main
+    - media_player.bureau_main
+    - group.homecine_network
 
 weather_view:
   view: yes
@@ -36,13 +39,16 @@ network_view:
   view: yes
   icon: mdi:server-network
   entities:
-    - group.sensors_battery_alert
-    - group.network
-    - group.pihole
-    - group.system
     - group.cabinet
-    - group.homecine_network
-    - group.presence
+    - group.system
+    - group.pihole
+    - group.network
+    - group.sensors_battery_alert
+  
+nas_view:
+  icon: mdi:nas
+  view: yes
+  entities:
     - group.nas_general
     - group.nas_storage
     - group.nas_volume1

@@ -145,7 +145,7 @@ automation:
             home/sensors/
             {{- trigger.entity_id | 
             replace('sensor.rfxcom_', '') |
-            replace('_humidity', '/temperature') | lower }}
+            replace('_humidity', '/humidity') | lower }}
           payload_template: >
             {{ states(trigger.entity_id) }}
             

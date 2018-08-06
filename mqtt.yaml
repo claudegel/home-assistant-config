@@ -1,0 +1,10 @@
+broker: domot.local
+birth_message:
+  topic: 'home/hass/status'
+  payload: 'online'
+  qos: 1
+  retain: true
+  
+will_message:
+  topic: 'home/hass/status'
+  payload: 'offline'

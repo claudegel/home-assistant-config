@@ -37,6 +37,34 @@ sensor:
       - download
       - upload
 
+  - platform: cert_expiry
+    alias: 'Expiration certificat stibbons.synology.me'
+    entity_namespace: stibbons_synology_me
+    host: stibbons.synology.me
+    port: 32483
+
+device_tracker:
+  - platform: netgear
+    host: 192.168.0.7
+    port: 5000
+    username: !secret device_tracker__netgear__username
+    password: !secret device_tracker__netgear__password
+    new_device_defaults:
+      track_new_devices: True
+      hide_if_away: False
+    
+  - platform: ping
+    interval_seconds: 30
+    consider_home: 1200
+    hosts:
+      gaetan_iphone: 192.168.0.32
+      gaetan_macbookpro: 192.168.0.50
+      aurelie_iphone: 192.168.0.31
+  
+  - platform: nmap_tracker
+    hosts: 192.168.0.0/24
+    home_interval: 30
+
 homeassistant:
   customize:
     sensor.download_192168010:
@@ -59,3 +87,4 @@ group:
       - sensor.upload_192168010
       - sensor.download_192168022
       - sensor.upload_192168022
+      - sensor.stibbons_synology_me_ssl_certificate_expiry

@@ -44,21 +44,14 @@ map:
 
 panel_iframe: !include panel_iframe.yaml
 
-device_tracker: !include device_tracker.yaml
+# device_tracker: !include device_tracker.yaml
 
 influxdb: !include influxdb.yaml
 
 hue: !include hue.yaml
 
 # history_graph: !include history_graph.yaml
-mqtt:
-  broker: domot.local
-  birth_message:
-    topic: 'home/hass/status'
-    payload: 'online'
-  will_message:
-    topic: 'home/hass/status'
-    payload: 'offline'
+mqtt: !include mqtt.yaml
 
 ios:
 
