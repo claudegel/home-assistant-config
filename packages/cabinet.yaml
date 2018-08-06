@@ -8,9 +8,12 @@ sensor:
       - ups.status.display
       - ups.status
       - ups.load
-      - ups.realpower.nominal
+      - ups.delay.shutdown
       - input.voltage
       - battery.runtime
+      - battery.charge
+      - battery.charge.low
+      - output.voltage
 
 group:
   cabinet:
@@ -19,4 +22,7 @@ group:
       - sensor.cabinet_ups_status
       - sensor.cabinet_ups_input_voltage
       - sensor.cabinet_ups_battery_runtime
-      - sensor.cabinet_ups_load
+      - sensor.cabinet_ups_battery_charge
+      - sensor.cabinet_ups_low_battery_setpoint
+      - sensor.cabinet_ups_output_voltage
+      - sensor.cabinet_ups_ups_shutdown_delay

@@ -421,7 +421,6 @@ group:
       # - sensor.temperature_cave_cigare
       # - sensor.temperature_garage
       - sensor.rfxcom_bathroom_temperature
-      - sensor.rfxcom_cigare_cave_temperature
       - sensor.rfxcom_friend_room_temperature
       - sensor.rfxcom_garage_temperature
       - sensor.rfxcom_kitchen_temperature
@@ -435,7 +434,12 @@ group:
     name: Home Humidity
     entities:
       - sensor.rfxcom_kitchen_humidity
-      - sensor.rfxcom_parents_room_temperature
+      - sensor.rfxcom_parents_room_humidity
+
+  cigare_cave:
+    name: Cigare Cave
+    entities:
+      - sensor.rfxcom_cigare_cave_temperature
       - sensor.rfxcom_cigare_cave_humidity
 
   home_power:

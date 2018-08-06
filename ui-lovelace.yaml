@@ -1,13 +1,13 @@
 title: AGS Home
 
 views:
-  - title: Example
-    id: example
-    theme: dark-mode
+  - title: Main view
+    icon: mdi:home-assistant
     cards:
-        # The markdown card will render markdown text.
-      - type: markdown
-        title: Lovelace
-        content: >
-          Welcome to your **Lovelace UI**.
-
+      - title: Today
+        type: entities
+        entities:
+          - sensor.aurelies_work
+          - sensor.gaetans_work
+          - sensor.forecast_6h_temperature
+          - sensor.forecast_6h_precipitation

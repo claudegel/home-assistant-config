@@ -1,0 +1,12 @@
+sensor:
+  # DSM > 5.2 not supported
+  - platform: synologydsm
+    host: !secret sensor__synologydsm__host
+    port: !secret sensor__synologydsm__port
+    ssl: !secret sensor__synologydsm__ssl
+    username: !secret sensor__synologydsm__username
+    password: !secret sensor__synologydsm__password
+    monitored_conditions:
+      - cpu_total_load
+      - memory_real_usage
+      - network_up

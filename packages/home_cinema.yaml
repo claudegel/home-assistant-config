@@ -24,13 +24,17 @@ sensor:
     platform: nut
     host: 192.168.0.22
     port: 3493
+    username: upsmon
+    password: ups
     alias: ups
     resources:
-      - ups.status.display
-      - ups.load
-      - ups.realpower.nominal
-      - input.voltage
+      - battery.charge
+      - battery.charge.low
       - battery.runtime
+      - ups.beeper.status
+      - ups.delay.shutdown
+      - ups.load
+      - ups.status.display
   
   - name: Uptime OSMC
     platform: mqtt
@@ -94,11 +98,12 @@ group:
       - media_player.home_cinema_salon_kodi
 
   homecine_network:
-    name: Home Cinema Networks
+    name: Home Cinema Information
     entities:
       - sensor.uptime_osmc
       - sensor.temp_osmc
       - sensor.home_cinema_ups_status
-      - sensor.home_cinema_ups_input_voltage
+      - sensor.home_cinema_ups_battery_charge
+      - sensor.home_cinema_ups_low_battery_setpoint
+      - sensor.home_cinema_ups_ups_shutdown_delay
       - sensor.home_cinema_ups_battery_runtime
-      - sensor.home_cinema_ups_load
