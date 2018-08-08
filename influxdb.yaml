@@ -4,11 +4,11 @@ username: homeassistant
 database: homeassistant
 password: !secret influx__password
 max_retries: 3
-default_measurement: state
+# default_measurement: state
 tags:
   instance: prod
   source: hass
-include:
-  entities:
-   - sensor.rfxcom_bathroom_temperature
-   - sensor.rfxcom_outside_temperature
+# include:
+#   entities:
+#   - sensor.rfxcom_bathroom_temperature
+#   - sensor.rfxcom_outside_temperature
