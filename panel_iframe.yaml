@@ -68,3 +68,8 @@ nzbhydra:
   icon: mdi:feature-search
   url: !secret panel_iframe__nzbhydra__url
 
+chronograf:
+  title: Chronograf (local)
+  icon: mdi:chart-line-stacked
+  url: !secret panel_iframe__chronograf__url
+
