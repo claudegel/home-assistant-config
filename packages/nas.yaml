@@ -8,7 +8,9 @@ sensor:
     entity_namespace: nas
     monitored_conditions:
       - cpu_total_load
+      - cpu_1min_load
       - cpu_5min_load
+      - cpu_15min_load
       - memory_real_usage
       - network_up
       - disk_smart_status
@@ -27,6 +29,9 @@ group:
     name: NAS General
     entities:
       - sensor.nas_cpu_load_5_min
+      - sensor.nas_cpu_1min_load
+      - sensor.nas_cpu_5min_load
+      - sensor.nas_cpu_15min_load
       - sensor.nas_cpu_load_total
       - sensor.nas_memory_usage_real
       - sensor.nas_network_up

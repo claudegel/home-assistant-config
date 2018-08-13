@@ -26,6 +26,7 @@ sensor:
     name: Local Speed
     host: 192.168.0.10
     port: 5201
+    scan_interval: 10800  # 3 hours
     monitored_conditions:
       - download
       - upload
@@ -33,6 +34,7 @@ sensor:
     name: Local Speed
     host: 192.168.0.22
     port: 5201
+    scan_interval: 10800  # 3 hours
     monitored_conditions:
       - download
       - upload
