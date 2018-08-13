@@ -30,11 +30,13 @@ sensor:
     monitored_conditions:
       - download
       - upload
+
   - platform: iperf3
+    # Test connection with OSMC, ensure the network is always up
     name: Local Speed
     host: 192.168.0.22
     port: 5201
-    scan_interval: 10800  # 3 hours
+    scan_interval: 86400  # 24 hours
     monitored_conditions:
       - download
       - upload
