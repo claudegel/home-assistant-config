@@ -1,0 +1,41 @@
+sensor:
+
+  - platform: command_line
+    name: Domot CPU Temperature
+    command: "cat /sys/class/thermal/thermal_zone0/temp"
+    unit_of_measurement: "°C"
+    value_template: '{{ value | multiply(0.001) | round(2) }}'
+    
+  - platform: systemmonitor
+    entity_namespace: domot
+    resources:
+      - type: since_last_boot
+      - type: disk_use_percent
+        arg: /
+      - type: disk_use_percent
+        arg: /mnt/storage
+      - type: memory_free
+      - type: load_1m
+      - type: load_5m
+      - type: load_15m
+      - type: network_in
+      - type: network_out
+      - type: processor_use
+      - type: memory_use_percent
+
+homeassistant:
+  customize:
+    sensor.domot_cpu_temperature:
+      friendly_name: CPU Temperature
+      
+group:
+  domot:
+    name: Domot server information
+    entities:
+      - sensor.domot_cpu_temp
+      - sensor.domot_cpu_temperature
+      - sensor.domot_processor_use
+      - sensor.domot_memory_use_percent
+      - sensor.domot_disk_use_percent_mntstorage
+      - sensor.domot_disk_use_percent_
+      - sensor.domot_since_last_boot

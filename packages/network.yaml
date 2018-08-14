@@ -22,6 +22,7 @@ sensor:
     resource: http://ip.jsontest.com
     name: External IP
     value_template: '{{ value_json.ip }}'
+
   - platform: iperf3
     name: Local Speed
     host: 192.168.0.10
@@ -80,6 +81,24 @@ homeassistant:
     sensor.upload_192168022:
       friendly_name: OSMC Upload Speed
 
+input_boolean:
+  update_speedtest:
+    name: Update Speedtest
+    initial: off
+    icon: mdi:refresh
+
+automation:
+  - alias: 'Update Speedtest'
+    trigger:
+      - platform: state
+        entity_id: input_boolean.update_speedtest
+        to: 'on'
+        from: 'off'
+    action:
+      - service: sensor.iperf3_update
+      - service: input_boolean.turn_off
+        entity_id: input_boolean.update_speedtest
+
 group:
   network:
     name: Network
@@ -91,4 +110,5 @@ group:
       - sensor.upload_192168010
       - sensor.download_192168022
       - sensor.upload_192168022
+      - input_boolean.update_speedtest
       - sensor.stibbons_synology_me_ssl_certificate_expiry

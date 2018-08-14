@@ -5,8 +5,20 @@ sensor:
     scan_interval: 86400
   
   - platform: command_line
+    name: HA release
+    scan_interval: 720
+    command: >-
+      python3 -c "
+      import requests;
+      u = 'https://pypi.python.org/pypi/homeassistant/json';
+      print(requests.get(u).json()['info']['version'])
+      "
+  
+  - platform: command_line
     name: "HA Uptime"
-    command: echo "$(($(date +%s) - $(date -d "$(head -n1 /config/home-assistant.log | cut -d' ' -f-2)" +%s)))"
+    command: >-
+      echo "$(($(date +%s) - $(date -d "$(head -n1 /config/home-assistant.log | 
+      cut -d' ' -f-2)" +%s)))"
     scan_interval: 720
     value_template: >-
       {% set uptime = value | int %}
@@ -38,10 +50,10 @@ sensor:
         {%- endif -%}
       {%- endif -%}
 
-
 group:
   system:
     name: Système
     entities:
       - sensor.ha_installed_version
+      - sensor.ha_release
       - sensor.ha_uptime

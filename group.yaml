@@ -44,7 +44,6 @@ network_view:
   view: yes
   icon: mdi:server-network
   entities:
-    - group.system
     - group.cabinet
     - group.domot
     - group.pihole
