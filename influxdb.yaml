@@ -1,7 +1,7 @@
-host: domot.local
-port: 8086
-username: homeassistant
-database: homeassistant
+host: !secret influx__host
+port: !secret influx__port
+username: !secret influx__username
+database: !secret influx__database
 password: !secret influx__password
 max_retries: 3
 # default_measurement: state

@@ -1,4 +1,4 @@
-broker: domot.local
+broker: !secret mqtt_host
 birth_message:
   topic: 'home/hass/status'
   payload: 'online'

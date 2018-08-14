@@ -13,6 +13,7 @@ sensor:
       - cpu_15min_load
       - memory_real_usage
       - network_up
+      - network_down
       - disk_smart_status
       - disk_status
       - disk_exceed_bad_sector_thr
@@ -28,13 +29,10 @@ group:
   nas_general:
     name: NAS General
     entities:
-      - sensor.nas_cpu_load_5_min
-      - sensor.nas_cpu_1min_load
-      - sensor.nas_cpu_5min_load
-      - sensor.nas_cpu_15min_load
       - sensor.nas_cpu_load_total
       - sensor.nas_memory_usage_real
       - sensor.nas_network_up
+      - sensor.nas_network_down
     
   nas_storage:
     name: NAS Storage status
