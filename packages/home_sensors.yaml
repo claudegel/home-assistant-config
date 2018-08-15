@@ -1,6 +1,6 @@
 automation:
 
-  - alias: DZ temp+humidity
+  - alias: Dz to Hass Temp+Humidity
     trigger:
        - platform: mqtt
          topic: 'domoticz/out'
@@ -21,7 +21,7 @@ automation:
            topic: 'home/sensors/{{ trigger.payload_json.name | replace(" ", "_") | lower }}/low_battery'
            payload_template: '{{ trigger.payload_json.svalue3 }}'
 
-  - alias: DZ Powermeter General
+  - alias: Dz to Hass General Energy
     trigger:
        - platform: mqtt
          topic: 'domoticz/out'
@@ -32,15 +32,15 @@ automation:
        - service: mqtt.publish
          data_template:
            # kWh
-           topic: 'home/sensors/home/electricity/power'
+           topic: 'home/sensors/home/electricity/energy'
            payload_template: '{{ trigger.payload_json.svalue1 }}'
        - service: mqtt.publish
          data_template:
            # kWh
-           topic: 'home/sensors/home/electricity/total_power'
+           topic: 'home/sensors/home/electricity/total_energy'
            payload_template: '{{ trigger.payload_json.svalue2 }}'
            
-  - alias: DZ Powermeter General
+  - alias: Dz to Hass General Energy
     trigger:
        - platform: mqtt
          topic: 'domoticz/out'
@@ -51,15 +51,15 @@ automation:
        - service: mqtt.publish
          data_template:
            # kWh
-           topic: 'home/sensors/general/electricity/power'
+           topic: 'home/sensors/general/electricity/energy'
            payload_template: '{{ trigger.payload_json.svalue1 }}'
        - service: mqtt.publish
          data_template:
            # kWh
-           topic: 'home/sensors/general/electricity/total_power'
+           topic: 'home/sensors/general/electricity/total_energy'
            payload_template: '{{ trigger.payload_json.svalue2 }}'
 
-  - alias: DZ Powermeter Cabinet
+  - alias: Dz to Hass Cabinet Energy
     trigger:
        - platform: mqtt
          topic: 'domoticz/out'
@@ -70,32 +70,65 @@ automation:
        - service: mqtt.publish
          data_template:
            # kWh
-           topic: 'home/sensors/cabinet/electricity/power'
+           topic: 'home/sensors/cabinet/electricity/energy'
            payload_template: '{{ trigger.payload_json.svalue1 }}'
        - service: mqtt.publish
          data_template:
            # kWh
-           topic: 'home/sensors/cabinet/electricity/total_power'
+           topic: 'home/sensors/cabinet/electricity/total_energy'
            payload_template: '{{ trigger.payload_json.svalue2 }}'
            
-  - alias: DZ Powermeter Home Cinema
+  - alias: Dz to Hass Home Cinema Energy
     trigger:
        - platform: mqtt
          topic: 'domoticz/out'
     condition: 
        condition: template
-       value_template: '{{ trigger.payload_json.name == "Home Cinema - Energy" }}'
+       value_template: '{{ trigger.payload_json.name == "Home Cinema Energy" }}'
     action:
        - service: mqtt.publish
          data_template:
            # kWh
-           topic: 'home/sensors/homecinema/electricity/power'
+           topic: 'home/sensors/homecinema/electricity/energy'
            payload_template: '{{ trigger.payload_json.svalue1 }}'
        - service: mqtt.publish
          data_template:
            # kWh
-           topic: 'home/sensors/homecinema/electricity/total_power'
+           topic: 'home/sensors/homecinema/electricity/total_energy'
            payload_template: '{{ trigger.payload_json.svalue2 }}'
+
+  - alias: Dz to Hass Washing Machine Energy
+    trigger:
+       - platform: mqtt
+         topic: 'domoticz/out'
+    condition: 
+       condition: template
+       value_template: '{{ trigger.payload_json.name == "Washing Machine Energy" }}'
+    action:
+       - service: mqtt.publish
+         data_template:
+           # kWh
+           topic: 'home/sensors/washing-machine/electricity/energy'
+           payload_template: '{{ trigger.payload_json.svalue1 }}'
+       - service: mqtt.publish
+         data_template:
+           # kWh
+           topic: 'home/sensors/washing-machine/electricity/total_energy'
+           payload_template: '{{ trigger.payload_json.svalue2 }}'
+
+  - alias: Dz to Hass Washing Machine Power
+    trigger:
+       - platform: mqtt
+         topic: 'domoticz/out'
+    condition: 
+       condition: template
+       value_template: '{{ trigger.payload_json.name == "Washing Machine Power" }}'
+    action:
+       - service: mqtt.publish
+         data_template:
+           # kWh
+           topic: 'home/sensors/washing-machine/electricity/power'
+           payload_template: '{{ trigger.payload_json.svalue1 }}'
 
   - id: "publish_temperatures"
     alias: 'Send temperatures to MQTT'
@@ -175,7 +208,7 @@ automation:
 #       - sensor.rfxcom_parents_room_temperature
 #       - sensor.rfxcom_upper_floor_corridor_humidity
 #       - sensor.rfxcom_upper_floor_corridor_temperature
-       
+
 sensor:
 
   # Add all RFXcom sensors
@@ -234,7 +267,7 @@ sensor:
            - Temperature
            - Humidity
       '115a02138f02000000029300005c04035479':
-        name: Home Energy
+        name: Home
         data_type:
            - Energy usage
            - Total usage
@@ -334,19 +367,29 @@ sensor:
 
   # Powermeters
   - platform: mqtt
-    name: "Powermeter General"
+    name: "Home Energy"
     unit_of_measurement: "kWh"
-    state_topic: "home/sensors/general/electricity/power"
+    state_topic: "home/sensors/general/electricity/energy"
 
   - platform: mqtt
-    name: "Powermeter Home Cinema"
+    name: "Home Cinema Energy"
     unit_of_measurement: "kWh"
-    state_topic: "home/sensors/homecinema/electricity/power"
+    state_topic: "home/sensors/homecinema/electricity/energy"
 
   - platform: mqtt
-    name: "Powermeter Cabinet"
+    name: "Cabinet Energy"
     unit_of_measurement: "kWh"
-    state_topic: "home/sensors/cabinet/electricity/power"
+    state_topic: "home/sensors/cabinet/electricity/energy"
+    
+  - platform: mqtt
+    name: "Washing Machine Energy"
+    unit_of_measurement: "kWh"
+    state_topic: "home/sensors/washing-machine/electricity/energy"
+
+  - platform: mqtt
+    name: "Washing Machine Power"
+    unit_of_measurement: "W"
+    state_topic: "home/sensors/washing-machine/electricity/power"
 
 
 binary_sensor:
@@ -406,7 +449,6 @@ binary_sensor:
     payload_on: "1"
     payload_off: "0"
 
-
 group:
   home_temperatures:
     name: Home Temperatures
@@ -446,8 +488,10 @@ group:
     name: Home Power
     entities:
       # - sensor.powermeter_general
-      - sensor.powermeter_home_cinema
-      - sensor.powermeter_cabinet
+      - sensor.home_cinema_energy
+      - sensor.cabinet_energy
+      - sensor.washing_machine_energy
+      - sensor.washing_machine_power
       - sensor.rfxcom_home_energy_energy_usage
       - sensor.rfxcom_home_energy_total_usage
       
