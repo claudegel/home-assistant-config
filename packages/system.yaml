@@ -8,10 +8,10 @@ sensor:
     name: HA release
     scan_interval: 720
     command: >-
-      python3 -c "
-      import requests;
-      u = 'https://pypi.python.org/pypi/homeassistant/json';
-      print(requests.get(u).json()['info']['version']);
+      python3 -c
+      "import requests
+      ;u = 'https://pypi.python.org/pypi/homeassistant/json'
+      ;print(requests.get(u).json()['info']['version'])
       "
   
   - platform: command_line
