@@ -1,6 +1,7 @@
 # From: 
 #  https://philhawthorne.com/making-dumb-dishwashers-and-washing-machines-smart-alerts-when-the-dishes-and-clothes-are-cleaned/
 
+
 input_select:
   washing_machine_status:
     name: Washing Machine Status
@@ -30,6 +31,7 @@ automation:
         data:
           message: 'notif upon sensor value change'
           title: 'DBG Message'
+
   # When the power drops, move the state of the washin
   - alias: Set washing machine active when power detected
     trigger:
@@ -160,7 +162,9 @@ sensor:
 homeassistant:
   customize:
     sensor.washing_machine_status:
-      icon: mdi:washing-machine
+        icon: mdi:washing-machine
+    input_select.washing_machine_status:
+        persistent: true
 
 
 group:
