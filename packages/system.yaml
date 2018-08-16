@@ -5,7 +5,7 @@ sensor:
     scan_interval: 86400
   
   - platform: command_line
-    name: HA release
+    name: HA Available Version
     scan_interval: 720
     command: >-
       python3 -c
@@ -57,11 +57,17 @@ homeassistant:
   customize:
     group.all_automations:
       hidden: false
+    sensor.ha_installed_version:
+      friendly_name: "Installed version"
+    sensor.ha_available_version:
+      friendly_name: "Available version"
+    sensor.ha_uptime:
+      friendly_name: "Uptime"
 
 group:
-  system:
-    name: Système
+  ha_system:
+    name: Home Assistant System
     entities:
       - sensor.ha_installed_version
-      - sensor.ha_release
+      - sensor.ha_available_version
       - sensor.ha_uptime
