@@ -50,7 +50,7 @@ network_view:
     - group.pihole
     - group.network
     - group.sensors_battery_alert
-  
+
 nas_view:
   icon: mdi:nas
   view: yes
@@ -59,3 +59,10 @@ nas_view:
     - group.nas_storage
     - group.nas_volume1
     - group.nas_volume2
+
+system_view: 
+  view: yes
+  name: System
+  entities: 
+    - group.system
+    - group.all_automations

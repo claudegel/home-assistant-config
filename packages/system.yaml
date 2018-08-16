@@ -50,6 +50,11 @@ sensor:
         {%- endif -%}
       {%- endif -%}
 
+homeassistant:
+  customize:
+    group.all_automations:
+      hidden: false
+
 group:
   system:
     name: Système
