@@ -490,15 +490,12 @@ group:
       - sensor.rfxcom_cigare_cave_humidity
 
   home_power:
-    name: Home Power
+    name: Home Power Meters
     entities:
-      # - sensor.powermeter_general
+      - sensor.rfxcom_home_energy_usage
       - sensor.home_cinema_energy
       - sensor.cabinet_energy
       - sensor.washing_machine_energy
-      - sensor.washing_machine_power
-      - sensor.rfxcom_home_energy_energy_usage
-      - sensor.rfxcom_home_energy_total_usage
       
   sensors_battery_alert:
     name: Alerte Batterie Sondes Temperature

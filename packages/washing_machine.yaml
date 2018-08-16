@@ -8,7 +8,7 @@ input_select:
     options:
       - Idle
       - Running
-      - Finishing
+      - Finished
       - Clean
     initial: Idle
 
@@ -20,26 +20,14 @@ automation:
   # The status check will ensure we don't try to put the state 
   # to Running each time the power level changes, and we're already
   # in the Running state.
-   
-  - alias: 'DBG: notif upon sensor value change'
-    trigger:
-      - platform: numeric_state
-        entity_id: sensor.cabinet_energy
-        above: 100
-    action:
-      - service: notify.pushover
-        data:
-          message: 'notif upon sensor value change'
-          title: 'DBG Message'
 
   # When the power drops, move the state of the washin
   - alias: Set washing machine active when power detected
     trigger:
       - platform: numeric_state
-        entity_id: sensor.washing_machine_power
-        above: 400
-        # entity_id: sensor.cabinet_energy
-        # above: 100
+        # entity_id: sensor.washing_machine_power
+        entity_id: sensor.washing_machine_energy_each_2_min
+        above: 8
     condition:
       condition: or
       conditions:
@@ -51,7 +39,7 @@ automation:
           state: Clean
         - condition: state
           entity_id: sensor.washing_machine_status
-          state: Finishing
+          state: Finished
     action:
       - service: input_select.select_option
         data:
@@ -61,53 +49,62 @@ automation:
         data:
           message: 'Washing Machine is running'
           title: 'Washing Machine Update'
-  # When the power drops, move the state of the washing machine to 
-  # Finishing.
-   
+  
+  # When the power drops, move the state of the washing machine to Clean.
   - alias: Set washing machine finished when power drops
     trigger:
       - platform: numeric_state
-        entity_id: sensor.washing_machine_power
-        below: 4
+        # entity_id: sensor.washing_machine_power
+        entity_id: sensor.washing_machine_energy_each_2_min
+        above: 0.5
+        below: 2
     condition:
-      condition: and
+      condition: or
       conditions:
         - condition: state
           entity_id: input_select.washing_machine_status
+          state: Idle
+        - condition: state
+          entity_id: input_select.washing_machine_status
           state: Running
+        - condition: state
+          entity_id: input_select.washing_machine_status
+          state: Finished
     action:
       - service: input_select.select_option
         data:
           entity_id: input_select.washing_machine_status
-          option: Finishing
+          option: Clean
       - service: notify.pushover
         data:
           message: 'Washing Machine is finishing'
           title: 'Washing Machine Update'
 
-  # Wait 8 minutes for us to be in the Finishing state before we
-  # decide the washing machine has finished. This way, if the 
-  # washing machine is in between cycles and the power drops, we 
-  # won't mark the washing machine cycle as finished too early.
-   
-  - alias: Set washing machine clean after timeout
+  # When the power drops, move the state of the washing machine to Clean.
+  - alias: Set washing machine finished when power drops
     trigger:
-      - platform: state
-        entity_id: input_select.washing_machine_status
-        to: Finishing
-        for:
-          minutes: 8
+      - platform: numeric_state
+        # entity_id: sensor.washing_machine_power
+        entity_id: sensor.washing_machine_energy_each_2_min
+        below: 0.4
     condition:
-      condition: and
+      condition: or
       conditions:
         - condition: state
           entity_id: input_select.washing_machine_status
-          state: Finishing
+          state: Running
+        - condition: state
+          entity_id: input_select.washing_machine_status
+          state: Finished
+        - condition: state
+          entity_id: input_select.washing_machine_status
+          state: Clean
     action:
       - service: input_select.select_option
         data:
           entity_id: input_select.washing_machine_status
-  #        option: Clean
+          option: Idle
+
   # 
   # # When we open the washing machine door, reset the status back to
   # # idle, so we don't spam people that the washing machine has 
@@ -129,15 +126,13 @@ automation:
   #     - service: input_select.select_option
   #       data:
   #         entity_id: input_select.washing_machine_status
-          option: Idle
+  #        option: Idle
 
   - alias: Send alert when washing machine is clean
     trigger:
       - platform: state
         entity_id: input_select.washing_machine_status
-        # to: Clean
-        from: Finishing
-        to: Idle
+        to: Clean
     condition:
       condition: and
       conditions:
@@ -158,13 +153,28 @@ sensor:
         value_template: '{{ states.input_select.washing_machine_status.state}}'
         friendly_name: 'Washing Machine Status'
 
+  - platform: statistics
+    entity_id: sensor.washing_machine_power
+    name: "Washing Machine Energy each 10 samples"
+    sampling_size: 10
+
+  - platform: filter
+    name: "Washing Machine Energy each 2 min"
+    entity_id: sensor.washing_machine_power
+    filters:
+      - filter: time_simple_moving_average
+        window_size: 00:02
+        precision: 2
 
 homeassistant:
   customize:
     sensor.washing_machine_status:
-        icon: mdi:washing-machine
+      icon: mdi:washing-machine
     input_select.washing_machine_status:
-        persistent: true
+      persistent: true
+    sensor.washing_machine_energy_each_2_min:
+      persistent: true
+      friendly_name: "Washing Machine Energy (2 min moving average)"
 
 
 group:
@@ -172,3 +182,4 @@ group:
     name: Washing Machine
     entities:
       - sensor.washing_machine_status
+      - sensor.washing_machine_energy_each_2_min
