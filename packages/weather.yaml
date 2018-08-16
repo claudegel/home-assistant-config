@@ -45,6 +45,13 @@ sensor:
       - alerts
       - dewpoint_c
 
+
+weather:
+  - platform: yweather
+    name: yweather
+    woeid: !secret yweather__woeid
+
+
 group:
   current:
     name: Actuel

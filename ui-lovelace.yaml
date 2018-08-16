@@ -1,9 +1,18 @@
 title: AGS Home
 
+resources:
+  - url: /local/custom_ui/weather-card.js
+    type: js
+
 views:
   - title: Main view
     icon: mdi:home-assistant
     cards:
+
+      - type: "custom:weather-card"
+        entity_weather: weather.yweather
+        entity_sun: sun.sun
+
       - title: Today
         type: entities
         entities:
