@@ -49,11 +49,11 @@ sensor:
     port: 32483
 
 device_tracker:
-  - platform: netgear
-    host: 192.168.0.7
-    port: 5000
-    username: !secret device_tracker__netgear__username
-    password: !secret device_tracker__netgear__password
+
+  - platform: ddwrt
+    host: !secret device_tracker__dd_wrt__host
+    username: !secret device_tracker__dd_wrt__username
+    password: !secret device_tracker__dd_wrt__password
     new_device_defaults:
       track_new_devices: True
       hide_if_away: False
