@@ -67,3 +67,5 @@ notify: !include notify.yaml
 
 rfxtrx:
   device: /dev/ttyUSB0
+  
+zeroconf:
