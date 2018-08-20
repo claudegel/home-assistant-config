@@ -50,14 +50,23 @@ sensor:
 
 device_tracker:
 
-  - platform: ddwrt
-    host: !secret device_tracker__dd_wrt__host
-    username: !secret device_tracker__dd_wrt__username
-    password: !secret device_tracker__dd_wrt__password
+  # - platform: ddwrt
+  #   host: !secret device_tracker__dd_wrt__host
+  #   username: !secret device_tracker__dd_wrt__username
+  #   password: !secret device_tracker__dd_wrt__password
+  #   new_device_defaults:
+  #     track_new_devices: True
+  #     hide_if_away: False
+    
+  - platform: tomato
+    host: !secret device_tracker__tomato__host
+    username: !secret device_tracker__tomato__username
+    password: !secret device_tracker__tomato__password
+    http_id: !secret device_tracker__tomato__http_id
     new_device_defaults:
       track_new_devices: True
       hide_if_away: False
-    
+
   - platform: ping
     interval_seconds: 30
     consider_home: 1200
