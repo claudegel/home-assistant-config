@@ -53,6 +53,11 @@ sensor:
         {%- endif -%}
       {%- endif -%}
 
+  - platform: filesize
+    entity_namespace: hass_
+    file_paths:
+      - /mnt/storage/domotic/homeassistant/recorder.sqlite
+
 homeassistant:
   customize:
     group.all_automations:
