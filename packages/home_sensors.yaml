@@ -301,7 +301,7 @@ sensor:
            - Temperature
            - Humidity
       '0a520227ec020114450079':
-        name: TV Room
+        name: Cabinet
         data_type:
            - Temperature
            - Humidity
@@ -357,6 +357,11 @@ sensor:
     state_topic: "home/sensors/chambre_parentale/temperature"
     unit_of_measurement: "˚C"
 
+  - platform: mqtt
+    name: "Temperature Cabinet"
+    state_topic: "home/sensors/cabinet/temperature"
+    unit_of_measurement: "˚C"
+
 
   # Humidity
   - platform: mqtt
@@ -402,6 +407,11 @@ sensor:
   - platform: mqtt
     name: "Humidity Chambre Parentale"
     state_topic: "home/sensors/chambre_parentale/humidity"
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    name: "Humidity Cabinet"
+    state_topic: "home/sensors/cabinet/humidity"
     unit_of_measurement: "%"
 
   # Powermeters
