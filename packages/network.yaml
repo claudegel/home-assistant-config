@@ -52,12 +52,8 @@ device_tracker:
 
   - platform: netgear
     host: !secret device_tracker__netgear__host
-    port: 80
     username: admin
     password: !secret device_tracker__netgear__password
-    new_device_defaults:
-      track_new_devices: True
-      hide_if_away: False
 
   # - platform: ddwrt
   #   host: !secret device_tracker__dd_wrt__host

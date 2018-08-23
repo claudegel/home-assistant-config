@@ -11,6 +11,12 @@ familly_view:
   entities:
     - group.presence
 
+surveillance_view:
+  view: yes
+  icon: mdi:cctv
+  entities:
+    - group.surveillance
+
 measurement_view:
   view: yes
   icon: mdi:ruler

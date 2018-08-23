@@ -1,0 +1,15 @@
+camera:
+  - platform: generic
+    # host: 192.168.0.110
+    # port: !secret camera__ip_1__port
+    still_image_url: "http://192.168.0.110:80/Streaming/channels/1/picture"
+    name: "Camera IP 1"
+    username: !secret camera__ip_1__username
+    password: !secret camera__ip_1__password
+
+
+group:
+  surveillance:
+    name: Surveillance
+    entities:
+      - camera.camera_ip_1
