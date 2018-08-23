@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "045d18f0091e046484757c442f09e6aa7b2c8f0bbeb524c906dfbfd621af7c2f"
+            "sha256": "38ddb076d98490240a1688b702e4b0bb14d4c89c2b7386ab65f22306c78af4fb"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -201,11 +201,11 @@
         },
         "homeassistant": {
             "hashes": [
-                "sha256:83f0f4b15992134ddd6687e1422c76490336560bb40094f5f3956c68932cbcdc",
-                "sha256:97aecce1b7b97a8ae20d48ea45fbf673d4f188a18abf842c8c54864848a3c0c1"
+                "sha256:dd27d1c6031639c1b2e5547ef01d4587c68eba3b8d9c97d03f65af0547019ea8",
+                "sha256:f3415a3ea6267970ce26e68d8deb3b19bacacd0da8bcd7dd7a8468a390afd14f"
             ],
             "index": "pypi",
-            "version": "==0.76.1"
+            "version": "==0.76.2"
         },
         "i2csense": {
             "hashes": [
@@ -279,6 +279,14 @@
                 "sha256:4ee413b357d53fd3fb44704577afac88e72e878716116270d722723d65b42176"
             ],
             "version": "==1.6.4"
+        },
+        "pyotp": {
+            "hashes": [
+                "sha256:8f0df1fcf9e86cec41f0a31c91212b1a04fca6dd353426917222b21864b9310b",
+                "sha256:dd9130dd91a0340d89a0f06f887dbd76dd07fb95a8886dc4bc401239f2eebd69"
+            ],
+            "index": "pypi",
+            "version": "==2.2.6"
         },
         "python-synology": {
             "hashes": [
