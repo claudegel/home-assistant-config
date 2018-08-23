@@ -73,3 +73,7 @@ chronograf:
   icon: mdi:chart-line-stacked
   url: !secret panel_iframe__chronograf__url
 
+monit:
+  title: Monit (local)
+  icon: mdi:clipboard-pulse-outline
+  url: !secret panel_iframe__monit__url
