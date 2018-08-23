@@ -1,36 +1,92 @@
 # From: 
 #  https://philhawthorne.com/making-dumb-dishwashers-and-washing-machines-smart-alerts-when-the-dishes-and-clothes-are-cleaned/
 
+# (pwr < 0.2)
+#  |
+#  |
+# Stopped    ----------\
+#  |                   |
+#  | (2 < pwr < 12)    |
+#  |                   |
+# Idle                 |
+#  |                   |
+#  | ( pwr > 12)       |
+#  |                   | <------\
+# Running  <-----------/        |
+#  |                            |
+#  | ( 0.2 < pwr < 4)           | ( pwr > 12)  
+#  |                            |
+# Finished ---------------------/
+#  |
+#  | ( < 0.2)
+#  |
+# Stopped
+
 
 input_select:
   washing_machine_status:
     name: Washing Machine Status
     options:
+      - Stopped
       - Idle
       - Running
       - Finished
-      - Clean
-    initial: Idle
+    initial: Stopped
 
 
 automation:
-  # When power is detected, and the washing machine is not in 
-  # the Running state, change the status of the washing machine
-  # to Running. 
-  # The status check will ensure we don't try to put the state 
-  # to Running each time the power level changes, and we're already
-  # in the Running state.
 
-  # When the power drops, move the state of the washin
+  # When the power is very low or null, reset it to Stopped
+  - alias: Set washing machine finished when power drops
+    trigger:
+      - platform: numeric_state
+        # entity_id: sensor.washing_machine_power
+        entity_id: sensor.washing_machine_energy_each_2_min
+        below: 0.4
+    action:
+      - service: input_select.select_option
+        data:
+          entity_id: input_select.washing_machine_status
+          option: Stopped
+
+  # When the power is not null but not too high, it is probably the
+  # idle time. Set it to Idle
+  - alias: Set washing machine finished when power drops
+    trigger:
+      - platform: numeric_state
+        # entity_id: sensor.washing_machine_power
+        entity_id: sensor.washing_machine_energy_each_2_min
+        above: 2
+        below: 12
+    condition:
+      condition: or
+      conditions:
+        - condition: state
+          entity_id: input_select.washing_machine_status
+          state: Stopped
+    action:
+      - service: input_select.select_option
+        data:
+          entity_id: input_select.washing_machine_status
+          option: Idle
+      - service: notify.pushover
+        data:
+          message: 'Washing Machine is idle'
+          title: 'Washing Machine Update'
+
+
   - alias: Set washing machine active when power detected
     trigger:
       - platform: numeric_state
         # entity_id: sensor.washing_machine_power
         entity_id: sensor.washing_machine_energy_each_2_min
-        above: 8
+        above: 12
     condition:
       condition: or
       conditions:
+        - condition: state
+          entity_id: sensor.washing_machine_status
+          state: Stopped
         - condition: state
           entity_id: sensor.washing_machine_status
           state: Idle
@@ -56,89 +112,35 @@ automation:
       - platform: numeric_state
         # entity_id: sensor.washing_machine_power
         entity_id: sensor.washing_machine_energy_each_2_min
-        above: 0.5
-        below: 2
+        above: 0.2
+        below: 4
     condition:
       condition: or
       conditions:
         - condition: state
           entity_id: input_select.washing_machine_status
-          state: Idle
-        - condition: state
-          entity_id: input_select.washing_machine_status
           state: Running
-        - condition: state
-          entity_id: input_select.washing_machine_status
-          state: Finished
     action:
       - service: input_select.select_option
         data:
           entity_id: input_select.washing_machine_status
-          option: Clean
+          option: Finished
       - service: notify.pushover
         data:
           message: 'Washing Machine is finishing'
           title: 'Washing Machine Update'
 
-  # When the power drops, move the state of the washing machine to Clean.
-  - alias: Set washing machine finished when power drops
-    trigger:
-      - platform: numeric_state
-        # entity_id: sensor.washing_machine_power
-        entity_id: sensor.washing_machine_energy_each_2_min
-        below: 0.4
-    condition:
-      condition: or
-      conditions:
-        - condition: state
-          entity_id: input_select.washing_machine_status
-          state: Running
-        - condition: state
-          entity_id: input_select.washing_machine_status
-          state: Finished
-        - condition: state
-          entity_id: input_select.washing_machine_status
-          state: Clean
-    action:
-      - service: input_select.select_option
-        data:
-          entity_id: input_select.washing_machine_status
-          option: Idle
-
-  # 
-  # # When we open the washing machine door, reset the status back to
-  # # idle, so we don't spam people that the washing machine has 
-  # # finished, and someone has already emptied it
-  # - alias: Set washing machine dirty when door opens
-  #   trigger:
-  #     # I've setup a template sensor to change make the binary_sensor report open and closed
-  #     # instead of 1 and 0
-  #     - platform: state
-  #       entity_id: input_select.washingmachine_door_status
-  #       to: 'Open'
-  #   condition:
-  #     condition: and
-  #     conditions:
-  #       - condition: state
-  #         entity_id: input_select.washing_machine_status
-  #         state: Clean
-  #   action:
-  #     - service: input_select.select_option
-  #       data:
-  #         entity_id: input_select.washing_machine_status
-  #        option: Idle
-
   - alias: Send alert when washing machine is clean
     trigger:
       - platform: state
         entity_id: input_select.washing_machine_status
-        to: Clean
+        to: Finished
     condition:
       condition: and
       conditions:
         - condition: state
           entity_id: input_select.washing_machine_status
-          state: Clean
+          state: Running
     action:
       - service: notify.pushover
         data:
