@@ -102,3 +102,303 @@ media_player.emby__emby_mobile__chrome_android_2:
   platform: emby
   unique_id: TW96aWxsYS81LjAgKExpbnV4OyBBbmRyb2lkIDcuMS4xOyBaVEUgQTIwMTdHIEJ1aWxkL05NRjI2VikgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY3LjAuMzM5Ni44NyBNb2JpbGUgU2FmYXJpLzUzNy4zNnwxNTI5MDY0NzUxMDMz.Emby
     Mobile
+zwave.controller:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: node-1
+zwave.thermostat_transmitter:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: node-3
+switch.thermostat_transmitter_switch:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093060096
+climate.thermostat_transmitter_heating_1:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093551634
+zwave.washing_machine_smart_plug:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: node-5
+sensor.washing_machine_smart_plug_power:
+  config_entry_id:
+  name: Washing Machine Power
+  platform: zwave
+  unique_id: 5-72057594126811202
+switch.washing_machine_smart_plug_switch:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 5-72057594126614528
+sensor.washing_machine_smart_plug_power_2:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 5-72057594126827650
+sensor.washing_machine_smart_plug_exporting:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 5-72057594126828032
+sensor.washing_machine_smart_plug_energy:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 5-72057594126827522
+zwave.home_cinema_smart_plug:
+  config_entry_id:
+  name: FIBARO FGWPE/F Wall Plug Gen5 (Home Cinema)
+  platform: zwave
+  unique_id: node-6
+switch.home_cinema_smart_plug_switch:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 6-72057594143391744
+sensor.home_cinema_smart_plug_alarm_type:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 6-72057594144636929
+sensor.home_cinema_smart_plug_alarm_level:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 6-72057594144636945
+sensor.home_cinema_smart_plug_power:
+  config_entry_id:
+  name: Home Cinema Power
+  platform: zwave
+  unique_id: 6-72057594143588418
+sensor.home_cinema_smart_plug_power_2:
+  config_entry_id:
+  name: Home Cinema Power
+  platform: zwave
+  unique_id: 6-72057594143604866
+sensor.home_cinema_smart_plug_exportin:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 6-72057594143605248
+sensor.home_cinema_smart_plug_sourcenodeid:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 6-72057594144636961
+sensor.home_cinema_smart_plug_power_management:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 6-72057594144637105
+sensor.home_cinema_smart_plug_energy:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 6-72057594143604738
+zwave.entrance_multisensor:
+  config_entry_id:
+  name: Aeotec ZW100 MultiSensor 6 (Entrance)
+  platform: zwave
+  unique_id: node-7
+binary_sensor.entrance_multisensor_sensor:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 7-72057594160349184
+sensor.entrance_multisensor_temperature:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 7-72057594160365586
+sensor.entrance_multisensor_luminance:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 7-72057594160365618
+sensor.entrance_multisensor_relative_humidity:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 7-72057594160365650
+sensor.entrance_multisensor_ultraviolet:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 7-72057594160366002
+sensor.entrance_multisensor_sourcenodeid:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 7-72057594161414177
+sensor.entrance_multisensor_burglar:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 7-72057594161414305
+sensor.entrance_multisensor_alarm_type:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 7-72057594161414145
+sensor.entrance_multisensor_alarm_level:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 7-72057594161414161
+zwave.dark_blue_smart_plug:
+  config_entry_id:
+  name: NodOn MSP-3-1-XX Micro Smart Plug (Dark Blue)
+  platform: zwave
+  unique_id: node-9
+sensor.dark_blue_smart_plug_power:
+  config_entry_id:
+  name: Dark Blue Smart Plug Power
+  platform: zwave
+  unique_id: 9-72057594193936514
+sensor.dark_blue_smart_plug_exporting:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 9-72057594193936896
+sensor.dark_blue_smart_plug_alarm_type:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 9-72057594194968577
+sensor.dark_blue_smart_plug_alarm_level:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 9-72057594194968593
+sensor.dark_blue_smart_plug_sourcenodeid:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 9-72057594194968609
+sensor.dark_blue_smart_plug_power_management:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 9-72057594194968753
+sensor.dark_blue_smart_plug_system:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 9-72057594194968769
+sensor.dark_blue_smart_plug_energy_2:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 9-72057594193936386
+switch.dark_blue_smart_plug_switch:
+  config_entry_id:
+  name: Dark Blue Smart Plug Switch
+  platform: zwave
+  unique_id: 9-72057594193723392
+zwave.cabinet_smart_plug:
+  config_entry_id:
+  name: NodOn MSP-3-1-XX Micro Smart Plug (Cabinet)
+  platform: zwave
+  unique_id: node-10
+sensor.cabinet_smart_plug_previous_reading:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 10-72057594210713618
+sensor.cabinet_smart_plug_interval:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 10-72057594210713635
+sensor.cabinet_smart_plug_energy:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 10-72057594210713602
+switch.cabinet_smart_plug_switch_2:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 10-72057594210500608
+sensor.cabinet_smart_plug_system_2:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 10-72057594211745985
+sensor.cabinet_smart_plug_sourcenodeid:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 10-72057594211745825
+sensor.cabinet_smart_plug_power_management:
+  config_entry_id:
+  name: Cabinet Power
+  platform: zwave
+  unique_id: 10-72057594211745969
+sensor.cabinet_smart_plug_alarm_type:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 10-72057594211745793
+sensor.cabinet_smart_plug_alarm_level_1:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 10-7205759421174580
+sensor.dark_blue_smart_plug_previous_reading:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 9-72057594193936402
+sensor.dark_blue_smart_plug_interval:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 9-72057594193936419
+sensor.dark_blue_smart_plug_previous_reading_2:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 9-72057594193936530
+sensor.dark_blue_smart_plug_interval_2:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 9-72057594193936547
+sensor.cabinet_smart_plug_alarm_level_2:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 10-72057594211745809
+zwave.boiler_actuator:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: node-4
+switch.boiler_actuator_switch:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 4-72057594109837312
+sensor.horstmann_hrt4zw_thermostat_transmitter_temperature:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093256722
+sensor.cabinet_smart_plug_power:
+  config_entry_id:
+  name: Cabinet Power
+  platform: zwave
+  unique_id: 10-72057594210713730
+sensor.cabinet_smart_plug_exporting:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 10-72057594210714112

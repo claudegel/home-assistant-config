@@ -2,161 +2,161 @@ automation:
 
   - alias: Dz to Hass Temp+Humidity
     trigger:
-       - platform: mqtt
-         topic: 'domoticz/out'
+      - platform: mqtt
+        topic: 'domoticz/out'
     condition: 
-       condition: template
-       value_template: '{{ trigger.payload_json.dtype == "Temp + Humidity" }}'
+      condition: template
+      value_template: '{{ trigger.payload_json.dtype == "Temp + Humidity" }}'
     action:
-       - service: mqtt.publish
-         data_template:
-           topic: 'home/sensors/{{ trigger.payload_json.name | replace(" ", "_") | lower }}/temperature'
-           payload_template: '{{ trigger.payload_json.svalue1 }}'
-       - service: mqtt.publish
-         data_template:
-           topic: 'home/sensors/{{ trigger.payload_json.name | replace(" ", "_") | lower }}/humidity'
-           payload_template: '{{ trigger.payload_json.svalue2 }}'
-       - service: mqtt.publish
-         data_template:
-           topic: 'home/sensors/{{ trigger.payload_json.name | replace(" ", "_") | lower }}/low_battery'
-           payload_template: '{{ trigger.payload_json.svalue3 }}'
+      - service: mqtt.publish
+        data_template:
+          topic: 'home/sensors/{{ trigger.payload_json.name | replace(" ", "_") | lower }}/temperature'
+          payload_template: '{{ trigger.payload_json.svalue1 }}'
+      - service: mqtt.publish
+        data_template:
+          topic: 'home/sensors/{{ trigger.payload_json.name | replace(" ", "_") | lower }}/humidity'
+          payload_template: '{{ trigger.payload_json.svalue2 }}'
+      - service: mqtt.publish
+        data_template:
+          topic: 'home/sensors/{{ trigger.payload_json.name | replace(" ", "_") | lower }}/low_battery'
+          payload_template: '{{ trigger.payload_json.svalue3 }}'
 
   - alias: Dz to Hass General Energy
     trigger:
-       - platform: mqtt
-         topic: 'domoticz/out'
+      - platform: mqtt
+        topic: 'domoticz/out'
     condition: 
-       condition: template
-       value_template: '{{ trigger.payload_json.name == "Consommation Électrique Totale" }}'
+      condition: template
+      value_template: '{{ trigger.payload_json.name == "Consommation Électrique Totale" }}'
     action:
-       - service: mqtt.publish
-         data_template:
-           # kWh
-           topic: 'home/sensors/home/electricity/energy'
-           payload_template: '{{ trigger.payload_json.svalue1 }}'
-       - service: mqtt.publish
-         data_template:
-           # kWh
-           topic: 'home/sensors/home/electricity/total_energy'
-           payload_template: '{{ trigger.payload_json.svalue2 }}'
+      - service: mqtt.publish
+        data_template:
+          # kWh
+          topic: 'home/sensors/home/electricity/energy'
+          payload_template: '{{ trigger.payload_json.svalue1 }}'
+      - service: mqtt.publish
+        data_template:
+          # kWh
+          topic: 'home/sensors/home/electricity/total_energy'
+          payload_template: '{{ trigger.payload_json.svalue2 }}'
            
   - alias: Dz to Hass General Energy
     trigger:
-       - platform: mqtt
-         topic: 'domoticz/out'
+      - platform: mqtt
+        topic: 'domoticz/out'
     condition: 
-       condition: template
-       value_template: '{{ trigger.payload_json.name == "Consommation Électrique Totale" }}'
+      condition: template
+      value_template: '{{ trigger.payload_json.name == "Consommation Électrique Totale" }}'
     action:
-       - service: mqtt.publish
-         data_template:
-           # kWh
-           topic: 'home/sensors/general/electricity/energy'
-           payload_template: '{{ trigger.payload_json.svalue1 }}'
-       - service: mqtt.publish
-         data_template:
-           # kWh
-           topic: 'home/sensors/general/electricity/total_energy'
-           payload_template: '{{ trigger.payload_json.svalue2 }}'
+      - service: mqtt.publish
+        data_template:
+          # kWh
+          topic: 'home/sensors/general/electricity/energy'
+          payload_template: '{{ trigger.payload_json.svalue1 }}'
+      - service: mqtt.publish
+        data_template:
+          # kWh
+          topic: 'home/sensors/general/electricity/total_energy'
+          payload_template: '{{ trigger.payload_json.svalue2 }}'
 
   - alias: Dz to Hass Cabinet Energy
     trigger:
-       - platform: mqtt
-         topic: 'domoticz/out'
+      - platform: mqtt
+        topic: 'domoticz/out'
     condition: 
-       condition: template
-       value_template: '{{ trigger.payload_json.name == "Cabinet Energy" }}'
+      condition: template
+      value_template: '{{ trigger.payload_json.name == "Cabinet Energy" }}'
     action:
-       - service: mqtt.publish
-         data_template:
-           # kWh
-           topic: 'home/sensors/cabinet/electricity/energy'
-           payload_template: '{{ trigger.payload_json.svalue1 }}'
-       - service: mqtt.publish
-         data_template:
-           # kWh
-           topic: 'home/sensors/cabinet/electricity/total_energy'
-           payload_template: '{{ trigger.payload_json.svalue2 }}'
+      - service: mqtt.publish
+        data_template:
+          # kWh
+          topic: 'home/sensors/cabinet/electricity/energy'
+          payload_template: '{{ trigger.payload_json.svalue1 }}'
+      - service: mqtt.publish
+        data_template:
+          # kWh
+          topic: 'home/sensors/cabinet/electricity/total_energy'
+          payload_template: '{{ trigger.payload_json.svalue2 }}'
            
   - alias: Dz to Hass Home Cinema Energy
     trigger:
-       - platform: mqtt
-         topic: 'domoticz/out'
+      - platform: mqtt
+        topic: 'domoticz/out'
     condition: 
-       condition: template
-       value_template: '{{ trigger.payload_json.name == "Home Cinema Energy" }}'
+      condition: template
+      value_template: '{{ trigger.payload_json.name == "Home Cinema Energy" }}'
     action:
-       - service: mqtt.publish
-         data_template:
-           # kWh
-           topic: 'home/sensors/homecinema/electricity/energy'
-           payload_template: '{{ trigger.payload_json.svalue1 }}'
-       - service: mqtt.publish
-         data_template:
-           # kWh
-           topic: 'home/sensors/homecinema/electricity/total_energy'
-           payload_template: '{{ trigger.payload_json.svalue2 }}'
+      - service: mqtt.publish
+        data_template:
+          # kWh
+          topic: 'home/sensors/homecinema/electricity/energy'
+          payload_template: '{{ trigger.payload_json.svalue1 }}'
+      - service: mqtt.publish
+        data_template:
+          # kWh
+          topic: 'home/sensors/homecinema/electricity/total_energy'
+          payload_template: '{{ trigger.payload_json.svalue2 }}'
 
   - alias: Dz to Hass Washing Machine Energy
     trigger:
-       - platform: mqtt
-         topic: 'domoticz/out'
+      - platform: mqtt
+        topic: 'domoticz/out'
     condition: 
-       condition: template
-       value_template: '{{ trigger.payload_json.name == "Washing Machine Energy" }}'
+      condition: template
+      value_template: '{{ trigger.payload_json.name == "Washing Machine Energy" }}'
     action:
-       - service: mqtt.publish
-         data_template:
-           # kWh
-           topic: 'home/sensors/washing-machine/electricity/energy'
-           payload_template: '{{ trigger.payload_json.svalue1 }}'
-       - service: mqtt.publish
-         data_template:
-           # kWh
-           topic: 'home/sensors/washing-machine/electricity/total_energy'
-           payload_template: '{{ trigger.payload_json.svalue2 }}'
+      - service: mqtt.publish
+        data_template:
+          # kWh
+          topic: 'home/sensors/washing-machine/electricity/energy'
+          payload_template: '{{ trigger.payload_json.svalue1 }}'
+      - service: mqtt.publish
+        data_template:
+          # kWh
+          topic: 'home/sensors/washing-machine/electricity/total_energy'
+          payload_template: '{{ trigger.payload_json.svalue2 }}'
 
   - alias: Dz to Hass Washing Machine Power
     trigger:
-       - platform: mqtt
-         topic: 'domoticz/out'
+      - platform: mqtt
+        topic: 'domoticz/out'
     condition: 
-       condition: template
-       value_template: '{{ trigger.payload_json.name == "Washing Machine Power" }}'
+      condition: template
+      value_template: '{{ trigger.payload_json.name == "Washing Machine Power" }}'
     action:
-       - service: mqtt.publish
-         data_template:
-           # kWh
-           topic: 'home/sensors/washing-machine/electricity/power'
-           payload_template: '{{ trigger.payload_json.svalue1 }}'
+      - service: mqtt.publish
+        data_template:
+          # kWh
+          topic: 'home/sensors/washing-machine/electricity/power'
+          payload_template: '{{ trigger.payload_json.svalue1 }}'
 
   - alias: Dz to Hass SRT321 Battery Level
     trigger:
-       - platform: mqtt
-         topic: 'domoticz/out'
+      - platform: mqtt
+        topic: 'domoticz/out'
     condition: 
-       condition: template
-       value_template: '{{ trigger.payload_json.name == "Battery Levels - SRT321" }}'
+      condition: template
+      value_template: '{{ trigger.payload_json.name == "Battery Levels - SRT321" }}'
     action:
-       - service: mqtt.publish
-         data_template:
-           # kWh
-           topic: 'home/sensors/thermostat/battery/level'
-           payload_template: '{{ trigger.payload_json.svalue1 }}'
+      - service: mqtt.publish
+        data_template:
+          # kWh
+          topic: 'home/sensors/thermostat/battery/level'
+          payload_template: '{{ trigger.payload_json.svalue1 }}'
 
   - alias: Dz to Hass SRT321 Setpoint
     trigger:
-       - platform: mqtt
-         topic: 'domoticz/out'
+      - platform: mqtt
+        topic: 'domoticz/out'
     condition: 
-       condition: template
-       value_template: '{{ trigger.payload_json.name == "SRT321 Consigne" }}'
+      condition: template
+      value_template: '{{ trigger.payload_json.name == "SRT321 Consigne" }}'
     action:
-       - service: mqtt.publish
-         data_template:
-           # kWh
-           topic: 'home/sensors/thermostat/setpoint'
-           payload_template: '{{ trigger.payload_json.svalue1 }}'
+      - service: mqtt.publish
+        data_template:
+          # kWh
+          topic: 'home/sensors/thermostat/setpoint'
+          payload_template: '{{ trigger.payload_json.svalue1 }}'
 
   - id: "publish_temperatures"
     alias: 'Send temperatures to MQTT'
@@ -221,32 +221,7 @@ automation:
       service: notify.pushover
       data:
         message: 'Battery of SRT31 thermostat is low!'
-           
-# influxdb:
-#   include:
-#     entities:
-#       - sensor.rfxcom_bathroom_humidity
-#       - sensor.rfxcom_bathroom_temperature
-#       - sensor.rfxcom_cigare_cave_humidity
-#       - sensor.rfxcom_cigare_cave_temperature
-#       - sensor.rfxcom_friend_room_humidity
-#       - sensor.rfxcom_friend_room_temperature
-#       - sensor.rfxcom_garage_humidity
-#       - sensor.rfxcom_garage_temperature
-#       - sensor.rfxcom_home_energy_energy_usage
-#       - sensor.rfxcom_home_energy_total_usage
-#       - sensor.rfxcom_kitchen_humidity
-#       - sensor.rfxcom_kitchen_temperature
-#       - sensor.rfxcom_living_room_humidity
-#       - sensor.rfxcom_living_room_temperature
-#       - sensor.rfxcom_office_humidity
-#       - sensor.rfxcom_office_temperature
-#       - sensor.rfxcom_outside_humidity
-#       - sensor.rfxcom_outside_temperature
-#       - sensor.rfxcom_parent_room_humidity
-#       - sensor.rfxcom_parents_room_temperature
-#       - sensor.rfxcom_upper_floor_corridor_humidity
-#       - sensor.rfxcom_upper_floor_corridor_temperature
+
 
 sensor:
 
@@ -415,35 +390,35 @@ sensor:
     unit_of_measurement: "%"
 
   # Powermeters
-  - platform: mqtt
-    name: "Home Energy"
-    unit_of_measurement: "kWh"
-    state_topic: "home/sensors/general/electricity/energy"
-    value_template: '{{ value | round(1) }}'
+  # - platform: mqtt
+  #   name: "Home Energy"
+  #   unit_of_measurement: "kWh"
+  #   state_topic: "home/sensors/general/electricity/energy"
+  #   value_template: '{{ value | round(1) }}'
 
-  - platform: mqtt
-    name: "Home Cinema Energy"
-    unit_of_measurement: "kWh"
-    state_topic: "home/sensors/homecinema/electricity/energy"
-    value_template: '{{ value | round(1) }}'
+  # - platform: mqtt
+  #   name: "Home Cinema Energy"
+  #   unit_of_measurement: "kWh"
+  #   state_topic: "home/sensors/homecinema/electricity/energy"
+  #   value_template: '{{ value | round(1) }}'
 
-  - platform: mqtt
-    name: "Cabinet Energy"
-    unit_of_measurement: "kWh"
-    state_topic: "home/sensors/cabinet/electricity/energy"
-    value_template: '{{ value | round(1) }}'
+  # - platform: mqtt
+  #   name: "Cabinet Energy"
+  #   unit_of_measurement: "kWh"
+  #   state_topic: "home/sensors/cabinet/electricity/energy"
+  #   value_template: '{{ value | round(1) }}'
     
-  - platform: mqtt
-    name: "Washing Machine Energy"
-    unit_of_measurement: "kWh"
-    state_topic: "home/sensors/washing-machine/electricity/energy"
-    value_template: '{{ value | round(1) }}'
+  # - platform: mqtt
+  #   name: "Washing Machine Energy"
+  #   unit_of_measurement: "kWh"
+  #   state_topic: "home/sensors/washing-machine/electricity/energy"
+  #   value_template: '{{ value | round(1) }}'
 
-  - platform: mqtt
-    name: "Washing Machine Power"
-    unit_of_measurement: "W"
-    state_topic: "home/sensors/washing-machine/electricity/power"
-    value_template: '{{ value | round(1) }}'
+  # - platform: mqtt
+  #   name: "Washing Machine Power"
+  #   unit_of_measurement: "W"
+  #   state_topic: "home/sensors/washing-machine/electricity/power"
+  #   value_template: '{{ value | round(1) }}'
 
   # SRT321
   - platform: mqtt
@@ -519,15 +494,6 @@ group:
   home_temperatures:
     name: Home Temperatures
     entities:
-      # - sensor.temperature_exterieur_maison
-      # - sensor.temperature_chambre_parentale
-      # - sensor.temperature_chambre_amis
-      # - sensor.temperature_bureau
-      # - sensor.temperature_couloir_haut
-      # - sensor.temperature_salon
-      # - sensor.temperature_cuisine
-      # - sensor.temperature_cave_cigare
-      # - sensor.temperature_garage
       - sensor.rfxcom_bathroom_temperature
       - sensor.rfxcom_friend_room_temperature
       - sensor.rfxcom_garage_temperature
@@ -560,9 +526,14 @@ group:
     name: Home Power Meters
     entities:
       - sensor.rfxcom_home_energy_usage
-      - sensor.home_cinema_energy
-      - sensor.cabinet_energy
-      - sensor.washing_machine_energy
+      - sensor.cabinet_smart_plug_power
+      - sensor.washing_machine_smart_plug_power
+      - sensor.home_cinema_smart_plug_power
+      - sensor.dark_blue_smart_plug_power
+      - switch.dark_blue_smart_plug_switch
+      # - sensor.home_cinema_energy
+      # - sensor.cabinet_energy
+      # - sensor.washing_machine_energy
       
   sensors_battery_alert:
     name: Alerte Batterie Sondes Temperature

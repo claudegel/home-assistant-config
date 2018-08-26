@@ -76,3 +76,16 @@ group:
       - sensor.ha_installed_version
       - sensor.ha_available_version
       - sensor.ha_uptime
+
+  zwave_devices:
+    name: Z-Wave devices
+    entities:
+      - zwave.controller
+      - zwave.cabinet_smart_plug
+      - zwave.dark_blue_smart_plug
+      - zwave.entrance_multisensor
+      - zwave.home_cinema_smart_plug
+      - zwave.boiler_actuator
+      - zwave.thermostat_transmitter
+      - zwave.washing_machine_wall_plug
+  

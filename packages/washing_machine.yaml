@@ -162,7 +162,8 @@ sensor:
 
   - platform: filter
     name: "Washing Machine Energy each 2 min"
-    entity_id: sensor.washing_machine_power
+    # entity_id: sensor.washing_machine_power
+    entity_id: sensor.washing_machine_smart_plug_power
     filters:
       - filter: time_simple_moving_average
         window_size: 00:02
