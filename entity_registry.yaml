@@ -387,7 +387,7 @@ switch.boiler_actuator_switch:
   name:
   platform: zwave
   unique_id: 4-72057594109837312
-sensor.horstmann_hrt4zw_thermostat_transmitter_temperature:
+sensor.thermostat_transmitter_temperature:
   config_entry_id:
   name:
   platform: zwave
