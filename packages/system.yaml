@@ -67,7 +67,7 @@ homeassistant:
     sensor.ha_available_version:
       friendly_name: "Available version"
     sensor.ha_uptime:
-      friendly_name: "Uptime"
+      friendly_name: "Domot Server Uptime"
 
 group:
   ha_system:

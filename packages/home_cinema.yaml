@@ -36,17 +36,65 @@ sensor:
       - ups.load
       - ups.status.display
   
-  - name: Uptime OSMC
+  - name: OSMC Uptime
     platform: mqtt
     state_topic: "home/osmc/uptime/sec"
     unit_of_measurement: 'sec'
 
-  - name: Temp OSMC
+  - name: OSMC Temperature
     platform: mqtt
     state_topic: "home/osmc/cpu/temp"
     unit_of_measurement: '°C'
 
+  - platform: template
+    sensors:
+      osmc_uptime_templated:
+        value_template: >-
+          {%- set value = states('sensor.osmc_uptime').partition(' ')[0] -%}
+          {# {% set value = 24 * 3600 + 0 * 60 * 60 + 20 * 60 %}#}
+          {% set uptime = value | int %}
+          {% set seconds = uptime % 60 %}
+          {% set minutes = ((uptime % 3600) / 60) | int %}
+          {% set hours = ((uptime % 86400) / 3600) | int %}
+          {% set days = (uptime / 86400) | int %}
+          {%- if days > 0 -%}
+            {%- if days == 1 -%}
+              1 day
+            {%- else -%}
+              {{ days }} days
+            {%- endif -%}
+            {{ ', ' }}
+          {%- endif -%}
+          {%- if hours > 0 -%}
+            {%- if hours == 1 -%}
+              1 h
+            {%- else -%}
+              {{ hours }} h
+            {%- endif -%}
+            {{ ' ' }}
+          {%- endif -%}
+          {%- if minutes > 0 -%}
+            {%- if minutes == 1 -%}
+              1 min
+            {%- else -%}
+              {{ minutes }} min
+            {%- endif -%}
+            {{ ' ' }}
+          {%- endif -%}
+          {%- if uptime < 5 * 60 -%}
+            {%- if seconds == 1 -%}
+              1 sec
+            {%- elif seconds > 1 -%}
+              {{ seconds }} sec
+            {%- endif -%}
+          {%- endif -%}
 
+
+homeassistant:
+  customize:
+    sensor.osmc_uptime_templated:
+      friendly_name: Since last boot
+      
 media_player:
   - platform: kodi
     id: kodi_living_room
@@ -85,8 +133,8 @@ group:
   homecine_network:
     name: Home Cinema Information
     entities:
-      - sensor.uptime_osmc
-      - sensor.temp_osmc
+      - sensor.osmc_uptime_templated
+      - sensor.osmc_temperature
       - sensor.home_cinema_ups_status
       - sensor.home_cinema_ups_battery_charge
       - sensor.home_cinema_ups_low_battery_setpoint

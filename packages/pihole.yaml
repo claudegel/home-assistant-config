@@ -55,8 +55,8 @@ sensor:
   - name: Uptime PiHole
     platform: mqtt
     state_topic: home/pihole/uptime/sec
-    unit_of_measurement: 'sec'
     value_template: >-
+      {# {% set value = 24 * 3600 + 0 * 60 * 60 + 20 * 60 %}#}
       {% set uptime = value | int %}
       {% set seconds = uptime % 60 %}
       {% set minutes = ((uptime % 3600) / 60) | int %}
@@ -72,19 +72,28 @@ sensor:
       {%- endif -%}
       {%- if hours > 0 -%}
         {%- if hours == 1 -%}
-          1 hour
+          1 h
         {%- else -%}
-          {{ hours }} hours
+          {{ hours }} h
         {%- endif -%}
-        {{ ', ' }}
+        {{ ' ' }}
       {%- endif -%}
       {%- if minutes > 0 -%}
         {%- if minutes == 1 -%}
-          1 minute
+          1 min
         {%- else -%}
-          {{ minutes }} minutes
+          {{ minutes }} min
+        {%- endif -%}
+        {{ ' ' }}
+      {%- endif -%}
+      {%- if uptime < 5 * 60 -%}
+        {%- if seconds == 1 -%}
+          1 sec
+        {%- elif seconds > 1 -%}
+          {{ seconds }} sec
         {%- endif -%}
       {%- endif -%}
+
     
   - name: Temp PiHole
     platform: mqtt
