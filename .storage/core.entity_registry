@@ -1,0 +1,568 @@
+{
+    "data": {
+        "entities": [
+            {
+                "config_entry_id": "424daed45a794f7990e2a766e3b120c2",
+                "entity_id": "light.hue_iris_aurelie",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:01:23:53:18-0b"
+            },
+            {
+                "config_entry_id": "424daed45a794f7990e2a766e3b120c2",
+                "entity_id": "light.hue_iris_gaetan",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:00:12:19:72-0b"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "media_player.emby__kodi__osmc",
+                "name": null,
+                "platform": "emby",
+                "unique_id": "2522C335CDD94CA6BD54F15B8FB98111.Kodi"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "media_player.emby__emby_mobile__chrome",
+                "name": null,
+                "platform": "emby",
+                "unique_id": "c24eba2ce432448fc555913d88626ae80168ac9f.Emby Mobile"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "media_player.emby__home_assistant__homeassistant",
+                "name": null,
+                "platform": "emby",
+                "unique_id": "6d2a782da441410f8d16acede71fd75a.Home Assistant"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "media_player.emby__emby_for_ios__iphone81",
+                "name": null,
+                "platform": "emby",
+                "unique_id": "C8B0481D-0AA9-4648-B973-D9106F9E92AF.Emby for iOS"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "media_player.emby__kodi__osmc_2",
+                "name": null,
+                "platform": "emby",
+                "unique_id": "700633E55117623ACC76B2BA6E9189D0193F15E9.Kodi"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.pws_dewpoint_c",
+                "name": null,
+                "platform": "wunderground",
+                "unique_id": "@1.393588,43.517163,dewpoint_c"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.pws_alerts",
+                "name": null,
+                "platform": "wunderground",
+                "unique_id": "@1.393588,43.517163,alerts"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.pws_alerts_2",
+                "name": null,
+                "platform": "wunderground",
+                "unique_id": "@1.393550,43.516940,alerts"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.pws_dewpoint_c_2",
+                "name": null,
+                "platform": "wunderground",
+                "unique_id": "@1.393550,43.516940,dewpoint_c"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.stibphone2_battery_state",
+                "name": null,
+                "platform": "ios",
+                "unique_id": "state_Stibphone2"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.stibphone2_battery_level",
+                "name": null,
+                "platform": "ios",
+                "unique_id": "level_Stibphone2"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "media_player.emby__emby_mobile__chrome_2",
+                "name": null,
+                "platform": "emby",
+                "unique_id": "69db41325ef2a1ddb9c0abb1fd4074f48c37857b.Emby Mobile"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "media_player.emby__emby_mobile__web_browser_iphone",
+                "name": null,
+                "platform": "emby",
+                "unique_id": "8db63153d7861257c4129f8b07c7b0dec53e29be.Emby Mobile"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "media_player.emby__emby_mobile__chrome_3",
+                "name": null,
+                "platform": "emby",
+                "unique_id": "71314df330f865bcb38c2db60b475c1a0a1056ae.Emby Mobile"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "media_player.emby__emby_mobile__web_browser_iphone_2",
+                "name": null,
+                "platform": "emby",
+                "unique_id": "TW96aWxsYS81LjAgKGlQaG9uZTsgQ1BVIGlQaG9uZSBPUyAxMV8zIGxpa2UgTWFjIE9TIFgpIEFwcGxlV2ViS2l0LzYwNS4xLjE1IChLSFRNTCwgbGlrZSBHZWNrbykgVmVyc2lvbi8xMS4wIE1vYmlsZS8xNUUxNDggU2FmYXJpLzYwNC4xfDE1MjcyMDAzODQ2OTA1.Emby Mobile"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "media_player.emby__emby_mobile__chrome_android",
+                "name": null,
+                "platform": "emby",
+                "unique_id": "TW96aWxsYS81LjAgKExpbnV4OyBBbmRyb2lkIDguMC4wOyBCTkQtTDIxIEJ1aWxkL0hPTk9SQk5ELUwyMSkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY3LjAuMzM5Ni44NyBNb2JpbGUgU2FmYXJpLzUzNy4zNnwxNTI5NjQ1Njk1MDk4.Emby Mobile"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "media_player.emby__emby_mobile__chrome_4",
+                "name": null,
+                "platform": "emby",
+                "unique_id": "TW96aWxsYS81LjAgKE1hY2ludG9zaDsgSW50ZWwgTWFjIE9TIFggMTBfMTNfNCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY3LjAuMzM5Ni44NyBTYWZhcmkvNTM3LjM2fDE1Mjk3ODU1OTA1OTM1.Emby Mobile"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "media_player.emby__emby_mobile__chrome_android_2",
+                "name": null,
+                "platform": "emby",
+                "unique_id": "TW96aWxsYS81LjAgKExpbnV4OyBBbmRyb2lkIDcuMS4xOyBaVEUgQTIwMTdHIEJ1aWxkL05NRjI2VikgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY3LjAuMzM5Ni44NyBNb2JpbGUgU2FmYXJpLzUzNy4zNnwxNTI5MDY0NzUxMDMz.Emby Mobile"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "zwave.controller",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-1"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "zwave.thermostat_transmitter",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-3"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.thermostat_transmitter_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594093060096"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "climate.thermostat_transmitter_heating_1",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594093551634"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "zwave.washing_machine_smart_plug",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-5"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.washing_machine_smart_plug_power",
+                "name": "Washing Machine Power",
+                "platform": "zwave",
+                "unique_id": "5-72057594126811202"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.washing_machine_smart_plug_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126614528"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.washing_machine_smart_plug_power_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126827650"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.washing_machine_smart_plug_exporting",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126828032"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.washing_machine_smart_plug_energy",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126827522"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "zwave.home_cinema_smart_plug",
+                "name": "FIBARO FGWPE/F Wall Plug Gen5 (Home Cinema)",
+                "platform": "zwave",
+                "unique_id": "node-6"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.home_cinema_smart_plug_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594143391744"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.home_cinema_smart_plug_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594144636929"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.home_cinema_smart_plug_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594144636945"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.home_cinema_smart_plug_power",
+                "name": "Home Cinema Power",
+                "platform": "zwave",
+                "unique_id": "6-72057594143588418"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.home_cinema_smart_plug_power_2",
+                "name": "Home Cinema Power",
+                "platform": "zwave",
+                "unique_id": "6-72057594143604866"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.home_cinema_smart_plug_exportin",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594143605248"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.home_cinema_smart_plug_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594144636961"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.home_cinema_smart_plug_power_management",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594144637105"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.home_cinema_smart_plug_energy",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594143604738"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "zwave.entrance_multisensor",
+                "name": "Aeotec ZW100 MultiSensor 6 (Entrance)",
+                "platform": "zwave",
+                "unique_id": "node-7"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "binary_sensor.entrance_multisensor_sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594160349184"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.entrance_multisensor_temperature",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594160365586"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.entrance_multisensor_luminance",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594160365618"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.entrance_multisensor_relative_humidity",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594160365650"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.entrance_multisensor_ultraviolet",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594160366002"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.entrance_multisensor_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594161414177"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.entrance_multisensor_burglar",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594161414305"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.entrance_multisensor_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594161414145"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.entrance_multisensor_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594161414161"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "zwave.dark_blue_smart_plug",
+                "name": "NodOn MSP-3-1-XX Micro Smart Plug (Dark Blue)",
+                "platform": "zwave",
+                "unique_id": "node-9"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.dark_blue_smart_plug_power",
+                "name": "Dark Blue Smart Plug Power",
+                "platform": "zwave",
+                "unique_id": "9-72057594193936514"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.dark_blue_smart_plug_exporting",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594193936896"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.dark_blue_smart_plug_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594194968577"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.dark_blue_smart_plug_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594194968593"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.dark_blue_smart_plug_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594194968609"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.dark_blue_smart_plug_power_management",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594194968753"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.dark_blue_smart_plug_system",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594194968769"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.dark_blue_smart_plug_energy_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594193936386"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.dark_blue_smart_plug_switch",
+                "name": "Dark Blue Smart Plug Switch",
+                "platform": "zwave",
+                "unique_id": "9-72057594193723392"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "zwave.cabinet_smart_plug",
+                "name": "NodOn MSP-3-1-XX Micro Smart Plug (Cabinet)",
+                "platform": "zwave",
+                "unique_id": "node-10"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.cabinet_smart_plug_previous_reading",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594210713618"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.cabinet_smart_plug_interval",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594210713635"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.cabinet_smart_plug_energy",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594210713602"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.cabinet_smart_plug_switch_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594210500608"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.cabinet_smart_plug_system_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594211745985"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.cabinet_smart_plug_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594211745825"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.cabinet_smart_plug_power_management",
+                "name": "Cabinet Power",
+                "platform": "zwave",
+                "unique_id": "10-72057594211745969"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.cabinet_smart_plug_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594211745793"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.cabinet_smart_plug_alarm_level_1",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-7205759421174580"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.dark_blue_smart_plug_previous_reading",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594193936402"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.dark_blue_smart_plug_interval",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594193936419"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.dark_blue_smart_plug_previous_reading_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594193936530"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.dark_blue_smart_plug_interval_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594193936547"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.cabinet_smart_plug_alarm_level_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594211745809"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "zwave.boiler_actuator",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-4"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.boiler_actuator_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594109837312"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.thermostat_transmitter_temperature",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594093256722"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.cabinet_smart_plug_power",
+                "name": "Cabinet Power",
+                "platform": "zwave",
+                "unique_id": "10-72057594210713730"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.cabinet_smart_plug_exporting",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594210714112"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
+}
