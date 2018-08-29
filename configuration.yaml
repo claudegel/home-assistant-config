@@ -46,6 +46,8 @@ logger: !include logger.yaml
 map:
 
 
+panel_custom: !include panel_custom.yaml
+
 panel_iframe: !include panel_iframe.yaml
 
 
