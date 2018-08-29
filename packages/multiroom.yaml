@@ -4,25 +4,20 @@ media_player:
   #   client_secret: !secret media_player__spotify__client_secret
   #   cache_path: /mnt/storage/domotic/homeassistant/tmp/.spotify-token-cache
   
-  # - platform: yamaha_musiccast
-  #   host: 192.168.0.24
-  #   name: "MusicCast Chambre Parentale"
+  - platform: yamaha_musiccast
+    host: 192.168.0.24
+    name: "MusicCast Chambre Parentale"
   
-  # - platform: yamaha_musiccast
-  #   host: 192.168.0.20
-  #   name: "MusicCast Salon"
+  - platform: yamaha_musiccast
+    host: 192.168.0.20
+    name: "MusicCast Salon"
   
-  # - platform: yamaha_musiccast
-  #   id: multicast_parent_bedroom
-  #   host: 192.168.0.24
-  #   name: "MusicCast Chambre Parentale"
+  - platform: yamaha_musiccast
+    id: multicast_living_room
+    host: 192.168.0.20
+    name: "MusicCast Salon"
   
-  # - platform: yamaha_musiccast
-  #   id: multicast_living_room
-  #   host: 192.168.0.20
-  #   name: "MusicCast Salon"
-  
-  # - platform: yamaha_musiccast
-  #   id: multicast_bureau
-  #   host: 192.168.0.26
-  #   name: "MusicCast Bureaus"
+  - platform: yamaha_musiccast
+    id: multicast_bureau
+    host: 192.168.0.26
+    name: "MusicCast Bureaus"

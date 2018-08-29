@@ -33,6 +33,7 @@ multimedia_view:
   icon: mdi:play-network
   entities:
     - group.pvr
+    - group.harmony
     - media_player.emby__kodi__osmc
     - media_player.home_cinema_salon_kodi
     - media_player.chambre_parentale_main

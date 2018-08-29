@@ -99,7 +99,7 @@ media_player:
   - platform: kodi
     id: kodi_living_room
     name: "Home Cinema Salon Kodi"
-    host: 192.168.0.22
+    host: 192.168.0.37
     #username: gaetan
     #password: !secret media_player__kodi__password
   
@@ -129,6 +129,11 @@ group:
       - sensor.sonarr_diskspace
       - media_player.emby__kodi__osmc_2
       - media_player.home_cinema_salon_kodi
+
+  harmony:
+    name: Harmony
+    entities:
+      - remote.harmony_hub_home_cinema
 
   homecine_network:
     name: Home Cinema Information
