@@ -54,10 +54,9 @@ network_view:
   icon: mdi:server-network
   entities:
     - group.cabinet
-    - group.domot
     - group.pihole
     - group.network
-    - group.sensors_battery_alert
+    - group.domot
 
 nas_view:
   icon: mdi:nas
@@ -73,9 +72,11 @@ system_view:
   name: System
   entities: 
     - group.ha_system
+    - group.battery_levels
+    - group.sensors_battery_alert
+    - group.zwave_devices
     - group.all_automations
     - group.all_switches
     - group.all_lights
     - group.all_devices
     - group.all_scripts
-    - group.zwave_devices

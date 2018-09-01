@@ -1,163 +1,5 @@
 automation:
 
-  - alias: Dz to Hass Temp+Humidity
-    trigger:
-      - platform: mqtt
-        topic: 'domoticz/out'
-    condition: 
-      condition: template
-      value_template: '{{ trigger.payload_json.dtype == "Temp + Humidity" }}'
-    action:
-      - service: mqtt.publish
-        data_template:
-          topic: 'home/sensors/{{ trigger.payload_json.name | replace(" ", "_") | lower }}/temperature'
-          payload_template: '{{ trigger.payload_json.svalue1 }}'
-      - service: mqtt.publish
-        data_template:
-          topic: 'home/sensors/{{ trigger.payload_json.name | replace(" ", "_") | lower }}/humidity'
-          payload_template: '{{ trigger.payload_json.svalue2 }}'
-      - service: mqtt.publish
-        data_template:
-          topic: 'home/sensors/{{ trigger.payload_json.name | replace(" ", "_") | lower }}/low_battery'
-          payload_template: '{{ trigger.payload_json.svalue3 }}'
-
-  - alias: Dz to Hass General Energy
-    trigger:
-      - platform: mqtt
-        topic: 'domoticz/out'
-    condition: 
-      condition: template
-      value_template: '{{ trigger.payload_json.name == "Consommation Électrique Totale" }}'
-    action:
-      - service: mqtt.publish
-        data_template:
-          # kWh
-          topic: 'home/sensors/home/electricity/energy'
-          payload_template: '{{ trigger.payload_json.svalue1 }}'
-      - service: mqtt.publish
-        data_template:
-          # kWh
-          topic: 'home/sensors/home/electricity/total_energy'
-          payload_template: '{{ trigger.payload_json.svalue2 }}'
-           
-  - alias: Dz to Hass General Energy
-    trigger:
-      - platform: mqtt
-        topic: 'domoticz/out'
-    condition: 
-      condition: template
-      value_template: '{{ trigger.payload_json.name == "Consommation Électrique Totale" }}'
-    action:
-      - service: mqtt.publish
-        data_template:
-          # kWh
-          topic: 'home/sensors/general/electricity/energy'
-          payload_template: '{{ trigger.payload_json.svalue1 }}'
-      - service: mqtt.publish
-        data_template:
-          # kWh
-          topic: 'home/sensors/general/electricity/total_energy'
-          payload_template: '{{ trigger.payload_json.svalue2 }}'
-
-  - alias: Dz to Hass Cabinet Energy
-    trigger:
-      - platform: mqtt
-        topic: 'domoticz/out'
-    condition: 
-      condition: template
-      value_template: '{{ trigger.payload_json.name == "Cabinet Energy" }}'
-    action:
-      - service: mqtt.publish
-        data_template:
-          # kWh
-          topic: 'home/sensors/cabinet/electricity/energy'
-          payload_template: '{{ trigger.payload_json.svalue1 }}'
-      - service: mqtt.publish
-        data_template:
-          # kWh
-          topic: 'home/sensors/cabinet/electricity/total_energy'
-          payload_template: '{{ trigger.payload_json.svalue2 }}'
-           
-  - alias: Dz to Hass Home Cinema Energy
-    trigger:
-      - platform: mqtt
-        topic: 'domoticz/out'
-    condition: 
-      condition: template
-      value_template: '{{ trigger.payload_json.name == "Home Cinema Energy" }}'
-    action:
-      - service: mqtt.publish
-        data_template:
-          # kWh
-          topic: 'home/sensors/homecinema/electricity/energy'
-          payload_template: '{{ trigger.payload_json.svalue1 }}'
-      - service: mqtt.publish
-        data_template:
-          # kWh
-          topic: 'home/sensors/homecinema/electricity/total_energy'
-          payload_template: '{{ trigger.payload_json.svalue2 }}'
-
-  - alias: Dz to Hass Washing Machine Energy
-    trigger:
-      - platform: mqtt
-        topic: 'domoticz/out'
-    condition: 
-      condition: template
-      value_template: '{{ trigger.payload_json.name == "Washing Machine Energy" }}'
-    action:
-      - service: mqtt.publish
-        data_template:
-          # kWh
-          topic: 'home/sensors/washing-machine/electricity/energy'
-          payload_template: '{{ trigger.payload_json.svalue1 }}'
-      - service: mqtt.publish
-        data_template:
-          # kWh
-          topic: 'home/sensors/washing-machine/electricity/total_energy'
-          payload_template: '{{ trigger.payload_json.svalue2 }}'
-
-  - alias: Dz to Hass Washing Machine Power
-    trigger:
-      - platform: mqtt
-        topic: 'domoticz/out'
-    condition: 
-      condition: template
-      value_template: '{{ trigger.payload_json.name == "Washing Machine Power" }}'
-    action:
-      - service: mqtt.publish
-        data_template:
-          # kWh
-          topic: 'home/sensors/washing-machine/electricity/power'
-          payload_template: '{{ trigger.payload_json.svalue1 }}'
-
-  - alias: Dz to Hass SRT321 Battery Level
-    trigger:
-      - platform: mqtt
-        topic: 'domoticz/out'
-    condition: 
-      condition: template
-      value_template: '{{ trigger.payload_json.name == "Battery Levels - SRT321" }}'
-    action:
-      - service: mqtt.publish
-        data_template:
-          # kWh
-          topic: 'home/sensors/thermostat/battery/level'
-          payload_template: '{{ trigger.payload_json.svalue1 }}'
-
-  - alias: Dz to Hass SRT321 Setpoint
-    trigger:
-      - platform: mqtt
-        topic: 'domoticz/out'
-    condition: 
-      condition: template
-      value_template: '{{ trigger.payload_json.name == "SRT321 Consigne" }}'
-    action:
-      - service: mqtt.publish
-        data_template:
-          # kWh
-          topic: 'home/sensors/thermostat/setpoint'
-          payload_template: '{{ trigger.payload_json.svalue1 }}'
-
   - id: "publish_temperatures"
     alias: 'Send temperatures to MQTT'
     trigger:
@@ -434,62 +276,112 @@ sensor:
     value_template: '{{ value | round(1) }}'
 
 binary_sensor:
+  - platform: template
+    sensors:
+      rfxcom_bathroom_battery_alert:
+        friendly_name: "Bathroom"
+        device_class: battery
+        value_template: >-
+          {{ sensor.rfxcom_bathroom_temperature.attributes.battery_numeric != 9 }}
+        icon_template: >
+          {% if sensor.rfxcom_bathroom_temperature.attributes.battery_numeric|int < 9 %}
+            'mdi:battery-alert'
+          {% else %}
+            'mdi:battery'
+          {% endif %}'
+      rfxcom_friend_room_battery_alert:
+        friendly_name: "Kid's room"
+        device_class: battery
+        value_template: >-
+          {{ sensor.rfxcom_friend_room_temperature.attributes.battery_numeric != 9 }}
+        icon_template: >
+          {% if sensor.rfxcom_friend_room_temperature.attributes.battery_numeric|int < 9 %}
+            'mdi:battery-alert'
+          {% else %}
+            'mdi:battery'
+          {% endif %}'
+      rfxcom_garage_battery_alert:
+        friendly_name: "Garage"
+        device_class: battery
+        value_template: >-
+          {{ sensor.rfxcom_garage_temperature.attributes.battery_numeric != 9 }}
+        icon_template: >
+          {% if sensor.rfxcom_garage_temperature.attributes.battery_numeric|int < 9 %}
+            'mdi:battery-alert'
+          {% else %}
+            'mdi:battery'
+          {% endif %}'
+      rfxcom_kitchen_battery_alert:
+        friendly_name: "Kitchen"
+        device_class: battery
+        value_template: >-
+          {{ sensor.rfxcom_kitchen_temperature.attributes.battery_numeric != 9 }}
+        icon_template: >
+          {% if sensor.rfxcom_kitchen_temperature.attributes.battery_numeric|int < 9 %}
+            'mdi:battery-alert'
+          {% else %}
+            'mdi:battery'
+          {% endif %}'
+      rfxcom_living_room_battery_alert:
+        friendly_name: "Living room"
+        device_class: battery
+        value_template: >-
+          {{ sensor.rfxcom_living_room_temperature.attributes.battery_numeric != 9 }}
+        icon_template: >
+          {% if sensor.rfxcom_living_room_temperature.attributes.battery_numeric|int < 9 %}
+            'mdi:battery-alert'
+          {% else %}
+            'mdi:battery'
+          {% endif %}'
+      rfxcom_office_battery_alert:
+        friendly_name: "Office"
+        device_class: battery
+        value_template: >-
+          {{ sensor.rfxcom_office_temperature.attributes.battery_numeric != 9 }}
+        icon_template: >
+          {% if sensor.rfxcom_office_temperature.attributes.battery_numeric|int < 9 %}
+            'mdi:battery-alert'
+          {% else %}
+            'mdi:battery'
+          {% endif %}'
+      rfxcom_outside_battery_alert:
+        friendly_name: "Outside"
+        device_class: battery
+        value_template: >-
+          {{ sensor.rfxcom_outside_temperature.attributes.battery_numeric != 9 }}
+        icon_template: >
+          {% if sensor.rfxcom_outside_temperature.attributes.battery_numeric|int < 9 %}
+            'mdi:battery-alert'
+          {% else %}
+            'mdi:battery'
+          {% endif %}'
+      rfxcom_parents_room_battery_alert:
+        friendly_name: "Parent's room"
+        device_class: battery
+        value_template: >-
+          {{ sensor.rfxcom_parents_room_temperature.attributes.battery_numeric != 9 }}
+        icon_template: >
+          {% if sensor.rfxcom_parents_room_temperature.attributes.battery_numeric|int < 9 %}
+            'mdi:battery-alert'
+          {% else %}
+            'mdi:battery'
+          {% endif %}'
+      rfxcom_upper_floor_corridor_battery_alert:
+        friendly_name: "Cigare Cave"
+        device_class: battery
+        value_template: >-
+          {{ sensor.rfxcom_upper_floor_corridor_temperature.attributes.battery_numeric != 9 }}
+        icon_template: >
+          {% if sensor.rfxcom_upper_floor_corridor_temperature.attributes.battery_numeric|int < 9 %}
+            'mdi:battery-alert'
+          {% else %}
+            'mdi:battery'
+          {% endif %}'
 
-  # Low Battery warning
-  - platform: mqtt
-    name: "Alerte Batterie Exterieur Maison"
-    state_topic: "home/sensors/exterieur_maison/low_battery"
-    payload_on: "1"
-    payload_off: "0"
+# homeassistant:
+  # customize:
 
-  - platform: mqtt
-    name: "Alerte Batterie Garage"
-    state_topic: "home/sensors/garage/low_battery"
-    payload_on: "1"
-    payload_off: "0"
-
-  - platform: mqtt
-    name: "Alerte Batterie Bureau"
-    state_topic: "home/sensors/bureau/low_battery"
-    payload_on: "1"
-    payload_off: "0"
   
-  - platform: mqtt
-    name: "Alerte Batterie Chambre Amis"
-    state_topic: "home/sensors/chambre_amis/low_battery"
-    payload_on: "1"
-    payload_off: "0"
-      
-  - platform: mqtt
-    name: "Alerte Batterie Cave Cigare"
-    state_topic: "home/sensors/cave_cigare/low_battery"
-    payload_on: "1"
-    payload_off: "0"
-
-  - platform: mqtt
-    name: "Alerte Batterie Couloir Haut"
-    state_topic: "home/sensors/couloir_haut/low_battery"
-    payload_on: "1"
-    payload_off: "0"
-
-  - platform: mqtt
-    name: "Alerte Batterie Cuisine"
-    state_topic: "home/sensors/cuisine/low_battery"
-    payload_on: "1"
-    payload_off: "0"
-
-  - platform: mqtt
-    name: "Alerte Batterie Salon"
-    state_topic: "home/sensors/salon/low_battery"
-    payload_on: "1"
-    payload_off: "0"
-
-  - platform: mqtt
-    name: "Alerte Batterie Chambre Parentale"
-    state_topic: "home/sensors/chambre_parentale/low_battery"
-    payload_on: "1"
-    payload_off: "0"
-
 group:
   home_temperatures:
     name: Home Temperatures
@@ -509,6 +401,8 @@ group:
     entities:
       - sensor.thermostat_setpoint
       - sensor.thermostat_battery_level
+      - climate.thermostat_transmitter_heating
+      - switch.thermostat_transmitter_switch
 
   home_humidity:
     name: Home Humidity
@@ -531,18 +425,16 @@ group:
       - sensor.home_cinema_smart_plug_power
       - sensor.dark_blue_smart_plug_power
       - switch.dark_blue_smart_plug_switch
-      # - sensor.home_cinema_energy
-      # - sensor.cabinet_energy
-      # - sensor.washing_machine_energy
       
   sensors_battery_alert:
-    name: Alerte Batterie Sondes Temperature
-      - binary_sensor.alerte_batterie_bureau
-      - binary_sensor.alerte_batterie_cave_cigare
-      - binary_sensor.alerte_batterie_chambre_amis
-      - binary_sensor.alerte_batterie_chambre_parentale
-      - binary_sensor.alerte_batterie_couloir_haut
-      - binary_sensor.alerte_batterie_cuisine
-      - binary_sensor.alerte_batterie_exterieur_maison
-      - binary_sensor.alerte_batterie_garage
-      - binary_sensor.alerte_batterie_salon
+    name: Rfx Battery States
+    entities:
+      - binary_sensor.rfxcom_bathroom_battery_alert
+      - binary_sensor.rfxcom_friend_room_battery_alert
+      - binary_sensor.rfxcom_garage_battery_alert
+      - binary_sensor.rfxcom_kitchen_battery_alert
+      - binary_sensor.rfxcom_living_room_battery_alert
+      - binary_sensor.rfxcom_office_battery_alert
+      - binary_sensor.rfxcom_outside_battery_alert
+      - binary_sensor.rfxcom_parents_room_battery_alert
+      - binary_sensor.rfxcom_upper_floor_corridor_battery_alert

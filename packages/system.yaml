@@ -58,6 +58,19 @@ sensor:
     file_paths:
       - /mnt/storage/domotic/homeassistant/recorder.sqlite
 
+  - platform: template
+    sensors:
+      thermostat_transmitter_battery_level:
+        friendly_name: 'Thermostat Transmitter Battery'
+        value_template: '{{ states.zwave.thermostat_transmitter.attributes.battery_level }}'
+        unit_of_measurement: '%'
+        icon_template: >
+          {%- if states.zwave.thermostat_transmitter.attributes.battery_level | int < 30 -%}
+            mdi:battery-alert
+          {%- else -%}
+            mdi:battery
+          {%- endif %}
+      
 homeassistant:
   customize:
     group.all_automations:
@@ -77,6 +90,11 @@ group:
       - sensor.ha_available_version
       - sensor.ha_uptime
 
+  battery_levels:
+    name: Battery Levels
+    entities:
+      - sensor.thermostat_transmitter_battery_level
+
   zwave_devices:
     name: Z-Wave devices
     entities:
@@ -88,4 +106,6 @@ group:
       - zwave.boiler_actuator
       - zwave.thermostat_transmitter
       - zwave.washing_machine_wall_plug
+      
+      
   
