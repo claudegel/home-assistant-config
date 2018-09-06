@@ -1,0 +1,15 @@
+automation:
+  - alias: Waste Container Warning
+    trigger:
+      platform: time
+      at: '19:00:00'
+    condition:
+      condition: and
+      conditions:
+        - condition: time
+          weekday:
+            - tue
+    action:
+      - service: notify.pushover
+        data:
+          message: "Do not forget to take out the yellow bin!"

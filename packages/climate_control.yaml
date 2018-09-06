@@ -1,0 +1,40 @@
+input_select:
+  climate_season:
+    name: Climate Season
+    options:
+     # 'mode été' or 'hors gel': we are during summer, do not care about heating
+     - 'Summer or Frost Protection'
+     # 'mode hiver': Optimize temperature to maintain confort at lowest cost 
+     - 'Winter'
+    initial: 'Summer or Frost Protection'
+    icon: mdi:weather-sunset-up
+
+  auto_main_heat:
+    name: Climate Control Mode
+    options:
+    - Not / Applicable
+    - Automatic mode change
+    - Manual mode change
+    initial: Automatic mode change
+    icon: mdi:robot
+    
+  main_heat_mode:
+    name: Heat Mode
+    options:
+    - Not / Applicable
+    # 'workweek'
+    - Work Week
+    # 'Vacance à la maison': vacation at home
+    - Vacation at Home
+    # 'Vacance hors de la maison': vacation out of home, for more than 3 days
+    - Vacation out
+    initial: Work Week
+    icon: mdi:oil-temperature
+
+group:
+  climate_control:
+    name: Climate Control
+    entities:
+      - input_select.climate_season
+      - input_select.auto_main_heat
+      - input_select.main_heat_mode

@@ -67,6 +67,8 @@ sensor:
         icon_template: >
           {%- if states.zwave.thermostat_transmitter.attributes.battery_level | int < 30 -%}
             mdi:battery-alert
+          {%- elif states.zwave.thermostat_transmitter.attributes.battery_level | int < 50 -%}
+            mdi:battery-40
           {%- else -%}
             mdi:battery
           {%- endif %}
