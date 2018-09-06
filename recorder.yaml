@@ -1,10 +1,51 @@
-purge_keep_days: 10
+purge_keep_days: 5
 purge_interval: 1
 db_url: sqlite:////mnt/storage/domotic/homeassistant/recorder.sqlite
 exclude:
-  # domains:
-  #   - automation
-  #   - weblink
-  #   - updater
+  domains:
+    - updater
+    - sun
+    - group
+    - mqtt
+    - script
+    - device_tracker
+    - input_select
+    - input_boolean
+    - history_graph
   entities:
-    - sun.sun  # Don't record sun data
+    - sensor.sunset
+    - sensor.sunrise
+    - sensor.sun
+    - sensor.ha_version_current
+    - sensor.uptime
+    - sensor.date
+    - sensor.time
+    - sensor.season
+    - sensor.time_utc
+    - sensor.weather_symbol
+    - sensor.weather_temperature
+    - sensor.weather_precipitation
+    - sensor.weather_pressure
+    - sensor.weather_wind_speed
+    - sensor.weather_cloudiness
+    - sensor.pws_alerts
+    - sensor.pws_dewpoint_c
+    - sensor.weather_dewpoint_temperature
+    - sensor.weather_fog
+    - sensor.weather_high_clouds
+    - sensor.weather_humidity
+    - sensor.weather_low_clouds
+    - sensor.weather_medium_clouds
+    - sensor.weather_wind_direction
+    - sensor.forecast_6h_symbol
+    - sensor.forecast_6h_temperature
+    - sensor.forecast_6h_precipitation
+    - sensor.forecast_6h_pressure
+    - sensor.forecast_6h_wind_speed
+    - sensor.forecast_6h_cloudiness
+    - sensor.forecast_24h_symbol
+    - sensor.forecast_24h_temperature
+    - sensor.forecast_24h_precipitation
+    - sensor.forecast_24h_pressure
+    - sensor.forecast_24h_wind_speed
+    - sensor.forecast_24h_cloudiness
