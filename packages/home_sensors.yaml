@@ -282,101 +282,101 @@ binary_sensor:
         friendly_name: "Bathroom"
         device_class: battery
         value_template: >-
-          {{ sensor.rfxcom_bathroom_temperature.attributes.battery_numeric != 9 }}
+          {{ states.sensor.rfxcom_bathroom_temperature.attributes["Battery numeric"] != 9 }}
         icon_template: >
-          {% if sensor.rfxcom_bathroom_temperature.attributes.battery_numeric|int < 9 %}
+          {% if states.sensor.rfxcom_bathroom_temperature.attributes["Battery numeric"] | int < 9 %}
             'mdi:battery-alert'
           {% else %}
             'mdi:battery'
-          {% endif %}'
+          {% endif %}
       rfxcom_friend_room_battery_alert:
         friendly_name: "Kid's room"
         device_class: battery
         value_template: >-
-          {{ sensor.rfxcom_friend_room_temperature.attributes.battery_numeric != 9 }}
+          {{ states.sensor.rfxcom_friend_room_temperature.attributes["Battery numeric"] != 9 }}
         icon_template: >
-          {% if sensor.rfxcom_friend_room_temperature.attributes.battery_numeric|int < 9 %}
+          {% if states.sensor.rfxcom_friend_room_temperature.attributes["Battery numeric"] | int < 9 %}
             'mdi:battery-alert'
           {% else %}
             'mdi:battery'
-          {% endif %}'
+          {% endif %}
       rfxcom_garage_battery_alert:
         friendly_name: "Garage"
         device_class: battery
         value_template: >-
-          {{ sensor.rfxcom_garage_temperature.attributes.battery_numeric != 9 }}
+          {{ states.sensor.rfxcom_garage_temperature.attributes["Battery numeric"] != 9 }}
         icon_template: >
-          {% if sensor.rfxcom_garage_temperature.attributes.battery_numeric|int < 9 %}
+          {% if states.sensor.rfxcom_garage_temperature.attributes["Battery numeric"] | int < 9 %}
             'mdi:battery-alert'
           {% else %}
             'mdi:battery'
-          {% endif %}'
+          {% endif %}
       rfxcom_kitchen_battery_alert:
         friendly_name: "Kitchen"
         device_class: battery
         value_template: >-
-          {{ sensor.rfxcom_kitchen_temperature.attributes.battery_numeric != 9 }}
+          {{ states.sensor.rfxcom_kitchen_temperature.attributes["Battery numeric"] != 9 }}
         icon_template: >
-          {% if sensor.rfxcom_kitchen_temperature.attributes.battery_numeric|int < 9 %}
+          {% if states.sensor.rfxcom_kitchen_temperature.attributes["Battery numeric"] | int < 9 %}
             'mdi:battery-alert'
           {% else %}
             'mdi:battery'
-          {% endif %}'
+          {% endif %}
       rfxcom_living_room_battery_alert:
         friendly_name: "Living room"
         device_class: battery
         value_template: >-
-          {{ sensor.rfxcom_living_room_temperature.attributes.battery_numeric != 9 }}
+          {{ states.sensor.rfxcom_living_room_temperature.attributes["Battery numeric"] != 9 }}
         icon_template: >
-          {% if sensor.rfxcom_living_room_temperature.attributes.battery_numeric|int < 9 %}
+          {% if states.sensor.rfxcom_living_room_temperature.attributes["Battery numeric"] | int < 9 %}
             'mdi:battery-alert'
           {% else %}
             'mdi:battery'
-          {% endif %}'
+          {% endif %}
       rfxcom_office_battery_alert:
         friendly_name: "Office"
         device_class: battery
         value_template: >-
-          {{ sensor.rfxcom_office_temperature.attributes.battery_numeric != 9 }}
+          {{ states.sensor.rfxcom_office_temperature.attributes["Battery numeric"] != 9 }}
         icon_template: >
-          {% if sensor.rfxcom_office_temperature.attributes.battery_numeric|int < 9 %}
+          {% if states.sensor.rfxcom_office_temperature.attributes["Battery numeric"] | int < 9 %}
             'mdi:battery-alert'
           {% else %}
             'mdi:battery'
-          {% endif %}'
+          {% endif %}
       rfxcom_outside_battery_alert:
         friendly_name: "Outside"
         device_class: battery
         value_template: >-
-          {{ sensor.rfxcom_outside_temperature.attributes.battery_numeric != 9 }}
+          {{ states.sensor.rfxcom_outside_temperature.attributes["Battery numeric"] != 9 }}
         icon_template: >
-          {% if sensor.rfxcom_outside_temperature.attributes.battery_numeric|int < 9 %}
+          {% if states.sensor.rfxcom_outside_temperature.attributes["Battery numeric"] | int < 9 %}
             'mdi:battery-alert'
           {% else %}
             'mdi:battery'
-          {% endif %}'
+          {% endif %}
       rfxcom_parents_room_battery_alert:
         friendly_name: "Parent's room"
         device_class: battery
         value_template: >-
-          {{ sensor.rfxcom_parents_room_temperature.attributes.battery_numeric != 9 }}
+          {{ states.sensor.rfxcom_parents_room_temperature.attributes["Battery numeric"] != 9 }}
         icon_template: >
-          {% if sensor.rfxcom_parents_room_temperature.attributes.battery_numeric|int < 9 %}
+          {% if states.sensor.rfxcom_parents_room_temperature.attributes["Battery numeric"] | int < 9 %}
             'mdi:battery-alert'
           {% else %}
             'mdi:battery'
-          {% endif %}'
+          {% endif %}
       rfxcom_upper_floor_corridor_battery_alert:
         friendly_name: "Cigare Cave"
         device_class: battery
         value_template: >-
-          {{ sensor.rfxcom_upper_floor_corridor_temperature.attributes.battery_numeric != 9 }}
+          {{ states.sensor.rfxcom_upper_floor_corridor_temperature.attributes["Battery numeric"] != 9 }}
         icon_template: >
-          {% if sensor.rfxcom_upper_floor_corridor_temperature.attributes.battery_numeric|int < 9 %}
+          {% if states.sensor.rfxcom_upper_floor_corridor_temperature.attributes["Battery numeric"] | int < 9 %}
             'mdi:battery-alert'
           {% else %}
             'mdi:battery'
-          {% endif %}'
+          {% endif %}
 
 # homeassistant:
   # customize:
