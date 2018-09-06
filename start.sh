@@ -2,7 +2,7 @@
 
 export PATH=$HOME/.local/bin:$PATH
 
-cd $(dirname $0 && pwd)
+cd $(dirname $0)
 export TMPDIR=$(cd tmp && pwd)
 
 pipenv run python configurator.py /mnt/storage/domotic/homeassistant/hass-configurator-settings.conf &
