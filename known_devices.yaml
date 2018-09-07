@@ -350,3 +350,19 @@ raspberrypi:
   name: raspberrypi
   picture:
   track: true
+
+pihole_eth:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:79:AC:32
+  name: pihole (eth)
+  picture:
+  track: true
+
+pihole_wifi:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:2C:F9:67
+  name: pihole (wifi)
+  picture:
+  track: true

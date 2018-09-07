@@ -1,4 +1,6 @@
-default: DEBUG
-#logs:
+default: warning 
+logs:
+  openzwave: ERROR
+  libopenzwave: ERROR
 #  homeassistant.components.device_tracker: critical
 #  homeassistant.components.camera: critical
