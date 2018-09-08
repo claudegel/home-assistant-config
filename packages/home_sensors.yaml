@@ -117,107 +117,107 @@ sensor:
            - Total usage
 
   # Temperatures
-  - platform: mqtt
-    name: "Temperature Exterieur Maison"
-    state_topic: "home/sensors/exterieur_maison/temperature"
-    unit_of_measurement: "˚C"
+#   - platform: mqtt
+#     name: "Temperature Exterieur Maison"
+#     state_topic: "home/sensors/exterieur_maison/temperature"
+#     unit_of_measurement: "˚C"
 
-  - platform: mqtt
-    name: "Temperature Garage"
-    state_topic: "home/sensors/garage/temperature"
-    unit_of_measurement: "˚C"
+#   - platform: mqtt
+#     name: "Temperature Garage"
+#     state_topic: "home/sensors/garage/temperature"
+#     unit_of_measurement: "˚C"
 
-  - platform: mqtt
-    name: "Temperature Bureau"
-    state_topic: "home/sensors/bureau/temperature"
-    unit_of_measurement: "˚C"
+#   - platform: mqtt
+#     name: "Temperature Bureau"
+#     state_topic: "home/sensors/bureau/temperature"
+#     unit_of_measurement: "˚C"
   
-  - platform: mqtt
-    name: "Temperature Chambre Amis"
-    state_topic: "home/sensors/chambre_amis/temperature"
-    unit_of_measurement: "˚C"
+#   - platform: mqtt
+#     name: "Temperature Chambre Amis"
+#     state_topic: "home/sensors/chambre_amis/temperature"
+#     unit_of_measurement: "˚C"
       
-  - platform: mqtt
-    name: "Temperature Cave Cigare"
-    state_topic: "home/sensors/cave_cigare/temperature"
-    unit_of_measurement: "˚C"
+#   - platform: mqtt
+#     name: "Temperature Cave Cigare"
+#     state_topic: "home/sensors/cave_cigare/temperature"
+#     unit_of_measurement: "˚C"
 
-  - platform: mqtt
-    name: "Temperature Couloir Haut"
-    state_topic: "home/sensors/couloir_haut/temperature"
-    unit_of_measurement: "˚C"
+#   - platform: mqtt
+#     name: "Temperature Couloir Haut"
+#     state_topic: "home/sensors/couloir_haut/temperature"
+#     unit_of_measurement: "˚C"
 
-  - platform: mqtt
-    name: "Temperature Cuisine"
-    state_topic: "home/sensors/cuisine/temperature"
-    unit_of_measurement: "˚C"
+#   - platform: mqtt
+#     name: "Temperature Cuisine"
+#     state_topic: "home/sensors/cuisine/temperature"
+#     unit_of_measurement: "˚C"
 
-  - platform: mqtt
-    name: "Temperature Salon"
-    state_topic: "home/sensors/salon/temperature"
-    unit_of_measurement: "˚C"
+#   - platform: mqtt
+#     name: "Temperature Salon"
+#     state_topic: "home/sensors/salon/temperature"
+#     unit_of_measurement: "˚C"
 
-  - platform: mqtt
-    name: "Temperature Chambre Parentale"
-    state_topic: "home/sensors/chambre_parentale/temperature"
-    unit_of_measurement: "˚C"
+#   - platform: mqtt
+#     name: "Temperature Chambre Parentale"
+#     state_topic: "home/sensors/chambre_parentale/temperature"
+#     unit_of_measurement: "˚C"
 
-  - platform: mqtt
-    name: "Temperature Cabinet"
-    state_topic: "home/sensors/cabinet/temperature"
-    unit_of_measurement: "˚C"
+#   - platform: mqtt
+#     name: "Temperature Cabinet"
+#     state_topic: "home/sensors/cabinet/temperature"
+#     unit_of_measurement: "˚C"
 
 
-  # Humidity
-  - platform: mqtt
-    name: "Humidity Exterieur Maison"
-    state_topic: "home/sensors/exterieur_maison/humidity"
-    unit_of_measurement: "%"
+#   # Humidity
+#   - platform: mqtt
+#     name: "Humidity Exterieur Maison"
+#     state_topic: "home/sensors/exterieur_maison/humidity"
+#     unit_of_measurement: "%"
 
-  - platform: mqtt
-    name: "Humidity Garage"
-    state_topic: "home/sensors/garage/humidity"
-    unit_of_measurement: "%"
+#   - platform: mqtt
+#     name: "Humidity Garage"
+#     state_topic: "home/sensors/garage/humidity"
+#     unit_of_measurement: "%"
 
-  - platform: mqtt
-    name: "Humidity Bureau"
-    state_topic: "home/sensors/bureau/humidity"
-    unit_of_measurement: "%"
+#   - platform: mqtt
+#     name: "Humidity Bureau"
+#     state_topic: "home/sensors/bureau/humidity"
+#     unit_of_measurement: "%"
   
-  - platform: mqtt
-    name: "Humidity Chambre Amis"
-    state_topic: "home/sensors/chambre_amis/humidity"
-    unit_of_measurement: "%"
+#   - platform: mqtt
+#     name: "Humidity Chambre Amis"
+#     state_topic: "home/sensors/chambre_amis/humidity"
+#     unit_of_measurement: "%"
       
-  - platform: mqtt
-    name: "Humidity Cave Cigare"
-    state_topic: "home/sensors/cave_cigare/humidity"
-    unit_of_measurement: "%"
+#   - platform: mqtt
+#     name: "Humidity Cave Cigare"
+#     state_topic: "home/sensors/cave_cigare/humidity"
+#     unit_of_measurement: "%"
 
-  - platform: mqtt
-    name: "Humidity Couloir Haut"
-    state_topic: "home/sensors/couloir_haut/humidity"
-    unit_of_measurement: "%"
+#   - platform: mqtt
+#     name: "Humidity Couloir Haut"
+#     state_topic: "home/sensors/couloir_haut/humidity"
+#     unit_of_measurement: "%"
 
-  - platform: mqtt
-    name: "Humidity Cuisine"
-    state_topic: "home/sensors/cuisine/humidity"
-    unit_of_measurement: "%"
+#   - platform: mqtt
+#     name: "Humidity Cuisine"
+#     state_topic: "home/sensors/cuisine/humidity"
+#     unit_of_measurement: "%"
 
-  - platform: mqtt
-    name: "Humidity Salon"
-    state_topic: "home/sensors/salon/humidity"
-    unit_of_measurement: "%"
+#   - platform: mqtt
+#     name: "Humidity Salon"
+#     state_topic: "home/sensors/salon/humidity"
+#     unit_of_measurement: "%"
 
-  - platform: mqtt
-    name: "Humidity Chambre Parentale"
-    state_topic: "home/sensors/chambre_parentale/humidity"
-    unit_of_measurement: "%"
+#   - platform: mqtt
+#     name: "Humidity Chambre Parentale"
+#     state_topic: "home/sensors/chambre_parentale/humidity"
+#     unit_of_measurement: "%"
 
-  - platform: mqtt
-    name: "Humidity Cabinet"
-    state_topic: "home/sensors/cabinet/humidity"
-    unit_of_measurement: "%"
+#   - platform: mqtt
+#     name: "Humidity Cabinet"
+#     state_topic: "home/sensors/cabinet/humidity"
+#     unit_of_measurement: "%"
 
   # Powermeters
   # - platform: mqtt
@@ -251,17 +251,17 @@ sensor:
   #   value_template: '{{ value | round(1) }}'
 
   # SRT321
-  - platform: mqtt
-    name: "Thermostat SetPoint"
-    unit_of_measurement: "˚C"
-    state_topic: "home/sensors/thermostat/setpoint"
-    value_template: '{{ value | round(1) }}'
+#   - platform: mqtt
+#     name: "Thermostat SetPoint"
+#     unit_of_measurement: "˚C"
+#     state_topic: "home/sensors/thermostat/setpoint"
+#     value_template: '{{ value | round(1) }}'
 
-  - platform: mqtt
-    name: "Thermostat Battery Level"
-    unit_of_measurement: "%"
-    state_topic: "home/sensors/thermostat/battery/level"
-    value_template: '{{ value | round(1) }}'
+#   - platform: mqtt
+#     name: "Thermostat Battery Level"
+#     unit_of_measurement: "%"
+#     state_topic: "home/sensors/thermostat/battery/level"
+#     value_template: '{{ value | round(1) }}'
 
 
 binary_sensor:
@@ -392,8 +392,6 @@ group:
   home_climate:
     name: Climate Management
     entities:
-      - sensor.thermostat_setpoint
-      - sensor.thermostat_battery_level
       - climate.thermostat_transmitter_heating
       - switch.boiler_actuator_switch
 

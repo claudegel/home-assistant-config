@@ -95,20 +95,20 @@ automation:
   - alias: SRT321 Battery Notifications
     trigger:
       - platform: numeric_state
-        entity_id:
-          - sensor.thermostat_battery_level
-        value_template: "{{ state.attributes }}"
+        entity_id: sensor.thermostat_transmitter_battery_level
         below: '40'
     action:
       - service: notify.pushover
         data:
-          message: 'Battery of SRT321 thermostat is low!'
+          message: >
+            Battery of SRT321 thermostat is low:
+            {{ states('sensor.thermostat_transmitter_battery_level') }} %'
       - service: persistent_notification.create
         data_template:
           title: SRT321 Low Battery
           message: >
             SRT321 has low level:
-            {{ states.sensor.thermostat_battery_level }} %
+            {{ states("sensor.thermostat_transmitter_battery_level") }} %
           notification_id: srt321-low-battery-alert
 
 
@@ -122,9 +122,8 @@ group:
       - sensor.hass__homeassistantlog
       - sensor.hass__recordersqlite
 
-
   battery_levels:
-    name: Battery Levels
+    name: ZWave Battery Levels
     entities:
       - sensor.thermostat_transmitter_battery_level
 
