@@ -56,6 +56,9 @@ automation:
 sensor:
 
   # Add all RFXcom sensors
+  # They change name after each battery change.
+  # To find the new name, note the temperature and humidity and find in the
+  # devices page the rfx sensor with this value.
   - platform: rfxtrx
     automatic_add: True
     entity_namespace: rfxcom
@@ -80,7 +83,7 @@ sensor:
         data_type:
            - Temperature
            - Humidity
-      '0a5202c3780300fe3f0079':
+      '0a52020f710300ef380169':
         name: Parents Room
         data_type:
            - Temperature
