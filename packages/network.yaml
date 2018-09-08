@@ -24,7 +24,6 @@ sensor:
     value_template: '{{ value_json.ip }}'
 
   - platform: iperf3
-    name: Local Speed
     host: 192.168.0.10
     port: 5201
     scan_interval: 10800  # 3 hours
@@ -34,7 +33,6 @@ sensor:
 
   - platform: iperf3
     # Test connection with OSMC, ensure the network is always up
-    name: Local Speed
     host: 192.168.0.22
     port: 5201
     scan_interval: 86400  # 24 hours
@@ -87,9 +85,9 @@ device_tracker:
 homeassistant:
   customize:
     sensor.download_192168010:
-      friendly_name: Local Download Speed
+      friendly_name: NAS Download Speed
     sensor.upload_192168010:
-      friendly_name: Local Upload Speed
+      friendly_name: NAS Upload Speed
     sensor.download_192168022:
       friendly_name: OSMC Download Speed
     sensor.upload_192168022:
