@@ -102,7 +102,7 @@ automation:
         data:
           message: >
             Battery of SRT321 thermostat is low:
-            {{ states('sensor.thermostat_transmitter_battery_level') }} %'
+            {{ states('sensor.thermostat_transmitter_battery_level') }} %
       - service: persistent_notification.create
         data_template:
           title: SRT321 Low Battery
