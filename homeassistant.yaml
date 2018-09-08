@@ -16,3 +16,9 @@ auth_providers:
 
 customize: !include customize.yaml
 packages: !include_dir_named packages
+
+whitelist_external_dirs:
+  # For filesize component to work
+  - /mnt/storage/domotic/homeassistant/
+
+

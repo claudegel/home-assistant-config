@@ -57,22 +57,24 @@ sensor:
     entity_namespace: hass_
     file_paths:
       - /mnt/storage/domotic/homeassistant/recorder.sqlite
+      - /mnt/storage/domotic/homeassistant/home-assistant.log  
 
   - platform: template
     sensors:
       thermostat_transmitter_battery_level:
         friendly_name: 'Thermostat Transmitter Battery'
-        value_template: '{{ states.zwave.thermostat_transmitter.attributes.battery_level }}'
+        value_template: '{{ states.zwave.thermostat_transmitter.attributes.get("battery_level", 100) }}'
         unit_of_measurement: '%'
         icon_template: >
-          {%- if states.zwave.thermostat_transmitter.attributes.battery_level | int < 30 -%}
+          {%- if states.zwave.thermostat_transmitter.attributes.get("battery_level", 100) | int < 30 -%}
             mdi:battery-alert
-          {%- elif states.zwave.thermostat_transmitter.attributes.battery_level | int < 50 -%}
+          {%- elif states.zwave.thermostat_transmitter.attributes.get("battery_level", 100) | int < 50 -%}
             mdi:battery-40
           {%- else -%}
             mdi:battery
           {%- endif %}
-      
+
+
 homeassistant:
   customize:
     group.all_automations:
@@ -83,6 +85,32 @@ homeassistant:
       friendly_name: "Available version"
     sensor.ha_uptime:
       friendly_name: "Domot Server Uptime"
+    sensor.hass__homeassistantlog:
+      friendly_name: "Log size"
+    sensor.hass__recordersqlite:
+      friendly_name: "DB size"
+
+
+automation:
+  - alias: SRT321 Battery Notifications
+    trigger:
+      - platform: numeric_state
+        entity_id:
+          - sensor.thermostat_battery_level
+        value_template: "{{ state.attributes }}"
+        below: '40'
+    action:
+      - service: notify.pushover
+        data:
+          message: 'Battery of SRT321 thermostat is low!'
+      - service: persistent_notification.create
+        data_template:
+          title: SRT321 Low Battery
+          message: >
+            SRT321 has low level:
+            {{ states.sensor.thermostat_battery_level }} %
+          notification_id: srt321-low-battery-alert
+
 
 group:
   ha_system:
@@ -91,6 +119,9 @@ group:
       - sensor.ha_installed_version
       - sensor.ha_available_version
       - sensor.ha_uptime
+      - sensor.hass__homeassistantlog
+      - sensor.hass__recordersqlite
+
 
   battery_levels:
     name: Battery Levels

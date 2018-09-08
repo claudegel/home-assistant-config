@@ -52,18 +52,6 @@ automation:
           payload_template: >
             {{ states(trigger.entity_id) }}
 
-  - alias: Battery Notifications
-    trigger:
-      - platform: numeric_state
-        entity_id:
-          - sensor.thermostat_battery_level
-        value_template: "{{ state.attributes }}"
-        below: '20'
-    action:
-      service: notify.pushover
-      data:
-        message: 'Battery of SRT31 thermostat is low!'
-
 
 sensor:
 
@@ -275,6 +263,7 @@ sensor:
     state_topic: "home/sensors/thermostat/battery/level"
     value_template: '{{ value | round(1) }}'
 
+
 binary_sensor:
   - platform: template
     sensors:
@@ -282,9 +271,9 @@ binary_sensor:
         friendly_name: "Bathroom"
         device_class: battery
         value_template: >-
-          {{ states.sensor.rfxcom_bathroom_temperature.attributes["Battery numeric"] != 9 }}
+          {{ states.sensor.rfxcom_bathroom_temperature.attributes.get("Battery numeric", 9) != 9 }}
         icon_template: >
-          {% if states.sensor.rfxcom_bathroom_temperature.attributes["Battery numeric"] | int < 9 %}
+          {% if states.sensor.rfxcom_bathroom_temperature.attributes.get("Battery numeric", 9) | int != 9 %}
             mdi:battery-alert
           {% else %}
             mdi:battery
@@ -293,9 +282,9 @@ binary_sensor:
         friendly_name: "Kid's room"
         device_class: battery
         value_template: >-
-          {{ states.sensor.rfxcom_friend_room_temperature.attributes["Battery numeric"] != 9 }}
+          {{ states.sensor.rfxcom_friend_room_temperature.attributes.get("Battery numeric", 9) != 9 }}
         icon_template: >
-          {% if states.sensor.rfxcom_friend_room_temperature.attributes["Battery numeric"] | int < 9 %}
+          {% if states.sensor.rfxcom_friend_room_temperature.attributes.get("Battery numeric", 9) | int != 9 %}
             mdi:battery-alert
           {% else %}
             mdi:battery
@@ -304,9 +293,9 @@ binary_sensor:
         friendly_name: "Garage"
         device_class: battery
         value_template: >-
-          {{ states.sensor.rfxcom_garage_temperature.attributes["Battery numeric"] != 9 }}
+          {{ states.sensor.rfxcom_garage_temperature.attributes.get("Battery numeric", 9) != 9 }}
         icon_template: >
-          {% if states.sensor.rfxcom_garage_temperature.attributes["Battery numeric"] | int < 9 %}
+          {% if states.sensor.rfxcom_garage_temperature.attributes.get("Battery numeric", 9) | int != 9 %}
             mdi:battery-alert
           {% else %}
             mdi:battery
@@ -315,9 +304,9 @@ binary_sensor:
         friendly_name: "Kitchen"
         device_class: battery
         value_template: >-
-          {{ states.sensor.rfxcom_kitchen_temperature.attributes["Battery numeric"] != 9 }}
+          {{ states.sensor.rfxcom_kitchen_temperature.attributes.get("Battery numeric", 9) != 9 }}
         icon_template: >
-          {% if states.sensor.rfxcom_kitchen_temperature.attributes["Battery numeric"] | int < 9 %}
+          {% if states.sensor.rfxcom_kitchen_temperature.attributes.get("Battery numeric", 9) | int != 9 %}
             mdi:battery-alert
           {% else %}
             mdi:battery
@@ -326,9 +315,9 @@ binary_sensor:
         friendly_name: "Living room"
         device_class: battery
         value_template: >-
-          {{ states.sensor.rfxcom_living_room_temperature.attributes["Battery numeric"] != 9 }}
+          {{ states.sensor.rfxcom_living_room_temperature.attributes.get("Battery numeric", 9) != 9 }}
         icon_template: >
-          {% if states.sensor.rfxcom_living_room_temperature.attributes["Battery numeric"] | int < 9 %}
+          {% if states.sensor.rfxcom_living_room_temperature.attributes.get("Battery numeric", 9) | int != 9 %}
             mdi:battery-alert
           {% else %}
             mdi:battery
@@ -337,9 +326,9 @@ binary_sensor:
         friendly_name: "Office"
         device_class: battery
         value_template: >-
-          {{ states.sensor.rfxcom_office_temperature.attributes["Battery numeric"] != 9 }}
+          {{ states.sensor.rfxcom_office_temperature.attributes.get("Battery numeric", 9) != 9 }}
         icon_template: >
-          {% if states.sensor.rfxcom_office_temperature.attributes["Battery numeric"] | int < 9 %}
+          {% if states.sensor.rfxcom_office_temperature.attributes.get("Battery numeric", 9) | int != 9 %}
             mdi:battery-alert
           {% else %}
             mdi:battery
@@ -348,9 +337,9 @@ binary_sensor:
         friendly_name: "Outside"
         device_class: battery
         value_template: >-
-          {{ states.sensor.rfxcom_outside_temperature.attributes["Battery numeric"] != 9 }}
+          {{ states.sensor.rfxcom_outside_temperature.attributes.get("Battery numeric", 9) != 9 }}
         icon_template: >
-          {% if states.sensor.rfxcom_outside_temperature.attributes["Battery numeric"] | int < 9 %}
+          {% if states.sensor.rfxcom_outside_temperature.attributes.get("Battery numeric", 9) | int != 9 %}
             mdi:battery-alert
           {% else %}
             mdi:battery
@@ -359,9 +348,9 @@ binary_sensor:
         friendly_name: "Parent's room"
         device_class: battery
         value_template: >-
-          {{ states.sensor.rfxcom_parents_room_temperature.attributes["Battery numeric"] != 9 }}
+          {{ states.sensor.rfxcom_parents_room_temperature.attributes.get("Battery numeric", 9) != 9 }}
         icon_template: >
-          {% if states.sensor.rfxcom_parents_room_temperature.attributes["Battery numeric"] | int < 9 %}
+          {% if states.sensor.rfxcom_parents_room_temperature.attributes.get("Battery numeric", 9) | int != 9 %}
             mdi:battery-alert
           {% else %}
             mdi:battery
@@ -370,16 +359,20 @@ binary_sensor:
         friendly_name: "Cigare Cave"
         device_class: battery
         value_template: >-
-          {{ states.sensor.rfxcom_upper_floor_corridor_temperature.attributes["Battery numeric"] != 9 }}
+          {{ states.sensor.rfxcom_upper_floor_corridor_temperature.attributes.get("Battery numeric", 9) != 9 }}
         icon_template: >
-          {% if states.sensor.rfxcom_upper_floor_corridor_temperature.attributes["Battery numeric"] | int < 9 %}
+          {% if states.sensor.rfxcom_upper_floor_corridor_temperature.attributes.get("Battery numeric", 9) | int != 9 %}
             mdi:battery-alert
           {% else %}
             mdi:battery
           {% endif %}
 
-# homeassistant:
-  # customize:
+homeassistant:
+  customize:
+    climate.thermostat_transmitter_heating:
+      friendly_name: "Thermostat"
+    switch.boiler_actuator_switch:
+      friendly_name: "Boiler"
 
   
 group:
@@ -402,7 +395,7 @@ group:
       - sensor.thermostat_setpoint
       - sensor.thermostat_battery_level
       - climate.thermostat_transmitter_heating
-      - switch.thermostat_transmitter_switch
+      - switch.boiler_actuator_switch
 
   home_humidity:
     name: Home Humidity
