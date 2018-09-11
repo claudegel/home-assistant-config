@@ -73,10 +73,7 @@ sensor:
           {%- else -%}
             mdi:battery
           {%- endif %}
-          
-input_boolean:
-  debug_washing_machine:
-    name: "DBG: Washing machine"
+
 
 homeassistant:
   customize:

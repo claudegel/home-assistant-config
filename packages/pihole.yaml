@@ -40,6 +40,8 @@ homeassistant:
 
     group.pihole:
       homebridge_hidden: true
+
+
 #-------------------------------------------
 sensor:
   - platform: pi_hole
@@ -100,6 +102,7 @@ sensor:
     state_topic: "home/pihole/cpu/temp"
     unit_of_measurement: '°C'
 
+
 # Pi-Hole switch
 switch:
   - platform: command_line
@@ -108,12 +111,22 @@ switch:
         command_on: "curl -X GET 'http://192.168.0.5/admin/api.php?enable&auth='"
         command_off: "curl -X GET 'http://192.168.0.5/admin/api.php?disable=3600&auth='"
 
+
+binary_sensor:
+  - platform: ping
+    host: 192.168.0.5
+    name: PiHole
+
+
 #-------------------------------------------
+
+
 group:
   pihole:
     name: Pi-Hole (ad-blocker)
     entities:
       # - sensor.carlopihole
+      - binary_sensor.pihole
       - sensor.pi_hole_version
       - sensor.uptime_pihole
       - sensor.temp_pihole
@@ -123,7 +136,11 @@ group:
       - sensor.pi_hole_ads_percentage_today
       - sensor.pi_hole_ads_percentage_blocked_today
       - switch.pi_hole_temp_disable
+
+
 #-------------------------------------------
+
+
 panel_iframe:
   pihole:
     title: Pi-Hole

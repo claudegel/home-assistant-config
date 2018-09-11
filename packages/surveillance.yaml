@@ -8,8 +8,23 @@ camera:
     password: !secret camera__ip_1__password
 
 
+#------------------------------------------------------------
+
+
+binary_sensor:
+  - platform: hikvision
+    host: 192.168.0.110
+    name: Camera IP 1
+    username: !secret camera__ip_1__username
+    password: !secret camera__ip_1__password
+
+
+#------------------------------------------------------------
+
+    
 group:
   surveillance:
     name: Surveillance
     entities:
+      - binary_sensor.camera_ip_1
       - camera.camera_ip_1
