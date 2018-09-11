@@ -1,3 +1,5 @@
+# Do NOT set initial to have state restaured:
+#  https://www.home-assistant.io/components/input_select/#restore-state
 input_select:
   climate_season:
     name: Climate Season
@@ -6,7 +8,6 @@ input_select:
      - 'Summer or Frost Protection'
      # 'mode hiver': Optimize temperature to maintain confort at lowest cost 
      - 'Winter'
-    initial: 'Summer or Frost Protection'
     icon: mdi:weather-sunset-up
 
   auto_main_heat:
@@ -15,7 +16,6 @@ input_select:
     - Not / Applicable
     - Automatic mode change
     - Manual mode change
-    initial: Automatic mode change
     icon: mdi:robot
     
   main_heat_mode:
@@ -28,9 +28,38 @@ input_select:
     - Vacation at Home
     # 'Vacance hors de la maison': vacation out of home, for more than 3 days
     - Vacation out
-    initial: Work Week
     icon: mdi:oil-temperature
 
+automation:
+  - alias: set_season_summer
+    trigger:
+      platform: state
+      entity_id: input_select.climate_season
+      to: 'Summer or Frost Protection'
+    action:
+      - service: input_select.select_option
+        data:
+          entity_id: input_select.auto_main_heat
+          option: "Not / Applicable"
+      - service: input_select.select_option
+        data:
+          entity_id: input_select.main_heat_mode
+          option: "Not / Applicable"
+  - alias: set_season_winter
+    trigger:
+      platform: state
+      entity_id: input_select.climate_season
+      to: 'Winter'
+    action:
+      - service: input_select.select_option
+        data:
+          entity_id: input_select.auto_main_heat
+          option: "Automatic mode change"
+      - service: input_select.select_option
+        data:
+          option: "Work Week"
+          entity_id: input_select.main_heat_mode
+        
 group:
   climate_control:
     name: Climate Control
