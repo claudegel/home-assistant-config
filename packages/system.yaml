@@ -73,7 +73,10 @@ sensor:
           {%- else -%}
             mdi:battery
           {%- endif %}
-
+          
+input_boolean:
+  debug_washing_machine:
+    name: "DBG: Washing machine"
 
 homeassistant:
   customize:
@@ -139,5 +142,8 @@ group:
       - zwave.thermostat_transmitter
       - zwave.washing_machine_wall_plug
       
-      
+  debug_ha:
+    name: Debug Home Assistant
+    entities:
+      - input_boolean.debug_washing_machine
   

@@ -76,6 +76,7 @@ system_view:
     - group.battery_levels
     - group.sensors_battery_alert
     - group.zwave_devices
+    - group.debug_ha
     - group.all_automations
     - group.all_switches
     - group.all_lights
