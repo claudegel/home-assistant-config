@@ -648,6 +648,14 @@
                 "name": null,
                 "platform": "emby",
                 "unique_id": "202481601938926.pyEmby"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "binary_sensor.camera_ip_1_motion",
+                "name": null,
+                "platform": "hikvision",
+                "unique_id": "237cc000-fd29-11b3-8262-94e1accd3ac5.Motion.1"
             }
         ]
     },

@@ -89,12 +89,21 @@ sensor:
             {%- endif -%}
           {%- endif -%}
 
+  - platform: template
+    sensors:
+      harmony_home_cinema_current_activity:
+        value_template: '{{ states.remote.harmony_home_cinema.attributes.current_activity }}'
+        friendly_name: 'Current Activity'
+
 
 homeassistant:
   customize:
     sensor.osmc_uptime_templated:
       friendly_name: Since last boot
-      
+    remote.harmony_home_cinema:
+      friendly_name: State
+
+
 media_player:
   - platform: kodi
     id: kodi_living_room
@@ -114,7 +123,7 @@ media_player:
 
 remote:
   - platform: harmony
-    name: Harmony Hub Home Cinema
+    name: Harmony Home Cinema
     host: 192.168.0.53
 
     
@@ -131,9 +140,10 @@ group:
       - media_player.home_cinema_salon_kodi
 
   harmony:
-    name: Harmony
+    name: Harmony Home Cinema
     entities:
-      - remote.harmony_hub_home_cinema
+      - remote.harmony_home_cinema
+      - sensor.harmony_home_cinema_current_activity
 
   homecine_network:
     name: Home Cinema Information
