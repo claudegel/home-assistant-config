@@ -38,6 +38,7 @@ input_boolean:
   dbg_washing_machine:
     name: "DBG: Washing machine"
 
+
 automation:
   - alias: "dbg_washing_machine_show"
     trigger:
