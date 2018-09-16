@@ -25,10 +25,17 @@ sensor:
       - volume_percentage_used
 
 
+binary_sensor:
+  - platform: ping
+    host: 192.168.0.10
+    name: nas
+
+
 group:
   nas_general:
     name: NAS General
     entities:
+      - binary_sensor.nas
       - sensor.nas_cpu_load_total
       - sensor.nas_memory_usage_real
       - sensor.nas_network_up

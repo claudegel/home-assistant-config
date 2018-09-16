@@ -23,12 +23,14 @@ sensor:
       - temperature
       - humidity
 
+
 homeassistant:
   customize:
     sensor.cabinet_dht22_temperature:
       friendly_name: Cabinet Temperature
     sensor.cabinet_dht22_humidity:
       friendly_name: Cabinet Humidity
+
 
 group:
   cabinet:

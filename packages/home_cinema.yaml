@@ -104,6 +104,12 @@ homeassistant:
       friendly_name: State
 
 
+binary_sensor:
+  - platform: ping
+    host: 192.168.0.37
+    name: osmc
+
+
 media_player:
   - platform: kodi
     id: kodi_living_room
@@ -148,6 +154,7 @@ group:
   homecine_network:
     name: Home Cinema Information
     entities:
+      - binary_sensor.osmc
       - sensor.osmc_uptime_templated
       - sensor.osmc_temperature
       - sensor.home_cinema_ups_status
