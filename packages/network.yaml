@@ -142,22 +142,53 @@ device_tracker:
     hosts: 192.168.0.0/24
     home_interval: 30
 
+
+shell_command:
+  upgrade_hass: update.sh
+
+
+script:
+  # Inspirated by:
+  #  https://github.com/mf-social/Home-Assistant/blob/master/packages/system/maintenance.yaml
+  upgrade_hass:
+    alias: ' '
+    sequence:
+      - service: homeassistant.turn_on
+        entity_id: input_boolean.maintenance_mode
+      - delay: 00:00:02
+      - service: shell_command.upgrade_hass
+
+
 homeassistant:
   customize:
     sensor.download_192168010:
       friendly_name: NAS Download Speed
+
     sensor.upload_192168010:
       friendly_name: NAS Upload Speed
+
     sensor.download_192168022:
       friendly_name: OSMC Download Speed
+
     sensor.upload_192168022:
       friendly_name: OSMC Upload Speed
+
+    input_boolean.update_speedtest:
+      can_cancel: false
+
+    script.upgrade_hass:
+      icon: mdi:cloud-check
+      can_cancel: false
+      custom_ui_state_card: state-card-script-custom-text
+      custom_text: "Upgrade HA and Restart"
+
 
 input_boolean:
   update_speedtest:
     name: Update Speedtest
     initial: off
     icon: mdi:refresh
+
 
 automation:
   - alias: 'Update Speedtest'
@@ -170,6 +201,7 @@ automation:
       - service: sensor.iperf3_update
       - service: input_boolean.turn_off
         entity_id: input_boolean.update_speedtest
+
 
 group:
   network:
@@ -190,3 +222,4 @@ group:
       - sensor.upload_192168022_mbytes
       - input_boolean.update_speedtest
       - sensor.stibbons_synology_me_ssl_certificate_expiry
+      - script.upgrade_hass
