@@ -75,6 +75,19 @@ sensor:
           {%- endif %}
 
 
+shell_command:
+  upgrade_hass: update.sh
+
+
+script:
+  # Inspirated by:
+  #  https://github.com/mf-social/Home-Assistant/blob/master/packages/system/maintenance.yaml
+  upgrade_hass:
+    sequence:
+      - delay: 00:00:02
+      - service: shell_command.upgrade_hass
+
+
 homeassistant:
   customize:
     group.all_automations:
@@ -89,6 +102,11 @@ homeassistant:
       friendly_name: "Log size"
     sensor.hass__recordersqlite:
       friendly_name: "DB size"
+    script.upgrade_hass:
+      icon: mdi:cloud-check
+      can_cancel: false
+      custom_ui_state_card: state-card-script-custom-text
+      custom_text: "Upgrade HA and Restart"
 
 
 automation:
@@ -121,6 +139,7 @@ group:
       - sensor.ha_uptime
       - sensor.hass__homeassistantlog
       - sensor.hass__recordersqlite
+      - script.upgrade_hass
 
   battery_levels:
     name: ZWave Battery Levels
