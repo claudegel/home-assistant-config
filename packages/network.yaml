@@ -46,6 +46,66 @@ sensor:
     host: stibbons.synology.me
     port: 32483
 
+  - platform: template
+    sensors:
+      download_192168010_mbytes:
+        friendly_name: 'NAS Download Speed'
+        value_template: >
+          {% if states('sensor.download_192168010') != "unknown" %}
+            {{ states('sensor.download_192168010') }}/s
+          {% else %}
+            unknown
+          {% endif %}
+        icon_template: 'mdi:gauge'
+      upload_192168010_mbytes:
+        friendly_name: 'NAS Upload Speed'
+        value_template: >
+          {% if states('sensor.upload_192168010') != "unknown" %}
+            {{ states('sensor.upload_192168010') }}/s
+          {% else %}
+            unknown
+          {% endif %}
+        icon_template: 'mdi:gauge'
+
+      download_192168022_mbytes:
+        friendly_name: 'OSMC Download Speed'
+        value_template: >
+          {% if states('sensor.download_192168022') != "unknown" %}
+            {{ states('sensor.download_192168022') }}/s
+          {% else %}
+            unknown
+          {% endif %}
+        icon_template: 'mdi:gauge'
+      upload_192168022_mbytes:
+        friendly_name: 'OSMC Upload Speed'
+        value_template: >
+          {% if states('sensor.upload_192168022') != "unknown" %}
+            {{ states('sensor.upload_192168022') }}/s
+          {% else %}
+            unknown
+          {% endif %}
+        icon_template: 'mdi:gauge'
+
+      speedtest_download_mbytes:
+        friendly_name: 'ADSL Download Speed'
+        value_template: >
+          {% if states('sensor.speedtest_download') != "unknown" %}
+            {{ states('sensor.speedtest_download') }}/s
+          {% else %}
+            unknown
+          {% endif %}
+        icon_template: 'mdi:gauge'
+      speedtest_upload_mbytes:
+        friendly_name: 'ADSL Upload Speed'
+        value_template: >
+          {% if states('sensor.speedtest_upload') != "unknown" %}
+            {{ states('sensor.speedtest_upload') }}/s
+          {% else %}
+            unknown
+          {% endif %}
+        icon_template: 'mdi:gauge'
+
+
 device_tracker:
 
   - platform: netgear
@@ -116,11 +176,17 @@ group:
     name: Network
     entities:
       - sensor.external_ip
-      - sensor.speedtest_download
-      - sensor.speedtest_upload
-      - sensor.download_192168010
-      - sensor.upload_192168010
-      - sensor.download_192168022
-      - sensor.upload_192168022
+      # - sensor.speedtest_download
+      # - sensor.speedtest_upload
+      - sensor.speedtest_download_mbytes
+      - sensor.speedtest_upload_mbytes
+      # - sensor.download_192168010
+      # - sensor.upload_192168010
+      # - sensor.download_192168022
+      # - sensor.upload_192168022
+      - sensor.download_192168010_mbytes
+      - sensor.upload_192168010_mbytes
+      - sensor.download_192168022_mbytes
+      - sensor.upload_192168022_mbytes
       - input_boolean.update_speedtest
       - sensor.stibbons_synology_me_ssl_certificate_expiry
