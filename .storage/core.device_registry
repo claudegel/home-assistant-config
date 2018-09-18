@@ -1,0 +1,64 @@
+{
+    "data": {
+        "devices": [
+            {
+                "config_entries": [
+                    "424daed45a794f7990e2a766e3b120c2"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:17:88:28:19:61"
+                    ]
+                ],
+                "id": "a7f1ad85d04d47bb8f615ea58f88fe41",
+                "identifiers": [
+                    [
+                        "hue",
+                        "001788FFFE281961"
+                    ]
+                ],
+                "manufacturer": "Signify",
+                "model": "BSB002",
+                "name": "Philips hue",
+                "sw_version": "1808300701"
+            },
+            {
+                "config_entries": [
+                    "424daed45a794f7990e2a766e3b120c2"
+                ],
+                "connections": [],
+                "id": "b137557b0d5b4da491ba0994cb85cf88",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:00:12:19:72-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue iris",
+                "name": "Hue iris Gaetan",
+                "sw_version": "5.105.1.21778"
+            },
+            {
+                "config_entries": [
+                    "424daed45a794f7990e2a766e3b120c2"
+                ],
+                "connections": [],
+                "id": "9dff0617eea54f9c9b3410fcedef501f",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:01:23:53:18-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue iris",
+                "name": "Hue iris Aurelie",
+                "sw_version": "5.105.1.21778"
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}
