@@ -10,12 +10,19 @@ sensor:
   - platform: season
     type: meteorological
 
+
+binary_sensor:
+  - platform: workday
+    country: FR
+
+
 group:
   date:
     name: Date
     entities:
       - sensor.date
       - sensor.season
+      - binary_sensor.workday
       - sun.sun
       - sensor.time
       - sensor.time_utc
