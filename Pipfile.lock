@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "07f525a25a157df2c558123770af08bc02cf052bd87c6da8887f1ab2f9ed77ba"
+            "sha256": "8feac293bc0fd7290a1898681bb47b064231973680c7a20eba6389e83a437180"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -115,7 +115,6 @@
                 "sha256:474d4bc64cee20603e225eb1ece15e248962958b45a3648a9f5cc29e827a610c",
                 "sha256:b3c0ddc416736619bd4a95ca31de8da6920c3b9a140c64dbef2b2fa7bf521287"
             ],
-            "markers": "python_version >= '3.5.3'",
             "version": "==3.0.0"
         },
         "attrs": {
@@ -249,7 +248,6 @@
                 "sha256:edabd457cd23a02965166026fd9bfd196f4324fe6032e866d0f3bd0301cd486f",
                 "sha256:fdf1c1dc5bafc32bc5d08b054f94d659422b05aba244d6be4ddc1c72d9aa70fb"
             ],
-            "markers": "python_version != '3.1.*' and python_version != '3.2.*' and python_version != '3.0.*' and python_version != '3.3.*' and python_version >= '2.7'",
             "version": "==1.11.5"
         },
         "chardet": {
@@ -378,6 +376,14 @@
             "index": "pypi",
             "version": "==0.3.0"
         },
+        "holidays": {
+            "hashes": [
+                "sha256:1307de56729b78f6fc2a64a3b4c3e57b9abb06aa64ae879867afe3cc021c975a",
+                "sha256:78ebcb5a791acd021b00718c4871b6eac9b22783676498126be76acc99817470"
+            ],
+            "index": "pypi",
+            "version": "==0.9.7"
+        },
         "home-assistant-frontend": {
             "hashes": [
                 "sha256:d9ff0ac690b5e9c6bab61920e78cf01c336a99e0914cead772f5768311ca4045"
@@ -397,6 +403,7 @@
             "hashes": [
                 "sha256:4696306d1ff835c3ca865fdef2684d7e130b4120cc00126f862ba4797b1602ac"
             ],
+            "markers": "python_version < '4' and python_version != '3.3.*' and python_version != '3.1.*' and python_version != '3.2.*' and python_version >= '2.6' and python_version != '3.0.*'",
             "version": "==1.2.6"
         },
         "i2csense": {
@@ -599,7 +606,7 @@
                 "sha256:f8b3d413c5a8f84b12cd4c5df1d8e211777c9852c6be3ee9c094b626644d3eab"
             ],
             "index": "pypi",
-            "markers": "python_version != '3.1.*' and python_version >= '2.7' and python_version != '3.0.*' and python_version != '3.2.*' and python_version != '3.3.*'",
+            "markers": "python_version != '3.2.*' and python_version != '3.3.*' and python_version != '3.0.*' and python_version != '3.1.*' and python_version >= '2.7'",
             "version": "==5.2.0"
         },
         "ply": {
@@ -675,7 +682,7 @@
             "hashes": [
                 "sha256:a988718abfad80b6b157acce7bf130a30876d27603738ac39f140993246b25b3"
             ],
-            "markers": "python_version != '3.1.*' and python_version != '3.2.*' and python_version != '3.0.*' and python_version != '3.3.*' and python_version >= '2.7'",
+            "markers": "python_version != '3.0.*' and python_version != '3.3.*' and python_version != '3.2.*' and python_version != '3.1.*' and python_version >= '2.7'",
             "version": "==2.19"
         },
         "pycryptodomex": {
@@ -918,6 +925,7 @@
                 "sha256:c6082710f4abfb60793899ca5f21e7ceb25aabf321560cc0726f8b59006811c9",
                 "sha256:f23a29dca18b815d9d64a516b4a0abb1fbdccff6141d988ad8100facb81cf7b3"
             ],
+            "markers": "python_version < '4' and python_version != '3.3.*' and python_version != '3.1.*' and python_version != '3.2.*' and python_version >= '2.6' and python_version != '3.0.*'",
             "version": "==0.9.0"
         },
         "rpi.gpio": {
@@ -952,7 +960,6 @@
             "hashes": [
                 "sha256:fb4195aaabfc01586863f60d3190b5cb1bf8f12622fd597e23e48768dad6bde8"
             ],
-            "markers": "python_version != '3.1.*' and python_version != '3.2.*' and python_version != '3.0.*' and python_version != '3.3.*' and python_version >= '2.7'",
             "version": "==0.5.1"
         },
         "smbus2": {
@@ -1024,7 +1031,6 @@
                 "sha256:a68ac5e15e76e7e5dd2b8f94007233e01effe3e50e8daddf69acfd81cb686baf",
                 "sha256:b5725a0bd4ba422ab0e66e89e030c806576753ea3ee08554382c14e685d117b5"
             ],
-            "markers": "python_version >= '2.6' and python_version < '4' and python_version != '3.0.*' and python_version != '3.3.*' and python_version != '3.1.*' and python_version != '3.2.*'",
             "version": "==1.23"
         },
         "user-agents": {
