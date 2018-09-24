@@ -90,7 +90,7 @@ input_number:
     mode: box
     unit_of_measurement: "ºC"
   temp_for_holidays:
-    name: "Mode Holliday Winter"
+    name: "Winter Holliday"
     min: 12
     max: 25
     step: 1
@@ -245,31 +245,31 @@ automation:
           value: "19"
       - service: input_number.set_value
         data_template:
-          entity_id: temp_for_day_with_presence
+          entity_id: input_number.temp_for_day_with_presence
           value: "17"
       - service: input_number.set_value
         data_template:
-          entity_id: temp_for_day_absent
+          entity_id: input_number.temp_for_day_absent
           value: "16"
       - service: input_number.set_value
         data_template:
-          entity_id: temp_for_evening
+          entity_id: input_number.temp_for_evening
           value: "18"
       - service: input_number.set_value
         data_template:
-          entity_id: temp_for_before_bed
+          entity_id: input_number.temp_for_before_bed
           value: "19"
       - service: input_number.set_value
         data_template:
-          entity_id: temp_for_night
+          entity_id: input_number.temp_for_night
           value: "18"
       - service: input_number.set_value
         data_template:
-          entity_id: temp_for_holidays
+          entity_id: input_number.temp_for_holidays
           value: "16"
       - service: input_number.set_value
         data_template:
-          entity_id: temp_for_summer
+          entity_id: input_number.temp_for_summer
           value: "12"
       - service: input_boolean.turn_off
         entity_id: input_boolean.reset_climate_values

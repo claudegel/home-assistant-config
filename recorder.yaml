@@ -4,6 +4,28 @@ db_url: sqlite:////mnt/storage/domotic/homeassistant/recorder.sqlite
 include:
   entities:
     - climate.thermostat_transmitter_heating
+    - input_boolean.reset_climate_values
+    - input_datetime.heat_time_weekday_beforebed
+    - input_datetime.heat_time_weekday_day
+    - input_datetime.heat_time_weekday_evening
+    - input_datetime.heat_time_weekday_morning
+    - input_datetime.heat_time_weekday_night
+    - input_datetime.heat_time_weekend_beforebed
+    - input_datetime.heat_time_weekend_day
+    - input_datetime.heat_time_weekend_evening
+    - input_datetime.heat_time_weekend_morning
+    - input_datetime.heat_time_weekend_night
+    - input_number.temp_for_before_bed
+    - input_number.temp_for_day_absent
+    - input_number.temp_for_day_with_presence
+    - input_number.temp_for_evening
+    - input_number.temp_for_holidays
+    - input_number.temp_for_morning
+    - input_number.temp_for_night
+    - input_number.temp_for_summer
+    - input_select.auto_main_heat
+    - input_select.climate_season
+    - input_select.main_heat_mode
     - sensor.aurelie_back_from_work
     - sensor.aurelies_work
     - sensor.cabinet_smart_plug_power
@@ -37,3 +59,4 @@ include:
     - sensor.washing_machine_smart_plug_power
     - sensor.washing_machine_status
     - switch.boiler_actuator_switch
+
