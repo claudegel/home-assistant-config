@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ./stop-daemon.sh
-cd $(dirname $0 && pwd)
+cd $(dirname $0)
 
 export PATH=$HOME/.local/bin:$PATH
 export TMPDIR=$(cd tmp && pwd)
