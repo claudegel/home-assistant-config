@@ -1,21 +1,39 @@
-purge_keep_days: 1
+purge_keep_days: 2
 purge_interval: 1
 db_url: sqlite:////mnt/storage/domotic/homeassistant/recorder.sqlite
 include:
   entities:
+    - climate.thermostat_transmitter_heating
+    - sensor.aurelie_back_from_work
+    - sensor.aurelies_work
+    - sensor.cabinet_smart_plug_power
+    - sensor.cabinet_ups_status
+    - sensor.dark_blue_smart_plug_power
     - sensor.external_ip
-    - sensor.thermostat_setpoint
-    - switch.boiler_actuator_switch
+    - sensor.gaetan_back_from_work
+    - sensor.gaetans_work
     - sensor.ha_available_version
     - sensor.ha_installed_version
-    - sensor.home_cinema_ups_status
-    - sensor.cabinet_ups_status
-    - sensor.washing_machine_status
-    - sensor.washing_machine_energy_each_2_min
-    - sensor.washing_machine_smart_plug_power
-    - sensor.cabinet_smart_plug_power
-    - sensor.dark_blue_smart_plug_power
-    - sensor.home_cinema_smart_plug_power
+    - sensor.harmony_home_cinema_current_activity
     - sensor.hass__homeassistantlog
     - sensor.hass__recordersqlite
+    - sensor.home_cinema_smart_plug_power
+    - sensor.home_cinema_ups_status
+    - sensor.rfxcom_bathroom_temperature
+    - sensor.rfxcom_cigare_cave_humidity
+    - sensor.rfxcom_cigare_cave_temperature
+    - sensor.rfxcom_friend_room_temperature
+    - sensor.rfxcom_garage_temperature
+    - sensor.rfxcom_home_energy_usage
+    - sensor.rfxcom_kitchen_temperature
+    - sensor.rfxcom_living_room_temperature
+    - sensor.rfxcom_office_temperature
+    - sensor.rfxcom_outside_temperature
+    - sensor.rfxcom_parents_room_temperature
+    - sensor.rfxcom_upper_floor_corridor_temperature
+    - sensor.thermostat_setpoint
     - sensor.thermostat_transmitter_battery_level
+    - sensor.washing_machine_energy_each_2_min
+    - sensor.washing_machine_smart_plug_power
+    - sensor.washing_machine_status
+    - switch.boiler_actuator_switch

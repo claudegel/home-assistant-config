@@ -4,33 +4,164 @@ input_select:
   climate_season:
     name: Climate Season
     options:
-     # 'mode été' or 'hors gel': we are during summer, do not care about heating
-     - 'Summer or Frost Protection'
-     # 'mode hiver': Optimize temperature to maintain confort at lowest cost 
-     - 'Winter'
+      # 'mode été' or 'hors gel': we are during summer, do not care about heating
+      - 'Summer or Frost Protection'
+      # 'mode hiver': Optimize temperature to maintain confort at lowest cost 
+      - 'Winter'
     icon: mdi:weather-sunset-up
 
   auto_main_heat:
     name: Climate Control Mode
     options:
-    - Not / Applicable
-    - Automatic mode change
-    - Manual mode change
+      - Not / Applicable
+      - Automatic mode change
+      - Manual mode change
     icon: mdi:robot
     
   main_heat_mode:
     name: Heat Mode
     options:
-    - Not / Applicable
-    # 'workweek'
-    - Work Week
-    # 'Vacance à la maison': vacation at home
-    - Vacation at Home
-    # 'Vacance hors de la maison': vacation out of home, for more than 3 days
-    - Vacation out
+      - Not / Applicable
+      # 'workweek'
+      - Work Week
+      # 'Vacance à la maison': vacation at home
+      - Vacation at Home
+      # 'Vacance hors de la maison': vacation out of home, for more than 3 days
+      - Vacation out
     icon: mdi:oil-temperature
 
+
+input_boolean:
+
+  reset_climate_values:
+    name: Reset default value
+    initial: off
+    icon: mdi:refresh
+
+
+input_number:
+
+  temp_for_night:
+    name: "Winter Night"
+    min: 12
+    max: 25
+    step: 1
+    icon: mdi:thermometer
+    mode: box
+    unit_of_measurement: "ºC"
+  temp_for_morning:
+    name: "Winter Morning"
+    min: 12
+    max: 25
+    step: 1
+    icon: mdi:thermometer
+    mode: box
+    unit_of_measurement: "ºC"
+  temp_for_day_with_presence:
+    name: "Winter Day Here"
+    min: 12
+    max: 25
+    step: 1
+    icon: mdi:thermometer
+    mode: box
+    unit_of_measurement: "ºC"
+  temp_for_day_absent:
+    name: "Winter Day Away"
+    min: 12
+    max: 25
+    step: 1
+    icon: mdi:thermometer
+    mode: box
+    unit_of_measurement: "ºC"
+  temp_for_evening:
+    name: "Winter Evening"
+    min: 12
+    max: 25
+    step: 1
+    icon: mdi:thermometer
+    mode: box
+    unit_of_measurement: "ºC"
+  temp_for_summer:
+    name: "Summer"
+    min: 12
+    max: 25
+    step: 1
+    icon: mdi:thermometer
+    mode: box
+    unit_of_measurement: "ºC"
+  temp_for_holidays:
+    name: "Mode Holliday Winter"
+    min: 12
+    max: 25
+    step: 1
+    icon: mdi:thermometer
+    mode: box
+    unit_of_measurement: "ºC"
+  temp_for_before_bed:
+    name: "Winter Before Bed"
+    min: 12
+    max: 25
+    step: 1
+    icon: mdi:thermometer
+    mode: box
+    unit_of_measurement: "ºC"
+
+
+input_datetime:
+  heat_time_weekday_morning:
+    name: Weekday morning
+    has_date: false
+    has_time: true
+    icon: mdi:clock-outline
+  heat_time_weekday_day:
+    name: Weekday day
+    has_date: false
+    has_time: true
+    icon: mdi:clock-outline
+  heat_time_weekday_evening:
+    name: Weekday evening
+    has_date: false
+    has_time: true
+    icon: mdi:clock-outline
+  heat_time_weekday_beforebed:
+    name: Weekday beforebed
+    has_date: false
+    has_time: true
+    icon: mdi:clock-outline
+  heat_time_weekday_night:
+    name: Weekday night
+    has_date: false
+    has_time: true
+    icon: mdi:clock-outline
+  heat_time_weekend_morning:
+    name: Weekend morning
+    has_date: false
+    has_time: true
+    icon: mdi:clock-outline
+  heat_time_weekend_day:
+    name: Weekend day
+    has_date: false
+    has_time: true
+    icon: mdi:clock-outline
+  heat_time_weekend_evening:
+    name: Weekend evening
+    has_date: false
+    has_time: true
+    icon: mdi:clock-outline
+  heat_time_weekend_beforebed:
+    name: Weekend beforebed
+    has_date: false
+    has_time: true
+    icon: mdi:clock-outline
+  heat_time_weekend_night:
+    name: Weekend night
+    has_date: false
+    has_time: true
+    icon: mdi:clock-outline
+
+
 automation:
+
   - alias: set_season_summer
     trigger:
       platform: state
@@ -45,6 +176,7 @@ automation:
         data:
           entity_id: input_select.main_heat_mode
           option: "Not / Applicable"
+
   - alias: set_season_winter
     trigger:
       platform: state
@@ -59,7 +191,90 @@ automation:
         data:
           option: "Work Week"
           entity_id: input_select.main_heat_mode
+
+  - alias: 'Reset default values'
+    trigger:
+      - platform: state
+        entity_id: input_boolean.reset_climate_values
+        to: 'on'
+        from: 'off'
+    action:
+      - service: input_datetime.set_datetime
+        entity_id: input_datetime.heat_time_weekday_morning
+        data:
+          time: '05:00:00'
+      - service: input_datetime.set_datetime
+        entity_id: input_datetime.heat_time_weekend_morning
+        data:
+          time: '07:00:00'
+      - service: input_datetime.set_datetime
+        entity_id: input_datetime.heat_time_weekday_day
+        data:
+          time: '08:00:00'
+      - service: input_datetime.set_datetime
+        entity_id: input_datetime.heat_time_weekend_day
+        data:
+          time: '09:00:00'
+      - service: input_datetime.set_datetime
+        entity_id: input_datetime.heat_time_weekday_evening
+        data:
+          time: '17:00:00'
+      - service: input_datetime.set_datetime
+        entity_id: input_datetime.heat_time_weekend_evening
+        data:
+          time: '17:00:00'
+      - service: input_datetime.set_datetime
+        entity_id: input_datetime.heat_time_weekday_beforebed
+        data:
+          time: '21:00:00'
+      - service: input_datetime.set_datetime
+        entity_id: input_datetime.heat_time_weekend_beforebed
+        data:
+          time: '23:00:00'
+      - service: input_datetime.set_datetime
+        entity_id: input_datetime.heat_time_weekday_night
+        data:
+          time: '23:00:00'
+      - service: input_datetime.set_datetime
+        entity_id: input_datetime.heat_time_weekend_night
+        data:
+          time: '00:00:00'
+      - service: input_number.set_value
+        data_template:
+          entity_id: input_number.temp_for_morning
+          value: "19"
+      - service: input_number.set_value
+        data_template:
+          entity_id: temp_for_day_with_presence
+          value: "17"
+      - service: input_number.set_value
+        data_template:
+          entity_id: temp_for_day_absent
+          value: "16"
+      - service: input_number.set_value
+        data_template:
+          entity_id: temp_for_evening
+          value: "18"
+      - service: input_number.set_value
+        data_template:
+          entity_id: temp_for_before_bed
+          value: "19"
+      - service: input_number.set_value
+        data_template:
+          entity_id: temp_for_night
+          value: "18"
+      - service: input_number.set_value
+        data_template:
+          entity_id: temp_for_holidays
+          value: "16"
+      - service: input_number.set_value
+        data_template:
+          entity_id: temp_for_summer
+          value: "12"
+      - service: input_boolean.turn_off
+        entity_id: input_boolean.reset_climate_values
         
+
 group:
   climate_control:
     name: Climate Control
@@ -67,3 +282,26 @@ group:
       - input_select.climate_season
       - input_select.auto_main_heat
       - input_select.main_heat_mode
+
+  climate_control_tuning:
+    name: Climate Tuning
+    entities:
+      - input_datetime.heat_time_weekday_morning
+      - input_datetime.heat_time_weekend_morning
+      - input_number.temp_for_morning
+      - input_datetime.heat_time_weekday_day
+      - input_datetime.heat_time_weekend_day
+      - input_number.temp_for_day_with_presence
+      - input_number.temp_for_day_absent
+      - input_datetime.heat_time_weekday_evening
+      - input_datetime.heat_time_weekend_evening
+      - input_number.temp_for_evening
+      - input_datetime.heat_time_weekday_beforebed
+      - input_datetime.heat_time_weekend_beforebed
+      - input_number.temp_for_before_bed
+      - input_datetime.heat_time_weekday_night
+      - input_datetime.heat_time_weekend_night
+      - input_number.temp_for_night
+      - input_number.temp_for_holidays
+      - input_number.temp_for_summer
+      - input_boolean.reset_climate_values
