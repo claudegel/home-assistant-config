@@ -1,10 +1,60 @@
-# Do NOT set initial to have state restaured:
+#
+################################################################################
+# 1. Confortable Temperature pattern
+################################################################################
+#
+# Here is the overall pattern of this very confortable heater control.
+#
+# temperatures
+#         20                               +---+
+#         19     +-----+             +-----+   |
+#         18   --+     |         +---+         +----
+#         17           +---------+
+#                5h     9h        17h 19h   23h 0h    hours
+#
+# The scenario follow this pattern:
+# - Give a morning boost in the morning, simulating the natural heat from the
+#   sun.
+# - After a day with a lower temperature, the thermostat is raised again for
+#   return to home.
+# - Keep this temperature not too high because the family usually moves around
+#   for diner
+# - And then raise again the temperature when we settle down a little bit for
+#   calmer activities, reading or TV.
+# - When we go to bed, we like having warmer bedrooms
+#
+# All temperatures and times are changeable but the heater should usually follow
+# this pattern.
+#
+# There are 2 temperatures patterns with different times:
+#  - work week
+#  - week end
+#
+# On first boot, click on "Reset default values".
+
+################################################################################
+# 2. Smart heat mode
+################################################################################
+# There is 4 types of days:
+#   - vacation, summer or frost protection mode: just ensure temperature never
+#     goes bellow 12 degree
+#   - work week: go out in the morning, go back in the afternoon, sleep early
+#   - week end or vacation at home: stay in bed later, stays at home, stay awake
+#     later
+#
+# The friday evening is considered as part of the week end.
+# Sunday is considered as part of the week day.
+
+#
+# Do NOT set initial values to have state restaured by the recorder!
 #  https://www.home-assistant.io/components/input_select/#restore-state
+
 input_select:
   climate_season:
     name: Climate Season
     options:
-      # 'mode été' or 'hors gel': we are during summer, do not care about heating
+      # 'mode été' or 'hors gel': we are during summer, do not care about 
+      # heating
       - 'Summer or Frost Protection'
       # 'mode hiver': Optimize temperature to maintain confort at lowest cost 
       - 'Winter'
