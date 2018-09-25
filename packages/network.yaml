@@ -54,16 +54,16 @@ sensor:
           {% if states('sensor.download_192168010') != "unknown" %}
             {{ states('sensor.download_192168010') }}/s
           {% else %}
-            unknown
+            N/A
           {% endif %}
         icon_template: 'mdi:gauge'
       upload_192168010_mbytes:
         friendly_name: 'NAS Upload Speed'
         value_template: >
           {% if states('sensor.upload_192168010') != "unknown" %}
-            {{ states('sensor.upload_192168010') }}/s
+            {{ states('sensor.upload_192168010') }} Mb/s
           {% else %}
-            unknown
+            N/A
           {% endif %}
         icon_template: 'mdi:gauge'
 
@@ -71,18 +71,18 @@ sensor:
         friendly_name: 'OSMC Download Speed'
         value_template: >
           {% if states('sensor.download_192168022') != "unknown" %}
-            {{ states('sensor.download_192168022') }}/s
+            {{ states('sensor.download_192168022') }} Mb/s
           {% else %}
-            unknown
+            N/A
           {% endif %}
         icon_template: 'mdi:gauge'
       upload_192168022_mbytes:
         friendly_name: 'OSMC Upload Speed'
         value_template: >
           {% if states('sensor.upload_192168022') != "unknown" %}
-            {{ states('sensor.upload_192168022') }}/s
+            {{ states('sensor.upload_192168022') }} Mb/s
           {% else %}
-            unknown
+            N/A
           {% endif %}
         icon_template: 'mdi:gauge'
 
@@ -90,18 +90,18 @@ sensor:
         friendly_name: 'ADSL Download Speed'
         value_template: >
           {% if states('sensor.speedtest_download') != "unknown" %}
-            {{ states('sensor.speedtest_download') }}/s
+            {{ states('sensor.speedtest_download') }} Mb/s
           {% else %}
-            unknown
+            N/A
           {% endif %}
         icon_template: 'mdi:gauge'
       speedtest_upload_mbytes:
         friendly_name: 'ADSL Upload Speed'
         value_template: >
           {% if states('sensor.speedtest_upload') != "unknown" %}
-            {{ states('sensor.speedtest_upload') }}/s
+            {{ states('sensor.speedtest_upload') }} Mb/s
           {% else %}
-            unknown
+            N/A
           {% endif %}
         icon_template: 'mdi:gauge'
 
@@ -135,12 +135,26 @@ device_tracker:
     consider_home: 1200
     hosts:
       gaetan_iphone: 192.168.0.32
-      gaetan_macbookpro: 192.168.0.50
+      gaetan_macbookpro: 192.168.0.71
       aurelie_iphone: 192.168.0.31
   
   - platform: nmap_tracker
     hosts: 192.168.0.0/24
     home_interval: 30
+
+
+binary_sensor:
+  - platform: ping
+    host: 192.168.0.1
+    name: Freebox
+
+  - platform: ping
+    host: 192.168.0.7
+    name: R7000
+    
+  - platform: ping
+    host: 192.168.0.4
+    name: Hue
 
 
 homeassistant:
@@ -185,7 +199,9 @@ group:
   network:
     name: Network
     entities:
+      - binary_sensor.freebox
       - sensor.external_ip
+      - binary_sensor.r7000
       # - sensor.speedtest_download
       # - sensor.speedtest_upload
       - sensor.speedtest_download_mbytes
@@ -200,3 +216,8 @@ group:
       - sensor.upload_192168022_mbytes
       - input_boolean.update_speedtest
       - sensor.stibbons_synology_me_ssl_certificate_expiry
+
+  smart_lights:
+    name: Smart Lights
+    entities:
+      - binary_sensor.hue
