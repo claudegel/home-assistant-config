@@ -99,3 +99,10 @@ group:
       - sensor.nas_volume_used_volume_2
       - sensor.nas_used_space_volume_2
       - sensor.nas_total_size_volume_2
+  nas_volume3:
+    name: NAS Volume 3
+    entities:
+      - sensor.nas_status_volume_3
+      - sensor.nas_volume_used_volume_3
+      - sensor.nas_used_space_volume_3
+      - sensor.nas_total_size_volume_3

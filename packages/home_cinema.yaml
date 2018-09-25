@@ -106,7 +106,7 @@ homeassistant:
 
 binary_sensor:
   - platform: ping
-    host: 192.168.0.37
+    host: 192.168.0.22
     name: osmc
 
 
@@ -114,7 +114,7 @@ media_player:
   - platform: kodi
     id: kodi_living_room
     name: "Home Cinema Salon Kodi"
-    host: 192.168.0.37
+    host: 192.168.0.20
     #username: gaetan
     #password: !secret media_player__kodi__password
   

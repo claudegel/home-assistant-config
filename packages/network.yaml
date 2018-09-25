@@ -173,6 +173,9 @@ homeassistant:
 
     input_boolean.update_speedtest:
       can_cancel: false
+    
+    binary_sensor.R7000:
+      friendly_name: Nighthawk R7000 Router
 
 
 input_boolean:
