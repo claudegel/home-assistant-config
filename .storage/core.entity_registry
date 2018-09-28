@@ -3,7 +3,8 @@
         "entities": [
             {
                 "config_entry_id": "424daed45a794f7990e2a766e3b120c2",
-                "device_id": null,
+                "device_id": "9dff0617eea54f9c9b3410fcedef501f",
+                "disabled_by": null,
                 "entity_id": "light.hue_iris_aurelie",
                 "name": null,
                 "platform": "hue",
@@ -11,7 +12,8 @@
             },
             {
                 "config_entry_id": "424daed45a794f7990e2a766e3b120c2",
-                "device_id": null,
+                "device_id": "b137557b0d5b4da491ba0994cb85cf88",
+                "disabled_by": null,
                 "entity_id": "light.hue_iris_gaetan",
                 "name": null,
                 "platform": "hue",
@@ -20,6 +22,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "media_player.emby__kodi__osmc",
                 "name": null,
                 "platform": "emby",
@@ -28,6 +31,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "media_player.emby__emby_mobile__chrome",
                 "name": null,
                 "platform": "emby",
@@ -36,6 +40,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "media_player.emby__home_assistant__homeassistant",
                 "name": null,
                 "platform": "emby",
@@ -44,6 +49,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "media_player.emby__emby_for_ios__iphone81",
                 "name": null,
                 "platform": "emby",
@@ -52,6 +58,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "media_player.emby__kodi__osmc_2",
                 "name": null,
                 "platform": "emby",
@@ -60,6 +67,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.pws_dewpoint_c",
                 "name": null,
                 "platform": "wunderground",
@@ -68,6 +76,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.pws_alerts",
                 "name": null,
                 "platform": "wunderground",
@@ -76,6 +85,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.pws_alerts_2",
                 "name": null,
                 "platform": "wunderground",
@@ -84,22 +94,25 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.pws_dewpoint_c_2",
                 "name": null,
                 "platform": "wunderground",
                 "unique_id": "@1.393550,43.516940,dewpoint_c"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "680812615272427c9d4a6f1d9a47fc9e",
+                "device_id": "71d4a790c1e84a41bb046e0e00dc70f4",
+                "disabled_by": null,
                 "entity_id": "sensor.stibphone2_battery_state",
                 "name": null,
                 "platform": "ios",
                 "unique_id": "state_Stibphone2"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "680812615272427c9d4a6f1d9a47fc9e",
+                "device_id": "71d4a790c1e84a41bb046e0e00dc70f4",
+                "disabled_by": null,
                 "entity_id": "sensor.stibphone2_battery_level",
                 "name": null,
                 "platform": "ios",
@@ -108,6 +121,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "media_player.emby__emby_mobile__chrome_2",
                 "name": null,
                 "platform": "emby",
@@ -116,6 +130,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "media_player.emby__emby_mobile__web_browser_iphone",
                 "name": null,
                 "platform": "emby",
@@ -124,6 +139,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "media_player.emby__emby_mobile__chrome_3",
                 "name": null,
                 "platform": "emby",
@@ -132,6 +148,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "media_player.emby__emby_mobile__web_browser_iphone_2",
                 "name": null,
                 "platform": "emby",
@@ -140,6 +157,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "media_player.emby__emby_mobile__chrome_android",
                 "name": null,
                 "platform": "emby",
@@ -148,6 +166,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "media_player.emby__emby_mobile__chrome_4",
                 "name": null,
                 "platform": "emby",
@@ -156,6 +175,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "media_player.emby__emby_mobile__chrome_android_2",
                 "name": null,
                 "platform": "emby",
@@ -164,6 +184,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "zwave.controller",
                 "name": null,
                 "platform": "zwave",
@@ -172,6 +193,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "zwave.thermostat_transmitter",
                 "name": null,
                 "platform": "zwave",
@@ -180,6 +202,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "switch.thermostat_transmitter_switch",
                 "name": null,
                 "platform": "zwave",
@@ -188,6 +211,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "climate.thermostat_transmitter_heating",
                 "name": null,
                 "platform": "zwave",
@@ -196,6 +220,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "zwave.washing_machine_smart_plug",
                 "name": null,
                 "platform": "zwave",
@@ -204,6 +229,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.washing_machine_smart_plug_power",
                 "name": "Washing Machine Power",
                 "platform": "zwave",
@@ -212,6 +238,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "switch.washing_machine_smart_plug_switch",
                 "name": null,
                 "platform": "zwave",
@@ -220,6 +247,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.washing_machine_smart_plug_power_2",
                 "name": null,
                 "platform": "zwave",
@@ -228,6 +256,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.washing_machine_smart_plug_exporting",
                 "name": null,
                 "platform": "zwave",
@@ -236,6 +265,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.washing_machine_smart_plug_energy",
                 "name": null,
                 "platform": "zwave",
@@ -244,6 +274,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "zwave.home_cinema_smart_plug",
                 "name": "FIBARO FGWPE/F Wall Plug Gen5 (Home Cinema)",
                 "platform": "zwave",
@@ -252,6 +283,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "switch.home_cinema_smart_plug_switch",
                 "name": null,
                 "platform": "zwave",
@@ -260,6 +292,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.home_cinema_smart_plug_alarm_type",
                 "name": null,
                 "platform": "zwave",
@@ -268,6 +301,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.home_cinema_smart_plug_alarm_level",
                 "name": null,
                 "platform": "zwave",
@@ -276,6 +310,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.home_cinema_smart_plug_power",
                 "name": "Home Cinema Power",
                 "platform": "zwave",
@@ -284,6 +319,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.home_cinema_smart_plug_power_2",
                 "name": "Home Cinema Power",
                 "platform": "zwave",
@@ -292,6 +328,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.home_cinema_smart_plug_exportin",
                 "name": null,
                 "platform": "zwave",
@@ -300,6 +337,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.home_cinema_smart_plug_sourcenodeid",
                 "name": null,
                 "platform": "zwave",
@@ -308,6 +346,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.home_cinema_smart_plug_power_management",
                 "name": null,
                 "platform": "zwave",
@@ -316,6 +355,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.home_cinema_smart_plug_energy",
                 "name": null,
                 "platform": "zwave",
@@ -324,6 +364,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "zwave.entrance_multisensor",
                 "name": "Aeotec ZW100 MultiSensor 6 (Entrance)",
                 "platform": "zwave",
@@ -332,6 +373,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "binary_sensor.entrance_multisensor_sensor",
                 "name": null,
                 "platform": "zwave",
@@ -340,6 +382,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.entrance_multisensor_temperature",
                 "name": null,
                 "platform": "zwave",
@@ -348,6 +391,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.entrance_multisensor_luminance",
                 "name": null,
                 "platform": "zwave",
@@ -356,6 +400,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.entrance_multisensor_relative_humidity",
                 "name": null,
                 "platform": "zwave",
@@ -364,6 +409,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.entrance_multisensor_ultraviolet",
                 "name": null,
                 "platform": "zwave",
@@ -372,6 +418,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.entrance_multisensor_sourcenodeid",
                 "name": null,
                 "platform": "zwave",
@@ -380,6 +427,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.entrance_multisensor_burglar",
                 "name": null,
                 "platform": "zwave",
@@ -388,6 +436,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.entrance_multisensor_alarm_type",
                 "name": null,
                 "platform": "zwave",
@@ -396,6 +445,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.entrance_multisensor_alarm_level",
                 "name": null,
                 "platform": "zwave",
@@ -404,6 +454,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "zwave.dark_blue_smart_plug",
                 "name": "NodOn MSP-3-1-XX Micro Smart Plug (Dark Blue)",
                 "platform": "zwave",
@@ -412,6 +463,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.dark_blue_smart_plug_power",
                 "name": "Dark Blue Smart Plug Power",
                 "platform": "zwave",
@@ -420,6 +472,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.dark_blue_smart_plug_exporting",
                 "name": null,
                 "platform": "zwave",
@@ -428,6 +481,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.dark_blue_smart_plug_alarm_type",
                 "name": null,
                 "platform": "zwave",
@@ -436,6 +490,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.dark_blue_smart_plug_alarm_level",
                 "name": null,
                 "platform": "zwave",
@@ -444,6 +499,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.dark_blue_smart_plug_sourcenodeid",
                 "name": null,
                 "platform": "zwave",
@@ -452,6 +508,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.dark_blue_smart_plug_power_management",
                 "name": null,
                 "platform": "zwave",
@@ -460,6 +517,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.dark_blue_smart_plug_system",
                 "name": null,
                 "platform": "zwave",
@@ -468,6 +526,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.dark_blue_smart_plug_energy_2",
                 "name": null,
                 "platform": "zwave",
@@ -476,6 +535,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "switch.dark_blue_smart_plug_switch",
                 "name": "Dark Blue Smart Plug Switch",
                 "platform": "zwave",
@@ -484,6 +544,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "zwave.cabinet_smart_plug",
                 "name": "NodOn MSP-3-1-XX Micro Smart Plug (Cabinet)",
                 "platform": "zwave",
@@ -492,6 +553,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.cabinet_smart_plug_previous_reading",
                 "name": null,
                 "platform": "zwave",
@@ -500,6 +562,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.cabinet_smart_plug_interval",
                 "name": null,
                 "platform": "zwave",
@@ -508,6 +571,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.cabinet_smart_plug_energy",
                 "name": null,
                 "platform": "zwave",
@@ -516,6 +580,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "switch.cabinet_smart_plug_switch_2",
                 "name": null,
                 "platform": "zwave",
@@ -524,6 +589,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.cabinet_smart_plug_system_2",
                 "name": null,
                 "platform": "zwave",
@@ -532,6 +598,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.cabinet_smart_plug_sourcenodeid",
                 "name": null,
                 "platform": "zwave",
@@ -540,6 +607,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.cabinet_smart_plug_power_management",
                 "name": "Cabinet Power",
                 "platform": "zwave",
@@ -548,6 +616,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.cabinet_smart_plug_alarm_type",
                 "name": null,
                 "platform": "zwave",
@@ -556,6 +625,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.cabinet_smart_plug_alarm_level_1",
                 "name": null,
                 "platform": "zwave",
@@ -564,6 +634,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.dark_blue_smart_plug_previous_reading",
                 "name": null,
                 "platform": "zwave",
@@ -572,6 +643,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.dark_blue_smart_plug_interval",
                 "name": null,
                 "platform": "zwave",
@@ -580,6 +652,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.dark_blue_smart_plug_previous_reading_2",
                 "name": null,
                 "platform": "zwave",
@@ -588,6 +661,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.dark_blue_smart_plug_interval_2",
                 "name": null,
                 "platform": "zwave",
@@ -596,6 +670,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.cabinet_smart_plug_alarm_level_2",
                 "name": null,
                 "platform": "zwave",
@@ -604,6 +679,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "zwave.boiler_actuator",
                 "name": null,
                 "platform": "zwave",
@@ -612,6 +688,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "switch.boiler_actuator_switch",
                 "name": null,
                 "platform": "zwave",
@@ -620,6 +697,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.thermostat_transmitter_temperature",
                 "name": null,
                 "platform": "zwave",
@@ -628,6 +706,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.cabinet_smart_plug_power",
                 "name": "Cabinet Power",
                 "platform": "zwave",
@@ -636,6 +715,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "sensor.cabinet_smart_plug_exporting",
                 "name": null,
                 "platform": "zwave",
@@ -644,6 +724,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "media_player.emby__pyemby__homeassistant",
                 "name": null,
                 "platform": "emby",
@@ -652,6 +733,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "binary_sensor.camera_ip_1_motion",
                 "name": null,
                 "platform": "hikvision",

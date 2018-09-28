@@ -11,6 +11,7 @@
                         "00:17:88:28:19:61"
                     ]
                 ],
+                "hub_device_id": null,
                 "id": "a7f1ad85d04d47bb8f615ea58f88fe41",
                 "identifiers": [
                     [
@@ -28,6 +29,7 @@
                     "424daed45a794f7990e2a766e3b120c2"
                 ],
                 "connections": [],
+                "hub_device_id": "a7f1ad85d04d47bb8f615ea58f88fe41",
                 "id": "b137557b0d5b4da491ba0994cb85cf88",
                 "identifiers": [
                     [
@@ -45,6 +47,7 @@
                     "424daed45a794f7990e2a766e3b120c2"
                 ],
                 "connections": [],
+                "hub_device_id": "a7f1ad85d04d47bb8f615ea58f88fe41",
                 "id": "9dff0617eea54f9c9b3410fcedef501f",
                 "identifiers": [
                     [
@@ -56,6 +59,24 @@
                 "model": "Hue iris",
                 "name": "Hue iris Aurelie",
                 "sw_version": "5.105.1.21778"
+            },
+            {
+                "config_entries": [
+                    "680812615272427c9d4a6f1d9a47fc9e"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "71d4a790c1e84a41bb046e0e00dc70f4",
+                "identifiers": [
+                    [
+                        "ios",
+                        "509C8E9A-D9F9-4627-AF32-C25973DE1F31"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iPhone 6s",
+                "name": "Stibphone2",
+                "sw_version": "12.0"
             }
         ]
     },

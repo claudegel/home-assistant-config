@@ -2,6 +2,7 @@
     "data": {
         "entries": [
             {
+                "connection_class": "unknown",
                 "data": {
                     "bridge_id": "001788FFFE281961",
                     "host": "192.168.0.4",
@@ -11,6 +12,24 @@
                 "entry_id": "424daed45a794f7990e2a766e3b120c2",
                 "source": "import",
                 "title": "Philips hue",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "mqtt",
+                "entry_id": "1d967f88b90142beaced350e6f38f9b4",
+                "source": "import",
+                "title": "configuration.yaml",
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {},
+                "domain": "ios",
+                "entry_id": "680812615272427c9d4a6f1d9a47fc9e",
+                "source": "import",
+                "title": "Home Assistant iOS",
                 "version": 1
             }
         ]
