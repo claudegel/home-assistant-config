@@ -6,8 +6,7 @@ cd $(dirname $0)
 export TMPDIR=$(cd tmp && pwd)
 
 pipenv run python configurator.py /mnt/storage/domotic/homeassistant/hass-configurator-settings.conf &
-pipenv run hass \
+pipenv run python hass_pipenv.py \
 	--config /mnt/storage/domotic/homeassistant \
 	--log-rotate-days 3 \
-	--pid-file home-assistant.pid \
-	--skip-pip
+	--pid-file home-assistant.pid

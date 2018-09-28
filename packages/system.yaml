@@ -76,16 +76,24 @@ sensor:
 
 
 shell_command:
-  upgrade_hass: update.sh
+  upgrade_hass: /mnt/storage/domotic/homeassistant/update.sh
+  quick_restart: /mnt/storage/domotic/homeassistant/restart-daemon.sh
 
 
 script:
   # Inspirated by:
   #  https://github.com/mf-social/Home-Assistant/blob/master/packages/system/maintenance.yaml
   upgrade_hass:
+    alias: 'Upgrade HA and Restart'
     sequence:
       - delay: 00:00:02
       - service: shell_command.upgrade_hass
+
+  quick_restart:
+    alias: 'Restart Homeassistant'
+    sequence:
+      - delay: 00:00:02
+      - service: shell_command.quick_restart
 
 
 homeassistant:
@@ -105,9 +113,11 @@ homeassistant:
     script.upgrade_hass:
       icon: mdi:cloud-check
       can_cancel: false
-      custom_ui_state_card: state-card-script-custom-text
       custom_text: "Upgrade HA and Restart"
-
+    script.quick_restart:
+      icon: mdi:server-network
+      can_cancel: false
+      custom_text: "Restart Homeassistant"
 
 automation:
   - alias: SRT321 Battery Notifications
@@ -140,6 +150,7 @@ group:
       - sensor.hass__homeassistantlog
       - sensor.hass__recordersqlite
       - script.upgrade_hass
+      - script.quick_restart
 
   battery_levels:
     name: ZWave Battery Levels
