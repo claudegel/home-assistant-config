@@ -1,6 +1,5 @@
 #!/bin/bash
 
-./stop-daemon.sh
 cd $(dirname $0)
 
 export PATH=$HOME/.local/bin:$PATH
