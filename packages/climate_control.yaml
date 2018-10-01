@@ -60,14 +60,6 @@ input_select:
       - 'Winter'
     icon: mdi:weather-sunset-up
 
-  auto_main_heat:
-    name: Climate Control Mode
-    options:
-      - Not / Applicable
-      - Automatic mode change
-      - Manual mode change
-    icon: mdi:robot
-    
   main_heat_mode:
     name: Heat Mode
     options:
@@ -78,6 +70,22 @@ input_select:
       - Vacation at Home
       # 'Vacance hors de la maison': vacation out of home, for more than 3 days
       - Vacation out
+    icon: mdi:oil-temperature
+
+  auto_main_heat:
+    name: Climate Control Mode
+    options:
+      - Not / Applicable
+      - Automatic mode change
+      - Manual mode change
+    icon: mdi:robot
+    
+  heat_day_mode:
+    name: Day mode (DEBUG)
+    options:
+      - Not / Applicable
+      - Work day
+      - Week end
     icon: mdi:oil-temperature
 
 
@@ -226,6 +234,11 @@ automation:
         data:
           entity_id: input_select.main_heat_mode
           option: "Not / Applicable"
+      - service: input_select.select_option
+        data:
+          entity_id: input_select.heat_day_mode
+          option: "Not / Applicable"
+
 
   - alias: set_season_winter
     trigger:
@@ -241,6 +254,10 @@ automation:
         data:
           option: "Work Week"
           entity_id: input_select.main_heat_mode
+      - service: input_select.select_option
+        data:
+          entity_id: input_select.heat_day_mode
+          option: "Work day"
 
   - alias: 'Reset default values'
     trigger:
@@ -330,8 +347,16 @@ group:
     name: Climate Control
     entities:
       - input_select.climate_season
-      - input_select.auto_main_heat
       - input_select.main_heat_mode
+      - input_select.auto_main_heat
+
+  climate_control_dbg:
+    name: Climate Control (DBG)
+    entities:
+      - input_select.climate_season
+      - input_select.main_heat_mode
+      - input_select.auto_main_heat
+      - input_select.heat_day_mode
 
   climate_control_tuning:
     name: Climate Tuning
