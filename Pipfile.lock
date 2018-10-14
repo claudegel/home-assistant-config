@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "cf505a57d1a07b3fd4038319874876109aa70b366ab2f3ed7e578f7133e71795"
+            "sha256": "e2b08fb4dcfaef9b1d2fb2779720f252d649940ee8e10d1ba2103c9e4545636f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -55,7 +55,6 @@
                 "sha256:48e2b15d518d149d954c5d4a865d8f1992f24bcca25ffdceba16b46101254cda",
                 "sha256:ab0c08f2467d35fcaeb7bad15274743d3ac1ad18b5391f64a0058a9cd192d37d"
             ],
-            "markers": "python_version != '3.1.*' and python_version >= '2.6' and python_version != '3.2.*' and python_version < '4' and python_version != '3.0.*' and python_version != '3.3.*'",
             "version": "==1.6.1"
         },
         "async-timeout": {
@@ -63,7 +62,6 @@
                 "sha256:474d4bc64cee20603e225eb1ece15e248962958b45a3648a9f5cc29e827a610c",
                 "sha256:b3c0ddc416736619bd4a95ca31de8da6920c3b9a140c64dbef2b2fa7bf521287"
             ],
-            "markers": "python_version >= '3.5.3'",
             "version": "==3.0.0"
         },
         "attrs": {
@@ -154,7 +152,6 @@
                 "sha256:edabd457cd23a02965166026fd9bfd196f4324fe6032e866d0f3bd0301cd486f",
                 "sha256:fdf1c1dc5bafc32bc5d08b054f94d659422b05aba244d6be4ddc1c72d9aa70fb"
             ],
-            "markers": "python_version != '3.1.*' and python_version != '3.2.*' and python_version != '3.0.*' and python_version != '3.3.*' and python_version >= '2.7'",
             "version": "==1.11.5"
         },
         "chardet": {
@@ -163,6 +160,14 @@
                 "sha256:fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691"
             ],
             "version": "==3.0.4"
+        },
+        "colorlog": {
+            "hashes": [
+                "sha256:418db638c9577f37f0fae4914074f395847a728158a011be2a193ac491b9779d",
+                "sha256:8b234ebae1ba1237bc79c0d5f1f47b31a3f3e90c0b4c2b0ebdde63a174d3b97b"
+            ],
+            "index": "pypi",
+            "version": "==3.1.4"
         },
         "cryptography": {
             "hashes": [
@@ -190,11 +195,11 @@
         },
         "homeassistant": {
             "hashes": [
-                "sha256:0e67a3aacbbf9e08501d8fe5d73987ffe9356bd38fcf2c8cdd61c739d83027e5",
-                "sha256:b6acb0513b7945a6957bd05607188ee9afd1e18f4ab503f45aed5fedcc016ac7"
+                "sha256:6d3f73ea8b703eb4a5faa57f81c4315fbd0e7458ee29cb85aaf69a9c0205ff9e",
+                "sha256:6db20fd088b4f8eab5e6ce2ffe1b24ad5f4cbf56ff1b2dee998d3d1581f130da"
             ],
             "index": "pypi",
-            "version": "==0.79.3"
+            "version": "==0.80.0"
         },
         "idna": {
             "hashes": [
@@ -255,14 +260,12 @@
                 "sha256:e8a048bfd7d5a280f27527d11449a509ddedf08b58a09a24314828631c099306",
                 "sha256:f6dd28a0ac60e2426a6918f36f1b4e2620fc785a0de7654cd206ba842eee57fd"
             ],
-            "markers": "python_version >= '3.4.1'",
             "version": "==4.4.2"
         },
         "pycparser": {
             "hashes": [
                 "sha256:a988718abfad80b6b157acce7bf130a30876d27603738ac39f140993246b25b3"
             ],
-            "markers": "python_version != '3.1.*' and python_version != '3.2.*' and python_version != '3.0.*' and python_version != '3.3.*' and python_version >= '2.7'",
             "version": "==2.19"
         },
         "pyjwt": {
@@ -300,7 +303,6 @@
                 "sha256:63b52e3c866428a224f97cab011de738c36aec0185aa91cfacd418b5d58911d1",
                 "sha256:ec22d826a36ed72a7358ff3fe56cbd4ba69dd7a6718ffd450ff0e9df7a47ce6a"
             ],
-            "markers": "python_version != '3.1.*' and python_version >= '2.6' and python_version != '3.2.*' and python_version < '4' and python_version != '3.0.*' and python_version != '3.3.*'",
             "version": "==2.19.1"
         },
         "six": {
@@ -315,7 +317,6 @@
                 "sha256:a68ac5e15e76e7e5dd2b8f94007233e01effe3e50e8daddf69acfd81cb686baf",
                 "sha256:b5725a0bd4ba422ab0e66e89e030c806576753ea3ee08554382c14e685d117b5"
             ],
-            "markers": "python_version >= '2.6' and python_version < '4' and python_version != '3.0.*' and python_version != '3.3.*' and python_version != '3.1.*' and python_version != '3.2.*'",
             "version": "==1.23"
         },
         "voluptuous": {

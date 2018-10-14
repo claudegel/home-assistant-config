@@ -31,6 +31,20 @@
                 "source": "import",
                 "title": "Home Assistant iOS",
                 "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "port_mapping": false,
+                    "sensors": true,
+                    "ssdp_description": "http://192.168.0.1:5678/desc/root",
+                    "udn": "uuid:igd73616d61-6a65-7374-650a-f4cae541dfa2"
+                },
+                "domain": "upnp",
+                "entry_id": "382c2d95e68a473eb2098a616a39fa03",
+                "source": "discovery",
+                "title": "Freebox Server",
+                "version": 1
             }
         ]
     },

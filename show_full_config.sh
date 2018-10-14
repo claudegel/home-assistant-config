@@ -3,4 +3,4 @@
 pipenv run hass \
 	--script check_config \
 	--info all \
-	--config /mnt/storage/domotic/homeassistant | less -R
+	--config /home/pi/homeassistant | less -R

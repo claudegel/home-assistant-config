@@ -1,6 +1,6 @@
 purge_keep_days: 2
 purge_interval: 1
-db_url: sqlite:////mnt/storage/domotic/homeassistant/recorder.sqlite
+db_url: sqlite:////home/pi/homeassistant/recorder.sqlite
 include:
   entities:
     - climate.thermostat_transmitter_heating
