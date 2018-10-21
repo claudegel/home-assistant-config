@@ -28,15 +28,15 @@ transmission:
   icon: mdi:download
   url: !secret panel_iframe__transmission__url
 
-sabnzbd:
-  title: SabNzbd
-  icon: mdi:download
-  url: !secret panel_iframe__sabnzbd__url
+  #sabnzbd:
+  #title: SabNzbd
+  #icon: mdi:download
+  #url: !secret panel_iframe__sabnzbd__url
 
-domoticz:
-  title: Domoticz
-  icon: mdi:home-circle
-  url: !secret panel_iframe__domoticz__url
+  #domoticz:
+  #title: Domoticz
+  #icon: mdi:home-circle
+  #url: !secret panel_iframe__domoticz__url
 
 emby:
   title: Emby
@@ -48,10 +48,10 @@ grafana:
   icon: mdi:chart-areaspline
   url: !secret panel_iframe__grafana__url
 
-nodered:
-  title: Node-Red
-  icon: mdi:aspect-ratio
-  url: !secret panel_iframe__nodered__url
+  #nodered:
+  #title: Node-Red
+  #icon: mdi:aspect-ratio
+  #url: !secret panel_iframe__nodered__url
 
 jackett:
   title: Jackett
@@ -68,12 +68,17 @@ nzbhydra:
   icon: mdi:feature-search
   url: !secret panel_iframe__nzbhydra__url
 
-chronograf:
-  title: Chronograf (local)
-  icon: mdi:chart-line-stacked
-  url: !secret panel_iframe__chronograf__url
+  #chronograf:
+  #  title: Chronograf (local)
+  #icon: mdi:chart-line-stacked
+  #url: !secret panel_iframe__chronograf__url
 
-monit:
-  title: Monit (local)
-  icon: mdi:clipboard-pulse-outline
-  url: !secret panel_iframe__monit__url
+  #monit:
+  #title: Monit (local)
+  #icon: mdi:clipboard-pulse-outline
+  #url: !secret panel_iframe__monit__url
+
+terminal:
+  title: Web Terminal
+  icon: mdi:console
+  url: !secret panel_iframe__terminal_url

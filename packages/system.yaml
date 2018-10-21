@@ -56,8 +56,8 @@ sensor:
   - platform: filesize
     entity_namespace: hass_
     file_paths:
-      - /home/pi/homeassistant/recorder.sqlite
-      - /home/pi/homeassistant/home-assistant.log  
+     - ./recorder.sqlite
+     - ./home-assistant.log
 
   - platform: template
     sensors:

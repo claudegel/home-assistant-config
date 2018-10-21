@@ -738,6 +738,78 @@
                 "name": null,
                 "platform": "hikvision",
                 "unique_id": "237cc000-fd29-11b3-8262-94e1accd3ac5.Motion.1"
+            },
+            {
+                "config_entry_id": "c000cef6b0b442c98d792c0b36b14328",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.r7000_gateway_bytes_received",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb_bytes_received"
+            },
+            {
+                "config_entry_id": "c000cef6b0b442c98d792c0b36b14328",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.r7000_gateway_packets_received",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb_packets_received"
+            },
+            {
+                "config_entry_id": "c000cef6b0b442c98d792c0b36b14328",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.r7000_gateway_packetssec_sent",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb_packets/sec_sent"
+            },
+            {
+                "config_entry_id": "c000cef6b0b442c98d792c0b36b14328",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.r7000_gateway_bytes_sent",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb_bytes_sent"
+            },
+            {
+                "config_entry_id": "c000cef6b0b442c98d792c0b36b14328",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.r7000_gateway_packets_sent",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb_packets_sent"
+            },
+            {
+                "config_entry_id": "c000cef6b0b442c98d792c0b36b14328",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.r7000_gateway_kbytesec_sent",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb_kbyte/sec_sent"
+            },
+            {
+                "config_entry_id": "c000cef6b0b442c98d792c0b36b14328",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.r7000_gateway_kbytesec_received",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb_kbyte/sec_received"
+            },
+            {
+                "config_entry_id": "c000cef6b0b442c98d792c0b36b14328",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.r7000_gateway_packetssec_received",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb_packets/sec_received"
             }
         ]
     },

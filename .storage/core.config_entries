@@ -45,6 +45,20 @@
                 "source": "discovery",
                 "title": "Freebox Server",
                 "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "port_mapping": false,
+                    "sensors": true,
+                    "ssdp_description": "http://192.168.0.7:5000/Public_UPNP_gatedesc.xml",
+                    "udn": "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb"
+                },
+                "domain": "upnp",
+                "entry_id": "c000cef6b0b442c98d792c0b36b14328",
+                "source": "discovery",
+                "title": "R7000 (Gateway)",
+                "version": 1
             }
         ]
     },
