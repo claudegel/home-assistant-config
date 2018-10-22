@@ -810,6 +810,24 @@
                 "name": null,
                 "platform": "upnp",
                 "unique_id": "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb_packets/sec_received"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.nodon_msp31xx_micro_smart_plug_indicator",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594195329025"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.nodon_msp31xx_micro_smart_plug_indicator_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594212106241"
             }
         ]
     },

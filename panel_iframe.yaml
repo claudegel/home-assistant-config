@@ -43,10 +43,10 @@ emby:
   icon: mdi:animation-play
   url: !secret panel_iframe__emby__url
 
-grafana:
-  title: Grafana
-  icon: mdi:chart-areaspline
-  url: !secret panel_iframe__grafana__url
+  #grafana:
+  #title: Grafana
+  #icon: mdi:chart-areaspline
+  #url: !secret panel_iframe__grafana__url
 
   #nodered:
   #title: Node-Red
@@ -58,10 +58,10 @@ jackett:
   icon: mdi:cloud-search-outline
   url: !secret panel_iframe__jackett__url
 
-mylar:
-  title: Mylar
-  icon: mdi:message-draw
-  url: !secret panel_iframe__mylar__url
+  #mylar:
+  #title: Mylar
+  #icon: mdi:message-draw
+  #url: !secret panel_iframe__mylar__url
 
 nzbhydra:
   title: NZB Hydra
@@ -78,7 +78,7 @@ nzbhydra:
   #icon: mdi:clipboard-pulse-outline
   #url: !secret panel_iframe__monit__url
 
-terminal:
-  title: Web Terminal
-  icon: mdi:console
-  url: !secret panel_iframe__terminal_url
+  #terminal:
+  #  title: Web Terminal
+  #icon: mdi:console
+  #url: !secret panel_iframe__terminal_url

@@ -141,8 +141,8 @@ group:
 #-------------------------------------------
 
 
-panel_iframe:
-  pihole:
-    title: Pi-Hole
-    icon: mdi:block-helper
-    url: !secret panel_iframe__pihole__url
+        #panel_iframe:
+        # pihole:
+        # title: Pi-Hole
+        #icon: mdi:block-helper
+        #url: !secret panel_iframe__pihole__url
