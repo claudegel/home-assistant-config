@@ -392,12 +392,6 @@ group:
       - sensor.rfxcom_parents_room_temperature
       - sensor.rfxcom_upper_floor_corridor_temperature
 
-  home_climate:
-    name: Climate Management
-    entities:
-      - climate.thermostat_transmitter_heating
-      - switch.boiler_actuator_switch
-
   home_humidity:
     name: Home Humidity
     entities:

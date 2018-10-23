@@ -1,8 +1,6 @@
 camera:
   - platform: generic
-    # host: 192.168.0.110
-    # port: !secret camera__ip_1__port
-    still_image_url: "http://192.168.0.110:80/Streaming/channels/1/picture"
+    still_image_url: !secret camera__ip_1__still_picture_url
     name: "Camera IP 1"
     username: !secret camera__ip_1__username
     password: !secret camera__ip_1__password
@@ -13,8 +11,8 @@ camera:
 
 binary_sensor:
   - platform: hikvision
-    host: 192.168.0.110
-    name: Camera IP 1
+    host: !secret camera__ip_1__ip
+    name: Camera IP Entrance
     username: !secret camera__ip_1__username
     password: !secret camera__ip_1__password
 

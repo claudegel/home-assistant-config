@@ -218,6 +218,45 @@ input_datetime:
     icon: mdi:clock-outline
 
 
+climate:
+  - platform: smart_thermostat
+    name: Bathroom Quick Confort
+    heater: switch.dark_blue_smart_plug_switch
+    target_sensor: sensor.rfxcom_bathroom_temperature
+    min_temp: 20
+    max_temp: 26
+    ac_mode: False 
+    target_temp: 24
+    keep_alive:
+      seconds: 5
+    initial_operation_mode: "off"
+    away_mode: "on"
+    away_temp: 7
+    kp : 34
+    ki : 40
+    kd : 160
+    pwm : 10
+    # autotune : ziegler-nichols
+    difference : 100
+    noiseband : 0.5
+
+
+script:
+  set_bathroom_confortable:
+    alias: 'Quick Bathroom confort'
+    sequence:
+      - delay: 00:00:02
+      - service: climate.set_operation_mode
+        data_template:
+          entity_id: "climate.bathroom_quick_confort"
+          operation_mode: "heat"
+      - delay: 00:10:00
+      - service: climate.set_operation_mode
+        data_template:
+          entity_id: "climate.bathroom_quick_confort"
+          operation_mode: "off"
+
+
 automation:
 
   - alias: set_season_summer
@@ -343,12 +382,21 @@ automation:
         
 
 group:
-  climate_control:
+  home_climate:
+    name: Climate Management
+    entities:
+      - climate.thermostat_transmitter_heating
+      - switch.boiler_actuator_switch
+      - climate.bathroom_quick_confort
+
+  homescreen_climate_control:
     name: Climate Control
     entities:
       - input_select.climate_season
       - input_select.main_heat_mode
       - input_select.auto_main_heat
+      - climate.bathroom_quick_confort
+      - script.set_bathroom_confortable
 
   climate_control_dbg:
     name: Climate Control (DBG)
