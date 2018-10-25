@@ -51,7 +51,16 @@ automation:
             replace('_humidity', '/humidity') | lower }}
           payload_template: >
             {{ states(trigger.entity_id) }}
-
+            
+switch:
+  # automatically add DIO switches
+  - platform: rfxtrx
+    entity_namespace: rfxcom
+    automatic_add: True
+    devices:
+      '0b11000a01c5e36201000070':
+        name: Bathroom Heater
+        fire_event: true
 
 sensor:
 
@@ -63,7 +72,7 @@ sensor:
     automatic_add: True
     entity_namespace: rfxcom
     devices:
-      '0a52010fee0101233e0079':
+      '0a520104b101007f4a0369':
         name: Outside
         data_type:
            - Temperature
@@ -379,6 +388,11 @@ homeassistant:
 
   
 group:
+  home_smart_switches:
+    name: Smart Switches
+    entities:
+      - switch.rfxcom_bathroom_heater
+
   home_temperatures:
     name: Home Temperatures
     control: hidden
