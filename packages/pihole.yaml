@@ -124,6 +124,7 @@ binary_sensor:
 group:
   pihole:
     name: Pi-Hole (ad-blocker)
+    control: hidden
     entities:
       # - sensor.carlopihole
       - binary_sensor.pihole

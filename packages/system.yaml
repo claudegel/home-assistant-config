@@ -143,6 +143,7 @@ automation:
 group:
   ha_system:
     name: Home Assistant System
+    control: hidden
     entities:
       - sensor.ha_installed_version
       - sensor.ha_available_version
@@ -154,11 +155,13 @@ group:
 
   battery_levels:
     name: ZWave Battery Levels
+    control: hidden
     entities:
       - sensor.thermostat_transmitter_battery_level
 
   zwave_devices:
     name: Z-Wave devices
+    control: hidden
     entities:
       - zwave.controller
       - zwave.cabinet_smart_plug
@@ -171,6 +174,6 @@ group:
       
   debug_ha:
     name: Debug Home Assistant
+    control: hidden
     entities:
       - input_boolean.dbg_washing_machine
-  

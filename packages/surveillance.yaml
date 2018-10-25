@@ -23,6 +23,7 @@ binary_sensor:
 group:
   surveillance:
     name: Surveillance
+    control: hidden
     entities:
       - binary_sensor.camera_ip_1
       - camera.camera_ip_1

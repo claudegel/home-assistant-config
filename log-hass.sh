@@ -1,4 +1,4 @@
 #!/bin/bash
 
-less --follow-name +F home-assistant.log
+less --follow-name home-assistant.log
 

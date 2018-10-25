@@ -1,11 +1,14 @@
 .default_view:
   view: yes
   icon: mdi:home
+  control: hidden
   entities:
     - group.travels
-    - group.forecast_6h
+    - group.forecast_6h_short
     - group.homescreen_climate_control
+    - group.bathroom_climate
     - group.bedroom_lights
+
 
 familly_view:
   view: yes
@@ -13,25 +16,30 @@ familly_view:
   entities:
     - group.presence
 
+
 surveillance_view:
   view: yes
   icon: mdi:cctv
   entities:
     - group.surveillance
 
+
 measurement_view:
   view: yes
   icon: mdi:ruler
+  control: hidden
   entities:
     - group.home_temperatures
     - group.home_climate
     - group.climate_control_dbg
     - group.climate_control_tuning
+    - group.bathroom_climate_config
     - group.home_humidity
     - group.cigare_cave
     - group.home_power
     - group.washing_machine
     - group.dbg_washing_machine
+
 
 multimedia_view:
   view: yes
@@ -45,6 +53,7 @@ multimedia_view:
     - media_player.bureau_main
     - group.homecine_network
 
+
 weather_view:
   view: yes
   icon: mdi:weather-partlycloudy
@@ -53,6 +62,7 @@ weather_view:
     - group.weather_1h
     - group.forecast_6h
     - group.forecast_24h
+
 
 network_view:
   view: yes
@@ -64,6 +74,7 @@ network_view:
     - group.domot
     - group.smart_lights
 
+
 nas_view:
   icon: mdi:nas
   view: yes
@@ -74,10 +85,12 @@ nas_view:
     - group.nas_volume2
     - group.nas_volume3
 
+
 system_view: 
   view: yes
   name: System
   entities: 
+    - group.date
     - group.ha_system
     - group.battery_levels
     - group.sensors_battery_alert

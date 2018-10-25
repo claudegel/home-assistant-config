@@ -381,6 +381,7 @@ homeassistant:
 group:
   home_temperatures:
     name: Home Temperatures
+    control: hidden
     entities:
       - sensor.rfxcom_bathroom_temperature
       - sensor.rfxcom_friend_room_temperature
@@ -394,18 +395,21 @@ group:
 
   home_humidity:
     name: Home Humidity
+    control: hidden
     entities:
       - sensor.rfxcom_kitchen_humidity
       - sensor.rfxcom_parents_room_humidity
 
   cigare_cave:
     name: Cigare Cave
+    control: hidden
     entities:
       - sensor.rfxcom_cigare_cave_temperature
       - sensor.rfxcom_cigare_cave_humidity
 
   home_power:
     name: Home Power Meters
+    control: hidden
     entities:
       - sensor.rfxcom_home_energy_usage
       - sensor.cabinet_smart_plug_power
@@ -416,6 +420,7 @@ group:
       
   sensors_battery_alert:
     name: Rfx Battery States
+    control: hidden
     entities:
       - binary_sensor.rfxcom_bathroom_battery_alert
       - binary_sensor.rfxcom_friend_room_battery_alert

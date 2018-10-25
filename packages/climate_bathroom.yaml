@@ -1,0 +1,127 @@
+
+
+climate:
+  - platform: smart_thermostat
+    name: Bathroom Quick Confort
+    heater: switch.dark_blue_smart_plug_switch
+    target_sensor: sensor.rfxcom_bathroom_temperature
+    min_temp: 18
+    max_temp: 28
+    ac_mode: False 
+    target_temp: 24
+    keep_alive:
+      seconds: 5
+    initial_operation_mode: "off"
+    away_temp: 7
+    kp : 34
+    ki : 40
+    kd : 160
+    pwm : 10
+    autotune : ziegler-nichols
+    difference : 100
+    noiseband : 0.5
+
+
+
+input_boolean:
+  enable_early_quick_bathroom_confort:
+    name: Morning Quick Bathroom Confort
+    icon: mdi:refresh
+
+
+
+input_datetime:
+  quick_bathroom_confort_time:
+    name: Start confort time
+    has_date: false
+    has_time: true
+    icon: mdi:clock-outline
+
+
+script:
+  set_bathroom_confortable:
+    alias: 'Quick Bathroom confort'
+    sequence:
+      - delay: 00:00:02
+      - service: climate.set_operation_mode
+        data_template:
+          entity_id: "climate.bathroom_quick_confort"
+          operation_mode: "heat"
+      - delay: 01:00:00
+      - service: climate.set_operation_mode
+        data_template:
+          entity_id: "climate.bathroom_quick_confort"
+          operation_mode: "off"
+
+
+automation:
+
+  # Set the bathroom heater to awake at 4am every morning
+  - alias: 'Scheduled Bathroom Confort'
+    trigger:
+      platform: template
+      value_template: "{{ states('sensor.time') == (states.input_datetime.quick_bathroom_confort_time.attributes.timestamp | int | timestamp_custom('%H:%M', False)) }}"
+    condition:
+      condition: state
+      entity_id: input_boolean.enable_early_quick_bathroom_confort
+      state: 'on'
+    action:
+      - service: climate.set_operation_mode
+        data_template:
+          entity_id: "climate.bathroom_quick_confort"
+          operation_mode: "heat"
+
+  # Backup in case of the heater has been manually started.
+  - alias: 'Bathroom Confort Schedule Off'
+    trigger:
+      platform: state
+      entity_id: climate.bathroom_quick_confort
+      to: 'heat'
+    action:
+      - delay: '02:00:00'
+      - service: climate.set_operation_mode
+        data_template:
+          entity_id: "climate.bathroom_quick_confort"
+          operation_mode: "off"
+
+  # Stop when quich switch is turned off
+  - alias: 'Stop Bathroom Confort on quick off'
+    trigger:
+      platform: state
+      entity_id: script.set_bathroom_confortable
+      to: 'off'
+    action:
+      - service: climate.set_operation_mode
+        data_template:
+          entity_id: "climate.bathroom_quick_confort"
+          operation_mode: "off"
+
+
+group:
+  bathroom_climate:
+    name: Bathroom Quick Confort
+    control: hidden
+    entities:
+      - climate.bathroom_quick_confort
+      - script.set_bathroom_confortable
+      - input_boolean.enable_early_quick_bathroom_confort
+      # - input_boolean.enable_early_quick_bathroom_confort
+      # - input_datetime.quick_bathroom_confort_time
+
+  bathroom_climate_config:
+    name: Bathroom Quick Confort Config
+    control: hidden
+    entities:
+      - climate.bathroom_quick_confort
+      - script.set_bathroom_confortable
+      - input_boolean.enable_early_quick_bathroom_confort
+      - input_datetime.quick_bathroom_confort_time
+
+
+recorder:
+  include:
+    entities:
+      - climate.bathroom_quick_confort
+      - script.set_bathroom_confortable
+      - input_datetime.quick_bathroom_confort_time
+      - input_boolean.enable_early_quick_bathroom_confort

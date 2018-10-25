@@ -15,13 +15,13 @@ sensor:
       - battery.charge.low
       - output.voltage
 
-  - platform: dht
-    sensor: DHT22
-    name: cabinet_dht22
-    pin: 13
-    monitored_conditions:
-      - temperature
-      - humidity
+  # - platform: dht
+  #   sensor: DHT22
+  #   name: cabinet_dht22
+  #   pin: 13
+  #   monitored_conditions:
+  #     - temperature
+  #     - humidity
 
 
 homeassistant:
@@ -35,6 +35,7 @@ homeassistant:
 group:
   cabinet:
     name: Cabinet information
+    control: hidden
     entities:
       - sensor.cabinet_ups_status
       - sensor.cabinet_ups_input_voltage
@@ -44,4 +45,11 @@ group:
       - sensor.cabinet_ups_output_voltage
       - sensor.cabinet_ups_ups_shutdown_delay
       - sensor.rfxcom_cabinet_temperature
-      - sensor.cabinet_dht22_temperature
+
+
+recorder:
+  include:
+    entities:
+      - sensor.rfxcom_cabinet_temperature
+      - sensor.cabinet_ups_status
+      - sensor.cabinet_ups_input_voltage

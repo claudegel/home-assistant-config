@@ -34,6 +34,7 @@ binary_sensor:
 group:
   nas_general:
     name: NAS General
+    control: hidden
     entities:
       - binary_sensor.nas
       - sensor.nas_cpu_load_total
@@ -43,6 +44,7 @@ group:
     
   nas_storage:
     name: NAS Storage status
+    control: hidden
     entities:
       - sensor.nas_below_min_remaining_life_sda
       - sensor.nas_below_min_remaining_life_sdb
@@ -87,6 +89,7 @@ group:
 
   nas_volume1:
     name: NAS Volume 1
+    control: hidden
     entities:
       - sensor.nas_status_volume_1
       - sensor.nas_volume_used_volume_1
@@ -94,6 +97,7 @@ group:
       - sensor.nas_total_size_volume_1
   nas_volume2:
     name: NAS Volume 2
+    control: hidden
     entities:
       - sensor.nas_status_volume_2
       - sensor.nas_volume_used_volume_2
@@ -101,6 +105,7 @@ group:
       - sensor.nas_total_size_volume_2
   nas_volume3:
     name: NAS Volume 3
+    control: hidden
     entities:
       - sensor.nas_status_volume_3
       - sensor.nas_volume_used_volume_3

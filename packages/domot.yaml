@@ -42,6 +42,7 @@ homeassistant:
 group:
   domot:
     name: Domot server information
+    control: hidden
     entities:
       - sensor.domot_cpu_temp
       - sensor.domot_cpu_temperature

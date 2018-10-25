@@ -201,6 +201,7 @@ automation:
 group:
   network:
     name: Network
+    control: hidden
     entities:
       - binary_sensor.freebox
       - sensor.external_ip

@@ -264,10 +264,12 @@ homeassistant:
 group:
   washing_machine:
     name: Washing Machine
+    control: hidden
     entities:
       - sensor.washing_machine_status
 
   dbg_washing_machine:
     name: Washing Machine (DBG)
+    control: hidden
     entities:
       - sensor.washing_machine_energy_each_2_min

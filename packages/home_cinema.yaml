@@ -147,12 +147,14 @@ group:
 
   harmony:
     name: Harmony Home Cinema
+    control: hidden
     entities:
       - remote.harmony_home_cinema
       - sensor.harmony_home_cinema_current_activity
 
   homecine_network:
     name: Home Cinema Information
+    control: hidden
     entities:
       - binary_sensor.osmc
       - sensor.osmc_uptime_templated
