@@ -3,20 +3,39 @@ title: AGS Home
 resources:
   - url: /local/custom_ui/weather-card.js
     type: js
-
+  - url: /local/custom_ui/surveillance-card.js?v=0
+    type: module
+    
 views:
-  - title: Main view
+  - id: 0  # Automatically created id
+    title: Main view
     icon: mdi:home-assistant
     cards:
 
-      - type: "custom:weather-card"
+      - id: 1499b89ba9dd4371b078cfd650d0d16e  # Automatically created id
+        type: custom:weather-card
         entity_weather: weather.yweather
         entity_sun: sun.sun
 
-      - title: Today
+      - id: 9955405b94914fb4a4fc602be459abd6  # Automatically created id
+        title: Today
         type: entities
         entities:
           - sensor.aurelies_work
           - sensor.gaetans_work
           - sensor.forecast_6h_temperature
           - sensor.forecast_6h_precipitation
+
+  # From https://github.com/custom-cards/surveillance-card
+  - id: 1  # Automatically created id
+    title: Surveillance
+    icon: mdi:cctv
+    panel: true
+    cards:
+      - id: 3caed33617044640957d79beb6de1123  # Automatically created id
+        type: custom:surveillance-card
+        thumb_interval: 15
+        update_interval: 2
+        cameras:
+          - entity: camera.camera_ip_1
+            motion_entity: binary_sensor.camera_ip_1_motion

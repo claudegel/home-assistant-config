@@ -9,16 +9,13 @@ zone: !include zone.yaml
 
 
 # Enables the frontend
-frontend:
-  themes: !include_dir_merge_named themes
+frontend: !include frontend.yaml
 
 
 http: !include http.yaml
 
 
-# Checks for available updates
-updater:
-  include_used_components: true
+# updater: handled in a package
 
 
 # Discover some devices automatically
