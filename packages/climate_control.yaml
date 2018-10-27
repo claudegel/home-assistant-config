@@ -347,7 +347,7 @@ group:
     name: Climate Management
     entities:
       - climate.thermostat_transmitter_heating
-      - switch.boiler_actuator_switch
+      - switch.boiler_actuator_receiver_switch
 
   homescreen_climate_control:
     name: Climate Control

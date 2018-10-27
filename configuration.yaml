@@ -84,10 +84,9 @@ recorder: !include recorder.yaml
 notify: !include notify.yaml
 
 
-rfxtrx:
-  device: /dev/ttyUSB0
+rfxtrx: !include rfxtrx.yaml
 
-  
+
 zeroconf:
 
 

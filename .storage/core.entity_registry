@@ -200,8 +200,8 @@
                 "unique_id": "node-3"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "7e642ba1637e454f870043dbdef45dc4",
                 "disabled_by": null,
                 "entity_id": "switch.thermostat_transmitter_switch",
                 "name": null,
@@ -209,8 +209,8 @@
                 "unique_id": "3-72057594093060096"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "7e642ba1637e454f870043dbdef45dc4",
                 "disabled_by": null,
                 "entity_id": "climate.thermostat_transmitter_heating",
                 "name": null,
@@ -221,55 +221,10 @@
                 "config_entry_id": null,
                 "device_id": null,
                 "disabled_by": null,
-                "entity_id": "zwave.washing_machine_smart_plug",
-                "name": null,
+                "entity_id": "zwave.nodon_dark_blue_smart_plug",
+                "name": "NodOn MSP-3-1-XX Micro Smart Plug (Dark Blue)",
                 "platform": "zwave",
                 "unique_id": "node-5"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.washing_machine_smart_plug_power",
-                "name": "Washing Machine Power",
-                "platform": "zwave",
-                "unique_id": "5-72057594126811202"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "switch.washing_machine_smart_plug_switch",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "5-72057594126614528"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.washing_machine_smart_plug_power_2",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "5-72057594126827650"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.washing_machine_smart_plug_exporting",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "5-72057594126828032"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.washing_machine_smart_plug_energy",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "5-72057594126827522"
             },
             {
                 "config_entry_id": null,
@@ -281,17 +236,8 @@
                 "unique_id": "node-6"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "switch.home_cinema_smart_plug_switch",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "6-72057594143391744"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "3af1aeabac614cee8668144bd4dc94a3",
                 "disabled_by": null,
                 "entity_id": "sensor.home_cinema_smart_plug_alarm_type",
                 "name": null,
@@ -299,8 +245,8 @@
                 "unique_id": "6-72057594144636929"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "3af1aeabac614cee8668144bd4dc94a3",
                 "disabled_by": null,
                 "entity_id": "sensor.home_cinema_smart_plug_alarm_level",
                 "name": null,
@@ -308,8 +254,8 @@
                 "unique_id": "6-72057594144636945"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "3af1aeabac614cee8668144bd4dc94a3",
                 "disabled_by": null,
                 "entity_id": "sensor.home_cinema_smart_plug_power",
                 "name": "Home Cinema Power",
@@ -317,8 +263,8 @@
                 "unique_id": "6-72057594143588418"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "3af1aeabac614cee8668144bd4dc94a3",
                 "disabled_by": null,
                 "entity_id": "sensor.home_cinema_smart_plug_power_2",
                 "name": "Home Cinema Power",
@@ -326,8 +272,8 @@
                 "unique_id": "6-72057594143604866"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "3af1aeabac614cee8668144bd4dc94a3",
                 "disabled_by": null,
                 "entity_id": "sensor.home_cinema_smart_plug_exportin",
                 "name": null,
@@ -335,8 +281,8 @@
                 "unique_id": "6-72057594143605248"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "3af1aeabac614cee8668144bd4dc94a3",
                 "disabled_by": null,
                 "entity_id": "sensor.home_cinema_smart_plug_sourcenodeid",
                 "name": null,
@@ -344,8 +290,8 @@
                 "unique_id": "6-72057594144636961"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "3af1aeabac614cee8668144bd4dc94a3",
                 "disabled_by": null,
                 "entity_id": "sensor.home_cinema_smart_plug_power_management",
                 "name": null,
@@ -353,8 +299,8 @@
                 "unique_id": "6-72057594144637105"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "3af1aeabac614cee8668144bd4dc94a3",
                 "disabled_by": null,
                 "entity_id": "sensor.home_cinema_smart_plug_energy",
                 "name": null,
@@ -416,8 +362,8 @@
                 "unique_id": "7-72057594160366002"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "509e980041eb4b5c953f0846c8749e0c",
                 "disabled_by": null,
                 "entity_id": "sensor.entrance_multisensor_sourcenodeid",
                 "name": null,
@@ -434,8 +380,8 @@
                 "unique_id": "7-72057594161414305"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "509e980041eb4b5c953f0846c8749e0c",
                 "disabled_by": null,
                 "entity_id": "sensor.entrance_multisensor_alarm_type",
                 "name": null,
@@ -443,8 +389,8 @@
                 "unique_id": "7-72057594161414145"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "509e980041eb4b5c953f0846c8749e0c",
                 "disabled_by": null,
                 "entity_id": "sensor.entrance_multisensor_alarm_level",
                 "name": null,
@@ -452,274 +398,13 @@
                 "unique_id": "7-72057594161414161"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "zwave.dark_blue_smart_plug",
-                "name": "NodOn MSP-3-1-XX Micro Smart Plug (Dark Blue)",
-                "platform": "zwave",
-                "unique_id": "node-9"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.dark_blue_smart_plug_power",
-                "name": "Dark Blue Smart Plug Power",
-                "platform": "zwave",
-                "unique_id": "9-72057594193936514"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.dark_blue_smart_plug_exporting",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "9-72057594193936896"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.dark_blue_smart_plug_alarm_type",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "9-72057594194968577"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.dark_blue_smart_plug_alarm_level",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "9-72057594194968593"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.dark_blue_smart_plug_sourcenodeid",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "9-72057594194968609"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.dark_blue_smart_plug_power_management",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "9-72057594194968753"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.dark_blue_smart_plug_system",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "9-72057594194968769"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.dark_blue_smart_plug_energy_2",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "9-72057594193936386"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "switch.dark_blue_smart_plug_switch",
-                "name": "Dark Blue Smart Plug Switch",
-                "platform": "zwave",
-                "unique_id": "9-72057594193723392"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "zwave.cabinet_smart_plug",
-                "name": "NodOn MSP-3-1-XX Micro Smart Plug (Cabinet)",
-                "platform": "zwave",
-                "unique_id": "node-10"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.cabinet_smart_plug_previous_reading",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "10-72057594210713618"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.cabinet_smart_plug_interval",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "10-72057594210713635"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.cabinet_smart_plug_energy",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "10-72057594210713602"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "switch.cabinet_smart_plug_switch_2",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "10-72057594210500608"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.cabinet_smart_plug_system_2",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "10-72057594211745985"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.cabinet_smart_plug_sourcenodeid",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "10-72057594211745825"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.cabinet_smart_plug_power_management",
-                "name": "Cabinet Power",
-                "platform": "zwave",
-                "unique_id": "10-72057594211745969"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.cabinet_smart_plug_alarm_type",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "10-72057594211745793"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.cabinet_smart_plug_alarm_level_1",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "10-7205759421174580"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.dark_blue_smart_plug_previous_reading",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "9-72057594193936402"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.dark_blue_smart_plug_interval",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "9-72057594193936419"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.dark_blue_smart_plug_previous_reading_2",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "9-72057594193936530"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.dark_blue_smart_plug_interval_2",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "9-72057594193936547"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.cabinet_smart_plug_alarm_level_2",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "10-72057594211745809"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "zwave.boiler_actuator",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "node-4"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "switch.boiler_actuator_switch",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "4-72057594109837312"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "7e642ba1637e454f870043dbdef45dc4",
                 "disabled_by": null,
                 "entity_id": "sensor.thermostat_transmitter_temperature",
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "3-72057594093256722"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.cabinet_smart_plug_power",
-                "name": "Cabinet Power",
-                "platform": "zwave",
-                "unique_id": "10-72057594210713730"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.cabinet_smart_plug_exporting",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "10-72057594210714112"
             },
             {
                 "config_entry_id": null,
@@ -815,19 +500,424 @@
                 "config_entry_id": null,
                 "device_id": null,
                 "disabled_by": null,
-                "entity_id": "sensor.nodon_msp31xx_micro_smart_plug_indicator",
-                "name": null,
+                "entity_id": "zwave.washing_machine_wall_plug",
+                "name": "FIBARO System FGWPE/F Wall Plug (Washing Machine)",
                 "platform": "zwave",
-                "unique_id": "9-72057594195329025"
+                "unique_id": "node-4"
             },
             {
                 "config_entry_id": null,
                 "device_id": null,
                 "disabled_by": null,
-                "entity_id": "sensor.nodon_msp31xx_micro_smart_plug_indicator_2",
+                "entity_id": "zwave.boiler_actuator_receiver",
                 "name": null,
                 "platform": "zwave",
-                "unique_id": "10-72057594212106241"
+                "unique_id": "node-2"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "dfad7e3d8eed47c09a9121ff6f539ecb",
+                "disabled_by": null,
+                "entity_id": "switch.boiler_actuator_receiver_switch",
+                "name": "Boiler Actuator",
+                "platform": "zwave",
+                "unique_id": "2-72057594076282880"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "b5a8ebc024424c39a475212eaf380671",
+                "disabled_by": null,
+                "entity_id": "sensor.washing_machine_smart_plug_energy",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594110050306"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "b5a8ebc024424c39a475212eaf380671",
+                "disabled_by": null,
+                "entity_id": "sensor.washing_machine_smart_plug_power_2",
+                "name": "Washing Machine Smart Plug",
+                "platform": "zwave",
+                "unique_id": "4-72057594110050434"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "509e980041eb4b5c953f0846c8749e0c",
+                "disabled_by": null,
+                "entity_id": "sensor.nodon_msp31xx_micro_smart_plug_power",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594160382082"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "509e980041eb4b5c953f0846c8749e0c",
+                "disabled_by": null,
+                "entity_id": "sensor.nodon_msp31xx_micro_smart_plug_exporting",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594160382464"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "509e980041eb4b5c953f0846c8749e0c",
+                "disabled_by": null,
+                "entity_id": "sensor.nodon_msp31xx_micro_smart_plug_energy",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594160381954"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "509e980041eb4b5c953f0846c8749e0c",
+                "disabled_by": null,
+                "entity_id": "sensor.nodon_msp31xx_micro_smart_plug_power_management_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594161414321"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "509e980041eb4b5c953f0846c8749e0c",
+                "disabled_by": null,
+                "entity_id": "sensor.nodon_msp31xx_micro_smart_plug_system_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594161414337"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "509e980041eb4b5c953f0846c8749e0c",
+                "disabled_by": null,
+                "entity_id": "switch.nodon_msp31xx_micro_smart_plug_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594160168960"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "509e980041eb4b5c953f0846c8749e0c",
+                "disabled_by": null,
+                "entity_id": "sensor.nodon_msp31xx_micro_smart_plug_indicator_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594161774593"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "509e980041eb4b5c953f0846c8749e0c",
+                "disabled_by": null,
+                "entity_id": "sensor.nodon_msp31xx_micro_smart_plug_previous_reading_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594160382098"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "509e980041eb4b5c953f0846c8749e0c",
+                "disabled_by": null,
+                "entity_id": "sensor.nodon_msp31xx_micro_smart_plug_interval_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594160382115"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.cabinet_smart_plug",
+                "name": "NodOn MSP-3-1-XX Micro Smart Plug (Cabinet)",
+                "platform": "zwave",
+                "unique_id": "node-8"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "88b5c74e39ae4727aa56dc92790a55fe",
+                "disabled_by": null,
+                "entity_id": "sensor.nodon_msp31xx_micro_smart_plug_previous_reading_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594177159314"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "88b5c74e39ae4727aa56dc92790a55fe",
+                "disabled_by": null,
+                "entity_id": "sensor.nodon_msp31xx_micro_smart_plug_interval_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594177159331"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "88b5c74e39ae4727aa56dc92790a55fe",
+                "disabled_by": null,
+                "entity_id": "sensor.nodon_msp31xx_micro_smart_plug_previous_reading_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594177159186"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "88b5c74e39ae4727aa56dc92790a55fe",
+                "disabled_by": null,
+                "entity_id": "sensor.nodon_msp31xx_micro_smart_plug_interval_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594177159203"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "b5a8ebc024424c39a475212eaf380671",
+                "disabled_by": null,
+                "entity_id": "sensor.washing_machine_smart_plug_exporting",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594110050816"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "b5a8ebc024424c39a475212eaf380671",
+                "disabled_by": null,
+                "entity_id": "sensor.washing_machine_smart_plug_power",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594110033986"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "88b5c74e39ae4727aa56dc92790a55fe",
+                "disabled_by": null,
+                "entity_id": "sensor.cabinet_smart_plug_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191377"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "88b5c74e39ae4727aa56dc92790a55fe",
+                "disabled_by": null,
+                "entity_id": "sensor.cabinet_smart_plug_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191361"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "88b5c74e39ae4727aa56dc92790a55fe",
+                "disabled_by": null,
+                "entity_id": "sensor.cabinet_smart_plug_exporting",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594177159680"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "88b5c74e39ae4727aa56dc92790a55fe",
+                "disabled_by": null,
+                "entity_id": "sensor.cabinet_smart_plug_indicator",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178551809"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "88b5c74e39ae4727aa56dc92790a55fe",
+                "disabled_by": null,
+                "entity_id": "sensor.cabinet_smart_plug_power",
+                "name": "Cabinet Smart Plug",
+                "platform": "zwave",
+                "unique_id": "8-72057594177159298"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "88b5c74e39ae4727aa56dc92790a55fe",
+                "disabled_by": null,
+                "entity_id": "sensor.cabinet_smart_plug_power_management",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191537"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "88b5c74e39ae4727aa56dc92790a55fe",
+                "disabled_by": null,
+                "entity_id": "sensor.cabinet_smart_plug_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191393"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "88b5c74e39ae4727aa56dc92790a55fe",
+                "disabled_by": null,
+                "entity_id": "sensor.cabinet_smart_plug_system",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191553"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "88b5c74e39ae4727aa56dc92790a55fe",
+                "disabled_by": null,
+                "entity_id": "sensor.cabinet_smart_plug_energy",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594177159170"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "88b5c74e39ae4727aa56dc92790a55fe",
+                "disabled_by": null,
+                "entity_id": "switch.cabinet_smart_plug",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594176946176"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "b5a8ebc024424c39a475212eaf380671",
+                "disabled_by": null,
+                "entity_id": "switch.washing_machine_smart_plug",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594109837312"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "3af1aeabac614cee8668144bd4dc94a3",
+                "disabled_by": null,
+                "entity_id": "switch.home_cinema_smart_plug",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594143391744"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "d2df059cb94b40fdafe719e2de4d7885",
+                "disabled_by": null,
+                "entity_id": "sensor.dark_blue_smart_plug_indicator",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594128220161"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "d2df059cb94b40fdafe719e2de4d7885",
+                "disabled_by": null,
+                "entity_id": "sensor.dark_blue_smart_plug_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859729"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "d2df059cb94b40fdafe719e2de4d7885",
+                "disabled_by": null,
+                "entity_id": "sensor.dark_blue_smart_plug_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859713"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "d2df059cb94b40fdafe719e2de4d7885",
+                "disabled_by": null,
+                "entity_id": "sensor.dark_blue_smart_plug_exporting",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126828032"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "d2df059cb94b40fdafe719e2de4d7885",
+                "disabled_by": null,
+                "entity_id": "sensor.dark_blue_smart_plug_energy",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126827522"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "d2df059cb94b40fdafe719e2de4d7885",
+                "disabled_by": null,
+                "entity_id": "sensor.dark_blue_smart_plug_interval",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126827555"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "d2df059cb94b40fdafe719e2de4d7885",
+                "disabled_by": null,
+                "entity_id": "sensor.dark_blue_smart_plug_interval_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126827683"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "d2df059cb94b40fdafe719e2de4d7885",
+                "disabled_by": null,
+                "entity_id": "sensor.dark_blue_smart_plug_power",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126827650"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "d2df059cb94b40fdafe719e2de4d7885",
+                "disabled_by": null,
+                "entity_id": "sensor.dark_blue_smart_plug_power_management",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859889"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "d2df059cb94b40fdafe719e2de4d7885",
+                "disabled_by": null,
+                "entity_id": "sensor.dark_blue_smart_plug_previous_reading",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126827538"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "d2df059cb94b40fdafe719e2de4d7885",
+                "disabled_by": null,
+                "entity_id": "sensor.dark_blue_smart_plug_previous_reading_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126827666"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "d2df059cb94b40fdafe719e2de4d7885",
+                "disabled_by": null,
+                "entity_id": "sensor.dark_blue_smart_plug_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859745"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "d2df059cb94b40fdafe719e2de4d7885",
+                "disabled_by": null,
+                "entity_id": "switch.dark_blue_smart_plug",
+                "name": "Dark Blue Smart Plug",
+                "platform": "zwave",
+                "unique_id": "5-72057594126614528"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "d2df059cb94b40fdafe719e2de4d7885",
+                "disabled_by": null,
+                "entity_id": "sensor.dark_blue_smart_plug_system",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859905"
             }
         ]
     },

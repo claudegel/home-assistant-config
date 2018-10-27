@@ -10,4 +10,5 @@ python_version = "3.5"
 
 [packages]
 homeassistant = "*"
-colorlog = "*"
+colorlog = "==3.1.4"
+gitpython = "*"

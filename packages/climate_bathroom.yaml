@@ -1,41 +1,51 @@
 
 
-climate:
-  - platform: smart_thermostat
-    name: Bathroom Quick Confort
-    heater: switch.dark_blue_smart_plug_switch
-    target_sensor: sensor.rfxcom_bathroom_temperature
-    min_temp: 18
-    max_temp: 28
-    ac_mode: False 
-    target_temp: 24
-    keep_alive:
-      seconds: 5
-    initial_operation_mode: "off"
-    away_temp: 7
-    kp : 34
-    ki : 40
-    kd : 160
-    pwm : 10
-    autotune : ziegler-nichols
-    difference : 100
-    noiseband : 0.5
+# climate:
+  #################################################################################
+  # ## Name: climate.bathroom_heater
+  # - platform: generic_thermostat
+  #   name: Bathroom Heater
+  #   heater: switch.dark_blue_smart_plug
+  #   target_sensor: sensor.rfxcom_bathroom_temperature
+  #   target_temp: 24
+  #   cold_tolerance: .5
+  #   hot_tolerance: .5
+  #   away_temp: 7
+  #################################################################################
+  # - platform: smart_thermostat
+  #   name: Bathroom Heater
+  #   heater: switch.dark_blue_smart_plug
+  #   target_sensor: sensor.rfxcom_bathroom_temperature
+  #   min_temp: 18
+  #   max_temp: 28
+  #   ac_mode: False 
+  #   target_temp: 24
+  #   # keep_alive:
+  #   #   seconds: 5
+  #   initial_operation_mode: "off"
+  #   away_temp: 7
+  #   kp : 34
+  #   ki : 40
+  #   kd : 160
+  #   pwm : 10
+  #   autotune : ziegler-nichols
+  #   difference : 100
+  #   noiseband : 0.5
 
 
 
 input_boolean:
-  enable_early_quick_bathroom_confort:
-    name: Morning Quick Bathroom Confort
-    icon: mdi:refresh
-
+  schedule_morning_bathroom_confort:
+    name: Schedule Morning Bathroom Confort
+    icon: mdi:weather-sunset-up
 
 
 input_datetime:
   quick_bathroom_confort_time:
-    name: Start confort time
+    name: Confort Start Time
     has_date: false
     has_time: true
-    icon: mdi:clock-outline
+    icon: mdi:radiator
 
 
 script:
@@ -45,17 +55,8 @@ script:
       - delay: 00:00:02
       - service: climate.set_operation_mode
         data_template:
-          entity_id: "climate.bathroom_quick_confort"
+          entity_id: "climate.bathroom_heater"
           operation_mode: "heat"
-      - delay: 02:00:00
-      - service: climate.set_operation_mode
-        data_template:
-          entity_id: "climate.bathroom_quick_confort"
-          operation_mode: "off"
-      - service: switch.turn_off
-        entity_id: switch.rfxcom_bathroom_heater
-      - service: homeassistant.turn_off
-        entity_id: automation.bathroom_confort_schedule
 
 
 automation:
@@ -70,27 +71,31 @@ automation:
       entity_id: input_boolean.enable_early_quick_bathroom_confort
       state: 'on'
     action:
-      - service: climate.set_operation_mode
-        data_template:
-          entity_id: "climate.bathroom_quick_confort"
-          operation_mode: "heat"
+      - service: switch.turn_on
+        entity_id: switch.dark_blue_smart_plug
+      # - service: climate.set_operation_mode
+      #   data_template:
+      #     entity_id: "climate.bathroom_heater"
+      #     operation_mode: "heat"
 
   # Backup in case of the heater has been manually started.
-  - alias: 'Bathroom Confort Schedule'
+  - alias: 'Auto stop Bathroom Heater after 2h'
     trigger:
       platform: state
-      entity_id: climate.bathroom_quick_confort
+      entity_id: climate.bathroom_heater
       to: 'heat'
     action:
       - delay: '02:00:00'
-      - service: climate.set_operation_mode
-        data_template:
-          entity_id: "climate.bathroom_quick_confort"
-          operation_mode: "off"
       - service: switch.turn_off
         entity_id: switch.rfxcom_bathroom_heater
-      - service: script.turn_off
-        entity_id: script.set_bathroom_confortable
+      - service: switch.turn_off
+        entity_id: switch.dark_blue_smart_plug
+      # - service: climate.set_operation_mode
+      #   data_template:
+      #     entity_id: "climate.bathroom_heater"
+      #     operation_mode: "off"
+      # - service: script.turn_off
+      #   entity_id: script.set_bathroom_confortable
 
 
   # Stop when quich switch is turned off
@@ -100,14 +105,16 @@ automation:
       entity_id: script.set_bathroom_confortable
       to: 'off'
     action:
-      - service: climate.set_operation_mode
-        data_template:
-          entity_id: "climate.bathroom_quick_confort"
-          operation_mode: "off"
+      - service: switch.turn_off
+        entity_id: switch.dark_blue_smart_plug
+      # - service: climate.set_operation_mode
+      #   data_template:
+      #     entity_id: "climate.bathroom_heater"
+      #     operation_mode: "off"
       - service: switch.turn_off
         entity_id: switch.rfxcom_bathroom_heater
       - service: homeassistant.turn_off
-        entity_id: automation.bathroom_confort_schedule
+        entity_id: automation.auto_stop_bathroom_heater_after_2h
 
   - alias: "Remote bathroom confort trigger on"
     trigger:
@@ -123,38 +130,41 @@ automation:
       event_type: button_pressed
       event_data: {"state": "off", "entity_id": "switch.rfxcom_bathroom_heater"}
     action:
-      - service: climate.set_operation_mode
-        data_template:
-          entity_id: "climate.bathroom_quick_confort"
-          operation_mode: "off"
+      # - service: climate.set_operation_mode
+      #   data_template:
+      #     entity_id: "climate.bathroom_heater"
+      #     operation_mode: "off"
+      - service: switch.turn_off
+        entity_id: switch.dark_blue_smart_plug
       - service: script.turn_off
         entity_id: script.set_bathroom_confortable
       - service: homeassistant.turn_off
-        entity_id: automation.bathroom_confort_schedule
+        entity_id: automation.auto_stop_bathroom_heater_after_2h
 
 
 homeassistant:
   customize:
     switch.rfxcom_bathroom_heater:
-      icon: mdi:server-network
+      icon: mdi:clock-outline
       can_cancel: false
-      custom_text: "Bathroom Heater"
+      custom_text: "Bathroom Heater Remote"
+      assumed_state: False
 
 
 group:
   bathroom_climate:
-    name: Bathroom Quick Confort
+    name: Bathroom Heater
     control: hidden
     entities:
-      - climate.bathroom_quick_confort
+      # - climate.bathroom_heater
       - script.set_bathroom_confortable
       - input_boolean.enable_early_quick_bathroom_confort
 
   bathroom_climate_config:
-    name: Bathroom Quick Confort Config
+    name: Bathroom Heater Config
     control: hidden
     entities:
-      - climate.bathroom_quick_confort
+      # - climate.bathroom_heater
       - script.set_bathroom_confortable
       - input_boolean.enable_early_quick_bathroom_confort
       - input_datetime.quick_bathroom_confort_time
@@ -164,7 +174,7 @@ group:
 recorder:
   include:
     entities:
-      - climate.bathroom_quick_confort
+      # - climate.bathroom_heater
       - script.set_bathroom_confortable
       - input_datetime.quick_bathroom_confort_time
       - input_boolean.enable_early_quick_bathroom_confort

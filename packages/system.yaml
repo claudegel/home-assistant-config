@@ -168,9 +168,9 @@ group:
       - zwave.dark_blue_smart_plug
       - zwave.entrance_multisensor
       - zwave.home_cinema_smart_plug
-      - zwave.boiler_actuator
+      - zwave.boiler_actuator_receiver
       - zwave.thermostat_transmitter
-      - zwave.washing_machine_wall_plug
+      - zwave.washing_machine_smart_plug
       
   debug_ha:
     name: Debug Home Assistant

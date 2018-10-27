@@ -56,7 +56,7 @@ include:
     - sensor.thermostat_setpoint
     - sensor.thermostat_transmitter_battery_level
     - sensor.washing_machine_energy_each_2_min
-    - sensor.washing_machine_smart_plug_power
+    - sensor.washing_machine_smart_plug_power_2
     - sensor.washing_machine_status
-    - switch.boiler_actuator_switch
+    - switch.boiler_actuator_receiver_switch
 

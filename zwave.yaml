@@ -1,5 +1,5 @@
-usb_path: /dev/ttyACM0
+# usb_path: /dev/ttyACM0
+usb_path: /dev/ttyUSB-ZStick-5G
 network_key: !secret zwave__network_key
-# config_path: ./.venv/lib/python3.5/site-packages/python_openzwave/ozw_config/config/
+config_path: ./.venv/lib/python3.5/site-packages/python_openzwave/ozw_config/config/
 debug: false
-

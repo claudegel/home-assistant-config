@@ -2,6 +2,7 @@ default: warning
 logs:
   openzwave: ERROR
   libopenzwave: ERROR
-#  homeassistant.components.device_tracker: critical
-#  homeassistant.components.camera: critical
+  # homeassistant.components.device_tracker: critical
+  # homeassistant.components.camera: critical
   homeassistant.components.climate.smart_thermostat: DEBUG
+  homeassistant.components.zwave: INFO
