@@ -87,6 +87,7 @@ group:
     name: Prevision 6h
     control: hidden
     entities:
+      - weather.yweather
       - sensor.forecast_6h_symbol
       - sensor.forecast_6h_temperature
       - sensor.forecast_6h_precipitation

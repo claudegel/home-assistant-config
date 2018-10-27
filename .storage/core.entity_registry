@@ -213,7 +213,7 @@
                 "device_id": "7e642ba1637e454f870043dbdef45dc4",
                 "disabled_by": null,
                 "entity_id": "climate.thermostat_transmitter_heating",
-                "name": null,
+                "name": "Boiler Thermostat",
                 "platform": "zwave",
                 "unique_id": "3-72057594093551634"
             },
@@ -861,7 +861,7 @@
                 "device_id": "d2df059cb94b40fdafe719e2de4d7885",
                 "disabled_by": null,
                 "entity_id": "sensor.dark_blue_smart_plug_power",
-                "name": null,
+                "name": "Dark Blue Smart Plug Power",
                 "platform": "zwave",
                 "unique_id": "5-72057594126827650"
             },
@@ -918,6 +918,96 @@
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "5-72057594127859905"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.bathroom_heater_wall_plug",
+                "name": "FIBARO System FGWPE/F Wall Plug Gen5 (Bathroom Heater)",
+                "platform": "zwave",
+                "unique_id": "node-9"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "113abd297375480f99e477adf05206c4",
+                "disabled_by": null,
+                "entity_id": "sensor.bathroom_heater_wall_plug_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594194968593"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "113abd297375480f99e477adf05206c4",
+                "disabled_by": null,
+                "entity_id": "sensor.bathroom_heater_wall_plug_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594194968577"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "113abd297375480f99e477adf05206c4",
+                "disabled_by": null,
+                "entity_id": "sensor.bathroom_heater_wall_plug_energy",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594193936386"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "113abd297375480f99e477adf05206c4",
+                "disabled_by": null,
+                "entity_id": "sensor.bathroom_heater_wall_plug_exporting",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594193936896"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "113abd297375480f99e477adf05206c4",
+                "disabled_by": null,
+                "entity_id": "sensor.bathroom_heater_wall_plug_power",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594193920066"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "113abd297375480f99e477adf05206c4",
+                "disabled_by": null,
+                "entity_id": "sensor.bathroom_heater_wall_plug_power_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594193936514"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "113abd297375480f99e477adf05206c4",
+                "disabled_by": null,
+                "entity_id": "sensor.bathroom_heater_wall_plug_power_management",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594194968753"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "113abd297375480f99e477adf05206c4",
+                "disabled_by": null,
+                "entity_id": "sensor.bathroom_heater_wall_plug_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594194968609"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "113abd297375480f99e477adf05206c4",
+                "disabled_by": null,
+                "entity_id": "switch.bathroom_heater_wall_plug",
+                "name": "Bathroom Heater Switch",
+                "platform": "zwave",
+                "unique_id": "9-72057594193723392"
             }
         ]
     },

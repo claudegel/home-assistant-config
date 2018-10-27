@@ -5,7 +5,7 @@ climate:
   # ## Name: climate.bathroom_heater
   - platform: generic_thermostat
     name: Bathroom Heater
-    heater: switch.dark_blue_smart_plug
+    heater: switch.bathroom_heater_wall_plug
     target_sensor: sensor.rfxcom_bathroom_temperature
     target_temp: 24
     cold_tolerance: .5
@@ -14,7 +14,7 @@ climate:
   #################################################################################
   # - platform: smart_thermostat
   #   name: Bathroom Heater
-  #   heater: switch.dark_blue_smart_plug
+  #   heater: switch.bathroom_heater_wall_plug
   #   target_sensor: sensor.rfxcom_bathroom_temperature
   #   min_temp: 18
   #   max_temp: 28
@@ -52,11 +52,15 @@ script:
   set_bathroom_confortable:
     alias: 'Quick Bathroom confort'
     sequence:
-      - delay: 00:00:02
+      - service: switch.turn_on
+        entity_id: switch.bathroom_heater_wall_plug
       - service: climate.set_operation_mode
         data_template:
           entity_id: "climate.bathroom_heater"
           operation_mode: "heat"
+      # - service: notify.pushover
+      #   data:
+      #     message: 'Bathroom Heater enabled'
 
 
 automation:
@@ -68,11 +72,11 @@ automation:
   #     value_template: "{{ states('sensor.time') == (states.input_datetime.quick_bathroom_confort_time.attributes.timestamp | int | timestamp_custom('%H:%M', False)) }}"
   #   condition:
   #     condition: state
-  #     entity_id: input_boolean.enable_early_quick_bathroom_confort
+  #     entity_id: input_boolean.schedule_morning_bathroom_confort
   #     state: 'on'
   #   action:
   #     # - service: switch.turn_on
-  #     #   entity_id: switch.dark_blue_smart_plug
+  #     #   entity_id: switch.bathroom_heater_wall_plug
   #     - service: climate.set_operation_mode
   #       data_template:
   #         entity_id: "climate.bathroom_heater"
@@ -87,14 +91,15 @@ automation:
       to: 'heat'
     action:
       - delay: '02:00:00'
-      - service: switch.turn_off
-        entity_id: switch.rfxcom_bathroom_heater
-      - service: script.turn_off
-        entity_id: script.set_bathroom_confortable
+      - service: notify.pushover
+        data:
+          message: 'Bathroom heater timeout'
       - service: climate.set_operation_mode
         data_template:
           entity_id: "climate.bathroom_heater"
           operation_mode: "off"
+      - service: switch.turn_off
+        entity_id: switch.rfxcom_bathroom_heater_remote
 
 
   # # Stop when quich switch is turned off
@@ -105,46 +110,56 @@ automation:
   #     to: 'off'
   #   action:
   #     # - service: switch.turn_off
-  #     #   entity_id: switch.dark_blue_smart_plug
+  #     #   entity_id: switch.bathroom_heater_wall_plug
   #     - service: climate.set_operation_mode
   #       data_template:
   #         entity_id: "climate.bathroom_heater"
   #         operation_mode: "off"
   #     - service: switch.turn_off
-  #       entity_id: switch.rfxcom_bathroom_heater
+  #       entity_id: switch.rfxcom_bathroom_heater_remote
   #     - service: homeassistant.turn_off
   #       entity_id: automation.auto_stop_bathroom_heater_after_2h
 
   - alias: "Remote bathroom confort trigger on"
     trigger:
-      platform: event
-      event_type: button_pressed
-      event_data: {"state": "on", "entity_id": "switch.rfxcom_bathroom_heater"}
+      platform: state
+      entity_id: switch.rfxcom_bathroom_heater_remote
+      to: 'on'
+      # platform: event
+      # event_type: button_pressed
+      # event_data:
+      #   state: "on"
+      #   entity_id: "switch.rfxcom_bathroom_heater_remote"
     action:
       service: script.set_bathroom_confortable
 
   - alias: "Remote bathroom confort trigger off"
     trigger:
-      platform: event
-      event_type: button_pressed
-      event_data: {"state": "off", "entity_id": "switch.rfxcom_bathroom_heater"}
+      platform: state
+      entity_id: switch.rfxcom_bathroom_heater_remote
+      to: 'off'
+      # platform: event
+      # event_type: button_pressed
+      # event_data:
+      #   state: "off"
+      #   entity_id: "switch.rfxcom_bathroom_heater_remote"
     action:
       - service: climate.set_operation_mode
         data_template:
           entity_id: "climate.bathroom_heater"
           operation_mode: "off"
       # - service: switch.turn_off
-      #   entity_id: switch.dark_blue_smart_plug
+      #   entity_id: switch.bathroom_heater_wall_plug
       - service: homeassistant.turn_off
         entity_id: automation.auto_stop_bathroom_heater_after_2h
 
 
 homeassistant:
   customize:
-    switch.rfxcom_bathroom_heater:
-      icon: mdi:clock-outline
+    switch.rfxcom_bathroom_heater_remote:
+      icon: mdi:remote
       can_cancel: false
-      custom_text: "Bathroom Heater Remote"
+      custom_text: "DIO remote to turn on bathroom heater"
       assumed_state: False
     
     script.set_bathroom_confortable:
@@ -152,30 +167,39 @@ homeassistant:
       can_cancel: false
 
 group:
+
   bathroom_climate:
     name: Bathroom Heater
     control: hidden
     entities:
       - climate.bathroom_heater
-      - script.set_bathroom_confortable
-      - input_boolean.enable_early_quick_bathroom_confort
+      - switch.rfxcom_bathroom_heater_remote
 
   bathroom_climate_config:
     name: Bathroom Heater Config
     control: hidden
     entities:
       - climate.bathroom_heater
-      - script.set_bathroom_confortable
-      - input_boolean.enable_early_quick_bathroom_confort
-      # - input_datetime.quick_bathroom_confort_time
-      - switch.rfxcom_bathroom_heater
+      - switch.rfxcom_bathroom_heater_remote
+      - switch.bathroom_heater_wall_plug
+    
+  bathroom_climate_schedule_config:
+    name: Bath Heater Shedule
+    control: hidden
+    entities:
+      - input_boolean.schedule_morning_bathroom_confort
+      - input_datetime.quick_bathroom_confort_time
 
+  measurement_view:
+    entities:
+      - group.bathroom_climate_config
+      - group.bathroom_climate_schedule_config
 
 recorder:
   include:
     entities:
-      # - climate.bathroom_heater
+      - climate.bathroom_heater
       - script.set_bathroom_confortable
-      # - input_datetime.quick_bathroom_confort_time
-      - input_boolean.enable_early_quick_bathroom_confort
-      - switch.rfxcom_bathroom_heater
+      - input_datetime.quick_bathroom_confort_time
+      - input_boolean.schedule_morning_bathroom_confort
+      - switch.rfxcom_bathroom_heater_remote

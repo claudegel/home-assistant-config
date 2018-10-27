@@ -59,7 +59,8 @@ switch:
     automatic_add: True
     devices:
       '0b11000a01c5e36201000070':
-        name: Bathroom Heater
+        # entity: rfxcom_bathroom_heater_remote
+        name: Bathroom Heater Remote
         fire_event: true
 
 sensor:
@@ -394,22 +395,23 @@ homeassistant:
     sensor.rfxcom_cigare_cave_humidity:
       icon: mdi:water-percent
     sensor.rfxcom_home_energy_usage:
-      icon: mdi:power-plug
-    sensor.cabinet_smart_plug_power:
-      icon: mdi:power-plug
-    sensor.washing_machine_smart_plug_power_2:
-      icon: mdi:power-plug
-    sensor.home_cinema_smart_plug_power:
-      icon: mdi:power-plug
-    sensor.dark_blue_smart_plug_power_2:
       icon: mdi:power-socket-eu
-
+    sensor.cabinet_smart_plug_power:
+      icon: mdi:power-socket-eu
+    sensor.washing_machine_smart_plug_power_2:
+      icon: mdi:power-socket-eu
+    sensor.home_cinema_smart_plug_power:
+      icon: mdi:power-socket-eu
+    sensor.dark_blue_smart_plug_power:
+      icon: mdi:power-socket-eu
+    sensor.bathroom_heater_wall_plug_power:
+      icon: mdi:power-socket-eu
   
 group:
   home_smart_switches:
     name: Smart Switches
     entities:
-      - switch.rfxcom_bathroom_heater
+      - switch.rfxcom_bathroom_heater_remote
 
   home_temperatures:
     name: Home Temperatures
@@ -448,6 +450,7 @@ group:
       - sensor.washing_machine_smart_plug_power_2
       - sensor.home_cinema_smart_plug_power
       - sensor.dark_blue_smart_plug_power
+      - sensor.bathroom_heater_wall_plug_power
       - switch.dark_blue_smart_plug
       
   sensors_battery_alert:
