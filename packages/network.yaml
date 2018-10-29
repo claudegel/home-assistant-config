@@ -110,7 +110,7 @@ device_tracker:
 
   - platform: netgear
     host: !secret device_tracker__netgear__host
-    username: admin
+    username: !secret device_tracker__netgear__user
     password: !secret device_tracker__netgear__password
 
   # - platform: ddwrt

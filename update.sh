@@ -7,7 +7,7 @@ export TMPDIR=$(cd tmp && pwd)
 export PIP_NO_CACHE_DIR=off
 export PIPENV_CACHE_DIR=$TMPDIR/pip
 
-pipenv update
+pipenv update --clear
 
 ./restart-daemon.sh
 

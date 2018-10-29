@@ -35,8 +35,8 @@ homeassistant:
     #   friendly_name: Pi Hole Server
     #   icon: mdi:filter-variant
 
-    switch.pihole_temp_disable:
-      friendly_name: "Temp Disable"
+    switch.pi_hole_temp_disable:
+      friendly_name: "Temporary Disable"
 
     group.pihole:
       homebridge_hidden: true

@@ -1,3 +1,47 @@
+#######################################################################################
+# Fire and Forget Bathroom heater
+#######################################################################################
+#
+# Rational
+# ========
+#
+# Home heat is regulated by a central thermostat, keeping the whole house to a given
+# temperature (ex: 19 C).
+#
+# Girlfriend wake up pretty early and does not like to take shower at 19 C, she would
+# prefere the room to be at 22 or 23 when she enters this small room, arround 6h30 in
+# the morning.
+#
+# Setup
+# =====
+# 
+# - An cheap electric heater is set to the 'on' position in the bathroom
+# - It is connected to a Fibaro Z-Wave smart-plug (or any other smart plug
+#   that can handle more than ~2000W)
+# - an Oregon Scientific temperature sensor is placed in the bathroom, and 
+#   will be use to regulate the room temperature
+# - A cheap 433 Mhz switch (simple DIO switch)
+# - RFXCom is used to communicate with these 2 devices
+
+# Why not all-Z-Wave devices?
+# A single Z-Wave device cost > 50 euros. The DIO switch is 14 euros, and
+# the temperature sensor can be found for less that 25 euros, they are 
+# reliable and safely packaged, so I have put them all around the house 
+# and outside.
+# Because of security, I keep the actuators in the Z-Wave network, but I
+# choose to choose cheapest but reliable sensors using 433 Mhz protocols.
+#
+# This package does the following:
+#  - the DIO switch can be used to turn on and off the "confort" scenario 
+#    at any point. It has 2 actions, one for "on", one for 'off'
+#  - A virtual switch is also avaible in the Home Assistant UI to virtually
+#    trigger this switch.
+#  - the switch on the z-wave plug can also be used to turn off the heater
+#  - a thermostat is set to reach the setpoint temperature (ex: 24 C)
+#  - heater is automatically turned off after 2 hours (fire and forget)
+#  - a morning routine can be enabled, for example to trigger the heater at
+#    6 in the morning to be sure the bathroom temperature will be
+#    confortable at the time of the shower.
 
 
 climate:
@@ -7,7 +51,7 @@ climate:
     name: Bathroom Heater
     heater: switch.bathroom_heater_wall_plug
     target_sensor: sensor.rfxcom_bathroom_temperature
-    target_temp: 24
+    target_temp: 23
     cold_tolerance: .5
     hot_tolerance: .5
     away_temp: 7
@@ -19,7 +63,7 @@ climate:
   #   min_temp: 18
   #   max_temp: 28
   #   ac_mode: False 
-  #   target_temp: 24
+  #   target_temp: 23
   #   # keep_alive:
   #   #   seconds: 5
   #   initial_operation_mode: "off"
@@ -31,7 +75,6 @@ climate:
   #   autotune : ziegler-nichols
   #   difference : 100
   #   noiseband : 0.5
-
 
 
 input_boolean:
@@ -52,54 +95,66 @@ script:
   set_bathroom_confortable:
     alias: 'Quick Bathroom confort'
     sequence:
+      - service: script.turn_off
+        data:
+          entity_id: script.stop_bathroom_heater_timer
+      - service: switch.turn_off
+        entity_id: switch.bathroom_heater_wall_plug
+      - delay: 00:00:01
       - service: switch.turn_on
         entity_id: switch.bathroom_heater_wall_plug
       - service: climate.set_operation_mode
         data_template:
           entity_id: "climate.bathroom_heater"
           operation_mode: "heat"
-      # - service: notify.pushover
-      #   data:
-      #     message: 'Bathroom Heater enabled'
-
-
-automation:
-
-  # # Set the bathroom heater to awake at 4am every morning
-  # - alias: 'Scheduled Bathroom Confort'
-  #   trigger:
-  #     platform: template
-  #     value_template: "{{ states('sensor.time') == (states.input_datetime.quick_bathroom_confort_time.attributes.timestamp | int | timestamp_custom('%H:%M', False)) }}"
-  #   condition:
-  #     condition: state
-  #     entity_id: input_boolean.schedule_morning_bathroom_confort
-  #     state: 'on'
-  #   action:
-  #     # - service: switch.turn_on
-  #     #   entity_id: switch.bathroom_heater_wall_plug
-  #     - service: climate.set_operation_mode
-  #       data_template:
-  #         entity_id: "climate.bathroom_heater"
-  #         operation_mode: "heat"
 
   # Backup in case of the heater has been manually started.
-  # name: auto_stop_bathroom_heater_after_2h
-  - alias: 'Auto stop Bathroom Heater after 2h'
-    trigger:
-      platform: state
-      entity_id: climate.bathroom_heater
-      to: 'heat'
-    action:
+  stop_bathroom_heater_timer:
+    alias: 'Auto stop Bathroom Heater Timer'
+    sequence:
+      - service: notify.pushover
+        data:
+          message: 'Bathroom heater timeout started'
       - delay: '02:00:00'
       - service: notify.pushover
         data:
-          message: 'Bathroom heater timeout'
+          message: 'Bathroom heater timeout stopped'
       - service: climate.set_operation_mode
         data_template:
           entity_id: "climate.bathroom_heater"
           operation_mode: "off"
       - service: switch.turn_off
         entity_id: switch.rfxcom_bathroom_heater_remote
+      - service: switch.turn_off
+        entity_id: switch.bathroom_heater_wall_plug
+
+
+automation:
+
+  # Set the bathroom heater to awake at 4am every morning
+  - alias: 'Scheduled Bathroom Confort'
+    trigger:
+      platform: template
+      value_template: "{{ states('sensor.time') == (states.input_datetime.quick_bathroom_confort_time.attributes.timestamp | int | timestamp_custom('%H:%M', False)) }}"
+    condition:
+      condition: state
+      entity_id: input_boolean.schedule_morning_bathroom_confort
+      state: 'on'
+    action:
+      - service: script.set_bathroom_confortable
+
+  # Backup in case of the heater has been manually started.
+  # Its role is only to call the script of the same name
+  # The script can be stopped at will, while an automation
+  # can only be turned off, and then it won't be triggered anymore
+  # name: automation.stop_bathroom_heater_timer
+  - alias: 'Stop Bathroom Heater Timer'
+    trigger:
+      platform: state
+      entity_id: climate.bathroom_heater
+      to: 'heat'
+    action:
+      - service: script.stop_bathroom_heater_timer
 
 
   # # Stop when quich switch is turned off
@@ -117,41 +172,33 @@ automation:
   #         operation_mode: "off"
   #     - service: switch.turn_off
   #       entity_id: switch.rfxcom_bathroom_heater_remote
-  #     - service: homeassistant.turn_off
-  #       entity_id: automation.auto_stop_bathroom_heater_after_2h
-
+  #     - service: script.turn_off
+      #   data:
+      #     entity_id: script.turn_off_bedroom_light
+  
   - alias: "Remote bathroom confort trigger on"
     trigger:
       platform: state
       entity_id: switch.rfxcom_bathroom_heater_remote
       to: 'on'
-      # platform: event
-      # event_type: button_pressed
-      # event_data:
-      #   state: "on"
-      #   entity_id: "switch.rfxcom_bathroom_heater_remote"
     action:
-      service: script.set_bathroom_confortable
+      - service: script.set_bathroom_confortable
 
   - alias: "Remote bathroom confort trigger off"
     trigger:
       platform: state
       entity_id: switch.rfxcom_bathroom_heater_remote
       to: 'off'
-      # platform: event
-      # event_type: button_pressed
-      # event_data:
-      #   state: "off"
-      #   entity_id: "switch.rfxcom_bathroom_heater_remote"
     action:
       - service: climate.set_operation_mode
         data_template:
           entity_id: "climate.bathroom_heater"
           operation_mode: "off"
-      # - service: switch.turn_off
-      #   entity_id: switch.bathroom_heater_wall_plug
-      - service: homeassistant.turn_off
-        entity_id: automation.auto_stop_bathroom_heater_after_2h
+      - service: switch.turn_off
+        entity_id: switch.bathroom_heater_wall_plug
+      - service: script.turn_off
+        data:
+          entity_id: script.stop_bathroom_heater_timer
 
 
 homeassistant:
