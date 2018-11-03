@@ -1,0 +1,79 @@
+{
+    "data": {
+        "entries": [
+            {
+                "connection_class": "unknown",
+                "data": {
+                    "bridge_id": "001788FFFE281961",
+                    "host": "192.168.0.4",
+                    "username": "7gbxEcfoMAt0TbfaZU-LQPfr9i4Hor2aXhhqyH2v"
+                },
+                "domain": "hue",
+                "entry_id": "424daed45a794f7990e2a766e3b120c2",
+                "source": "import",
+                "title": "Philips hue",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "mqtt",
+                "entry_id": "1d967f88b90142beaced350e6f38f9b4",
+                "source": "import",
+                "title": "configuration.yaml",
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {},
+                "domain": "ios",
+                "entry_id": "680812615272427c9d4a6f1d9a47fc9e",
+                "source": "import",
+                "title": "Home Assistant iOS",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "port_mapping": false,
+                    "sensors": true,
+                    "ssdp_description": "http://192.168.0.1:5678/desc/root",
+                    "udn": "uuid:igd73616d61-6a65-7374-650a-f4cae541dfa2"
+                },
+                "domain": "upnp",
+                "entry_id": "382c2d95e68a473eb2098a616a39fa03",
+                "source": "discovery",
+                "title": "Freebox Server",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "port_mapping": false,
+                    "sensors": true,
+                    "ssdp_description": "http://192.168.0.7:5000/Public_UPNP_gatedesc.xml",
+                    "udn": "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb"
+                },
+                "domain": "upnp",
+                "entry_id": "c000cef6b0b442c98d792c0b36b14328",
+                "source": "discovery",
+                "title": "R7000 (Gateway)",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "network_key": "0x0F, 0x23, 0x97, 0x3E, 0xA9, 0xF9, 0x0A, 0xFC, 0xC8, 0xD2, 0xF7, 0x3A, 0x79, 0x52, 0x9F, 0xB5",
+                    "usb_path": "/dev/ttyUSB-ZStick-5G"
+                },
+                "domain": "zwave",
+                "entry_id": "889904f9f2454438a44df673a320c119",
+                "source": "import",
+                "title": "Z-Wave (import from configuration.yaml)",
+                "version": 1
+            }
+        ]
+    },
+    "key": "core.config_entries",
+    "version": 1
+}

@@ -1,8 +1,8 @@
 title: AGS Home
 
 resources:
-  - url: /local/custom_ui/weather-card.js
-    type: js
+  # - url: /local/custom_ui/weather-card.js
+  #   type: js
   - url: /local/custom_ui/surveillance-card.js?v=0
     type: module
     
@@ -12,20 +12,48 @@ views:
     icon: mdi:home-assistant
     cards:
 
-      - id: 1499b89ba9dd4371b078cfd650d0d16e  # Automatically created id
-        type: custom:weather-card
-        entity_weather: weather.yweather
-        entity_sun: sun.sun
+      # - id: 1499b89ba9dd4371b078cfd650d0d16e  # Automatically created id
+      #   type: custom:weather-card
+      #   entity_weather: weather.yweather
+      #   entity_sun: sun.sun
 
       - id: 9955405b94914fb4a4fc602be459abd6  # Automatically created id
         title: Today
-        type: entities
+        type: glance
         entities:
           - sensor.aurelies_work
           - sensor.gaetans_work
-          - sensor.forecast_6h_temperature
-          - sensor.forecast_6h_precipitation
-
+      - type: iframe
+        url: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d46238.77606448376!2d1.4131949586933785!3d43.58730966351053!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1541248674505"
+      - type: gauge
+        title: Outside temp
+        entity: sensor.rfxcom_outside_temperature
+        severity:
+          green: 15
+          yellow: 24
+          red: 28
+      - type: gauge
+        title: Inside temp
+        entity: sensor.thermostat_transmitter_temperature
+        min: 7
+        max: 30
+        severity:
+          green: 18
+          yellow: 24
+          red: 28
+      - type: iframe
+        url: https://stibbons.synology.me:32495/d-solo/000000001/domotic-overview?orgId=1&panelId=31&theme=light
+        aspect_ratio: 70%
+      - type: thermostat
+        title: House Temperature
+        entity: climate.thermostat_transmitter_heating
+      - type: thermostat
+        title: Bathroom Temperature
+        entity: climate.bathroom_heater
+      - type: iframe
+        url: https://embed.windy.com/embed2.html
+      
+      
   # From https://github.com/custom-cards/surveillance-card
   - id: 1  # Automatically created id
     title: Surveillance
@@ -39,3 +67,5 @@ views:
         cameras:
           - entity: camera.camera_ip_1
             motion_entity: binary_sensor.camera_ip_1_motion
+          - entity: camera.camera_ip_2
+            motion_entity: binary_sensor.camera_ip_2_motion

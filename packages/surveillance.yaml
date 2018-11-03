@@ -4,6 +4,12 @@ camera:
     name: "Camera IP 1"
     username: !secret camera__ip_1__username
     password: !secret camera__ip_1__password
+    
+  - platform: generic
+    still_image_url: !secret camera__ip_2__still_picture_url
+    name: "Camera IP 2"
+    username: !secret camera__ip_2__username
+    password: !secret camera__ip_2__password
 
 
 #------------------------------------------------------------
@@ -12,9 +18,15 @@ camera:
 binary_sensor:
   - platform: hikvision
     host: !secret camera__ip_1__ip
-    name: Camera IP Entrance
+    name: "Cam 1"
     username: !secret camera__ip_1__username
     password: !secret camera__ip_1__password
+
+  - platform: hikvision
+    host: !secret camera__ip_2__ip
+    name: "Cam 2"
+    username: !secret camera__ip_2__username
+    password: !secret camera__ip_2__password
 
 
 #------------------------------------------------------------
@@ -27,3 +39,6 @@ group:
     entities:
       - binary_sensor.camera_ip_1
       - camera.camera_ip_1
+
+      - binary_sensor.camera_ip_2
+      - camera.camera_ip_2
