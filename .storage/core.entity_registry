@@ -1008,6 +1008,24 @@
                 "name": "Bathroom Heater Wall Plug",
                 "platform": "zwave",
                 "unique_id": "9-72057594193723392"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.cam_2_motion",
+                "name": null,
+                "platform": "hikvision",
+                "unique_id": "5ced4000-5399-11b4-82d0-5803fb38e468.Motion.1"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "b5a8ebc024424c39a475212eaf380671",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgwpef_wall_plug_relative_humidity",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594110034002"
             }
         ]
     },
