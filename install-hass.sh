@@ -6,6 +6,7 @@ sudo apt-get install -y \
     libudev-dev \
     nmap \
     raspberrypi-kernel-headers \
+    iperf3
 
 mkdir -p .venv tmp
 pipenv install --skip-lock
