@@ -44,57 +44,57 @@ homeassistant:
 
 #-------------------------------------------
 sensor:
-  - platform: pi_hole
-    host: 192.168.0.5
-    name: Pi Hole
-    monitored_conditions:
-      - dns_queries_today
-      - ads_blocked_today
-      - ads_percentage_today
-      - ads_blocked_today
-      - unique_clients
+  # - platform: pi_hole
+  #   host: 192.168.0.5
+  #   name: Pi Hole
+  #   monitored_conditions:
+  #     - dns_queries_today
+  #     - ads_blocked_today
+  #     - ads_percentage_today
+  #     - ads_blocked_today
+  #     - unique_clients
 
-  - name: Uptime PiHole
-    platform: mqtt
-    state_topic: home/pihole/uptime/sec
-    value_template: >-
-      {# {% set value = 24 * 3600 + 0 * 60 * 60 + 20 * 60 %}#}
-      {% set uptime = value | int %}
-      {% set seconds = uptime % 60 %}
-      {% set minutes = ((uptime % 3600) / 60) | int %}
-      {% set hours = ((uptime % 86400) / 3600) | int %}
-      {% set days = (uptime / 86400) | int %}
-      {%- if days > 0 -%}
-        {%- if days == 1 -%}
-          1 day
-        {%- else -%}
-          {{ days }} days
-        {%- endif -%}
-        {{ ', ' }}
-      {%- endif -%}
-      {%- if hours > 0 -%}
-        {%- if hours == 1 -%}
-          1 h
-        {%- else -%}
-          {{ hours }} h
-        {%- endif -%}
-        {{ ' ' }}
-      {%- endif -%}
-      {%- if minutes > 0 -%}
-        {%- if minutes == 1 -%}
-          1 min
-        {%- else -%}
-          {{ minutes }} min
-        {%- endif -%}
-        {{ ' ' }}
-      {%- endif -%}
-      {%- if uptime < 5 * 60 -%}
-        {%- if seconds == 1 -%}
-          1 sec
-        {%- elif seconds > 1 -%}
-          {{ seconds }} sec
-        {%- endif -%}
-      {%- endif -%}
+  # - name: Uptime PiHole
+  #   platform: mqtt
+  #   state_topic: home/pihole/uptime/sec
+  #   value_template: >-
+  #     {# {% set value = 24 * 3600 + 0 * 60 * 60 + 20 * 60 %}#}
+  #     {% set uptime = value | int %}
+  #     {% set seconds = uptime % 60 %}
+  #     {% set minutes = ((uptime % 3600) / 60) | int %}
+  #     {% set hours = ((uptime % 86400) / 3600) | int %}
+  #     {% set days = (uptime / 86400) | int %}
+  #     {%- if days > 0 -%}
+  #       {%- if days == 1 -%}
+  #         1 day
+  #       {%- else -%}
+  #         {{ days }} days
+  #       {%- endif -%}
+  #       {{ ', ' }}
+  #     {%- endif -%}
+  #     {%- if hours > 0 -%}
+  #       {%- if hours == 1 -%}
+  #         1 h
+  #       {%- else -%}
+  #         {{ hours }} h
+  #       {%- endif -%}
+  #       {{ ' ' }}
+  #     {%- endif -%}
+  #     {%- if minutes > 0 -%}
+  #       {%- if minutes == 1 -%}
+  #         1 min
+  #       {%- else -%}
+  #         {{ minutes }} min
+  #       {%- endif -%}
+  #       {{ ' ' }}
+  #     {%- endif -%}
+  #     {%- if uptime < 5 * 60 -%}
+  #       {%- if seconds == 1 -%}
+  #         1 sec
+  #       {%- elif seconds > 1 -%}
+  #         {{ seconds }} sec
+  #       {%- endif -%}
+  #     {%- endif -%}
 
     
   - name: Temp PiHole
