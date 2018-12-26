@@ -1,5 +1,12 @@
-# usb_path: /dev/ttyACM0
-usb_path: /dev/ttyUSB-ZStick-5G
+usb_path: /dev/ttyACM0
+# Define a symbolic link.
+# Requires the following lines in /etc/udev/rules.d/99-usb-serial.rules:
+#
+#     # AeoTec Z-Stick Gen5:
+#     SUBSYSTEM=="tty", ATTRS{idVendor}=="0658", ATTRS{idProduct}=="0200", SYMLINK+="ttyUSB-ZStick-5G"
+#
+# Does not seem to work anymore
+# usb_path: /dev/ttyUSB-ZStick-5G
 network_key: !secret zwave__network_key
 config_path: ./.venv/lib/python3.5/site-packages/python_openzwave/ozw_config/config/
 debug: false
