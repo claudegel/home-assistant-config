@@ -42,22 +42,22 @@ automation:
       - service: homeassistant.turn_off
         entity_id: light.hue_iris_aurelie
 
-  - id: shed_gaetan_light_timer
-    alias: Shed Gaetan light timer
-    hide_entity: False
-    trigger:
-      platform: state
-      entity_id: light.hue_iris_gaetan
-      to: 'on'
-      for:
-        minutes: 45
-    # trigger:
-    #   - platform: template
-    #     value_template: "{% if((as_timestamp(now())-as_timestamp(states.switch.sonoff__room_fan.last_updated)) | int /60) >  states.input_slider.bedroomfan_timer_minutes.state | int + states.input_slider.bedroomfan_timer_hours.state |int * 60 | int and states.switch.sonoff__room_fan.state == 'on' -%}true{% endif %}"
-    action:
-      # - delay: '00:{{ states.input_number.shed_gaetan_light_delay.state | int }}:00'
-      - service: homeassistant.turn_off
-        entity_id: light.hue_iris_gaetan
+  # - id: shed_gaetan_light_timer
+  #   alias: Shed Gaetan light timer
+  #   hide_entity: False
+  #   trigger:
+  #     platform: state
+  #     entity_id: light.hue_iris_gaetan
+  #     to: 'on'
+  #     for:
+  #       minutes: 45
+  #   # trigger:
+  #   #   - platform: template
+  #   #     value_template: "{% if((as_timestamp(now())-as_timestamp(states.switch.sonoff__room_fan.last_updated)) | int /60) >  states.input_slider.bedroomfan_timer_minutes.state | int + states.input_slider.bedroomfan_timer_hours.state |int * 60 | int and states.switch.sonoff__room_fan.state == 'on' -%}true{% endif %}"
+  #   action:
+  #     # - delay: '00:{{ states.input_number.shed_gaetan_light_delay.state | int }}:00'
+  #     - service: homeassistant.turn_off
+  #       entity_id: light.hue_iris_gaetan
 
 
 group:
