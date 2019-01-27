@@ -141,6 +141,9 @@ automation:
       entity_id: input_boolean.schedule_morning_bathroom_confort
       state: 'on'
     action:
+      - service: notify.pushover
+        data:
+          message: "DBG: start of 'Scheduled Bathroom Confort'"
       - service: script.set_bathroom_confortable
 
   # Backup in case of the heater has been manually started.
@@ -182,6 +185,9 @@ automation:
       entity_id: switch.rfxcom_bathroom_heater_remote
       to: 'on'
     action:
+      - service: notify.pushover
+        data:
+          message: "DBG: start of 'Remote bathroom confort trigger on'"
       - service: script.set_bathroom_confortable
 
   - alias: "Remote bathroom confort trigger off"

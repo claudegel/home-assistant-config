@@ -500,15 +500,6 @@
                 "config_entry_id": null,
                 "device_id": null,
                 "disabled_by": null,
-                "entity_id": "zwave.washing_machine_wall_plug",
-                "name": "FIBARO System FGWPE/F Wall Plug (Washing Machine)",
-                "platform": "zwave",
-                "unique_id": "node-4"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
                 "entity_id": "zwave.boiler_actuator_receiver",
                 "name": null,
                 "platform": "zwave",
@@ -1026,6 +1017,24 @@
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "4-72057594110034002"
+            },
+            {
+                "config_entry_id": "500f9223b0984899805ebd4a4e1d8f4a",
+                "device_id": "572996eb265a4f6faab7a8d507709cb2",
+                "disabled_by": null,
+                "entity_id": "media_player.chromecast_salon",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "c8a8c6b0-eb88-2de8-7d63-4ce6001c3d10"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.washing_machine_wall_smart_plug",
+                "name": "FIBARO System FGWPE/F Wall Plug (Washing Machine)",
+                "platform": "zwave",
+                "unique_id": "node-4"
             }
         ]
     },

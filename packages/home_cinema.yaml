@@ -1,6 +1,6 @@
 sensor:
   # - platform: sonarr
-  #   api_key: secret! sensor__sonarr__api_key
+  #   api_key: secret! sensor_sonarr_api_key
   #   host: 192.168.0.10
   #   port: 32772
   #   monitored_conditions:
@@ -13,7 +13,7 @@ sensor:
   #     - /animes
 
   # - platform: radarr
-  #   api_key: secret! sensor__radarr__api_key
+  #   api_key: secret! sensor_radarr_api_key
   #   host: 192.168.0.10
   #   port: 32773
   #   days: 2
@@ -116,7 +116,7 @@ media_player:
     name: "Home Cinema Salon Kodi"
     host: 192.168.0.20
     #username: gaetan
-    #password: !secret media_player__kodi__password
+    #password: !secret media_player_kodi_password
   
   # - platform: emby
   #   host: stibbons.synology.me
@@ -124,7 +124,7 @@ media_player:
   #   id: emby
   #   port: 32492
   #   ssl: True
-  #   api_key: !secret media_player__emby__api_key
+  #   api_key: !secret media_player_emby_api_key
 
 
 remote:
@@ -142,7 +142,7 @@ group:
       - sensor.sonarr_upcoming
       - sensor.sonarr_series
       - sensor.sonarr_diskspace
-      - media_player.emby__kodi__osmc_2
+      - media_player.emby_kodi_osmc_2
       - media_player.home_cinema_salon_kodi
 
   harmony:

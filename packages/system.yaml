@@ -54,7 +54,7 @@ sensor:
       {%- endif -%}
 
   - platform: filesize
-    entity_namespace: hass_
+    entity_namespace: hass
     file_paths:
      - /home/pi/homeassistant/recorder.sqlite
      - /home/pi/homeassistant/home-assistant.log
@@ -106,9 +106,9 @@ homeassistant:
       friendly_name: "Available version"
     sensor.ha_uptime:
       friendly_name: "Domot Server Uptime"
-    sensor.hass__homeassistantlog:
+    sensor.hass_homeassistantlog:
       friendly_name: "Log size"
-    sensor.hass__recordersqlite:
+    sensor.hass_recordersqlite:
       friendly_name: "DB size"
     script.upgrade_hass:
       icon: mdi:cloud-check
@@ -148,8 +148,8 @@ group:
       - sensor.ha_installed_version
       - sensor.ha_available_version
       - sensor.ha_uptime
-      - sensor.hass__homeassistantlog
-      - sensor.hass__recordersqlite
+      - sensor.hass_homeassistantlog
+      - sensor.hass_recordersqlite
       - script.upgrade_hass
       - script.quick_restart
 

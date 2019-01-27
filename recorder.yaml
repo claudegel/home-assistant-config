@@ -37,8 +37,8 @@ include:
     - sensor.ha_available_version
     - sensor.ha_installed_version
     - sensor.harmony_home_cinema_current_activity
-    - sensor.hass__homeassistantlog
-    - sensor.hass__recordersqlite
+    - sensor.hass_homeassistantlog
+    - sensor.hass_recordersqlite
     - sensor.home_cinema_smart_plug_power
     - sensor.home_cinema_ups_status
     - sensor.rfxcom_bathroom_temperature
@@ -52,7 +52,6 @@ include:
     - sensor.rfxcom_office_temperature
     - sensor.rfxcom_outside_temperature
     - sensor.rfxcom_parents_room_temperature
-    - sensor.rfxcom_upper_floor_corridor_temperature
     - sensor.thermostat_setpoint
     - sensor.thermostat_transmitter_battery_level
     - sensor.washing_machine_energy_each_2_min

@@ -6,8 +6,18 @@ sudo apt-get install -y \
     libudev-dev \
     nmap \
     raspberrypi-kernel-headers \
-    iperf3
+    iperf3 \
+    python3-pip \
+    python3-venv \
+    build-essential \
+    libssl-dev \
+    libffi-dev \
+    python3-dev
 
-mkdir -p .venv tmp
-pipenv install --skip-lock
-pipenv run pip install custom_components/climate/pid_controller/
+rm -rfv .venv
+python3 -m venv .venv
+source .venv/bin/activate
+
+pip install --upgrade pip pipenv wheel
+pip install --upgrade homeassistant
+pip install custom_components/climate/pid_controller/

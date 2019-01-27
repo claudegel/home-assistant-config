@@ -1,14 +1,14 @@
 sensor:
   - platform: waze_travel_time
     name: "Gaetan's Work"
-    origin: !secret sensor__waze_travel_time__home
+    origin: !secret sensor_waze_travel_time_home
     destination: '2 Avenue du Docteur Maurice Grynfogel, Toulouse'
     region: 'EU'
     
   - platform: waze_travel_time
     name: "Gaetan Back from Work"
     origin: '2 Avenue du Docteur Maurice Grynfogel, Toulouse'
-    destination: !secret sensor__waze_travel_time__home
+    destination: !secret sensor_waze_travel_time_home
     region: 'EU'
 
   - platform: filter
@@ -22,14 +22,14 @@ sensor:
 
   - platform: waze_travel_time
     name: "Aurelie's Work"
-    origin: !secret sensor__waze_travel_time__home
+    origin: !secret sensor_waze_travel_time_home
     destination: "Hôpital Purpan, Place du Docteur Joseph Baylac, Toulouse"
     region: 'EU'
     
   - platform: waze_travel_time
     name: "Aurelie Back from Work"
     origin: "Hôpital Purpan, Place du Docteur Joseph Baylac, Toulouse"
-    destination: !secret sensor__waze_travel_time__home
+    destination: !secret sensor_waze_travel_time_home
     region: 'EU'
     
   - platform: filter

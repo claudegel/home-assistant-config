@@ -6,7 +6,6 @@ automation:
        - platform: state
          entity_id:
           - sensor.rfxcom_bathroom_temperature
-          - sensor.rfxcom_cigare_cave_temperature
           - sensor.rfxcom_friend_room_temperature
           - sensor.rfxcom_garage_temperature
           - sensor.rfxcom_kitchen_temperature
@@ -14,7 +13,7 @@ automation:
           - sensor.rfxcom_office_temperature
           - sensor.rfxcom_outside_temperature
           - sensor.rfxcom_parents_room_temperature
-          - sensor.rfxcom_upper_floor_corridor_temperature
+          - sensor.rfxcom_cigare_cave_temperature
     action:
       - service: mqtt.publish
         data_template:
@@ -40,7 +39,7 @@ automation:
           - sensor.rfxcom_office_humidity
           - sensor.rfxcom_outside_humidity
           - sensor.rfxcom_parents_room_humidity
-          - sensor.rfxcom_upper_floor_corridor_humidity
+          - sensor.rfxcom_cigare_cave_humidity
     action:
       - service: mqtt.publish
         data_template:
@@ -83,7 +82,7 @@ sensor:
         data_type:
            - Temperature
            - Humidity
-      '0a520105f40200c9310179'
+      '0a520105f40200c9310179':
         name: Friend Room
         data_type:
            - Temperature
@@ -123,7 +122,6 @@ sensor:
         data_type:
            - Temperature
            - Humidity
-      '115a02138f02000000029300005c04035479':
       '115a02038e9200000001a200000179b76479':
         name: Home
         data_type:
@@ -369,13 +367,13 @@ binary_sensor:
           {% else %}
             mdi:battery
           {% endif %}
-      rfxcom_upper_floor_corridor_battery_alert:
+      rfxcom_cigare_cave_battery_alert:
         friendly_name: "Cigare Cave"
         device_class: battery
         value_template: >-
-          {{ states.sensor.rfxcom_upper_floor_corridor_temperature.attributes.get("Battery numeric", 9) != 9 }}
+          {{ states.sensor.rfxcom_cigare_cave_temperature.attributes.get("Battery numeric", 9) != 9 }}
         icon_template: >
-          {% if states.sensor.rfxcom_upper_floor_corridor_temperature.attributes.get("Battery numeric", 9) | int != 9 %}
+          {% if states.sensor.rfxcom_cigare_cave_temperature.attributes.get("Battery numeric", 9) | int != 9 %}
             mdi:battery-alert
           {% else %}
             mdi:battery
@@ -426,7 +424,6 @@ group:
       - sensor.rfxcom_office_temperature
       - sensor.rfxcom_outside_temperature
       - sensor.rfxcom_parents_room_temperature
-      - sensor.rfxcom_upper_floor_corridor_temperature
 
   home_humidity:
     name: Home Humidity
@@ -466,4 +463,4 @@ group:
       - binary_sensor.rfxcom_office_battery_alert
       - binary_sensor.rfxcom_outside_battery_alert
       - binary_sensor.rfxcom_parents_room_battery_alert
-      - binary_sensor.rfxcom_upper_floor_corridor_battery_alert
+      - binary_sensor.rfxcom_cigare_cave_battery_alert

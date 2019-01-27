@@ -1,8 +1,8 @@
-host: !secret influx__host
-port: !secret influx__port
-username: !secret influx__username
-database: !secret influx__database
-password: !secret influx__password
+host: !secret influx_host
+port: !secret influx_port
+username: !secret influx_username
+database: !secret influx_database
+password: !secret influx_password
 max_retries: 3
 # default_measurement: state
 tags:

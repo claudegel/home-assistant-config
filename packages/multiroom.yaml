@@ -1,7 +1,7 @@
 media_player:
   # - platform: spotify
-  #   client_id: !secret media_player__spotify__client_id
-  #   client_secret: !secret media_player__spotify__client_secret
+  #   client_id: !secret media_player_spotify_client_id
+  #   client_secret: !secret media_player_spotify_client_secret
   #   cache_path: /mnt/storage/domotic/homeassistant/tmp/.spotify-token-cache
   
   - platform: yamaha_musiccast

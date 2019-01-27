@@ -22,7 +22,7 @@
                 "manufacturer": "Signify",
                 "model": "BSB002",
                 "name": "Philips hue",
-                "sw_version": "1810251352"
+                "sw_version": "1811120916"
             },
             {
                 "config_entries": [
@@ -220,6 +220,47 @@
                 "manufacturer": "FIBARO System",
                 "model": "FGWPE/F Wall Plug Gen5",
                 "name": "FIBARO System FGWPE/F Wall Plug Gen5",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "500f9223b0984899805ebd4a4e1d8f4a"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "572996eb265a4f6faab7a8d507709cb2",
+                "identifiers": [
+                    [
+                        "cast",
+                        "c8a8c6b0eb882de87d634ce6001c3d10"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Chromecast Ultra",
+                "name": "Salon TV",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "382c2d95e68a473eb2098a616a39fa03"
+                ],
+                "connections": [
+                    [
+                        "upnp",
+                        "uuid:igd73616d61-6a65-7374-650a-f4cae541dfa2"
+                    ]
+                ],
+                "hub_device_id": null,
+                "id": "4f9b6adc4310456fa310da39fbc14a81",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:igd73616d61-6a65-7374-650a-f4cae541dfa2"
+                    ]
+                ],
+                "manufacturer": "Freebox",
+                "model": null,
+                "name": "Freebox Server",
                 "sw_version": null
             }
         ]

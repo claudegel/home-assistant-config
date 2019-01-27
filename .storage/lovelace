@@ -1,0 +1,680 @@
+{
+    "data": {
+        "config": {
+            "title": "Home",
+            "views": [
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                "sensor.aurelies_work",
+                                "sensor.aurelie_back_from_work",
+                                "sensor.gaetans_work",
+                                "sensor.gaetan_back_from_work"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Travel times",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "input_select.main_heat_mode"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Climate Control",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "climate.thermostat_transmitter_heating",
+                            "type": "thermostat"
+                        },
+                        {
+                            "entities": [
+                                "switch.rfxcom_bathroom_heater_remote"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Bathroom Heater",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "climate.bathroom_heater",
+                            "type": "thermostat"
+                        },
+                        {
+                            "entities": [
+                                "light.hue_iris_aurelie",
+                                "input_number.shed_aurelie_light_delay",
+                                "light.hue_iris_gaetan",
+                                "input_number.shed_gaetan_light_delay"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Bedroom lights",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:home",
+                    "path": "default_view",
+                    "title": ".default_view"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                "device_tracker.aurelie_iphone",
+                                "device_tracker.aure_pc",
+                                "device_tracker.gaetan_iphone",
+                                "sensor.stibphone2_battery_level",
+                                "sensor.stibphone2_battery_state",
+                                "device_tracker.gaetan_macbookpro"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Presence",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:account-multiple",
+                    "path": "familly_view",
+                    "title": "familly_view"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                "binary_sensor.camera_ip_1",
+                                "binary_sensor.camera_ip_2"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Surveillance",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "camera.camera_ip_1",
+                            "type": "picture-entity"
+                        },
+                        {
+                            "entity": "camera.camera_ip_2",
+                            "type": "picture-entity"
+                        }
+                    ],
+                    "icon": "mdi:cctv",
+                    "path": "surveillance_view",
+                    "title": "surveillance_view"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                "sensor.rfxcom_bathroom_temperature",
+                                "sensor.rfxcom_friend_room_temperature",
+                                "sensor.rfxcom_garage_temperature",
+                                "sensor.rfxcom_kitchen_temperature",
+                                "sensor.rfxcom_living_room_temperature",
+                                "sensor.rfxcom_office_temperature",
+                                "sensor.rfxcom_outside_temperature",
+                                "sensor.rfxcom_parents_room_temperature",
+                                "sensor.rfxcom_upper_floor_corridor_temperature"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Home Temperatures",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "switch.boiler_actuator_receiver_switch"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Climate Management",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "climate.thermostat_transmitter_heating",
+                            "type": "thermostat"
+                        },
+                        {
+                            "entities": [
+                                "input_select.climate_season",
+                                "input_select.main_heat_mode",
+                                "input_select.auto_main_heat",
+                                "input_select.heat_day_mode"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Climate Control Config",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "input_datetime.heat_time_weekday_morning",
+                                "input_datetime.heat_time_weekend_morning",
+                                "input_number.temp_for_morning",
+                                "input_datetime.heat_time_weekday_day",
+                                "input_datetime.heat_time_weekend_day",
+                                "input_number.temp_for_day_with_presence",
+                                "input_number.temp_for_day_absent",
+                                "input_datetime.heat_time_weekday_evening",
+                                "input_datetime.heat_time_weekend_evening",
+                                "input_number.temp_for_evening",
+                                "input_datetime.heat_time_weekday_beforebed",
+                                "input_datetime.heat_time_weekend_beforebed",
+                                "input_number.temp_for_before_bed",
+                                "input_datetime.heat_time_weekday_night",
+                                "input_datetime.heat_time_weekend_night",
+                                "input_number.temp_for_night",
+                                "input_number.temp_for_holidays",
+                                "input_number.temp_for_summer",
+                                "input_boolean.reset_climate_values"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Climate Tuning",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.rfxcom_kitchen_humidity",
+                                "sensor.rfxcom_parents_room_humidity"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Home Humidity",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.rfxcom_cigare_cave_temperature",
+                                "sensor.rfxcom_cigare_cave_humidity"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Cigare Cave",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.rfxcom_home_energy_usage",
+                                "sensor.cabinet_smart_plug_power",
+                                "sensor.washing_machine_smart_plug_power_2",
+                                "sensor.home_cinema_smart_plug_power",
+                                "sensor.dark_blue_smart_plug_power",
+                                "sensor.bathroom_heater_wall_plug_power",
+                                "switch.dark_blue_smart_plug"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Home Power Meters",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.washing_machine_status"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Washing Machine",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.washing_machine_energy_each_2_min"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Washing Machine (DBG)",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "switch.rfxcom_bathroom_heater_remote",
+                                "switch.bathroom_heater_wall_plug"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Bathroom Heater Config",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "climate.bathroom_heater",
+                            "type": "thermostat"
+                        },
+                        {
+                            "entities": [
+                                "input_boolean.schedule_morning_bathroom_confort",
+                                "input_datetime.quick_bathroom_confort_time"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Bath Heater Shedule",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:ruler",
+                    "path": "measurement_view",
+                    "title": "measurement_view"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                "sensor.radarr_movies",
+                                "sensor.sonarr_upcoming",
+                                "sensor.sonarr_series",
+                                "sensor.sonarr_diskspace"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Smart PVR",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "media_player.emby_kodi_osmc_2",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.home_cinema_salon_kodi",
+                            "type": "media-control"
+                        },
+                        {
+                            "entities": [
+                                "remote.harmony_home_cinema",
+                                "sensor.harmony_home_cinema_current_activity"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Harmony Home Cinema",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "binary_sensor.osmc",
+                                "sensor.osmc_uptime_templated",
+                                "sensor.osmc_temperature",
+                                "sensor.home_cinema_ups_status",
+                                "sensor.home_cinema_ups_battery_charge",
+                                "sensor.home_cinema_ups_low_battery_setpoint",
+                                "sensor.home_cinema_ups_ups_shutdown_delay",
+                                "sensor.home_cinema_ups_battery_runtime"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Home Cinema Information",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:play-network",
+                    "path": "multimedia_view",
+                    "title": "multimedia_view"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                "sensor.season",
+                                "sensor.date",
+                                "sensor.time",
+                                "sensor.time_utc",
+                                "sun.sun"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Actuel",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.weather_symbol",
+                                "sensor.weather_temperature",
+                                "sensor.weather_precipitation",
+                                "sensor.weather_pressure",
+                                "sensor.weather_wind_speed",
+                                "sensor.weather_cloudiness",
+                                "sensor.pws_alerts",
+                                "sensor.pws_dewpoint_c",
+                                "sensor.weather_dewpoint_temperature",
+                                "sensor.weather_fog",
+                                "sensor.weather_high_clouds",
+                                "sensor.weather_humidity",
+                                "sensor.weather_low_clouds",
+                                "sensor.weather_medium_clouds",
+                                "sensor.weather_wind_direction"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Met\u00e9o 1h",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.forecast_6h_symbol",
+                                "sensor.forecast_6h_temperature",
+                                "sensor.forecast_6h_precipitation",
+                                "sensor.forecast_6h_pressure",
+                                "sensor.forecast_6h_wind_speed",
+                                "sensor.forecast_6h_cloudiness"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Prevision 6h",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "weather.yweather",
+                            "type": "weather-forecast"
+                        },
+                        {
+                            "entities": [
+                                "sensor.forecast_24h_symbol",
+                                "sensor.forecast_24h_temperature",
+                                "sensor.forecast_24h_precipitation",
+                                "sensor.forecast_24h_pressure",
+                                "sensor.forecast_24h_wind_speed",
+                                "sensor.forecast_24h_cloudiness"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Prevision 24h",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:weather-partlycloudy",
+                    "path": "weather_view",
+                    "title": "weather_view"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                "sensor.cabinet_ups_status",
+                                "sensor.cabinet_ups_input_voltage",
+                                "sensor.cabinet_ups_battery_runtime",
+                                "sensor.cabinet_ups_battery_charge",
+                                "sensor.cabinet_ups_low_battery_setpoint",
+                                "sensor.cabinet_ups_output_voltage",
+                                "sensor.cabinet_ups_ups_shutdown_delay",
+                                "sensor.rfxcom_cabinet_temperature"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Cabinet information",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "binary_sensor.pihole",
+                                "sensor.pi_hole_version",
+                                "sensor.uptime_pihole",
+                                "sensor.temp_pihole",
+                                "sensor.pi_hole_dns_unique_clients",
+                                "sensor.pi_hole_dns_queries_today",
+                                "sensor.pi_hole_ads_blocked_today",
+                                "sensor.pi_hole_ads_percentage_today",
+                                "sensor.pi_hole_ads_percentage_blocked_today",
+                                "switch.pi_hole_temp_disable"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Pi-Hole (ad-blocker)",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "binary_sensor.freebox",
+                                "sensor.external_ip",
+                                "binary_sensor.r7000",
+                                "sensor.speedtest_download_mbytes",
+                                "sensor.speedtest_upload_mbytes",
+                                "sensor.download_192168010_mbytes",
+                                "sensor.upload_192168010_mbytes",
+                                "sensor.download_192168022_mbytes",
+                                "sensor.upload_192168022_mbytes",
+                                "input_boolean.update_speedtest",
+                                "sensor.stibbons_synology_me_ssl_certificate_expiry"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Network",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.domot_cpu_temp",
+                                "sensor.domot_cpu_temperature",
+                                "sensor.domot_processor_use",
+                                "sensor.domot_memory_use_percent",
+                                "sensor.domot_disk_use_percent_mntstorage",
+                                "sensor.domot_disk_use_percent",
+                                "sensor.domot_since_last_boot_templated"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Domot server information",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "binary_sensor.hue"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Smart Lights",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:server-network",
+                    "path": "network_view",
+                    "title": "network_view"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                "binary_sensor.nas",
+                                "sensor.nas_cpu_load_total",
+                                "sensor.nas_memory_usage_real",
+                                "sensor.nas_network_up",
+                                "sensor.nas_network_down"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "NAS General",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.nas_below_min_remaining_life_sda",
+                                "sensor.nas_below_min_remaining_life_sdb",
+                                "sensor.nas_below_min_remaining_life_sdc",
+                                "sensor.nas_below_min_remaining_life_sdd",
+                                "sensor.nas_below_min_remaining_life_sde",
+                                "sensor.nas_below_min_remaining_life_sdf",
+                                "sensor.nas_below_min_remaining_life_sdg",
+                                "sensor.nas_below_min_remaining_life_sdh",
+                                "sensor.nas_exceeded_max_bad_sectors_sda",
+                                "sensor.nas_exceeded_max_bad_sectors_sdb",
+                                "sensor.nas_exceeded_max_bad_sectors_sdc",
+                                "sensor.nas_exceeded_max_bad_sectors_sdd",
+                                "sensor.nas_exceeded_max_bad_sectors_sde",
+                                "sensor.nas_exceeded_max_bad_sectors_sdf",
+                                "sensor.nas_exceeded_max_bad_sectors_sdg",
+                                "sensor.nas_exceeded_max_bad_sectors_sdh",
+                                "sensor.nas_status_sda",
+                                "sensor.nas_status_sdb",
+                                "sensor.nas_status_sdc",
+                                "sensor.nas_status_sdd",
+                                "sensor.nas_status_sde",
+                                "sensor.nas_status_sdf",
+                                "sensor.nas_status_sdg",
+                                "sensor.nas_status_sdh",
+                                "sensor.nas_status_smart_sda",
+                                "sensor.nas_status_smart_sdb",
+                                "sensor.nas_status_smart_sdc",
+                                "sensor.nas_status_smart_sdd",
+                                "sensor.nas_status_smart_sde",
+                                "sensor.nas_status_smart_sdf",
+                                "sensor.nas_status_smart_sdg",
+                                "sensor.nas_status_smart_sdh",
+                                "sensor.nas_temperature_sda",
+                                "sensor.nas_temperature_sdb",
+                                "sensor.nas_temperature_sdc",
+                                "sensor.nas_temperature_sdd",
+                                "sensor.nas_temperature_sde",
+                                "sensor.nas_temperature_sdf",
+                                "sensor.nas_temperature_sdg",
+                                "sensor.nas_temperature_sdh"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "NAS Storage status",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.nas_status_volume_1",
+                                "sensor.nas_volume_used_volume_1",
+                                "sensor.nas_used_space_volume_1",
+                                "sensor.nas_total_size_volume_1"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "NAS Volume 1",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.nas_status_volume_2",
+                                "sensor.nas_volume_used_volume_2",
+                                "sensor.nas_used_space_volume_2",
+                                "sensor.nas_total_size_volume_2"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "NAS Volume 2",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.nas_status_volume_3",
+                                "sensor.nas_volume_used_volume_3",
+                                "sensor.nas_used_space_volume_3",
+                                "sensor.nas_total_size_volume_3"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "NAS Volume 3",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:nas",
+                    "path": "nas_view",
+                    "title": "nas_view"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                "sensor.date",
+                                "sensor.time",
+                                "sensor.time_utc",
+                                "sensor.season",
+                                "binary_sensor.workday",
+                                "sun.sun",
+                                "sensor.time",
+                                "sensor.time_utc"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Date",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.ha_installed_version",
+                                "sensor.ha_available_version",
+                                "sensor.ha_uptime",
+                                "sensor.hass_homeassistantlog",
+                                "sensor.hass_recordersqlite",
+                                "script.upgrade_hass",
+                                "script.quick_restart"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Home Assistant System",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.thermostat_transmitter_battery_level"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "ZWave Battery Levels",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "binary_sensor.rfxcom_bathroom_battery_alert",
+                                "binary_sensor.rfxcom_friend_room_battery_alert",
+                                "binary_sensor.rfxcom_garage_battery_alert",
+                                "binary_sensor.rfxcom_kitchen_battery_alert",
+                                "binary_sensor.rfxcom_living_room_battery_alert",
+                                "binary_sensor.rfxcom_office_battery_alert",
+                                "binary_sensor.rfxcom_outside_battery_alert",
+                                "binary_sensor.rfxcom_parents_room_battery_alert",
+                                "binary_sensor.rfxcom_upper_floor_corridor_battery_alert"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Rfx Battery States",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "zwave.controller",
+                                "zwave.cabinet_smart_plug",
+                                "zwave.dark_blue_smart_plug",
+                                "zwave.entrance_multisensor",
+                                "zwave.home_cinema_smart_plug",
+                                "zwave.boiler_actuator_receiver",
+                                "zwave.thermostat_transmitter",
+                                "zwave.washing_machine_smart_plug"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Z-Wave devices",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "input_boolean.dbg_washing_machine"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Debug Home Assistant",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "automation.recycle_container_warning",
+                                "automation.remote_bathroom_confort_trigger_off",
+                                "automation.remote_bathroom_confort_trigger_on",
+                                "automation.reset_default_values",
+                                "automation.srt321_battery_notifications",
+                                "automation.scheduled_bathroom_confort",
+                                "automation.send_alert_when_washing_machine_is_clean",
+                                "automation.send_humidity_to_mqtt",
+                                "automation.send_temperatures_to_mqtt",
+                                "automation.set_washing_machine_active_when_power_detected",
+                                "automation.set_washing_machine_active_when_power_detected_dbg",
+                                "automation.set_washing_machine_finished_when_power_drops_2",
+                                "automation.set_washing_machine_finished_when_power_drops",
+                                "automation.set_washing_machine_finished_when_power_drops_3",
+                                "automation.set_washing_machine_finished_when_power_drops_dbg",
+                                "automation.set_washing_machine_finished_when_power_drops_dbg_2",
+                                "automation.shed_aurelie_light_timer",
+                                "automation.stop_bathroom_heater_timer",
+                                "automation.update_available_notifications",
+                                "automation.update_speedtest",
+                                "automation.waste_container_warning",
+                                "automation.dbg_washing_machine_hide",
+                                "automation.dbg_washing_machine_show",
+                                "automation.set_season_summer",
+                                "automation.set_season_winter"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "all automations",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "switch.rfxcom_bathroom_heater_remote"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Smart Switches",
+                            "type": "entities"
+                        }
+                    ],
+                    "path": "system_view",
+                    "title": "System"
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}

@@ -7,6 +7,6 @@ usb_path: /dev/ttyACM0
 #
 # Does not seem to work anymore
 # usb_path: /dev/ttyUSB-ZStick-5G
-network_key: !secret zwave__network_key
-config_path: ./.venv/lib/python3.5/site-packages/python_openzwave/ozw_config/config/
+network_key: !secret zwave_network_key
+config_path: ./.venv/lib/python3.5/site-packages/python_openzwave/ozw_config/
 debug: false

@@ -11,74 +11,74 @@ lovelace_ui:
 configurator:
   title: Configurator
   icon: mdi:wrench
-  url: !secret panel_iframe__configurator__url
+  url: !secret panel_iframe_configurator_url
 
 radarr:
   title: Radarr
   icon: mdi:download
-  url: !secret panel_iframe__radarr__url
+  url: !secret panel_iframe_radarr_url
 
 sonarr:
   title: Sonarr
   icon: mdi:download
-  url: !secret panel_iframe__sonarr__url
+  url: !secret panel_iframe_sonarr_url
 
 transmission:
   title: Transmission
   icon: mdi:download
-  url: !secret panel_iframe__transmission__url
+  url: !secret panel_iframe_transmission_url
 
   #sabnzbd:
   #title: SabNzbd
   #icon: mdi:download
-  #url: !secret panel_iframe__sabnzbd__url
+  #url: !secret panel_iframe_sabnzbd_url
 
   #domoticz:
   #title: Domoticz
   #icon: mdi:home-circle
-  #url: !secret panel_iframe__domoticz__url
+  #url: !secret panel_iframe_domoticz_url
 
 emby:
   title: Emby
   icon: mdi:animation-play
-  url: !secret panel_iframe__emby__url
+  url: !secret panel_iframe_emby_url
 
   #grafana:
   #title: Grafana
   #icon: mdi:chart-areaspline
-  #url: !secret panel_iframe__grafana__url
+  #url: !secret panel_iframe_grafana_url
 
   #nodered:
   #title: Node-Red
   #icon: mdi:aspect-ratio
-  #url: !secret panel_iframe__nodered__url
+  #url: !secret panel_iframe_nodered_url
 
 jackett:
   title: Jackett
   icon: mdi:cloud-search-outline
-  url: !secret panel_iframe__jackett__url
+  url: !secret panel_iframe_jackett_url
 
   #mylar:
   #title: Mylar
   #icon: mdi:message-draw
-  #url: !secret panel_iframe__mylar__url
+  #url: !secret panel_iframe_mylar_url
 
 nzbhydra:
   title: NZB Hydra
   icon: mdi:feature-search
-  url: !secret panel_iframe__nzbhydra__url
+  url: !secret panel_iframe_nzbhydra_url
 
   #chronograf:
   #  title: Chronograf (local)
   #icon: mdi:chart-line-stacked
-  #url: !secret panel_iframe__chronograf__url
+  #url: !secret panel_iframe_chronograf_url
 
   #monit:
   #title: Monit (local)
   #icon: mdi:clipboard-pulse-outline
-  #url: !secret panel_iframe__monit__url
+  #url: !secret panel_iframe_monit_url
 
   #terminal:
   #  title: Web Terminal
   #icon: mdi:console
-  #url: !secret panel_iframe__terminal_url
+  #url: !secret panel_iframe_terminal_url

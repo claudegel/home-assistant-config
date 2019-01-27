@@ -109,23 +109,23 @@ sensor:
 device_tracker:
 
   - platform: netgear
-    host: !secret device_tracker__netgear__host
-    username: !secret device_tracker__netgear__user
-    password: !secret device_tracker__netgear__password
+    host: !secret device_tracker_netgear_host
+    username: !secret device_tracker_netgear_user
+    password: !secret device_tracker_netgear_password
 
   # - platform: ddwrt
-  #   host: !secret device_tracker__dd_wrt__host
-  #   username: !secret device_tracker__dd_wrt__username
-  #   password: !secret device_tracker__dd_wrt__password
+  #   host: !secret device_tracker_dd_wrt_host
+  #   username: !secret device_tracker_dd_wrt_username
+  #   password: !secret device_tracker_dd_wrt_password
   #   new_device_defaults:
   #     track_new_devices: True
   #     hide_if_away: False
     
   # - platform: tomato
-  #   host: !secret device_tracker__tomato__host
-  #   username: !secret device_tracker__tomato__username
-  #   password: !secret device_tracker__tomato__password
-  #   http_id: !secret device_tracker__tomato__http_id
+  #   host: !secret device_tracker_tomato_host
+  #   username: !secret device_tracker_tomato_username
+  #   password: !secret device_tracker_tomato_password
+  #   http_id: !secret device_tracker_tomato_http_id
   #   new_device_defaults:
   #     track_new_devices: True
   #     hide_if_away: False

@@ -44,10 +44,8 @@ group:
     name: Domot server information
     control: hidden
     entities:
-      - sensor.domot_cpu_temp
       - sensor.domot_cpu_temperature
       - sensor.domot_processor_use
       - sensor.domot_memory_use_percent
-      - sensor.domot_disk_use_percent_mntstorage
-      - sensor.domot_disk_use_percent_
+      - sensor.domot_disk_use_percent
       - sensor.domot_since_last_boot_templated

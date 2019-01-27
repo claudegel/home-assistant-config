@@ -40,7 +40,7 @@ sensor:
       - windSpeed
 
   - platform: wunderground
-    api_key: !secret sensor__wunderground__api_key
+    api_key: !secret sensor_wunderground_api_key
     monitored_conditions:
       - alerts
       - dewpoint_c
@@ -49,7 +49,7 @@ sensor:
 weather:
   - platform: yweather
     name: yweather
-    woeid: !secret yweather__woeid
+    woeid: !secret yweather_woeid
 
 
 group:
@@ -73,8 +73,8 @@ group:
       - sensor.weather_pressure
       - sensor.weather_wind_speed
       - sensor.weather_cloudiness
-      - sensor.pws_alerts
-      - sensor.pws_dewpoint_c
+      - sensor.pws_alerts_2
+      - sensor.pws_dewpoint_c_2
       - sensor.weather_dewpoint_temperature
       - sensor.weather_fog
       - sensor.weather_high_clouds
