@@ -74,6 +74,13 @@ sensor:
             mdi:battery
           {%- endif %}
 
+switch:
+  - platform: command_line
+    switches:
+      aeotec_zstick_disco_light:
+        friendly_name: 'Aeotec Z-Stick Disco Light'
+        command_on: 'echo -e -n "\x01\x08\x00\xF2\x51\x01\x01\x05\x01\x50" > /dev/serial/by-id/usb-0658_0200-if00'
+        command_off: 'echo -e -n "\x01\x08\x00\xF2\x51\x01\x00\x05\x01\x51" > /dev/serial/by-id/usb-0658_0200-if00'
 
 shell_command:
   upgrade_hass: /home/pi/homeassistant/update.sh
@@ -177,3 +184,4 @@ group:
     control: hidden
     entities:
       - input_boolean.dbg_washing_machine
+      - switch.aeotec_zstick_disco_light

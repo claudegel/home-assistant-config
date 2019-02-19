@@ -1035,6 +1035,24 @@
                 "name": "FIBARO System FGWPE/F Wall Plug (Washing Machine)",
                 "platform": "zwave",
                 "unique_id": "node-4"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "b5a8ebc024424c39a475212eaf380671",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgwpe_f_wall_plug_previous_reading",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594110050322"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "b5a8ebc024424c39a475212eaf380671",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgwpe_f_wall_plug_interval",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594110050339"
             }
         ]
     },

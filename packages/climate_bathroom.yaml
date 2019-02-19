@@ -51,7 +51,7 @@ climate:
     name: Bathroom Heater
     heater: switch.bathroom_heater_wall_plug
     target_sensor: sensor.rfxcom_bathroom_temperature
-    target_temp: 23
+    # target_temp: 23
     cold_tolerance: .5
     hot_tolerance: .5
     away_temp: 7
@@ -112,13 +112,13 @@ script:
   stop_bathroom_heater_timer:
     alias: 'Auto stop Bathroom Heater Timer'
     sequence:
-      - service: notify.pushover
-        data:
-          message: 'Bathroom heater timeout started'
+      # - service: notify.pushover
+      #  data:
+      #    message: 'Bathroom heater timeout started'
       - delay: '02:00:00'
-      - service: notify.pushover
-        data:
-          message: 'Bathroom heater timeout stopped'
+      # - service: notify.pushover
+      #   data:
+      #     message: 'Bathroom heater timeout stopped'
       - service: climate.set_operation_mode
         data_template:
           entity_id: "climate.bathroom_heater"
@@ -141,9 +141,6 @@ automation:
       entity_id: input_boolean.schedule_morning_bathroom_confort
       state: 'on'
     action:
-      - service: notify.pushover
-        data:
-          message: "DBG: start of 'Scheduled Bathroom Confort'"
       - service: script.set_bathroom_confortable
 
   # Backup in case of the heater has been manually started.
@@ -185,9 +182,6 @@ automation:
       entity_id: switch.rfxcom_bathroom_heater_remote
       to: 'on'
     action:
-      - service: notify.pushover
-        data:
-          message: "DBG: start of 'Remote bathroom confort trigger on'"
       - service: script.set_bathroom_confortable
 
   - alias: "Remote bathroom confort trigger off"
