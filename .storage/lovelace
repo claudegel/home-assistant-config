@@ -1,17 +1,25 @@
 {
     "data": {
         "config": {
-            "title": "Home",
+            "title": "A & G Sweet Home",
             "views": [
                 {
                     "badges": [],
                     "cards": [
                         {
                             "entities": [
-                                "sensor.aurelies_work",
-                                "sensor.aurelie_back_from_work",
-                                "sensor.gaetans_work",
-                                "sensor.gaetan_back_from_work"
+                                {
+                                    "entity": "sensor.aurelie_s_work"
+                                },
+                                {
+                                    "entity": "sensor.aurelie_back_from_work"
+                                },
+                                {
+                                    "entity": "sensor.gaetan_s_work"
+                                },
+                                {
+                                    "entity": "sensor.gaetan_back_from_work"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "Travel times",
@@ -43,10 +51,15 @@
                         },
                         {
                             "entities": [
-                                "light.hue_iris_aurelie",
-                                "input_number.shed_aurelie_light_delay",
-                                "light.hue_iris_gaetan",
-                                "input_number.shed_gaetan_light_delay"
+                                {
+                                    "entity": "light.hue_iris_aurelie"
+                                },
+                                {
+                                    "entity": "input_number.shed_aurelie_light_delay"
+                                },
+                                {
+                                    "entity": "light.hue_iris_gaetan"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "Bedroom lights",
@@ -83,8 +96,12 @@
                     "cards": [
                         {
                             "entities": [
-                                "binary_sensor.camera_ip_1",
-                                "binary_sensor.camera_ip_2"
+                                {
+                                    "entity": "binary_sensor.camera_ip_1_motion"
+                                },
+                                {
+                                    "entity": "binary_sensor.camera_ip_2_motion"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "Surveillance",
@@ -108,15 +125,30 @@
                     "cards": [
                         {
                             "entities": [
-                                "sensor.rfxcom_bathroom_temperature",
-                                "sensor.rfxcom_friend_room_temperature",
-                                "sensor.rfxcom_garage_temperature",
-                                "sensor.rfxcom_kitchen_temperature",
-                                "sensor.rfxcom_living_room_temperature",
-                                "sensor.rfxcom_office_temperature",
-                                "sensor.rfxcom_outside_temperature",
-                                "sensor.rfxcom_parents_room_temperature",
-                                "sensor.rfxcom_upper_floor_corridor_temperature"
+                                {
+                                    "entity": "sensor.rfxcom_bathroom_temperature"
+                                },
+                                {
+                                    "entity": "sensor.rfxcom_friend_room_temperature"
+                                },
+                                {
+                                    "entity": "sensor.rfxcom_garage_temperature"
+                                },
+                                {
+                                    "entity": "sensor.rfxcom_kitchen_temperature"
+                                },
+                                {
+                                    "entity": "sensor.rfxcom_living_room_temperature"
+                                },
+                                {
+                                    "entity": "sensor.rfxcom_office_temperature"
+                                },
+                                {
+                                    "entity": "sensor.rfxcom_outside_temperature"
+                                },
+                                {
+                                    "entity": "sensor.rfxcom_parents_room_temperature"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "Home Temperatures",
@@ -251,17 +283,25 @@
                     "cards": [
                         {
                             "entities": [
-                                "sensor.radarr_movies",
-                                "sensor.sonarr_upcoming",
-                                "sensor.sonarr_series",
-                                "sensor.sonarr_diskspace"
+                                {
+                                    "entity": "sensor.radarr_movies"
+                                },
+                                {
+                                    "entity": "sensor.sonarr_upcoming"
+                                },
+                                {
+                                    "entity": "sensor.sonarr_series"
+                                },
+                                {
+                                    "entity": "sensor.sonarr_disk_space"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "Smart PVR",
                             "type": "entities"
                         },
                         {
-                            "entity": "media_player.emby_kodi_osmc_2",
+                            "entity": "media_player.emby_kodi_osmc",
                             "type": "media-control"
                         },
                         {
@@ -313,6 +353,36 @@
                             "type": "entities"
                         },
                         {
+                            "entity": "weather.dark_sky",
+                            "type": "weather-forecast"
+                        },
+                        {
+                            "entities": [
+                                "sensor.forecast_6h_symbol",
+                                "sensor.forecast_6h_temperature",
+                                "sensor.forecast_6h_precipitation",
+                                "sensor.forecast_6h_pressure",
+                                "sensor.forecast_6h_wind_speed",
+                                "sensor.forecast_6h_cloudiness"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Prevision 6h",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.forecast_24h_symbol",
+                                "sensor.forecast_24h_temperature",
+                                "sensor.forecast_24h_precipitation",
+                                "sensor.forecast_24h_pressure",
+                                "sensor.forecast_24h_wind_speed",
+                                "sensor.forecast_24h_cloudiness"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Prevision 24h",
+                            "type": "entities"
+                        },
+                        {
                             "entities": [
                                 "sensor.weather_symbol",
                                 "sensor.weather_temperature",
@@ -332,36 +402,6 @@
                             ],
                             "show_header_toggle": false,
                             "title": "Met\u00e9o 1h",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                "sensor.forecast_6h_symbol",
-                                "sensor.forecast_6h_temperature",
-                                "sensor.forecast_6h_precipitation",
-                                "sensor.forecast_6h_pressure",
-                                "sensor.forecast_6h_wind_speed",
-                                "sensor.forecast_6h_cloudiness"
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Prevision 6h",
-                            "type": "entities"
-                        },
-                        {
-                            "entity": "weather.yweather",
-                            "type": "weather-forecast"
-                        },
-                        {
-                            "entities": [
-                                "sensor.forecast_24h_symbol",
-                                "sensor.forecast_24h_temperature",
-                                "sensor.forecast_24h_precipitation",
-                                "sensor.forecast_24h_pressure",
-                                "sensor.forecast_24h_wind_speed",
-                                "sensor.forecast_24h_cloudiness"
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Prevision 24h",
                             "type": "entities"
                         }
                     ],
@@ -424,13 +464,24 @@
                         },
                         {
                             "entities": [
-                                "sensor.domot_cpu_temp",
-                                "sensor.domot_cpu_temperature",
-                                "sensor.domot_processor_use",
-                                "sensor.domot_memory_use_percent",
-                                "sensor.domot_disk_use_percent_mntstorage",
-                                "sensor.domot_disk_use_percent",
-                                "sensor.domot_since_last_boot_templated"
+                                {
+                                    "entity": "sensor.domot_cpu_temperature"
+                                },
+                                {
+                                    "entity": "sensor.domot_cpu_temperature"
+                                },
+                                {
+                                    "entity": "sensor.domot_processor_use"
+                                },
+                                {
+                                    "entity": "sensor.domot_memory_use_percent"
+                                },
+                                {
+                                    "entity": "sensor.domot_disk_use_percent"
+                                },
+                                {
+                                    "entity": "sensor.domot_since_last_boot_templated"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "Domot server information",
@@ -547,21 +598,37 @@
                     ],
                     "icon": "mdi:nas",
                     "path": "nas_view",
-                    "title": "nas_view"
+                    "title": "NAS"
                 },
                 {
                     "badges": [],
                     "cards": [
                         {
                             "entities": [
-                                "sensor.date",
-                                "sensor.time",
-                                "sensor.time_utc",
-                                "sensor.season",
-                                "binary_sensor.workday",
-                                "sun.sun",
-                                "sensor.time",
-                                "sensor.time_utc"
+                                {
+                                    "entity": "sensor.date"
+                                },
+                                {
+                                    "entity": "sensor.time"
+                                },
+                                {
+                                    "entity": "sensor.time_utc"
+                                },
+                                {
+                                    "entity": "sensor.season"
+                                },
+                                {
+                                    "entity": "binary_sensor.workday_sensor"
+                                },
+                                {
+                                    "entity": "sun.sun"
+                                },
+                                {
+                                    "entity": "sensor.time"
+                                },
+                                {
+                                    "entity": "sensor.time_utc"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "Date",
@@ -569,13 +636,27 @@
                         },
                         {
                             "entities": [
-                                "sensor.ha_installed_version",
-                                "sensor.ha_available_version",
-                                "sensor.ha_uptime",
-                                "sensor.hass_homeassistantlog",
-                                "sensor.hass_recordersqlite",
-                                "script.upgrade_hass",
-                                "script.quick_restart"
+                                {
+                                    "entity": "sensor.ha_installed_version"
+                                },
+                                {
+                                    "entity": "sensor.ha_available_version"
+                                },
+                                {
+                                    "entity": "sensor.ha_uptime"
+                                },
+                                {
+                                    "entity": "sensor.hass_home_assistant_log"
+                                },
+                                {
+                                    "entity": "sensor.hass_recorder_sqlite"
+                                },
+                                {
+                                    "entity": "script.upgrade_hass"
+                                },
+                                {
+                                    "entity": "script.quick_restart"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "Home Assistant System",
@@ -669,6 +750,8 @@
                             "type": "entities"
                         }
                     ],
+                    "icon": "mdi:settings",
+                    "panel": false,
                     "path": "system_view",
                     "title": "System"
                 }

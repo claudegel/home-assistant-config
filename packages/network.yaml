@@ -6,16 +6,6 @@
 
 #-------------------------------------------
 sensor:
-  - platform: speedtest
-    minute: 30
-    hour:
-      - 0
-      - 6
-      - 12
-      - 18
-    monitored_conditions:
-      - download
-      - upload
   
   - platform: rest
     scan_interval: 86400
@@ -24,8 +14,9 @@ sensor:
     value_template: '{{ value_json.ip }}'
 
   - platform: iperf3
-    host: 192.168.0.10
-    port: 5201
+    hosts: 
+      - host: 192.168.0.10
+        port: 5201
     scan_interval: 10800  # 3 hours
     monitored_conditions:
       - download
@@ -33,77 +24,78 @@ sensor:
 
   - platform: iperf3
     # Test connection with OSMC, ensure the network is always up
-    host: 192.168.0.22
-    port: 5201
+    hosts: 
+      - host: 192.168.0.22
+        port: 5201
     scan_interval: 86400  # 24 hours
     monitored_conditions:
       - download
       - upload
 
   - platform: cert_expiry
-    alias: 'Expiration certificat stibbons.synology.me'
+    # alias: 'Expiration certificat stibbons.synology.me'
     entity_namespace: stibbons_synology_me
     host: stibbons.synology.me
     port: 32483
 
-  - platform: template
-    sensors:
-      download_192168010_mbytes:
-        friendly_name: 'NAS Download Speed'
-        value_template: >
-          {% if states('sensor.download_192168010') != "unknown" %}
-            {{ states('sensor.download_192168010') }}/s
-          {% else %}
-            N/A
-          {% endif %}
-        icon_template: 'mdi:gauge'
-      upload_192168010_mbytes:
-        friendly_name: 'NAS Upload Speed'
-        value_template: >
-          {% if states('sensor.upload_192168010') != "unknown" %}
-            {{ states('sensor.upload_192168010') }} Mb/s
-          {% else %}
-            N/A
-          {% endif %}
-        icon_template: 'mdi:gauge'
+#   - platform: template
+#     sensors:
+#       download_192168010_mbytes:
+#         friendly_name: 'NAS Download Speed'
+#         value_template: >
+#           {% if states('sensor.download_192168010') != "unknown" %}
+#             {{ states('sensor.download_192168010') }}/s
+#           {% else %}
+#             N/A
+#           {% endif %}
+#         icon_template: 'mdi:gauge'
+#       upload_192168010_mbytes:
+#         friendly_name: 'NAS Upload Speed'
+#         value_template: >
+#           {% if states('sensor.upload_192168010') != "unknown" %}
+#             {{ states('sensor.upload_192168010') }} Mb/s
+#           {% else %}
+#             N/A
+#           {% endif %}
+#         icon_template: 'mdi:gauge'
 
-      download_192168022_mbytes:
-        friendly_name: 'OSMC Download Speed'
-        value_template: >
-          {% if states('sensor.download_192168022') != "unknown" %}
-            {{ states('sensor.download_192168022') }} Mb/s
-          {% else %}
-            N/A
-          {% endif %}
-        icon_template: 'mdi:gauge'
-      upload_192168022_mbytes:
-        friendly_name: 'OSMC Upload Speed'
-        value_template: >
-          {% if states('sensor.upload_192168022') != "unknown" %}
-            {{ states('sensor.upload_192168022') }} Mb/s
-          {% else %}
-            N/A
-          {% endif %}
-        icon_template: 'mdi:gauge'
+#       download_192168022_mbytes:
+#         friendly_name: 'OSMC Download Speed'
+#         value_template: >
+#           {% if states('sensor.download_192168022') != "unknown" %}
+#             {{ states('sensor.download_192168022') }} Mb/s
+#           {% else %}
+#             N/A
+#           {% endif %}
+#         icon_template: 'mdi:gauge'
+#       upload_192168022_mbytes:
+#         friendly_name: 'OSMC Upload Speed'
+#         value_template: >
+#           {% if states('sensor.upload_192168022') != "unknown" %}
+#             {{ states('sensor.upload_192168022') }} Mb/s
+#           {% else %}
+#             N/A
+#           {% endif %}
+#         icon_template: 'mdi:gauge'
 
-      speedtest_download_mbytes:
-        friendly_name: 'ADSL Download Speed'
-        value_template: >
-          {% if states('sensor.speedtest_download') != "unknown" %}
-            {{ states('sensor.speedtest_download') }} Mb/s
-          {% else %}
-            N/A
-          {% endif %}
-        icon_template: 'mdi:gauge'
-      speedtest_upload_mbytes:
-        friendly_name: 'ADSL Upload Speed'
-        value_template: >
-          {% if states('sensor.speedtest_upload') != "unknown" %}
-            {{ states('sensor.speedtest_upload') }} Mb/s
-          {% else %}
-            N/A
-          {% endif %}
-        icon_template: 'mdi:gauge'
+#       speedtest_download_mbytes:
+#         friendly_name: 'ADSL Download Speed'
+#         value_template: >
+#           {% if states('sensor.speedtest_download') != "unknown" %}
+#             {{ states('sensor.speedtest_download') }} Mb/s
+#           {% else %}
+#             N/A
+#           {% endif %}
+#         icon_template: 'mdi:gauge'
+#       speedtest_upload_mbytes:
+#         friendly_name: 'ADSL Upload Speed'
+#         value_template: >
+#           {% if states('sensor.speedtest_upload') != "unknown" %}
+#             {{ states('sensor.speedtest_upload') }} Mb/s
+#           {% else %}
+#             N/A
+#           {% endif %}
+#         icon_template: 'mdi:gauge'
 
 
 device_tracker:

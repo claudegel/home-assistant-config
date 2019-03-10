@@ -1,6 +1,8 @@
 #!/bin/bash
 
-pipenv run python hass_pipenv.py \
+
+source .venv/bin/activate
+hass \
 	--script check_config \
 	--info all \
 	--config /home/pi/homeassistant | less -R

@@ -426,7 +426,7 @@
             },
             {
                 "config_entry_id": "c000cef6b0b442c98d792c0b36b14328",
-                "device_id": null,
+                "device_id": "592bfc32376044048504c4f1085efc26",
                 "disabled_by": null,
                 "entity_id": "sensor.r7000_gateway_bytes_received",
                 "name": null,
@@ -435,7 +435,7 @@
             },
             {
                 "config_entry_id": "c000cef6b0b442c98d792c0b36b14328",
-                "device_id": null,
+                "device_id": "d373ddcc1d0b42cf8eec3fb77931efa4",
                 "disabled_by": null,
                 "entity_id": "sensor.r7000_gateway_packets_received",
                 "name": null,
@@ -444,7 +444,7 @@
             },
             {
                 "config_entry_id": "c000cef6b0b442c98d792c0b36b14328",
-                "device_id": null,
+                "device_id": "1534f299f40448e884c99d1ccd718bd4",
                 "disabled_by": null,
                 "entity_id": "sensor.r7000_gateway_packetssec_sent",
                 "name": null,
@@ -453,7 +453,7 @@
             },
             {
                 "config_entry_id": "c000cef6b0b442c98d792c0b36b14328",
-                "device_id": null,
+                "device_id": "377db9a967bc49e68a3f6da37a1be701",
                 "disabled_by": null,
                 "entity_id": "sensor.r7000_gateway_bytes_sent",
                 "name": null,
@@ -462,7 +462,7 @@
             },
             {
                 "config_entry_id": "c000cef6b0b442c98d792c0b36b14328",
-                "device_id": null,
+                "device_id": "78644f2bed714d1183e3d45f3504d67b",
                 "disabled_by": null,
                 "entity_id": "sensor.r7000_gateway_packets_sent",
                 "name": null,
@@ -471,7 +471,7 @@
             },
             {
                 "config_entry_id": "c000cef6b0b442c98d792c0b36b14328",
-                "device_id": null,
+                "device_id": "ff7cbeb7fc554796bd3c0b5d8f26407a",
                 "disabled_by": null,
                 "entity_id": "sensor.r7000_gateway_kbytesec_sent",
                 "name": null,
@@ -480,7 +480,7 @@
             },
             {
                 "config_entry_id": "c000cef6b0b442c98d792c0b36b14328",
-                "device_id": null,
+                "device_id": "74064add2afc4518b9928d9a3ac6b72a",
                 "disabled_by": null,
                 "entity_id": "sensor.r7000_gateway_kbytesec_received",
                 "name": null,
@@ -489,7 +489,7 @@
             },
             {
                 "config_entry_id": "c000cef6b0b442c98d792c0b36b14328",
-                "device_id": null,
+                "device_id": "9a7235f557b9458a8b4a650fbdde394a",
                 "disabled_by": null,
                 "entity_id": "sensor.r7000_gateway_packetssec_received",
                 "name": null,
@@ -1053,6 +1053,42 @@
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "4-72057594110050339"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.emby_ombi_emby",
+                "name": null,
+                "platform": "emby",
+                "unique_id": "6d2a782da441410f8d16acede71fd75a.ombi"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.emby_sonarr_emby",
+                "name": null,
+                "platform": "emby",
+                "unique_id": "6d2a782da441410f8d16acede71fd75a.Sonarr"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.emby_kodi_osmc",
+                "name": "Kodi Salon",
+                "platform": "emby",
+                "unique_id": "5062B812E7C04FB8AE0100E09FF8AECF.Kodi"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.emby_radarr_emby",
+                "name": null,
+                "platform": "emby",
+                "unique_id": "6d2a782da441410f8d16acede71fd75a.Radarr"
             }
         ]
     },

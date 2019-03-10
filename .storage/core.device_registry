@@ -2,6 +2,7 @@
     "data": {
         "devices": [
             {
+                "area_id": null,
                 "config_entries": [
                     "424daed45a794f7990e2a766e3b120c2"
                 ],
@@ -22,9 +23,11 @@
                 "manufacturer": "Signify",
                 "model": "BSB002",
                 "name": "Philips hue",
+                "name_by_user": null,
                 "sw_version": "1901181309"
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "424daed45a794f7990e2a766e3b120c2"
                 ],
@@ -40,9 +43,11 @@
                 "manufacturer": "Philips",
                 "model": "Hue iris",
                 "name": "Hue iris Gaetan",
+                "name_by_user": null,
                 "sw_version": "5.127.1.26581"
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "424daed45a794f7990e2a766e3b120c2"
                 ],
@@ -58,9 +63,11 @@
                 "manufacturer": "Philips",
                 "model": "Hue iris",
                 "name": "Hue iris Aurelie",
+                "name_by_user": null,
                 "sw_version": "5.127.1.26581"
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "680812615272427c9d4a6f1d9a47fc9e"
                 ],
@@ -76,9 +83,11 @@
                 "manufacturer": "Apple",
                 "model": "iPhone 6s",
                 "name": "Stibphone2",
+                "name_by_user": null,
                 "sw_version": "12.0.1"
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "889904f9f2454438a44df673a320c119"
                 ],
@@ -94,9 +103,11 @@
                 "manufacturer": "Horstmann",
                 "model": "ASR-ZW Thermostat Receiver",
                 "name": "Horstmann ASR-ZW Thermostat Receiver",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "889904f9f2454438a44df673a320c119"
                 ],
@@ -112,9 +123,11 @@
                 "manufacturer": "FIBARO System",
                 "model": "FGWPE/F Wall Plug",
                 "name": "FIBARO System FGWPE/F Wall Plug",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "889904f9f2454438a44df673a320c119"
                 ],
@@ -130,9 +143,11 @@
                 "manufacturer": "NodOn",
                 "model": "MSP-3-1-XX Micro Smart Plug",
                 "name": "NodOn MSP-3-1-XX Micro Smart Plug",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "889904f9f2454438a44df673a320c119"
                 ],
@@ -148,9 +163,11 @@
                 "manufacturer": "Horstmann",
                 "model": "HRT4-ZW Thermostat Transmitter",
                 "name": "Horstmann HRT4-ZW Thermostat Transmitter",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "889904f9f2454438a44df673a320c119"
                 ],
@@ -166,9 +183,11 @@
                 "manufacturer": "FIBARO System",
                 "model": "FGWPE/F Wall Plug Gen5",
                 "name": "FIBARO System FGWPE/F Wall Plug Gen5",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "889904f9f2454438a44df673a320c119"
                 ],
@@ -184,9 +203,11 @@
                 "manufacturer": "NodOn",
                 "model": "MSP-3-1-XX Micro Smart Plug",
                 "name": "NodOn MSP-3-1-XX Micro Smart Plug",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "889904f9f2454438a44df673a320c119"
                 ],
@@ -202,9 +223,11 @@
                 "manufacturer": "NodOn",
                 "model": "MSP-3-1-XX Micro Smart Plug",
                 "name": "NodOn MSP-3-1-XX Micro Smart Plug",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "889904f9f2454438a44df673a320c119"
                 ],
@@ -220,9 +243,11 @@
                 "manufacturer": "FIBARO System",
                 "model": "FGWPE/F Wall Plug Gen5",
                 "name": "FIBARO System FGWPE/F Wall Plug Gen5",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "500f9223b0984899805ebd4a4e1d8f4a"
                 ],
@@ -238,9 +263,11 @@
                 "manufacturer": "Google Inc.",
                 "model": "Chromecast Ultra",
                 "name": "Chromecast Salon TV",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "382c2d95e68a473eb2098a616a39fa03"
                 ],
@@ -261,6 +288,192 @@
                 "manufacturer": "Freebox",
                 "model": null,
                 "name": "Freebox Server",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "c000cef6b0b442c98d792c0b36b14328"
+                ],
+                "connections": [
+                    [
+                        "upnp",
+                        "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb"
+                    ]
+                ],
+                "hub_device_id": null,
+                "id": "ef27f76115d442998706ffc925282175",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb"
+                    ]
+                ],
+                "manufacturer": "NETGEAR, Inc.",
+                "model": null,
+                "name": "R7000 (Gateway)",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "c000cef6b0b442c98d792c0b36b14328"
+                ],
+                "connections": [],
+                "hub_device_id": "ef27f76115d442998706ffc925282175",
+                "id": "1534f299f40448e884c99d1ccd718bd4",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb_packets/sec_sent"
+                    ]
+                ],
+                "manufacturer": null,
+                "model": null,
+                "name": "R7000 (Gateway) packets/sec sent",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "c000cef6b0b442c98d792c0b36b14328"
+                ],
+                "connections": [],
+                "hub_device_id": "ef27f76115d442998706ffc925282175",
+                "id": "377db9a967bc49e68a3f6da37a1be701",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb_bytes_sent"
+                    ]
+                ],
+                "manufacturer": null,
+                "model": null,
+                "name": "R7000 (Gateway) bytes sent",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "c000cef6b0b442c98d792c0b36b14328"
+                ],
+                "connections": [],
+                "hub_device_id": "ef27f76115d442998706ffc925282175",
+                "id": "78644f2bed714d1183e3d45f3504d67b",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb_packets_sent"
+                    ]
+                ],
+                "manufacturer": null,
+                "model": null,
+                "name": "R7000 (Gateway) packets sent",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "c000cef6b0b442c98d792c0b36b14328"
+                ],
+                "connections": [],
+                "hub_device_id": "ef27f76115d442998706ffc925282175",
+                "id": "d373ddcc1d0b42cf8eec3fb77931efa4",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb_packets_received"
+                    ]
+                ],
+                "manufacturer": null,
+                "model": null,
+                "name": "R7000 (Gateway) packets received",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "c000cef6b0b442c98d792c0b36b14328"
+                ],
+                "connections": [],
+                "hub_device_id": "ef27f76115d442998706ffc925282175",
+                "id": "592bfc32376044048504c4f1085efc26",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb_bytes_received"
+                    ]
+                ],
+                "manufacturer": null,
+                "model": null,
+                "name": "R7000 (Gateway) bytes received",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "c000cef6b0b442c98d792c0b36b14328"
+                ],
+                "connections": [],
+                "hub_device_id": "ef27f76115d442998706ffc925282175",
+                "id": "74064add2afc4518b9928d9a3ac6b72a",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb_kbyte/sec_received"
+                    ]
+                ],
+                "manufacturer": null,
+                "model": null,
+                "name": "R7000 (Gateway) kbyte/sec received",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "c000cef6b0b442c98d792c0b36b14328"
+                ],
+                "connections": [],
+                "hub_device_id": "ef27f76115d442998706ffc925282175",
+                "id": "ff7cbeb7fc554796bd3c0b5d8f26407a",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb_kbyte/sec_sent"
+                    ]
+                ],
+                "manufacturer": null,
+                "model": null,
+                "name": "R7000 (Gateway) kbyte/sec sent",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "c000cef6b0b442c98d792c0b36b14328"
+                ],
+                "connections": [],
+                "hub_device_id": "ef27f76115d442998706ffc925282175",
+                "id": "9a7235f557b9458a8b4a650fbdde394a",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb_packets/sec_received"
+                    ]
+                ],
+                "manufacturer": null,
+                "model": null,
+                "name": "R7000 (Gateway) packets/sec received",
+                "name_by_user": null,
                 "sw_version": null
             }
         ]

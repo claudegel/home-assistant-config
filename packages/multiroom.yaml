@@ -6,18 +6,18 @@ media_player:
   
   - platform: yamaha_musiccast
     host: 192.168.0.24
-    name: "MusicCast Chambre Parentale"
+    # name: "MusicCast Chambre Parentale"
   
   - platform: yamaha_musiccast
     host: 192.168.0.20
-    name: "MusicCast Salon"
+    # name: "MusicCast Salon"
   
   - platform: yamaha_musiccast
-    id: multicast_living_room
+    # id: multicast_living_room
     host: 192.168.0.20
-    name: "MusicCast Salon"
+    # name: "MusicCast Salon"
   
   - platform: yamaha_musiccast
-    id: multicast_bureau
+    # id: multicast_bureau
     host: 192.168.0.26
-    name: "MusicCast Bureaus"
+    # name: "MusicCast Bureaus"

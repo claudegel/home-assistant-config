@@ -275,6 +275,9 @@ sensor:
 #     state_topic: "home/sensors/thermostat/battery/level"
 #     value_template: '{{ value | round(1) }}'
 
+  - platform: linky
+    username: !secret linky_username
+    password: !secret linky_password
 
 binary_sensor:
   - platform: template

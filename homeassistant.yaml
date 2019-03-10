@@ -19,6 +19,11 @@ packages: !include_dir_named packages
 
 whitelist_external_dirs:
   # For filesize component to work
-  - . 
+  - /home/pi/homeassistant
 
 
+auth_mfa_modules:
+  # https://www.home-assistant.io/docs/authentication/multi-factor-auth/
+  - type: totp
+  - type: notify
+    message: 'You need to say: {}'

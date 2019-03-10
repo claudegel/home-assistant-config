@@ -1,5 +1,4 @@
 #!/bin/bash
 
-pipenv --rm
+rm -frv .venv
 rm -f recorder.sqlite* *.log *.pid
-

@@ -1,24 +1,24 @@
 sensor:
-  # - platform: sonarr
-  #   api_key: secret! sensor_sonarr_api_key
-  #   host: 192.168.0.10
-  #   port: 32772
-  #   monitored_conditions:
-  #     - series
-  #     - upcoming
-  #     - diskspace
-  #   days: 2
-  #   include_paths:
-  #     - /series
-  #     - /animes
+  - platform: sonarr
+    api_key: secret! sensor_sonarr_api_key
+    host: 192.168.0.10
+    port: 32772
+    monitored_conditions:
+      - series
+      - upcoming
+      - diskspace
+    days: 2
+    include_paths:
+      - /series
+      - /animes
 
-  # - platform: radarr
-  #   api_key: secret! sensor_radarr_api_key
-  #   host: 192.168.0.10
-  #   port: 32773
-  #   days: 2
-  #   include_paths:
-  #     - /movies
+  - platform: radarr
+    api_key: secret! sensor_radarr_api_key
+    host: 192.168.0.10
+    port: 32773
+    days: 2
+    include_paths:
+      - /movies
 
   - name: Home Cinema UPS
     platform: nut
@@ -112,19 +112,18 @@ binary_sensor:
 
 media_player:
   - platform: kodi
-    id: kodi_living_room
-    name: "Home Cinema Salon Kodi"
+    # name: "Home Cinema Salon Kodi"
     host: 192.168.0.20
     #username: gaetan
     #password: !secret media_player_kodi_password
   
-  # - platform: emby
-  #   host: stibbons.synology.me
-  #   name: "Emby"
-  #   id: emby
-  #   port: 32492
-  #   ssl: True
-  #   api_key: !secret media_player_emby_api_key
+  - platform: emby
+    host: 192.168.0.10
+    # name: "Emby"
+    # id: emby
+    port: 38096
+    ssl: false
+    api_key: !secret media_player_emby_api_key
 
 
 remote:

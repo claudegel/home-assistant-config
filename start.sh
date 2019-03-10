@@ -7,7 +7,7 @@ export TMPDIR=$(cd tmp && pwd)
 
 source .venv/bin/activate
 
-python configurator.py ./configurator.json &
+hass-configurator ./configurator.json &
 hass \
 	--config . \
 	--log-rotate-days 2 \

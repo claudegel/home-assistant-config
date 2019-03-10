@@ -56,6 +56,7 @@ influxdb: !include influxdb.yaml
 
 hue: !include hue.yaml
 
+speedtestdotnet: !include speedtestdotnet.yaml
 
 # history_graph: !include history_graph.yaml
 

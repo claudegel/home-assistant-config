@@ -7,6 +7,5 @@ echo "usage: $0 pid"
 
 ps aux | grep "bin\/hass"
 
-pipenv run gdb python $1
-
-
+source .venv/bin/activate
+gdb python $1
