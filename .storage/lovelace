@@ -688,14 +688,30 @@
                         },
                         {
                             "entities": [
-                                "zwave.controller",
-                                "zwave.cabinet_smart_plug",
-                                "zwave.dark_blue_smart_plug",
-                                "zwave.entrance_multisensor",
-                                "zwave.home_cinema_smart_plug",
-                                "zwave.boiler_actuator_receiver",
-                                "zwave.thermostat_transmitter",
-                                "zwave.washing_machine_smart_plug"
+                                {
+                                    "entity": "zwave.controller"
+                                },
+                                {
+                                    "entity": "zwave.cabinet_smart_plug"
+                                },
+                                {
+                                    "entity": "zwave.dark_blue_smart_plug"
+                                },
+                                {
+                                    "entity": "zwave.entrance_multisensor"
+                                },
+                                {
+                                    "entity": "zwave.home_cinema_smart_plug"
+                                },
+                                {
+                                    "entity": "zwave.boiler_actuator_receiver"
+                                },
+                                {
+                                    "entity": "zwave.thermostat_transmitter"
+                                },
+                                {
+                                    "entity": "zwave.washing_machine_wall_smart_plug"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "Z-Wave devices",

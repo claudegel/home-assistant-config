@@ -1,13 +1,17 @@
 camera:
+  # See https://community.home-assistant.io/t/need-help-with-hik-camera-in-ha/53938/6
   - platform: generic
     still_image_url: !secret camera_ip_1_still_picture_url
     name: "Camera IP 1"
+    host: 192.168.0.110
+    authentication: digest
     username: !secret camera_ip_1_username
     password: !secret camera_ip_1_password
-    
   - platform: generic
     still_image_url: !secret camera_ip_2_still_picture_url
     name: "Camera IP 2"
+    host: 192.168.0.111
+    authentication: digest
     username: !secret camera_ip_2_username
     password: !secret camera_ip_2_password
 
@@ -19,12 +23,14 @@ binary_sensor:
   - platform: hikvision
     host: !secret camera_ip_1_ip
     name: "Cam 1"
+    authentication: digest
     username: !secret camera_ip_1_username
     password: !secret camera_ip_1_password
 
   - platform: hikvision
     host: !secret camera_ip_2_ip
     name: "Cam 2"
+    authentication: digest
     username: !secret camera_ip_2_username
     password: !secret camera_ip_2_password
 
