@@ -5,6 +5,16 @@
 #-------------------------------------------
 
 #-------------------------------------------
+
+iperf3:
+  scan_interval: 10800
+  hosts:
+    - host: 192.168.0.10
+    - host: 192.168.0.22
+    # monitored_conditions:
+    #   - download
+    #   - upload
+
 sensor:
   
   - platform: rest
@@ -13,24 +23,11 @@ sensor:
     name: External IP
     value_template: '{{ value_json.ip }}'
 
-  - platform: iperf3
-    hosts: 
-      - host: 192.168.0.10
-        port: 5201
-    scan_interval: 10800  # 3 hours
-    monitored_conditions:
-      - download
-      - upload
-
-  - platform: iperf3
-    # Test connection with OSMC, ensure the network is always up
-    hosts: 
-      - host: 192.168.0.22
-        port: 5201
-    scan_interval: 86400  # 24 hours
-    monitored_conditions:
-      - download
-      - upload
+#   - platform: iperf3
+#     hosts: 
+#       - host: 192.168.0.10
+#       - host: 192.168.0.22
+#     scan_interval: 10800  # 3 hours
 
   - platform: cert_expiry
     # alias: 'Expiration certificat stibbons.synology.me'

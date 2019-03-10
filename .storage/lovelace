@@ -61,7 +61,7 @@
                                     "entity": "light.hue_iris_gaetan"
                                 }
                             ],
-                            "show_header_toggle": false,
+                            "show_header_toggle": true,
                             "title": "Bedroom lights",
                             "type": "entities"
                         }
@@ -95,21 +95,21 @@
                     "badges": [],
                     "cards": [
                         {
+                            "entity": "camera.camera_ip_1",
+                            "type": "picture-entity"
+                        },
+                        {
                             "entities": [
                                 {
                                     "entity": "binary_sensor.camera_ip_1_motion"
                                 },
                                 {
-                                    "entity": "binary_sensor.camera_ip_2_motion"
+                                    "entity": "binary_sensor.cam_2_motion"
                                 }
                             ],
                             "show_header_toggle": false,
                             "title": "Surveillance",
                             "type": "entities"
-                        },
-                        {
-                            "entity": "camera.camera_ip_1",
-                            "type": "picture-entity"
                         },
                         {
                             "entity": "camera.camera_ip_2",
@@ -305,7 +305,7 @@
                             "type": "media-control"
                         },
                         {
-                            "entity": "media_player.home_cinema_salon_kodi",
+                            "entity": "media_player.kodi",
                             "type": "media-control"
                         },
                         {
@@ -319,14 +319,33 @@
                         },
                         {
                             "entities": [
-                                "binary_sensor.osmc",
-                                "sensor.osmc_uptime_templated",
-                                "sensor.osmc_temperature",
-                                "sensor.home_cinema_ups_status",
-                                "sensor.home_cinema_ups_battery_charge",
-                                "sensor.home_cinema_ups_low_battery_setpoint",
-                                "sensor.home_cinema_ups_ups_shutdown_delay",
-                                "sensor.home_cinema_ups_battery_runtime"
+                                {
+                                    "entity": "binary_sensor.osmc"
+                                },
+                                {
+                                    "entity": "sensor.domot_last_boot"
+                                },
+                                {
+                                    "entity": "sensor.osmc_uptime_templated"
+                                },
+                                {
+                                    "entity": "sensor.osmc_temperature"
+                                },
+                                {
+                                    "entity": "sensor.home_cinema_ups_status"
+                                },
+                                {
+                                    "entity": "sensor.home_cinema_ups_battery_charge"
+                                },
+                                {
+                                    "entity": "sensor.home_cinema_ups_low_battery_setpoint"
+                                },
+                                {
+                                    "entity": "sensor.home_cinema_ups_ups_shutdown_delay"
+                                },
+                                {
+                                    "entity": "sensor.home_cinema_ups_battery_runtime"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "Home Cinema Information",
@@ -414,14 +433,33 @@
                     "cards": [
                         {
                             "entities": [
-                                "sensor.cabinet_ups_status",
-                                "sensor.cabinet_ups_input_voltage",
-                                "sensor.cabinet_ups_battery_runtime",
-                                "sensor.cabinet_ups_battery_charge",
-                                "sensor.cabinet_ups_low_battery_setpoint",
-                                "sensor.cabinet_ups_output_voltage",
-                                "sensor.cabinet_ups_ups_shutdown_delay",
-                                "sensor.rfxcom_cabinet_temperature"
+                                {
+                                    "entity": "sensor.cabinet_ups_status"
+                                },
+                                {
+                                    "entity": "sensor.cabinet_ups_input_voltage"
+                                },
+                                {
+                                    "entity": "sensor.cabinet_ups_battery_runtime"
+                                },
+                                {
+                                    "entity": "sensor.cabinet_ups_battery_charge"
+                                },
+                                {
+                                    "entity": "sensor.cabinet_ups_low_battery_setpoint"
+                                },
+                                {
+                                    "entity": "sensor.cabinet_ups_output_voltage"
+                                },
+                                {
+                                    "entity": "sensor.cabinet_ups_ups_shutdown_delay"
+                                },
+                                {
+                                    "entity": "sensor.rfxcom_cabinet_temperature"
+                                },
+                                {
+                                    "entity": "switch.cabinet_smart_plug"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "Cabinet information",
@@ -429,36 +467,71 @@
                         },
                         {
                             "entities": [
-                                "binary_sensor.pihole",
-                                "sensor.pi_hole_version",
-                                "sensor.uptime_pihole",
-                                "sensor.temp_pihole",
-                                "sensor.pi_hole_dns_unique_clients",
-                                "sensor.pi_hole_dns_queries_today",
-                                "sensor.pi_hole_ads_blocked_today",
-                                "sensor.pi_hole_ads_percentage_today",
-                                "sensor.pi_hole_ads_percentage_blocked_today",
-                                "switch.pi_hole_temp_disable"
+                                {
+                                    "entity": "binary_sensor.freebox"
+                                },
+                                {
+                                    "entity": "sensor.external_ip"
+                                },
+                                {
+                                    "entity": "sensor.freebox_download_speed"
+                                },
+                                {
+                                    "entity": "sensor.freebox_upload_speed"
+                                },
+                                {
+                                    "entity": "sensor.speedtest_download"
+                                },
+                                {
+                                    "entity": "sensor.speedtest_upload"
+                                },
+                                {
+                                    "entity": "sensor.speedtest_ping"
+                                },
+                                {
+                                    "entity": "sensor.stibbons_synology_me_ssl_certificate_expiry"
+                                }
                             ],
                             "show_header_toggle": false,
-                            "title": "Pi-Hole (ad-blocker)",
+                            "title": "Internet Connectivity",
                             "type": "entities"
                         },
                         {
+                            "entity": "sensor.speedtest_download",
+                            "max": 20,
+                            "min": 0,
+                            "theme": "Backend-selected",
+                            "type": "gauge"
+                        },
+                        {
                             "entities": [
-                                "binary_sensor.freebox",
-                                "sensor.external_ip",
-                                "binary_sensor.r7000",
-                                "sensor.speedtest_download_mbytes",
-                                "sensor.speedtest_upload_mbytes",
-                                "sensor.download_192168010_mbytes",
-                                "sensor.upload_192168010_mbytes",
-                                "sensor.download_192168022_mbytes",
-                                "sensor.upload_192168022_mbytes",
-                                "input_boolean.update_speedtest",
-                                "sensor.stibbons_synology_me_ssl_certificate_expiry"
+                                {
+                                    "entity": "binary_sensor.r7000"
+                                },
+                                {
+                                    "entity": "sensor.download_192_168_0_10"
+                                },
+                                {
+                                    "entity": "sensor.upload_192_168_0_10"
+                                },
+                                {
+                                    "entity": "sensor.download_192_168_0_22"
+                                },
+                                {
+                                    "entity": "sensor.upload_192_168_0_22"
+                                },
+                                {
+                                    "entity": "input_boolean.update_speedtest"
+                                },
+                                {
+                                    "entity": "sensor.r7000_gateway_kbytesec_received"
+                                },
+                                {
+                                    "entity": "sensor.r7000_gateway_kbytesec_sent"
+                                }
                             ],
                             "show_header_toggle": false,
+                            "theme": "default",
                             "title": "Network",
                             "type": "entities"
                         },
@@ -468,7 +541,7 @@
                                     "entity": "sensor.domot_cpu_temperature"
                                 },
                                 {
-                                    "entity": "sensor.domot_cpu_temperature"
+                                    "entity": "sensor.domot_network_in"
                                 },
                                 {
                                     "entity": "sensor.domot_processor_use"
@@ -493,6 +566,23 @@
                             ],
                             "show_header_toggle": true,
                             "title": "Smart Lights",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "binary_sensor.pihole",
+                                "sensor.pi_hole_version",
+                                "sensor.uptime_pihole",
+                                "sensor.temp_pihole",
+                                "sensor.pi_hole_dns_unique_clients",
+                                "sensor.pi_hole_dns_queries_today",
+                                "sensor.pi_hole_ads_blocked_today",
+                                "sensor.pi_hole_ads_percentage_today",
+                                "sensor.pi_hole_ads_percentage_blocked_today",
+                                "switch.pi_hole_temp_disable"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Pi-Hole (ad-blocker)",
                             "type": "entities"
                         }
                     ],
@@ -664,23 +754,46 @@
                         },
                         {
                             "entities": [
-                                "sensor.thermostat_transmitter_battery_level"
+                                {
+                                    "entity": "sensor.thermostat_transmitter_battery_level"
+                                },
+                                {
+                                    "entity": "switch.aeotec_zstick_disco_light"
+                                }
                             ],
                             "show_header_toggle": false,
-                            "title": "ZWave Battery Levels",
+                            "title": "ZWave Advanced",
                             "type": "entities"
                         },
                         {
                             "entities": [
-                                "binary_sensor.rfxcom_bathroom_battery_alert",
-                                "binary_sensor.rfxcom_friend_room_battery_alert",
-                                "binary_sensor.rfxcom_garage_battery_alert",
-                                "binary_sensor.rfxcom_kitchen_battery_alert",
-                                "binary_sensor.rfxcom_living_room_battery_alert",
-                                "binary_sensor.rfxcom_office_battery_alert",
-                                "binary_sensor.rfxcom_outside_battery_alert",
-                                "binary_sensor.rfxcom_parents_room_battery_alert",
-                                "binary_sensor.rfxcom_upper_floor_corridor_battery_alert"
+                                {
+                                    "entity": "binary_sensor.rfxcom_bathroom_battery_alert"
+                                },
+                                {
+                                    "entity": "binary_sensor.rfxcom_friend_room_battery_alert"
+                                },
+                                {
+                                    "entity": "binary_sensor.rfxcom_garage_battery_alert"
+                                },
+                                {
+                                    "entity": "binary_sensor.rfxcom_kitchen_battery_alert"
+                                },
+                                {
+                                    "entity": "binary_sensor.rfxcom_living_room_battery_alert"
+                                },
+                                {
+                                    "entity": "binary_sensor.rfxcom_office_battery_alert"
+                                },
+                                {
+                                    "entity": "binary_sensor.rfxcom_outside_battery_alert"
+                                },
+                                {
+                                    "entity": "binary_sensor.rfxcom_parents_room_battery_alert"
+                                },
+                                {
+                                    "entity": "binary_sensor.rfxcom_cigare_cave_battery_alert"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "Rfx Battery States",
@@ -693,9 +806,6 @@
                                 },
                                 {
                                     "entity": "zwave.cabinet_smart_plug"
-                                },
-                                {
-                                    "entity": "zwave.dark_blue_smart_plug"
                                 },
                                 {
                                     "entity": "zwave.entrance_multisensor"
@@ -711,6 +821,15 @@
                                 },
                                 {
                                     "entity": "zwave.washing_machine_wall_smart_plug"
+                                },
+                                {
+                                    "entity": "zwave.nodon_dark_blue_smart_plug"
+                                },
+                                {
+                                    "entity": "zwave.unknown_node_7"
+                                },
+                                {
+                                    "entity": "zwave.bathroom_heater_wall_plug"
                                 }
                             ],
                             "show_header_toggle": false,
@@ -763,6 +882,15 @@
                             ],
                             "show_header_toggle": true,
                             "title": "Smart Switches",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "group.all_scripts"
+                                }
+                            ],
+                            "title": "Scripts",
                             "type": "entities"
                         }
                     ],
