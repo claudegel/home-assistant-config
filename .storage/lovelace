@@ -7,6 +7,10 @@
                     "badges": [],
                     "cards": [
                         {
+                            "entity": "weather.dark_sky",
+                            "type": "weather-forecast"
+                        },
+                        {
                             "entities": [
                                 {
                                     "entity": "sensor.aurelie_s_work"
@@ -26,44 +30,63 @@
                             "type": "entities"
                         },
                         {
-                            "entities": [
-                                "input_select.main_heat_mode"
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Climate Control",
-                            "type": "entities"
-                        },
-                        {
-                            "entity": "climate.thermostat_transmitter_heating",
-                            "type": "thermostat"
-                        },
-                        {
-                            "entities": [
-                                "switch.rfxcom_bathroom_heater_remote"
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Bathroom Heater",
-                            "type": "entities"
-                        },
-                        {
-                            "entity": "climate.bathroom_heater",
-                            "type": "thermostat"
-                        },
-                        {
-                            "entities": [
+                            "cards": [
                                 {
-                                    "entity": "light.hue_iris_aurelie"
+                                    "entities": [
+                                        "input_select.main_heat_mode"
+                                    ],
+                                    "type": "entities"
                                 },
                                 {
-                                    "entity": "input_number.shed_aurelie_light_delay"
-                                },
-                                {
-                                    "entity": "light.hue_iris_gaetan"
+                                    "entity": "climate.thermostat_transmitter_heating",
+                                    "type": "thermostat"
                                 }
                             ],
-                            "show_header_toggle": true,
-                            "title": "Bedroom lights",
-                            "type": "entities"
+                            "title": "Climate Control",
+                            "type": "vertical-stack"
+                        },
+                        {
+                            "cards": [
+                                {
+                                    "entity": "climate.bathroom_heater",
+                                    "type": "thermostat"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "switch.rfxcom_bathroom_heater_remote"
+                                        }
+                                    ],
+                                    "type": "entities"
+                                }
+                            ],
+                            "title": "Bathroom Heater",
+                            "type": "vertical-stack"
+                        },
+                        {
+                            "cards": [
+                                {
+                                    "entity": "light.hue_iris_aurelie",
+                                    "hold_action": {
+                                        "action": "none"
+                                    },
+                                    "tap_action": {
+                                        "action": "more-info"
+                                    },
+                                    "type": "light"
+                                },
+                                {
+                                    "entity": "light.hue_iris_gaetan",
+                                    "hold_action": {
+                                        "action": "none"
+                                    },
+                                    "tap_action": {
+                                        "action": "more-info"
+                                    },
+                                    "type": "light"
+                                }
+                            ],
+                            "type": "horizontal-stack"
                         }
                     ],
                     "icon": "mdi:home",
@@ -95,28 +118,49 @@
                     "badges": [],
                     "cards": [
                         {
-                            "entity": "camera.camera_ip_1",
-                            "type": "picture-entity"
-                        },
-                        {
-                            "entities": [
+                            "cards": [
                                 {
-                                    "entity": "binary_sensor.camera_ip_1_motion"
+                                    "cards": [
+                                        {
+                                            "entity": "camera.camera_ip_1",
+                                            "type": "picture-entity"
+                                        },
+                                        {
+                                            "entities": [
+                                                {
+                                                    "entity": "binary_sensor.camera_ip_1_motion",
+                                                    "show_header_toggle": false
+                                                }
+                                            ],
+                                            "type": "entities"
+                                        }
+                                    ],
+                                    "type": "vertical-stack"
                                 },
                                 {
-                                    "entity": "binary_sensor.cam_2_motion"
+                                    "cards": [
+                                        {
+                                            "entity": "camera.camera_ip_2",
+                                            "type": "picture-entity"
+                                        },
+                                        {
+                                            "entities": [
+                                                {
+                                                    "entity": "binary_sensor.cam_2_motion",
+                                                    "show_header_toggle": false
+                                                }
+                                            ],
+                                            "type": "entities"
+                                        }
+                                    ],
+                                    "type": "vertical-stack"
                                 }
                             ],
-                            "show_header_toggle": false,
-                            "title": "Surveillance",
-                            "type": "entities"
-                        },
-                        {
-                            "entity": "camera.camera_ip_2",
-                            "type": "picture-entity"
+                            "type": "horizontal-stack"
                         }
                     ],
                     "icon": "mdi:cctv",
+                    "panel": true,
                     "path": "surveillance_view",
                     "title": "surveillance_view"
                 },
@@ -498,10 +542,9 @@
                         },
                         {
                             "entity": "sensor.speedtest_download",
-                            "max": 20,
-                            "min": 0,
+                            "graph": "line",
                             "theme": "Backend-selected",
-                            "type": "gauge"
+                            "type": "sensor"
                         },
                         {
                             "entities": [
@@ -562,7 +605,18 @@
                         },
                         {
                             "entities": [
-                                "binary_sensor.hue"
+                                {
+                                    "entity": "binary_sensor.hue"
+                                },
+                                {
+                                    "entity": "light.hue_iris_aurelie"
+                                },
+                                {
+                                    "entity": "light.hue_iris_gaetan"
+                                },
+                                {
+                                    "entity": "input_number.shed_aurelie_light_delay"
+                                }
                             ],
                             "show_header_toggle": true,
                             "title": "Smart Lights",
@@ -826,9 +880,6 @@
                                     "entity": "zwave.nodon_dark_blue_smart_plug"
                                 },
                                 {
-                                    "entity": "zwave.unknown_node_7"
-                                },
-                                {
                                     "entity": "zwave.bathroom_heater_wall_plug"
                                 }
                             ],
@@ -878,10 +929,15 @@
                         },
                         {
                             "entities": [
-                                "switch.rfxcom_bathroom_heater_remote"
+                                {
+                                    "entity": "switch.rfxcom_bathroom_heater_remote"
+                                },
+                                {
+                                    "entity": "group.all_switches"
+                                }
                             ],
                             "show_header_toggle": true,
-                            "title": "Smart Switches",
+                            "title": "Switches",
                             "type": "entities"
                         },
                         {

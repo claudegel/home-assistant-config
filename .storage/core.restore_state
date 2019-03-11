@@ -1,278 +1,119 @@
 {
     "data": [
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "--",
+                    "friendly_name": "a4ee5765507f",
                     "source_type": "router"
                 },
                 "context": {
-                    "id": "b3ba2618b1024ec0b4b04a429e9650e7",
+                    "id": "2008ac462e6940de9076b8f8824d0c26",
                     "user_id": null
                 },
-                "entity_id": "device_tracker.5c521e82f2d8",
-                "last_changed": "2019-03-10T22:11:20.448948+00:00",
-                "last_updated": "2019-03-10T22:11:20.448948+00:00",
+                "entity_id": "device_tracker.a4ee5765507f",
+                "last_changed": "2019-03-11T03:01:58.664800+00:00",
+                "last_updated": "2019-03-11T03:01:58.664800+00:00",
                 "state": "not_home"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "NAS port 2",
-                    "gps_accuracy": 0,
-                    "icon": "mdi:nas",
-                    "ip": "192.168.0.12",
-                    "latitude": 43.51694,
-                    "longitude": 1.39355,
-                    "scanner": "NetgearDeviceScanner",
+                    "friendly_name": "2c1f232483bc",
                     "source_type": "router"
                 },
                 "context": {
-                    "id": "ed72e0aad7ef4b4cb5a6e6b36b97b1c8",
+                    "id": "fa533c0f1c664d18889b04729429ed43",
                     "user_id": null
                 },
-                "entity_id": "device_tracker.nas_2",
-                "last_changed": "2019-03-10T22:11:20.425359+00:00",
-                "last_updated": "2019-03-10T22:56:37.931878+00:00",
-                "state": "home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Galaxy-Tab-A",
-                    "source_type": "gps"
-                },
-                "context": {
-                    "id": "a159662dd728474397433486153b390c",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.galaxytaba",
-                "last_changed": "2019-03-10T22:11:20.650696+00:00",
-                "last_updated": "2019-03-10T22:11:20.650696+00:00",
+                "entity_id": "device_tracker.2c1f232483bc",
+                "last_changed": "2019-03-11T03:01:58.706489+00:00",
+                "last_updated": "2019-03-11T03:01:58.706489+00:00",
                 "state": "not_home"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Day mode (DEBUG)",
-                    "icon": "mdi:oil-temperature",
-                    "options": [
-                        "Not / Applicable",
-                        "Work day",
-                        "Week end"
-                    ]
-                },
-                "context": {
-                    "id": "b3b5b683e6904899a89bb6f48573e7c7",
-                    "user_id": null
-                },
-                "entity_id": "input_select.heat_day_mode",
-                "last_changed": "2019-03-10T22:11:13.082243+00:00",
-                "last_updated": "2019-03-10T22:11:13.082243+00:00",
-                "state": "Week end"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Schedule Morning Bathroom Confort",
-                    "icon": "mdi:weather-sunset-up"
-                },
-                "context": {
-                    "id": "c79d56fa828f4162ac203a9f10c5e04c",
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.schedule_morning_bathroom_confort",
-                "last_changed": "2019-03-10T22:11:13.008603+00:00",
-                "last_updated": "2019-03-10T22:11:13.008603+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "Protocol": "tcp",
-                    "Remote Port": 5201,
-                    "Remote Server": "192.168.0.10",
-                    "Version": null,
-                    "attribution": "Data retrieved using Iperf3",
-                    "friendly_name": "Upload 192.168.0.10",
-                    "icon": "mdi:speedometer",
-                    "unit_of_measurement": "Mbit/s"
-                },
-                "context": {
-                    "id": "1e9351c4edc047c8b5ee530f0020a1ba",
-                    "user_id": null
-                },
-                "entity_id": "sensor.upload_192_168_0_10",
-                "last_changed": "2019-03-10T22:11:15.586576+00:00",
-                "last_updated": "2019-03-10T22:11:15.586576+00:00",
-                "state": "unknown"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Weekday night",
-                    "has_date": false,
-                    "has_time": true,
-                    "hour": 23,
-                    "icon": "mdi:clock-outline",
-                    "minute": 0,
-                    "second": 0,
-                    "timestamp": 82800
-                },
-                "context": {
-                    "id": "a2d1bfa474644bdd859fe0f6c50d1536",
-                    "user_id": null
-                },
-                "entity_id": "input_datetime.heat_time_weekday_night",
-                "last_changed": "2019-03-10T22:11:13.063922+00:00",
-                "last_updated": "2019-03-10T22:11:13.063922+00:00",
-                "state": "23:00:00"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Reset default value",
-                    "icon": "mdi:refresh"
-                },
-                "context": {
-                    "id": "5a8c52dd1bdd4185bc5cd8d55c10e503",
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.reset_climate_values",
-                "last_changed": "2019-03-10T22:11:13.006225+00:00",
-                "last_updated": "2019-03-10T22:11:13.006225+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Climate Control Mode",
-                    "icon": "mdi:robot",
-                    "options": [
-                        "Not / Applicable",
-                        "Automatic mode change",
-                        "Manual mode change"
-                    ]
-                },
-                "context": {
-                    "id": "796bdcff46644c72b969364e6d6d7e0b",
-                    "user_id": null
-                },
-                "entity_id": "input_select.auto_main_heat",
-                "last_changed": "2019-03-10T22:11:13.090100+00:00",
-                "last_updated": "2019-03-10T22:11:13.090100+00:00",
-                "state": "Automatic mode change"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "set_season_summer",
-                    "last_triggered": null
-                },
-                "context": {
-                    "id": "8eb8e657ff7547cd8c1e221e55153077",
-                    "user_id": null
-                },
-                "entity_id": "automation.set_season_summer",
-                "last_changed": "2019-03-10T22:34:45.634632+00:00",
-                "last_updated": "2019-03-10T22:34:45.634632+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "--",
                     "gps_accuracy": 0,
-                    "ip": "192.168.0.177",
+                    "ip": "192.168.0.24",
                     "latitude": 43.51694,
                     "longitude": 1.39355,
                     "scanner": "NmapDeviceScanner",
                     "source_type": "router"
                 },
                 "context": {
-                    "id": "a2a03308b67e42ab88e99d11345a0e81",
+                    "id": "3c103967272a4799a7a7e1766d7969fd",
                     "user_id": null
                 },
-                "entity_id": "device_tracker.30636b8f71bd",
-                "last_changed": "2019-03-10T22:11:20.539224+00:00",
-                "last_updated": "2019-03-10T22:56:41.212957+00:00",
+                "entity_id": "device_tracker.50338be1982b",
+                "last_changed": "2019-03-11T03:01:58.734782+00:00",
+                "last_updated": "2019-03-11T07:32:24.781332+00:00",
                 "state": "home"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Set washing machine finished when power drops",
-                    "last_triggered": "2019-02-16T03:01:17.668434+00:00"
+                    "friendly_name": "341513b6ea28",
+                    "gps_accuracy": 0,
+                    "ip": "192.168.0.26",
+                    "latitude": 43.51694,
+                    "longitude": 1.39355,
+                    "scanner": "NmapDeviceScanner",
+                    "source_type": "router"
                 },
                 "context": {
-                    "id": "6260e473fee4410faa9a2962a33ee589",
+                    "id": "7db2a48a0c464bdb85319ca9ec25aa78",
                     "user_id": null
                 },
-                "entity_id": "automation.set_washing_machine_finished_when_power_drops",
-                "last_changed": "2019-03-10T22:34:46.105991+00:00",
-                "last_updated": "2019-03-10T22:34:46.105991+00:00",
-                "state": "on"
+                "entity_id": "device_tracker.341513b6ea28",
+                "last_changed": "2019-03-11T03:01:58.490262+00:00",
+                "last_updated": "2019-03-11T07:32:24.882588+00:00",
+                "state": "home"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "b827eb30f9ba",
+                    "friendly_name": "B8:27:EB:C1:D3:F0",
                     "source_type": null
                 },
                 "context": {
-                    "id": "45cdcbfbcaf5405bb60c5802a3655f62",
+                    "id": "8ba41b54036949fabab503a0c3740195",
                     "user_id": null
                 },
-                "entity_id": "device_tracker.b827eb30f9ba",
-                "last_changed": "2019-03-10T22:11:20.571836+00:00",
-                "last_updated": "2019-03-10T22:11:20.571836+00:00",
+                "entity_id": "device_tracker.b827ebc1d3f0",
+                "last_changed": "2019-03-11T03:01:58.685312+00:00",
+                "last_updated": "2019-03-11T03:01:58.685312+00:00",
                 "state": "not_home"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "pihole (eth)",
+                    "friendly_name": "b827ebb1ad7b",
                     "source_type": null
                 },
                 "context": {
-                    "id": "b6df1903089144ab83cee5c2191c4cd4",
+                    "id": "cb4d0f99858f4bd28cf1cf50c891b9d0",
                     "user_id": null
                 },
-                "entity_id": "device_tracker.pihole_eth",
-                "last_changed": "2019-03-10T22:11:20.433073+00:00",
-                "last_updated": "2019-03-10T22:11:20.433073+00:00",
+                "entity_id": "device_tracker.b827ebb1ad7b",
+                "last_changed": "2019-03-11T03:01:58.660204+00:00",
+                "last_updated": "2019-03-11T03:01:58.660204+00:00",
                 "state": "not_home"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Weekday day",
@@ -285,92 +126,120 @@
                     "timestamp": 28800
                 },
                 "context": {
-                    "id": "e1121da1d02f43ec918ebb04f23dd191",
+                    "id": "8608c527eac947ee8843fc4e2c520430",
                     "user_id": null
                 },
                 "entity_id": "input_datetime.heat_time_weekday_day",
-                "last_changed": "2019-03-10T22:11:13.058581+00:00",
-                "last_updated": "2019-03-10T22:11:13.058581+00:00",
+                "last_changed": "2019-03-11T03:01:51.009174+00:00",
+                "last_updated": "2019-03-11T03:01:51.009174+00:00",
                 "state": "08:00:00"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Send humidity to MQTT",
-                    "id": "publish_humidity",
-                    "last_triggered": "2019-03-10T22:56:40.662322+00:00"
+                    "friendly_name": "Speedtest Ping",
+                    "icon": "mdi:speedometer",
+                    "unit_of_measurement": "ms"
                 },
                 "context": {
-                    "id": "b408151e62df4125ba252db680e9424c",
+                    "id": "701f8054f49a42a6b578088d355ded95",
                     "user_id": null
                 },
-                "entity_id": "automation.send_humidity_to_mqtt",
-                "last_changed": "2019-03-10T22:34:45.815086+00:00",
-                "last_updated": "2019-03-10T22:56:40.662938+00:00",
-                "state": "on"
+                "entity_id": "sensor.speedtest_ping",
+                "last_changed": "2019-03-11T07:32:23.269520+00:00",
+                "last_updated": "2019-03-11T07:32:23.269520+00:00",
+                "state": "64.488"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "2c3033f98241",
+                    "friendly_name": "b827eb65acef",
                     "source_type": null
                 },
                 "context": {
-                    "id": "90c721ad322442738233ede413a55de8",
+                    "id": "ea3ed4f7a87f4f9bb1fbfa29825e20a2",
                     "user_id": null
                 },
-                "entity_id": "device_tracker.2c3033f98241",
-                "last_changed": "2019-03-10T22:11:20.487342+00:00",
-                "last_updated": "2019-03-10T22:11:20.487342+00:00",
+                "entity_id": "device_tracker.b827eb65acef",
+                "last_changed": "2019-03-11T03:01:58.558474+00:00",
+                "last_updated": "2019-03-11T03:01:58.558474+00:00",
                 "state": "not_home"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "EPSOND373AA",
-                    "gps_accuracy": 0,
-                    "ip": "192.168.0.121",
-                    "latitude": 43.51694,
-                    "longitude": 1.39355,
-                    "scanner": "NmapDeviceScanner",
+                    "friendly_name": "dbg_washing_machine_show",
+                    "last_triggered": "2019-03-10T21:16:53.725476+00:00"
+                },
+                "context": {
+                    "id": "a3793682446f404ba0959327ed18ac53",
+                    "user_id": null
+                },
+                "entity_id": "automation.dbg_washing_machine_show",
+                "last_changed": "2019-03-11T03:02:16.811309+00:00",
+                "last_updated": "2019-03-11T03:02:16.811309+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Reset default value",
+                    "icon": "mdi:refresh"
+                },
+                "context": {
+                    "id": "63719c7276884d80a8dfa75c0ba9c94d",
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.reset_climate_values",
+                "last_changed": "2019-03-11T03:01:51.027176+00:00",
+                "last_updated": "2019-03-11T03:01:51.027176+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "90b686debfd1",
                     "source_type": "router"
                 },
                 "context": {
-                    "id": "7f391319344e4656a95c7575c4dfa6ae",
+                    "id": "acf2b4df8f164a7ca5fa36bc5eecd490",
                     "user_id": null
                 },
-                "entity_id": "device_tracker.epsond373aa",
-                "last_changed": "2019-03-10T22:11:20.656954+00:00",
-                "last_updated": "2019-03-10T22:56:41.110105+00:00",
-                "state": "home"
+                "entity_id": "device_tracker.90b686debfd1",
+                "last_changed": "2019-03-11T03:01:58.751386+00:00",
+                "last_updated": "2019-03-11T03:01:58.751386+00:00",
+                "state": "not_home"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Speedtest Download",
-                    "icon": "mdi:speedometer",
-                    "unit_of_measurement": "Mbit/s"
+                    "friendly_name": "Set washing machine finished when power drops",
+                    "last_triggered": "2019-01-18T04:03:10.465520+00:00"
                 },
                 "context": {
-                    "id": "7d04b1985f9545b1b15c9bd5f36261e4",
+                    "id": "3f2ec83b0e0c47feb26d24ac0f9d4334",
                     "user_id": null
                 },
-                "entity_id": "sensor.speedtest_download",
-                "last_changed": "2019-03-10T22:41:38.340922+00:00",
-                "last_updated": "2019-03-10T22:41:38.340922+00:00",
-                "state": "10.77"
+                "entity_id": "automation.set_washing_machine_finished_when_power_drops_2",
+                "last_changed": "2019-03-11T03:02:16.839262+00:00",
+                "last_updated": "2019-03-11T03:02:16.839262+00:00",
+                "state": "on"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Freebox",
@@ -379,1489 +248,60 @@
                     "ip": "192.168.0.1",
                     "latitude": 43.51694,
                     "longitude": 1.39355,
-                    "scanner": "NetgearDeviceScanner",
+                    "scanner": "NmapDeviceScanner",
                     "source_type": "router"
                 },
                 "context": {
-                    "id": "4f6a62ae7ce04216a6cf1ae5e2db7a08",
+                    "id": "fcbb329d9db9480084dcca5c0614c9b1",
                     "user_id": null
                 },
                 "entity_id": "device_tracker.freebox",
-                "last_changed": "2019-03-10T22:11:20.617188+00:00",
-                "last_updated": "2019-03-10T22:56:37.887286+00:00",
+                "last_changed": "2019-03-11T03:01:58.563436+00:00",
+                "last_updated": "2019-03-11T07:32:24.150009+00:00",
                 "state": "home"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Delai Extinction Lumiere Aurelie",
+                    "friendly_name": "Lumiere Gaetan - Heures",
                     "icon": "mdi:clock",
                     "initial": null,
-                    "max": 59.0,
-                    "min": 5.0,
-                    "mode": "slider",
-                    "step": 5.0
-                },
-                "context": {
-                    "id": "f827afd2a0b44ab6909574bf320470ee",
-                    "user_id": null
-                },
-                "entity_id": "input_number.shed_aurelie_light_delay",
-                "last_changed": "2019-03-10T22:11:13.040859+00:00",
-                "last_updated": "2019-03-10T22:11:13.040859+00:00",
-                "state": "59.0"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Weekday morning",
-                    "has_date": false,
-                    "has_time": true,
-                    "hour": 5,
-                    "icon": "mdi:clock-outline",
-                    "minute": 0,
-                    "second": 0,
-                    "timestamp": 18000
-                },
-                "context": {
-                    "id": "e8911ea0996749238ef0330f8ffbde78",
-                    "user_id": null
-                },
-                "entity_id": "input_datetime.heat_time_weekday_morning",
-                "last_changed": "2019-03-10T22:11:13.052999+00:00",
-                "last_updated": "2019-03-10T22:11:13.052999+00:00",
-                "state": "05:00:00"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "B8:27:EB:C1:D3:F0",
-                    "source_type": null
-                },
-                "context": {
-                    "id": "f62d1dc97ca64f89abd1a2a43878fc24",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.b827ebc1d3f0",
-                "last_changed": "2019-03-10T22:11:20.528490+00:00",
-                "last_updated": "2019-03-10T22:11:20.528490+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "b827ebe4f82e",
-                    "gps_accuracy": 0,
-                    "ip": "192.168.0.22",
-                    "latitude": 43.51694,
-                    "longitude": 1.39355,
-                    "scanner": "NetgearDeviceScanner",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "d6d75caf42b4454985d8032b1d65676c",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.b827ebe4f82e",
-                "last_changed": "2019-03-10T22:11:20.549485+00:00",
-                "last_updated": "2019-03-10T22:56:38.158920+00:00",
-                "state": "home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "Protocol": "tcp",
-                    "Remote Port": 5201,
-                    "Remote Server": "192.168.0.10",
-                    "Version": null,
-                    "attribution": "Data retrieved using Iperf3",
-                    "friendly_name": "Download 192.168.0.10",
-                    "icon": "mdi:speedometer",
-                    "unit_of_measurement": "Mbit/s"
-                },
-                "context": {
-                    "id": "02d4385ae7cb4d60a3e9d6568c01b614",
-                    "user_id": null
-                },
-                "entity_id": "sensor.download_192_168_0_10",
-                "last_changed": "2019-03-10T22:11:15.592242+00:00",
-                "last_updated": "2019-03-10T22:11:15.592242+00:00",
-                "state": "unknown"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "IPhone de Aur\u00e9lie",
-                    "icon": "mdi:cellphone-iphone",
-                    "source_type": null
-                },
-                "context": {
-                    "id": "3d52c9be05224aab80d636b12748ff5b",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.aurelie_iphone",
-                "last_changed": "2019-03-10T22:11:20.735896+00:00",
-                "last_updated": "2019-03-10T22:11:20.735896+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "B8:27:EB:94:86:A5",
-                    "source_type": null
-                },
-                "context": {
-                    "id": "54096b99e76c45eab90ff1f8124af807",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.b827eb9486a5",
-                "last_changed": "2019-03-10T22:11:20.555926+00:00",
-                "last_updated": "2019-03-10T22:11:20.555926+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Update Speedtest",
-                    "last_triggered": "2019-03-10T22:51:07.596271+00:00"
-                },
-                "context": {
-                    "id": "4a2aeba6fab04fd29dc9067929bf88d6",
-                    "user_id": "badba4012aa64645805b91de4ac21cda"
-                },
-                "entity_id": "automation.update_speedtest",
-                "last_changed": "2019-03-10T22:34:45.624450+00:00",
-                "last_updated": "2019-03-10T22:51:07.596827+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Lumiere Gaetan - Minutes",
-                    "icon": "mdi:clock",
-                    "initial": null,
-                    "max": 59.0,
+                    "max": 23.0,
                     "min": 0.0,
                     "mode": "slider",
                     "step": 1.0
                 },
                 "context": {
-                    "id": "872dad12b7c74d308478e1de0af2f7a7",
+                    "id": "7f134270686b45999fb2d6983b29c41c",
                     "user_id": null
                 },
-                "entity_id": "input_number.gaetan_light_timer_minutes",
-                "last_changed": "2019-03-10T22:11:13.043125+00:00",
-                "last_updated": "2019-03-10T22:11:13.043125+00:00",
+                "entity_id": "input_number.gaetan_light_timer_hours",
+                "last_changed": "2019-03-11T03:01:51.070713+00:00",
+                "last_updated": "2019-03-11T03:01:51.070713+00:00",
                 "state": "0.0"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "osmc",
-                    "source_type": null
-                },
-                "context": {
-                    "id": "48d8a266de4349c4b9a6f8868717587f",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.b827ebe5add1",
-                "last_changed": "2019-03-10T22:11:20.496174+00:00",
-                "last_updated": "2019-03-10T22:11:20.496174+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Reset default values",
-                    "last_triggered": "2018-12-14T05:06:29.492157+00:00"
-                },
-                "context": {
-                    "id": "e427e2e50087439f89ffa77243351d12",
-                    "user_id": null
-                },
-                "entity_id": "automation.reset_default_values",
-                "last_changed": "2019-03-10T22:34:45.918002+00:00",
-                "last_updated": "2019-03-10T22:34:45.918002+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "b827eb65acef",
-                    "source_type": null
-                },
-                "context": {
-                    "id": "6fc4915a9d984c02bc1e2893f95d91e8",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.b827eb65acef",
-                "last_changed": "2019-03-10T22:11:20.581118+00:00",
-                "last_updated": "2019-03-10T22:11:20.581118+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Weekend beforebed",
-                    "has_date": false,
-                    "has_time": true,
-                    "hour": 23,
-                    "icon": "mdi:clock-outline",
-                    "minute": 0,
-                    "second": 0,
-                    "timestamp": 82800
-                },
-                "context": {
-                    "id": "5458af7ffb214f36a8bdc635af71891e",
-                    "user_id": null
-                },
-                "entity_id": "input_datetime.heat_time_weekend_beforebed",
-                "last_changed": "2019-03-10T22:11:13.077942+00:00",
-                "last_updated": "2019-03-10T22:11:13.077942+00:00",
-                "state": "23:00:00"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "DBG: Washing machine"
-                },
-                "context": {
-                    "id": "54e87ece4f3d41569089331bfdd35db0",
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.dbg_washing_machine",
-                "last_changed": "2019-03-10T22:11:13.010835+00:00",
-                "last_updated": "2019-03-10T22:11:13.010835+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "MacBookPro de Ga\u00ebtan",
-                    "icon": "mdi:laptop-mac",
-                    "source_type": null
-                },
-                "context": {
-                    "id": "184598ce4a6e46278c4babc8901fb576",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.gaetan_macbookpro",
-                "last_changed": "2019-03-10T22:11:20.748125+00:00",
-                "last_updated": "2019-03-10T22:11:20.748125+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "2c3033f98242",
-                    "gps_accuracy": 0,
-                    "ip": "192.168.0.7",
-                    "latitude": 43.51694,
-                    "longitude": 1.39355,
-                    "scanner": "NmapDeviceScanner",
+                    "friendly_name": "98b6e9b6d025",
                     "source_type": "router"
                 },
                 "context": {
-                    "id": "63882e313fa94f0bbb4a79b2d6eeaab7",
+                    "id": "074c06a5ebb147ceb9c5941c39968be6",
                     "user_id": null
                 },
-                "entity_id": "device_tracker.2c3033f98242",
-                "last_changed": "2019-03-10T22:11:20.475356+00:00",
-                "last_updated": "2019-03-10T22:56:40.895067+00:00",
-                "state": "home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "can_cancel": false,
-                    "friendly_name": "Update Speedtest",
-                    "icon": "mdi:refresh"
-                },
-                "context": {
-                    "id": "4a2aeba6fab04fd29dc9067929bf88d6",
-                    "user_id": "badba4012aa64645805b91de4ac21cda"
-                },
-                "entity_id": "input_boolean.update_speedtest",
-                "last_changed": "2019-03-10T22:51:07.438657+00:00",
-                "last_updated": "2019-03-10T22:51:07.438657+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Stop Bathroom Heater Timer",
-                    "last_triggered": "2019-03-10T10:22:43.391150+00:00"
-                },
-                "context": {
-                    "id": "bd01ff59c2084ff1b6c1e07c1b2a4c1a",
-                    "user_id": null
-                },
-                "entity_id": "automation.stop_bathroom_heater_timer",
-                "last_changed": "2019-03-10T22:34:45.760198+00:00",
-                "last_updated": "2019-03-10T22:34:45.760198+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Recycle Container Warning",
-                    "last_triggered": "2019-03-05T18:00:00.848973+00:00"
-                },
-                "context": {
-                    "id": "108b1e32dd3340cbb81f1b159dacb422",
-                    "user_id": null
-                },
-                "entity_id": "automation.recycle_container_warning",
-                "last_changed": "2019-03-10T22:34:45.908384+00:00",
-                "last_updated": "2019-03-10T22:34:45.908384+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Winter Morning",
-                    "icon": "mdi:thermometer",
-                    "initial": null,
-                    "max": 25.0,
-                    "min": 12.0,
-                    "mode": "box",
-                    "step": 1.0,
-                    "unit_of_measurement": "\u00baC"
-                },
-                "context": {
-                    "id": "c0206698fba641f19ce1e8451e54754d",
-                    "user_id": null
-                },
-                "entity_id": "input_number.temp_for_morning",
-                "last_changed": "2019-03-10T22:11:13.038618+00:00",
-                "last_updated": "2019-03-10T22:11:13.038618+00:00",
-                "state": "19.0"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Winter Before Bed",
-                    "icon": "mdi:thermometer",
-                    "initial": null,
-                    "max": 25.0,
-                    "min": 12.0,
-                    "mode": "box",
-                    "step": 1.0,
-                    "unit_of_measurement": "\u00baC"
-                },
-                "context": {
-                    "id": "1267b1725d1e43b7a4a0ff036fa985ba",
-                    "user_id": null
-                },
-                "entity_id": "input_number.temp_for_before_bed",
-                "last_changed": "2019-03-10T22:11:13.021017+00:00",
-                "last_updated": "2019-03-10T22:11:13.021017+00:00",
-                "state": "19.0"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "dbg_washing_machine_show",
-                    "last_triggered": "2019-03-10T21:16:53.725476+00:00"
-                },
-                "context": {
-                    "id": "40a243a56cde427bb6feea57b3811a0d",
-                    "user_id": null
-                },
-                "entity_id": "automation.dbg_washing_machine_show",
-                "last_changed": "2019-03-10T22:34:46.095429+00:00",
-                "last_updated": "2019-03-10T22:34:46.095429+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Set washing machine finished when power drops (DBG)",
-                    "last_triggered": "2018-12-15T04:02:01.202213+00:00"
-                },
-                "context": {
-                    "id": "d45f27e2ef57403f97377a5abd196fad",
-                    "user_id": null
-                },
-                "entity_id": "automation.set_washing_machine_finished_when_power_drops_dbg_2",
-                "last_changed": "2019-03-10T22:34:46.115982+00:00",
-                "last_updated": "2019-03-10T22:34:46.115982+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "04b16730dcd0",
-                    "source_type": null
-                },
-                "context": {
-                    "id": "fd5411f97a54412ba7537b748119cf72",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.04b16730dcd0",
-                "last_changed": "2019-03-10T22:11:20.565916+00:00",
-                "last_updated": "2019-03-10T22:11:20.565916+00:00",
+                "entity_id": "device_tracker.98b6e9b6d025",
+                "last_changed": "2019-03-11T03:01:58.690759+00:00",
+                "last_updated": "2019-03-11T03:01:58.690759+00:00",
                 "state": "not_home"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "00a0dedccd97",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "623cf47504904e7096ba6b569d3d8764",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.00a0dedccd97",
-                "last_changed": "2019-03-10T22:11:20.453423+00:00",
-                "last_updated": "2019-03-10T22:11:20.453423+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Winter Evening",
-                    "icon": "mdi:thermometer",
-                    "initial": null,
-                    "max": 25.0,
-                    "min": 12.0,
-                    "mode": "box",
-                    "step": 1.0,
-                    "unit_of_measurement": "\u00baC"
-                },
-                "context": {
-                    "id": "59b7a9dd73e049ff9b9afd38f50c45a7",
-                    "user_id": null
-                },
-                "entity_id": "input_number.temp_for_evening",
-                "last_changed": "2019-03-10T22:11:13.025353+00:00",
-                "last_updated": "2019-03-10T22:11:13.025353+00:00",
-                "state": "18.0"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Heat Mode",
-                    "icon": "mdi:oil-temperature",
-                    "options": [
-                        "Not / Applicable",
-                        "Work Week",
-                        "Vacation at Home",
-                        "Vacation out"
-                    ]
-                },
-                "context": {
-                    "id": "7d496601f3e5415fa6b7a03704bec4ad",
-                    "user_id": null
-                },
-                "entity_id": "input_select.main_heat_mode",
-                "last_changed": "2019-03-10T22:11:13.092316+00:00",
-                "last_updated": "2019-03-10T22:11:13.092316+00:00",
-                "state": "Vacation at Home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "SRT321 Battery Notifications",
-                    "last_triggered": null
-                },
-                "context": {
-                    "id": "c97b2d23526642aa96245c4764b38b7c",
-                    "user_id": null
-                },
-                "entity_id": "automation.srt321_battery_notifications",
-                "last_changed": "2019-03-10T22:34:45.709669+00:00",
-                "last_updated": "2019-03-10T22:34:45.709669+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "a002dc2c62ac",
-                    "source_type": null
-                },
-                "context": {
-                    "id": "4918f3b31dc24f98afa6e30189a98d30",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.a002dc2c62ac",
-                "last_changed": "2019-03-10T22:11:20.680136+00:00",
-                "last_updated": "2019-03-10T22:11:20.680136+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "RedmiNote5-Redmi",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "47df3906f122484ca86b291ba65d9a81",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.redminote5redmi",
-                "last_changed": "2019-03-10T22:11:20.517125+00:00",
-                "last_updated": "2019-03-10T22:11:20.517125+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Washing Machine Status",
-                    "options": [
-                        "Stopped",
-                        "Idle",
-                        "Running",
-                        "Finished"
-                    ],
-                    "persistent": true
-                },
-                "context": {
-                    "id": "022f6f1b0d8f4d0da34212d0c180e53e",
-                    "user_id": null
-                },
-                "entity_id": "input_select.washing_machine_status",
-                "last_changed": "2019-03-10T22:11:13.094497+00:00",
-                "last_updated": "2019-03-10T22:11:13.094497+00:00",
-                "state": "Stopped"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "Protocol": "tcp",
-                    "Remote Port": 5201,
-                    "Remote Server": "192.168.0.22",
-                    "Version": null,
-                    "attribution": "Data retrieved using Iperf3",
-                    "friendly_name": "Upload 192.168.0.22",
-                    "icon": "mdi:speedometer",
-                    "unit_of_measurement": "Mbit/s"
-                },
-                "context": {
-                    "id": "0fd7b1ac7e0e45a3b7f388513d3a3a16",
-                    "user_id": null
-                },
-                "entity_id": "sensor.upload_192_168_0_22",
-                "last_changed": "2019-03-10T22:11:15.589491+00:00",
-                "last_updated": "2019-03-10T22:11:15.589491+00:00",
-                "state": "unknown"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "--",
-                    "gps_accuracy": 0,
-                    "ip": "192.168.0.115",
-                    "latitude": 43.51694,
-                    "longitude": 1.39355,
-                    "scanner": "NmapDeviceScanner",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "c1a30494c8c348d0b209331839931432",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.3871dea32881",
-                "last_changed": "2019-03-10T22:11:20.712508+00:00",
-                "last_updated": "2019-03-10T22:51:22.951521+00:00",
-                "state": "home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Weekday beforebed",
-                    "has_date": false,
-                    "has_time": true,
-                    "hour": 21,
-                    "icon": "mdi:clock-outline",
-                    "minute": 0,
-                    "second": 0,
-                    "timestamp": 75600
-                },
-                "context": {
-                    "id": "dd361878f67546caa3c4dc2e7fb380b2",
-                    "user_id": null
-                },
-                "entity_id": "input_datetime.heat_time_weekday_beforebed",
-                "last_changed": "2019-03-10T22:11:13.061651+00:00",
-                "last_updated": "2019-03-10T22:11:13.061651+00:00",
-                "state": "21:00:00"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Set washing machine finished when power drops",
-                    "last_triggered": "2019-01-25T03:02:47.108835+00:00"
-                },
-                "context": {
-                    "id": "b37889c751694e3fb0120aaf3e398e90",
-                    "user_id": null
-                },
-                "entity_id": "automation.set_washing_machine_finished_when_power_drops_3",
-                "last_changed": "2019-03-10T22:34:46.061208+00:00",
-                "last_updated": "2019-03-10T22:34:46.061208+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Send alert when washing machine is clean",
-                    "last_triggered": null
-                },
-                "context": {
-                    "id": "0c372d7c666e484cac8876dd8d058556",
-                    "user_id": null
-                },
-                "entity_id": "automation.send_alert_when_washing_machine_is_clean",
-                "last_changed": "2019-03-10T22:34:45.945614+00:00",
-                "last_updated": "2019-03-10T22:34:45.945614+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "--",
-                    "gps_accuracy": 0,
-                    "ip": "192.168.0.20",
-                    "latitude": 43.51694,
-                    "longitude": 1.39355,
-                    "scanner": "NetgearDeviceScanner",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "e10ce638f7a54ca79c227380d50f63da",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.d0b5c2c7c0d2",
-                "last_changed": "2019-03-10T22:11:20.646164+00:00",
-                "last_updated": "2019-03-10T22:56:38.127879+00:00",
-                "state": "home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "NAS port 3",
-                    "gps_accuracy": 0,
-                    "icon": "mdi:nas",
-                    "ip": "192.168.0.13",
-                    "latitude": 43.51694,
-                    "longitude": 1.39355,
-                    "scanner": "NetgearDeviceScanner",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "bf625304a1ac490ba763bc30b2c950a1",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.nas_3",
-                "last_changed": "2019-03-10T22:11:20.463576+00:00",
-                "last_updated": "2019-03-10T22:56:37.995910+00:00",
-                "state": "home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "PC De Aur\u00e9lie",
-                    "icon": "mdi:laptop",
-                    "scanner": "FreeboxDeviceScanner",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "d6c27371afd04d73bd243efcba8f08ec",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.aure_pc",
-                "last_changed": "2019-03-10T22:15:20.044534+00:00",
-                "last_updated": "2019-03-10T22:15:20.044534+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Chromecast Ultra",
-                    "gps_accuracy": 0,
-                    "ip": "192.168.0.190",
-                    "latitude": 43.51694,
-                    "longitude": 1.39355,
-                    "scanner": "NetgearDeviceScanner",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "06c593e15ab4465f979f6faa2e8dc170",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.chromecast_ultra",
-                "last_changed": "2019-03-10T22:11:20.491846+00:00",
-                "last_updated": "2019-03-10T22:56:38.635264+00:00",
-                "state": "home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Send temperatures to MQTT",
-                    "id": "publish_temperatures",
-                    "last_triggered": "2019-03-10T22:56:40.614949+00:00"
-                },
-                "context": {
-                    "id": "c9ad078f7e68481bb27254ed872fff07",
-                    "user_id": null
-                },
-                "entity_id": "automation.send_temperatures_to_mqtt",
-                "last_changed": "2019-03-10T22:34:46.126539+00:00",
-                "last_updated": "2019-03-10T22:56:40.615682+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "NAS port 1",
-                    "gps_accuracy": 0,
-                    "icon": "mdi:nas",
-                    "ip": "192.168.0.10",
-                    "latitude": 43.51694,
-                    "longitude": 1.39355,
-                    "scanner": "NetgearDeviceScanner",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "49eb047f778d4647b0dd5134c593b4d9",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.nas",
-                "last_changed": "2019-03-10T22:11:20.674514+00:00",
-                "last_updated": "2019-03-10T22:56:37.917013+00:00",
-                "state": "home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Samsung-Galaxy-S7",
-                    "source_type": "gps"
-                },
-                "context": {
-                    "id": "41e35ea1ebf84742afd38b3eff17cd33",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.samsunggalaxys7",
-                "last_changed": "2019-03-10T22:11:20.700980+00:00",
-                "last_updated": "2019-03-10T22:11:20.700980+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "--",
-                    "gps_accuracy": 0,
-                    "ip": "192.168.0.139",
-                    "latitude": 43.51694,
-                    "longitude": 1.39355,
-                    "scanner": "NetgearDeviceScanner",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "b6cc4bdb21184c65a0f2900ed57170b4",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.20c9d0b3cf45",
-                "last_changed": "2019-03-10T22:11:20.723781+00:00",
-                "last_updated": "2019-03-10T22:56:38.445003+00:00",
-                "state": "home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "QUAD",
-                    "source_type": "gps"
-                },
-                "context": {
-                    "id": "cc3f33572bab4597a6a7b367a0865f55",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.quad",
-                "last_changed": "2019-03-10T22:11:20.576257+00:00",
-                "last_updated": "2019-03-10T22:11:20.576257+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Speedtest Upload",
-                    "icon": "mdi:speedometer",
-                    "unit_of_measurement": "Mbit/s"
-                },
-                "context": {
-                    "id": "34fa1c03d89b4f59a2a9df00bc5ac580",
-                    "user_id": null
-                },
-                "entity_id": "sensor.speedtest_upload",
-                "last_changed": "2019-03-10T22:41:38.348158+00:00",
-                "last_updated": "2019-03-10T22:41:38.348158+00:00",
-                "state": "4.12"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Weekend night",
-                    "has_date": false,
-                    "has_time": true,
-                    "hour": 0,
-                    "icon": "mdi:clock-outline",
-                    "minute": 0,
-                    "second": 0,
-                    "timestamp": 0
-                },
-                "context": {
-                    "id": "2ee17a6a0b61474496cfb48251ecaef7",
-                    "user_id": null
-                },
-                "entity_id": "input_datetime.heat_time_weekend_night",
-                "last_changed": "2019-03-10T22:11:13.048087+00:00",
-                "last_updated": "2019-03-10T22:11:13.048087+00:00",
-                "state": "00:00:00"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "341513b6ea28",
-                    "gps_accuracy": 0,
-                    "ip": "192.168.0.26",
-                    "latitude": 43.51694,
-                    "longitude": 1.39355,
-                    "scanner": "NetgearDeviceScanner",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "7d3fcd54eb0a4794a86396721c756508",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.341513b6ea28",
-                "last_changed": "2019-03-10T22:11:20.641196+00:00",
-                "last_updated": "2019-03-10T22:56:38.188988+00:00",
-                "state": "home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Set washing machine active when power detected",
-                    "last_triggered": "2018-12-15T03:01:14.324342+00:00"
-                },
-                "context": {
-                    "id": "9f9cb5ad2d3a4d68a63e67632d59fac0",
-                    "user_id": null
-                },
-                "entity_id": "automation.set_washing_machine_active_when_power_detected",
-                "last_changed": "2019-03-10T22:34:45.740437+00:00",
-                "last_updated": "2019-03-10T22:34:45.740437+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "--",
-                    "source_type": null
-                },
-                "context": {
-                    "id": "1fc6889e5f8543369680e289bf81ee2a",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.b827ebf505ee",
-                "last_changed": "2019-03-10T22:11:20.661480+00:00",
-                "last_updated": "2019-03-10T22:11:20.661480+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "stibphone2",
-                    "source_type": null
-                },
-                "context": {
-                    "id": "4378dd50684d4f099cad4c04772f8e71",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.stibphone2",
-                "last_changed": "2019-03-10T22:11:20.691478+00:00",
-                "last_updated": "2019-03-10T22:11:20.691478+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Waste Container Warning",
-                    "last_triggered": "2019-03-07T18:00:10.033207+00:00"
-                },
-                "context": {
-                    "id": "372af70ce04043fb9fcdf86f2330994a",
-                    "user_id": null
-                },
-                "entity_id": "automation.waste_container_warning",
-                "last_changed": "2019-03-10T22:34:45.898816+00:00",
-                "last_updated": "2019-03-10T22:34:45.898816+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Summer",
-                    "icon": "mdi:thermometer",
-                    "initial": null,
-                    "max": 25.0,
-                    "min": 12.0,
-                    "mode": "box",
-                    "step": 1.0,
-                    "unit_of_measurement": "\u00baC"
-                },
-                "context": {
-                    "id": "1cbdcca98e5f4638bdc5c578442485e2",
-                    "user_id": null
-                },
-                "entity_id": "input_number.temp_for_summer",
-                "last_changed": "2019-03-10T22:11:13.018789+00:00",
-                "last_updated": "2019-03-10T22:11:13.018789+00:00",
-                "state": "12.0"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "away_mode": "off",
-                    "current_temperature": 18.6,
-                    "friendly_name": "Bathroom Heater",
-                    "max_temp": 35,
-                    "min_temp": 7,
-                    "operation_list": [
-                        "heat",
-                        "off"
-                    ],
-                    "operation_mode": "off",
-                    "supported_features": 1153,
-                    "temperature": 26.5
-                },
-                "context": {
-                    "id": "6a6637f554d740d8afc3319cd171f75d",
-                    "user_id": null
-                },
-                "entity_id": "climate.bathroom_heater",
-                "last_changed": "2019-03-10T22:11:17.603714+00:00",
-                "last_updated": "2019-03-10T22:31:40.075778+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Winter Day Here",
-                    "icon": "mdi:thermometer",
-                    "initial": null,
-                    "max": 25.0,
-                    "min": 12.0,
-                    "mode": "box",
-                    "step": 1.0,
-                    "unit_of_measurement": "\u00baC"
-                },
-                "context": {
-                    "id": "9112bf5d974d4ca5ae51b201e2b847f7",
-                    "user_id": null
-                },
-                "entity_id": "input_number.temp_for_day_with_presence",
-                "last_changed": "2019-03-10T22:11:13.027657+00:00",
-                "last_updated": "2019-03-10T22:11:13.027657+00:00",
-                "state": "17.0"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "--",
-                    "gps_accuracy": 0,
-                    "ip": "192.168.0.4",
-                    "latitude": 43.51694,
-                    "longitude": 1.39355,
-                    "scanner": "NetgearDeviceScanner",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "a1dcc58ef60644d48358e98610f1e055",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.001788281961",
-                "last_changed": "2019-03-10T22:11:20.634692+00:00",
-                "last_updated": "2019-03-10T22:56:37.902304+00:00",
-                "state": "home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Galaxy-J5",
-                    "source_type": null
-                },
-                "context": {
-                    "id": "6839630cb88545e9abc5356d4ce03677",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.galaxy_j5",
-                "last_changed": "2019-03-10T22:11:20.459089+00:00",
-                "last_updated": "2019-03-10T22:11:20.459089+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "pihole (wifi)",
-                    "source_type": null
-                },
-                "context": {
-                    "id": "e62bfea774ad4805b4baf970f8ee06c6",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.pihole_wifi",
-                "last_changed": "2019-03-10T22:11:20.533260+00:00",
-                "last_updated": "2019-03-10T22:11:20.533260+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "set_season_winter",
-                    "last_triggered": "2018-12-26T01:18:52.409691+00:00"
-                },
-                "context": {
-                    "id": "2a9a572eb55f44ea8e0898f10fe52270",
-                    "user_id": null
-                },
-                "entity_id": "automation.set_season_winter",
-                "last_changed": "2019-03-10T22:34:46.012196+00:00",
-                "last_updated": "2019-03-10T22:34:46.012196+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "raspberrypi",
-                    "gps_accuracy": 0,
-                    "latitude": 43.51694,
-                    "longitude": 1.39355,
-                    "scanner": "NetgearDeviceScanner",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "7448ce942b954fc1ba538c71f7c88484",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.raspberrypi",
-                "last_changed": "2019-03-10T22:11:20.602442+00:00",
-                "last_updated": "2019-03-10T22:56:38.203289+00:00",
-                "state": "home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "90b686debfd1",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "2d4f99d8e4e8439c8c99058001c0290e",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.90b686debfd1",
-                "last_changed": "2019-03-10T22:11:20.684909+00:00",
-                "last_updated": "2019-03-10T22:11:20.684909+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "64200cad73a3",
-                    "source_type": null
-                },
-                "context": {
-                    "id": "c8ecc7dbfbeb458b94ec04ac785c3610",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.64200cad73a3",
-                "last_changed": "2019-03-10T22:11:20.502444+00:00",
-                "last_updated": "2019-03-10T22:11:20.502444+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Weekend evening",
-                    "has_date": false,
-                    "has_time": true,
-                    "hour": 17,
-                    "icon": "mdi:clock-outline",
-                    "minute": 0,
-                    "second": 0,
-                    "timestamp": 61200
-                },
-                "context": {
-                    "id": "c72e5d428fe042e3bbaa63890f25ea80",
-                    "user_id": null
-                },
-                "entity_id": "input_datetime.heat_time_weekend_evening",
-                "last_changed": "2019-03-10T22:11:13.075560+00:00",
-                "last_updated": "2019-03-10T22:11:13.075560+00:00",
-                "state": "17:00:00"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "--",
-                    "gps_accuracy": 0,
-                    "ip": "192.168.0.24",
-                    "latitude": 43.51694,
-                    "longitude": 1.39355,
-                    "scanner": "NetgearDeviceScanner",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "22901c9ce15d4b6ab6cf4e323bf983ee",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.50338be1982b",
-                "last_changed": "2019-03-10T22:11:20.696171+00:00",
-                "last_updated": "2019-03-10T22:56:38.174112+00:00",
-                "state": "home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Scheduled Bathroom Confort",
-                    "last_triggered": null
-                },
-                "context": {
-                    "id": "8e52af00fc0b4a7a9e30d24af9ff3d4c",
-                    "user_id": null
-                },
-                "entity_id": "automation.scheduled_bathroom_confort",
-                "last_changed": "2019-03-10T22:34:45.682479+00:00",
-                "last_updated": "2019-03-10T22:34:45.682479+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Weekend day",
-                    "has_date": false,
-                    "has_time": true,
-                    "hour": 9,
-                    "icon": "mdi:clock-outline",
-                    "minute": 0,
-                    "second": 0,
-                    "timestamp": 32400
-                },
-                "context": {
-                    "id": "1f70d38cf5b045e9a643a2a3ab6186a9",
-                    "user_id": null
-                },
-                "entity_id": "input_datetime.heat_time_weekend_day",
-                "last_changed": "2019-03-10T22:11:13.071241+00:00",
-                "last_updated": "2019-03-10T22:11:13.071241+00:00",
-                "state": "09:00:00"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "d059e40b817e",
-                    "source_type": null
-                },
-                "context": {
-                    "id": "df04de80da7e43f4b8ce2f17d0484e9a",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.d059e40b817e",
-                "last_changed": "2019-03-10T22:11:20.630126+00:00",
-                "last_updated": "2019-03-10T22:11:20.630126+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "--",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "3e55b7adfe094176bafd9a6b9355bc65",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.0024d47d79e3",
-                "last_changed": "2019-03-10T22:11:20.761200+00:00",
-                "last_updated": "2019-03-10T22:11:20.761200+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Weekday evening",
-                    "has_date": false,
-                    "has_time": true,
-                    "hour": 17,
-                    "icon": "mdi:clock-outline",
-                    "minute": 0,
-                    "second": 0,
-                    "timestamp": 61200
-                },
-                "context": {
-                    "id": "07658d97d7e94dab805ad22a81c15f68",
-                    "user_id": null
-                },
-                "entity_id": "input_datetime.heat_time_weekday_evening",
-                "last_changed": "2019-03-10T22:11:13.056216+00:00",
-                "last_updated": "2019-03-10T22:11:13.056216+00:00",
-                "state": "17:00:00"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "DESKTOP-KS0N94D",
-                    "source_type": "gps"
-                },
-                "context": {
-                    "id": "16f492e4cf0b4e3fb3223d9629f20e27",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.desktopks0n94d",
-                "last_changed": "2019-03-10T22:11:20.561467+00:00",
-                "last_updated": "2019-03-10T22:11:20.561467+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Set washing machine active when power detected (DBG)",
-                    "last_triggered": null
-                },
-                "context": {
-                    "id": "1aeabe96743e4e3aa3987da152e7174d",
-                    "user_id": null
-                },
-                "entity_id": "automation.set_washing_machine_active_when_power_detected_dbg",
-                "last_changed": "2019-03-10T22:34:45.970811+00:00",
-                "last_updated": "2019-03-10T22:34:45.970811+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Remote bathroom confort trigger on",
-                    "last_triggered": "2019-03-10T10:22:41.591920+00:00"
-                },
-                "context": {
-                    "id": "a5da7580f0d9420787d0e8d04ceec036",
-                    "user_id": null
-                },
-                "entity_id": "automation.remote_bathroom_confort_trigger_on",
-                "last_changed": "2019-03-10T22:34:46.085491+00:00",
-                "last_updated": "2019-03-10T22:34:46.085491+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "DS-2CD2063G0-I20180720AAWRC36364016",
-                    "gps_accuracy": 0,
-                    "ip": "192.168.0.111",
-                    "latitude": 43.51694,
-                    "longitude": 1.39355,
-                    "scanner": "NetgearDeviceScanner",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "26cc84b8a1f14421b52e025fc7f76962",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.ds2cd2063g0i20180720aawrc36364016",
-                "last_changed": "2019-03-10T22:11:20.416116+00:00",
-                "last_updated": "2019-03-10T22:56:38.406615+00:00",
-                "state": "home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Climate Season",
-                    "icon": "mdi:weather-sunset-up",
-                    "options": [
-                        "Summer or Frost Protection",
-                        "Winter"
-                    ]
-                },
-                "context": {
-                    "id": "3070c57cb88a431a93c3d6440369d545",
-                    "user_id": null
-                },
-                "entity_id": "input_select.climate_season",
-                "last_changed": "2019-03-10T22:11:13.080083+00:00",
-                "last_updated": "2019-03-10T22:11:13.080083+00:00",
-                "state": "Winter"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "IPhone de Ga\u00ebtan",
-                    "icon": "mdi:cellphone-iphone",
-                    "source_type": null
-                },
-                "context": {
-                    "id": "bec1f7291db64c408a5fc7e3346f2255",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.gaetan_iphone",
-                "last_changed": "2019-03-10T22:11:20.543697+00:00",
-                "last_updated": "2019-03-10T22:11:20.543697+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Winter Holliday",
@@ -1874,263 +314,17 @@
                     "unit_of_measurement": "\u00baC"
                 },
                 "context": {
-                    "id": "768f364b8bd14be596888f5f768775b6",
+                    "id": "6ba3858dcdd4461fbfaa1b48d1b9e07e",
                     "user_id": null
                 },
                 "entity_id": "input_number.temp_for_holidays",
-                "last_changed": "2019-03-10T22:11:13.015563+00:00",
-                "last_updated": "2019-03-10T22:11:13.015563+00:00",
+                "last_changed": "2019-03-11T03:01:51.068336+00:00",
+                "last_updated": "2019-03-11T03:01:51.068336+00:00",
                 "state": "16.0"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "0073e08a0ffb",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "088d77a6aa254bec9adb84b096f0b05e",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.0073e08a0ffb",
-                "last_changed": "2019-03-10T22:11:20.506867+00:00",
-                "last_updated": "2019-03-10T22:11:20.506867+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "a4ee5765507f",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "9c67cc06d8794792982ab1146e7e3608",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.a4ee5765507f",
-                "last_changed": "2019-03-10T22:11:20.438559+00:00",
-                "last_updated": "2019-03-10T22:11:20.438559+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "Protocol": "tcp",
-                    "Remote Port": 5201,
-                    "Remote Server": "192.168.0.22",
-                    "Version": null,
-                    "attribution": "Data retrieved using Iperf3",
-                    "friendly_name": "Download 192.168.0.22",
-                    "icon": "mdi:speedometer",
-                    "unit_of_measurement": "Mbit/s"
-                },
-                "context": {
-                    "id": "2dd69d349a114c209805d16ccd1baa18",
-                    "user_id": null
-                },
-                "entity_id": "sensor.download_192_168_0_22",
-                "last_changed": "2019-03-10T22:11:15.583186+00:00",
-                "last_updated": "2019-03-10T22:11:15.583186+00:00",
-                "state": "unknown"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "98b6e9b6d025",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "4edf4b0ba1384fcfb43b8f42018473c7",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.98b6e9b6d025",
-                "last_changed": "2019-03-10T22:11:20.718348+00:00",
-                "last_updated": "2019-03-10T22:11:20.718348+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Winter Day Away",
-                    "icon": "mdi:thermometer",
-                    "initial": null,
-                    "max": 25.0,
-                    "min": 12.0,
-                    "mode": "box",
-                    "step": 1.0,
-                    "unit_of_measurement": "\u00baC"
-                },
-                "context": {
-                    "id": "5a1dc80bb8b14a0d8265b07065a40611",
-                    "user_id": null
-                },
-                "entity_id": "input_number.temp_for_day_absent",
-                "last_changed": "2019-03-10T22:11:13.033294+00:00",
-                "last_updated": "2019-03-10T22:11:13.033294+00:00",
-                "state": "16.0"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Winter Night",
-                    "icon": "mdi:thermometer",
-                    "initial": null,
-                    "max": 25.0,
-                    "min": 12.0,
-                    "mode": "box",
-                    "step": 1.0,
-                    "unit_of_measurement": "\u00baC"
-                },
-                "context": {
-                    "id": "ac9d41c2d20e4bf299bc1a006a790838",
-                    "user_id": null
-                },
-                "entity_id": "input_number.temp_for_night",
-                "last_changed": "2019-03-10T22:11:13.023176+00:00",
-                "last_updated": "2019-03-10T22:11:13.023176+00:00",
-                "state": "18.0"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Confort Start Time",
-                    "has_date": false,
-                    "has_time": true,
-                    "hour": 6,
-                    "icon": "mdi:radiator",
-                    "minute": 0,
-                    "second": 0,
-                    "timestamp": 21600
-                },
-                "context": {
-                    "id": "d36b5843e43a4d98b3e93d220998cbec",
-                    "user_id": null
-                },
-                "entity_id": "input_datetime.quick_bathroom_confort_time",
-                "last_changed": "2019-03-10T22:11:13.050496+00:00",
-                "last_updated": "2019-03-10T22:11:13.050496+00:00",
-                "state": "06:00:00"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "2c1f232483bc",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "40282756a9ec4340887b5a358b54ce4f",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.2c1f232483bc",
-                "last_changed": "2019-03-10T22:11:20.622235+00:00",
-                "last_updated": "2019-03-10T22:11:20.622235+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "dbg_washing_machine_hide",
-                    "last_triggered": "2019-03-10T21:16:56.259172+00:00"
-                },
-                "context": {
-                    "id": "306a12f4a7f24b89b18be9dcff325c1a",
-                    "user_id": null
-                },
-                "entity_id": "automation.dbg_washing_machine_hide",
-                "last_changed": "2019-03-10T22:34:46.034452+00:00",
-                "last_updated": "2019-03-10T22:34:46.034452+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "NAS port 4",
-                    "icon": "mdi:nas",
-                    "source_type": null
-                },
-                "context": {
-                    "id": "d28694adaa01476da1f298fbcd0e1e41",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.nas_4",
-                "last_changed": "2019-03-10T22:11:20.587430+00:00",
-                "last_updated": "2019-03-10T22:11:20.587430+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "0024e41460fe",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "e4710dc930a64f23a4b2b1dfad8e765f",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.0024e41460fe",
-                "last_changed": "2019-03-10T22:11:20.470770+00:00",
-                "last_updated": "2019-03-10T22:11:20.470770+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Update Available Notifications",
-                    "last_triggered": "2019-01-20T04:00:29.991925+00:00"
-                },
-                "context": {
-                    "id": "a76c29ce05704028b5451ade427dde31",
-                    "user_id": null
-                },
-                "entity_id": "automation.update_available_notifications",
-                "last_changed": "2019-03-10T22:34:45.880526+00:00",
-                "last_updated": "2019-03-10T22:34:45.880526+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Set washing machine finished when power drops (DBG)",
-                    "last_triggered": null
-                },
-                "context": {
-                    "id": "10a71a30ff864ad2ad9ac77451634429",
-                    "user_id": null
-                },
-                "entity_id": "automation.set_washing_machine_finished_when_power_drops_dbg",
-                "last_changed": "2019-03-10T22:34:45.856424+00:00",
-                "last_updated": "2019-03-10T22:34:45.856424+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Shed Aurelie light timer",
@@ -2138,99 +332,697 @@
                     "last_triggered": "2019-03-09T22:57:40.422448+00:00"
                 },
                 "context": {
-                    "id": "bfe366487c1a44bab7916673e9368f89",
+                    "id": "01692b3b0eec4db7ba80fe46abf428f4",
                     "user_id": null
                 },
                 "entity_id": "automation.shed_aurelie_light_timer",
-                "last_changed": "2019-03-10T22:34:45.646722+00:00",
-                "last_updated": "2019-03-10T22:34:45.646722+00:00",
+                "last_changed": "2019-03-11T03:02:16.740214+00:00",
+                "last_updated": "2019-03-11T03:02:16.740214+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "00:0E:C6:A5:BB:39",
-                    "gps_accuracy": 0,
-                    "latitude": 43.51694,
-                    "longitude": 1.39355,
-                    "scanner": "NetgearDeviceScanner",
-                    "source_type": "router"
+                    "friendly_name": "FRLH104150",
+                    "source_type": null
                 },
                 "context": {
-                    "id": "2da399ba0ad94260927b28d41879042e",
+                    "id": "d68f1aabddc34f159ba9d3911d558180",
                     "user_id": null
                 },
-                "entity_id": "device_tracker.000ec6a5bb39",
-                "last_changed": "2019-03-10T22:11:20.523230+00:00",
-                "last_updated": "2019-03-10T22:56:38.459821+00:00",
-                "state": "home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "--",
-                    "gps_accuracy": 0,
-                    "ip": "192.168.0.21",
-                    "latitude": 43.51694,
-                    "longitude": 1.39355,
-                    "scanner": "NetgearDeviceScanner",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "408d852d5b50475a9b76e91916f01168",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.04a3165c2d87",
-                "last_changed": "2019-03-10T22:11:20.596206+00:00",
-                "last_updated": "2019-03-10T22:56:38.143924+00:00",
-                "state": "home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Lumiere Gaetan - Heures",
-                    "icon": "mdi:clock",
-                    "initial": null,
-                    "max": 23.0,
-                    "min": 0.0,
-                    "mode": "slider",
-                    "step": 1.0
-                },
-                "context": {
-                    "id": "0468ee0f7cda468e912c5944365c4997",
-                    "user_id": null
-                },
-                "entity_id": "input_number.gaetan_light_timer_hours",
-                "last_changed": "2019-03-10T22:11:13.031049+00:00",
-                "last_updated": "2019-03-10T22:11:13.031049+00:00",
-                "state": "0.0"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "28:16:AD:F0:1A:EF",
-                    "source_type": "router"
-                },
-                "context": {
-                    "id": "c9e4ca2c17cc40a9976558ac762579e3",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.2816adf01aef",
-                "last_changed": "2019-03-10T22:11:20.741042+00:00",
-                "last_updated": "2019-03-10T22:11:20.741042+00:00",
+                "entity_id": "device_tracker.frlh104150",
+                "last_changed": "2019-03-11T03:01:58.701831+00:00",
+                "last_updated": "2019-03-11T03:01:58.701831+00:00",
                 "state": "not_home"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "osmc",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "067924690796452ea5aee2bf601a0906",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.b827ebe5add1",
+                "last_changed": "2019-03-11T03:01:58.484036+00:00",
+                "last_updated": "2019-03-11T03:01:58.484036+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "--",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "e53d91fe03b44205b3537c9921bb42d8",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.5c521e82f2d8",
+                "last_changed": "2019-03-11T03:01:58.541601+00:00",
+                "last_updated": "2019-03-11T03:01:58.541601+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "EPSOND373AA",
+                    "gps_accuracy": 0,
+                    "ip": "192.168.0.121",
+                    "latitude": 43.51694,
+                    "longitude": 1.39355,
+                    "scanner": "NmapDeviceScanner",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "d4b767398b754618bb6e5afbb2e14cff",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.epsond373aa",
+                "last_changed": "2019-03-11T03:01:58.599193+00:00",
+                "last_updated": "2019-03-11T07:32:24.752711+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Heat Mode",
+                    "icon": "mdi:oil-temperature",
+                    "options": [
+                        "Not / Applicable",
+                        "Work Week",
+                        "Vacation at Home",
+                        "Vacation out"
+                    ]
+                },
+                "context": {
+                    "id": "6bb231874d7c4e95995efa1cd773ba90",
+                    "user_id": null
+                },
+                "entity_id": "input_select.main_heat_mode",
+                "last_changed": "2019-03-11T03:01:51.033964+00:00",
+                "last_updated": "2019-03-11T03:01:51.033964+00:00",
+                "state": "Vacation at Home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "b827ebe4f82e",
+                    "gps_accuracy": 0,
+                    "ip": "192.168.0.22",
+                    "latitude": 43.51694,
+                    "longitude": 1.39355,
+                    "scanner": "NmapDeviceScanner",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "0aaaa5cebdf74896abae7acd465a8abf",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.b827ebe4f82e",
+                "last_changed": "2019-03-11T03:01:58.761705+00:00",
+                "last_updated": "2019-03-11T07:32:24.714165+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Send humidity to MQTT",
+                    "id": "publish_humidity",
+                    "last_triggered": "2019-03-11T07:32:06.265253+00:00"
+                },
+                "context": {
+                    "id": "57ec62900ada4919ba394dce5be4d9ee",
+                    "user_id": null
+                },
+                "entity_id": "automation.send_humidity_to_mqtt",
+                "last_changed": "2019-03-11T03:02:17.378767+00:00",
+                "last_updated": "2019-03-11T07:32:06.265883+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Set washing machine active when power detected (DBG)",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "81e040b7ebe14ff8905ef790b59f7d54",
+                    "user_id": null
+                },
+                "entity_id": "automation.set_washing_machine_active_when_power_detected_dbg",
+                "last_changed": "2019-03-11T03:02:16.902220+00:00",
+                "last_updated": "2019-03-11T03:02:16.902220+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "pihole (eth)",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "227baf2d32e6465ab5e55194a7559254",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.pihole_eth",
+                "last_changed": "2019-03-11T03:01:58.594133+00:00",
+                "last_updated": "2019-03-11T03:01:58.594133+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "NAS port 2",
+                    "gps_accuracy": 0,
+                    "icon": "mdi:nas",
+                    "ip": "192.168.0.12",
+                    "latitude": 43.51694,
+                    "longitude": 1.39355,
+                    "scanner": "NmapDeviceScanner",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "bde2cec9a8604db7852ffde25ea70f56",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.nas_2",
+                "last_changed": "2019-03-11T03:01:58.578188+00:00",
+                "last_updated": "2019-03-11T07:32:24.438697+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Weekday evening",
+                    "has_date": false,
+                    "has_time": true,
+                    "hour": 17,
+                    "icon": "mdi:clock-outline",
+                    "minute": 0,
+                    "second": 0,
+                    "timestamp": 61200
+                },
+                "context": {
+                    "id": "d0b44b95cf2e45d994584599988b6465",
+                    "user_id": null
+                },
+                "entity_id": "input_datetime.heat_time_weekday_evening",
+                "last_changed": "2019-03-11T03:01:51.006642+00:00",
+                "last_updated": "2019-03-11T03:01:51.006642+00:00",
+                "state": "17:00:00"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Galaxy-J5",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "0d6f3c9918924be5ba61dd7c4e1cc487",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.galaxy_j5",
+                "last_changed": "2019-03-11T03:01:58.621029+00:00",
+                "last_updated": "2019-03-11T03:01:58.621029+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "--",
+                    "gps_accuracy": 0,
+                    "ip": "192.168.0.177",
+                    "latitude": 43.51694,
+                    "longitude": 1.39355,
+                    "scanner": "NmapDeviceScanner",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "71b97f259e6e4c48bc82c7e19e8511c2",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.30636b8f71bd",
+                "last_changed": "2019-03-11T03:01:58.640805+00:00",
+                "last_updated": "2019-03-11T07:32:25.016369+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "0024e41460fe",
+                    "ip": "192.168.0.112",
+                    "scanner": "NmapDeviceScanner",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "3ada2c68a7984858b356c3f4deb1cd26",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.0024e41460fe",
+                "last_changed": "2019-03-11T07:12:30.042165+00:00",
+                "last_updated": "2019-03-11T07:12:30.042165+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Speedtest Upload",
+                    "icon": "mdi:speedometer",
+                    "unit_of_measurement": "Mbit/s"
+                },
+                "context": {
+                    "id": "77a003e15565405f91bc50435e0f6b32",
+                    "user_id": null
+                },
+                "entity_id": "sensor.speedtest_upload",
+                "last_changed": "2019-03-11T07:32:23.261667+00:00",
+                "last_updated": "2019-03-11T07:32:23.261667+00:00",
+                "state": "5.3"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Set washing machine active when power detected",
+                    "last_triggered": "2018-12-15T03:01:14.324342+00:00"
+                },
+                "context": {
+                    "id": "d4b08e5398b54bb7a42b1b71e1645e0b",
+                    "user_id": null
+                },
+                "entity_id": "automation.set_washing_machine_active_when_power_detected",
+                "last_changed": "2019-03-11T03:02:16.881020+00:00",
+                "last_updated": "2019-03-11T03:02:16.881020+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "NAS port 3",
+                    "gps_accuracy": 0,
+                    "icon": "mdi:nas",
+                    "ip": "192.168.0.13",
+                    "latitude": 43.51694,
+                    "longitude": 1.39355,
+                    "scanner": "NmapDeviceScanner",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "37548dfd6bb6402f805fdccc870b9f3d",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.nas_3",
+                "last_changed": "2019-03-11T03:01:58.547195+00:00",
+                "last_updated": "2019-03-11T07:32:23.947253+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "raspberrypi",
+                    "gps_accuracy": 0,
+                    "latitude": 43.51694,
+                    "longitude": 1.39355,
+                    "scanner": "FreeboxDeviceScanner",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "bc9390b5d7d048e88bf2b18d982a68f2",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.raspberrypi",
+                "last_changed": "2019-03-11T03:01:58.730495+00:00",
+                "last_updated": "2019-03-11T07:32:22.994000+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "--",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "2900158a673944809eb8d4672a510b06",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.0024be2e22c3",
+                "last_changed": "2019-03-11T03:01:58.636333+00:00",
+                "last_updated": "2019-03-11T03:01:58.636333+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Winter Evening",
+                    "icon": "mdi:thermometer",
+                    "initial": null,
+                    "max": 25.0,
+                    "min": 12.0,
+                    "mode": "box",
+                    "step": 1.0,
+                    "unit_of_measurement": "\u00baC"
+                },
+                "context": {
+                    "id": "3094b6d2edf342a9b6c38f8612f2fc11",
+                    "user_id": null
+                },
+                "entity_id": "input_number.temp_for_evening",
+                "last_changed": "2019-03-11T03:01:51.057678+00:00",
+                "last_updated": "2019-03-11T03:01:51.057678+00:00",
+                "state": "18.0"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "B8:27:EB:94:86:A5",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "60bf6d954f124408b038a5f71d84b549",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.b827eb9486a5",
+                "last_changed": "2019-03-11T03:01:58.772028+00:00",
+                "last_updated": "2019-03-11T03:01:58.772028+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "d059e40b817e",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "b2c73db2d52a4146b8e59b97a9c9351f",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.d059e40b817e",
+                "last_changed": "2019-03-11T03:01:58.520717+00:00",
+                "last_updated": "2019-03-11T03:01:58.520717+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "dbg_washing_machine_hide",
+                    "last_triggered": "2019-03-10T21:16:56.259172+00:00"
+                },
+                "context": {
+                    "id": "9776e8ca9bdf4b29bdbef6ddcdb8978b",
+                    "user_id": null
+                },
+                "entity_id": "automation.dbg_washing_machine_hide",
+                "last_changed": "2019-03-11T03:02:16.820938+00:00",
+                "last_updated": "2019-03-11T03:02:16.820938+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Washing Machine Status",
+                    "options": [
+                        "Stopped",
+                        "Idle",
+                        "Running",
+                        "Finished"
+                    ],
+                    "persistent": true
+                },
+                "context": {
+                    "id": "87639bd686714195a56cfeee87a84258",
+                    "user_id": null
+                },
+                "entity_id": "input_select.washing_machine_status",
+                "last_changed": "2019-03-11T03:01:51.030323+00:00",
+                "last_updated": "2019-03-11T03:01:51.030323+00:00",
+                "state": "Stopped"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "00a0dedccd97",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "0c074b61b08f410a8d6f333d6a31ae3e",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.00a0dedccd97",
+                "last_changed": "2019-03-11T03:01:58.608758+00:00",
+                "last_updated": "2019-03-11T03:01:58.608758+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Winter Morning",
+                    "icon": "mdi:thermometer",
+                    "initial": null,
+                    "max": 25.0,
+                    "min": 12.0,
+                    "mode": "box",
+                    "step": 1.0,
+                    "unit_of_measurement": "\u00baC"
+                },
+                "context": {
+                    "id": "6e0eba10dc8944c983ec9d0b4a884b15",
+                    "user_id": null
+                },
+                "entity_id": "input_number.temp_for_morning",
+                "last_changed": "2019-03-11T03:01:51.043795+00:00",
+                "last_updated": "2019-03-11T03:01:51.043795+00:00",
+                "state": "19.0"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "--",
+                    "gps_accuracy": 0,
+                    "ip": "192.168.0.4",
+                    "latitude": 43.51694,
+                    "longitude": 1.39355,
+                    "scanner": "NmapDeviceScanner",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "c1c6c4b5aa364ad6aa6e09ab114b90af",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.001788281961",
+                "last_changed": "2019-03-11T03:01:58.745633+00:00",
+                "last_updated": "2019-03-11T07:32:24.015661+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "B8:27:EB:14:19:70",
+                    "gps_accuracy": 0,
+                    "latitude": 43.51694,
+                    "longitude": 1.39355,
+                    "scanner": "NetgearDeviceScanner",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "2e5cd9077306418f879900935ba897eb",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.b827eb141970",
+                "last_changed": "2019-03-11T03:01:58.631617+00:00",
+                "last_updated": "2019-03-11T03:44:43.287150+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Weekend beforebed",
+                    "has_date": false,
+                    "has_time": true,
+                    "hour": 23,
+                    "icon": "mdi:clock-outline",
+                    "minute": 0,
+                    "second": 0,
+                    "timestamp": 82800
+                },
+                "context": {
+                    "id": "d2cc9fd51a1f494089aa8f604224298d",
+                    "user_id": null
+                },
+                "entity_id": "input_datetime.heat_time_weekend_beforebed",
+                "last_changed": "2019-03-11T03:01:50.987662+00:00",
+                "last_updated": "2019-03-11T03:01:50.987662+00:00",
+                "state": "23:00:00"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "a8206605dac1",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "66d5510e9a914c9e9f417b6587ea3618",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.a8206605dac1",
+                "last_changed": "2019-03-11T03:01:58.614451+00:00",
+                "last_updated": "2019-03-11T03:01:58.614451+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Schedule Morning Bathroom Confort",
+                    "icon": "mdi:weather-sunset-up"
+                },
+                "context": {
+                    "id": "21d193a580064d67ac61aab34cc124d8",
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.schedule_morning_bathroom_confort",
+                "last_changed": "2019-03-11T03:01:51.024121+00:00",
+                "last_updated": "2019-03-11T03:01:51.024121+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "QUAD",
+                    "source_type": "gps"
+                },
+                "context": {
+                    "id": "3d1514a8186d475096f3beca5ea556bb",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.quad",
+                "last_changed": "2019-03-11T03:01:58.573156+00:00",
+                "last_updated": "2019-03-11T03:01:58.573156+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Delai Extinction Lumiere Aurelie",
+                    "icon": "mdi:clock",
+                    "initial": null,
+                    "max": 59.0,
+                    "min": 5.0,
+                    "mode": "slider",
+                    "step": 5.0
+                },
+                "context": {
+                    "id": "7dc567abde3846bb83790ad3cf224e5a",
+                    "user_id": null
+                },
+                "entity_id": "input_number.shed_aurelie_light_delay",
+                "last_changed": "2019-03-11T03:01:51.062887+00:00",
+                "last_updated": "2019-03-11T03:01:51.062887+00:00",
+                "state": "59.0"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Scheduled Bathroom Confort",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "80ffa1ed1b0c44248ff34ba1584cbb71",
+                    "user_id": null
+                },
+                "entity_id": "automation.scheduled_bathroom_confort",
+                "last_changed": "2019-03-11T03:02:17.314375+00:00",
+                "last_updated": "2019-03-11T03:02:17.314375+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "a002dc2c62ac",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "10552ab8d6c7419ba75a7befd85fed4f",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.a002dc2c62ac",
+                "last_changed": "2019-03-11T03:01:58.531948+00:00",
+                "last_updated": "2019-03-11T03:01:58.531948+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "94e1accd3ac5",
@@ -2238,141 +1030,101 @@
                     "ip": "192.168.0.110",
                     "latitude": 43.51694,
                     "longitude": 1.39355,
-                    "scanner": "NetgearDeviceScanner",
+                    "scanner": "NmapDeviceScanner",
                     "source_type": "router"
                 },
                 "context": {
-                    "id": "b7d3b5b6e96445bb8e1be548173834ba",
+                    "id": "cab297a8179b4ee49a5e2344fc0fb080",
                     "user_id": null
                 },
                 "entity_id": "device_tracker.94e1accd3ac5",
-                "last_changed": "2019-03-10T22:11:20.480878+00:00",
-                "last_updated": "2019-03-10T22:56:38.263924+00:00",
+                "last_changed": "2019-03-11T03:01:58.646322+00:00",
+                "last_updated": "2019-03-11T07:32:24.580786+00:00",
                 "state": "home"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Remote bathroom confort trigger off",
-                    "last_triggered": "2019-03-10T10:46:56.504593+00:00"
-                },
-                "context": {
-                    "id": "64f530f4d1684b5096e1e7fdec77c9d6",
-                    "user_id": null
-                },
-                "entity_id": "automation.remote_bathroom_confort_trigger_off",
-                "last_changed": "2019-03-10T22:34:45.659530+00:00",
-                "last_updated": "2019-03-10T22:34:45.659530+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "b827ebb1ad7b",
-                    "source_type": null
-                },
-                "context": {
-                    "id": "a0db682e30e64867bacd3dc8e9150570",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.b827ebb1ad7b",
-                "last_changed": "2019-03-10T22:11:20.591873+00:00",
-                "last_updated": "2019-03-10T22:11:20.591873+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Speedtest Ping",
-                    "icon": "mdi:speedometer",
-                    "unit_of_measurement": "ms"
-                },
-                "context": {
-                    "id": "fd7977e8d9df49d6b9dd3dbc474c8f0c",
-                    "user_id": null
-                },
-                "entity_id": "sensor.speedtest_ping",
-                "last_changed": "2019-03-10T22:41:38.333463+00:00",
-                "last_updated": "2019-03-10T22:41:38.333463+00:00",
-                "state": "69.481"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "a8206605dac1",
-                    "source_type": null
-                },
-                "context": {
-                    "id": "d07544e456fc44da89072681f1194520",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.a8206605dac1",
-                "last_changed": "2019-03-10T22:11:20.706563+00:00",
-                "last_updated": "2019-03-10T22:11:20.706563+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "--",
+                    "gps_accuracy": 0,
+                    "ip": "192.168.0.20",
+                    "latitude": 43.51694,
+                    "longitude": 1.39355,
+                    "scanner": "NmapDeviceScanner",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "bfda65fa9a804d23816d48cf15724449",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.d0b5c2c7c0d2",
+                "last_changed": "2019-03-11T03:01:58.720687+00:00",
+                "last_updated": "2019-03-11T07:32:24.043923+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "NAS port 1",
+                    "gps_accuracy": 0,
+                    "icon": "mdi:nas",
+                    "ip": "192.168.0.10",
+                    "latitude": 43.51694,
+                    "longitude": 1.39355,
+                    "scanner": "NmapDeviceScanner",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "1b6835a1efdb4f6ea28dcbb21bf72ec2",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.nas",
+                "last_changed": "2019-03-11T03:01:58.669641+00:00",
+                "last_updated": "2019-03-11T07:32:24.836527+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "MacBookPro de Ga\u00ebtan",
+                    "icon": "mdi:laptop-mac",
                     "source_type": null
                 },
                 "context": {
-                    "id": "77e1ce6b68fd4f12ab3ac96a94af0915",
+                    "id": "8c2f893a2d8f44cc8232621e1b08a2b7",
                     "user_id": null
                 },
-                "entity_id": "device_tracker.0024be2e22c3",
-                "last_changed": "2019-03-10T22:11:20.767071+00:00",
-                "last_updated": "2019-03-10T22:11:20.767071+00:00",
+                "entity_id": "device_tracker.gaetan_macbookpro",
+                "last_changed": "2019-03-11T03:01:58.655047+00:00",
+                "last_updated": "2019-03-11T03:01:58.655047+00:00",
                 "state": "not_home"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Set washing machine finished when power drops",
-                    "last_triggered": "2019-01-18T04:03:10.465520+00:00"
+                    "friendly_name": "SRT321 Battery Notifications",
+                    "last_triggered": null
                 },
                 "context": {
-                    "id": "903427279ad849ae8c0ff901828bcd4c",
+                    "id": "b4596149dc6e4c9fa4cd4d6dd094bda8",
                     "user_id": null
                 },
-                "entity_id": "automation.set_washing_machine_finished_when_power_drops_2",
-                "last_changed": "2019-03-10T22:34:45.994195+00:00",
-                "last_updated": "2019-03-10T22:34:45.994195+00:00",
+                "entity_id": "automation.srt321_battery_notifications",
+                "last_changed": "2019-03-11T03:02:16.717742+00:00",
+                "last_updated": "2019-03-11T03:02:16.717742+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "FRLH104150",
-                    "source_type": null
-                },
-                "context": {
-                    "id": "1e0d4c0ca2d64025874ba0fe10df73c2",
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.frlh104150",
-                "last_changed": "2019-03-10T22:11:20.511286+00:00",
-                "last_updated": "2019-03-10T22:11:20.511286+00:00",
-                "state": "not_home"
-            }
-        },
-        {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Weekend morning",
@@ -2385,17 +1137,696 @@
                     "timestamp": 25200
                 },
                 "context": {
-                    "id": "0cf41f37ca3046f293b3ec466e0a9c36",
+                    "id": "32a88ebb0a5640b6842a95a891482988",
                     "user_id": null
                 },
                 "entity_id": "input_datetime.heat_time_weekend_morning",
-                "last_changed": "2019-03-10T22:11:13.066223+00:00",
-                "last_updated": "2019-03-10T22:11:13.066223+00:00",
+                "last_changed": "2019-03-11T03:01:50.992816+00:00",
+                "last_updated": "2019-03-11T03:01:50.992816+00:00",
                 "state": "07:00:00"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Update Available Notifications",
+                    "last_triggered": "2019-01-20T04:00:29.991925+00:00"
+                },
+                "context": {
+                    "id": "d4d53940091c405ea7c0bacf70821be9",
+                    "user_id": null
+                },
+                "entity_id": "automation.update_available_notifications",
+                "last_changed": "2019-03-11T03:02:16.676722+00:00",
+                "last_updated": "2019-03-11T03:02:16.676722+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "IPhone de Ga\u00ebtan",
+                    "icon": "mdi:cellphone-iphone",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "dfa189cc40414650a3493e9162727924",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.gaetan_iphone",
+                "last_changed": "2019-03-11T03:01:58.696035+00:00",
+                "last_updated": "2019-03-11T03:01:58.696035+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "Protocol": "tcp",
+                    "Remote Port": 5201,
+                    "Remote Server": "192.168.0.10",
+                    "Version": null,
+                    "attribution": "Data retrieved using Iperf3",
+                    "friendly_name": "Upload 192.168.0.10",
+                    "icon": "mdi:speedometer",
+                    "unit_of_measurement": "Mbit/s"
+                },
+                "context": {
+                    "id": "a09db77e7a624ee3989500b5ec25835e",
+                    "user_id": null
+                },
+                "entity_id": "sensor.upload_192_168_0_10",
+                "last_changed": "2019-03-11T03:02:06.148082+00:00",
+                "last_updated": "2019-03-11T03:02:06.148082+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "DESKTOP-KS0N94D",
+                    "source_type": "gps"
+                },
+                "context": {
+                    "id": "c9b7736346e9452c90ae1ce1ef090387",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.desktopks0n94d",
+                "last_changed": "2019-03-11T03:01:58.553013+00:00",
+                "last_updated": "2019-03-11T03:01:58.553013+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "28:16:AD:F0:1A:EF",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "968840b6a51e468fb824b329d3f99bf0",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.2816adf01aef",
+                "last_changed": "2019-03-11T03:01:58.793487+00:00",
+                "last_updated": "2019-03-11T03:01:58.793487+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Weekend night",
+                    "has_date": false,
+                    "has_time": true,
+                    "hour": 0,
+                    "icon": "mdi:clock-outline",
+                    "minute": 0,
+                    "second": 0,
+                    "timestamp": 0
+                },
+                "context": {
+                    "id": "495164445aed453688c5c70929106183",
+                    "user_id": null
+                },
+                "entity_id": "input_datetime.heat_time_weekend_night",
+                "last_changed": "2019-03-11T03:01:51.001488+00:00",
+                "last_updated": "2019-03-11T03:01:51.001488+00:00",
+                "state": "00:00:00"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "stibphone2",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "455f607941df40b09961ad4c318eb72c",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.stibphone2",
+                "last_changed": "2019-03-11T03:01:58.711213+00:00",
+                "last_updated": "2019-03-11T03:01:58.711213+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Winter Day Here",
+                    "icon": "mdi:thermometer",
+                    "initial": null,
+                    "max": 25.0,
+                    "min": 12.0,
+                    "mode": "box",
+                    "step": 1.0,
+                    "unit_of_measurement": "\u00baC"
+                },
+                "context": {
+                    "id": "3cbed5d88ace4c3683e5475a2c76a81c",
+                    "user_id": null
+                },
+                "entity_id": "input_number.temp_for_day_with_presence",
+                "last_changed": "2019-03-11T03:01:51.053141+00:00",
+                "last_updated": "2019-03-11T03:01:51.053141+00:00",
+                "state": "17.0"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Send temperatures to MQTT",
+                    "id": "publish_temperatures",
+                    "last_triggered": "2019-03-11T07:32:06.300144+00:00"
+                },
+                "context": {
+                    "id": "d416a2fe8f9e40d9bf73cb1a0508564b",
+                    "user_id": null
+                },
+                "entity_id": "automation.send_temperatures_to_mqtt",
+                "last_changed": "2019-03-11T03:02:17.366272+00:00",
+                "last_updated": "2019-03-11T07:32:06.300937+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Set washing machine finished when power drops (DBG)",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "96f9387d94f44a138c273c3778600e1c",
+                    "user_id": null
+                },
+                "entity_id": "automation.set_washing_machine_finished_when_power_drops_dbg",
+                "last_changed": "2019-03-11T03:02:16.850191+00:00",
+                "last_updated": "2019-03-11T03:02:16.850191+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Samsung-Galaxy-S7",
+                    "source_type": "gps"
+                },
+                "context": {
+                    "id": "a45249bca08845268f70da9e75b96cd3",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.samsunggalaxys7",
+                "last_changed": "2019-03-11T03:01:58.673978+00:00",
+                "last_updated": "2019-03-11T03:01:58.673978+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "2c3033f98241",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "50ca0de5319a4f0595cb6a646247890a",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.2c3033f98241",
+                "last_changed": "2019-03-11T03:01:58.603690+00:00",
+                "last_updated": "2019-03-11T03:01:58.603690+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Remote bathroom confort trigger on",
+                    "last_triggered": "2019-03-11T06:36:46.637630+00:00"
+                },
+                "context": {
+                    "id": "36925791f3764cc283ed1eaa80afb0e1",
+                    "user_id": null
+                },
+                "entity_id": "automation.remote_bathroom_confort_trigger_on",
+                "last_changed": "2019-03-11T03:02:17.335089+00:00",
+                "last_updated": "2019-03-11T06:36:46.638224+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "NAS port 4",
+                    "icon": "mdi:nas",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "948237795b20498d8dd0e3920906e37f",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.nas_4",
+                "last_changed": "2019-03-11T03:01:58.809020+00:00",
+                "last_updated": "2019-03-11T03:01:58.809020+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "--",
+                    "gps_accuracy": 0,
+                    "ip": "192.168.0.21",
+                    "latitude": 43.51694,
+                    "longitude": 1.39355,
+                    "scanner": "NmapDeviceScanner",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "2ebdd8fc32f646b7a405ec6a0b6289a1",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.04a3165c2d87",
+                "last_changed": "2019-03-11T03:01:58.477525+00:00",
+                "last_updated": "2019-03-11T07:32:24.960869+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Day mode (DEBUG)",
+                    "icon": "mdi:oil-temperature",
+                    "options": [
+                        "Not / Applicable",
+                        "Work day",
+                        "Week end"
+                    ]
+                },
+                "context": {
+                    "id": "c33c9f18ad1c4d05b09c3bff4e19cad8",
+                    "user_id": null
+                },
+                "entity_id": "input_select.heat_day_mode",
+                "last_changed": "2019-03-11T03:01:51.041517+00:00",
+                "last_updated": "2019-03-11T03:01:51.041517+00:00",
+                "state": "Week end"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "0073e08a0ffb",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "2849cd0ba8f747f8917b605fbbbf6a73",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.0073e08a0ffb",
+                "last_changed": "2019-03-11T03:01:58.756457+00:00",
+                "last_updated": "2019-03-11T03:01:58.756457+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "64200cad73a3",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "e3f6db2a3ee84167929a71c0d36114af",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.64200cad73a3",
+                "last_changed": "2019-03-11T03:01:58.516092+00:00",
+                "last_updated": "2019-03-11T03:01:58.516092+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Lumiere Gaetan - Minutes",
+                    "icon": "mdi:clock",
+                    "initial": null,
+                    "max": 59.0,
+                    "min": 0.0,
+                    "mode": "slider",
+                    "step": 1.0
+                },
+                "context": {
+                    "id": "ba787337ef2a43f29df375eb8c6f8b92",
+                    "user_id": null
+                },
+                "entity_id": "input_number.gaetan_light_timer_minutes",
+                "last_changed": "2019-03-11T03:01:51.065994+00:00",
+                "last_updated": "2019-03-11T03:01:51.065994+00:00",
+                "state": "0.0"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Update Speedtest",
+                    "last_triggered": "2019-03-10T22:51:07.596271+00:00"
+                },
+                "context": {
+                    "id": "314f25ad2e994876a0fe5eb96c89f813",
+                    "user_id": null
+                },
+                "entity_id": "automation.update_speedtest",
+                "last_changed": "2019-03-11T03:02:17.356615+00:00",
+                "last_updated": "2019-03-11T03:02:17.356615+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Chromecast Ultra",
+                    "gps_accuracy": 0,
+                    "ip": "192.168.0.190",
+                    "latitude": 43.51694,
+                    "longitude": 1.39355,
+                    "scanner": "NmapDeviceScanner",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "27c280fa67da4fc09f24ce5e5012780a",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.chromecast_ultra",
+                "last_changed": "2019-03-11T03:01:58.568825+00:00",
+                "last_updated": "2019-03-11T07:32:24.798573+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "04b16730dcd0",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "fea9a55bcf384d17b1eae7ac9f99eb98",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.04b16730dcd0",
+                "last_changed": "2019-03-11T03:01:58.505977+00:00",
+                "last_updated": "2019-03-11T03:01:58.505977+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Set washing machine finished when power drops",
+                    "last_triggered": "2019-02-16T03:01:17.668434+00:00"
+                },
+                "context": {
+                    "id": "8f8a659732b74d739acf04629d4fc10c",
+                    "user_id": null
+                },
+                "entity_id": "automation.set_washing_machine_finished_when_power_drops",
+                "last_changed": "2019-03-11T03:02:16.830327+00:00",
+                "last_updated": "2019-03-11T03:02:16.830327+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Stop Bathroom Heater Timer",
+                    "last_triggered": "2019-03-11T06:36:48.426692+00:00"
+                },
+                "context": {
+                    "id": "36925791f3764cc283ed1eaa80afb0e1",
+                    "user_id": null
+                },
+                "entity_id": "automation.stop_bathroom_heater_timer",
+                "last_changed": "2019-03-11T03:02:17.324834+00:00",
+                "last_updated": "2019-03-11T06:36:48.428413+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Confort Start Time",
+                    "has_date": false,
+                    "has_time": true,
+                    "hour": 6,
+                    "icon": "mdi:radiator",
+                    "minute": 0,
+                    "second": 0,
+                    "timestamp": 21600
+                },
+                "context": {
+                    "id": "4d6012e9b3aa4e7aa52288cbce2aa4cb",
+                    "user_id": null
+                },
+                "entity_id": "input_datetime.quick_bathroom_confort_time",
+                "last_changed": "2019-03-11T03:01:51.004070+00:00",
+                "last_updated": "2019-03-11T03:01:51.004070+00:00",
+                "state": "06:00:00"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "away_mode": "off",
+                    "current_temperature": 19.7,
+                    "friendly_name": "Bathroom Heater",
+                    "max_temp": 35,
+                    "min_temp": 7,
+                    "operation_list": [
+                        "heat",
+                        "off"
+                    ],
+                    "operation_mode": "off",
+                    "supported_features": 1153,
+                    "temperature": 26.5
+                },
+                "context": {
+                    "id": "4883673ab0d84084b2432eea03247e75",
+                    "user_id": null
+                },
+                "entity_id": "climate.bathroom_heater",
+                "last_changed": "2019-03-11T06:56:45.945510+00:00",
+                "last_updated": "2019-03-11T07:28:31.285470+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Weekday night",
+                    "has_date": false,
+                    "has_time": true,
+                    "hour": 23,
+                    "icon": "mdi:clock-outline",
+                    "minute": 0,
+                    "second": 0,
+                    "timestamp": 82800
+                },
+                "context": {
+                    "id": "456251bf39f44ad380e64cf4c81eafa4",
+                    "user_id": null
+                },
+                "entity_id": "input_datetime.heat_time_weekday_night",
+                "last_changed": "2019-03-11T03:01:50.980576+00:00",
+                "last_updated": "2019-03-11T03:01:50.980576+00:00",
+                "state": "23:00:00"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Set washing machine finished when power drops (DBG)",
+                    "last_triggered": "2018-12-15T04:02:01.202213+00:00"
+                },
+                "context": {
+                    "id": "7f7130c39ff04d119bf15b6527352caf",
+                    "user_id": null
+                },
+                "entity_id": "automation.set_washing_machine_finished_when_power_drops_dbg_2",
+                "last_changed": "2019-03-11T03:02:17.281530+00:00",
+                "last_updated": "2019-03-11T03:02:17.281530+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "--",
+                    "gps_accuracy": 0,
+                    "ip": "192.168.0.115",
+                    "latitude": 43.51694,
+                    "longitude": 1.39355,
+                    "scanner": "NmapDeviceScanner",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "93bd1f040a7b4699be10e412bb354961",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.3871dea32881",
+                "last_changed": "2019-03-11T07:06:20.940978+00:00",
+                "last_updated": "2019-03-11T07:32:24.987664+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "00:0E:C6:A5:BB:39",
+                    "gps_accuracy": 0,
+                    "latitude": 43.51694,
+                    "longitude": 1.39355,
+                    "scanner": "FreeboxDeviceScanner",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "8c4e3ce46c1f41a5b3ed6e06e83df88a",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.000ec6a5bb39",
+                "last_changed": "2019-03-11T03:01:58.525809+00:00",
+                "last_updated": "2019-03-11T07:32:23.470420+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "set_season_winter",
+                    "last_triggered": "2018-12-26T01:18:52.409691+00:00"
+                },
+                "context": {
+                    "id": "1f4891481e6a45c2934b5050e2de355b",
+                    "user_id": null
+                },
+                "entity_id": "automation.set_season_winter",
+                "last_changed": "2019-03-11T03:02:16.789169+00:00",
+                "last_updated": "2019-03-11T03:02:16.789169+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Set washing machine finished when power drops",
+                    "last_triggered": "2019-01-25T03:02:47.108835+00:00"
+                },
+                "context": {
+                    "id": "4f27f57bbb0f42d69e13c667f560aa9e",
+                    "user_id": null
+                },
+                "entity_id": "automation.set_washing_machine_finished_when_power_drops_3",
+                "last_changed": "2019-03-11T03:02:16.921961+00:00",
+                "last_updated": "2019-03-11T03:02:16.921961+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Recycle Container Warning",
+                    "last_triggered": "2019-03-05T18:00:00.848973+00:00"
+                },
+                "context": {
+                    "id": "ae686b25408846dea475a205c4daf561",
+                    "user_id": null
+                },
+                "entity_id": "automation.recycle_container_warning",
+                "last_changed": "2019-03-11T03:02:16.753661+00:00",
+                "last_updated": "2019-03-11T03:02:16.753661+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Winter Before Bed",
+                    "icon": "mdi:thermometer",
+                    "initial": null,
+                    "max": 25.0,
+                    "min": 12.0,
+                    "mode": "box",
+                    "step": 1.0,
+                    "unit_of_measurement": "\u00baC"
+                },
+                "context": {
+                    "id": "fbb2c2ba6ac343329c695339be465ad6",
+                    "user_id": null
+                },
+                "entity_id": "input_number.temp_for_before_bed",
+                "last_changed": "2019-03-11T03:01:51.055362+00:00",
+                "last_updated": "2019-03-11T03:01:51.055362+00:00",
+                "state": "19.0"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Summer",
+                    "icon": "mdi:thermometer",
+                    "initial": null,
+                    "max": 25.0,
+                    "min": 12.0,
+                    "mode": "box",
+                    "step": 1.0,
+                    "unit_of_measurement": "\u00baC"
+                },
+                "context": {
+                    "id": "747879a88fd44e0986f6c97b3f97c5b2",
+                    "user_id": null
+                },
+                "entity_id": "input_number.temp_for_summer",
+                "last_changed": "2019-03-11T03:01:51.048776+00:00",
+                "last_updated": "2019-03-11T03:01:51.048776+00:00",
+                "state": "12.0"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "c8db260643d4",
@@ -2403,38 +1834,608 @@
                     "ip": "192.168.0.53",
                     "latitude": 43.51694,
                     "longitude": 1.39355,
-                    "scanner": "NetgearDeviceScanner",
+                    "scanner": "NmapDeviceScanner",
                     "source_type": "router"
                 },
                 "context": {
-                    "id": "1f247b77f2dd44e8b90f16985d8bdf19",
+                    "id": "21044eff675a4052848577695d6ce652",
                     "user_id": null
                 },
                 "entity_id": "device_tracker.c8db260643d4",
-                "last_changed": "2019-03-10T22:11:20.729683+00:00",
-                "last_updated": "2019-03-10T22:56:38.218029+00:00",
+                "last_changed": "2019-03-11T03:01:58.501497+00:00",
+                "last_updated": "2019-03-11T07:32:24.921196+00:00",
                 "state": "home"
             }
         },
         {
-            "last_seen": "2019-03-10T22:56:41.263916+00:00",
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "B8:27:EB:14:19:70",
+                    "friendly_name": "IPhone de Aur\u00e9lie",
+                    "icon": "mdi:cellphone-iphone",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "eeda105e2e464556965139aff830b4d3",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.aurelie_iphone",
+                "last_changed": "2019-03-11T03:01:58.626073+00:00",
+                "last_updated": "2019-03-11T03:01:58.626073+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "DS-2CD2063G0-I20180720AAWRC36364016",
                     "gps_accuracy": 0,
+                    "ip": "192.168.0.111",
                     "latitude": 43.51694,
                     "longitude": 1.39355,
-                    "scanner": "NetgearDeviceScanner",
+                    "scanner": "NmapDeviceScanner",
                     "source_type": "router"
                 },
                 "context": {
-                    "id": "e4c6c1d5f72848e6bafd757476e551cb",
+                    "id": "ca55176d67d64a768ed67c32934f3b2c",
                     "user_id": null
                 },
-                "entity_id": "device_tracker.b827eb141970",
-                "last_changed": "2019-03-10T22:11:20.443085+00:00",
-                "last_updated": "2019-03-10T22:11:23.604850+00:00",
+                "entity_id": "device_tracker.ds2cd2063g0i20180720aawrc36364016",
+                "last_changed": "2019-03-11T03:01:58.511450+00:00",
+                "last_updated": "2019-03-11T07:32:24.637593+00:00",
                 "state": "home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "pihole (wifi)",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "4437ab326a3a4de2bdff61ef85e45813",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.pihole_wifi",
+                "last_changed": "2019-03-11T03:01:58.767011+00:00",
+                "last_updated": "2019-03-11T03:01:58.767011+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Winter Day Away",
+                    "icon": "mdi:thermometer",
+                    "initial": null,
+                    "max": 25.0,
+                    "min": 12.0,
+                    "mode": "box",
+                    "step": 1.0,
+                    "unit_of_measurement": "\u00baC"
+                },
+                "context": {
+                    "id": "fca4842d43c64278b96ec727f133f4f2",
+                    "user_id": null
+                },
+                "entity_id": "input_number.temp_for_day_absent",
+                "last_changed": "2019-03-11T03:01:51.050980+00:00",
+                "last_updated": "2019-03-11T03:01:51.050980+00:00",
+                "state": "16.0"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Climate Control Mode",
+                    "icon": "mdi:robot",
+                    "options": [
+                        "Not / Applicable",
+                        "Automatic mode change",
+                        "Manual mode change"
+                    ]
+                },
+                "context": {
+                    "id": "96d4c97a23004170be6a85e5993e0720",
+                    "user_id": null
+                },
+                "entity_id": "input_select.auto_main_heat",
+                "last_changed": "2019-03-11T03:01:51.037169+00:00",
+                "last_updated": "2019-03-11T03:01:51.037169+00:00",
+                "state": "Automatic mode change"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Weekday beforebed",
+                    "has_date": false,
+                    "has_time": true,
+                    "hour": 21,
+                    "icon": "mdi:clock-outline",
+                    "minute": 0,
+                    "second": 0,
+                    "timestamp": 75600
+                },
+                "context": {
+                    "id": "10c865ad53aa4b5abd155f66ee5b5b29",
+                    "user_id": null
+                },
+                "entity_id": "input_datetime.heat_time_weekday_beforebed",
+                "last_changed": "2019-03-11T03:01:50.990403+00:00",
+                "last_updated": "2019-03-11T03:01:50.990403+00:00",
+                "state": "21:00:00"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Climate Season",
+                    "icon": "mdi:weather-sunset-up",
+                    "options": [
+                        "Summer or Frost Protection",
+                        "Winter"
+                    ]
+                },
+                "context": {
+                    "id": "044b36f7f2454bf0b5d18c0a845e2734",
+                    "user_id": null
+                },
+                "entity_id": "input_select.climate_season",
+                "last_changed": "2019-03-11T03:01:51.039361+00:00",
+                "last_updated": "2019-03-11T03:01:51.039361+00:00",
+                "state": "Winter"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "Protocol": "tcp",
+                    "Remote Port": 5201,
+                    "Remote Server": "192.168.0.22",
+                    "Version": null,
+                    "attribution": "Data retrieved using Iperf3",
+                    "friendly_name": "Upload 192.168.0.22",
+                    "icon": "mdi:speedometer",
+                    "unit_of_measurement": "Mbit/s"
+                },
+                "context": {
+                    "id": "bbdfab4a1abb45c8b91030babc9a0033",
+                    "user_id": null
+                },
+                "entity_id": "sensor.upload_192_168_0_22",
+                "last_changed": "2019-03-11T03:02:06.129168+00:00",
+                "last_updated": "2019-03-11T03:02:06.129168+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Reset default values",
+                    "last_triggered": "2018-12-14T05:06:29.492157+00:00"
+                },
+                "context": {
+                    "id": "fadaffd2479e47c7881719a47220d3bc",
+                    "user_id": null
+                },
+                "entity_id": "automation.reset_default_values",
+                "last_changed": "2019-03-11T03:02:16.799124+00:00",
+                "last_updated": "2019-03-11T03:02:16.799124+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "set_season_summer",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "731fd7c3bd244b268efd7f68b7efb07e",
+                    "user_id": null
+                },
+                "entity_id": "automation.set_season_summer",
+                "last_changed": "2019-03-11T03:02:16.780860+00:00",
+                "last_updated": "2019-03-11T03:02:16.780860+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Winter Night",
+                    "icon": "mdi:thermometer",
+                    "initial": null,
+                    "max": 25.0,
+                    "min": 12.0,
+                    "mode": "box",
+                    "step": 1.0,
+                    "unit_of_measurement": "\u00baC"
+                },
+                "context": {
+                    "id": "0511feb754074df38b2caac50ec6eaab",
+                    "user_id": null
+                },
+                "entity_id": "input_number.temp_for_night",
+                "last_changed": "2019-03-11T03:01:51.073678+00:00",
+                "last_updated": "2019-03-11T03:01:51.073678+00:00",
+                "state": "18.0"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Galaxy-Tab-A",
+                    "source_type": "gps"
+                },
+                "context": {
+                    "id": "e2b2ad9a1c364ac999b7cbbfc35c8d91",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.galaxytaba",
+                "last_changed": "2019-03-11T03:01:58.650777+00:00",
+                "last_updated": "2019-03-11T03:01:58.650777+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Speedtest Download",
+                    "icon": "mdi:speedometer",
+                    "unit_of_measurement": "Mbit/s"
+                },
+                "context": {
+                    "id": "7436542a7f934dc0b82bd5eaca11dcbf",
+                    "user_id": null
+                },
+                "entity_id": "sensor.speedtest_download",
+                "last_changed": "2019-03-11T07:32:23.254291+00:00",
+                "last_updated": "2019-03-11T07:32:23.254291+00:00",
+                "state": "16.81"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Remote bathroom confort trigger off",
+                    "last_triggered": "2019-03-11T06:56:45.996261+00:00"
+                },
+                "context": {
+                    "id": "9795e17264834457891123a217056f39",
+                    "user_id": null
+                },
+                "entity_id": "automation.remote_bathroom_confort_trigger_off",
+                "last_changed": "2019-03-11T03:02:17.343880+00:00",
+                "last_updated": "2019-03-11T06:56:45.996829+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Waste Container Warning",
+                    "last_triggered": "2019-03-07T18:00:10.033207+00:00"
+                },
+                "context": {
+                    "id": "74980ad1dc2a4e628e70a4d470cf3bf6",
+                    "user_id": null
+                },
+                "entity_id": "automation.waste_container_warning",
+                "last_changed": "2019-03-11T03:02:16.766398+00:00",
+                "last_updated": "2019-03-11T03:02:16.766398+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "PC De Aur\u00e9lie",
+                    "icon": "mdi:laptop",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "b5eb26e9a0d740a0a63ce07f5d1c01ba",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.aure_pc",
+                "last_changed": "2019-03-11T03:01:58.588773+00:00",
+                "last_updated": "2019-03-11T03:01:58.588773+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "can_cancel": false,
+                    "friendly_name": "Update Speedtest",
+                    "icon": "mdi:refresh"
+                },
+                "context": {
+                    "id": "81993d995b624150a41573b8d4cab809",
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.update_speedtest",
+                "last_changed": "2019-03-11T03:01:51.021043+00:00",
+                "last_updated": "2019-03-11T03:01:51.021043+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "RedmiNote5-Redmi",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "1c5f9ff3d5324bb2aeddb2b577c6f215",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.redminote5redmi",
+                "last_changed": "2019-03-11T03:01:58.680203+00:00",
+                "last_updated": "2019-03-11T03:01:58.680203+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "Protocol": "tcp",
+                    "Remote Port": 5201,
+                    "Remote Server": "192.168.0.10",
+                    "Version": null,
+                    "attribution": "Data retrieved using Iperf3",
+                    "friendly_name": "Download 192.168.0.10",
+                    "icon": "mdi:speedometer",
+                    "unit_of_measurement": "Mbit/s"
+                },
+                "context": {
+                    "id": "dfb3d48fcd8c4a37bf7f04a3e2c0902c",
+                    "user_id": null
+                },
+                "entity_id": "sensor.download_192_168_0_10",
+                "last_changed": "2019-03-11T03:02:06.135557+00:00",
+                "last_updated": "2019-03-11T03:02:06.135557+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "Protocol": "tcp",
+                    "Remote Port": 5201,
+                    "Remote Server": "192.168.0.22",
+                    "Version": null,
+                    "attribution": "Data retrieved using Iperf3",
+                    "friendly_name": "Download 192.168.0.22",
+                    "icon": "mdi:speedometer",
+                    "unit_of_measurement": "Mbit/s"
+                },
+                "context": {
+                    "id": "63e61442eb214d3ba4d8011ea7806e92",
+                    "user_id": null
+                },
+                "entity_id": "sensor.download_192_168_0_22",
+                "last_changed": "2019-03-11T03:02:06.141455+00:00",
+                "last_updated": "2019-03-11T03:02:06.141455+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "b827eb30f9ba",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "b24a1686b7ea4dd58ff64a20e7694f77",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.b827eb30f9ba",
+                "last_changed": "2019-03-11T03:01:58.726032+00:00",
+                "last_updated": "2019-03-11T03:01:58.726032+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Weekend day",
+                    "has_date": false,
+                    "has_time": true,
+                    "hour": 9,
+                    "icon": "mdi:clock-outline",
+                    "minute": 0,
+                    "second": 0,
+                    "timestamp": 32400
+                },
+                "context": {
+                    "id": "aa48584dad99407d8a0a65d24a2aad8d",
+                    "user_id": null
+                },
+                "entity_id": "input_datetime.heat_time_weekend_day",
+                "last_changed": "2019-03-11T03:01:50.995113+00:00",
+                "last_updated": "2019-03-11T03:01:50.995113+00:00",
+                "state": "09:00:00"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "--",
+                    "gps_accuracy": 0,
+                    "ip": "192.168.0.139",
+                    "latitude": 43.51694,
+                    "longitude": 1.39355,
+                    "scanner": "NmapDeviceScanner",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "61e4020aade04930892af0754d8b817a",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.20c9d0b3cf45",
+                "last_changed": "2019-03-11T07:01:39.803705+00:00",
+                "last_updated": "2019-03-11T07:32:25.068792+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "--",
+                    "source_type": null
+                },
+                "context": {
+                    "id": "4d69b21ce58e47988f6bb0a58de6e7c1",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.b827ebf505ee",
+                "last_changed": "2019-03-11T03:01:58.584104+00:00",
+                "last_updated": "2019-03-11T03:01:58.584104+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "2c3033f98242",
+                    "gps_accuracy": 0,
+                    "ip": "192.168.0.7",
+                    "latitude": 43.51694,
+                    "longitude": 1.39355,
+                    "scanner": "NmapDeviceScanner",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "a9080ef57832478db46fa02be5b497f3",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.2c3033f98242",
+                "last_changed": "2019-03-11T03:01:58.536297+00:00",
+                "last_updated": "2019-03-11T07:32:24.222580+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "--",
+                    "source_type": "router"
+                },
+                "context": {
+                    "id": "362ebc8b10b84a50a8a266f0db9abaa9",
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.0024d47d79e3",
+                "last_changed": "2019-03-11T03:01:58.814602+00:00",
+                "last_updated": "2019-03-11T03:01:58.814602+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "DBG: Washing machine"
+                },
+                "context": {
+                    "id": "cdeafaa754c940ae9d0e203af51bf136",
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.dbg_washing_machine",
+                "last_changed": "2019-03-11T03:01:51.015999+00:00",
+                "last_updated": "2019-03-11T03:01:51.015999+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Weekday morning",
+                    "has_date": false,
+                    "has_time": true,
+                    "hour": 5,
+                    "icon": "mdi:clock-outline",
+                    "minute": 0,
+                    "second": 0,
+                    "timestamp": 18000
+                },
+                "context": {
+                    "id": "4f556380fdfe4b018e8a3d2837359cfd",
+                    "user_id": null
+                },
+                "entity_id": "input_datetime.heat_time_weekday_morning",
+                "last_changed": "2019-03-11T03:01:51.011659+00:00",
+                "last_updated": "2019-03-11T03:01:51.011659+00:00",
+                "state": "05:00:00"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Send alert when washing machine is clean",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "92373c01882c45e7bb0f13dc2231ddb5",
+                    "user_id": null
+                },
+                "entity_id": "automation.send_alert_when_washing_machine_is_clean",
+                "last_changed": "2019-03-11T03:02:17.295280+00:00",
+                "last_updated": "2019-03-11T03:02:17.295280+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-03-11T07:32:28.009434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Weekend evening",
+                    "has_date": false,
+                    "has_time": true,
+                    "hour": 17,
+                    "icon": "mdi:clock-outline",
+                    "minute": 0,
+                    "second": 0,
+                    "timestamp": 61200
+                },
+                "context": {
+                    "id": "82de785f353e4d128417890a3fdd596b",
+                    "user_id": null
+                },
+                "entity_id": "input_datetime.heat_time_weekend_evening",
+                "last_changed": "2019-03-11T03:01:50.977726+00:00",
+                "last_updated": "2019-03-11T03:01:50.977726+00:00",
+                "state": "17:00:00"
             }
         }
     ],
