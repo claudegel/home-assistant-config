@@ -85,6 +85,7 @@ switch:
 shell_command:
   upgrade_hass: /home/pi/homeassistant/update.sh
   quick_restart: /home/pi/homeassistant/restart-daemon.sh
+  halt_system: /home/pi/homeassistant/halt-system.sh
 
 
 script:
@@ -94,37 +95,35 @@ script:
     alias: 'Upgrade HA and Restart'
     sequence:
       - delay: 00:00:02
+      - service: notify.pushover
+        data:
+          message: 'Upgrading Home Assistant'
+          title: 'Home Assistant is about to be upgraded to the latest version'
+      - delay: 00:00:05
       - service: shell_command.upgrade_hass
 
   quick_restart:
     alias: 'Restart Homeassistant'
     sequence:
       - delay: 00:00:02
+      - service: notify.pushover
+        data:
+          message: 'Restarting Home Assistant'
+          title: 'Home Assistant is about to be restarted'
+      - delay: 00:00:05
       - service: shell_command.quick_restart
+      
+  halting_system:
+    alias: 'Halint System'
+    sequence:
+      - delay: 00:00:02
+      - service: notify.pushover
+        data:
+          message: 'Up Home Assistant'
+          title: 'Home Assistant is about to be powered off'
+      - delay: 00:00:05
+      - service: shell_command.halt_system
 
-
-homeassistant:
-  customize:
-    group.all_automations:
-      hidden: false
-    sensor.ha_installed_version:
-      friendly_name: "Installed version"
-    sensor.ha_available_version:
-      friendly_name: "Available version"
-    sensor.ha_uptime:
-      friendly_name: "Domot Server Uptime"
-    sensor.hass_homeassistantlog:
-      friendly_name: "Log size"
-    sensor.hass_recordersqlite:
-      friendly_name: "DB size"
-    script.upgrade_hass:
-      icon: mdi:cloud-check
-      can_cancel: false
-      custom_text: "Upgrade HA and Restart"
-    script.quick_restart:
-      icon: mdi:server-network
-      can_cancel: false
-      custom_text: "Restart Homeassistant"
 
 automation:
   - alias: SRT321 Battery Notifications
@@ -145,6 +144,44 @@ automation:
             SRT321 has low level:
             {{ states("sensor.thermostat_transmitter_battery_level") }} %
           notification_id: srt321-low-battery-alert
+
+  - alias: "Startup Notification"
+    trigger:
+      platform: event
+      event_type: homeassistant_start
+    action:
+      service: notify.pushover
+      data:
+        title: "Home Assistant ready"
+        message: "Home Assistant has been restarted and is now ready."
+
+
+homeassistant:
+  customize:
+    group.all_automations:
+      hidden: false
+    sensor.ha_installed_version:
+      friendly_name: "Installed version"
+    sensor.ha_available_version:
+      friendly_name: "Available version"
+    sensor.ha_uptime:
+      friendly_name: "Domot Server Uptime"
+    sensor.hass_homeassistantlog:
+      friendly_name: "Log size"
+    sensor.hass_recordersqlite:
+      friendly_name: "DB size"
+    script.upgrade_hass:
+      icon: mdi:cloud-check
+      can_cancel: true
+      custom_text: "Upgrade HA and Restart"
+    script.quick_restart:
+      icon: mdi:server-network
+      can_cancel: true
+      custom_text: "Restart Homeassistant"
+    script.halt_system:
+      icon: mdi:power_off
+      can_cancel: true
+      custom_text: "Halt System"
 
 
 group:

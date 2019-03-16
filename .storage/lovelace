@@ -168,58 +168,163 @@
                     "badges": [],
                     "cards": [
                         {
-                            "entities": [
+                            "cards": [
                                 {
-                                    "entity": "sensor.rfxcom_bathroom_temperature"
+                                    "entities": [
+                                        "input_select.climate_season",
+                                        "input_select.main_heat_mode",
+                                        "input_select.auto_main_heat",
+                                        "input_select.heat_day_mode"
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Climate Control Config",
+                                    "type": "entities"
                                 },
                                 {
-                                    "entity": "sensor.rfxcom_friend_room_temperature"
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.rfxcom_outside_temperature",
+                                            "name": "Outside"
+                                        },
+                                        {
+                                            "entity": "sensor.rfxcom_parents_room_temperature",
+                                            "name": "Parental Room"
+                                        },
+                                        {
+                                            "entity": "sensor.rfxcom_living_room_temperature",
+                                            "name": "Living Room"
+                                        },
+                                        {
+                                            "entity": "sensor.rfxcom_bathroom_temperature",
+                                            "name": "Bathroom"
+                                        },
+                                        {
+                                            "entity": "sensor.rfxcom_friend_room_temperature",
+                                            "name": "Child"
+                                        },
+                                        {
+                                            "entity": "sensor.rfxcom_garage_temperature",
+                                            "name": "Garage"
+                                        },
+                                        {
+                                            "entity": "sensor.rfxcom_kitchen_temperature",
+                                            "name": "Kitchen"
+                                        },
+                                        {
+                                            "entity": "sensor.rfxcom_office_temperature",
+                                            "name": "Office"
+                                        }
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Temperatures",
+                                    "type": "glance"
                                 },
                                 {
-                                    "entity": "sensor.rfxcom_garage_temperature"
-                                },
-                                {
-                                    "entity": "sensor.rfxcom_kitchen_temperature"
-                                },
-                                {
-                                    "entity": "sensor.rfxcom_living_room_temperature"
-                                },
-                                {
-                                    "entity": "sensor.rfxcom_office_temperature"
-                                },
-                                {
-                                    "entity": "sensor.rfxcom_outside_temperature"
-                                },
-                                {
-                                    "entity": "sensor.rfxcom_parents_room_temperature"
+                                    "entities": [
+                                        {
+                                            "entity": "climate.thermostat_transmitter_heating",
+                                            "name": "Main Thermostat"
+                                        },
+                                        {
+                                            "entity": "switch.boiler_actuator_receiver_switch",
+                                            "name": "Boiler"
+                                        }
+                                    ],
+                                    "title": null,
+                                    "type": "entities"
                                 }
                             ],
-                            "show_header_toggle": false,
-                            "title": "Home Temperatures",
-                            "type": "entities"
+                            "type": "vertical-stack"
                         },
                         {
-                            "entities": [
-                                "switch.boiler_actuator_receiver_switch"
+                            "cards": [
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "switch.rfxcom_bathroom_heater_remote",
+                                            "name": "Force Heat"
+                                        }
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Bathroom Heater",
+                                    "type": "glance"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "input_boolean.schedule_morning_bathroom_confort",
+                                            "name": "Enable schedule"
+                                        },
+                                        "input_datetime.quick_bathroom_confort_time"
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Bathroom Heater Shedule",
+                                    "type": "glance"
+                                },
+                                {
+                                    "entities": [
+                                        "switch.bathroom_heater_wall_plug",
+                                        {
+                                            "entity": "climate.bathroom_heater",
+                                            "type": "thermostat"
+                                        }
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Bathroom Heater Settings",
+                                    "type": "entities"
+                                }
                             ],
-                            "show_header_toggle": true,
-                            "title": "Climate Management",
-                            "type": "entities"
+                            "type": "vertical-stack"
                         },
                         {
-                            "entity": "climate.thermostat_transmitter_heating",
-                            "type": "thermostat"
-                        },
-                        {
-                            "entities": [
-                                "input_select.climate_season",
-                                "input_select.main_heat_mode",
-                                "input_select.auto_main_heat",
-                                "input_select.heat_day_mode"
+                            "cards": [
+                                {
+                                    "entities": [
+                                        "sensor.rfxcom_kitchen_humidity",
+                                        "sensor.rfxcom_parents_room_humidity"
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Home Humidity",
+                                    "type": "entities"
+                                },
+                                {
+                                    "entities": [
+                                        "sensor.rfxcom_cigare_cave_temperature",
+                                        "sensor.rfxcom_cigare_cave_humidity"
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Cigare Cave",
+                                    "type": "entities"
+                                },
+                                {
+                                    "entities": [
+                                        "sensor.rfxcom_home_energy_usage",
+                                        "sensor.cabinet_smart_plug_power",
+                                        "sensor.washing_machine_smart_plug_power_2",
+                                        "sensor.home_cinema_smart_plug_power",
+                                        "sensor.dark_blue_smart_plug_power",
+                                        "sensor.bathroom_heater_wall_plug_power",
+                                        "switch.dark_blue_smart_plug"
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Home Power Meters",
+                                    "type": "entities"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.washing_machine_status"
+                                        },
+                                        {
+                                            "entity": "sensor.washing_machine_energy_each_2_min"
+                                        }
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Washing Machine",
+                                    "type": "entities"
+                                }
                             ],
-                            "show_header_toggle": false,
-                            "title": "Climate Control Config",
-                            "type": "entities"
+                            "type": "vertical-stack"
                         },
                         {
                             "entities": [
@@ -245,76 +350,6 @@
                             ],
                             "show_header_toggle": false,
                             "title": "Climate Tuning",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                "sensor.rfxcom_kitchen_humidity",
-                                "sensor.rfxcom_parents_room_humidity"
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Home Humidity",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                "sensor.rfxcom_cigare_cave_temperature",
-                                "sensor.rfxcom_cigare_cave_humidity"
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Cigare Cave",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                "sensor.rfxcom_home_energy_usage",
-                                "sensor.cabinet_smart_plug_power",
-                                "sensor.washing_machine_smart_plug_power_2",
-                                "sensor.home_cinema_smart_plug_power",
-                                "sensor.dark_blue_smart_plug_power",
-                                "sensor.bathroom_heater_wall_plug_power",
-                                "switch.dark_blue_smart_plug"
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Home Power Meters",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                "sensor.washing_machine_status"
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Washing Machine",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                "sensor.washing_machine_energy_each_2_min"
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Washing Machine (DBG)",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                "switch.rfxcom_bathroom_heater_remote",
-                                "switch.bathroom_heater_wall_plug"
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Bathroom Heater Config",
-                            "type": "entities"
-                        },
-                        {
-                            "entity": "climate.bathroom_heater",
-                            "type": "thermostat"
-                        },
-                        {
-                            "entities": [
-                                "input_boolean.schedule_morning_bathroom_confort",
-                                "input_datetime.quick_bathroom_confort_time"
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Bath Heater Shedule",
                             "type": "entities"
                         }
                     ],
@@ -346,10 +381,6 @@
                         },
                         {
                             "entity": "media_player.emby_kodi_osmc",
-                            "type": "media-control"
-                        },
-                        {
-                            "entity": "media_player.kodi",
                             "type": "media-control"
                         },
                         {
@@ -800,6 +831,9 @@
                                 },
                                 {
                                     "entity": "script.quick_restart"
+                                },
+                                {
+                                    "entity": "script.halting_system"
                                 }
                             ],
                             "show_header_toggle": false,

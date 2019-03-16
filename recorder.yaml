@@ -59,4 +59,6 @@ include:
     - sensor.washing_machine_status
     - switch.boiler_actuator_receiver
     - switch.rfxcom_bathroom_heater_remote
-
+    - sensor.speedtest_download
+    - sensor.speedtest_ping
+    - sensor.speedtest_upload
