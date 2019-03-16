@@ -242,7 +242,11 @@
                                     "entities": [
                                         {
                                             "entity": "switch.rfxcom_bathroom_heater_remote",
-                                            "name": "Force Heat"
+                                            "name": "Trigger Heat"
+                                        },
+                                        {
+                                            "entity": "climate.bathroom_heater",
+                                            "name": "Set thermostat"
                                         }
                                     ],
                                     "show_header_toggle": false,
@@ -252,21 +256,16 @@
                                 {
                                     "entities": [
                                         {
+                                            "entity": "switch.bathroom_heater_wall_plug",
+                                            "name": "Wall plug state"
+                                        },
+                                        {
                                             "entity": "input_boolean.schedule_morning_bathroom_confort",
                                             "name": "Enable schedule"
                                         },
-                                        "input_datetime.quick_bathroom_confort_time"
-                                    ],
-                                    "show_header_toggle": false,
-                                    "title": "Bathroom Heater Shedule",
-                                    "type": "glance"
-                                },
-                                {
-                                    "entities": [
-                                        "switch.bathroom_heater_wall_plug",
                                         {
-                                            "entity": "climate.bathroom_heater",
-                                            "type": "thermostat"
+                                            "entity": "input_datetime.quick_bathroom_confort_time",
+                                            "name": "Set schedule"
                                         }
                                     ],
                                     "show_header_toggle": false,
@@ -280,31 +279,60 @@
                             "cards": [
                                 {
                                     "entities": [
-                                        "sensor.rfxcom_kitchen_humidity",
-                                        "sensor.rfxcom_parents_room_humidity"
+                                        {
+                                            "entity": "sensor.rfxcom_kitchen_humidity",
+                                            "name": "Kitchen"
+                                        },
+                                        {
+                                            "entity": "sensor.rfxcom_parents_room_humidity",
+                                            "name": "Parents room"
+                                        }
                                     ],
                                     "show_header_toggle": false,
                                     "title": "Home Humidity",
-                                    "type": "entities"
+                                    "type": "glance"
                                 },
                                 {
                                     "entities": [
-                                        "sensor.rfxcom_cigare_cave_temperature",
-                                        "sensor.rfxcom_cigare_cave_humidity"
+                                        {
+                                            "entity": "sensor.rfxcom_cigare_cave_temperature",
+                                            "name": "Temperature"
+                                        },
+                                        {
+                                            "entity": "sensor.rfxcom_cigare_cave_humidity",
+                                            "name": "Humidity"
+                                        }
                                     ],
                                     "show_header_toggle": false,
                                     "title": "Cigare Cave",
-                                    "type": "entities"
+                                    "type": "glance"
                                 },
                                 {
                                     "entities": [
-                                        "sensor.rfxcom_home_energy_usage",
-                                        "sensor.cabinet_smart_plug_power",
-                                        "sensor.washing_machine_smart_plug_power_2",
-                                        "sensor.home_cinema_smart_plug_power",
-                                        "sensor.dark_blue_smart_plug_power",
-                                        "sensor.bathroom_heater_wall_plug_power",
-                                        "switch.dark_blue_smart_plug"
+                                        {
+                                            "entity": "sensor.rfxcom_home_energy_usage",
+                                            "name": "Home"
+                                        },
+                                        {
+                                            "entity": "sensor.cabinet_smart_plug_power",
+                                            "name": "Cabinet"
+                                        },
+                                        {
+                                            "entity": "sensor.washing_machine_smart_plug_power_2",
+                                            "name": "Washing Machine"
+                                        },
+                                        {
+                                            "entity": "sensor.home_cinema_smart_plug_power",
+                                            "name": "Home Cinema"
+                                        },
+                                        {
+                                            "entity": "sensor.bathroom_heater_wall_plug_power",
+                                            "name": "Bathroom Heater"
+                                        },
+                                        {
+                                            "entity": "sensor.dark_blue_smart_plug_power",
+                                            "name": "Dark blue Wall Plug"
+                                        }
                                     ],
                                     "show_header_toggle": false,
                                     "title": "Home Power Meters",
@@ -313,10 +341,16 @@
                                 {
                                     "entities": [
                                         {
-                                            "entity": "sensor.washing_machine_status"
+                                            "entity": "sensor.washing_machine_status",
+                                            "name": "Status"
                                         },
                                         {
-                                            "entity": "sensor.washing_machine_energy_each_2_min"
+                                            "entity": "sensor.washing_machine_smart_plug_power_2",
+                                            "name": "Current power"
+                                        },
+                                        {
+                                            "entity": "sensor.washing_machine_energy_each_2_min",
+                                            "name": "Current power (2 min avg)"
                                         }
                                     ],
                                     "show_header_toggle": false,

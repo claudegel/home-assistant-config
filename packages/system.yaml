@@ -114,12 +114,12 @@ script:
       - service: shell_command.quick_restart
       
   halt_system:
-    alias: 'Halting System'
+    alias: 'Halt System'
     sequence:
       - delay: 00:00:02
       - service: notify.pushover
         data:
-          message: 'Up Home Assistant'
+          message: 'Halting Home Assistant'
           title: 'Home Assistant is about to be powered off'
       - delay: 00:00:05
       - service: shell_command.halt_system
@@ -154,7 +154,7 @@ automation:
     action:
       - service: notify.pushover
         data:
-          title: "Home Assistant ready"
+          title: "Home Assistant started"
           message: "Home Assistant has been restarted and is now ready."
 
 
