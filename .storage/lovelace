@@ -986,6 +986,37 @@
                             "show_state": true,
                             "title": "All",
                             "type": "glance"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "device_tracker.epsond373aa",
+                                    "name": "ET-7750"
+                                },
+                                {
+                                    "entity": "sensor.epson_et_7750_ink_level_black",
+                                    "name": "Black level"
+                                },
+                                {
+                                    "entity": "sensor.epson_et_7750_ink_level_cyan",
+                                    "name": "Cyan level"
+                                },
+                                {
+                                    "entity": "sensor.epson_et_7750_ink_level_magenta",
+                                    "name": "Magenta level"
+                                },
+                                {
+                                    "entity": "sensor.epson_et_7750_ink_level_yellow",
+                                    "name": "Yellow level"
+                                },
+                                {
+                                    "entity": "sensor.epson_et_7750_ink_level_photo_black",
+                                    "name": "Photo Black level"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "ET-770",
+                            "type": "entities"
                         }
                     ],
                     "icon": "mdi:settings",

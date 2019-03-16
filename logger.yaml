@@ -1,8 +1,24 @@
 default: warning 
 logs:
-  openzwave: ERROR
-  libopenzwave: ERROR
-  # homeassistant.components.device_tracker: critical
-  # homeassistant.components.camera: critical
-  homeassistant.components.climate.smart_thermostat: DEBUG
-  homeassistant.components.zwave: INFO
+  aiohttp.access: critical
+  aiohttp.server: critical
+  openzwave: info
+  libopenzwave: info
+  homeassistant.core: error
+  homeassistant.components.automation: warn
+  homeassistant.components.binary_sensor: error
+  homeassistant.components.climate.nest: warn
+  homeassistant.components.device_tracker: error
+  homeassistant.components.discovery: warn
+  homeassistant.components.feedreader: warn
+  homeassistant.components.http: warn
+  homeassistant.components.media_player: info
+  homeassistant.components.sensor.pi_hole: critical
+  homeassistant.components.sensor.rest: critical
+  homeassistant.components.recorder: error
+  homeassistant.components.sensor.darksky: warn
+  homeassistant.components.zwave: warn
+  homeassistant.helpers.script: info
+  homeassistant.helpers.entity: critical
+#   homeassistant.components.climate.smart_thermostat: DEBUG
+  homeassistant.components.zwave: info
