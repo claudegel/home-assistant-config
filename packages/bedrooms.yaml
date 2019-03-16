@@ -24,6 +24,7 @@ input_number:
 
 automation:
   - id: shed_aurelie_light_timer
+    initial_state: 'on'
     alias: Shed Aurelie light timer
     hide_entity: False
     trigger:

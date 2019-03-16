@@ -133,6 +133,7 @@ automation:
 
   # Set the bathroom heater to awake at 4am every morning
   - alias: 'Scheduled Bathroom Confort'
+    initial_state: 'on'
     trigger:
       platform: template
       value_template: "{{ states('sensor.time') == (states.input_datetime.quick_bathroom_confort_time.attributes.timestamp | int | timestamp_custom('%H:%M', False)) }}"
@@ -149,6 +150,7 @@ automation:
   # can only be turned off, and then it won't be triggered anymore
   # name: automation.stop_bathroom_heater_timer
   - alias: 'Stop Bathroom Heater Timer'
+    initial_state: 'on'
     trigger:
       platform: state
       entity_id: climate.bathroom_heater
@@ -177,6 +179,7 @@ automation:
       #     entity_id: script.turn_off_bedroom_light
   
   - alias: "Remote bathroom confort trigger on"
+    initial_state: 'on'
     trigger:
       platform: state
       entity_id: switch.rfxcom_bathroom_heater_remote
@@ -185,6 +188,7 @@ automation:
       - service: script.set_bathroom_confortable
 
   - alias: "Remote bathroom confort trigger off"
+    initial_state: 'on'
     trigger:
       platform: state
       entity_id: switch.rfxcom_bathroom_heater_remote

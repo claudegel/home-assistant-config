@@ -92,7 +92,7 @@ script:
   # Inspirated by:
   #  https://github.com/mf-social/Home-Assistant/blob/master/packages/system/maintenance.yaml
   upgrade_hass:
-    alias: 'Upgrade HA and Restart'
+    alias: 'Upgrade Home Assistant'
     sequence:
       - delay: 00:00:02
       - service: notify.pushover
@@ -127,6 +127,7 @@ script:
 
 automation:
   - alias: SRT321 Battery Notifications
+    initial_state: 'on'
     trigger:
       - platform: numeric_state
         entity_id: sensor.thermostat_transmitter_battery_level
@@ -146,14 +147,15 @@ automation:
           notification_id: srt321-low-battery-alert
 
   - alias: "Startup Notification"
+    initial_state: 'on'
     trigger:
-      platform: event
-      event_type: homeassistant_start
+      - platform: homeassistant
+        event: start
     action:
-      service: notify.pushover
-      data:
-        title: "Home Assistant ready"
-        message: "Home Assistant has been restarted and is now ready."
+      - service: notify.pushover
+        data:
+          title: "Home Assistant ready"
+          message: "Home Assistant has been restarted and is now ready."
 
 
 homeassistant:
@@ -173,15 +175,15 @@ homeassistant:
     script.upgrade_hass:
       icon: mdi:cloud-check
       can_cancel: true
-      custom_text: "Upgrade HA and Restart"
+      custom_text: "Upgrade Home Assistant"
     script.quick_restart:
       icon: mdi:server-network
       can_cancel: true
-      custom_text: "Restart Homeassistant"
+      custom_text: "Restart Home Assistant"
     script.halt_system:
-      icon: mdi:power_off
+      icon: mdi:power-off
       can_cancel: true
-      custom_text: "Halting System"
+      custom_text: "Halt System"
 
 
 group:

@@ -41,6 +41,7 @@ input_boolean:
 
 automation:
   - alias: "dbg_washing_machine_show"
+    initial_state: 'on'
     trigger:
       - platform: state
         entity_id: input_boolean.dbg_washing_machine
@@ -52,6 +53,7 @@ automation:
           visible: true
 
   - alias: "dbg_washing_machine_hide"
+    initial_state: 'on'
     trigger:
       - platform: state
         entity_id: input_boolean.dbg_washing_machine
@@ -64,6 +66,7 @@ automation:
 
   # When the power is very low or null, reset it to Stopped
   - alias: Set washing machine finished when power drops
+    initial_state: 'on'
     trigger:
       - platform: numeric_state
         # entity_id: sensor.washing_machine_power
@@ -78,6 +81,7 @@ automation:
   # When the power is not null but not too high, it is probably the
   # idle time. Set it to Idle
   - alias: Set washing machine finished when power drops
+    initial_state: 'on'
     trigger:
       - platform: numeric_state
         entity_id: sensor.washing_machine_energy_each_2_min
@@ -94,6 +98,7 @@ automation:
           option: Idle
 
   - alias: Set washing machine finished when power drops (DBG)
+    initial_state: 'on'
     trigger:
       - platform: numeric_state
         entity_id: sensor.washing_machine_energy_each_2_min
@@ -116,6 +121,7 @@ automation:
 
 
   - alias: Set washing machine active when power detected
+    initial_state: 'on'
     trigger:
       - platform: numeric_state
         # entity_id: sensor.washing_machine_power
@@ -143,6 +149,7 @@ automation:
           option: Running
 
   - alias: Set washing machine active when power detected (DBG)
+    initial_state: 'on'
     trigger:
       - platform: numeric_state
         # entity_id: sensor.washing_machine_power
@@ -176,6 +183,7 @@ automation:
 
   # When the power drops, move the state of the washing machine to Clean.
   - alias: Set washing machine finished when power drops
+    initial_state: 'on'
     trigger:
       - platform: numeric_state
         # entity_id: sensor.washing_machine_power
@@ -193,6 +201,7 @@ automation:
           option: Finished
 
   - alias: Set washing machine finished when power drops (DBG)
+    initial_state: 'on'
     trigger:
       - platform: numeric_state
         # entity_id: sensor.washing_machine_power
@@ -212,6 +221,7 @@ automation:
           title: 'Washing Machine Update'
 
   - alias: Send alert when washing machine is clean
+    initial_state: 'on'
     trigger:
       - platform: state
         entity_id: input_select.washing_machine_status

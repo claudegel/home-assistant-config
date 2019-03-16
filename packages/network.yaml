@@ -176,6 +176,7 @@ input_boolean:
 
 automation:
   - alias: 'Update Speedtest'
+    initial_state: 'on'
     trigger:
       - platform: state
         entity_id: input_boolean.update_speedtest

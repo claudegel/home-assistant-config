@@ -2,7 +2,6 @@
 
 sun:
 
-
 sensor:
   - platform: time_date
     display_options:
@@ -13,11 +12,9 @@ sensor:
   - platform: season
     type: meteorological
 
-
 binary_sensor:
   - platform: workday
     country: FRA
-
 
 group:
   date:

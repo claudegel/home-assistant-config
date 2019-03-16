@@ -221,6 +221,7 @@ input_datetime:
 automation:
 
   - alias: set_season_summer
+    initial_state: 'on'
     trigger:
       platform: state
       entity_id: input_select.climate_season
@@ -241,6 +242,7 @@ automation:
 
 
   - alias: set_season_winter
+    initial_state: 'on'
     trigger:
       platform: state
       entity_id: input_select.climate_season
@@ -260,6 +262,7 @@ automation:
           option: "Work day"
 
   - alias: 'Reset default values'
+    initial_state: 'on'
     trigger:
       - platform: state
         entity_id: input_boolean.reset_climate_values

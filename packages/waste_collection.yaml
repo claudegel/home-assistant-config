@@ -1,5 +1,6 @@
 automation:
   - alias: Recycle Container Warning
+    initial_state: 'on'
     trigger:
       platform: time
       at: '19:00:00'
@@ -16,6 +17,7 @@ automation:
 
 
   - alias: Waste Container Warning
+    initial_state: 'on'
     trigger:
       platform: time
       at: '19:00:00'

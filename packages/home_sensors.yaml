@@ -1,6 +1,7 @@
 automation:
 
   - id: "publish_temperatures"
+    initial_state: 'off'
     alias: 'Send temperatures to MQTT'
     trigger:
        - platform: state
@@ -26,6 +27,7 @@ automation:
             {{ states(trigger.entity_id) }}
 
   - id: "publish_humidity"
+    initial_state: 'off'
     alias: 'Send humidity to MQTT'
     trigger:
        - platform: state

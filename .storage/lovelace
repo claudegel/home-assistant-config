@@ -812,22 +812,22 @@
                         {
                             "entities": [
                                 {
+                                    "entity": "sensor.ha_uptime"
+                                },
+                                {
                                     "entity": "sensor.ha_installed_version"
                                 },
                                 {
                                     "entity": "sensor.ha_available_version"
                                 },
                                 {
-                                    "entity": "sensor.ha_uptime"
+                                    "entity": "script.upgrade_hass"
                                 },
                                 {
                                     "entity": "sensor.hass_home_assistant_log"
                                 },
                                 {
                                     "entity": "sensor.hass_recorder_sqlite"
-                                },
-                                {
-                                    "entity": "script.upgrade_hass"
                                 },
                                 {
                                     "entity": "script.quick_restart"
@@ -931,58 +931,27 @@
                         },
                         {
                             "entities": [
-                                "automation.recycle_container_warning",
-                                "automation.remote_bathroom_confort_trigger_off",
-                                "automation.remote_bathroom_confort_trigger_on",
-                                "automation.reset_default_values",
-                                "automation.srt321_battery_notifications",
-                                "automation.scheduled_bathroom_confort",
-                                "automation.send_alert_when_washing_machine_is_clean",
-                                "automation.send_humidity_to_mqtt",
-                                "automation.send_temperatures_to_mqtt",
-                                "automation.set_washing_machine_active_when_power_detected",
-                                "automation.set_washing_machine_active_when_power_detected_dbg",
-                                "automation.set_washing_machine_finished_when_power_drops_2",
-                                "automation.set_washing_machine_finished_when_power_drops",
-                                "automation.set_washing_machine_finished_when_power_drops_3",
-                                "automation.set_washing_machine_finished_when_power_drops_dbg",
-                                "automation.set_washing_machine_finished_when_power_drops_dbg_2",
-                                "automation.shed_aurelie_light_timer",
-                                "automation.stop_bathroom_heater_timer",
-                                "automation.update_available_notifications",
-                                "automation.update_speedtest",
-                                "automation.waste_container_warning",
-                                "automation.dbg_washing_machine_hide",
-                                "automation.dbg_washing_machine_show",
-                                "automation.set_season_summer",
-                                "automation.set_season_winter"
-                            ],
-                            "show_header_toggle": true,
-                            "title": "all automations",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
                                 {
-                                    "entity": "switch.rfxcom_bathroom_heater_remote"
+                                    "entity": "group.all_scripts",
+                                    "name": "Scripts"
                                 },
                                 {
-                                    "entity": "group.all_switches"
-                                }
-                            ],
-                            "show_header_toggle": true,
-                            "title": "Switches",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
+                                    "entity": "group.all_lights",
+                                    "name": "Lights"
+                                },
                                 {
-                                    "entity": "group.all_scripts"
+                                    "entity": "group.all_automations",
+                                    "name": "Automations"
+                                },
+                                {
+                                    "entity": "group.all_devices",
+                                    "name": "Devices"
                                 }
                             ],
-                            "show_header_toggle": false,
-                            "title": "Scripts",
-                            "type": "entities"
+                            "show_name": true,
+                            "show_state": true,
+                            "title": "All",
+                            "type": "glance"
                         }
                     ],
                     "icon": "mdi:settings",
