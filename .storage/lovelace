@@ -833,7 +833,7 @@
                                     "entity": "script.quick_restart"
                                 },
                                 {
-                                    "entity": "script.halting_system"
+                                    "entity": "script.halt_system"
                                 }
                             ],
                             "show_header_toggle": false,
@@ -980,6 +980,7 @@
                                     "entity": "group.all_scripts"
                                 }
                             ],
+                            "show_header_toggle": false,
                             "title": "Scripts",
                             "type": "entities"
                         }

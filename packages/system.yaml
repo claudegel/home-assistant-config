@@ -113,8 +113,8 @@ script:
       - delay: 00:00:05
       - service: shell_command.quick_restart
       
-  halting_system:
-    alias: 'Halint System'
+  halt_system:
+    alias: 'Halting System'
     sequence:
       - delay: 00:00:02
       - service: notify.pushover
@@ -181,7 +181,7 @@ homeassistant:
     script.halt_system:
       icon: mdi:power_off
       can_cancel: true
-      custom_text: "Halt System"
+      custom_text: "Halting System"
 
 
 group:
