@@ -3,13 +3,8 @@
 # Original Repo : https://github.com/CCOSTAN/Home-AssistantConfig
 # inspired by https://community.home-assistant.io/t/epson-wf-3540-ink-level-monitoring/21813
 #-------------------------------------------
-homeassistant:
-  customize_glob:
-    "sensor.epson_ink_level_*":
-      icon: mdi:cup-water
-      
-      hidden: False
-      homebridge_hidden: True
+
+
 #-------------------------------------------
 sensor:
   - platform: command_line
@@ -41,6 +36,7 @@ sensor:
     command: /usr/bin/curl -X GET http://192.168.0.61/PRESENTATION/HTML/TOP/PRTINFO.HTML  | awk -F"'" '/Ink_K.PNG/ {i++}i==2 && $6+0 == $6 { printf "%.0f\n", $6 / 50 * 100; exit }'
     unit_of_measurement: '%'
     scan_interval: 14400
+
 #-------------------------------------------
 group:
   epson_printer:
@@ -52,22 +48,30 @@ group:
       - sensor.epson_et_7750_ink_level_magenta
       - sensor.epson_et_7750_ink_level_yellow
       - sensor.epson_et_7750_ink_level_photo_black
+
 #-------------------------------------------
+homeassistant:
+  customize_glob:
+    "sensor.epson_et_7750_ink_level_*":
+      icon: mdi:cup-water
+      hidden: False
+      homebridge_hidden: True
+
 ##############################################################################
 ###  Automations - Detect when things are not right. Like any Good Watchdog.
 ##############################################################################
 
 automation:
-  - alias: 'Printer Ink Alert'
+  - alias: 'ET-7750 Printer Ink Alert'
     initial_state: 'on'
     trigger:
       - platform: numeric_state
         entity_id:
-          - sensor.epson_ink_level_black
-          - sensor.epson_ink_level_magenta
-          - sensor.epson_ink_level_photo_black
-          - sensor.epson_ink_level_yellow
-          - sensor.epson_ink_level_cyan
+          - sensor.epson_et_7750_ink_level_black
+          - sensor.epson_et_7750_ink_level_photo_black
+          - sensor.epson_et_7750_ink_level_magenta
+          - sensor.epson_et_7750_ink_level_yellow
+          - sensor.epson_et_7750_ink_level_cyan
         below: 25
     condition:
       condition: time
