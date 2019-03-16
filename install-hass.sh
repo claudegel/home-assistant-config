@@ -17,7 +17,8 @@ sudo apt-get install -y \
 rm -rfv .venv
 python3 -m venv .venv
 
+pip install --user --upgrade pip pipenv wheel
+
 source .venv/bin/activate
-pip install --upgrade pip pipenv wheel
-pip install --upgrade homeassistant hass-configurator
+pip install --upgrade homeassistant hass-configurator pylinky
 pip install custom_components/climate/pid_controller/

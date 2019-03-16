@@ -130,6 +130,10 @@ sensor:
            - Energy usage
            - Total usage
 
+  - platform: linky
+    username: !secret linky_username
+    password: !secret linky_password
+
   # Temperatures
 #   - platform: mqtt
 #     name: "Temperature Exterieur Maison"
@@ -276,10 +280,6 @@ sensor:
 #     unit_of_measurement: "%"
 #     state_topic: "home/sensors/thermostat/battery/level"
 #     value_template: '{{ value | round(1) }}'
-
-  - platform: linky
-    username: !secret linky_username
-    password: !secret linky_password
 
 binary_sensor:
   - platform: template
