@@ -27,22 +27,18 @@
                             "type": "vertical-stack"
                         },
                         {
-                            "cards": [
+                            "entities": [
                                 {
-                                    "entity": "climate.bathroom_heater",
-                                    "type": "thermostat"
+                                    "entity": "switch.rfxcom_bathroom_heater_remote",
+                                    "name": "Trigger Bathroom Heater"
                                 },
                                 {
-                                    "entities": [
-                                        {
-                                            "entity": "switch.rfxcom_bathroom_heater_remote"
-                                        }
-                                    ],
-                                    "type": "entities"
+                                    "entity": "climate.bathroom_heater",
+                                    "name": "Thermostat"
                                 }
                             ],
                             "title": "Bathroom Heater",
-                            "type": "vertical-stack"
+                            "type": "glance"
                         },
                         {
                             "cards": [

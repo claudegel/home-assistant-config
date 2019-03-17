@@ -39,11 +39,11 @@ sensor:
       - temperature
       - windSpeed
 
-  - platform: wunderground
-    api_key: !secret sensor_wunderground_api_key
-    monitored_conditions:
-      - alerts
-      - dewpoint_c
+#   - platform: wunderground
+#     api_key: !secret sensor_wunderground_api_key
+#     monitored_conditions:
+#       - alerts
+#       - dewpoint_c
 
 
 weather:
