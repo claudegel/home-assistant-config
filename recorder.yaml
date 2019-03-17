@@ -65,3 +65,7 @@ include:
     - switch.boiler_actuator_receiver
     - switch.rfxcom_bathroom_heater_remote
     - zwave.washing_machine_wall_smart_plug
+    - sensor.domot_memory_use_percent
+    - sensor.domot_cpu_temperature
+    - sensor.domot_load_1m
+    - sensor.domot_memory_free

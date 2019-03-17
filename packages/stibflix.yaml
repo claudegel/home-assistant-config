@@ -3,11 +3,24 @@ sensor:
     api_key: !secret sensor_sonarr_api_key
     host: 192.168.0.10
     port: 32772
+    monitored_conditions:
+      - series
+      - upcoming
+      - diskspace
+      - wanted
+    days: 7
 
   - platform: radarr
     api_key: !secret sensor_radarr_api_key
     host: 192.168.0.10
     port: 32773
+    monitored_conditions:
+      - movies
+      - upcoming
+      - diskspace
+      - status
+    days: 7
+
 
   - name: Home Cinema UPS
     platform: nut

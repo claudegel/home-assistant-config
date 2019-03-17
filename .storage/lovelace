@@ -31,10 +31,6 @@
                                 {
                                     "entity": "switch.rfxcom_bathroom_heater_remote",
                                     "name": "Trigger Bathroom Heater"
-                                },
-                                {
-                                    "entity": "climate.bathroom_heater",
-                                    "name": "Thermostat"
                                 }
                             ],
                             "title": "Bathroom Heater",
@@ -397,16 +393,23 @@
                         {
                             "entities": [
                                 {
-                                    "entity": "sensor.radarr_movies"
-                                },
-                                {
                                     "entity": "sensor.sonarr_upcoming"
                                 },
                                 {
                                     "entity": "sensor.sonarr_series"
                                 },
                                 {
-                                    "entity": "sensor.sonarr_disk_space"
+                                    "entity": "sensor.sonarr_wanted"
+                                },
+                                {
+                                    "entity": "sensor.radarr_movies"
+                                },
+                                {
+                                    "entity": "sensor.radarr_upcoming"
+                                },
+                                {
+                                    "entity": "sensor.radarr_disk_space",
+                                    "name": "Disk Space"
                                 }
                             ],
                             "show_header_toggle": false,
@@ -552,31 +555,47 @@
                         {
                             "entities": [
                                 {
-                                    "entity": "sensor.cabinet_ups_status"
+                                    "entity": "sensor.rfxcom_cabinet_temperature",
+                                    "name": "Temperature"
                                 },
                                 {
-                                    "entity": "sensor.cabinet_ups_input_voltage"
+                                    "entity": "switch.cabinet_smart_plug",
+                                    "name": "Smart Plug"
                                 },
                                 {
-                                    "entity": "sensor.cabinet_ups_battery_runtime"
+                                    "entity": "sensor.cabinet_smart_plug_power",
+                                    "name": "Power"
                                 },
                                 {
-                                    "entity": "sensor.cabinet_ups_battery_charge"
+                                    "entity": "sensor.cabinet_ups_status",
+                                    "name": "UPS Status"
                                 },
                                 {
-                                    "entity": "sensor.cabinet_ups_low_battery_setpoint"
+                                    "entity": "sensor.cabinet_ups_input_voltage",
+                                    "name": "UPS Input voltage"
                                 },
                                 {
-                                    "entity": "sensor.cabinet_ups_output_voltage"
+                                    "entity": "sensor.cabinet_ups_battery_runtime",
+                                    "name": "UPS Battery runtime"
                                 },
                                 {
-                                    "entity": "sensor.cabinet_ups_ups_shutdown_delay"
+                                    "entity": "sensor.cabinet_ups_battery_charge",
+                                    "name": "UPS Battery charge"
                                 },
                                 {
-                                    "entity": "sensor.rfxcom_cabinet_temperature"
+                                    "entity": "sensor.cabinet_ups_low_battery_setpoint",
+                                    "name": "UPS Low battery setpoint"
                                 },
                                 {
-                                    "entity": "switch.cabinet_smart_plug"
+                                    "entity": "sensor.cabinet_ups_output_voltage",
+                                    "name": "UPS Output voltage"
+                                },
+                                {
+                                    "entity": "sensor.cabinet_ups_ups_shutdown_delay",
+                                    "name": "UPS Shutdown delay"
+                                },
+                                {
+                                    "entity": "sensor.cabinet_smart_plug_power"
                                 }
                             ],
                             "show_header_toggle": false,
@@ -863,13 +882,16 @@
                                     "name": "Uptime"
                                 },
                                 {
+                                    "entity": "sensor.domot_load_1m",
+                                    "name": "CPU load"
+                                },
+                                {
                                     "entity": "sensor.domot_memory_use_percent",
                                     "name": "Memory usage"
                                 },
                                 {
-                                    "entity": "sensor.domot_load_1m",
-                                    "name": "CPU load",
-                                    "unit_of_measurement": "%"
+                                    "entity": "sensor.domot_memory_free",
+                                    "name": "Free memory"
                                 },
                                 {
                                     "entity": "sensor.ha_installed_version",
