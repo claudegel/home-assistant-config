@@ -429,31 +429,40 @@
                         {
                             "entities": [
                                 {
-                                    "entity": "binary_sensor.osmc"
+                                    "entity": "binary_sensor.osmc",
+                                    "name": "OSMC"
                                 },
                                 {
-                                    "entity": "sensor.domot_last_boot"
+                                    "entity": "sensor.osmc_uptime_templated",
+                                    "name": "Uptime"
                                 },
                                 {
-                                    "entity": "sensor.osmc_uptime_templated"
+                                    "entity": "sensor.domot_last_boot",
+                                    "name": "Sine last cold start"
                                 },
                                 {
-                                    "entity": "sensor.osmc_temperature"
+                                    "entity": "sensor.osmc_temperature",
+                                    "name": "CPU Temperature"
                                 },
                                 {
-                                    "entity": "sensor.home_cinema_ups_status"
+                                    "entity": "sensor.home_cinema_ups_status",
+                                    "name": "UPS Status"
                                 },
                                 {
-                                    "entity": "sensor.home_cinema_ups_battery_charge"
+                                    "entity": "sensor.home_cinema_ups_battery_charge",
+                                    "name": "UPS Charge"
                                 },
                                 {
-                                    "entity": "sensor.home_cinema_ups_low_battery_setpoint"
+                                    "entity": "sensor.home_cinema_ups_low_battery_setpoint",
+                                    "name": "UPS Low battery setpoint"
                                 },
                                 {
-                                    "entity": "sensor.home_cinema_ups_ups_shutdown_delay"
+                                    "entity": "sensor.home_cinema_ups_ups_shutdown_delay",
+                                    "name": "UPS Shutdown delay"
                                 },
                                 {
-                                    "entity": "sensor.home_cinema_ups_battery_runtime"
+                                    "entity": "sensor.home_cinema_ups_battery_runtime",
+                                    "name": "UPS Battery uptime"
                                 }
                             ],
                             "show_header_toggle": false,
@@ -849,31 +858,52 @@
                         {
                             "entities": [
                                 {
-                                    "entity": "sensor.ha_uptime"
+                                    "entity": "sensor.ha_uptime",
+                                    "icon": "mdi:clock",
+                                    "name": "Uptime"
                                 },
                                 {
-                                    "entity": "sensor.ha_installed_version"
+                                    "entity": "sensor.domot_memory_use_percent",
+                                    "name": "Memory usage"
                                 },
                                 {
-                                    "entity": "sensor.ha_available_version"
+                                    "entity": "sensor.domot_load_1m",
+                                    "name": "CPU load",
+                                    "unit_of_measurement": "%"
                                 },
                                 {
-                                    "entity": "script.upgrade_hass"
+                                    "entity": "sensor.ha_installed_version",
+                                    "name": "Current version"
                                 },
                                 {
-                                    "entity": "sensor.hass_home_assistant_log"
+                                    "entity": "sensor.ha_available_version",
+                                    "icon": "mdi:eye-check",
+                                    "name": "Available version"
                                 },
                                 {
-                                    "entity": "sensor.hass_recorder_sqlite"
+                                    "entity": "script.upgrade_hass",
+                                    "icon": "mdi:update",
+                                    "name": "Upgrade"
                                 },
                                 {
-                                    "entity": "script.quick_restart"
+                                    "entity": "sensor.hass_home_assistant_log",
+                                    "name": "Log size"
                                 },
                                 {
-                                    "entity": "script.halt_system"
+                                    "entity": "sensor.hass_recorder_sqlite",
+                                    "name": "DB size"
+                                },
+                                {
+                                    "entity": "script.quick_restart",
+                                    "icon": "mdi:restart",
+                                    "name": "Restart Home Assistant"
+                                },
+                                {
+                                    "entity": "script.halt_system",
+                                    "icon": "mdi:stop-circle",
+                                    "name": "Halt system"
                                 }
                             ],
-                            "show_header_toggle": false,
                             "title": "Home Assistant System",
                             "type": "entities"
                         },

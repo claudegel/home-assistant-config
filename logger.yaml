@@ -1,7 +1,6 @@
 default: warning 
 logs:
   aiohttp.access: critical
-  aiohttp.server: critical
   openzwave: info
   libopenzwave: info
   homeassistant.core: error
@@ -17,8 +16,7 @@ logs:
   homeassistant.components.sensor.rest: critical
   homeassistant.components.recorder: error
   homeassistant.components.sensor.darksky: warn
-  homeassistant.components.zwave: warn
+  homeassistant.components.sensor.waze: critical
+  homeassistant.components.zwave: info
   homeassistant.helpers.script: info
   homeassistant.helpers.entity: critical
-#   homeassistant.components.climate.smart_thermostat: DEBUG
-  homeassistant.components.zwave: info
