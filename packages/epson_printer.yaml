@@ -88,3 +88,14 @@ automation:
           message: "{{ trigger.to_state.attributes.friendly_name }} is at {{ trigger.to_state.state }} "
 
 #-------------------------------------------
+
+
+recorder:
+  include:
+    entities:
+      - device_tracker.epsond373aa
+      - sensor.epson_et_7750_ink_level_black
+      - sensor.epson_et_7750_ink_level_cyan
+      - sensor.epson_et_7750_ink_level_magenta
+      - sensor.epson_et_7750_ink_level_yellow
+      - sensor.epson_et_7750_ink_level_photo_black

@@ -1,0 +1,13 @@
+# https://community.home-assistant.io/t/ups-pico-from-pimodules-com/528/3
+
+ups_pico:
+
+switch:
+  - platform: ups_pico
+
+recorder:
+  include:
+    entities:
+      - ups_pico.pwr_mode
+      - ups_pico.volt_rpi
+      - ups_pico.temp_ntc1

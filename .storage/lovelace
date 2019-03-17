@@ -894,6 +894,22 @@
                                     "name": "Free memory"
                                 },
                                 {
+                                    "entity": "ups_pico.pwr_mode",
+                                    "name": "UPS Power mode"
+                                },
+                                {
+                                    "entity": "ups_pico.volt_rpi",
+                                    "name": "UPS Rpi input"
+                                },
+                                {
+                                    "entity": "ups_pico.temp_ntc1",
+                                    "name": "UPS Temperature"
+                                },
+                                {
+                                    "entity": "switch.ups_pico_enabled_leds",
+                                    "name": "UPS Enable Leds"
+                                },
+                                {
                                     "entity": "sensor.ha_installed_version",
                                     "name": "Current version"
                                 },
@@ -935,7 +951,8 @@
                                     "entity": "sensor.thermostat_transmitter_battery_level"
                                 },
                                 {
-                                    "entity": "switch.aeotec_zstick_disco_light"
+                                    "entity": "switch.aeotec_zstick_disco_light",
+                                    "name": "Z-Wave Stick Disco Light"
                                 }
                             ],
                             "show_header_toggle": false,
@@ -1050,23 +1067,23 @@
                                 },
                                 {
                                     "entity": "sensor.epson_et_7750_ink_level_black",
-                                    "name": "Black level"
+                                    "name": "Black ink"
                                 },
                                 {
                                     "entity": "sensor.epson_et_7750_ink_level_cyan",
-                                    "name": "Cyan level"
+                                    "name": "Cyan ink"
                                 },
                                 {
                                     "entity": "sensor.epson_et_7750_ink_level_magenta",
-                                    "name": "Magenta level"
+                                    "name": "Magenta ink"
                                 },
                                 {
                                     "entity": "sensor.epson_et_7750_ink_level_yellow",
-                                    "name": "Yellow level"
+                                    "name": "Yellow ink"
                                 },
                                 {
                                     "entity": "sensor.epson_et_7750_ink_level_photo_black",
-                                    "name": "Photo Black level"
+                                    "name": "Photo-black ink"
                                 }
                             ],
                             "show_header_toggle": false,
