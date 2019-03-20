@@ -20,5 +20,8 @@ python3 -m venv .venv
 pip install --user --upgrade pip pipenv wheel
 
 source .venv/bin/activate
-pip install --upgrade homeassistant hass-configurator pylinky homeassistant-cli
-pip install custom_components/climate/pid_controller/
+pip install --upgrade \
+    homeassistant==$(cat .homeassistant.version) \
+    hass-configurator \
+    homeassistant-cli \
+    custom_components/climate/pid_controller/
