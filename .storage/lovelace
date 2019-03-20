@@ -524,21 +524,45 @@
                         },
                         {
                             "entities": [
-                                "sensor.weather_symbol",
-                                "sensor.weather_temperature",
-                                "sensor.weather_precipitation",
-                                "sensor.weather_pressure",
-                                "sensor.weather_wind_speed",
-                                "sensor.weather_cloudiness",
-                                "sensor.pws_alerts",
-                                "sensor.pws_dewpoint_c",
-                                "sensor.weather_dewpoint_temperature",
-                                "sensor.weather_fog",
-                                "sensor.weather_high_clouds",
-                                "sensor.weather_humidity",
-                                "sensor.weather_low_clouds",
-                                "sensor.weather_medium_clouds",
-                                "sensor.weather_wind_direction"
+                                {
+                                    "entity": "sensor.weather_symbol"
+                                },
+                                {
+                                    "entity": "sensor.weather_temperature"
+                                },
+                                {
+                                    "entity": "sensor.weather_precipitation"
+                                },
+                                {
+                                    "entity": "sensor.weather_pressure"
+                                },
+                                {
+                                    "entity": "sensor.weather_wind_speed"
+                                },
+                                {
+                                    "entity": "sensor.weather_cloudiness"
+                                },
+                                {
+                                    "entity": "sensor.weather_dewpoint_temperature"
+                                },
+                                {
+                                    "entity": "sensor.weather_fog"
+                                },
+                                {
+                                    "entity": "sensor.weather_high_clouds"
+                                },
+                                {
+                                    "entity": "sensor.weather_humidity"
+                                },
+                                {
+                                    "entity": "sensor.weather_low_clouds"
+                                },
+                                {
+                                    "entity": "sensor.weather_medium_clouds"
+                                },
+                                {
+                                    "entity": "sensor.weather_wind_direction"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "Met\u00e9o 1h",
@@ -704,24 +728,44 @@
                             "type": "entities"
                         },
                         {
-                            "entities": [
+                            "cards": [
                                 {
-                                    "entity": "binary_sensor.hue"
+                                    "cards": [
+                                        {
+                                            "entity": "light.hue_iris_aurelie",
+                                            "type": "light"
+                                        },
+                                        {
+                                            "entity": "light.hue_iris_gaetan",
+                                            "type": "light"
+                                        }
+                                    ],
+                                    "type": "horizontal-stack"
                                 },
                                 {
-                                    "entity": "light.hue_iris_aurelie"
-                                },
-                                {
-                                    "entity": "light.hue_iris_gaetan"
-                                },
-                                {
-                                    "entity": "input_number.shed_aurelie_light_delay",
-                                    "name": "Auto off delay (min)"
+                                    "entities": [
+                                        {
+                                            "entity": "binary_sensor.hue"
+                                        },
+                                        {
+                                            "entity": "light.hue_iris_aurelie"
+                                        },
+                                        {
+                                            "entity": "light.hue_iris_gaetan"
+                                        },
+                                        {
+                                            "entity": "input_number.shed_aurelie_light_delay",
+                                            "name": "Delay Aurelie (min)"
+                                        }
+                                    ],
+                                    "show_header_toggle": true,
+                                    "title": "Lights",
+                                    "type": "entities"
                                 }
                             ],
                             "show_header_toggle": true,
                             "title": "Smart Lights",
-                            "type": "entities"
+                            "type": "vertical-stack"
                         },
                         {
                             "entities": [
