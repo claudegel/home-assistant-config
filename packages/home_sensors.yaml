@@ -384,6 +384,19 @@ binary_sensor:
             mdi:battery
           {% endif %}
 
+utility_meter:
+  home_energy:
+    source: sensor.rfxcom_home_energy_usage
+    cycle: monthly
+
+  cabinet_energy:
+    source: sensor.cabinet_smart_plug_power
+    cycle: monthly
+
+  home_cinema_energy:
+    source: sensor.home_cinema_smart_plug_power
+    cycle: monthly
+    
 homeassistant:
   customize:
     climate.thermostat_transmitter_heating:
