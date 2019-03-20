@@ -1,4 +1,3 @@
-api_password: !secret http_api_password
 server_port: !secret http_server_port
 base_url: !secret http_base_url
 cors_allowed_origins:
