@@ -1,0 +1,11 @@
+[Unit]
+Description=AppDaemon
+After=home-assistant@pi.service
+
+[Service]
+Type=simple
+User=%I
+ExecStart=<path to homeassistant configuration directory>/.venv/bin/appdaemon -c <path to homeassistant configuration directory>/appdaemon
+
+[Install]
+WantedBy=multi-user.target
