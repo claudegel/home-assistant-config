@@ -6,6 +6,7 @@ After=network.target
 Type=simple
 User=%i
 ExecStart=<path to homeassistant configuration directory>/configurator-start.sh
+Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
