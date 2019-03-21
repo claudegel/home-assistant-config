@@ -20,20 +20,34 @@ camera:
 binary_sensor:
   - platform: hikvision
     host: !secret camera_ip_1_ip
-    name: "Cam 1"
+    name: "Camera IP 1"
     username: !secret camera_ip_1_username
     password: !secret camera_ip_1_password
 
   - platform: hikvision
     host: !secret camera_ip_2_ip
-    name: "Cam 2"
+    name: "Camera IP 2"
     username: !secret camera_ip_2_username
     password: !secret camera_ip_2_password
 
+  - platform: template
+    sensors:
+      kitchen_window:
+        value_template: "{{ is_state('sensor.window_sensor_kitchen_access_control', '22') }}"
+        friendly_name: 'Kitchen Window'
+        device_class: door
 
 #------------------------------------------------------------
 
-    
+recorder:
+  include:
+    entities:
+      - binary_sensor.camera_ip_1_motion
+      - binary_sensor.camera_ip_2_motion
+      - binary_sensor.kitchen_window
+      - sensor.window_sensor_kitchen_access_control
+      - sensor.window_sensor_kitchen_burglar
+
 group:
   surveillance:
     name: Surveillance

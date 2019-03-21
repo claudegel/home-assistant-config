@@ -116,47 +116,55 @@
                         {
                             "cards": [
                                 {
-                                    "cards": [
-                                        {
-                                            "entity": "camera.camera_ip_1",
-                                            "type": "picture-entity"
-                                        },
-                                        {
-                                            "entities": [
-                                                {
-                                                    "entity": "binary_sensor.camera_ip_1_motion",
-                                                    "show_header_toggle": false
-                                                }
-                                            ],
-                                            "type": "entities"
-                                        }
-                                    ],
-                                    "type": "vertical-stack"
+                                    "entity": "camera.camera_ip_1",
+                                    "type": "picture-entity"
                                 },
                                 {
-                                    "cards": [
+                                    "entities": [
                                         {
-                                            "entity": "camera.camera_ip_2",
-                                            "type": "picture-entity"
-                                        },
-                                        {
-                                            "entities": [
-                                                {
-                                                    "entity": "binary_sensor.cam_2_motion",
-                                                    "show_header_toggle": false
-                                                }
-                                            ],
-                                            "type": "entities"
+                                            "entity": "binary_sensor.camera_ip_1_motion",
+                                            "show_header_toggle": false
                                         }
                                     ],
-                                    "type": "vertical-stack"
+                                    "type": "entities"
                                 }
                             ],
-                            "type": "horizontal-stack"
+                            "type": "vertical-stack"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.kitchen_window",
+                                    "icon": "mdi:door",
+                                    "name": "Window"
+                                },
+                                {
+                                    "entity": "sensor.window_sensor_kitchen_access_control"
+                                }
+                            ],
+                            "title": "Windows",
+                            "type": "glance"
+                        },
+                        {
+                            "cards": [
+                                {
+                                    "entity": "camera.camera_ip_2",
+                                    "type": "picture-entity"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "binary_sensor.camera_ip_2_motion",
+                                            "show_header_toggle": false
+                                        }
+                                    ],
+                                    "type": "entities"
+                                }
+                            ],
+                            "type": "vertical-stack"
                         }
                     ],
                     "icon": "mdi:cctv",
-                    "panel": true,
                     "path": "surveillance_view",
                     "title": "surveillance_view"
                 },

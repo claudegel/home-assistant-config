@@ -983,15 +983,6 @@
                 "unique_id": "9-72057594193723392"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "binary_sensor.cam_2_motion",
-                "name": null,
-                "platform": "hikvision",
-                "unique_id": "5ced4000-5399-11b4-82d0-5803fb38e468.Motion.1"
-            },
-            {
                 "config_entry_id": "889904f9f2454438a44df673a320c119",
                 "device_id": "b5a8ebc024424c39a475212eaf380671",
                 "disabled_by": null,
@@ -1107,6 +1098,78 @@
                 "name": null,
                 "platform": "emby",
                 "unique_id": "TW96aWxsYS81LjAgKGlQaG9uZTsgQ1BVIGlQaG9uZSBPUyAxMV8zIGxpa2UgTWFjIE9TIFgpIEFwcGxlV2ViS2l0LzYwNS4xLjE1IChLSFRNTCwgbGlrZSBHZWNrbykgVmVyc2lvbi8xMS4wIE1vYmlsZS8xNUUxNDggU2FmYXJpLzYwNC4xfDE1MjcyMDAzODQ2OTA1.Emby Mobile"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.window_sensor_kitchen",
+                "name": "Kitchen Window",
+                "platform": "zwave",
+                "unique_id": "node-10"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.camera_ip_2_motion",
+                "name": null,
+                "platform": "hikvision",
+                "unique_id": "5ced4000-5399-11b4-82d0-5803fb38e468.Motion.1"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "1840d339ea9049929ca4403e45b1bcdd",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.window_sensor_kitchen_sensor",
+                "name": "Kitchen Window Sensor",
+                "platform": "zwave",
+                "unique_id": "10-72057594210680832"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "1840d339ea9049929ca4403e45b1bcdd",
+                "disabled_by": null,
+                "entity_id": "sensor.window_sensor_kitchen_access_control",
+                "name": "Kitchen Window Access Control",
+                "platform": "zwave",
+                "unique_id": "10-72057594211745937"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "1840d339ea9049929ca4403e45b1bcdd",
+                "disabled_by": null,
+                "entity_id": "sensor.window_sensor_kitchen_alarm_level",
+                "name": "Kitchen Window Alarm Level",
+                "platform": "zwave",
+                "unique_id": "10-72057594211745809"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "1840d339ea9049929ca4403e45b1bcdd",
+                "disabled_by": null,
+                "entity_id": "sensor.window_sensor_kitchen_alarm_type",
+                "name": "Kitchen Window Alarm Type",
+                "platform": "zwave",
+                "unique_id": "10-72057594211745793"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "1840d339ea9049929ca4403e45b1bcdd",
+                "disabled_by": null,
+                "entity_id": "sensor.window_sensor_kitchen_burglar",
+                "name": "Kitchen Window Burglar",
+                "platform": "zwave",
+                "unique_id": "10-72057594211745953"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "1840d339ea9049929ca4403e45b1bcdd",
+                "disabled_by": null,
+                "entity_id": "sensor.window_sensor_kitchen_sourcenodeid",
+                "name": "Kitchen Window Sourcenodeid",
+                "platform": "zwave",
+                "unique_id": "10-72057594211745825"
             }
         ]
     },
