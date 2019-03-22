@@ -185,6 +185,17 @@ homeassistant:
       can_cancel: true
       custom_text: "Halt System"
 
+recorder:
+  include:
+    entities:
+      - sensor.domot_load_1m
+      - sensor.nas_memory_usage_real
+      - sensor.domot_memory_free
+      - sensor.hass_homeassistantlog
+      - sensor.hass_recordersqlite
+      - ups_pico.pwr_mode
+      - ups_pico.volt_rpi
+      - ups_pico.temp_ntc1
 
 group:
   ha_system:

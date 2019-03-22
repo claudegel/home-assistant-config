@@ -36,6 +36,7 @@ binary_sensor:
         value_template: "{{ is_state('sensor.window_sensor_kitchen_access_control', '22') }}"
         friendly_name: 'Kitchen Window'
         device_class: door
+        entity_id: sensor.window_sensor_kitchen_access_control
 
 #------------------------------------------------------------
 
