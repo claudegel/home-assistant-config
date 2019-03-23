@@ -33,10 +33,17 @@ binary_sensor:
   - platform: template
     sensors:
       kitchen_window:
-        value_template: "{{ is_state('sensor.window_sensor_kitchen_access_control', '22') }}"
+        value_template: "{{ is_state('sensor.kitchen_window_sensor_access_control', '22') }}"
         friendly_name: 'Kitchen Window'
         device_class: door
-        entity_id: sensor.window_sensor_kitchen_access_control
+        entity_id: sensor.kitchen_window_sensor_access_control
+
+      tv_room_window:
+        value_template: "{{ is_state('sensor.tv_room_window_sensor_access_control', '22') }}"
+        friendly_name: 'TV Room Window'
+        device_class: door
+        entity_id: sensor.tv_room_window_sensor_access_control
+
 
 #------------------------------------------------------------
 
@@ -45,9 +52,14 @@ recorder:
     entities:
       - binary_sensor.camera_ip_1_motion
       - binary_sensor.camera_ip_2_motion
+      # Kitchen Window
       - binary_sensor.kitchen_window
       - sensor.window_sensor_kitchen_access_control
       - sensor.window_sensor_kitchen_burglar
+      # TV Room Window
+      - binary_sensor.tv_room_window_sensor
+      - sensor.tv_room_window_sensor_access_control
+      - sensor.tv_room_window_sensor_burglar
 
 group:
   surveillance:

@@ -137,6 +137,9 @@
                                     "entity": "binary_sensor.kitchen_window",
                                     "icon": "mdi:door",
                                     "name": "Window"
+                                },
+                                {
+                                    "entity": "binary_sensor.tv_room_window"
                                 }
                             ],
                             "title": "Windows",
@@ -178,7 +181,7 @@
                                         "input_select.heat_day_mode"
                                     ],
                                     "show_header_toggle": false,
-                                    "title": "Climate Control Config",
+                                    "title": "Climate Control Modes",
                                     "type": "entities"
                                 },
                                 {
@@ -362,30 +365,119 @@
                             "type": "vertical-stack"
                         },
                         {
-                            "entities": [
-                                "input_datetime.heat_time_weekday_morning",
-                                "input_datetime.heat_time_weekend_morning",
-                                "input_number.temp_for_morning",
-                                "input_datetime.heat_time_weekday_day",
-                                "input_datetime.heat_time_weekend_day",
-                                "input_number.temp_for_day_with_presence",
-                                "input_number.temp_for_day_absent",
-                                "input_datetime.heat_time_weekday_evening",
-                                "input_datetime.heat_time_weekend_evening",
-                                "input_number.temp_for_evening",
-                                "input_datetime.heat_time_weekday_beforebed",
-                                "input_datetime.heat_time_weekend_beforebed",
-                                "input_number.temp_for_before_bed",
-                                "input_datetime.heat_time_weekday_night",
-                                "input_datetime.heat_time_weekend_night",
-                                "input_number.temp_for_night",
-                                "input_number.temp_for_holidays",
-                                "input_number.temp_for_summer",
-                                "input_boolean.reset_climate_values"
+                            "cards": [
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "input_number.temp_for_holidays",
+                                            "name": "Temp. Vacation"
+                                        },
+                                        {
+                                            "entity": "input_number.temp_for_summer",
+                                            "name": "Temp. Summer"
+                                        },
+                                        "input_boolean.reset_climate_values"
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Climate Settings: General",
+                                    "type": "entities"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "input_datetime.heat_time_weekday_morning",
+                                            "name": "Morning time"
+                                        },
+                                        {
+                                            "entity": "input_number.temp_for_morning",
+                                            "name": "Morning Temp."
+                                        },
+                                        {
+                                            "entity": "input_datetime.heat_time_weekday_day",
+                                            "name": "Leaving home time"
+                                        },
+                                        {
+                                            "entity": "input_number.temp_for_day_absent",
+                                            "name": "Ouf of home Temp."
+                                        },
+                                        {
+                                            "entity": "input_datetime.heat_time_weekday_evening",
+                                            "name": "Back home time"
+                                        },
+                                        {
+                                            "entity": "input_number.temp_for_evening",
+                                            "name": "Evening Temp."
+                                        },
+                                        {
+                                            "entity": "input_datetime.heat_time_weekday_beforebed",
+                                            "name": "Bedtime routine time"
+                                        },
+                                        {
+                                            "entity": "input_number.temp_for_before_bed",
+                                            "name": "Bedtime routine temp."
+                                        },
+                                        {
+                                            "entity": "input_datetime.heat_time_weekday_night",
+                                            "name": "Sleeping time"
+                                        },
+                                        {
+                                            "entity": "input_number.temp_for_night",
+                                            "name": "Sleeping temp."
+                                        }
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Climate Scenario: Work Day",
+                                    "type": "entities"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "input_datetime.heat_time_weekend_morning",
+                                            "name": "Morning time"
+                                        },
+                                        {
+                                            "entity": "input_number.temp_for_morning",
+                                            "name": "Morning Temp."
+                                        },
+                                        {
+                                            "entity": "input_datetime.heat_time_weekend_day",
+                                            "name": "Active day at home time"
+                                        },
+                                        {
+                                            "entity": "input_number.temp_for_day_with_presence",
+                                            "name": "Active day at home temp."
+                                        },
+                                        {
+                                            "entity": "input_datetime.heat_time_weekend_evening",
+                                            "name": "Evening time"
+                                        },
+                                        {
+                                            "entity": "input_number.temp_for_evening",
+                                            "name": "Evening temp."
+                                        },
+                                        {
+                                            "entity": "input_datetime.heat_time_weekend_beforebed",
+                                            "name": "Bedtime routing time"
+                                        },
+                                        {
+                                            "entity": "input_number.temp_for_before_bed",
+                                            "name": "Bedtime routing temp."
+                                        },
+                                        {
+                                            "entity": "input_datetime.heat_time_weekend_night",
+                                            "name": "Sleeping time"
+                                        },
+                                        {
+                                            "entity": "input_number.temp_for_night",
+                                            "name": "Sleeping temp."
+                                        }
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Climate Scenario: Day at Home",
+                                    "type": "entities"
+                                }
                             ],
-                            "show_header_toggle": false,
-                            "title": "Climate Tuning",
-                            "type": "entities"
+                            "type": "vertical-stack"
                         }
                     ],
                     "icon": "mdi:ruler",
@@ -1101,7 +1193,10 @@
                                     "entity": "zwave.bathroom_heater_wall_plug"
                                 },
                                 {
-                                    "entity": "zwave.window_sensor_kitchen"
+                                    "entity": "zwave.kitchen_window_sensor"
+                                },
+                                {
+                                    "entity": "zwave.tv_room_window_sensor"
                                 }
                             ],
                             "show_header_toggle": false,
