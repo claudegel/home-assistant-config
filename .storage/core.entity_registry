@@ -1269,6 +1269,96 @@
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "12-72057594245300225"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "d4fae99599654826a8a73f3fa8b7e7d7",
+                "disabled_by": null,
+                "entity_id": "sensor.main_door_sensor_access_control",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "12-72057594245300369"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "d4fae99599654826a8a73f3fa8b7e7d7",
+                "disabled_by": null,
+                "entity_id": "sensor.main_door_sensor_burglar",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "12-72057594245300385"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "d4fae99599654826a8a73f3fa8b7e7d7",
+                "disabled_by": null,
+                "entity_id": "sensor.main_door_sensor_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "12-72057594245300257"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.garage_back_door_sensor",
+                "name": "Garage Back Door Sensor",
+                "platform": "zwave",
+                "unique_id": "node-13"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "a5ccdabe8e704825952f6f06e6b572c2",
+                "disabled_by": null,
+                "entity_id": "sensor.garage_back_door_sensor_access_control",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "13-72057594262077585"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "a5ccdabe8e704825952f6f06e6b572c2",
+                "disabled_by": null,
+                "entity_id": "sensor.garage_back_door_sensor_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "13-72057594262077457"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "a5ccdabe8e704825952f6f06e6b572c2",
+                "disabled_by": null,
+                "entity_id": "sensor.garage_back_door_sensor_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "13-72057594262077441"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "a5ccdabe8e704825952f6f06e6b572c2",
+                "disabled_by": null,
+                "entity_id": "sensor.garage_back_door_sensor_burglar",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "13-72057594262077601"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "a5ccdabe8e704825952f6f06e6b572c2",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.garage_back_door_sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "13-72057594261012480"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "a5ccdabe8e704825952f6f06e6b572c2",
+                "disabled_by": null,
+                "entity_id": "sensor.garage_back_door_sensor_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "13-72057594262077473"
             }
         ]
     },

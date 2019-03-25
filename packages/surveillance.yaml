@@ -46,10 +46,15 @@ binary_sensor:
 
       main_door:
         value_template: "{{ is_state('sensor.main_door_sensor_access_control', '22') }}"
-        friendly_name: 'TV Room Window'
+        friendly_name: 'Main Door'
         device_class: door
         entity_id: sensor.main_door_sensor_access_control
 
+      garage_back_door:
+        value_template: "{{ is_state('sensor.garage_back_door_sensor_access_control', '22') }}"
+        friendly_name: 'Garage Back Door'
+        device_class: door
+        entity_id: sensor.garage_back_door_sensor_access_control
 
 #------------------------------------------------------------
 
@@ -70,6 +75,10 @@ recorder:
       - binary_sensor.main_door
       - sensor.main_door_sensor_access_control
       - sensor.main_door_sensor_burglar
+      # Garage Back Door
+      - binary_sensor.garage_back_door
+      - sensor.garage_back_door_access_control
+      - sensor.garage_back_door_burglar
 
 group:
   surveillance:
