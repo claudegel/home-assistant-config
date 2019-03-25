@@ -135,24 +135,37 @@
                             "type": "vertical-stack"
                         },
                         {
-                            "entities": [
+                            "cards": [
                                 {
-                                    "entity": "binary_sensor.kitchen_window",
-                                    "icon": "mdi:door",
-                                    "name": "Window"
+                                    "entities": [
+                                        {
+                                            "entity": "binary_sensor.kitchen_window",
+                                            "name": "Kitchen"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.tv_room_window",
+                                            "name": "TV Room"
+                                        }
+                                    ],
+                                    "title": "Windows",
+                                    "type": "glance"
                                 },
                                 {
-                                    "entity": "binary_sensor.tv_room_window"
-                                },
-                                {
-                                    "entity": "binary_sensor.main_door"
-                                },
-                                {
-                                    "entity": "binary_sensor.garage_back_door"
+                                    "entities": [
+                                        {
+                                            "entity": "binary_sensor.main_door",
+                                            "name": "Entrance"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.garage_back_door",
+                                            "name": "Garage Backdoor"
+                                        }
+                                    ],
+                                    "title": "Doors",
+                                    "type": "glance"
                                 }
                             ],
-                            "title": "Windows",
-                            "type": "glance"
+                            "type": "vertical-stack"
                         },
                         {
                             "cards": [
