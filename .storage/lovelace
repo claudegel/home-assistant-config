@@ -31,6 +31,9 @@
                                 {
                                     "entity": "switch.rfxcom_bathroom_heater_remote",
                                     "name": "Trigger Bathroom Heater"
+                                },
+                                {
+                                    "entity": "sensor.rfxcom_bathroom_temperature"
                                 }
                             ],
                             "title": "Bathroom Heater",
