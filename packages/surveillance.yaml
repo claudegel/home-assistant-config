@@ -30,6 +30,15 @@ binary_sensor:
     username: !secret camera_ip_2_username
     password: !secret camera_ip_2_password
 
+  # Door sensors need 2 extra steps:
+  #  - Change the Report Type to "17"
+  #    (see https://www.home-assistant.io/docs/z-wave/device-specific/#motion-or-alarm-sensors)
+  #      - select the zwave device
+  #      - In “Node Config Option”, choose “121: Report Type”
+  #      - In value, set to"17" (as recommended: "Sensor Binary and Battery Report")
+  #      - wake the device by simple clicking on the sync button.
+  #        Wait a few seconds to see if the value is reupdated to 256, if so try again.
+  #  - Define customized entities here to have real "door/window sensor entities"
   - platform: template
     sensors:
       kitchen_window:

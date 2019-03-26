@@ -215,3 +215,12 @@ group:
     name: Smart Lights
     entities:
       - binary_sensor.hue
+
+recorder:
+  include:
+    entities:
+      - binary_sensor.r7000
+      - sensor.external_ip
+      - sensor.speedtest_download
+      - sensor.speedtest_ping
+      - sensor.speedtest_upload

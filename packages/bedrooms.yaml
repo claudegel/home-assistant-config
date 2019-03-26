@@ -60,6 +60,11 @@ automation:
   #     - service: homeassistant.turn_off
   #       entity_id: light.hue_iris_gaetan
 
+recorder:
+  include:
+    entities:
+      - light.hue_iris_aurelie
+      - light.hue_iris_gaetan
 
 group:
   bedroom_lights:

@@ -42,7 +42,7 @@
                         {
                             "cards": [
                                 {
-                                    "entity": "light.hue_iris_gaetan",
+                                    "entity": "light.hue_iris_aurelie",
                                     "hold_action": {
                                         "action": "none"
                                     },
@@ -52,7 +52,7 @@
                                     "type": "light"
                                 },
                                 {
-                                    "entity": "light.hue_iris_aurelie",
+                                    "entity": "light.hue_iris_gaetan",
                                     "hold_action": {
                                         "action": "none"
                                     },
@@ -1219,6 +1219,12 @@
                                 },
                                 {
                                     "entity": "zwave.tv_room_window_sensor"
+                                },
+                                {
+                                    "entity": "zwave.garage_back_door_sensor"
+                                },
+                                {
+                                    "entity": "zwave.main_door_sensor"
                                 }
                             ],
                             "show_header_toggle": false,

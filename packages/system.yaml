@@ -77,6 +77,7 @@ sensor:
 switch:
   - platform: command_line
     switches:
+      # See: https://www.home-assistant.io/docs/z-wave/device-specific/#aeotec-z-stick
       aeotec_zstick_disco_light:
         friendly_name: 'Aeotec Z-Stick Disco Light'
         command_on: 'echo -e -n "\x01\x08\x00\xF2\x51\x01\x01\x05\x01\x50" > /dev/serial/by-id/usb-0658_0200-if00'
@@ -188,15 +189,21 @@ homeassistant:
 recorder:
   include:
     entities:
-      # - sensor.domot_load_1m
       - sensor.nas_memory_usage_real
       - sensor.domot_memory_free
-      # - sensor.hass_homeassistantlog
       - sensor.hass_recordersqlite
       - ups_pico.pwr_mode
       - ups_pico.volt_rpi
       - ups_pico.temp_ntc1
-
+      - sensor.domot_memory_use_percent
+      - sensor.domot_cpu_temperature
+      - sensor.domot_load_1m
+      - sensor.domot_memory_free
+      - sensor.ha_available_version
+      - sensor.ha_installed_version
+      - sensor.hass_home_assistant_log
+      - sensor.hass_recorder_sqlite
+    
 group:
   ha_system:
     name: Home Assistant System
