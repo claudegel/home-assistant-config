@@ -42,7 +42,7 @@
                         {
                             "cards": [
                                 {
-                                    "entity": "light.hue_iris_aurelie",
+                                    "entity": "light.hue_iris_gaetan",
                                     "hold_action": {
                                         "action": "none"
                                     },
@@ -52,7 +52,7 @@
                                     "type": "light"
                                 },
                                 {
-                                    "entity": "light.hue_iris_gaetan",
+                                    "entity": "light.hue_iris_aurelie",
                                     "hold_action": {
                                         "action": "none"
                                     },
@@ -184,6 +184,16 @@
                                 }
                             ],
                             "type": "vertical-stack"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.entrance_multisensor_2_sensor",
+                                    "name": "Entrance"
+                                }
+                            ],
+                            "title": "Motion",
+                            "type": "glance"
                         }
                     ],
                     "icon": "mdi:cctv",
@@ -541,8 +551,10 @@
                         },
                         {
                             "entities": [
-                                "remote.harmony_home_cinema",
-                                "sensor.harmony_home_cinema_current_activity"
+                                {
+                                    "entity": "sensor.harmony_home_cinema_current_activity",
+                                    "icon": "mdi:remote"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "Harmony Home Cinema",

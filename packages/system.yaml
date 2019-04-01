@@ -83,6 +83,7 @@ switch:
         command_on: 'echo -e -n "\x01\x08\x00\xF2\x51\x01\x01\x05\x01\x50" > /dev/serial/by-id/usb-0658_0200-if00'
         command_off: 'echo -e -n "\x01\x08\x00\xF2\x51\x01\x00\x05\x01\x51" > /dev/serial/by-id/usb-0658_0200-if00'
 
+
 shell_command:
   upgrade_hass: /home/pi/homeassistant/update.sh
   quick_restart: /home/pi/homeassistant/restart-daemon.sh
@@ -126,6 +127,11 @@ script:
       - service: shell_command.halt_system
 
 
+updater:
+  include_used_components: true
+  reporting: true
+
+
 automation:
   - alias: SRT321 Battery Notifications
     initial_state: 'on'
@@ -158,6 +164,20 @@ automation:
           title: "Home Assistant started"
           message: "Home Assistant has been restarted and is now ready."
 
+  - alias: "Update Available Notification"
+    initial_state: 'on'
+    trigger:
+      platform: state
+      entity_id: updater.updater
+    condition:
+      - condition: template
+        value_template: "{{ states('updater.updater') != 'unknown' }}"
+    action:
+      - service: notify.pushover
+        data:
+          title: "Update available"
+          message: "Home Assistant {{ states.updater.updater.state }} is now available. {{now().strftime('%Y-%m-%d %I:%M %p')}}"
+
 
 homeassistant:
   customize:
@@ -185,6 +205,7 @@ homeassistant:
       icon: mdi:power-off
       can_cancel: true
       custom_text: "Halt System"
+
 
 recorder:
   include:

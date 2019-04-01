@@ -423,7 +423,28 @@ homeassistant:
       icon: mdi:power-socket-eu
     sensor.bathroom_heater_wall_plug_power:
       icon: mdi:power-socket-eu
-  
+
+
+recorder:
+  include:
+    entities:
+      - sensor.rfxcom_bathroom_temperature
+      - sensor.rfxcom_cigare_cave_humidity
+      - sensor.rfxcom_cigare_cave_temperature
+      - sensor.rfxcom_friend_room_temperature
+      - sensor.rfxcom_garage_temperature
+      - sensor.rfxcom_home_energy_usage
+      - sensor.rfxcom_kitchen_temperature
+      - sensor.rfxcom_living_room_temperature
+      - sensor.rfxcom_office_temperature
+      - sensor.rfxcom_outside_temperature
+      - sensor.rfxcom_parents_room_temperature
+      - sensor.thermostat_setpoint
+      - sensor.thermostat_transmitter_battery_level
+      - sensor.entrance_multisensor_2_temperature
+      - sensor.entrance_multisensor_2_humidity
+
+
 group:
   home_smart_switches:
     name: Smart Switches

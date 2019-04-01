@@ -1359,6 +1359,105 @@
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "13-72057594262077473"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.emby_emby_for_ios_ipad_de_gaetan",
+                "name": null,
+                "platform": "emby",
+                "unique_id": "17F51C3E-9F20-4C35-B8FB-6855B8EA3CAA.Emby for iOS"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.entrance_multisensor_2",
+                "name": "Entrance Multisensor",
+                "platform": "zwave",
+                "unique_id": "node-14"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "48fe306771014cb0a4ba62890297c601",
+                "disabled_by": null,
+                "entity_id": "sensor.entrance_multisensor_2_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-72057594278854673"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "48fe306771014cb0a4ba62890297c601",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.entrance_multisensor_2_sensor",
+                "name": "Entrance Sensor",
+                "platform": "zwave",
+                "unique_id": "14-72057594277789696"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "48fe306771014cb0a4ba62890297c601",
+                "disabled_by": null,
+                "entity_id": "sensor.entrance_multisensor_2_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-72057594278854657"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "48fe306771014cb0a4ba62890297c601",
+                "disabled_by": null,
+                "entity_id": "sensor.entrance_multisensor_2_luminance",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-72057594277806130"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "48fe306771014cb0a4ba62890297c601",
+                "disabled_by": null,
+                "entity_id": "sensor.entrance_multisensor_2_burglar",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-72057594278854817"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "48fe306771014cb0a4ba62890297c601",
+                "disabled_by": null,
+                "entity_id": "sensor.entrance_multisensor_2_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-72057594278854689"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "48fe306771014cb0a4ba62890297c601",
+                "disabled_by": null,
+                "entity_id": "sensor.entrance_multisensor_2_temperature",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-72057594277806098"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "48fe306771014cb0a4ba62890297c601",
+                "disabled_by": null,
+                "entity_id": "sensor.entrance_multisensor_2_ultraviolet",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-72057594277806514"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "48fe306771014cb0a4ba62890297c601",
+                "disabled_by": null,
+                "entity_id": "sensor.entrance_multisensor_2_humidity",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-72057594277806162"
             }
         ]
     },

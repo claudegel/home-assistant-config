@@ -88,6 +88,10 @@ recorder:
       - binary_sensor.garage_back_door
       - sensor.garage_back_door_access_control
       - sensor.garage_back_door_burglar
+      # Entrance multisensor
+      - binary_sensor.entrance_multisensor_2_sensor
+      - sensor.entrance_multisensor_2_alarm_level
+      - sensor.entrance_multisensor_2_luminance
 
 group:
   surveillance:

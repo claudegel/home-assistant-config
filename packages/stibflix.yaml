@@ -133,7 +133,16 @@ remote:
     name: Harmony Home Cinema
     host: 192.168.0.53
 
-    
+recorder:
+  include:
+    entities:
+      - sensor.osmc_temperature
+      - sensor.home_cinema_ups_status
+      - sensor.home_cinema_ups_battery_charge
+      - sensor.home_cinema_ups_low_battery_setpoint
+      - sensor.home_cinema_ups_ups_shutdown_delay
+      - sensor.home_cinema_ups_battery_runtime
+      
 group:
   pvr:
     name: Smart PVR
