@@ -1,9 +1,9 @@
-default: warning 
+default: info 
 logs:
   aiohttp.access: critical
   openzwave: info
   libopenzwave: info
-  homeassistant.core: error
+  homeassistant.core: info
   homeassistant.components.automation: warn
   homeassistant.components.binary_sensor: error
   homeassistant.components.climate.nest: warn
@@ -20,3 +20,4 @@ logs:
   homeassistant.components.zwave: info
   homeassistant.helpers.script: info
   homeassistant.helpers.entity: critical
+  homeassistant.util.package: debug

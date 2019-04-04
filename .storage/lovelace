@@ -274,39 +274,35 @@
                                     "entities": [
                                         {
                                             "entity": "switch.rfxcom_bathroom_heater_remote",
-                                            "name": "Trigger Heat"
+                                            "name": "Want Confort in Bathroom"
                                         },
                                         {
                                             "entity": "climate.bathroom_heater",
-                                            "name": "Set thermostat"
-                                        },
-                                        {
-                                            "entity": "sensor.rfxcom_bathroom_temperature",
-                                            "name": "Bathroom"
+                                            "name": "Thermostat"
                                         }
                                     ],
                                     "show_header_toggle": false,
                                     "title": "Bathroom Heater",
-                                    "type": "glance"
+                                    "type": "entities"
                                 },
                                 {
                                     "entities": [
                                         {
                                             "entity": "switch.bathroom_heater_wall_plug",
-                                            "name": "Wall plug state"
+                                            "name": "Wall Plug"
                                         },
                                         {
                                             "entity": "input_boolean.schedule_morning_bathroom_confort",
-                                            "name": "Enable schedule"
+                                            "name": "Enable Schedule"
                                         },
                                         {
                                             "entity": "input_datetime.quick_bathroom_confort_time",
-                                            "name": "Set schedule"
+                                            "name": "Schedule"
                                         }
                                     ],
                                     "show_header_toggle": false,
                                     "title": "Bathroom Heater Settings",
-                                    "type": "entities"
+                                    "type": "glance"
                                 }
                             ],
                             "type": "vertical-stack"
@@ -1206,7 +1202,7 @@
                                     "entity": "zwave.cabinet_smart_plug"
                                 },
                                 {
-                                    "entity": "zwave.entrance_multisensor"
+                                    "entity": "zwave.entrance_multisensor_2"
                                 },
                                 {
                                     "entity": "zwave.home_cinema_smart_plug"
