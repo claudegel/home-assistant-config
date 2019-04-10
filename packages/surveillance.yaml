@@ -92,6 +92,7 @@ recorder:
       - binary_sensor.entrance_multisensor_2_sensor
       - sensor.entrance_multisensor_2_alarm_level
       - sensor.entrance_multisensor_2_luminance
+      - sensor.entrance_multisensor_2_burglar
 
 group:
   surveillance:

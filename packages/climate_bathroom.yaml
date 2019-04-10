@@ -142,7 +142,8 @@ automation:
       entity_id: input_boolean.schedule_morning_bathroom_confort
       state: 'on'
     action:
-      - service: script.set_bathroom_confortable
+      - service: switch.turn_on
+        entity_id: switch.rfxcom_bathroom_heater_remote
 
   # Backup in case of the heater has been manually started.
   # Its role is only to call the script of the same name
