@@ -138,9 +138,18 @@ automation:
       platform: template
       value_template: "{{ states('sensor.time') == (states.input_datetime.quick_bathroom_confort_time.attributes.timestamp | int | timestamp_custom('%H:%M', False)) }}"
     condition:
-      condition: state
-      entity_id: input_boolean.schedule_morning_bathroom_confort
-      state: 'on'
+      condition: and
+      conditions:
+        - condition: time
+          weekday:
+            - mon
+            - tue
+            - wed
+            - thu
+            - fri
+        - condition: state
+          entity_id: input_boolean.schedule_morning_bathroom_confort
+          state: 'on'
     action:
       - service: switch.turn_on
         entity_id: switch.rfxcom_bathroom_heater_remote

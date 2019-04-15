@@ -430,6 +430,7 @@ recorder:
     entities:
       - sensor.entrance_multisensor_2_humidity
       - sensor.entrance_multisensor_2_temperature
+      - binary_sensor.entrance_multisensor_2_sensor
       - sensor.rfxcom_bathroom_temperature
       - sensor.rfxcom_cigare_cave_humidity
       - sensor.rfxcom_cigare_cave_temperature

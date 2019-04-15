@@ -316,11 +316,11 @@ automation:
       - service: input_number.set_value
         data_template:
           entity_id: input_number.temp_for_day_with_presence
-          value: "17"
+          value: "18"
       - service: input_number.set_value
         data_template:
           entity_id: input_number.temp_for_day_absent
-          value: "16"
+          value: "17"
       - service: input_number.set_value
         data_template:
           entity_id: input_number.temp_for_evening

@@ -841,12 +841,6 @@
                                 },
                                 {
                                     "entity": "input_boolean.update_speedtest"
-                                },
-                                {
-                                    "entity": "sensor.r7000_gateway_kbytesec_received"
-                                },
-                                {
-                                    "entity": "sensor.r7000_gateway_kbytesec_sent"
                                 }
                             ],
                             "show_header_toggle": false,
@@ -855,45 +849,7 @@
                             "type": "entities"
                         },
                         {
-                            "entities": [
-                                {
-                                    "entity": "sensor.domot_cpu_temperature"
-                                },
-                                {
-                                    "entity": "sensor.domot_network_in"
-                                },
-                                {
-                                    "entity": "sensor.domot_processor_use"
-                                },
-                                {
-                                    "entity": "sensor.domot_memory_use_percent"
-                                },
-                                {
-                                    "entity": "sensor.domot_disk_use_percent"
-                                },
-                                {
-                                    "entity": "sensor.domot_since_last_boot_templated"
-                                }
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Domot server information",
-                            "type": "entities"
-                        },
-                        {
                             "cards": [
-                                {
-                                    "cards": [
-                                        {
-                                            "entity": "light.hue_iris_aurelie",
-                                            "type": "light"
-                                        },
-                                        {
-                                            "entity": "light.hue_iris_gaetan",
-                                            "type": "light"
-                                        }
-                                    ],
-                                    "type": "horizontal-stack"
-                                },
                                 {
                                     "entities": [
                                         {
@@ -1078,7 +1034,7 @@
                                     "name": "Uptime"
                                 },
                                 {
-                                    "entity": "sensor.domot_load_1m",
+                                    "entity": "sensor.domot_processor_use",
                                     "name": "CPU load"
                                 },
                                 {
@@ -1088,6 +1044,14 @@
                                 {
                                     "entity": "sensor.domot_memory_free",
                                     "name": "Free memory"
+                                },
+                                {
+                                    "entity": "sensor.domot_disk_use_percent",
+                                    "name": "Disk Usage"
+                                },
+                                {
+                                    "entity": "sensor.domot_cpu_temperature",
+                                    "name": "CPU Temperature"
                                 },
                                 {
                                     "entity": "ups_pico.pwr_mode",
