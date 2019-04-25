@@ -2,7 +2,7 @@
 
 sudo apt-get update -y
 sudo apt-get install -y \
-    ffmpeg
+    ffmpeg \
     libudev-dev \
     nmap \
     raspberrypi-kernel-headers \
@@ -12,7 +12,10 @@ sudo apt-get install -y \
     build-essential \
     libssl-dev \
     libffi-dev \
-    python3-dev
+    python3-dev \
+    build-essential
+
+
 
 rm -rfv .venv
 python3 -m venv .venv

@@ -377,7 +377,7 @@
                                             "name": "Status"
                                         },
                                         {
-                                            "entity": "sensor.washing_machine_smart_plug_power_2",
+                                            "entity": "sensor.washing_machine_smart_plug_power",
                                             "name": "Current power"
                                         },
                                         {
@@ -1260,6 +1260,9 @@
                                 {
                                     "entity": "sensor.epson_et_7750_ink_level_photo_black",
                                     "name": "Photo-black ink"
+                                },
+                                {
+                                    "entity": "sensor.epson_et_7750_waste_level"
                                 }
                             ],
                             "show_header_toggle": false,
