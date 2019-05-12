@@ -1,57 +1,57 @@
 automation:
 
-  - id: "publish_temperatures"
-    initial_state: 'off'
-    alias: 'Send temperatures to MQTT'
-    trigger:
-       - platform: state
-         entity_id:
-          - sensor.rfxcom_bathroom_temperature
-          - sensor.rfxcom_friend_room_temperature
-          - sensor.rfxcom_garage_temperature
-          - sensor.rfxcom_kitchen_temperature
-          - sensor.rfxcom_living_room_temperature
-          - sensor.rfxcom_office_temperature
-          - sensor.rfxcom_outside_temperature
-          - sensor.rfxcom_parents_room_temperature
-          - sensor.rfxcom_cigare_cave_temperature
-    action:
-      - service: mqtt.publish
-        data_template:
-          topic: >
-            home/sensors/
-            {{- trigger.entity_id | 
-            replace('sensor.rfxcom_', '') |
-            replace('_temperature', '/temperature') | lower }}
-          payload_template: >
-            {{ states(trigger.entity_id) }}
+#   - id: "publish_temperatures"
+#     initial_state: 'off'
+#     alias: 'Send temperatures to MQTT'
+#     trigger:
+#       - platform: state
+#          entity_id:
+#           - sensor.rfxcom_bathroom_temperature
+#           - sensor.rfxcom_friend_room_temperature
+#           - sensor.rfxcom_garage_temperature
+#           - sensor.rfxcom_kitchen_temperature
+#           - sensor.rfxcom_living_room_temperature
+#           - sensor.rfxcom_office_temperature
+#           - sensor.rfxcom_outside_temperature
+#           - sensor.rfxcom_parents_room_temperature
+#           - sensor.rfxcom_cigare_cave_temperature
+#     action:
+#       - service: mqtt.publish
+#         data_template:
+#           topic: >
+#             home/sensors/
+#             {{- trigger.entity_id | 
+#             replace('sensor.rfxcom_', '') |
+#             replace('_temperature', '/temperature') | lower }}
+#           payload_template: >
+#             {{ states(trigger.entity_id) }}
 
-  - id: "publish_humidity"
-    initial_state: 'off'
-    alias: 'Send humidity to MQTT'
-    trigger:
-       - platform: state
-         entity_id:
-          - sensor.rfxcom_bathroom_humidity
-          - sensor.rfxcom_cigare_cave_humidity
-          - sensor.rfxcom_friend_room_humidity
-          - sensor.rfxcom_garage_humidity
-          - sensor.rfxcom_kitchen_humidity
-          - sensor.rfxcom_living_room_humidity
-          - sensor.rfxcom_office_humidity
-          - sensor.rfxcom_outside_humidity
-          - sensor.rfxcom_parents_room_humidity
-          - sensor.rfxcom_cigare_cave_humidity
-    action:
-      - service: mqtt.publish
-        data_template:
-          topic: >
-            home/sensors/
-            {{- trigger.entity_id | 
-            replace('sensor.rfxcom_', '') |
-            replace('_humidity', '/humidity') | lower }}
-          payload_template: >
-            {{ states(trigger.entity_id) }}
+#   - id: "publish_humidity"
+#     initial_state: 'off'
+#     alias: 'Send humidity to MQTT'
+#     trigger:
+#       - platform: state
+#          entity_id:
+#           - sensor.rfxcom_bathroom_humidity
+#           - sensor.rfxcom_cigare_cave_humidity
+#           - sensor.rfxcom_friend_room_humidity
+#           - sensor.rfxcom_garage_humidity
+#           - sensor.rfxcom_kitchen_humidity
+#           - sensor.rfxcom_living_room_humidity
+#           - sensor.rfxcom_office_humidity
+#           - sensor.rfxcom_outside_humidity
+#           - sensor.rfxcom_parents_room_humidity
+#           - sensor.rfxcom_cigare_cave_humidity
+#     action:
+#       - service: mqtt.publish
+#         data_template:
+#           topic: >
+#             home/sensors/
+#             {{- trigger.entity_id | 
+#             replace('sensor.rfxcom_', '') |
+#             replace('_humidity', '/humidity') | lower }}
+#           payload_template: >
+#             {{ states(trigger.entity_id) }}
             
 switch:
   # automatically add DIO switches

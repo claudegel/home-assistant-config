@@ -1,58 +1,40 @@
-
 homeassistant: !include homeassistant.yaml
-
 
 # Show links to resources in log and frontend
 # introduction:
 
 zone: !include zone.yaml
 
-
 # Enables the frontend
 frontend: !include frontend.yaml
 
-
 http: !include http.yaml
 
-
 # updater: handled in a package
-
 
 # Discover some devices automatically
 discovery: !include discovery.yaml
 
-
 config:
-
-# Allows you to issue voice commands from the frontend in enabled browsers
-# conversation:
-
 
 # Enables support for tracking state changes over time.
 history: !include history.yaml
 
-
 # View all events in a logbook
 logbook:
 
-
 logger: !include logger.yaml
-
 
 # Show map entry
 map:
-
 
 panel_custom: !include panel_custom.yaml
 
 panel_iframe: !include panel_iframe.yaml
 
-
 # device_tracker: !include device_tracker.yaml
 
-
 influxdb: !include influxdb.yaml
-
 
 hue: !include hue.yaml
 
@@ -60,36 +42,26 @@ speedtestdotnet: !include speedtestdotnet.yaml
 
 # history_graph: !include history_graph.yaml
 
-
-mqtt: !include mqtt.yaml
-
+# mqtt: !include mqtt.yaml
 
 ios:
 
-
 group: !include group.yaml
-
 
 # media_player: !include media_player.yaml
 
-
 input_number: !include input_number.yaml
 
-
-recorder: !include recorder.yaml
-
+# Disabling recorder to check memory consumption
+# recorder: !include recorder.yaml
 
 notify: !include notify.yaml
 
-
 rfxtrx: !include rfxtrx.yaml
-
 
 zeroconf:
 
-
 ffmpeg:
   ffmpeg_bin: /usr/bin/ffmpeg
-
 
 zwave: !include zwave.yaml

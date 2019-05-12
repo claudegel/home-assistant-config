@@ -38,15 +38,15 @@ sensor:
       - ups.load
       - ups.status.display
   
-  - name: OSMC Uptime
-    platform: mqtt
-    state_topic: "home/osmc/uptime/sec"
-    unit_of_measurement: 'sec'
+#   - name: OSMC Uptime
+#     platform: mqtt
+#     state_topic: "home/osmc/uptime/sec"
+#     unit_of_measurement: 'sec'
 
-  - name: OSMC Temperature
-    platform: mqtt
-    state_topic: "home/osmc/cpu/temp"
-    unit_of_measurement: '°C'
+#   - name: OSMC Temperature
+#     platform: mqtt
+#     state_topic: "home/osmc/cpu/temp"
+#     unit_of_measurement: '°C'
 
   - platform: template
     sensors:
