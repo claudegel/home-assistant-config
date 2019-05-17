@@ -15,7 +15,7 @@ auth_providers:
   - type: legacy_api_password
     api_password: !secret http_api_password
 
-customize: !include customize.yaml
+# customize: !include customize.yaml
 packages: !include_dir_named packages
 
 whitelist_external_dirs:

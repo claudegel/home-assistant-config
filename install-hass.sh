@@ -27,4 +27,5 @@ pip install --upgrade \
     homeassistant==$(cat .homeassistant.version) \
     hass-configurator \
     homeassistant-cli \
-    custom_components/climate/pid_controller/
+
+    # custom_components/climate/pid_controller/
