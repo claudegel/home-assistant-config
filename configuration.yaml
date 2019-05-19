@@ -1,6 +1,6 @@
 homeassistant: !include homeassistant.yaml
 
-# zone: !include zone.yaml
+zone: !include zone.yaml
 
 # Enables the frontend
 frontend: !include frontend.yaml
@@ -8,7 +8,7 @@ frontend: !include frontend.yaml
 http: !include http.yaml
 
 # Discover some devices automatically
-# discovery: !include discovery.yaml
+discovery: !include discovery.yaml
 
 config:
 
@@ -36,8 +36,6 @@ panel_iframe: !include panel_iframe.yaml
 
 # influxdb: !include influxdb.yaml
 
-hue: !include hue.yaml
-
 speedtestdotnet: !include speedtestdotnet.yaml
 
 # history_graph: !include history_graph.yaml
@@ -48,8 +46,6 @@ ios:
 
 group: !include group.yaml
 
-media_player: !include media_player.yaml
-
 input_number: !include input_number.yaml
 
 # Disabling recorder to check memory consumption
@@ -59,7 +55,7 @@ notify: !include notify.yaml
 
 rfxtrx: !include rfxtrx.yaml
 
-#zeroconf:
+zeroconf:
 
 ffmpeg:
   ffmpeg_bin: /usr/bin/ffmpeg
