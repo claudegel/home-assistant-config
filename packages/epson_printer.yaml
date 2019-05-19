@@ -7,6 +7,16 @@
 
 #-------------------------------------------
 sensor:
+  - platform: epsonworkforce
+    host: 192.168.0.61
+    monitored_conditions:
+      - black
+      - photoblack
+      - yellow
+      - magenta
+      - cyan
+      - clean
+
   - platform: command_line
     name: Epson ET-7750 Ink Level Black
     command: /usr/bin/curl -X GET http://192.168.0.61/PRESENTATION/HTML/TOP/PRTINFO.HTML  | awk -F"'" '/Ink_K.PNG/ && $6+0 == $6 { printf "%.0f\n", $6 / 50 * 100; exit }'
