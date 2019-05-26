@@ -16,29 +16,27 @@ config:
 # history: !include history.yaml
 
 # View all events in a logbook
-# logbook:
-#   include:
-#     domains:
-#       - sensor
-#       - switch
-#       - media_player
+logbook:
+  include:
+    domains:
+      - sensor
+      - switch
+      - media_player
 
-# logger: !include logger.yaml
+logger: !include logger.yaml
 
 # Show map entry
-# map:
+map:
 
 panel_custom: !include panel_custom.yaml
 
 panel_iframe: !include panel_iframe.yaml
 
-# device_tracker: !include device_tracker.yaml
-
-# influxdb: !include influxdb.yaml
+influxdb: !include influxdb.yaml
 
 speedtestdotnet: !include speedtestdotnet.yaml
 
-# history_graph: !include history_graph.yaml
+history_graph: !include history_graph.yaml
 
 # mqtt: !include mqtt.yaml
 
@@ -48,8 +46,7 @@ group: !include group.yaml
 
 input_number: !include input_number.yaml
 
-# Disabling recorder to check memory consumption
-# recorder: !include recorder.yaml
+recorder: !include recorder.yaml
 
 notify: !include notify.yaml
 
