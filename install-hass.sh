@@ -27,5 +27,6 @@ pip install --upgrade \
     homeassistant==$(cat .homeassistant.version) \
     hass-configurator \
     homeassistant-cli \
+    pymysql
 
     # custom_components/climate/pid_controller/
