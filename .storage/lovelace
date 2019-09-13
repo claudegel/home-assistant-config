@@ -207,52 +207,6 @@
                             "cards": [
                                 {
                                     "entities": [
-                                        "input_select.climate_season",
-                                        "input_select.main_heat_mode",
-                                        "input_select.auto_main_heat",
-                                        "input_select.heat_day_mode"
-                                    ],
-                                    "show_header_toggle": false,
-                                    "title": "Climate Control Modes",
-                                    "type": "entities"
-                                },
-                                {
-                                    "entities": [
-                                        {
-                                            "entity": "sensor.rfxcom_outside_temperature",
-                                            "name": "Outside"
-                                        },
-                                        {
-                                            "entity": "sensor.rfxcom_parents_room_temperature",
-                                            "name": "Parental Room"
-                                        },
-                                        {
-                                            "entity": "sensor.rfxcom_living_room_temperature",
-                                            "name": "Living Room"
-                                        },
-                                        {
-                                            "entity": "sensor.rfxcom_friend_room_temperature",
-                                            "name": "Child"
-                                        },
-                                        {
-                                            "entity": "sensor.rfxcom_garage_temperature",
-                                            "name": "Garage"
-                                        },
-                                        {
-                                            "entity": "sensor.rfxcom_kitchen_temperature",
-                                            "name": "Kitchen"
-                                        },
-                                        {
-                                            "entity": "sensor.rfxcom_office_temperature",
-                                            "name": "Office"
-                                        }
-                                    ],
-                                    "show_header_toggle": false,
-                                    "title": "Temperatures",
-                                    "type": "glance"
-                                },
-                                {
-                                    "entities": [
                                         {
                                             "entity": "climate.thermostat_transmitter_heating",
                                             "name": "Main Thermostat"
@@ -262,7 +216,54 @@
                                             "name": "Boiler"
                                         }
                                     ],
-                                    "title": null,
+                                    "show_header_toggle": false,
+                                    "title": "Confort",
+                                    "type": "entities"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.rfxcom_friend_room_temperature",
+                                            "name": "Child Room"
+                                        },
+                                        {
+                                            "entity": "sensor.rfxcom_parents_room_temperature",
+                                            "name": "Parents Room"
+                                        },
+                                        {
+                                            "entity": "sensor.rfxcom_office_temperature",
+                                            "name": "Office"
+                                        },
+                                        {
+                                            "entity": "sensor.rfxcom_living_room_temperature",
+                                            "name": "Living Room"
+                                        },
+                                        {
+                                            "entity": "sensor.rfxcom_kitchen_temperature",
+                                            "name": "Kitchen"
+                                        },
+                                        {
+                                            "entity": "sensor.rfxcom_garage_temperature",
+                                            "name": "Garage"
+                                        },
+                                        {
+                                            "entity": "sensor.rfxcom_outside_temperature",
+                                            "name": "Outside"
+                                        }
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Temperatures",
+                                    "type": "entities"
+                                },
+                                {
+                                    "entities": [
+                                        "input_select.climate_season",
+                                        "input_select.main_heat_mode",
+                                        "input_select.auto_main_heat",
+                                        "input_select.heat_day_mode"
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Climate Control Modes",
                                     "type": "entities"
                                 }
                             ],
@@ -274,7 +275,7 @@
                                     "entities": [
                                         {
                                             "entity": "switch.rfxcom_bathroom_heater_remote",
-                                            "name": "Want Confort in Bathroom"
+                                            "name": "Want Confort now"
                                         },
                                         {
                                             "entity": "climate.bathroom_heater",
@@ -289,20 +290,20 @@
                                     "entities": [
                                         {
                                             "entity": "switch.bathroom_heater_wall_plug",
-                                            "name": "Wall Plug"
+                                            "name": "Wall Plug State"
+                                        },
+                                        {
+                                            "entity": "input_datetime.quick_bathroom_confort_time",
+                                            "name": "Morning schedule time"
                                         },
                                         {
                                             "entity": "input_boolean.schedule_morning_bathroom_confort",
                                             "name": "Enable Schedule"
-                                        },
-                                        {
-                                            "entity": "input_datetime.quick_bathroom_confort_time",
-                                            "name": "Schedule"
                                         }
                                     ],
                                     "show_header_toggle": false,
                                     "title": "Bathroom Heater Settings",
-                                    "type": "glance"
+                                    "type": "entities"
                                 }
                             ],
                             "type": "vertical-stack"
@@ -350,7 +351,7 @@
                                             "name": "Cabinet"
                                         },
                                         {
-                                            "entity": "sensor.washing_machine_smart_plug_power_2",
+                                            "entity": "sensor.washing_machine_smart_plug_power",
                                             "name": "Washing Machine"
                                         },
                                         {
@@ -715,7 +716,7 @@
                             "type": "entities"
                         }
                     ],
-                    "icon": "mdi:weather-partlycloudy",
+                    "icon": "mdi:weather-partly-cloudy",
                     "path": "weather_view",
                     "title": "weather_view"
                 },
@@ -902,11 +903,21 @@
                     "cards": [
                         {
                             "entities": [
-                                "binary_sensor.nas",
-                                "sensor.nas_cpu_load_total",
-                                "sensor.nas_memory_usage_real",
-                                "sensor.nas_network_up",
-                                "sensor.nas_network_down"
+                                {
+                                    "entity": "binary_sensor.nas"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_cpu_load_total"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_memory_usage_real"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_network_up"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_network_down"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "NAS General",
@@ -914,46 +925,126 @@
                         },
                         {
                             "entities": [
-                                "sensor.nas_below_min_remaining_life_sda",
-                                "sensor.nas_below_min_remaining_life_sdb",
-                                "sensor.nas_below_min_remaining_life_sdc",
-                                "sensor.nas_below_min_remaining_life_sdd",
-                                "sensor.nas_below_min_remaining_life_sde",
-                                "sensor.nas_below_min_remaining_life_sdf",
-                                "sensor.nas_below_min_remaining_life_sdg",
-                                "sensor.nas_below_min_remaining_life_sdh",
-                                "sensor.nas_exceeded_max_bad_sectors_sda",
-                                "sensor.nas_exceeded_max_bad_sectors_sdb",
-                                "sensor.nas_exceeded_max_bad_sectors_sdc",
-                                "sensor.nas_exceeded_max_bad_sectors_sdd",
-                                "sensor.nas_exceeded_max_bad_sectors_sde",
-                                "sensor.nas_exceeded_max_bad_sectors_sdf",
-                                "sensor.nas_exceeded_max_bad_sectors_sdg",
-                                "sensor.nas_exceeded_max_bad_sectors_sdh",
-                                "sensor.nas_status_sda",
-                                "sensor.nas_status_sdb",
-                                "sensor.nas_status_sdc",
-                                "sensor.nas_status_sdd",
-                                "sensor.nas_status_sde",
-                                "sensor.nas_status_sdf",
-                                "sensor.nas_status_sdg",
-                                "sensor.nas_status_sdh",
-                                "sensor.nas_status_smart_sda",
-                                "sensor.nas_status_smart_sdb",
-                                "sensor.nas_status_smart_sdc",
-                                "sensor.nas_status_smart_sdd",
-                                "sensor.nas_status_smart_sde",
-                                "sensor.nas_status_smart_sdf",
-                                "sensor.nas_status_smart_sdg",
-                                "sensor.nas_status_smart_sdh",
-                                "sensor.nas_temperature_sda",
-                                "sensor.nas_temperature_sdb",
-                                "sensor.nas_temperature_sdc",
-                                "sensor.nas_temperature_sdd",
-                                "sensor.nas_temperature_sde",
-                                "sensor.nas_temperature_sdf",
-                                "sensor.nas_temperature_sdg",
-                                "sensor.nas_temperature_sdh"
+                                {
+                                    "entity": "sensor.nas_synology_dsm_below_min_remaining_life_sda"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_below_min_remaining_life_sdb"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_below_min_remaining_life_sdc"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_below_min_remaining_life_sdd"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_below_min_remaining_life_sde"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_below_min_remaining_life_sdf"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_below_min_remaining_life_sdg"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_below_min_remaining_life_sdh"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_exceeded_max_bad_sectors_sda"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_exceeded_max_bad_sectors_sdb"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_exceeded_max_bad_sectors_sdc"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_exceeded_max_bad_sectors_sdd"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_exceeded_max_bad_sectors_sde"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_exceeded_max_bad_sectors_sdf"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_exceeded_max_bad_sectors_sdg"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_exceeded_max_bad_sectors_sdh"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_status_sda"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_status_sdb"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_status_sdc"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_status_sdd"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_status_sde"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_status_sdf"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_status_sdg"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_status_sdh"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_status_smart_sda"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_status_smart_sdb"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_status_smart_sdc"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_status_smart_sdd"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_status_smart_sde"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_status_smart_sdf"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_status_smart_sdg"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_status_smart_sdh"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_temperature_sda"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_temperature_sdb"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_temperature_sdc"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_temperature_sdd"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_temperature_sde"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_temperature_sdf"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_temperature_sdg"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_temperature_sdh"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "NAS Storage status",
@@ -961,10 +1052,18 @@
                         },
                         {
                             "entities": [
-                                "sensor.nas_status_volume_1",
-                                "sensor.nas_volume_used_volume_1",
-                                "sensor.nas_used_space_volume_1",
-                                "sensor.nas_total_size_volume_1"
+                                {
+                                    "entity": "sensor.nas_synology_dsm_status_volume_1"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_volume_used_volume_1"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_used_space_volume_1"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_total_size_volume_1"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "NAS Volume 1",
@@ -972,10 +1071,18 @@
                         },
                         {
                             "entities": [
-                                "sensor.nas_status_volume_2",
-                                "sensor.nas_volume_used_volume_2",
-                                "sensor.nas_used_space_volume_2",
-                                "sensor.nas_total_size_volume_2"
+                                {
+                                    "entity": "sensor.nas_synology_dsm_status_volume_2"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_volume_used_volume_2"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_used_space_volume_2"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_total_size_volume_2"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "NAS Volume 2",
@@ -983,10 +1090,18 @@
                         },
                         {
                             "entities": [
-                                "sensor.nas_status_volume_3",
-                                "sensor.nas_volume_used_volume_3",
-                                "sensor.nas_used_space_volume_3",
-                                "sensor.nas_total_size_volume_3"
+                                {
+                                    "entity": "sensor.nas_synology_dsm_status_volume_3"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_volume_used_volume_3"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_used_space_volume_3"
+                                },
+                                {
+                                    "entity": "sensor.nas_synology_dsm_total_size_volume_3"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "NAS Volume 3",

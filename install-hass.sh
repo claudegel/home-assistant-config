@@ -11,6 +11,7 @@ sudo apt-get install -y \
     python3-venv \
     build-essential \
     libssl-dev \
+    libxslt1-dev \
     libffi-dev \
     python3-dev \
     build-essential

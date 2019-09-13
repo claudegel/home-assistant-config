@@ -12,7 +12,12 @@ camera:
     authentication: digest
     username: !secret camera_ip_2_username
     password: !secret camera_ip_2_password
-
+  - platform: onvif
+    host: 192.168.0.111
+    name: "Camera Child Live"
+    port: 8000
+    username: !secret camera_ip_2_username
+    password: !secret camera_ip_2_password
 
 #------------------------------------------------------------
 

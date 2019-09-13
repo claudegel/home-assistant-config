@@ -12,7 +12,6 @@
                         "00:17:88:28:19:61"
                     ]
                 ],
-                "hub_device_id": null,
                 "id": "a7f1ad85d04d47bb8f615ea58f88fe41",
                 "identifiers": [
                     [
@@ -24,7 +23,8 @@
                 "model": "BSB002",
                 "name": "Philips hue",
                 "name_by_user": null,
-                "sw_version": "1932073040"
+                "sw_version": "1933144020",
+                "via_device_id": null
             },
             {
                 "area_id": "6daf2efc2b0f42f2b797460c0a86e4f8",
@@ -32,7 +32,6 @@
                     "424daed45a794f7990e2a766e3b120c2"
                 ],
                 "connections": [],
-                "hub_device_id": "a7f1ad85d04d47bb8f615ea58f88fe41",
                 "id": "b137557b0d5b4da491ba0994cb85cf88",
                 "identifiers": [
                     [
@@ -44,7 +43,8 @@
                 "model": "Hue iris",
                 "name": "Hue iris Gaetan",
                 "name_by_user": null,
-                "sw_version": "5.127.1.26581"
+                "sw_version": "5.127.1.26581",
+                "via_device_id": "a7f1ad85d04d47bb8f615ea58f88fe41"
             },
             {
                 "area_id": "6daf2efc2b0f42f2b797460c0a86e4f8",
@@ -52,7 +52,6 @@
                     "424daed45a794f7990e2a766e3b120c2"
                 ],
                 "connections": [],
-                "hub_device_id": "a7f1ad85d04d47bb8f615ea58f88fe41",
                 "id": "9dff0617eea54f9c9b3410fcedef501f",
                 "identifiers": [
                     [
@@ -64,7 +63,8 @@
                 "model": "Hue iris",
                 "name": "Hue iris Aurelie",
                 "name_by_user": null,
-                "sw_version": "5.127.1.26581"
+                "sw_version": "5.127.1.26581",
+                "via_device_id": "a7f1ad85d04d47bb8f615ea58f88fe41"
             },
             {
                 "area_id": null,
@@ -72,7 +72,6 @@
                     "680812615272427c9d4a6f1d9a47fc9e"
                 ],
                 "connections": [],
-                "hub_device_id": null,
                 "id": "71d4a790c1e84a41bb046e0e00dc70f4",
                 "identifiers": [
                     [
@@ -84,7 +83,8 @@
                 "model": "iPhone 6s",
                 "name": "Stibphone2",
                 "name_by_user": null,
-                "sw_version": "12.3.1"
+                "sw_version": "12.4.1",
+                "via_device_id": null
             },
             {
                 "area_id": null,
@@ -92,7 +92,6 @@
                     "889904f9f2454438a44df673a320c119"
                 ],
                 "connections": [],
-                "hub_device_id": null,
                 "id": "dfad7e3d8eed47c09a9121ff6f539ecb",
                 "identifiers": [
                     [
@@ -100,11 +99,12 @@
                         2
                     ]
                 ],
-                "manufacturer": "Horstmann",
+                "manufacturer": "Horstmann (Secure Meters)",
                 "model": "ASR-ZW Thermostat Receiver",
-                "name": "Horstmann ASR-ZW Thermostat Receiver",
+                "name": "Horstmann (Secure Meters) ASR-ZW Thermostat Receiver",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "0d78fc0bb3d04cf6bf5fd0b5682e5225"
             },
             {
                 "area_id": null,
@@ -112,7 +112,6 @@
                     "889904f9f2454438a44df673a320c119"
                 ],
                 "connections": [],
-                "hub_device_id": null,
                 "id": "b5a8ebc024424c39a475212eaf380671",
                 "identifiers": [
                     [
@@ -124,7 +123,8 @@
                 "model": "FGWPE/F Wall Plug",
                 "name": "FIBARO System FGWPE/F Wall Plug",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "0d78fc0bb3d04cf6bf5fd0b5682e5225"
             },
             {
                 "area_id": null,
@@ -132,7 +132,6 @@
                     "889904f9f2454438a44df673a320c119"
                 ],
                 "connections": [],
-                "hub_device_id": null,
                 "id": "d2df059cb94b40fdafe719e2de4d7885",
                 "identifiers": [
                     [
@@ -144,7 +143,8 @@
                 "model": "MSP-3-1-XX Micro Smart Plug",
                 "name": "NodOn MSP-3-1-XX Micro Smart Plug",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "0d78fc0bb3d04cf6bf5fd0b5682e5225"
             },
             {
                 "area_id": null,
@@ -152,7 +152,6 @@
                     "889904f9f2454438a44df673a320c119"
                 ],
                 "connections": [],
-                "hub_device_id": null,
                 "id": "7e642ba1637e454f870043dbdef45dc4",
                 "identifiers": [
                     [
@@ -160,11 +159,12 @@
                         3
                     ]
                 ],
-                "manufacturer": "Horstmann",
+                "manufacturer": "Horstmann (Secure Meters)",
                 "model": "HRT4-ZW Thermostat Transmitter",
-                "name": "Horstmann HRT4-ZW Thermostat Transmitter",
+                "name": "Horstmann (Secure Meters) HRT4-ZW Thermostat Transmitter",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "0d78fc0bb3d04cf6bf5fd0b5682e5225"
             },
             {
                 "area_id": null,
@@ -172,7 +172,6 @@
                     "889904f9f2454438a44df673a320c119"
                 ],
                 "connections": [],
-                "hub_device_id": null,
                 "id": "3af1aeabac614cee8668144bd4dc94a3",
                 "identifiers": [
                     [
@@ -184,7 +183,8 @@
                 "model": "FGWPE/F Wall Plug Gen5",
                 "name": "FIBARO System FGWPE/F Wall Plug Gen5",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "0d78fc0bb3d04cf6bf5fd0b5682e5225"
             },
             {
                 "area_id": null,
@@ -192,7 +192,6 @@
                     "889904f9f2454438a44df673a320c119"
                 ],
                 "connections": [],
-                "hub_device_id": null,
                 "id": "509e980041eb4b5c953f0846c8749e0c",
                 "identifiers": [
                     [
@@ -204,7 +203,8 @@
                 "model": "MSP-3-1-XX Micro Smart Plug",
                 "name": "NodOn MSP-3-1-XX Micro Smart Plug",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": null
             },
             {
                 "area_id": null,
@@ -212,7 +212,6 @@
                     "889904f9f2454438a44df673a320c119"
                 ],
                 "connections": [],
-                "hub_device_id": null,
                 "id": "88b5c74e39ae4727aa56dc92790a55fe",
                 "identifiers": [
                     [
@@ -220,11 +219,12 @@
                         8
                     ]
                 ],
-                "manufacturer": "NodOn",
+                "manufacturer": "NodOn (ID-RF)",
                 "model": "MSP-3-1-XX Micro Smart Plug",
-                "name": "NodOn MSP-3-1-XX Micro Smart Plug",
+                "name": "NodOn (ID-RF) MSP-3-1-XX Micro Smart Plug",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "0d78fc0bb3d04cf6bf5fd0b5682e5225"
             },
             {
                 "area_id": null,
@@ -232,7 +232,6 @@
                     "889904f9f2454438a44df673a320c119"
                 ],
                 "connections": [],
-                "hub_device_id": null,
                 "id": "113abd297375480f99e477adf05206c4",
                 "identifiers": [
                     [
@@ -244,7 +243,8 @@
                 "model": "FGWPE/F Wall Plug Gen5",
                 "name": "FIBARO System FGWPE/F Wall Plug Gen5",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "0d78fc0bb3d04cf6bf5fd0b5682e5225"
             },
             {
                 "area_id": "572208ae75ba4f4fb7cdd8ea1e6b442b",
@@ -252,7 +252,6 @@
                     "500f9223b0984899805ebd4a4e1d8f4a"
                 ],
                 "connections": [],
-                "hub_device_id": null,
                 "id": "572996eb265a4f6faab7a8d507709cb2",
                 "identifiers": [
                     [
@@ -260,11 +259,12 @@
                         "c8a8c6b0eb882de87d634ce6001c3d10"
                     ]
                 ],
-                "manufacturer": "Google Inc.",
+                "manufacturer": "Unknown manufacturer",
                 "model": "Chromecast Ultra",
                 "name": "Chromecast Salon TV",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": null
             },
             {
                 "area_id": "7f4809b3e46d4b568791123ddb972fa5",
@@ -277,7 +277,6 @@
                         "uuid:igd73616d61-6a65-7374-650a-f4cae541dfa2"
                     ]
                 ],
-                "hub_device_id": null,
                 "id": "4f9b6adc4310456fa310da39fbc14a81",
                 "identifiers": [
                     [
@@ -289,7 +288,8 @@
                 "model": null,
                 "name": "Freebox Server",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": null
             },
             {
                 "area_id": "7f4809b3e46d4b568791123ddb972fa5",
@@ -302,7 +302,6 @@
                         "uuid:e6f1461f-a8f9-94d5-381c-fc31b0c703eb"
                     ]
                 ],
-                "hub_device_id": null,
                 "id": "ef27f76115d442998706ffc925282175",
                 "identifiers": [
                     [
@@ -314,7 +313,8 @@
                 "model": null,
                 "name": "R7000 (Gateway)",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": null
             },
             {
                 "area_id": "7f4809b3e46d4b568791123ddb972fa5",
@@ -322,7 +322,6 @@
                     "c000cef6b0b442c98d792c0b36b14328"
                 ],
                 "connections": [],
-                "hub_device_id": "ef27f76115d442998706ffc925282175",
                 "id": "1534f299f40448e884c99d1ccd718bd4",
                 "identifiers": [
                     [
@@ -334,7 +333,8 @@
                 "model": null,
                 "name": "R7000 (Gateway) packets/sec sent",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "ef27f76115d442998706ffc925282175"
             },
             {
                 "area_id": "7f4809b3e46d4b568791123ddb972fa5",
@@ -342,7 +342,6 @@
                     "c000cef6b0b442c98d792c0b36b14328"
                 ],
                 "connections": [],
-                "hub_device_id": "ef27f76115d442998706ffc925282175",
                 "id": "377db9a967bc49e68a3f6da37a1be701",
                 "identifiers": [
                     [
@@ -354,7 +353,8 @@
                 "model": null,
                 "name": "R7000 (Gateway) bytes sent",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "ef27f76115d442998706ffc925282175"
             },
             {
                 "area_id": "7f4809b3e46d4b568791123ddb972fa5",
@@ -362,7 +362,6 @@
                     "c000cef6b0b442c98d792c0b36b14328"
                 ],
                 "connections": [],
-                "hub_device_id": "ef27f76115d442998706ffc925282175",
                 "id": "78644f2bed714d1183e3d45f3504d67b",
                 "identifiers": [
                     [
@@ -374,7 +373,8 @@
                 "model": null,
                 "name": "R7000 (Gateway) packets sent",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "ef27f76115d442998706ffc925282175"
             },
             {
                 "area_id": "7f4809b3e46d4b568791123ddb972fa5",
@@ -382,7 +382,6 @@
                     "c000cef6b0b442c98d792c0b36b14328"
                 ],
                 "connections": [],
-                "hub_device_id": "ef27f76115d442998706ffc925282175",
                 "id": "d373ddcc1d0b42cf8eec3fb77931efa4",
                 "identifiers": [
                     [
@@ -394,7 +393,8 @@
                 "model": null,
                 "name": "R7000 (Gateway) packets received",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "ef27f76115d442998706ffc925282175"
             },
             {
                 "area_id": "7f4809b3e46d4b568791123ddb972fa5",
@@ -402,7 +402,6 @@
                     "c000cef6b0b442c98d792c0b36b14328"
                 ],
                 "connections": [],
-                "hub_device_id": "ef27f76115d442998706ffc925282175",
                 "id": "592bfc32376044048504c4f1085efc26",
                 "identifiers": [
                     [
@@ -414,7 +413,8 @@
                 "model": null,
                 "name": "R7000 (Gateway) bytes received",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "ef27f76115d442998706ffc925282175"
             },
             {
                 "area_id": "7f4809b3e46d4b568791123ddb972fa5",
@@ -422,7 +422,6 @@
                     "c000cef6b0b442c98d792c0b36b14328"
                 ],
                 "connections": [],
-                "hub_device_id": "ef27f76115d442998706ffc925282175",
                 "id": "74064add2afc4518b9928d9a3ac6b72a",
                 "identifiers": [
                     [
@@ -434,7 +433,8 @@
                 "model": null,
                 "name": "R7000 (Gateway) kbyte/sec received",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "ef27f76115d442998706ffc925282175"
             },
             {
                 "area_id": "7f4809b3e46d4b568791123ddb972fa5",
@@ -442,7 +442,6 @@
                     "c000cef6b0b442c98d792c0b36b14328"
                 ],
                 "connections": [],
-                "hub_device_id": "ef27f76115d442998706ffc925282175",
                 "id": "ff7cbeb7fc554796bd3c0b5d8f26407a",
                 "identifiers": [
                     [
@@ -454,7 +453,8 @@
                 "model": null,
                 "name": "R7000 (Gateway) kbyte/sec sent",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "ef27f76115d442998706ffc925282175"
             },
             {
                 "area_id": "7f4809b3e46d4b568791123ddb972fa5",
@@ -462,7 +462,6 @@
                     "c000cef6b0b442c98d792c0b36b14328"
                 ],
                 "connections": [],
-                "hub_device_id": "ef27f76115d442998706ffc925282175",
                 "id": "9a7235f557b9458a8b4a650fbdde394a",
                 "identifiers": [
                     [
@@ -474,7 +473,8 @@
                 "model": null,
                 "name": "R7000 (Gateway) packets/sec received",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "ef27f76115d442998706ffc925282175"
             },
             {
                 "area_id": null,
@@ -482,7 +482,6 @@
                     "889904f9f2454438a44df673a320c119"
                 ],
                 "connections": [],
-                "hub_device_id": null,
                 "id": "1840d339ea9049929ca4403e45b1bcdd",
                 "identifiers": [
                     [
@@ -494,7 +493,8 @@
                 "model": "ZW120 Door Window Sensor Gen5",
                 "name": "Aeotec ZW120 Door Window Sensor Gen5",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "0d78fc0bb3d04cf6bf5fd0b5682e5225"
             },
             {
                 "area_id": null,
@@ -502,7 +502,6 @@
                     "889904f9f2454438a44df673a320c119"
                 ],
                 "connections": [],
-                "hub_device_id": null,
                 "id": "2b5a1d11dd004e888ed6b7c8b0ba74fe",
                 "identifiers": [
                     [
@@ -514,7 +513,8 @@
                 "model": "ZW120 Door Window Sensor Gen5",
                 "name": "Aeotec ZW120 Door Window Sensor Gen5",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "0d78fc0bb3d04cf6bf5fd0b5682e5225"
             },
             {
                 "area_id": null,
@@ -522,7 +522,6 @@
                     "889904f9f2454438a44df673a320c119"
                 ],
                 "connections": [],
-                "hub_device_id": null,
                 "id": "d4fae99599654826a8a73f3fa8b7e7d7",
                 "identifiers": [
                     [
@@ -534,7 +533,8 @@
                 "model": "ZW120 Door Window Sensor Gen5",
                 "name": "Aeotec ZW120 Door Window Sensor Gen5",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "0d78fc0bb3d04cf6bf5fd0b5682e5225"
             },
             {
                 "area_id": null,
@@ -542,7 +542,6 @@
                     "889904f9f2454438a44df673a320c119"
                 ],
                 "connections": [],
-                "hub_device_id": null,
                 "id": "a5ccdabe8e704825952f6f06e6b572c2",
                 "identifiers": [
                     [
@@ -554,7 +553,8 @@
                 "model": "ZW120 Door Window Sensor Gen5",
                 "name": "Aeotec ZW120 Door Window Sensor Gen5",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "0d78fc0bb3d04cf6bf5fd0b5682e5225"
             },
             {
                 "area_id": null,
@@ -562,7 +562,6 @@
                     "889904f9f2454438a44df673a320c119"
                 ],
                 "connections": [],
-                "hub_device_id": null,
                 "id": "48fe306771014cb0a4ba62890297c601",
                 "identifiers": [
                     [
@@ -570,11 +569,72 @@
                         14
                     ]
                 ],
-                "manufacturer": "Aeotec",
+                "manufacturer": "AEON Labs",
                 "model": "ZW100 MultiSensor 6",
-                "name": "Aeotec ZW100 MultiSensor 6",
+                "name": "AEON Labs ZW100 MultiSensor 6",
                 "name_by_user": null,
-                "sw_version": null
+                "sw_version": null,
+                "via_device_id": "0d78fc0bb3d04cf6bf5fd0b5682e5225"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "424daed45a794f7990e2a766e3b120c2"
+                ],
+                "connections": [],
+                "id": "432748d6a2f549c496b39aa838fa2e18",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:03:31:d1:f8-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue bloom",
+                "name": "Bloom Baby room",
+                "name_by_user": null,
+                "sw_version": "5.127.1.26581",
+                "via_device_id": "a7f1ad85d04d47bb8f615ea58f88fe41"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "889904f9f2454438a44df673a320c119"
+                ],
+                "connections": [],
+                "id": "0d78fc0bb3d04cf6bf5fd0b5682e5225",
+                "identifiers": [
+                    [
+                        "zwave",
+                        1
+                    ]
+                ],
+                "manufacturer": "AEON Labs",
+                "model": "ZW090 Z-Stick Gen5 EU",
+                "name": "AEON Labs ZW090 Z-Stick Gen5 EU",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "424daed45a794f7990e2a766e3b120c2"
+                ],
+                "connections": [],
+                "id": "b7a8b836d28342fd9b1acce6c164cc59",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:06:0c:ea:89-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue go",
+                "name": "Go Salon",
+                "name_by_user": null,
+                "sw_version": "5.127.1.26420",
+                "via_device_id": "a7f1ad85d04d47bb8f615ea58f88fe41"
             }
         ]
     },
