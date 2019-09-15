@@ -103,10 +103,8 @@ script:
       - delay: 00:00:01
       - service: switch.turn_on
         entity_id: switch.bathroom_heater_wall_plug
-      - service: climate.set_operation_mode
-        data_template:
-          entity_id: "climate.bathroom_heater"
-          operation_mode: "heat"
+      - service: climate.turn_on
+        entity_id: "climate.bathroom_heater"
 
   # Backup in case of the heater has been manually started.
   stop_bathroom_heater_timer:
@@ -119,12 +117,21 @@ script:
       # - service: notify.pushover
       #   data:
       #     message: 'Bathroom heater timeout stopped'
-      - service: climate.set_operation_mode
-        data_template:
-          entity_id: "climate.bathroom_heater"
-          operation_mode: "off"
+      - service: switch.turn_off
+        entity_id: switch.bathroom_heater_wall_plug
+      - delay: '00:00:01'
+      - service: climate.turn_off
+        entity_id: "climate.bathroom_heater"
+      - delay: '00:00:05'
       - service: switch.turn_off
         entity_id: switch.rfxcom_bathroom_heater_remote
+      - delay: '00:00:05'
+      - service: switch.turn_off
+        entity_id: switch.bathroom_heater_wall_plug
+      - delay: '00:00:05'
+      - service: switch.turn_off
+        entity_id: switch.bathroom_heater_wall_plug
+      - delay: '00:00:05'
       - service: switch.turn_off
         entity_id: switch.bathroom_heater_wall_plug
 
@@ -178,10 +185,8 @@ automation:
   #   action:
   #     # - service: switch.turn_off
   #     #   entity_id: switch.bathroom_heater_wall_plug
-  #     - service: climate.set_operation_mode
-  #       data_template:
-  #         entity_id: "climate.bathroom_heater"
-  #         operation_mode: "off"
+  #     - service: climate.turn_off
+  #       entity_id: "climate.bathroom_heater"
   #     - service: switch.turn_off
   #       entity_id: switch.rfxcom_bathroom_heater_remote
   #     - service: script.turn_off
@@ -204,15 +209,21 @@ automation:
       entity_id: switch.rfxcom_bathroom_heater_remote
       to: 'off'
     action:
-      - service: climate.set_operation_mode
-        data_template:
-          entity_id: "climate.bathroom_heater"
-          operation_mode: "off"
-      - service: switch.turn_off
-        entity_id: switch.bathroom_heater_wall_plug
+      - service: climate.turn_off
+        entity_id: "climate.bathroom_heater"
+      - delay: '00:00:05'
       - service: script.turn_off
         data:
           entity_id: script.stop_bathroom_heater_timer
+      - delay: '00:00:05'
+      - service: switch.turn_off
+        entity_id: switch.bathroom_heater_wall_plug
+      - delay: '00:00:05'
+      - service: switch.turn_off
+        entity_id: switch.bathroom_heater_wall_plug
+      - delay: '00:00:05'
+      - service: switch.turn_off
+        entity_id: switch.bathroom_heater_wall_plug
 
 
 homeassistant:
