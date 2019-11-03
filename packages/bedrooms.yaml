@@ -1,8 +1,3 @@
-hue:
-  bridges:
-    - host: 192.168.0.4
-      allow_hue_groups: false
-    
 input_number:
   gaetan_light_timer_minutes:
     name: Lumiere Gaetan - Minutes
@@ -65,11 +60,6 @@ automation:
   #     - service: homeassistant.turn_off
   #       entity_id: light.hue_iris_gaetan
 
-recorder:
-  include:
-    entities:
-      - light.hue_iris_aurelie
-      - light.hue_iris_gaetan
 
 group:
   bedroom_lights:

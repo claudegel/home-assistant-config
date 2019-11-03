@@ -253,7 +253,7 @@ sensor:
   - platform: filter
     name: "Washing Machine Energy each 2 min"
     # entity_id: sensor.washing_machine_power
-    entity_id: sensor.washing_machine_smart_plug_power
+    entity_id: sensor.washing_machine_smart_plug_power_2
     filters:
       - filter: time_simple_moving_average
         window_size: 00:02
@@ -270,11 +270,6 @@ homeassistant:
       persistent: true
       friendly_name: "Washing Machine Energy (2 min moving average)"
 
-recorder:
-  include:
-    entities: 
-      - input_boolean.dbg_washing_machine
-      - sensor.washing_machine_smart_plug_power
 
 group:
   washing_machine:

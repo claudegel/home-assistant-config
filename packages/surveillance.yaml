@@ -12,12 +12,7 @@ camera:
     authentication: digest
     username: !secret camera_ip_2_username
     password: !secret camera_ip_2_password
-  - platform: onvif
-    host: 192.168.0.111
-    name: "Camera Child Live"
-    port: 8000
-    username: !secret camera_ip_2_username
-    password: !secret camera_ip_2_password
+
 
 #------------------------------------------------------------
 
@@ -25,80 +20,20 @@ camera:
 binary_sensor:
   - platform: hikvision
     host: !secret camera_ip_1_ip
-    name: "Camera IP 1"
+    name: "Cam 1"
     username: !secret camera_ip_1_username
     password: !secret camera_ip_1_password
 
   - platform: hikvision
     host: !secret camera_ip_2_ip
-    name: "Camera IP 2"
+    name: "Cam 2"
     username: !secret camera_ip_2_username
     password: !secret camera_ip_2_password
 
-  # Door sensors need 2 extra steps:
-  #  - Change the Report Type to "17"
-  #    (see https://www.home-assistant.io/docs/z-wave/device-specific/#motion-or-alarm-sensors)
-  #      - select the zwave device
-  #      - In “Node Config Option”, choose “121: Report Type”
-  #      - In value, set to"17" (as recommended: "Sensor Binary and Battery Report")
-  #      - wake the device by simple clicking on the sync button.
-  #        Wait a few seconds to see if the value is reupdated to 256, if so try again.
-  #  - Define customized entities here to have real "door/window sensor entities"
-  - platform: template
-    sensors:
-      kitchen_window:
-        value_template: "{{ is_state('sensor.kitchen_window_sensor_access_control', '22') }}"
-        friendly_name: 'Kitchen Window'
-        device_class: door
-        entity_id: sensor.kitchen_window_sensor_access_control
-
-      tv_room_window:
-        value_template: "{{ is_state('sensor.tv_room_window_sensor_access_control', '22') }}"
-        friendly_name: 'TV Room Window'
-        device_class: door
-        entity_id: sensor.tv_room_window_sensor_access_control
-
-      main_door:
-        value_template: "{{ is_state('sensor.main_door_sensor_access_control', '22') }}"
-        friendly_name: 'Main Door'
-        device_class: door
-        entity_id: sensor.main_door_sensor_access_control
-
-      garage_back_door:
-        value_template: "{{ is_state('sensor.garage_back_door_sensor_access_control', '22') }}"
-        friendly_name: 'Garage Back Door'
-        device_class: door
-        entity_id: sensor.garage_back_door_sensor_access_control
 
 #------------------------------------------------------------
 
-recorder:
-  include:
-    entities:
-      - binary_sensor.camera_ip_1_motion
-      - binary_sensor.camera_ip_2_motion
-      # Kitchen Window
-      - binary_sensor.kitchen_window
-      - sensor.window_sensor_kitchen_access_control
-      - sensor.window_sensor_kitchen_burglar
-      # TV Room Window
-      - binary_sensor.tv_room_window
-      - sensor.tv_room_window_sensor_access_control
-      - sensor.tv_room_window_sensor_burglar
-      # Main Door
-      - binary_sensor.main_door
-      - sensor.main_door_sensor_access_control
-      - sensor.main_door_sensor_burglar
-      # Garage Back Door
-      - binary_sensor.garage_back_door
-      - sensor.garage_back_door_access_control
-      - sensor.garage_back_door_burglar
-      # Entrance multisensor
-      - binary_sensor.entrance_multisensor_2_sensor
-      - sensor.entrance_multisensor_2_alarm_level
-      - sensor.entrance_multisensor_2_luminance
-      - sensor.entrance_multisensor_2_burglar
-
+    
 group:
   surveillance:
     name: Surveillance

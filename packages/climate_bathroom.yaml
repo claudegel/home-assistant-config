@@ -103,8 +103,10 @@ script:
       - delay: 00:00:01
       - service: switch.turn_on
         entity_id: switch.bathroom_heater_wall_plug
-      - service: climate.turn_on
-        entity_id: "climate.bathroom_heater"
+      - service: climate.set_operation_mode
+        data_template:
+          entity_id: "climate.bathroom_heater"
+          operation_mode: "heat"
 
   # Backup in case of the heater has been manually started.
   stop_bathroom_heater_timer:
@@ -117,21 +119,12 @@ script:
       # - service: notify.pushover
       #   data:
       #     message: 'Bathroom heater timeout stopped'
-      - service: switch.turn_off
-        entity_id: switch.bathroom_heater_wall_plug
-      - delay: '00:00:01'
-      - service: climate.turn_off
-        entity_id: "climate.bathroom_heater"
-      - delay: '00:00:05'
+      - service: climate.set_operation_mode
+        data_template:
+          entity_id: "climate.bathroom_heater"
+          operation_mode: "off"
       - service: switch.turn_off
         entity_id: switch.rfxcom_bathroom_heater_remote
-      - delay: '00:00:05'
-      - service: switch.turn_off
-        entity_id: switch.bathroom_heater_wall_plug
-      - delay: '00:00:05'
-      - service: switch.turn_off
-        entity_id: switch.bathroom_heater_wall_plug
-      - delay: '00:00:05'
       - service: switch.turn_off
         entity_id: switch.bathroom_heater_wall_plug
 
@@ -145,21 +138,11 @@ automation:
       platform: template
       value_template: "{{ states('sensor.time') == (states.input_datetime.quick_bathroom_confort_time.attributes.timestamp | int | timestamp_custom('%H:%M', False)) }}"
     condition:
-      condition: and
-      conditions:
-        - condition: time
-          weekday:
-            - mon
-            - tue
-            - wed
-            - thu
-            - fri
-        - condition: state
-          entity_id: input_boolean.schedule_morning_bathroom_confort
-          state: 'on'
+      condition: state
+      entity_id: input_boolean.schedule_morning_bathroom_confort
+      state: 'on'
     action:
-      - service: switch.turn_on
-        entity_id: switch.rfxcom_bathroom_heater_remote
+      - service: script.set_bathroom_confortable
 
   # Backup in case of the heater has been manually started.
   # Its role is only to call the script of the same name
@@ -185,8 +168,10 @@ automation:
   #   action:
   #     # - service: switch.turn_off
   #     #   entity_id: switch.bathroom_heater_wall_plug
-  #     - service: climate.turn_off
-  #       entity_id: "climate.bathroom_heater"
+  #     - service: climate.set_operation_mode
+  #       data_template:
+  #         entity_id: "climate.bathroom_heater"
+  #         operation_mode: "off"
   #     - service: switch.turn_off
   #       entity_id: switch.rfxcom_bathroom_heater_remote
   #     - service: script.turn_off
@@ -209,21 +194,15 @@ automation:
       entity_id: switch.rfxcom_bathroom_heater_remote
       to: 'off'
     action:
-      - service: climate.turn_off
-        entity_id: "climate.bathroom_heater"
-      - delay: '00:00:05'
+      - service: climate.set_operation_mode
+        data_template:
+          entity_id: "climate.bathroom_heater"
+          operation_mode: "off"
+      - service: switch.turn_off
+        entity_id: switch.bathroom_heater_wall_plug
       - service: script.turn_off
         data:
           entity_id: script.stop_bathroom_heater_timer
-      - delay: '00:00:05'
-      - service: switch.turn_off
-        entity_id: switch.bathroom_heater_wall_plug
-      - delay: '00:00:05'
-      - service: switch.turn_off
-        entity_id: switch.bathroom_heater_wall_plug
-      - delay: '00:00:05'
-      - service: switch.turn_off
-        entity_id: switch.bathroom_heater_wall_plug
 
 
 homeassistant:

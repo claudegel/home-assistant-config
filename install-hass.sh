@@ -4,6 +4,11 @@ sudo apt-get update -y
 sudo apt-get install -y \
     ffmpeg \
     libudev-dev \
+    libavcodec-dev \
+    libavformat-dev \
+    libavutil-dev \
+    libavfilter-dev \
+    mariadb-server \
     nmap \
     raspberrypi-kernel-headers \
     iperf3 \
@@ -16,7 +21,7 @@ sudo apt-get install -y \
     python3-dev \
     build-essential
 
-
+# don't forget to run: sudo mysql_secure_installation
 
 rm -rfv .venv
 python3 -m venv .venv
@@ -24,7 +29,7 @@ python3 -m venv .venv
 pip install --user --upgrade pip pipenv wheel
 
 source .venv/bin/activate
-pip install --upgrade \
+pip3 install --upgrade \
     homeassistant==$(cat .homeassistant.version) \
     hass-configurator \
     homeassistant-cli \

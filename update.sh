@@ -7,7 +7,7 @@ export PATH=$HOME/.local/bin:$PATH
 source .venv/bin/activate
 
 pip install --upgrade pip pipenv wheel
-pip install --upgrade pymysql mysqlclient bs4
+pip install --upgrade pymysql mysqlclient bs4 speedtest
 pip install --upgrade ruamel.yaml requests netdisco 
 pip install --upgrade homeassistant==$(cat .homeassistant.version)
 

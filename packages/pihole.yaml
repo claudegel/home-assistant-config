@@ -97,10 +97,10 @@ sensor:
   #     {%- endif -%}
 
     
-#   - name: Temp PiHole
-#     platform: mqtt
-#     state_topic: "home/pihole/cpu/temp"
-#     unit_of_measurement: '°C'
+  - name: Temp PiHole
+    platform: mqtt
+    state_topic: "home/pihole/cpu/temp"
+    unit_of_measurement: '°C'
 
 
 # Pi-Hole switch

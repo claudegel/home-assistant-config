@@ -6,22 +6,18 @@ media_player:
   
   - platform: yamaha_musiccast
     host: 192.168.0.24
-    port: 5024
     # name: "MusicCast Chambre Parentale"
   
   - platform: yamaha_musiccast
     host: 192.168.0.20
-    port: 5020
     # name: "MusicCast Salle Principale"
   
   - platform: yamaha_musiccast
     # id: multicast_living_room
     host: 192.168.0.21
-    port: 5021
     # name: "MusicCast Salon"
   
   - platform: yamaha_musiccast
     # id: multicast_bureau
     host: 192.168.0.26
-    port: 5026
     # name: "MusicCast Bureau"

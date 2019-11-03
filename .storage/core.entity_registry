@@ -11,15 +11,6 @@
                 "unique_id": "00:17:88:01:01:23:53:18-0b"
             },
             {
-                "config_entry_id": "424daed45a794f7990e2a766e3b120c2",
-                "device_id": "b137557b0d5b4da491ba0994cb85cf88",
-                "disabled_by": null,
-                "entity_id": "light.hue_iris_gaetan",
-                "name": null,
-                "platform": "hue",
-                "unique_id": "00:17:88:01:00:12:19:72-0b"
-            },
-            {
                 "config_entry_id": null,
                 "device_id": null,
                 "disabled_by": null,
@@ -1487,15 +1478,6 @@
                 "unique_id": "4-72057594110034354"
             },
             {
-                "config_entry_id": "424daed45a794f7990e2a766e3b120c2",
-                "device_id": "432748d6a2f549c496b39aa838fa2e18",
-                "disabled_by": null,
-                "entity_id": "light.hue_bloom_1",
-                "name": null,
-                "platform": "hue",
-                "unique_id": "00:17:88:01:03:31:d1:f8-0b"
-            },
-            {
                 "config_entry_id": "889904f9f2454438a44df673a320c119",
                 "device_id": "b5a8ebc024424c39a475212eaf380671",
                 "disabled_by": null,
@@ -1512,15 +1494,6 @@
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "4-72057594110035010"
-            },
-            {
-                "config_entry_id": "424daed45a794f7990e2a766e3b120c2",
-                "device_id": "b7a8b836d28342fd9b1acce6c164cc59",
-                "disabled_by": null,
-                "entity_id": "light.hue_go_1",
-                "name": null,
-                "platform": "hue",
-                "unique_id": "00:17:88:01:06:0c:ea:89-0b"
             },
             {
                 "config_entry_id": "889904f9f2454438a44df673a320c119",
@@ -1575,6 +1548,60 @@
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "4-72057594110034498"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "b5a8ebc024424c39a475212eaf380671",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgwpe_f_wall_plug_current",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594110034178"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.emby_emby_mobile_web_browser_iphone_3",
+                "name": null,
+                "platform": "emby",
+                "unique_id": "TW96aWxsYS81LjAgKGlQaG9uZTsgQ1BVIGlQaG9uZSBPUyAxM18xXzIgbGlrZSBNYWMgT1MgWCkgQXBwbGVXZWJLaXQvNjA1LjEuMTUgKEtIVE1MLCBsaWtlIEdlY2tvKSBWZXJzaW9uLzEzLjAuMSBNb2JpbGUvMTVFMTQ4IFNhZmFyaS82MDQuMXwxNTcwNTEyNjYxMjA3.Emby Mobile"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "b5a8ebc024424c39a475212eaf380671",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgwpe_f_wall_plug_basis_metabolic_rate",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594110034722"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "b5a8ebc024424c39a475212eaf380671",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgwpe_f_wall_plug_distance",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594110034242"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "7e642ba1637e454f870043dbdef45dc4",
+                "disabled_by": null,
+                "entity_id": "sensor.horstmann_secure_meters_hrt4_zw_thermostat_transmitter_battery_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594094551041"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "48fe306771014cb0a4ba62890297c601",
+                "disabled_by": null,
+                "entity_id": "sensor.aeon_labs_zw100_multisensor_6_battery_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-72057594279100417"
             }
         ]
     },

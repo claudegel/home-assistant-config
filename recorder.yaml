@@ -1,7 +1,7 @@
 purge_keep_days: 3
 purge_interval: 1
 # db_url: sqlite:///./recorder.sqlite
-db_url: mysql+pymysql://hass:FH42ovxt@localhost/hass?charset=utf8
+db_url: !secret recorder_mysql_db_url
 include:
   entities:
     - climate.thermostat_transmitter_heating

@@ -1,648 +1,7 @@
 {
     "data": [
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "can_cancel": false,
-                    "friendly_name": "Update Speedtest",
-                    "icon": "mdi:refresh"
-                },
-                "context": {
-                    "id": "f38a904750ad46eba4becac6a57c75c8",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.update_speedtest",
-                "last_changed": "2019-09-15T10:21:30.681312+00:00",
-                "last_updated": "2019-09-15T10:21:30.681312+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Schedule Morning Bathroom Confort",
-                    "icon": "mdi:weather-sunset-up"
-                },
-                "context": {
-                    "id": "46aeb7a3b0e4436da26fc0dff2fe9e66",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.schedule_morning_bathroom_confort",
-                "last_changed": "2019-09-15T10:21:30.683444+00:00",
-                "last_updated": "2019-09-15T10:21:30.683444+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "DBG: Washing machine"
-                },
-                "context": {
-                    "id": "0bfc4b0b60ce4cf0a40acf7954ad706a",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.dbg_washing_machine",
-                "last_changed": "2019-09-15T10:21:30.689911+00:00",
-                "last_updated": "2019-09-15T10:21:30.689911+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Reset default value",
-                    "icon": "mdi:refresh"
-                },
-                "context": {
-                    "id": "c553f0f2940a4f65b69140d85c3cd4d0",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.reset_climate_values",
-                "last_changed": "2019-09-15T10:21:30.691746+00:00",
-                "last_updated": "2019-09-15T10:21:30.691746+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Climate Control Mode",
-                    "icon": "mdi:robot",
-                    "options": [
-                        "Not / Applicable",
-                        "Automatic mode change",
-                        "Manual mode change"
-                    ]
-                },
-                "context": {
-                    "id": "b8071d8f82684f7bb6e11b169137b875",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_select.auto_main_heat",
-                "last_changed": "2019-09-15T10:21:30.695306+00:00",
-                "last_updated": "2019-09-15T10:21:30.695306+00:00",
-                "state": "Not / Applicable"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Day mode (DEBUG)",
-                    "icon": "mdi:oil-temperature",
-                    "options": [
-                        "Not / Applicable",
-                        "Work day",
-                        "Week end"
-                    ]
-                },
-                "context": {
-                    "id": "2b79d236b6f444a599b1c9b216bc6f7d",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_select.heat_day_mode",
-                "last_changed": "2019-09-15T10:21:30.697181+00:00",
-                "last_updated": "2019-09-15T10:21:30.697181+00:00",
-                "state": "Not / Applicable"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Washing Machine Status",
-                    "options": [
-                        "Stopped",
-                        "Idle",
-                        "Running",
-                        "Finished"
-                    ],
-                    "persistent": true
-                },
-                "context": {
-                    "id": "7060703ae004460d8313f5fa48759dd2",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_select.washing_machine_status",
-                "last_changed": "2019-09-15T10:21:30.699760+00:00",
-                "last_updated": "2019-09-15T10:21:30.699760+00:00",
-                "state": "Stopped"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Climate Season",
-                    "icon": "mdi:weather-sunset-up",
-                    "options": [
-                        "Summer or Frost Protection",
-                        "Winter"
-                    ]
-                },
-                "context": {
-                    "id": "aa2ead744c0c4e32a38ab552acfe6a58",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_select.climate_season",
-                "last_changed": "2019-09-15T10:21:30.703370+00:00",
-                "last_updated": "2019-09-15T10:21:30.703370+00:00",
-                "state": "Summer or Frost Protection"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Heat Mode",
-                    "icon": "mdi:oil-temperature",
-                    "options": [
-                        "Not / Applicable",
-                        "Work Week",
-                        "Vacation at Home",
-                        "Vacation out"
-                    ]
-                },
-                "context": {
-                    "id": "75b8b120e0db4ef4824618141b71cce2",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_select.main_heat_mode",
-                "last_changed": "2019-09-15T10:21:30.705108+00:00",
-                "last_updated": "2019-09-15T10:21:30.705108+00:00",
-                "state": "Not / Applicable"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Lumiere Gaetan - Minutes",
-                    "icon": "mdi:clock",
-                    "initial": null,
-                    "max": 59.0,
-                    "min": 0.0,
-                    "mode": "slider",
-                    "step": 1.0
-                },
-                "context": {
-                    "id": "ab06422f7e08456d9d673775ee3c19f4",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_number.gaetan_light_timer_minutes",
-                "last_changed": "2019-09-15T10:21:30.708492+00:00",
-                "last_updated": "2019-09-15T10:21:30.708492+00:00",
-                "state": "0.0"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Lumiere Gaetan - Heures",
-                    "icon": "mdi:clock",
-                    "initial": null,
-                    "max": 23.0,
-                    "min": 0.0,
-                    "mode": "slider",
-                    "step": 1.0
-                },
-                "context": {
-                    "id": "61274029442349cb81dbbb76ed4b1508",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_number.gaetan_light_timer_hours",
-                "last_changed": "2019-09-15T10:21:30.710364+00:00",
-                "last_updated": "2019-09-15T10:21:30.710364+00:00",
-                "state": "0.0"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Delai Extinction Lumiere Aurelie",
-                    "icon": "mdi:clock",
-                    "initial": null,
-                    "max": 59.0,
-                    "min": 5.0,
-                    "mode": "slider",
-                    "step": 5.0
-                },
-                "context": {
-                    "id": "37d05a9f14564b768e62420b4be755de",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_number.shed_aurelie_light_delay",
-                "last_changed": "2019-09-15T10:21:30.712192+00:00",
-                "last_updated": "2019-09-15T10:21:30.712192+00:00",
-                "state": "59.0"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Winter Night",
-                    "icon": "mdi:thermometer",
-                    "initial": null,
-                    "max": 25.0,
-                    "min": 12.0,
-                    "mode": "box",
-                    "step": 1.0,
-                    "unit_of_measurement": "\u00baC"
-                },
-                "context": {
-                    "id": "88e3557b11cc4abaaec0f53a0774be97",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_number.temp_for_night",
-                "last_changed": "2019-09-15T10:21:30.715386+00:00",
-                "last_updated": "2019-09-15T10:21:30.715386+00:00",
-                "state": "18.0"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Winter Morning",
-                    "icon": "mdi:thermometer",
-                    "initial": null,
-                    "max": 25.0,
-                    "min": 12.0,
-                    "mode": "box",
-                    "step": 1.0,
-                    "unit_of_measurement": "\u00baC"
-                },
-                "context": {
-                    "id": "3cfdfb9af35e42588d9d109866f10d8e",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_number.temp_for_morning",
-                "last_changed": "2019-09-15T10:21:30.717153+00:00",
-                "last_updated": "2019-09-15T10:21:30.717153+00:00",
-                "state": "19.0"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Winter Day Here",
-                    "icon": "mdi:thermometer",
-                    "initial": null,
-                    "max": 25.0,
-                    "min": 12.0,
-                    "mode": "box",
-                    "step": 1.0,
-                    "unit_of_measurement": "\u00baC"
-                },
-                "context": {
-                    "id": "7c17f531004d421b8ad066b3c7ba625f",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_number.temp_for_day_with_presence",
-                "last_changed": "2019-09-15T10:21:30.718830+00:00",
-                "last_updated": "2019-09-15T10:21:30.718830+00:00",
-                "state": "18.0"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Winter Day Away",
-                    "icon": "mdi:thermometer",
-                    "initial": null,
-                    "max": 25.0,
-                    "min": 12.0,
-                    "mode": "box",
-                    "step": 1.0,
-                    "unit_of_measurement": "\u00baC"
-                },
-                "context": {
-                    "id": "63df4e0ec54d4eeb8f7b51142b5d8414",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_number.temp_for_day_absent",
-                "last_changed": "2019-09-15T10:21:30.723998+00:00",
-                "last_updated": "2019-09-15T10:21:30.723998+00:00",
-                "state": "17.0"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Winter Evening",
-                    "icon": "mdi:thermometer",
-                    "initial": null,
-                    "max": 25.0,
-                    "min": 12.0,
-                    "mode": "box",
-                    "step": 1.0,
-                    "unit_of_measurement": "\u00baC"
-                },
-                "context": {
-                    "id": "b1f45b40f51549f7b28e888439478ca3",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_number.temp_for_evening",
-                "last_changed": "2019-09-15T10:21:30.725957+00:00",
-                "last_updated": "2019-09-15T10:21:30.725957+00:00",
-                "state": "18.0"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Summer",
-                    "icon": "mdi:thermometer",
-                    "initial": null,
-                    "max": 25.0,
-                    "min": 12.0,
-                    "mode": "box",
-                    "step": 1.0,
-                    "unit_of_measurement": "\u00baC"
-                },
-                "context": {
-                    "id": "0afc5bfc82b5428a802c3fe1c8ee4a3b",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_number.temp_for_summer",
-                "last_changed": "2019-09-15T10:21:30.731087+00:00",
-                "last_updated": "2019-09-15T10:21:30.731087+00:00",
-                "state": "12.0"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Winter Holliday",
-                    "icon": "mdi:thermometer",
-                    "initial": null,
-                    "max": 25.0,
-                    "min": 12.0,
-                    "mode": "box",
-                    "step": 1.0,
-                    "unit_of_measurement": "\u00baC"
-                },
-                "context": {
-                    "id": "1aeae327d4a74b5592a5b31c358841fa",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_number.temp_for_holidays",
-                "last_changed": "2019-09-15T10:21:30.733452+00:00",
-                "last_updated": "2019-09-15T10:21:30.733452+00:00",
-                "state": "16.0"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Winter Before Bed",
-                    "icon": "mdi:thermometer",
-                    "initial": null,
-                    "max": 25.0,
-                    "min": 12.0,
-                    "mode": "box",
-                    "step": 1.0,
-                    "unit_of_measurement": "\u00baC"
-                },
-                "context": {
-                    "id": "8b5a78bad64c48f080e16856dd495894",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_number.temp_for_before_bed",
-                "last_changed": "2019-09-15T10:21:30.738386+00:00",
-                "last_updated": "2019-09-15T10:21:30.738386+00:00",
-                "state": "19.0"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Weekend beforebed",
-                    "has_date": false,
-                    "has_time": true,
-                    "hour": 23,
-                    "icon": "mdi:clock-outline",
-                    "minute": 0,
-                    "second": 0,
-                    "timestamp": 82800
-                },
-                "context": {
-                    "id": "bc15fa4d7c314429ab69a231e1bcd103",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_datetime.heat_time_weekend_beforebed",
-                "last_changed": "2019-09-15T10:21:30.740396+00:00",
-                "last_updated": "2019-09-15T10:21:30.740396+00:00",
-                "state": "23:00:00"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Weekend night",
-                    "has_date": false,
-                    "has_time": true,
-                    "hour": 0,
-                    "icon": "mdi:clock-outline",
-                    "minute": 0,
-                    "second": 0,
-                    "timestamp": 0
-                },
-                "context": {
-                    "id": "2adbf27f54dc4130b261ebbcb2ab86e0",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_datetime.heat_time_weekend_night",
-                "last_changed": "2019-09-15T10:21:30.742559+00:00",
-                "last_updated": "2019-09-15T10:21:30.742559+00:00",
-                "state": "00:00:00"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Confort Start Time",
-                    "has_date": false,
-                    "has_time": true,
-                    "hour": 6,
-                    "icon": "mdi:radiator",
-                    "minute": 0,
-                    "second": 0,
-                    "timestamp": 21600
-                },
-                "context": {
-                    "id": "531b988227d2454880545bc49610ea10",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_datetime.quick_bathroom_confort_time",
-                "last_changed": "2019-09-15T10:21:30.744480+00:00",
-                "last_updated": "2019-09-15T10:21:30.744480+00:00",
-                "state": "06:00:00"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Weekday morning",
-                    "has_date": false,
-                    "has_time": true,
-                    "hour": 5,
-                    "icon": "mdi:clock-outline",
-                    "minute": 0,
-                    "second": 0,
-                    "timestamp": 18000
-                },
-                "context": {
-                    "id": "73f71d488db14db5ab11f18c3decf6f5",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_datetime.heat_time_weekday_morning",
-                "last_changed": "2019-09-15T10:21:30.746330+00:00",
-                "last_updated": "2019-09-15T10:21:30.746330+00:00",
-                "state": "05:00:00"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Weekday day",
-                    "has_date": false,
-                    "has_time": true,
-                    "hour": 8,
-                    "icon": "mdi:clock-outline",
-                    "minute": 0,
-                    "second": 0,
-                    "timestamp": 28800
-                },
-                "context": {
-                    "id": "3abb2860f57c43d0853d567a2929ab27",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_datetime.heat_time_weekday_day",
-                "last_changed": "2019-09-15T10:21:30.749320+00:00",
-                "last_updated": "2019-09-15T10:21:30.749320+00:00",
-                "state": "08:00:00"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Weekday evening",
-                    "has_date": false,
-                    "has_time": true,
-                    "hour": 17,
-                    "icon": "mdi:clock-outline",
-                    "minute": 0,
-                    "second": 0,
-                    "timestamp": 61200
-                },
-                "context": {
-                    "id": "b420e0c2730e4f93a3b6792f3b2a27b5",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_datetime.heat_time_weekday_evening",
-                "last_changed": "2019-09-15T10:21:30.751175+00:00",
-                "last_updated": "2019-09-15T10:21:30.751175+00:00",
-                "state": "17:00:00"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Weekday beforebed",
-                    "has_date": false,
-                    "has_time": true,
-                    "hour": 21,
-                    "icon": "mdi:clock-outline",
-                    "minute": 0,
-                    "second": 0,
-                    "timestamp": 75600
-                },
-                "context": {
-                    "id": "e1f963bd31f74123a68cd34ceaefd21e",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_datetime.heat_time_weekday_beforebed",
-                "last_changed": "2019-09-15T10:21:30.753171+00:00",
-                "last_updated": "2019-09-15T10:21:30.753171+00:00",
-                "state": "21:00:00"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Weekday night",
-                    "has_date": false,
-                    "has_time": true,
-                    "hour": 23,
-                    "icon": "mdi:clock-outline",
-                    "minute": 0,
-                    "second": 0,
-                    "timestamp": 82800
-                },
-                "context": {
-                    "id": "8d15717572404d8ba7edda3e9ffe485a",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_datetime.heat_time_weekday_night",
-                "last_changed": "2019-09-15T10:21:30.757154+00:00",
-                "last_updated": "2019-09-15T10:21:30.757154+00:00",
-                "state": "23:00:00"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Weekend morning",
@@ -655,18 +14,42 @@
                     "timestamp": 25200
                 },
                 "context": {
-                    "id": "4f65b8a292c44f32a5b34d0b2f1eba62",
+                    "id": "349e604d98444964b3f59b8dc96d30b0",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "input_datetime.heat_time_weekend_morning",
-                "last_changed": "2019-09-15T10:21:30.759691+00:00",
-                "last_updated": "2019-09-15T10:21:30.759691+00:00",
+                "last_changed": "2019-11-03T14:47:23.247879+00:00",
+                "last_updated": "2019-11-03T14:47:23.247879+00:00",
                 "state": "07:00:00"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Confort Start Time",
+                    "has_date": false,
+                    "has_time": true,
+                    "hour": 5,
+                    "icon": "mdi:radiator",
+                    "minute": 30,
+                    "second": 0,
+                    "timestamp": 19800
+                },
+                "context": {
+                    "id": "1ab82f6f774f483c9aa0835ee4a3429e",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_datetime.quick_bathroom_confort_time",
+                "last_changed": "2019-11-03T14:47:23.249624+00:00",
+                "last_updated": "2019-11-03T14:47:23.249624+00:00",
+                "state": "05:30:00"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Weekend day",
@@ -679,18 +62,42 @@
                     "timestamp": 32400
                 },
                 "context": {
-                    "id": "6821a01f5e2f4a339f11216135a5492f",
+                    "id": "88e936a9f14d487b933b26869590a211",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "input_datetime.heat_time_weekend_day",
-                "last_changed": "2019-09-15T10:21:30.763846+00:00",
-                "last_updated": "2019-09-15T10:21:30.763846+00:00",
+                "last_changed": "2019-11-03T14:47:23.251231+00:00",
+                "last_updated": "2019-11-03T14:47:23.251231+00:00",
                 "state": "09:00:00"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Weekday morning",
+                    "has_date": false,
+                    "has_time": true,
+                    "hour": 5,
+                    "icon": "mdi:clock-outline",
+                    "minute": 0,
+                    "second": 0,
+                    "timestamp": 18000
+                },
+                "context": {
+                    "id": "4a9ef66486e94def9b76eccb023b41bb",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_datetime.heat_time_weekday_morning",
+                "last_changed": "2019-11-03T14:47:23.252799+00:00",
+                "last_updated": "2019-11-03T14:47:23.252799+00:00",
+                "state": "05:00:00"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Weekend evening",
@@ -703,619 +110,1100 @@
                     "timestamp": 61200
                 },
                 "context": {
-                    "id": "78e1be2629284b168a1ab1796b0892f2",
+                    "id": "7c16a0492669431386033bee008fa3f7",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "input_datetime.heat_time_weekend_evening",
-                "last_changed": "2019-09-15T10:21:30.765715+00:00",
-                "last_updated": "2019-09-15T10:21:30.765715+00:00",
+                "last_changed": "2019-11-03T14:47:23.254246+00:00",
+                "last_updated": "2019-11-03T14:47:23.254246+00:00",
                 "state": "17:00:00"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Startup Notification",
-                    "last_triggered": "2019-09-15T10:04:33.704357+00:00"
+                    "friendly_name": "Weekday day",
+                    "has_date": false,
+                    "has_time": true,
+                    "hour": 8,
+                    "icon": "mdi:clock-outline",
+                    "minute": 0,
+                    "second": 0,
+                    "timestamp": 28800
                 },
                 "context": {
-                    "id": "a1383d5cfb1f4989b0025d160087a627",
+                    "id": "4a95357bdd21438b9d7d199607b3ce17",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "automation.startup_notification",
-                "last_changed": "2019-09-15T10:21:43.396590+00:00",
-                "last_updated": "2019-09-15T10:21:43.396590+00:00",
-                "state": "on"
+                "entity_id": "input_datetime.heat_time_weekday_day",
+                "last_changed": "2019-11-03T14:47:23.255738+00:00",
+                "last_updated": "2019-11-03T14:47:23.255738+00:00",
+                "state": "08:00:00"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Update Available Notification",
-                    "last_triggered": "2019-09-05T21:06:16.461723+00:00"
+                    "friendly_name": "Weekend beforebed",
+                    "has_date": false,
+                    "has_time": true,
+                    "hour": 23,
+                    "icon": "mdi:clock-outline",
+                    "minute": 0,
+                    "second": 0,
+                    "timestamp": 82800
                 },
                 "context": {
-                    "id": "fdd1d966840344c7929c6e2447b973e3",
+                    "id": "1fe2c754e9ee4338ae12e44e4670a0df",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "automation.update_available_notification",
-                "last_changed": "2019-09-15T10:21:43.419635+00:00",
-                "last_updated": "2019-09-15T10:21:43.419635+00:00",
-                "state": "on"
+                "entity_id": "input_datetime.heat_time_weekend_beforebed",
+                "last_changed": "2019-11-03T14:47:23.257302+00:00",
+                "last_updated": "2019-11-03T14:47:23.257302+00:00",
+                "state": "23:00:00"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "dbg_washing_machine_show",
-                    "last_triggered": null
+                    "friendly_name": "Weekday evening",
+                    "has_date": false,
+                    "has_time": true,
+                    "hour": 17,
+                    "icon": "mdi:clock-outline",
+                    "minute": 0,
+                    "second": 0,
+                    "timestamp": 61200
                 },
                 "context": {
-                    "id": "d0c720549aec42d3ad8b7a0df4892303",
+                    "id": "01a3c5887b2c45299fe9711dc9ed258f",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "automation.dbg_washing_machine_show",
-                "last_changed": "2019-09-15T10:21:43.429977+00:00",
-                "last_updated": "2019-09-15T10:21:43.429977+00:00",
-                "state": "on"
+                "entity_id": "input_datetime.heat_time_weekday_evening",
+                "last_changed": "2019-11-03T14:47:23.258823+00:00",
+                "last_updated": "2019-11-03T14:47:23.258823+00:00",
+                "state": "17:00:00"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "dbg_washing_machine_hide",
-                    "last_triggered": null
+                    "friendly_name": "Weekend night",
+                    "has_date": false,
+                    "has_time": true,
+                    "hour": 0,
+                    "icon": "mdi:clock-outline",
+                    "minute": 0,
+                    "second": 0,
+                    "timestamp": 0
                 },
                 "context": {
-                    "id": "50453583ac6747cdbb62feed41310797",
+                    "id": "3a6699af2b1b4669b8b531566ee50704",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "automation.dbg_washing_machine_hide",
-                "last_changed": "2019-09-15T10:21:43.435837+00:00",
-                "last_updated": "2019-09-15T10:21:43.435837+00:00",
-                "state": "on"
+                "entity_id": "input_datetime.heat_time_weekend_night",
+                "last_changed": "2019-11-03T14:47:23.260290+00:00",
+                "last_updated": "2019-11-03T14:47:23.260290+00:00",
+                "state": "00:00:00"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Set washing machine finished when power drops",
-                    "last_triggered": "2019-09-14T20:01:14.516708+00:00"
+                    "friendly_name": "Weekday beforebed",
+                    "has_date": false,
+                    "has_time": true,
+                    "hour": 21,
+                    "icon": "mdi:clock-outline",
+                    "minute": 0,
+                    "second": 0,
+                    "timestamp": 75600
                 },
                 "context": {
-                    "id": "2e8f429484234f929b3d6973f26d4a55",
+                    "id": "7495ea7215d242bdadef969d2b913252",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "automation.set_washing_machine_finished_when_power_drops",
-                "last_changed": "2019-09-15T10:21:43.446854+00:00",
-                "last_updated": "2019-09-15T10:21:43.446854+00:00",
-                "state": "on"
+                "entity_id": "input_datetime.heat_time_weekday_beforebed",
+                "last_changed": "2019-11-03T14:47:23.261832+00:00",
+                "last_updated": "2019-11-03T14:47:23.261832+00:00",
+                "state": "21:00:00"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Set washing machine finished when power drops",
-                    "last_triggered": "2019-09-15T08:21:29.564250+00:00"
+                    "friendly_name": "Weekday night",
+                    "has_date": false,
+                    "has_time": true,
+                    "hour": 23,
+                    "icon": "mdi:clock-outline",
+                    "minute": 0,
+                    "second": 0,
+                    "timestamp": 82800
                 },
                 "context": {
-                    "id": "cf13cc0633454afd9e0dcce9bf697d69",
+                    "id": "70318d8fada64c55be55d3f9952c9740",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "automation.set_washing_machine_finished_when_power_drops_2",
-                "last_changed": "2019-09-15T10:21:43.451646+00:00",
-                "last_updated": "2019-09-15T10:21:43.451646+00:00",
-                "state": "on"
+                "entity_id": "input_datetime.heat_time_weekday_night",
+                "last_changed": "2019-11-03T14:47:23.263300+00:00",
+                "last_updated": "2019-11-03T14:47:23.263300+00:00",
+                "state": "23:00:00"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Set washing machine finished when power drops (DBG)",
-                    "last_triggered": "2019-08-23T15:39:55.769592+00:00"
+                    "friendly_name": "Climate Control Mode",
+                    "icon": "mdi:robot",
+                    "options": [
+                        "Not / Applicable",
+                        "Automatic mode change",
+                        "Manual mode change"
+                    ]
                 },
                 "context": {
-                    "id": "5d7ab06811034d3aa868ef5830f950df",
+                    "id": "399c994fe389414b9690aed607d25f15",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "automation.set_washing_machine_finished_when_power_drops_dbg",
-                "last_changed": "2019-09-15T10:21:43.457730+00:00",
-                "last_updated": "2019-09-15T10:21:43.457730+00:00",
-                "state": "on"
+                "entity_id": "input_select.auto_main_heat",
+                "last_changed": "2019-11-03T14:47:23.264647+00:00",
+                "last_updated": "2019-11-03T14:47:23.264647+00:00",
+                "state": "Automatic mode change"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Set washing machine active when power detected",
-                    "last_triggered": "2019-09-15T08:21:54.440579+00:00"
+                    "friendly_name": "Day mode (DEBUG)",
+                    "icon": "mdi:oil-temperature",
+                    "options": [
+                        "Not / Applicable",
+                        "Work day",
+                        "Week end"
+                    ]
                 },
                 "context": {
-                    "id": "47a63782a7164f8ca0463c6e2be03c9d",
+                    "id": "5ef97467351a4dee9a120a7c3e445029",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "automation.set_washing_machine_active_when_power_detected",
-                "last_changed": "2019-09-15T10:21:43.462591+00:00",
-                "last_updated": "2019-09-15T10:21:43.462591+00:00",
-                "state": "on"
+                "entity_id": "input_select.heat_day_mode",
+                "last_changed": "2019-11-03T14:47:23.266164+00:00",
+                "last_updated": "2019-11-03T14:47:23.266164+00:00",
+                "state": "Work day"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Set washing machine active when power detected (DBG)",
-                    "last_triggered": null
+                    "friendly_name": "Washing Machine Status",
+                    "options": [
+                        "Stopped",
+                        "Idle",
+                        "Running",
+                        "Finished"
+                    ],
+                    "persistent": true
                 },
                 "context": {
-                    "id": "0d39ecf1bce643a0b8e6642d743ee832",
+                    "id": "45c029e9b0ea4473b01765ce12a6a8c3",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "automation.set_washing_machine_active_when_power_detected_dbg",
-                "last_changed": "2019-09-15T10:21:43.478244+00:00",
-                "last_updated": "2019-09-15T10:21:43.478244+00:00",
-                "state": "on"
+                "entity_id": "input_select.washing_machine_status",
+                "last_changed": "2019-11-03T14:47:23.267549+00:00",
+                "last_updated": "2019-11-03T14:47:23.267549+00:00",
+                "state": "Stopped"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Set washing machine finished when power drops",
-                    "last_triggered": "2019-09-14T11:53:00.785887+00:00"
+                    "friendly_name": "Climate Season",
+                    "icon": "mdi:weather-sunset-up",
+                    "options": [
+                        "Summer or Frost Protection",
+                        "Winter"
+                    ]
                 },
                 "context": {
-                    "id": "c7f2a2fe2c464122aa65e94a38acc6ae",
+                    "id": "d227656fd7a54f5994a305fd5314fde6",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "automation.set_washing_machine_finished_when_power_drops_3",
-                "last_changed": "2019-09-15T10:21:43.483695+00:00",
-                "last_updated": "2019-09-15T10:21:43.483695+00:00",
-                "state": "on"
+                "entity_id": "input_select.climate_season",
+                "last_changed": "2019-11-03T14:47:23.268802+00:00",
+                "last_updated": "2019-11-03T14:47:23.268802+00:00",
+                "state": "Winter"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Set washing machine finished when power drops (DBG)",
-                    "last_triggered": "2019-09-14T11:53:01.420186+00:00"
+                    "friendly_name": "Heat Mode",
+                    "icon": "mdi:oil-temperature",
+                    "options": [
+                        "Not / Applicable",
+                        "Work Week",
+                        "Vacation at Home",
+                        "Vacation out"
+                    ]
                 },
                 "context": {
-                    "id": "eff0ee5c447941a29e2d5aedbb161a48",
+                    "id": "f72efaec707d491683f7ff3e09e3e71d",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "automation.set_washing_machine_finished_when_power_drops_dbg_2",
-                "last_changed": "2019-09-15T10:21:43.488539+00:00",
-                "last_updated": "2019-09-15T10:21:43.488539+00:00",
-                "state": "on"
+                "entity_id": "input_select.main_heat_mode",
+                "last_changed": "2019-11-03T14:47:23.270156+00:00",
+                "last_updated": "2019-11-03T14:47:23.270156+00:00",
+                "state": "Vacation out"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Send alert when washing machine is clean",
-                    "last_triggered": null
+                    "friendly_name": "Reset default value",
+                    "icon": "mdi:refresh"
                 },
                 "context": {
-                    "id": "9e34ffeaf970460da1ca03d5bf219bc3",
+                    "id": "0d198544d2714f6fba725f888de46fdd",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "automation.send_alert_when_washing_machine_is_clean",
-                "last_changed": "2019-09-15T10:21:43.498503+00:00",
-                "last_updated": "2019-09-15T10:21:43.498503+00:00",
-                "state": "on"
+                "entity_id": "input_boolean.reset_climate_values",
+                "last_changed": "2019-11-03T14:47:23.271527+00:00",
+                "last_updated": "2019-11-03T14:47:23.271527+00:00",
+                "state": "off"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Recycle Container Warning",
-                    "last_triggered": "2019-09-10T17:00:01.087831+00:00"
+                    "friendly_name": "DBG: Washing machine"
                 },
                 "context": {
-                    "id": "342e346625a64b4bb90bbafc9a4f4353",
+                    "id": "227397bd7d99480795f7e7f4f8a6dd74",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "automation.recycle_container_warning",
-                "last_changed": "2019-09-15T10:21:43.508683+00:00",
-                "last_updated": "2019-09-15T10:21:43.508683+00:00",
-                "state": "on"
+                "entity_id": "input_boolean.dbg_washing_machine",
+                "last_changed": "2019-11-03T14:47:23.272980+00:00",
+                "last_updated": "2019-11-03T14:47:23.272980+00:00",
+                "state": "off"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Waste Container Warning",
-                    "last_triggered": "2019-09-12T17:00:02.438902+00:00"
+                    "friendly_name": "Schedule Morning Bathroom Confort",
+                    "icon": "mdi:weather-sunset-up"
                 },
                 "context": {
-                    "id": "253e0d7af4ff40698ecaa9412cfd86a2",
+                    "id": "bc765b23263347a5aac199655a267401",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "automation.waste_container_warning",
-                "last_changed": "2019-09-15T10:21:43.514643+00:00",
-                "last_updated": "2019-09-15T10:21:43.514643+00:00",
-                "state": "on"
+                "entity_id": "input_boolean.schedule_morning_bathroom_confort",
+                "last_changed": "2019-11-03T14:47:23.274294+00:00",
+                "last_updated": "2019-11-03T14:47:23.274294+00:00",
+                "state": "off"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Scheduled Bathroom Confort",
-                    "last_triggered": null
+                    "can_cancel": false,
+                    "friendly_name": "Update Speedtest",
+                    "icon": "mdi:refresh"
                 },
                 "context": {
-                    "id": "41d1bca34a1d43cf8300dd7601650c37",
+                    "id": "04ab1375ae98427e96c663f22e2e2661",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "automation.scheduled_bathroom_confort",
-                "last_changed": "2019-09-15T10:21:43.519323+00:00",
-                "last_updated": "2019-09-15T10:21:43.519323+00:00",
-                "state": "on"
+                "entity_id": "input_boolean.update_speedtest",
+                "last_changed": "2019-11-03T14:47:23.275575+00:00",
+                "last_updated": "2019-11-03T14:47:23.275575+00:00",
+                "state": "off"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Stop Bathroom Heater Timer",
-                    "last_triggered": "2019-09-15T10:19:08.432945+00:00"
+                    "friendly_name": "Winter Morning",
+                    "icon": "mdi:thermometer",
+                    "initial": null,
+                    "max": 25.0,
+                    "min": 12.0,
+                    "mode": "box",
+                    "step": 1.0,
+                    "unit_of_measurement": "\u00baC"
                 },
                 "context": {
-                    "id": "b15d90d61abe472383df9b92bc9fc2f2",
+                    "id": "fe768548d5184ed3b2fc40c6090c8095",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "automation.stop_bathroom_heater_timer",
-                "last_changed": "2019-09-15T10:21:43.525046+00:00",
-                "last_updated": "2019-09-15T10:21:43.525046+00:00",
-                "state": "on"
+                "entity_id": "input_number.temp_for_morning",
+                "last_changed": "2019-11-03T14:47:23.276896+00:00",
+                "last_updated": "2019-11-03T14:47:23.276896+00:00",
+                "state": "19.0"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Remote bathroom confort trigger on",
-                    "last_triggered": "2019-09-15T10:14:57.374586+00:00"
+                    "friendly_name": "Winter Day Here",
+                    "icon": "mdi:thermometer",
+                    "initial": null,
+                    "max": 25.0,
+                    "min": 12.0,
+                    "mode": "box",
+                    "step": 1.0,
+                    "unit_of_measurement": "\u00baC"
                 },
                 "context": {
-                    "id": "7167f957edfe4e2fbdf534b38139f05c",
+                    "id": "df9d1761c163443bb1b980dd78e6c99b",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "automation.remote_bathroom_confort_trigger_on",
-                "last_changed": "2019-09-15T10:21:43.529943+00:00",
-                "last_updated": "2019-09-15T10:21:43.529943+00:00",
-                "state": "on"
+                "entity_id": "input_number.temp_for_day_with_presence",
+                "last_changed": "2019-11-03T14:47:23.278119+00:00",
+                "last_updated": "2019-11-03T14:47:23.278119+00:00",
+                "state": "18.0"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Winter Day Away",
+                    "icon": "mdi:thermometer",
+                    "initial": null,
+                    "max": 25.0,
+                    "min": 12.0,
+                    "mode": "box",
+                    "step": 1.0,
+                    "unit_of_measurement": "\u00baC"
+                },
+                "context": {
+                    "id": "86ea015c153947f99b0a889e3164b83e",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_number.temp_for_day_absent",
+                "last_changed": "2019-11-03T14:47:23.279286+00:00",
+                "last_updated": "2019-11-03T14:47:23.279286+00:00",
+                "state": "17.0"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Lumiere Gaetan - Minutes",
+                    "icon": "mdi:clock",
+                    "initial": null,
+                    "max": 59.0,
+                    "min": 0.0,
+                    "mode": "slider",
+                    "step": 1.0
+                },
+                "context": {
+                    "id": "057f9d6f425a4230b5a383f490e78766",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_number.gaetan_light_timer_minutes",
+                "last_changed": "2019-11-03T14:47:23.280443+00:00",
+                "last_updated": "2019-11-03T14:47:23.280443+00:00",
+                "state": "0.0"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Winter Evening",
+                    "icon": "mdi:thermometer",
+                    "initial": null,
+                    "max": 25.0,
+                    "min": 12.0,
+                    "mode": "box",
+                    "step": 1.0,
+                    "unit_of_measurement": "\u00baC"
+                },
+                "context": {
+                    "id": "d0e1cf5858574fecb7c7a8ce2a05f6ac",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_number.temp_for_evening",
+                "last_changed": "2019-11-03T14:47:23.281580+00:00",
+                "last_updated": "2019-11-03T14:47:23.281580+00:00",
+                "state": "18.0"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Summer",
+                    "icon": "mdi:thermometer",
+                    "initial": null,
+                    "max": 25.0,
+                    "min": 12.0,
+                    "mode": "box",
+                    "step": 1.0,
+                    "unit_of_measurement": "\u00baC"
+                },
+                "context": {
+                    "id": "d5fa8e2992fe4f05af65493a64eed71f",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_number.temp_for_summer",
+                "last_changed": "2019-11-03T14:47:23.282701+00:00",
+                "last_updated": "2019-11-03T14:47:23.282701+00:00",
+                "state": "12.0"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Lumiere Gaetan - Heures",
+                    "icon": "mdi:clock",
+                    "initial": null,
+                    "max": 23.0,
+                    "min": 0.0,
+                    "mode": "slider",
+                    "step": 1.0
+                },
+                "context": {
+                    "id": "06c4ddb4218f44de952025f59c4170b1",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_number.gaetan_light_timer_hours",
+                "last_changed": "2019-11-03T14:47:23.283836+00:00",
+                "last_updated": "2019-11-03T14:47:23.283836+00:00",
+                "state": "0.0"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Winter Holliday",
+                    "icon": "mdi:thermometer",
+                    "initial": null,
+                    "max": 25.0,
+                    "min": 12.0,
+                    "mode": "box",
+                    "step": 1.0,
+                    "unit_of_measurement": "\u00baC"
+                },
+                "context": {
+                    "id": "e8c7828338a445bb87359a7e383ddd05",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_number.temp_for_holidays",
+                "last_changed": "2019-11-03T14:47:23.284991+00:00",
+                "last_updated": "2019-11-03T14:47:23.284991+00:00",
+                "state": "16.0"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Delai Extinction Lumiere Aurelie",
+                    "icon": "mdi:clock",
+                    "initial": null,
+                    "max": 59.0,
+                    "min": 5.0,
+                    "mode": "slider",
+                    "step": 5.0
+                },
+                "context": {
+                    "id": "76e883c73b3d4a558d655b598543fd15",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_number.shed_aurelie_light_delay",
+                "last_changed": "2019-11-03T14:47:23.286293+00:00",
+                "last_updated": "2019-11-03T14:47:23.286293+00:00",
+                "state": "59.0"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Winter Before Bed",
+                    "icon": "mdi:thermometer",
+                    "initial": null,
+                    "max": 25.0,
+                    "min": 12.0,
+                    "mode": "box",
+                    "step": 1.0,
+                    "unit_of_measurement": "\u00baC"
+                },
+                "context": {
+                    "id": "b8a58969de5549db939dd29066f852d8",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_number.temp_for_before_bed",
+                "last_changed": "2019-11-03T14:47:23.287477+00:00",
+                "last_updated": "2019-11-03T14:47:23.287477+00:00",
+                "state": "19.0"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Winter Night",
+                    "icon": "mdi:thermometer",
+                    "initial": null,
+                    "max": 25.0,
+                    "min": 12.0,
+                    "mode": "box",
+                    "step": 1.0,
+                    "unit_of_measurement": "\u00baC"
+                },
+                "context": {
+                    "id": "9f07ebba745b47419d3d33206c7f6139",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_number.temp_for_night",
+                "last_changed": "2019-11-03T14:47:23.288644+00:00",
+                "last_updated": "2019-11-03T14:47:23.288644+00:00",
+                "state": "18.0"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Remote bathroom confort trigger off",
-                    "last_triggered": "2019-09-15T10:15:03.324728+00:00"
+                    "last_triggered": "2019-10-25T04:40:59.137169+00:00"
                 },
                 "context": {
-                    "id": "abd73536dd214d24a539241bfd8c50ba",
+                    "id": "fff0b146d8b1415c9cc5b663c6eeef76",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.remote_bathroom_confort_trigger_off",
-                "last_changed": "2019-09-15T10:21:43.540806+00:00",
-                "last_updated": "2019-09-15T10:21:43.540806+00:00",
+                "last_changed": "2019-11-03T14:47:23.914182+00:00",
+                "last_updated": "2019-11-03T14:47:23.914182+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Shed Aurelie light timer",
-                    "id": "shed_aurelie_light_timer",
-                    "last_triggered": "2019-09-15T07:00:02.021659+00:00"
-                },
-                "context": {
-                    "id": "7e4b055d2a6c44a9a562a3c74c67c37a",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.shed_aurelie_light_timer",
-                "last_changed": "2019-09-15T10:21:43.552695+00:00",
-                "last_updated": "2019-09-15T10:21:43.552695+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "set_season_summer",
                     "last_triggered": null
                 },
                 "context": {
-                    "id": "0e3c082775f747dbb3f2d7384745e6f6",
+                    "id": "511e25e6b3e543c097416ef34ca9b608",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.set_season_summer",
-                "last_changed": "2019-09-15T10:21:43.557848+00:00",
-                "last_updated": "2019-09-15T10:21:43.557848+00:00",
+                "last_changed": "2019-11-03T14:47:23.917775+00:00",
+                "last_updated": "2019-11-03T14:47:23.917775+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "set_season_winter",
-                    "last_triggered": null
+                    "last_triggered": "2019-10-16T06:21:05.648525+00:00"
                 },
                 "context": {
-                    "id": "71d28e711fbd44bdbb55ab3ed6b07bf5",
+                    "id": "8629adf2b9764c9fabca58185466f4d3",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.set_season_winter",
-                "last_changed": "2019-09-15T10:21:43.571068+00:00",
-                "last_updated": "2019-09-15T10:21:43.571068+00:00",
+                "last_changed": "2019-11-03T14:47:23.921391+00:00",
+                "last_updated": "2019-11-03T14:47:23.921391+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Reset default values",
                     "last_triggered": null
                 },
                 "context": {
-                    "id": "b5f61a90508f4d68b3ba23d0eeb34a9f",
+                    "id": "33dabc1aa7d44d359c814c6937a4eb89",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.reset_default_values",
-                "last_changed": "2019-09-15T10:21:43.583580+00:00",
-                "last_updated": "2019-09-15T10:21:43.583580+00:00",
+                "last_changed": "2019-11-03T14:47:23.924994+00:00",
+                "last_updated": "2019-11-03T14:47:23.924994+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "ET-7750 Printer Ink Alert",
                     "last_triggered": null
                 },
                 "context": {
-                    "id": "2b481ebdc852468197799d2f386d57eb",
+                    "id": "0e7f1ec502174142984196dc0dcd42ef",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.et_7750_printer_ink_alert",
-                "last_changed": "2019-09-15T10:21:43.604072+00:00",
-                "last_updated": "2019-09-15T10:21:43.604072+00:00",
+                "last_changed": "2019-11-03T14:47:23.933966+00:00",
+                "last_updated": "2019-11-03T14:47:23.933966+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "ET-7750 Printer clean Alert",
+                    "friendly_name": "Send temperatures to MQTT",
+                    "id": "publish_temperatures",
                     "last_triggered": null
                 },
                 "context": {
-                    "id": "c4b234ad56c64129bc2ecf7993dd5d7a",
+                    "id": "a054051f07704dfabbdaffd3cbd23660",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "automation.et_7750_printer_clean_alert",
-                "last_changed": "2019-09-15T10:21:43.614698+00:00",
-                "last_updated": "2019-09-15T10:21:43.614698+00:00",
-                "state": "on"
+                "entity_id": "automation.send_temperatures_to_mqtt",
+                "last_changed": "2019-11-03T14:47:23.937519+00:00",
+                "last_updated": "2019-11-03T14:47:23.937519+00:00",
+                "state": "off"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Send humidity to MQTT",
+                    "id": "publish_humidity",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "8a54032d05cb49659bb910d68ae6bbe9",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.send_humidity_to_mqtt",
+                "last_changed": "2019-11-03T14:47:23.940855+00:00",
+                "last_updated": "2019-11-03T14:47:23.940855+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Update Speedtest",
                     "last_triggered": null
                 },
                 "context": {
-                    "id": "f3e96362984a46f3af2ed070c269fb37",
+                    "id": "47da17e6402b47a994655dff3d573635",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.update_speedtest",
-                "last_changed": "2019-09-15T10:21:43.625524+00:00",
-                "last_updated": "2019-09-15T10:21:43.625524+00:00",
+                "last_changed": "2019-11-03T14:47:23.944139+00:00",
+                "last_updated": "2019-11-03T14:47:23.944139+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "SRT321 Battery Notifications",
                     "last_triggered": "2019-09-05T20:06:59.332702+00:00"
                 },
                 "context": {
-                    "id": "059738f120ae42968772b55e2cea4a4e",
+                    "id": "a4cc3bd3c2cf4b55af5ddf6168f2a607",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.srt321_battery_notifications",
-                "last_changed": "2019-09-15T10:21:43.637037+00:00",
-                "last_updated": "2019-09-15T10:21:43.637037+00:00",
+                "last_changed": "2019-11-03T14:47:23.947695+00:00",
+                "last_updated": "2019-11-03T14:47:23.947695+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "home_energy",
-                    "icon": "mdi:counter",
-                    "last_period": "4510378",
-                    "last_reset": "2019-09-01T00:00:00.059732+02:00",
-                    "meter_period": "monthly",
-                    "source": "sensor.rfxcom_home_energy_usage",
-                    "status": "paused",
-                    "unit_of_measurement": "W"
+                    "friendly_name": "Startup Notification",
+                    "last_triggered": "2019-11-03T13:39:28.557585+00:00"
                 },
                 "context": {
-                    "id": "fa44abb873d2410395fbc373db6f4fce",
+                    "id": "64a8fc74fb1e4cd380fc912d72a8b65b",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "sensor.home_energy",
-                "last_changed": "2019-09-15T10:21:44.476055+00:00",
-                "last_updated": "2019-09-15T10:21:44.476055+00:00",
-                "state": "3097973"
+                "entity_id": "automation.startup_notification",
+                "last_changed": "2019-11-03T14:47:23.951562+00:00",
+                "last_updated": "2019-11-03T14:47:23.951562+00:00",
+                "state": "on"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "cabinet_energy",
-                    "icon": "mdi:counter",
-                    "last_period": "15.0",
-                    "last_reset": "2019-09-01T00:00:00.067612+02:00",
-                    "meter_period": "monthly",
-                    "source": "sensor.cabinet_smart_plug_power",
-                    "status": "paused",
-                    "unit_of_measurement": "W"
+                    "friendly_name": "Update Available Notifications",
+                    "last_triggered": null
                 },
                 "context": {
-                    "id": "f5c6202c174d46b5904a96f5525dd289",
+                    "id": "55db41d78ca64f05b87dd267a488fb1d",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "sensor.cabinet_energy",
-                "last_changed": "2019-09-15T10:21:44.483054+00:00",
-                "last_updated": "2019-09-15T10:21:44.483054+00:00",
-                "state": "145.0"
+                "entity_id": "automation.update_available_notifications",
+                "last_changed": "2019-11-03T14:47:23.955650+00:00",
+                "last_updated": "2019-11-03T14:47:23.955650+00:00",
+                "state": "on"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "home_cinema_energy",
-                    "icon": "mdi:counter",
-                    "last_period": "23121.7",
-                    "last_reset": "2019-09-01T00:00:00.076049+02:00",
-                    "meter_period": "monthly",
-                    "source": "sensor.home_cinema_smart_plug_power",
-                    "status": "paused",
-                    "unit_of_measurement": "W"
+                    "friendly_name": "dbg_washing_machine_show",
+                    "last_triggered": null
                 },
                 "context": {
-                    "id": "6d893e2220ac48ec8435de6d682e6890",
+                    "id": "e9282fddd23d47fcb061c6c72da5d388",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "sensor.home_cinema_energy",
-                "last_changed": "2019-09-15T10:21:44.487819+00:00",
-                "last_updated": "2019-09-15T10:21:44.487819+00:00",
-                "state": "9994.8"
+                "entity_id": "automation.dbg_washing_machine_show",
+                "last_changed": "2019-11-03T14:47:23.959201+00:00",
+                "last_updated": "2019-11-03T14:47:23.959201+00:00",
+                "state": "on"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "attribution": "Data retrieved from Speedtest.net by Ookla",
-                    "friendly_name": "Speedtest Upload",
-                    "icon": "mdi:speedometer",
-                    "unit_of_measurement": "Mbit/s"
+                    "friendly_name": "dbg_washing_machine_hide",
+                    "last_triggered": null
                 },
                 "context": {
-                    "id": "3387c2af98d345f1adead23aef836dcb",
+                    "id": "cbd38b13a12f4371be71157c46992c35",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "sensor.speedtest_upload",
-                "last_changed": "2019-09-15T10:21:44.494537+00:00",
-                "last_updated": "2019-09-15T10:21:44.494537+00:00",
-                "state": "6.75"
+                "entity_id": "automation.dbg_washing_machine_hide",
+                "last_changed": "2019-11-03T14:47:23.962767+00:00",
+                "last_updated": "2019-11-03T14:47:23.962767+00:00",
+                "state": "on"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "attribution": "Data retrieved from Speedtest.net by Ookla",
-                    "friendly_name": "Speedtest Download",
-                    "icon": "mdi:speedometer",
-                    "unit_of_measurement": "Mbit/s"
+                    "friendly_name": "Set washing machine finished when power drops",
+                    "last_triggered": "2019-10-19T20:32:00.482837+00:00"
                 },
                 "context": {
-                    "id": "e603735f5a7e4d949eb703c7f33e11ea",
+                    "id": "41e0a5f0668646d6a4596f84fdbd1d1f",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "sensor.speedtest_download",
-                "last_changed": "2019-09-15T10:21:44.499405+00:00",
-                "last_updated": "2019-09-15T10:21:44.499405+00:00",
-                "state": "6.5"
+                "entity_id": "automation.set_washing_machine_finished_when_power_drops",
+                "last_changed": "2019-11-03T14:47:23.966553+00:00",
+                "last_updated": "2019-11-03T14:47:23.966553+00:00",
+                "state": "on"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "attribution": "Data retrieved from Speedtest.net by Ookla",
-                    "friendly_name": "Speedtest Ping",
-                    "icon": "mdi:speedometer",
-                    "unit_of_measurement": "ms"
+                    "friendly_name": "Set washing machine finished when power drops",
+                    "last_triggered": "2019-10-24T05:16:02.507134+00:00"
                 },
                 "context": {
-                    "id": "5ecfd5959985422996c62806176457ba",
+                    "id": "cfc7efa091ec4b989626a3be0e7261e4",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "sensor.speedtest_ping",
-                "last_changed": "2019-09-15T10:21:44.505247+00:00",
-                "last_updated": "2019-09-15T10:21:44.505247+00:00",
-                "state": "70.558"
+                "entity_id": "automation.set_washing_machine_finished_when_power_drops_2",
+                "last_changed": "2019-11-03T14:47:23.970308+00:00",
+                "last_updated": "2019-11-03T14:47:23.970308+00:00",
+                "state": "on"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Set washing machine finished when power drops (DBG)",
+                    "last_triggered": "2019-10-04T19:00:02.788311+00:00"
+                },
+                "context": {
+                    "id": "42fae4ee24f84bc1a4a1e385092d7d91",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.set_washing_machine_finished_when_power_drops_dbg",
+                "last_changed": "2019-11-03T14:47:23.974006+00:00",
+                "last_updated": "2019-11-03T14:47:23.974006+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Set washing machine active when power detected (DBG)",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "86ffebf499924ca7a9f96c75027f56e7",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.set_washing_machine_active_when_power_detected_dbg",
+                "last_changed": "2019-11-03T14:47:23.977720+00:00",
+                "last_updated": "2019-11-03T14:47:23.977720+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Set washing machine finished when power drops",
+                    "last_triggered": "2019-10-25T19:37:36.801818+00:00"
+                },
+                "context": {
+                    "id": "a371f6702e19496d8b61dc1d2b8eb760",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.set_washing_machine_finished_when_power_drops_3",
+                "last_changed": "2019-11-03T14:47:23.981307+00:00",
+                "last_updated": "2019-11-03T14:47:23.981307+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Set washing machine finished when power drops (DBG)",
+                    "last_triggered": "2019-10-25T19:37:37.384794+00:00"
+                },
+                "context": {
+                    "id": "512e63ca24b84e639a0a664d8faf3ad0",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.set_washing_machine_finished_when_power_drops_dbg_2",
+                "last_changed": "2019-11-03T14:47:23.985237+00:00",
+                "last_updated": "2019-11-03T14:47:23.985237+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Send alert when washing machine is clean",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "eaa3a4db51a3459a97c2e387f34c784d",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.send_alert_when_washing_machine_is_clean",
+                "last_changed": "2019-11-03T14:47:23.988851+00:00",
+                "last_updated": "2019-11-03T14:47:23.988851+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Recycle Container Warning",
+                    "last_triggered": "2019-10-22T17:00:01.288443+00:00"
+                },
+                "context": {
+                    "id": "ad706a93e04740a4953361723c9cd5a8",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.recycle_container_warning",
+                "last_changed": "2019-11-03T14:47:23.992684+00:00",
+                "last_updated": "2019-11-03T14:47:23.992684+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Waste Container Warning",
+                    "last_triggered": "2019-10-24T17:00:01.328704+00:00"
+                },
+                "context": {
+                    "id": "2497c24b34be4f8883f01b470e9bdcee",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.waste_container_warning",
+                "last_changed": "2019-11-03T14:47:23.996619+00:00",
+                "last_updated": "2019-11-03T14:47:23.996619+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Shed Aurelie light timer",
+                    "id": "shed_aurelie_light_timer",
+                    "last_triggered": "2019-10-19T21:42:05.038501+00:00"
+                },
+                "context": {
+                    "id": "e418f30f2e644225b97250190430be13",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.shed_aurelie_light_timer",
+                "last_changed": "2019-11-03T14:47:24.000445+00:00",
+                "last_updated": "2019-11-03T14:47:24.000445+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Scheduled Bathroom Confort",
+                    "last_triggered": "2019-10-25T03:30:01.173902+00:00"
+                },
+                "context": {
+                    "id": "e53f3ef2d3c144e797e2137b88df3bb3",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.scheduled_bathroom_confort",
+                "last_changed": "2019-11-03T14:47:24.003995+00:00",
+                "last_updated": "2019-11-03T14:47:24.003995+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Stop Bathroom Heater Timer",
+                    "last_triggered": "2019-10-25T03:30:03.106864+00:00"
+                },
+                "context": {
+                    "id": "02c8e22883154109a0713244366c85a6",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.stop_bathroom_heater_timer",
+                "last_changed": "2019-11-03T14:47:24.007813+00:00",
+                "last_updated": "2019-11-03T14:47:24.007813+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Remote bathroom confort trigger on",
+                    "last_triggered": "2019-10-25T03:30:01.354995+00:00"
+                },
+                "context": {
+                    "id": "a451e471b8964e76869e2b4151da69a1",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.remote_bathroom_confort_trigger_on",
+                "last_changed": "2019-11-03T14:47:24.011440+00:00",
+                "last_updated": "2019-11-03T14:47:24.011440+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Set washing machine active when power detected",
+                    "last_triggered": "2019-10-25T18:56:41.704257+00:00"
+                },
+                "context": {
+                    "id": "a5f749faf8054abda25f436e7096cab2",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.set_washing_machine_active_when_power_detected",
+                "last_changed": "2019-11-03T14:47:24.015481+00:00",
+                "last_updated": "2019-11-03T14:47:24.015481+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
                     "current_temperature": null,
@@ -1336,90 +1224,78 @@
                     "temperature": 26.0
                 },
                 "context": {
-                    "id": "a348c9e1581741b9b4878679f54bc6a0",
+                    "id": "630f255214f947948498f6fa96ae5b3c",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "climate.bathroom_heater",
-                "last_changed": "2019-09-15T10:21:44.510855+00:00",
-                "last_updated": "2019-09-15T10:21:44.510855+00:00",
+                "last_changed": "2019-11-03T14:56:34.459297+00:00",
+                "last_updated": "2019-11-03T14:56:34.459297+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "Protocol": "tcp",
-                    "Remote Port": 5201,
-                    "Remote Server": "192.168.0.10",
-                    "Version": null,
-                    "attribution": "Data retrieved using Iperf3",
-                    "friendly_name": "Download 192.168.0.10",
+                    "attribution": "Data retrieved from Speedtest.net by Ookla",
+                    "friendly_name": "Speedtest Ping",
+                    "icon": "mdi:speedometer",
+                    "unit_of_measurement": "ms"
+                },
+                "context": {
+                    "id": "fc7472ddcb23424094aad8bcdd6a016e",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.speedtest_ping",
+                "last_changed": "2019-11-03T14:56:34.464398+00:00",
+                "last_updated": "2019-11-03T14:56:34.464398+00:00",
+                "state": "75.848"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "attribution": "Data retrieved from Speedtest.net by Ookla",
+                    "friendly_name": "Speedtest Upload",
                     "icon": "mdi:speedometer",
                     "unit_of_measurement": "Mbit/s"
                 },
                 "context": {
-                    "id": "2fd6c551257d41fc9fe27af447daaaea",
+                    "id": "1b67273f371f489694ed874a9fcceee4",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "sensor.download_192_168_0_10",
-                "last_changed": "2019-09-15T10:21:44.538051+00:00",
-                "last_updated": "2019-09-15T10:21:44.538051+00:00",
-                "state": "unknown"
+                "entity_id": "sensor.speedtest_upload",
+                "last_changed": "2019-11-03T14:56:34.467989+00:00",
+                "last_updated": "2019-11-03T14:56:34.467989+00:00",
+                "state": "4.1"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
-                    "Protocol": "tcp",
-                    "Remote Port": 5201,
-                    "Remote Server": "192.168.0.22",
-                    "Version": null,
-                    "attribution": "Data retrieved using Iperf3",
-                    "friendly_name": "Upload 192.168.0.22",
+                    "attribution": "Data retrieved from Speedtest.net by Ookla",
+                    "friendly_name": "Speedtest Download",
                     "icon": "mdi:speedometer",
                     "unit_of_measurement": "Mbit/s"
                 },
                 "context": {
-                    "id": "6bb0fee6778045f584ce9111b13e9c4b",
+                    "id": "665ff592d7de4cc89cab5ecd304dbef2",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "sensor.upload_192_168_0_22",
-                "last_changed": "2019-09-15T10:21:44.570350+00:00",
-                "last_updated": "2019-09-15T10:21:44.570350+00:00",
-                "state": "unknown"
+                "entity_id": "sensor.speedtest_download",
+                "last_changed": "2019-11-03T14:56:34.471228+00:00",
+                "last_updated": "2019-11-03T14:56:34.471228+00:00",
+                "state": "11.94"
             }
         },
         {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
-            "state": {
-                "attributes": {
-                    "Protocol": "tcp",
-                    "Remote Port": 5201,
-                    "Remote Server": "192.168.0.22",
-                    "Version": null,
-                    "attribution": "Data retrieved using Iperf3",
-                    "friendly_name": "Download 192.168.0.22",
-                    "icon": "mdi:speedometer",
-                    "unit_of_measurement": "Mbit/s"
-                },
-                "context": {
-                    "id": "af07df110b9e49609aade26ba8b515dd",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "sensor.download_192_168_0_22",
-                "last_changed": "2019-09-15T10:21:44.608594+00:00",
-                "last_updated": "2019-09-15T10:21:44.608594+00:00",
-                "state": "unknown"
-            }
-        },
-        {
-            "last_seen": "2019-09-15T10:21:56.600534+00:00",
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
             "state": {
                 "attributes": {
                     "Protocol": "tcp",
@@ -1432,14 +1308,194 @@
                     "unit_of_measurement": "Mbit/s"
                 },
                 "context": {
-                    "id": "76424a0a70974df8902e04302d4a57b5",
+                    "id": "d249ea3ce55b4a32aff903b98804ec10",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "sensor.upload_192_168_0_10",
-                "last_changed": "2019-09-15T10:21:44.630611+00:00",
-                "last_updated": "2019-09-15T10:21:44.630611+00:00",
+                "last_changed": "2019-11-03T14:56:34.481919+00:00",
+                "last_updated": "2019-11-03T14:56:34.481919+00:00",
                 "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "Protocol": "tcp",
+                    "Remote Port": 5201,
+                    "Remote Server": "192.168.0.22",
+                    "Version": null,
+                    "attribution": "Data retrieved using Iperf3",
+                    "friendly_name": "Download 192.168.0.22",
+                    "icon": "mdi:speedometer",
+                    "unit_of_measurement": "Mbit/s"
+                },
+                "context": {
+                    "id": "26adc7bf909c474c8a172285770634bb",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.download_192_168_0_22",
+                "last_changed": "2019-11-03T14:56:34.507358+00:00",
+                "last_updated": "2019-11-03T14:56:34.507358+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "Protocol": "tcp",
+                    "Remote Port": 5201,
+                    "Remote Server": "192.168.0.10",
+                    "Version": null,
+                    "attribution": "Data retrieved using Iperf3",
+                    "friendly_name": "Download 192.168.0.10",
+                    "icon": "mdi:speedometer",
+                    "unit_of_measurement": "Mbit/s"
+                },
+                "context": {
+                    "id": "6715b93cf21b4e18ba24694da1b911c2",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.download_192_168_0_10",
+                "last_changed": "2019-11-03T14:56:34.548732+00:00",
+                "last_updated": "2019-11-03T14:56:34.548732+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2019-11-03T14:56:34.794539+00:00",
+            "state": {
+                "attributes": {
+                    "Protocol": "tcp",
+                    "Remote Port": 5201,
+                    "Remote Server": "192.168.0.22",
+                    "Version": null,
+                    "attribution": "Data retrieved using Iperf3",
+                    "friendly_name": "Upload 192.168.0.22",
+                    "icon": "mdi:speedometer",
+                    "unit_of_measurement": "Mbit/s"
+                },
+                "context": {
+                    "id": "a7b4566ce9604af5b5541e04cfe61fe6",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.upload_192_168_0_22",
+                "last_changed": "2019-11-03T14:56:34.646140+00:00",
+                "last_updated": "2019-11-03T14:56:34.646140+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2019-10-28T03:04:44.034434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "ET-7750 Printer clean Alert",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "0af6dd0e61a542d1b5705478d7368e4b",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.et_7750_printer_clean_alert",
+                "last_changed": "2019-10-26T02:02:03.781374+00:00",
+                "last_updated": "2019-10-26T02:02:03.781374+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-10-28T03:04:44.034434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Update Available Notification",
+                    "last_triggered": "2019-09-05T21:06:16.461723+00:00"
+                },
+                "context": {
+                    "id": "d260fd5813134a05b6b8afbf64a7664b",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.update_available_notification",
+                "last_changed": "2019-10-26T02:02:03.852611+00:00",
+                "last_updated": "2019-10-26T02:02:03.852611+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-10-28T03:04:44.034434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "home_energy",
+                    "icon": "mdi:counter",
+                    "last_period": "4936308",
+                    "last_reset": "2019-10-01T00:00:00.101282+02:00",
+                    "meter_period": "monthly",
+                    "source": "sensor.rfxcom_home_energy_usage",
+                    "status": "collecting",
+                    "unit_of_measurement": "W"
+                },
+                "context": {
+                    "id": "4a91a4d4b03e482a8c8f0cb23ced1830",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.home_energy",
+                "last_changed": "2019-10-28T02:57:09.088878+00:00",
+                "last_updated": "2019-10-28T02:57:09.088878+00:00",
+                "state": "1147001"
+            }
+        },
+        {
+            "last_seen": "2019-10-28T03:04:44.034434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "cabinet_energy",
+                    "icon": "mdi:counter",
+                    "last_period": "159.0",
+                    "last_reset": "2019-10-01T00:00:00.114586+02:00",
+                    "meter_period": "monthly",
+                    "source": "sensor.cabinet_smart_plug_power",
+                    "status": "paused",
+                    "unit_of_measurement": "W"
+                },
+                "context": {
+                    "id": "6e48866d4d9e4d4ca02067020ce5d7af",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.cabinet_energy",
+                "last_changed": "2019-10-26T02:02:05.141768+00:00",
+                "last_updated": "2019-10-26T02:02:05.141768+00:00",
+                "state": "4.0"
+            }
+        },
+        {
+            "last_seen": "2019-10-28T03:04:44.034434+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "home_cinema_energy",
+                    "icon": "mdi:counter",
+                    "last_period": "26745.8",
+                    "last_reset": "2019-10-01T00:00:00.129152+02:00",
+                    "meter_period": "monthly",
+                    "source": "sensor.home_cinema_smart_plug_power",
+                    "status": "collecting",
+                    "unit_of_measurement": "W"
+                },
+                "context": {
+                    "id": "43cecccf86094f8791df3612049955c3",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.home_cinema_energy",
+                "last_changed": "2019-10-28T02:45:34.383265+00:00",
+                "last_updated": "2019-10-28T02:45:34.383265+00:00",
+                "state": "22428.5"
             }
         }
     ],

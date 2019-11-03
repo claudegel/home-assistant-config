@@ -38,15 +38,15 @@ sensor:
       - ups.load
       - ups.status.display
   
-#   - name: OSMC Uptime
-#     platform: mqtt
-#     state_topic: "home/osmc/uptime/sec"
-#     unit_of_measurement: 'sec'
+  - name: OSMC Uptime
+    platform: mqtt
+    state_topic: "home/osmc/uptime/sec"
+    unit_of_measurement: 'sec'
 
-#   - name: OSMC Temperature
-#     platform: mqtt
-#     state_topic: "home/osmc/cpu/temp"
-#     unit_of_measurement: '°C'
+  - name: OSMC Temperature
+    platform: mqtt
+    state_topic: "home/osmc/cpu/temp"
+    unit_of_measurement: '°C'
 
   - platform: template
     sensors:
@@ -133,16 +133,7 @@ remote:
     name: Harmony Home Cinema
     host: 192.168.0.53
 
-recorder:
-  include:
-    entities:
-      - sensor.osmc_temperature
-      - sensor.home_cinema_ups_status
-      - sensor.home_cinema_ups_battery_charge
-      - sensor.home_cinema_ups_low_battery_setpoint
-      - sensor.home_cinema_ups_ups_shutdown_delay
-      - sensor.home_cinema_ups_battery_runtime
-      
+    
 group:
   pvr:
     name: Smart PVR
