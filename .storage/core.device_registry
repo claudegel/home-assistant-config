@@ -2,51 +2,6 @@
     "data": {
         "devices": [
             {
-                "area_id": "6daf2efc2b0f42f2b797460c0a86e4f8",
-                "config_entries": [
-                    "424daed45a794f7990e2a766e3b120c2"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "00:17:88:28:19:61"
-                    ]
-                ],
-                "id": "a7f1ad85d04d47bb8f615ea58f88fe41",
-                "identifiers": [
-                    [
-                        "hue",
-                        "001788FFFE281961"
-                    ]
-                ],
-                "manufacturer": "Signify",
-                "model": "BSB002",
-                "name": "Philips hue",
-                "name_by_user": null,
-                "sw_version": "1934129020",
-                "via_device_id": null
-            },
-            {
-                "area_id": "6daf2efc2b0f42f2b797460c0a86e4f8",
-                "config_entries": [
-                    "424daed45a794f7990e2a766e3b120c2"
-                ],
-                "connections": [],
-                "id": "9dff0617eea54f9c9b3410fcedef501f",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:01:23:53:18-0b"
-                    ]
-                ],
-                "manufacturer": "Philips",
-                "model": "Hue iris",
-                "name": "Hue iris Aurelie",
-                "name_by_user": null,
-                "sw_version": "5.127.1.26581",
-                "via_device_id": "a7f1ad85d04d47bb8f615ea58f88fe41"
-            },
-            {
                 "area_id": null,
                 "config_entries": [
                     "680812615272427c9d4a6f1d9a47fc9e"
@@ -63,7 +18,7 @@
                 "model": "iPhone 6s",
                 "name": "Stibphone2",
                 "name_by_user": null,
-                "sw_version": "13.1.3",
+                "sw_version": "13.2.2",
                 "via_device_id": null
             },
             {
@@ -575,6 +530,111 @@
                 "name_by_user": null,
                 "sw_version": null,
                 "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "cfa502787b29486686c4092269eb2c52"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "ec:b5:fa:0a:53:18"
+                    ]
+                ],
+                "id": "034217edbcda4d9f935a232dc60da01c",
+                "identifiers": [
+                    [
+                        "hue",
+                        "ECB5FAFFFE0A5318"
+                    ]
+                ],
+                "manufacturer": "Signify",
+                "model": "BSB002",
+                "name": "Philips hue",
+                "name_by_user": null,
+                "sw_version": "1935074050",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "cfa502787b29486686c4092269eb2c52"
+                ],
+                "connections": [],
+                "id": "eecabb6eaf004903b68f9de6b02a1ca8",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:03:31:d1:f8-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue bloom",
+                "name": "Veilleuse bebe",
+                "name_by_user": null,
+                "sw_version": "5.127.1.26581",
+                "via_device_id": "034217edbcda4d9f935a232dc60da01c"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "cfa502787b29486686c4092269eb2c52"
+                ],
+                "connections": [],
+                "id": "063a51fd0f04493084cc790c26101500",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:00:12:19:72-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue iris",
+                "name": "Iris Gaetan",
+                "name_by_user": null,
+                "sw_version": "5.127.1.26581",
+                "via_device_id": "034217edbcda4d9f935a232dc60da01c"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "cfa502787b29486686c4092269eb2c52"
+                ],
+                "connections": [],
+                "id": "684164896a9e4436a25c89f38233ef4e",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:01:23:53:18-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue iris",
+                "name": "Iris Aurelie",
+                "name_by_user": null,
+                "sw_version": "5.127.1.26581",
+                "via_device_id": "034217edbcda4d9f935a232dc60da01c"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "cfa502787b29486686c4092269eb2c52"
+                ],
+                "connections": [],
+                "id": "c9de391f35164ea487a9d0c7492bbf67",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:06:0c:ea:89-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue go",
+                "name": "Ambiance salon",
+                "name_by_user": null,
+                "sw_version": "5.127.1.26420",
+                "via_device_id": "034217edbcda4d9f935a232dc60da01c"
             }
         ]
     },

@@ -37,32 +37,7 @@
                                 }
                             ],
                             "title": "Bathroom Heater",
-                            "type": "glance"
-                        },
-                        {
-                            "cards": [
-                                {
-                                    "entity": "light.hue_iris_gaetan",
-                                    "hold_action": {
-                                        "action": "none"
-                                    },
-                                    "tap_action": {
-                                        "action": "more-info"
-                                    },
-                                    "type": "light"
-                                },
-                                {
-                                    "entity": "light.hue_iris_aurelie",
-                                    "hold_action": {
-                                        "action": "none"
-                                    },
-                                    "tap_action": {
-                                        "action": "more-info"
-                                    },
-                                    "type": "light"
-                                }
-                            ],
-                            "type": "horizontal-stack"
+                            "type": "entities"
                         }
                     ],
                     "icon": "mdi:home",
@@ -178,6 +153,10 @@
                                         {
                                             "entity": "binary_sensor.camera_ip_2_motion",
                                             "show_header_toggle": false
+                                        },
+                                        {
+                                            "entity": "sensor.rfxcom_friend_room_temperature",
+                                            "name": "Temperature"
                                         }
                                     ],
                                     "type": "entities"
@@ -237,6 +216,10 @@
                                         {
                                             "entity": "sensor.rfxcom_living_room_temperature",
                                             "name": "Living Room"
+                                        },
+                                        {
+                                            "entity": "sensor.entrance_multisensor_2_temperature",
+                                            "name": "Entrance"
                                         },
                                         {
                                             "entity": "sensor.rfxcom_kitchen_temperature",
@@ -1361,6 +1344,10 @@
                                     "name": "Black ink"
                                 },
                                 {
+                                    "entity": "sensor.epson_et_7750_ink_level_photo_black",
+                                    "name": "Photo-black ink"
+                                },
+                                {
                                     "entity": "sensor.epson_et_7750_ink_level_cyan",
                                     "name": "Cyan ink"
                                 },
@@ -1371,13 +1358,6 @@
                                 {
                                     "entity": "sensor.epson_et_7750_ink_level_yellow",
                                     "name": "Yellow ink"
-                                },
-                                {
-                                    "entity": "sensor.epson_et_7750_ink_level_photoblack",
-                                    "name": "Photo-black ink"
-                                },
-                                {
-                                    "entity": "sensor.epson_et_7750_cleaning_level"
                                 }
                             ],
                             "show_header_toggle": false,

@@ -2,23 +2,6 @@
     "data": {
         "entries": [
             {
-                "connection_class": "unknown",
-                "data": {
-                    "bridge_id": "001788FFFE281961",
-                    "host": "192.168.0.4",
-                    "username": "7gbxEcfoMAt0TbfaZU-LQPfr9i4Hor2aXhhqyH2v"
-                },
-                "domain": "hue",
-                "entry_id": "424daed45a794f7990e2a766e3b120c2",
-                "options": {},
-                "source": "import",
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "title": "Philips hue",
-                "version": 1
-            },
-            {
                 "connection_class": "cloud_push",
                 "data": {},
                 "domain": "ios",
@@ -96,6 +79,39 @@
                     "disable_new_entities": false
                 },
                 "title": "Google Cast",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "bridge_id": "ECB5FAFFFE0A5318",
+                    "host": "192.168.0.4",
+                    "username": "JvBLEAIc860AvjflSTKSGXTwFAwJAbb8nHjqXQi-"
+                },
+                "domain": "hue",
+                "entry_id": "cfa502787b29486686c4092269eb2c52",
+                "options": {},
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Philips hue",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "host": "yokxx3cc.synology.me",
+                    "port": 32483
+                },
+                "domain": "cert_expiry",
+                "entry_id": "8141e3967c5444e39f743101ee0b0ecc",
+                "options": {},
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "SSL Certificate Expiry",
                 "version": 1
             }
         ]

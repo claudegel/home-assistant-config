@@ -30,9 +30,9 @@ sensor:
 #     scan_interval: 10800  # 3 hours
 
   - platform: cert_expiry
-    # alias: 'Expiration certificat stibbons.synology.me'
-    entity_namespace: stibbons_synology_me
-    host: stibbons.synology.me
+    # alias: 'Expiration certificat [mydomain].synology.me'
+    entity_namespace: mydomain_synology_me
+    host: !secret mydomain
     port: 32483
 
 #   - platform: template
@@ -209,7 +209,7 @@ group:
       - sensor.download_192168022_mbytes
       - sensor.upload_192168022_mbytes
       - input_boolean.update_speedtest
-      - sensor.stibbons_synology_me_ssl_certificate_expiry
+      - sensor.mydomain_synology_me_ssl_certificate_expiry
 
   smart_lights:
     name: Smart Lights

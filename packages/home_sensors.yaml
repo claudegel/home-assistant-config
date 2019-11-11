@@ -74,7 +74,7 @@ sensor:
     automatic_add: True
     entity_namespace: rfxcom
     devices:
-      '0a520104b101007f4a0369':
+      '0a520125f60100c15e0369':
         name: Outside
         data_type:
            - Temperature
@@ -94,7 +94,7 @@ sensor:
         data_type:
            - Temperature
            - Humidity
-      '0a52020f710300ef380169':
+      '0a5202297e0300d42e0179':
         name: Parents Room
         data_type:
            - Temperature

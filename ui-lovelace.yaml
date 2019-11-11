@@ -41,9 +41,6 @@ views:
           green: 18
           yellow: 24
           red: 28
-      - type: iframe
-        url: https://stibbons.synology.me:32495/d-solo/000000001/domotic-overview?orgId=1&panelId=31&theme=light
-        aspect_ratio: 70%
       - type: thermostat
         title: House Temperature
         entity: climate.thermostat_transmitter_heating

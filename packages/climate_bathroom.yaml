@@ -123,8 +123,10 @@ script:
         data_template:
           entity_id: "climate.bathroom_heater"
           operation_mode: "off"
+      - delay: '00:00:01'
       - service: switch.turn_off
         entity_id: switch.rfxcom_bathroom_heater_remote
+      - delay: '00:00:01'
       - service: switch.turn_off
         entity_id: switch.bathroom_heater_wall_plug
 
@@ -188,22 +190,26 @@ automation:
       - service: script.set_bathroom_confortable
 
   - alias: "Remote bathroom confort trigger off"
-    initial_state: 'on'
+    # initial_state: 'on'
     trigger:
       platform: state
       entity_id: switch.rfxcom_bathroom_heater_remote
       to: 'off'
     action:
+      - service: script.turn_off
+        data:
+          entity_id: script.stop_bathroom_heater_timer
+      - service: switch.turn_off
+        entity_id: switch.bathroom_heater_wall_plug
       - service: climate.set_operation_mode
         data_template:
           entity_id: "climate.bathroom_heater"
           operation_mode: "off"
+      - delay: '00:00:01'
       - service: switch.turn_off
         entity_id: switch.bathroom_heater_wall_plug
-      - service: script.turn_off
-        data:
-          entity_id: script.stop_bathroom_heater_timer
-
+      - delay: '00:00:01'
+      
 
 homeassistant:
   customize:

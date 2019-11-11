@@ -2,15 +2,6 @@
     "data": {
         "entities": [
             {
-                "config_entry_id": "424daed45a794f7990e2a766e3b120c2",
-                "device_id": "9dff0617eea54f9c9b3410fcedef501f",
-                "disabled_by": null,
-                "entity_id": "light.hue_iris_aurelie",
-                "name": null,
-                "platform": "hue",
-                "unique_id": "00:17:88:01:01:23:53:18-0b"
-            },
-            {
                 "config_entry_id": null,
                 "device_id": null,
                 "disabled_by": null,
@@ -1428,7 +1419,7 @@
                 "device_id": "48fe306771014cb0a4ba62890297c601",
                 "disabled_by": null,
                 "entity_id": "sensor.entrance_multisensor_2_temperature",
-                "name": null,
+                "name": "Entrance Temperature",
                 "platform": "zwave",
                 "unique_id": "14-72057594277806098"
             },
@@ -1602,6 +1593,60 @@
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "14-72057594279100417"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.emby_emby_web_safari",
+                "name": null,
+                "platform": "emby",
+                "unique_id": "TW96aWxsYS81LjAgKGlQaG9uZTsgQ1BVIGlQaG9uZSBPUyAxM18xXzIgbGlrZSBNYWMgT1MgWCkgQXBwbGVXZWJLaXQvNjA1LjEuMTUgKEtIVE1MLCBsaWtlIEdlY2tvKSBWZXJzaW9uLzEzLjAuMSBNb2JpbGUvMTVFMTQ4IFNhZmFyaS82MDQuMXwxNTcwNTEyNjYxMjA3.Emby Web"
+            },
+            {
+                "config_entry_id": "cfa502787b29486686c4092269eb2c52",
+                "device_id": "eecabb6eaf004903b68f9de6b02a1ca8",
+                "disabled_by": null,
+                "entity_id": "light.veilleuse_bebe",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:03:31:d1:f8-0b"
+            },
+            {
+                "config_entry_id": "cfa502787b29486686c4092269eb2c52",
+                "device_id": "063a51fd0f04493084cc790c26101500",
+                "disabled_by": null,
+                "entity_id": "light.iris_gaetan",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:00:12:19:72-0b"
+            },
+            {
+                "config_entry_id": "cfa502787b29486686c4092269eb2c52",
+                "device_id": "684164896a9e4436a25c89f38233ef4e",
+                "disabled_by": null,
+                "entity_id": "light.iris_aurelie",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:01:23:53:18-0b"
+            },
+            {
+                "config_entry_id": "cfa502787b29486686c4092269eb2c52",
+                "device_id": "c9de391f35164ea487a9d0c7492bbf67",
+                "disabled_by": null,
+                "entity_id": "light.ambiance_salon",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:06:0c:ea:89-0b"
+            },
+            {
+                "config_entry_id": "8141e3967c5444e39f743101ee0b0ecc",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.ssl_certificate_expiry",
+                "name": null,
+                "platform": "cert_expiry",
+                "unique_id": "yokxx3cc.synology.me:32483"
             }
         ]
     },
