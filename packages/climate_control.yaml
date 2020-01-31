@@ -312,11 +312,11 @@ automation:
       - service: input_number.set_value
         data_template:
           entity_id: input_number.temp_for_morning
-          value: "19"
+          value: "20"
       - service: input_number.set_value
         data_template:
           entity_id: input_number.temp_for_day_with_presence
-          value: "17"
+          value: "18"
       - service: input_number.set_value
         data_template:
           entity_id: input_number.temp_for_day_absent
@@ -324,15 +324,15 @@ automation:
       - service: input_number.set_value
         data_template:
           entity_id: input_number.temp_for_evening
-          value: "18"
+          value: "20"
       - service: input_number.set_value
         data_template:
           entity_id: input_number.temp_for_before_bed
-          value: "19"
+          value: "21"
       - service: input_number.set_value
         data_template:
           entity_id: input_number.temp_for_night
-          value: "18"
+          value: "20"
       - service: input_number.set_value
         data_template:
           entity_id: input_number.temp_for_holidays

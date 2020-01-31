@@ -302,6 +302,10 @@
                                         {
                                             "entity": "sensor.rfxcom_parents_room_humidity",
                                             "name": "Parents room"
+                                        },
+                                        {
+                                            "entity": "sensor.rfxcom_friend_room_humidity",
+                                            "name": "Baby room"
                                         }
                                     ],
                                     "show_header_toggle": false,

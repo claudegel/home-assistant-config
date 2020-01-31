@@ -1647,6 +1647,42 @@
                 "name": null,
                 "platform": "cert_expiry",
                 "unique_id": "yokxx3cc.synology.me:32483"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.emby_emby_web_chrome",
+                "name": null,
+                "platform": "emby",
+                "unique_id": "TW96aWxsYS81LjAgKE1hY2ludG9zaDsgSW50ZWwgTWFjIE9TIFggMTBfMTRfMikgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzcyLjAuMzYyNi4xMDkgU2FmYXJpLzUzNy4zNnwxNTUwNDA3NzAwNjc3.Emby Web"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.emby_emby_web_firefox",
+                "name": null,
+                "platform": "emby",
+                "unique_id": "TW96aWxsYS81LjAgKE1hY2ludG9zaDsgSW50ZWwgTWFjIE9TIFggMTAuMTQ7IHJ2OjcwLjApIEdlY2tvLzIwMTAwMTAxIEZpcmVmb3gvNzAuMHwxNTc0NDYxOTg0MDUy.Emby Web"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "a5ccdabe8e704825952f6f06e6b572c2",
+                "disabled_by": null,
+                "entity_id": "sensor.aeon_labs_zw120_door_window_sensor_gen5_battery_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "13-72057594262323201"
+            },
+            {
+                "config_entry_id": "889904f9f2454438a44df673a320c119",
+                "device_id": "b5a8ebc024424c39a475212eaf380671",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgwpe_f_wall_plug_velocity",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594110034018"
             }
         ]
     },
