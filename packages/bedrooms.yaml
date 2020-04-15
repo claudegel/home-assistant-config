@@ -13,7 +13,7 @@ input_number:
     min: 0
     max: 23
     step: 1
-  
+
   shed_aurelie_light_delay:
     name: Delai Extinction Lumiere Aurelie
     icon: mdi:clock
@@ -26,7 +26,6 @@ automation:
   - id: shed_aurelie_light_timer
     initial_state: 'on'
     alias: Shed Aurelie light timer
-    hide_entity: False
     trigger:
       platform: state
       entity_id: light.hue_iris_aurelie
@@ -45,7 +44,6 @@ automation:
 
   # - id: shed_gaetan_light_timer
   #   alias: Shed Gaetan light timer
-  #   hide_entity: False
   #   trigger:
   #     platform: state
   #     entity_id: light.hue_iris_gaetan
@@ -64,7 +62,6 @@ automation:
 group:
   bedroom_lights:
     name: Bedroom lights
-    control: hidden
     entities:
       - light.hue_iris_aurelie
       - input_number.shed_aurelie_light_delay

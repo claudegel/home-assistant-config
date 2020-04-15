@@ -37,16 +37,16 @@ sensor:
       - ups.delay.shutdown
       - ups.load
       - ups.status.display
-  
-  - name: OSMC Uptime
-    platform: mqtt
-    state_topic: "home/osmc/uptime/sec"
-    unit_of_measurement: 'sec'
 
-  - name: OSMC Temperature
-    platform: mqtt
-    state_topic: "home/osmc/cpu/temp"
-    unit_of_measurement: '°C'
+  # - name: OSMC Uptime
+  #   platform: mqtt
+  #   state_topic: "home/osmc/uptime/sec"
+  #   unit_of_measurement: 'sec'
+
+  # - name: OSMC Temperature
+  #   platform: mqtt
+  #   state_topic: "home/osmc/cpu/temp"
+  #   unit_of_measurement: '°C'
 
   - platform: template
     sensors:
@@ -118,7 +118,7 @@ media_player:
     host: 192.168.0.20
     #username: gaetan
     #password: !secret media_player_kodi_password
-  
+
   - platform: emby
     host: 192.168.0.10
     # name: "Emby"
@@ -133,11 +133,10 @@ remote:
     name: Harmony Home Cinema
     host: 192.168.0.53
 
-    
+
 group:
   pvr:
     name: Smart PVR
-    control: hidden
     entities:
       - sensor.radarr_movies
       - sensor.sonarr_upcoming
@@ -148,14 +147,12 @@ group:
 
   harmony:
     name: Harmony Home Cinema
-    control: hidden
     entities:
       - remote.harmony_home_cinema
       - sensor.harmony_home_cinema_current_activity
 
   homecine_network:
     name: Home Cinema Information
-    control: hidden
     entities:
       - binary_sensor.osmc
       - sensor.osmc_uptime_templated

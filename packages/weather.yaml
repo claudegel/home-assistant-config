@@ -27,7 +27,7 @@ sensor:
       - symbol
       - temperature
       - windSpeed
-  
+
   - platform: yr
     name: Forecast 24h
     forecast: 24
@@ -50,7 +50,7 @@ weather:
   - platform: yweather
     name: yweather
     woeid: !secret yweather_woeid
-    
+
   - platform: darksky
     api_key: !secret darksky_apikey
 
@@ -58,7 +58,6 @@ weather:
 group:
   current:
     name: Actuel
-    control: hidden
     entities:
       - sensor.season
       - sensor.date
@@ -68,7 +67,6 @@ group:
 
   weather_1h:
     name: Metéo 1h
-    control: hidden
     entities:
       - sensor.weather_symbol
       - sensor.weather_temperature
@@ -88,7 +86,6 @@ group:
 
   forecast_6h:
     name: Prevision 6h
-    control: hidden
     entities:
       - weather.yweather
       - sensor.forecast_6h_symbol
@@ -100,7 +97,6 @@ group:
 
   forecast_6h_short:
     name: Prevision 6h
-    control: hidden
     entities:
       - sensor.forecast_6h_symbol
       - sensor.forecast_6h_temperature
@@ -108,7 +104,6 @@ group:
 
   forecast_24h:
     name: Prevision 24h
-    control: hidden
     entities:
       - sensor.forecast_24h_symbol
       - sensor.forecast_24h_temperature
@@ -116,4 +111,3 @@ group:
       - sensor.forecast_24h_pressure
       - sensor.forecast_24h_wind_speed
       - sensor.forecast_24h_cloudiness
-  

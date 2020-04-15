@@ -5,7 +5,7 @@ sensor:
     command: "cat /sys/class/thermal/thermal_zone0/temp"
     unit_of_measurement: "°C"
     value_template: '{{ value | multiply(0.001) | round(2) }}'
-    
+
   - platform: systemmonitor
     entity_namespace: domot
     resources:
@@ -42,7 +42,6 @@ homeassistant:
 group:
   domot:
     name: Domot server information
-    control: hidden
     entities:
       - sensor.domot_cpu_temperature
       - sensor.domot_processor_use

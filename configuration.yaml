@@ -36,10 +36,6 @@ influxdb: !include influxdb.yaml
 
 speedtestdotnet: !include speedtestdotnet.yaml
 
-history_graph: !include history_graph.yaml
-
-# mqtt: !include mqtt.yaml
-
 ios:
 
 group: !include group.yaml

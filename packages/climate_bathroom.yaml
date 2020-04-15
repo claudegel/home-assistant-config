@@ -14,25 +14,25 @@
 #
 # Setup
 # =====
-# 
+#
 # - An cheap electric heater is set to the 'on' position in the bathroom
 # - It is connected to a Fibaro Z-Wave smart-plug (or any other smart plug
 #   that can handle more than ~2000W)
-# - an Oregon Scientific temperature sensor is placed in the bathroom, and 
+# - an Oregon Scientific temperature sensor is placed in the bathroom, and
 #   will be use to regulate the room temperature
 # - A cheap 433 Mhz switch (simple DIO switch)
 # - RFXCom is used to communicate with these 2 devices
 
 # Why not all-Z-Wave devices?
 # A single Z-Wave device cost > 50 euros. The DIO switch is 14 euros, and
-# the temperature sensor can be found for less that 25 euros, they are 
-# reliable and safely packaged, so I have put them all around the house 
+# the temperature sensor can be found for less that 25 euros, they are
+# reliable and safely packaged, so I have put them all around the house
 # and outside.
 # Because of security, I keep the actuators in the Z-Wave network, but I
 # choose to choose cheapest but reliable sensors using 433 Mhz protocols.
 #
 # This package does the following:
-#  - the DIO switch can be used to turn on and off the "confort" scenario 
+#  - the DIO switch can be used to turn on and off the "confort" scenario
 #    at any point. It has 2 actions, one for "on", one for 'off'
 #  - A virtual switch is also avaible in the Home Assistant UI to virtually
 #    trigger this switch.
@@ -62,7 +62,7 @@ climate:
   #   target_sensor: sensor.rfxcom_bathroom_temperature
   #   min_temp: 18
   #   max_temp: 28
-  #   ac_mode: False 
+  #   ac_mode: False
   #   target_temp: 23
   #   # keep_alive:
   #   #   seconds: 5
@@ -179,7 +179,7 @@ automation:
   #     - service: script.turn_off
       #   data:
       #     entity_id: script.turn_off_bedroom_light
-  
+
   - alias: "Remote bathroom confort trigger on"
     initial_state: 'on'
     trigger:
@@ -209,7 +209,7 @@ automation:
       - service: switch.turn_off
         entity_id: switch.bathroom_heater_wall_plug
       - delay: '00:00:01'
-      
+
 
 homeassistant:
   customize:
@@ -218,7 +218,7 @@ homeassistant:
       can_cancel: false
       custom_text: "DIO remote to turn on bathroom heater"
       assumed_state: False
-    
+
     script.set_bathroom_confortable:
       icon: mdi:radiator
       can_cancel: false
@@ -227,22 +227,19 @@ group:
 
   bathroom_climate:
     name: Bathroom Heater
-    control: hidden
     entities:
       - climate.bathroom_heater
       - switch.rfxcom_bathroom_heater_remote
 
   bathroom_climate_config:
     name: Bathroom Heater Config
-    control: hidden
     entities:
       - climate.bathroom_heater
       - switch.rfxcom_bathroom_heater_remote
       - switch.bathroom_heater_wall_plug
-    
+
   bathroom_climate_schedule_config:
     name: Bath Heater Shedule
-    control: hidden
     entities:
       - input_boolean.schedule_morning_bathroom_confort
       - input_datetime.quick_bathroom_confort_time

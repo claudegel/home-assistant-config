@@ -1,9 +1,9 @@
 sensor:
-  
+
   - platform: version
     name: HA Installed Version
     scan_interval: 86400
-  
+
   - platform: command_line
     name: HA Available Version
     scan_interval: 720
@@ -13,13 +13,13 @@ sensor:
       ;u = 'https://pypi.python.org/pypi/homeassistant/json'
       ;print(requests.get(u).json()['info']['version'])
       "
-  
+
   - platform: command_line
     name: "HA Uptime"
     command: >-
       echo "$((
-      $(date +%s) - 
-      $(date -d "$(head -n1 /home/pi/homeassistant/home-assistant.log | 
+      $(date +%s) -
+      $(date -d "$(head -n1 /home/pi/homeassistant/home-assistant.log |
       cut -d' ' -f-2)" +%s)
       ))"
     scan_interval: 720
@@ -112,7 +112,7 @@ script:
           title: 'Home Assistant is about to be restarted'
       - delay: 00:00:05
       - service: shell_command.quick_restart
-      
+
   halt_system:
     alias: 'Halt System'
     sequence:
@@ -189,7 +189,6 @@ homeassistant:
 group:
   ha_system:
     name: Home Assistant System
-    control: hidden
     entities:
       - sensor.ha_installed_version
       - sensor.ha_available_version
@@ -201,13 +200,11 @@ group:
 
   battery_levels:
     name: ZWave Battery Levels
-    control: hidden
     entities:
       - sensor.thermostat_transmitter_battery_level
 
   zwave_devices:
     name: Z-Wave devices
-    control: hidden
     entities:
       - zwave.controller
       - zwave.cabinet_smart_plug
@@ -217,10 +214,9 @@ group:
       - zwave.boiler_actuator_receiver
       - zwave.thermostat_transmitter
       - zwave.washing_machine_smart_plug
-      
+
   debug_ha:
     name: Debug Home Assistant
-    control: hidden
     entities:
       - input_boolean.dbg_washing_machine
       - switch.aeotec_zstick_disco_light

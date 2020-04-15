@@ -196,7 +196,7 @@
                 ],
                 "manufacturer": "Unknown manufacturer",
                 "model": "Chromecast Ultra",
-                "name": "Chromecast Salon TV",
+                "name": "Salon",
                 "name_by_user": null,
                 "sw_version": null,
                 "via_device_id": null
@@ -532,9 +532,10 @@
                 "via_device_id": null
             },
             {
-                "area_id": null,
+                "area_id": "572208ae75ba4f4fb7cdd8ea1e6b442b",
                 "config_entries": [
-                    "cfa502787b29486686c4092269eb2c52"
+                    "cfa502787b29486686c4092269eb2c52",
+                    "4a0ead297eee4014856c6371a8f3ac30"
                 ],
                 "connections": [
                     [
@@ -547,13 +548,17 @@
                     [
                         "hue",
                         "ECB5FAFFFE0A5318"
+                    ],
+                    [
+                        "freebox",
+                        "EC:B5:FA:0A:53:18"
                     ]
                 ],
-                "manufacturer": "Signify",
+                "manufacturer": "Philips Lighting BV",
                 "model": "BSB002",
-                "name": "Philips hue",
+                "name": "Philips-hue",
                 "name_by_user": null,
-                "sw_version": "1935144040",
+                "sw_version": "1937113020",
                 "via_device_id": null
             },
             {
@@ -569,7 +574,7 @@
                         "00:17:88:01:03:31:d1:f8-0b"
                     ]
                 ],
-                "manufacturer": "Philips",
+                "manufacturer": "Signify Netherlands B.V.",
                 "model": "Hue bloom",
                 "name": "Veilleuse bebe",
                 "name_by_user": null,
@@ -589,7 +594,7 @@
                         "00:17:88:01:00:12:19:72-0b"
                     ]
                 ],
-                "manufacturer": "Philips",
+                "manufacturer": "Signify Netherlands B.V.",
                 "model": "Hue iris",
                 "name": "Iris Gaetan",
                 "name_by_user": null,
@@ -609,7 +614,7 @@
                         "00:17:88:01:01:23:53:18-0b"
                     ]
                 ],
-                "manufacturer": "Philips",
+                "manufacturer": "Signify Netherlands B.V.",
                 "model": "Hue iris",
                 "name": "Iris Aurelie",
                 "name_by_user": null,
@@ -629,12 +634,2912 @@
                         "00:17:88:01:06:0c:ea:89-0b"
                     ]
                 ],
-                "manufacturer": "Philips",
+                "manufacturer": "Signify Netherlands B.V.",
                 "model": "Hue go",
                 "name": "Ambiance salon",
                 "name_by_user": null,
-                "sw_version": "5.127.1.26420",
+                "sw_version": "5.130.1.30000",
                 "via_device_id": "034217edbcda4d9f935a232dc60da01c"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "654c789bc95844a9b198862d23ec7a97"
+                ],
+                "connections": [],
+                "id": "1b6f6ac0272448bbb5fcc5bf8549d357",
+                "identifiers": [
+                    [
+                        "harmony",
+                        "13177575"
+                    ]
+                ],
+                "manufacturer": "Logitech",
+                "model": "Harmony Hub",
+                "name": "Harmony Home Cinema",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "82ab042d92a54f569dc57b5f88cac3dc"
+                ],
+                "connections": [],
+                "id": "ce1d5b152cb2460f93e430c3da0841bf",
+                "identifiers": [
+                    [
+                        "nut",
+                        "EATON_Ellipse PRO 1200 _P360H08RA5"
+                    ]
+                ],
+                "manufacturer": "EATON",
+                "model": "Ellipse PRO 1200 ",
+                "name": "Cabinet UPS",
+                "name_by_user": null,
+                "sw_version": "01.16.0020",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "cfa502787b29486686c4092269eb2c52"
+                ],
+                "connections": [],
+                "id": "a520715b54964c5babe898d3f64b48d2",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:10:6f:20:50"
+                    ]
+                ],
+                "manufacturer": "Signify Netherlands B.V.",
+                "model": "Hue dimmer switch",
+                "name": "Controle chambre parentale",
+                "name_by_user": null,
+                "sw_version": "6.1.1.28573",
+                "via_device_id": "034217edbcda4d9f935a232dc60da01c"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "cfa502787b29486686c4092269eb2c52"
+                ],
+                "connections": [],
+                "id": "f435332bfce441d8bb7450e7853db46c",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:00:00:00:00:46:db:c5"
+                    ]
+                ],
+                "manufacturer": "Signify Netherlands B.V.",
+                "model": "Hue tap switch",
+                "name": "Tap baby",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": "034217edbcda4d9f935a232dc60da01c"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "8d70adff2842427eac1107329d25c5d2"
+                ],
+                "connections": [],
+                "id": "8a87956737204cbbb0e7fac8271dfa36",
+                "identifiers": [
+                    [
+                        "ipp",
+                        "cfe92100-67c4-11d4-a45f-f8d027d373aa"
+                    ]
+                ],
+                "manufacturer": "EPSON",
+                "model": "ET-7750 Series",
+                "name": "EPSON ET-7750 Series",
+                "name_by_user": null,
+                "sw_version": "20.36.PS05JC",
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:24:d4:7d:79:e3"
+                    ]
+                ],
+                "id": "a086151bb8bf4c149f13e4021e2273af",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:24:D4:7D:79:E3"
+                    ]
+                ],
+                "manufacturer": "Freebox SAS",
+                "model": null,
+                "name": "Freebox Player (eth)",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "f4:ca:e5:41:df:a2"
+                    ]
+                ],
+                "id": "a2670fa617bb4290bff204d9e836e890",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "F4:CA:E5:41:DF:A2"
+                    ]
+                ],
+                "manufacturer": "Freebox SAS",
+                "model": null,
+                "name": "Freebox Server (r1)",
+                "name_by_user": null,
+                "sw_version": "4.0.7",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "20:c9:d0:b3:cf:45"
+                    ]
+                ],
+                "id": "f1bae02905a54cb8b69031f07c7cfae0",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "20:C9:D0:B3:CF:45"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": null,
+                "name": "MBP-de-Gaetan (wifi)",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "5c:8d:4e:01:31:8e"
+                    ]
+                ],
+                "id": "34fcf7f15d954c13a59e4c20441d45b8",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "5C:8D:4E:01:31:8E"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": null,
+                "name": "Stibphone",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "572208ae75ba4f4fb7cdd8ea1e6b442b",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b8:27:eb:e5:ad:d1"
+                    ]
+                ],
+                "id": "d7418cfcd71e4ec2b31a4e9f7d865ced",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "B8:27:EB:E5:AD:D1"
+                    ]
+                ],
+                "manufacturer": "Raspberry Pi Foundation",
+                "model": null,
+                "name": "osmc",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b8:27:eb:f5:05:ee"
+                    ]
+                ],
+                "id": "0daafa2cd90a4182878455bae1feaee3",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "B8:27:EB:F5:05:EE"
+                    ]
+                ],
+                "manufacturer": "Raspberry Pi Foundation",
+                "model": null,
+                "name": "domot (eth)",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "572208ae75ba4f4fb7cdd8ea1e6b442b",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:a0:de:dc:cd:97"
+                    ]
+                ],
+                "id": "766646ef477c4221b252d2ada9c12d7a",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:A0:DE:DC:CD:97"
+                    ]
+                ],
+                "manufacturer": "Yamaha Corporation",
+                "model": null,
+                "name": "Salon Home Cinema",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b8:27:eb:b0:f8:84"
+                    ]
+                ],
+                "id": "1a7a117cbb924452ac04e38a7b743d05",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "B8:27:EB:B0:F8:84"
+                    ]
+                ],
+                "manufacturer": "Raspberry Pi Foundation",
+                "model": null,
+                "name": "pihole",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b8:27:eb:a0:50:bb"
+                    ]
+                ],
+                "id": "4493f6dc11984a20935cc68ae16c8128",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "B8:27:EB:A0:50:BB"
+                    ]
+                ],
+                "manufacturer": "Raspberry Pi Foundation",
+                "model": null,
+                "name": "domot",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "38:71:de:a3:28:81"
+                    ]
+                ],
+                "id": "72b83fd231174b82a9b4954f54e78697",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "38:71:DE:A3:28:81"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": null,
+                "name": "Aure-Phone",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "64:20:0c:ad:73:a3"
+                    ]
+                ],
+                "id": "a450ca2e3bf44826b734ed4bb2cf7b22",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "64:20:0C:AD:73:A3"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": null,
+                "name": "iPad-de-Gaetan",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "13f53f64750a43a5823da008ec817e6d",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "a4:ee:57:65:50:7f"
+                    ]
+                ],
+                "id": "de806e63217142368a1cba3581e9a8a1",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "A4:EE:57:65:50:7F"
+                    ]
+                ],
+                "manufacturer": "Seiko Epson Corporation",
+                "model": null,
+                "name": "EPSON65507F",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:11:32:63:9a:11"
+                    ]
+                ],
+                "id": "d94ea0596930412eae3ae08c94793aaa",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:11:32:63:9A:11"
+                    ]
+                ],
+                "manufacturer": "Synology Incorporated",
+                "model": null,
+                "name": "nas eth1",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:11:32:63:9a:12"
+                    ]
+                ],
+                "id": "2f45da043ba84d8a8e849a24e0caef8a",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:11:32:63:9A:12"
+                    ]
+                ],
+                "manufacturer": "Synology Incorporated",
+                "model": null,
+                "name": "nas",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "572208ae75ba4f4fb7cdd8ea1e6b442b",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "2c:30:33:f9:82:42"
+                    ]
+                ],
+                "id": "c661308bed37482e8d4e64723a26bb09",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "2C:30:33:F9:82:42"
+                    ]
+                ],
+                "manufacturer": "Netgear",
+                "model": null,
+                "name": "R7000",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:11:32:63:9a:0f"
+                    ]
+                ],
+                "id": "0049c209af144e47bb370bcd320a6414",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:11:32:63:9A:0F"
+                    ]
+                ],
+                "manufacturer": "Synology Incorporated",
+                "model": null,
+                "name": "nas",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:11:32:63:9a:10"
+                    ]
+                ],
+                "id": "5fb57504cdfb47b48511406da1680a5e",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:11:32:63:9A:10"
+                    ]
+                ],
+                "manufacturer": "Synology Incorporated",
+                "model": null,
+                "name": "nas",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "572208ae75ba4f4fb7cdd8ea1e6b442b",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "d0:b5:c2:c7:c0:d2"
+                    ]
+                ],
+                "id": "6cc5874456c8438bb6ad3223bc1e50e6",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "D0:B5:C2:C7:C0:D2"
+                    ]
+                ],
+                "manufacturer": "Texas Instruments",
+                "model": null,
+                "name": "Multiroom Salle Principale (wifi)",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b8:27:eb:65:ac:ef"
+                    ]
+                ],
+                "id": "fdcb4828acf341f9989a5fe0042d3af8",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "B8:27:EB:65:AC:EF"
+                    ]
+                ],
+                "manufacturer": "Raspberry Pi Foundation",
+                "model": null,
+                "name": "Pi-Hole (eth)",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "572208ae75ba4f4fb7cdd8ea1e6b442b",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "04:a3:16:5c:2d:87"
+                    ]
+                ],
+                "id": "d7fc6cfebc93456393bf7c918e8c1131",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "04:A3:16:5C:2D:87"
+                    ]
+                ],
+                "manufacturer": "Texas Instruments",
+                "model": null,
+                "name": "Multiroom Salon TV (wifi)",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "13f53f64750a43a5823da008ec817e6d",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:23:54:0a:a1:28"
+                    ]
+                ],
+                "id": "05ed988fbd2c4090bb58c7aaca6e9d00",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:23:54:0A:A1:28"
+                    ]
+                ],
+                "manufacturer": "ASUSTek Computer Inc.",
+                "model": null,
+                "name": "QUAD",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "30:63:6b:8f:71:bd"
+                    ]
+                ],
+                "id": "08b14a2058d84c33b1ce26eca4faa791",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "30:63:6B:8F:71:BD"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": null,
+                "name": "Stibphone2",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "6daf2efc2b0f42f2b797460c0a86e4f8",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "50:33:8b:e1:98:2b"
+                    ]
+                ],
+                "id": "bddcc97436e240a59d766e56e35fd80e",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "50:33:8B:E1:98:2B"
+                    ]
+                ],
+                "manufacturer": "Texas Instruments",
+                "model": null,
+                "name": "Multiroom Chambre Parentale (wifi)",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "572208ae75ba4f4fb7cdd8ea1e6b442b",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:24:be:2e:22:c3"
+                    ]
+                ],
+                "id": "bbca6b89739a45c9a058e7c7baccec35",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:24:BE:2E:22:C3"
+                    ]
+                ],
+                "manufacturer": "Sony Corporation",
+                "model": null,
+                "name": "xMRA MediaRenderer",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "572208ae75ba4f4fb7cdd8ea1e6b442b",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "5c:52:1e:82:f2:d8"
+                    ]
+                ],
+                "id": "fa64b91745cb4784b5869b1b32fc1606",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "5C:52:1E:82:F2:D8"
+                    ]
+                ],
+                "manufacturer": "Nintendo Co. Ltd",
+                "model": null,
+                "name": "Nintendo Switch",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b8:27:eb:30:f9:ba"
+                    ]
+                ],
+                "id": "361faa264dfd4c1cb2c468299327984d",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "B8:27:EB:30:F9:BA"
+                    ]
+                ],
+                "manufacturer": "Raspberry Pi Foundation",
+                "model": null,
+                "name": "pihole (wifi)",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b8:27:eb:b1:ad:7b"
+                    ]
+                ],
+                "id": "ce6d0ac59c514c99af9350f55385d039",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "B8:27:EB:B1:AD:7B"
+                    ]
+                ],
+                "manufacturer": "Raspberry Pi Foundation",
+                "model": null,
+                "name": "pihole",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "572208ae75ba4f4fb7cdd8ea1e6b442b",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "c8:db:26:06:43:d4"
+                    ]
+                ],
+                "id": "152641e0fd3d45b0bfc8bfcb6a50b861",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "C8:DB:26:06:43:D4"
+                    ]
+                ],
+                "manufacturer": "Logitech",
+                "model": null,
+                "name": "HarmonyHub",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "13f53f64750a43a5823da008ec817e6d",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "34:15:13:b6:ea:28"
+                    ]
+                ],
+                "id": "f85e624d3b9d46dc89f82f2bdbdef362",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "34:15:13:B6:EA:28"
+                    ]
+                ],
+                "manufacturer": "Texas Instruments",
+                "model": null,
+                "name": "Multiroom Bureau (wifi)",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "572208ae75ba4f4fb7cdd8ea1e6b442b",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b8:27:eb:e4:f8:2e"
+                    ]
+                ],
+                "id": "30ebcb20cf3540a1b7c4e293df92af31",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "B8:27:EB:E4:F8:2E"
+                    ]
+                ],
+                "manufacturer": "Raspberry Pi Foundation",
+                "model": null,
+                "name": "osmc (eth)",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "572208ae75ba4f4fb7cdd8ea1e6b442b",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "2c:30:33:f9:82:43"
+                    ]
+                ],
+                "id": "206d0238b9d84b0ca5cd2318f65ac3ed",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "2C:30:33:F9:82:43"
+                    ]
+                ],
+                "manufacturer": "Netgear",
+                "model": null,
+                "name": "R7000 (eth)",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "572208ae75ba4f4fb7cdd8ea1e6b442b",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "2c:30:33:f9:82:44"
+                    ]
+                ],
+                "id": "aaa332aeebd14c12a3ab5b68099186e8",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "2C:30:33:F9:82:44"
+                    ]
+                ],
+                "manufacturer": "Netgear",
+                "model": null,
+                "name": "R7000 (ganesh 2.4)",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "572208ae75ba4f4fb7cdd8ea1e6b442b",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "2c:30:33:f9:82:41"
+                    ]
+                ],
+                "id": "4039cf6116954b709fe0a986ebe685de",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "2C:30:33:F9:82:41"
+                    ]
+                ],
+                "manufacturer": "Netgear",
+                "model": null,
+                "name": "r7000 (parvati) (eth)",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "953d1576d5824f28b345e27c555a9ddf",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "94:e1:ac:cd:3a:c5"
+                    ]
+                ],
+                "id": "84ef46a5c8b64d6fbd3e4b33602eacdf",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "94:E1:AC:CD:3A:C5"
+                    ]
+                ],
+                "manufacturer": "Hangzhou Hikvision Digital Technology Co. Ltd",
+                "model": null,
+                "name": "IP Camera 1",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b8:27:eb:41:4c:25"
+                    ]
+                ],
+                "id": "67b78137f2d64cb287498c70d34809b4",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "B8:27:EB:41:4C:25"
+                    ]
+                ],
+                "manufacturer": "Raspberry Pi Foundation",
+                "model": null,
+                "name": "domot (eth)",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b8:27:eb:79:ac:32"
+                    ]
+                ],
+                "id": "bb99735eb29948ffadb8d8322a0870cc",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "B8:27:EB:79:AC:32"
+                    ]
+                ],
+                "manufacturer": "Raspberry Pi Foundation",
+                "model": null,
+                "name": "pihole (eth)",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b8:27:eb:2c:f9:67"
+                    ]
+                ],
+                "id": "f9f33229729945c890cfd3ac2e69528c",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "B8:27:EB:2C:F9:67"
+                    ]
+                ],
+                "manufacturer": "Raspberry Pi Foundation",
+                "model": null,
+                "name": "pihole (wifi)",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b8:27:eb:14:48:36"
+                    ]
+                ],
+                "id": "bd6ac1bf17bf4b9ab5fe36a7edaf149c",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "B8:27:EB:14:48:36"
+                    ]
+                ],
+                "manufacturer": "Raspberry Pi Foundation",
+                "model": null,
+                "name": "pihole (wifi)",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "90:b6:86:de:bf:d1"
+                    ]
+                ],
+                "id": "cbd99bb06647495694e8263d58632a91",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "90:B6:86:DE:BF:D1"
+                    ]
+                ],
+                "manufacturer": "Murata Manufacturing Co. Ltd",
+                "model": null,
+                "name": "Telephone Maman",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b8:27:eb:c1:d3:f0"
+                    ]
+                ],
+                "id": "33576eb3613140beabc0cf253d0e0aed",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "B8:27:EB:C1:D3:F0"
+                    ]
+                ],
+                "manufacturer": "Raspberry Pi Foundation",
+                "model": null,
+                "name": "pihole",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b8:27:eb:94:86:a5"
+                    ]
+                ],
+                "id": "ec090da839c9488fbd60190f065c25fb",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "B8:27:EB:94:86:A5"
+                    ]
+                ],
+                "manufacturer": "Raspberry Pi Foundation",
+                "model": null,
+                "name": "pihole",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7c39ddef17d2421cb8282f812cf6aaf8",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "58:03:fb:38:e4:68"
+                    ]
+                ],
+                "id": "033d28d672624d5f9261008164abf0fc",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "58:03:FB:38:E4:68"
+                    ]
+                ],
+                "manufacturer": "Hangzhou Hikvision Digital Technology Co. Ltd",
+                "model": null,
+                "name": "IP Camera 2",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b8:27:eb:14:19:70"
+                    ]
+                ],
+                "id": "5e3f25aff1c34df98a302909126326e1",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "B8:27:EB:14:19:70"
+                    ]
+                ],
+                "manufacturer": "Raspberry Pi Foundation",
+                "model": null,
+                "name": "domot (wifi)",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "13f53f64750a43a5823da008ec817e6d",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "f8:d0:27:d3:73:aa"
+                    ]
+                ],
+                "id": "5f84e565906145e4b100502739accc39",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "F8:D0:27:D3:73:AA"
+                    ]
+                ],
+                "manufacturer": "Seiko Epson Corporation",
+                "model": null,
+                "name": "Epson-ET7750",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:0e:c6:a5:bb:39"
+                    ]
+                ],
+                "id": "e477e878e6e949c28d9fc7558704bfb4",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:0E:C6:A5:BB:39"
+                    ]
+                ],
+                "manufacturer": "Asix Electronics Corp.",
+                "model": null,
+                "name": "Unknown",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:11:32:aa:63:cd"
+                    ]
+                ],
+                "id": "4f3d9266ed274a9bb77b9f2364592b36",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:11:32:AA:63:CD"
+                    ]
+                ],
+                "manufacturer": "Synology Incorporated",
+                "model": null,
+                "name": "nas",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "67721df2eb9e4c4880032b1f8108044d",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "7c:01:0a:5c:c6:73"
+                    ]
+                ],
+                "id": "a537c6cd68a847bda3791702b2264cf3",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "7C:01:0A:5C:C6:73"
+                    ]
+                ],
+                "manufacturer": "Texas Instruments",
+                "model": null,
+                "name": "Cuisine",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:11:32:aa:63:ce"
+                    ]
+                ],
+                "id": "f60adc42bcf84925b6eb1f0afa29ebed",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:11:32:AA:63:CE"
+                    ]
+                ],
+                "manufacturer": "Synology Incorporated",
+                "model": null,
+                "name": "nas",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "572208ae75ba4f4fb7cdd8ea1e6b442b",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b0:2a:43:1c:3f:7c"
+                    ]
+                ],
+                "id": "1b315f8d75284cf79cdc5004d1955eb5",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "B0:2A:43:1C:3F:7C"
+                    ]
+                ],
+                "manufacturer": "Google, Inc.",
+                "model": null,
+                "name": "Chromecast-Ultra",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "38:f9:d3:dd:c9:72"
+                    ]
+                ],
+                "id": "acbcc24affe84ea58fd7e472c9415e89",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "38:F9:D3:DD:C9:72"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": null,
+                "name": "RSLMAC004",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "84:fd:d1:fc:55:b7"
+                    ]
+                ],
+                "id": "2e2d8652564242ffa7797337d68cd449",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "84:FD:D1:FC:55:B7"
+                    ]
+                ],
+                "manufacturer": "Intel Corporation",
+                "model": null,
+                "name": "P-052522",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "2c:2b:f9:24:c2:cb"
+                    ]
+                ],
+                "id": "8d1433582e354a82abe468210f84aaed",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "2C:2B:F9:24:C2:CB"
+                    ]
+                ],
+                "manufacturer": "LG Innotek",
+                "model": null,
+                "name": "QCA4002",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "80:19:34:7d:71:89"
+                    ]
+                ],
+                "id": "145e34bd229740db930bad66e3617314",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "80:19:34:7D:71:89"
+                    ]
+                ],
+                "manufacturer": "Intel Corporation",
+                "model": null,
+                "name": "Aur\u0082-pc",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "2c:1f:23:24:83:bc"
+                    ]
+                ],
+                "id": "9b031dceeac74e699cdfa555488feb90",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "2C:1F:23:24:83:BC"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": null,
+                "name": "iPaddeBrnadette",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "28:27:bf:23:65:01"
+                    ]
+                ],
+                "id": "29b6ea4780104dd68c7497af6a2ab79d",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "28:27:BF:23:65:01"
+                    ]
+                ],
+                "manufacturer": "Samsung Electronics Co. Ltd",
+                "model": null,
+                "name": "Galaxy-Tab-A",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "5c:1d:d9:5b:4b:42"
+                    ]
+                ],
+                "id": "f65287810b8a47b1a8ce3d82917ad662",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "5C:1D:D9:5B:4B:42"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": null,
+                "name": "iPhonedristiane",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "572208ae75ba4f4fb7cdd8ea1e6b442b",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "44:09:b8:b0:00:ab"
+                    ]
+                ],
+                "id": "2588ee05b50a48acb68d0a98a8fcf6ed",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "44:09:B8:B0:00:AB"
+                    ]
+                ],
+                "manufacturer": "Salcomp (Shenzhen) Co. Ltd",
+                "model": null,
+                "name": "Chromecast-Ultra",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:11:32:aa:63:cf"
+                    ]
+                ],
+                "id": "3731b5bcf503462f93a702e31d00ab84",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:11:32:AA:63:CF"
+                    ]
+                ],
+                "manufacturer": "Synology Incorporated",
+                "model": null,
+                "name": "DiskStation",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:11:32:aa:63:d0"
+                    ]
+                ],
+                "id": "fdb348a5e79e456299fca721b53dc2a5",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:11:32:AA:63:D0"
+                    ]
+                ],
+                "manufacturer": "Synology Incorporated",
+                "model": null,
+                "name": "nas",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "28:16:ad:f0:1a:ef"
+                    ]
+                ],
+                "id": "8a1b308917914feaa4d2514de13b4042",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "28:16:AD:F0:1A:EF"
+                    ]
+                ],
+                "manufacturer": "Intel Corporation",
+                "model": null,
+                "name": "FRLH104150",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "a8:20:66:05:da:c1"
+                    ]
+                ],
+                "id": "7c3b6eea6bc642faafebceb571d695b1",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "A8:20:66:05:DA:C1"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": null,
+                "name": "MBP-de-Gaetan",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:d0:4b:87:8b:1a"
+                    ]
+                ],
+                "id": "d35260429eec4c60ada128d9cea8b907",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:D0:4B:87:8B:1A"
+                    ]
+                ],
+                "manufacturer": "LA CIE Group S.A.",
+                "model": null,
+                "name": "LaCie",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "7f4809b3e46d4b568791123ddb972fa5",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "a0:02:dc:2c:62:ac"
+                    ]
+                ],
+                "id": "4d13f17f733e4a339f30978edffa2e4b",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "A0:02:DC:2C:62:AC"
+                    ]
+                ],
+                "manufacturer": "Amazon Technologies Inc.",
+                "model": null,
+                "name": "nas",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "6daf2efc2b0f42f2b797460c0a86e4f8",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:24:e4:14:60:fe"
+                    ]
+                ],
+                "id": "6070120f30644d1291da1abf1c2007e5",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:24:E4:14:60:FE"
+                    ]
+                ],
+                "manufacturer": "Withings",
+                "model": null,
+                "name": "Android",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "58:1f:aa:03:b0:8f"
+                    ]
+                ],
+                "id": "b1f345cdcc8e40a8804db1e64b4dd207",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "58:1F:AA:03:B0:8F"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": null,
+                "name": "Aure-Phone-2",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "04:46:65:93:7d:9d"
+                    ]
+                ],
+                "id": "eccdd450140e4923998ba1a151ec9cb5",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "04:46:65:93:7D:9D"
+                    ]
+                ],
+                "manufacturer": "Murata Manufacturing Co. Ltd",
+                "model": null,
+                "name": "android-e956ee5a2f5437e6",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "04:1e:64:12:b9:1b"
+                    ]
+                ],
+                "id": "909ea5ae29da4e318cb35721e3c985e0",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "04:1E:64:12:B9:1B"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": null,
+                "name": "iPhone-de-Bouture",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:1f:a7:78:8c:20"
+                    ]
+                ],
+                "id": "3e4d3df78fe4418cbdb21764fa293f4a",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:1F:A7:78:8C:20"
+                    ]
+                ],
+                "manufacturer": "Sony Interactive Entertainment Inc.",
+                "model": null,
+                "name": "Unknown device",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "10:0b:a9:97:aa:00"
+                    ]
+                ],
+                "id": "cacf437a64ec4ac784cb4000501c839a",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "10:0B:A9:97:AA:00"
+                    ]
+                ],
+                "manufacturer": "Intel Corporation",
+                "model": null,
+                "name": "GSEMET-MOBL",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:17:c4:37:fc:1d"
+                    ]
+                ],
+                "id": "3b8341cde38143b69ff319996d34db6d",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:17:C4:37:FC:1D"
+                    ]
+                ],
+                "manufacturer": "Quanta Microsystems, Inc.",
+                "model": null,
+                "name": "aurelie-Vostro-A860",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "1c:66:aa:e0:8b:dd"
+                    ]
+                ],
+                "id": "74e55e3258474eaab9fc017c2c9e568f",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "1C:66:AA:E0:8B:DD"
+                    ]
+                ],
+                "manufacturer": "Samsung Electronics Co. Ltd",
+                "model": null,
+                "name": "Unknown device",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "38:aa:3c:4f:e2:99"
+                    ]
+                ],
+                "id": "f72acc075bd94b9da30a39dcf5516914",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "38:AA:3C:4F:E2:99"
+                    ]
+                ],
+                "manufacturer": "Samsung Electro Mechanics Co. Ltd",
+                "model": null,
+                "name": "android-eb5107803b985751",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "d0:c1:b1:d1:31:59"
+                    ]
+                ],
+                "id": "90f31c245dfb48c4a5689c8f46b1504e",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "D0:C1:B1:D1:31:59"
+                    ]
+                ],
+                "manufacturer": "Samsung Electronics Co. Ltd",
+                "model": null,
+                "name": "MacBook-Pro-de-Gaetan",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "90:00:4e:00:f9:c5"
+                    ]
+                ],
+                "id": "a5df130a92bd468ca8332fee79afb55f",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "90:00:4E:00:F9:C5"
+                    ]
+                ],
+                "manufacturer": "Hon Hai Precision Ind. Co. Ltd",
+                "model": null,
+                "name": "Chlo\u0082-PC",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:26:08:dd:96:3b"
+                    ]
+                ],
+                "id": "2b4af9279b7b41ea8f12ba384f39b014",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:26:08:DD:96:3B"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": null,
+                "name": "MBP-de-Virginie",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "a0:a8:cd:e9:54:3f"
+                    ]
+                ],
+                "id": "a7f4fa06ac5c4e48ad13be40cca2bdcc",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "A0:A8:CD:E9:54:3F"
+                    ]
+                ],
+                "manufacturer": "Intel Corporation",
+                "model": null,
+                "name": "gsemet-MOBL1",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "48:d2:24:06:c0:e5"
+                    ]
+                ],
+                "id": "9b91eb3b3aa74c579b2b7396fe948ebe",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "48:D2:24:06:C0:E5"
+                    ]
+                ],
+                "manufacturer": "Liteon Technology Corporation",
+                "model": null,
+                "name": "PIANO",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:c0:2d:b0:4e:61"
+                    ]
+                ],
+                "id": "67f9a56334b64584abbb379bfc81af2b",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:C0:2D:B0:4E:61"
+                    ]
+                ],
+                "manufacturer": "Fuji Photo Film Co. Ltd",
+                "model": null,
+                "name": "Unknown device",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:1c:42:cc:70:c7"
+                    ]
+                ],
+                "id": "2467d50d8efe49a394a2462f58d9c000",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:1C:42:CC:70:C7"
+                    ]
+                ],
+                "manufacturer": "Parallels, Inc.",
+                "model": null,
+                "name": "android-e8cacc9c4bf973cf",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:73:e0:8a:0f:fb"
+                    ]
+                ],
+                "id": "de3ebd9e02e74902911bb452661744f7",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:73:E0:8A:0F:FB"
+                    ]
+                ],
+                "manufacturer": "Samsung Electronics Co. Ltd",
+                "model": null,
+                "name": "android-383cc7a7281a2cb9",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "c8:ff:28:be:8d:64"
+                    ]
+                ],
+                "id": "5a4c4e553a0141db8947af5526f25af6",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "C8:FF:28:BE:8D:64"
+                    ]
+                ],
+                "manufacturer": "Liteon Technology Corporation",
+                "model": null,
+                "name": "DESKTOP-KS0N94D",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "cc:fa:00:e9:0a:c6"
+                    ]
+                ],
+                "id": "d663c68e37724d90a9d40f738abd1324",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "CC:FA:00:E9:0A:C6"
+                    ]
+                ],
+                "manufacturer": "LG Electronics (Mobile Communications)",
+                "model": null,
+                "name": "android-3bede4f65670061f",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "40:40:a7:38:a0:e7"
+                    ]
+                ],
+                "id": "9414a0ec4fe44e5ab6ed16616417b3f4",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "40:40:A7:38:A0:E7"
+                    ]
+                ],
+                "manufacturer": "Sony Mobile Communications Inc",
+                "model": null,
+                "name": "android-1aa2fc2c85f95905",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "5c:93:a2:81:3f:5d"
+                    ]
+                ],
+                "id": "7a5aae8071c54eb999814029d5174b3e",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "5C:93:A2:81:3F:5D"
+                    ]
+                ],
+                "manufacturer": "Liteon Technology Corporation",
+                "model": null,
+                "name": "LAPTOP-0KDNCC9B",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "10:08:b1:c3:d6:eb"
+                    ]
+                ],
+                "id": "ea65796bd6564d3b88275fbc8aa88012",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "10:08:B1:C3:D6:EB"
+                    ]
+                ],
+                "manufacturer": "Hon Hai Precision Ind. Co. Ltd",
+                "model": null,
+                "name": "Tigrus",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:45:a9:07:52:c5"
+                    ]
+                ],
+                "id": "01f4216eb2464870a1b5e649bae2b584",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:45:A9:07:52:C5"
+                    ]
+                ],
+                "manufacturer": "",
+                "model": null,
+                "name": "android-ee57a8f40ebceea1",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:ae:fa:fc:06:1a"
+                    ]
+                ],
+                "id": "312fa62c780149e2ae1cd0c20fbeff0b",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:AE:FA:FC:06:1A"
+                    ]
+                ],
+                "manufacturer": "Murata Manufacturing Co. Ltd",
+                "model": null,
+                "name": "android-3f38ba09eec6f71e",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:16:e3:f2:a2:57"
+                    ]
+                ],
+                "id": "a38d612bf48c43ea816a5b053a1fc874",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:16:E3:F2:A2:57"
+                    ]
+                ],
+                "manufacturer": "Askey Computer Corp",
+                "model": null,
+                "name": "ANGEL-PC",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "572208ae75ba4f4fb7cdd8ea1e6b442b",
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:a0:de:d6:4b:63"
+                    ]
+                ],
+                "id": "8c984df290cb41a7995ca22b2e7e1798",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:A0:DE:D6:4B:63"
+                    ]
+                ],
+                "manufacturer": "Yamaha Corporation",
+                "model": null,
+                "name": "Salon-Audio",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "d6:81:75:c9:f5:9d"
+                    ]
+                ],
+                "id": "945c5fe566db4f84a109a8be4f9c9313",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "D6:81:75:C9:F5:9D"
+                    ]
+                ],
+                "manufacturer": "",
+                "model": null,
+                "name": "TransmissionVpn",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:11:32:18:a5:45"
+                    ]
+                ],
+                "id": "04e30ada4e094779a10640b10077e027",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "02:11:32:18:A5:45"
+                    ]
+                ],
+                "manufacturer": "",
+                "model": null,
+                "name": "TransmissionVpn",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "5c:cf:7f:f0:91:df"
+                    ]
+                ],
+                "id": "6bf8376bc003481dabeabc492f33966c",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "5C:CF:7F:F0:91:DF"
+                    ]
+                ],
+                "manufacturer": "Espressif Inc.",
+                "model": null,
+                "name": "ESP_F091DF",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "8c:f5:a3:3d:c1:2f"
+                    ]
+                ],
+                "id": "87a60d4dd97a4311a0d2a73fe38effb1",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "8C:F5:A3:3D:C1:2F"
+                    ]
+                ],
+                "manufacturer": "Samsung Electro-Mechanics(Thailand)",
+                "model": null,
+                "name": "android-97713b3aac6813ea",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "f4:42:8f:b3:0c:7d"
+                    ]
+                ],
+                "id": "2defb3384afa4ae3b289116ea5a5c388",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "F4:42:8F:B3:0C:7D"
+                    ]
+                ],
+                "manufacturer": "Samsung Electronics Co. Ltd",
+                "model": null,
+                "name": "android-d1ebb839b896297a",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "e4:90:7e:18:20:e8"
+                    ]
+                ],
+                "id": "0024324fe37442e2b2283997f2052c5d",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "E4:90:7E:18:20:E8"
+                    ]
+                ],
+                "manufacturer": "Motorola Mobility LLC, a Lenovo Company",
+                "model": null,
+                "name": "android-fc76f8bf80d4aa4c",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:1c:42:c4:2f:bb"
+                    ]
+                ],
+                "id": "2b99145a9e0943eb94b2e9d3d4f364f5",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:1C:42:C4:2F:BB"
+                    ]
+                ],
+                "manufacturer": "Parallels, Inc.",
+                "model": null,
+                "name": "alpine",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "84:20:96:50:64:bb"
+                    ]
+                ],
+                "id": "2500b4b6f24b4f01851a7c3dabae5c53",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "84:20:96:50:64:BB"
+                    ]
+                ],
+                "manufacturer": "Shenzhen RF-Link Technology Co. Ltd",
+                "model": null,
+                "name": "iOTA360",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "60:01:94:69:50:b8"
+                    ]
+                ],
+                "id": "a6588c4ddd2643839e151d2227dc3ca9",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "60:01:94:69:50:B8"
+                    ]
+                ],
+                "manufacturer": "Espressif Inc.",
+                "model": null,
+                "name": "ESP_6950B8",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "60:01:94:69:50:4e"
+                    ]
+                ],
+                "id": "90cec0c3e49744b98ecc3cfbcdc8d5ba",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "60:01:94:69:50:4E"
+                    ]
+                ],
+                "manufacturer": "Espressif Inc.",
+                "model": null,
+                "name": "ESP_69504E",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "d0:59:e4:0b:81:7e"
+                    ]
+                ],
+                "id": "90b38c52bd8946b69a16caec91dddc00",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "D0:59:E4:0B:81:7E"
+                    ]
+                ],
+                "manufacturer": "Samsung Electronics Co. Ltd",
+                "model": null,
+                "name": "android-a07bfd51accaf6e",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "04:b1:67:30:dc:d0"
+                    ]
+                ],
+                "id": "c474c15cb50d4c018c264c0a5d08446b",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "04:B1:67:30:DC:D0"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Communications Co Ltd",
+                "model": null,
+                "name": "Android-3",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:11:32:26:5e:a3"
+                    ]
+                ],
+                "id": "3cb1357a4ce24434a7235a792b952922",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "02:11:32:26:5E:A3"
+                    ]
+                ],
+                "manufacturer": "",
+                "model": null,
+                "name": "localhost-live",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "f4:30:b9:13:9f:0d"
+                    ]
+                ],
+                "id": "c9060c813bf34eaa87ec2c09e664fdfe",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "F4:30:B9:13:9F:0D"
+                    ]
+                ],
+                "manufacturer": "Hewlett-Packard Company",
+                "model": null,
+                "name": "FRLH104150",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "4c:66:41:4f:c2:7d"
+                    ]
+                ],
+                "id": "0dff185e638c491d810ff8d8d4b1a994",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "4C:66:41:4F:C2:7D"
+                    ]
+                ],
+                "manufacturer": "Samsung Electro-Mechanics(Thailand)",
+                "model": null,
+                "name": "Samsung-Galaxy-S7",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "e0:62:67:27:ff:b1"
+                    ]
+                ],
+                "id": "e22e79fbf6e8481ab148336e41894596",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "E0:62:67:27:FF:B1"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Communications Co Ltd",
+                "model": null,
+                "name": "RedmiNote5-Redmi",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "98:b6:e9:b6:d0:25"
+                    ]
+                ],
+                "id": "439e8c3cabaf45abbc078efc4f984f41",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "98:B6:E9:B6:D0:25"
+                    ]
+                ],
+                "manufacturer": "Nintendo Co. Ltd",
+                "model": null,
+                "name": "Unknown device",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "08:78:08:e5:43:9e"
+                    ]
+                ],
+                "id": "a69ba5d7aa0b4204a32337d4c21f22de",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "08:78:08:E5:43:9E"
+                    ]
+                ],
+                "manufacturer": "Samsung Electronics Co. Ltd",
+                "model": null,
+                "name": "Galaxy-J5",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:11:32:2d:06:ea"
+                    ]
+                ],
+                "id": "f36fb276b246457d8ff083ab0d7af7ac",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "02:11:32:2D:06:EA"
+                    ]
+                ],
+                "manufacturer": "",
+                "model": null,
+                "name": "ubuntu-server",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "02:11:32:23:14:c2"
+                    ]
+                ],
+                "id": "f74480fcc5bf4928a2377a0be25eb1b5",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "02:11:32:23:14:C2"
+                    ]
+                ],
+                "manufacturer": "",
+                "model": null,
+                "name": "vmbuntu",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:24:e4:63:16:6c"
+                    ]
+                ],
+                "id": "392341e7e804455bb835ab753a59f7c8",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:24:E4:63:16:6C"
+                    ]
+                ],
+                "manufacturer": "Withings",
+                "model": null,
+                "name": "Unknown device",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "38:d5:47:8a:7d:d3"
+                    ]
+                ],
+                "id": "3bb4da321e834406ba89f4471764ebab",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "38:D5:47:8A:7D:D3"
+                    ]
+                ],
+                "manufacturer": "ASUSTek Computer Inc.",
+                "model": null,
+                "name": "android-fe5d6662f93472e",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a0ead297eee4014856c6371a8f3ac30"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:24:e4:82:98:74"
+                    ]
+                ],
+                "id": "9cc7fd1b182242eca2449ddbb85c2e19",
+                "identifiers": [
+                    [
+                        "freebox",
+                        "00:24:E4:82:98:74"
+                    ]
+                ],
+                "manufacturer": "Withings",
+                "model": null,
+                "name": "Unknown device",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
             }
         ]
     },

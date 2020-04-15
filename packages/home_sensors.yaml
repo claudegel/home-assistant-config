@@ -1,58 +1,58 @@
 automation:
 
-  - id: "publish_temperatures"
-    initial_state: 'off'
-    alias: 'Send temperatures to MQTT'
-    trigger:
-       - platform: state
-         entity_id:
-          - sensor.rfxcom_bathroom_temperature
-          - sensor.rfxcom_friend_room_temperature
-          - sensor.rfxcom_garage_temperature
-          - sensor.rfxcom_kitchen_temperature
-          - sensor.rfxcom_living_room_temperature
-          - sensor.rfxcom_office_temperature
-          - sensor.rfxcom_outside_temperature
-          - sensor.rfxcom_parents_room_temperature
-          - sensor.rfxcom_cigare_cave_temperature
-    action:
-      - service: mqtt.publish
-        data_template:
-          topic: >
-            home/sensors/
-            {{- trigger.entity_id | 
-            replace('sensor.rfxcom_', '') |
-            replace('_temperature', '/temperature') | lower }}
-          payload_template: >
-            {{ states(trigger.entity_id) }}
+  # - id: "publish_temperatures"
+  #   initial_state: 'off'
+  #   alias: 'Send temperatures to MQTT'
+  #   trigger:
+  #      - platform: state
+  #        entity_id:
+  #         - sensor.rfxcom_bathroom_temperature
+  #         - sensor.rfxcom_friend_room_temperature
+  #         - sensor.rfxcom_garage_temperature
+  #         - sensor.rfxcom_kitchen_temperature
+  #         - sensor.rfxcom_living_room_temperature
+  #         - sensor.rfxcom_office_temperature
+  #         - sensor.rfxcom_outside_temperature
+  #         - sensor.rfxcom_parents_room_temperature
+  #         - sensor.rfxcom_cigare_cave_temperature
+  #   action:
+  #     - service: mqtt.publish
+  #       data_template:
+  #         topic: >
+  #           home/sensors/
+  #           {{- trigger.entity_id |
+  #           replace('sensor.rfxcom_', '') |
+  #           replace('_temperature', '/temperature') | lower }}
+  #         payload_template: >
+  #           {{ states(trigger.entity_id) }}
 
-  - id: "publish_humidity"
-    initial_state: 'off'
-    alias: 'Send humidity to MQTT'
-    trigger:
-       - platform: state
-         entity_id:
-          - sensor.rfxcom_bathroom_humidity
-          - sensor.rfxcom_cigare_cave_humidity
-          - sensor.rfxcom_friend_room_humidity
-          - sensor.rfxcom_garage_humidity
-          - sensor.rfxcom_kitchen_humidity
-          - sensor.rfxcom_living_room_humidity
-          - sensor.rfxcom_office_humidity
-          - sensor.rfxcom_outside_humidity
-          - sensor.rfxcom_parents_room_humidity
-          - sensor.rfxcom_cigare_cave_humidity
-    action:
-      - service: mqtt.publish
-        data_template:
-          topic: >
-            home/sensors/
-            {{- trigger.entity_id | 
-            replace('sensor.rfxcom_', '') |
-            replace('_humidity', '/humidity') | lower }}
-          payload_template: >
-            {{ states(trigger.entity_id) }}
-            
+  # - id: "publish_humidity"
+  #   initial_state: 'off'
+  #   alias: 'Send humidity to MQTT'
+  #   trigger:
+  #      - platform: state
+  #        entity_id:
+  #         - sensor.rfxcom_bathroom_humidity
+  #         - sensor.rfxcom_cigare_cave_humidity
+  #         - sensor.rfxcom_friend_room_humidity
+  #         - sensor.rfxcom_garage_humidity
+  #         - sensor.rfxcom_kitchen_humidity
+  #         - sensor.rfxcom_living_room_humidity
+  #         - sensor.rfxcom_office_humidity
+  #         - sensor.rfxcom_outside_humidity
+  #         - sensor.rfxcom_parents_room_humidity
+  #         - sensor.rfxcom_cigare_cave_humidity
+  #   action:
+  #     - service: mqtt.publish
+  #       data_template:
+  #         topic: >
+  #           home/sensors/
+  #           {{- trigger.entity_id |
+  #           replace('sensor.rfxcom_', '') |
+  #           replace('_humidity', '/humidity') | lower }}
+  #         payload_template: >
+  #           {{ states(trigger.entity_id) }}
+
 switch:
   # automatically add DIO switches
   - platform: rfxtrx
@@ -149,12 +149,12 @@ sensor:
 #     name: "Temperature Bureau"
 #     state_topic: "home/sensors/bureau/temperature"
 #     unit_of_measurement: "˚C"
-  
+
 #   - platform: mqtt
 #     name: "Temperature Chambre Amis"
 #     state_topic: "home/sensors/chambre_amis/temperature"
 #     unit_of_measurement: "˚C"
-      
+
 #   - platform: mqtt
 #     name: "Temperature Cave Cigare"
 #     state_topic: "home/sensors/cave_cigare/temperature"
@@ -201,12 +201,12 @@ sensor:
 #     name: "Humidity Bureau"
 #     state_topic: "home/sensors/bureau/humidity"
 #     unit_of_measurement: "%"
-  
+
 #   - platform: mqtt
 #     name: "Humidity Chambre Amis"
 #     state_topic: "home/sensors/chambre_amis/humidity"
 #     unit_of_measurement: "%"
-      
+
 #   - platform: mqtt
 #     name: "Humidity Cave Cigare"
 #     state_topic: "home/sensors/cave_cigare/humidity"
@@ -255,7 +255,7 @@ sensor:
   #   unit_of_measurement: "kWh"
   #   state_topic: "home/sensors/cabinet/electricity/energy"
   #   value_template: '{{ value | round(1) }}'
-    
+
   # - platform: mqtt
   #   name: "Washing Machine Energy"
   #   unit_of_measurement: "kWh"
@@ -410,7 +410,7 @@ homeassistant:
       icon: mdi:power-socket-eu
     sensor.bathroom_heater_wall_plug_power:
       icon: mdi:power-socket-eu
-  
+
 group:
   home_smart_switches:
     name: Smart Switches
@@ -419,7 +419,6 @@ group:
 
   home_temperatures:
     name: Home Temperatures
-    control: hidden
     entities:
       - sensor.rfxcom_bathroom_temperature
       - sensor.rfxcom_friend_room_temperature
@@ -432,21 +431,18 @@ group:
 
   home_humidity:
     name: Home Humidity
-    control: hidden
     entities:
       - sensor.rfxcom_kitchen_humidity
       - sensor.rfxcom_parents_room_humidity
 
   cigare_cave:
     name: Cigare Cave
-    control: hidden
     entities:
       - sensor.rfxcom_cigare_cave_temperature
       - sensor.rfxcom_cigare_cave_humidity
 
   home_power:
     name: Home Power Meters
-    control: hidden
     entities:
       - sensor.rfxcom_home_energy_usage
       - sensor.cabinet_smart_plug_power
@@ -455,10 +451,9 @@ group:
       - sensor.dark_blue_smart_plug_power
       - sensor.bathroom_heater_wall_plug_power
       - switch.dark_blue_smart_plug
-      
+
   sensors_battery_alert:
     name: Rfx Battery States
-    control: hidden
     entities:
       - binary_sensor.rfxcom_bathroom_battery_alert
       - binary_sensor.rfxcom_friend_room_battery_alert

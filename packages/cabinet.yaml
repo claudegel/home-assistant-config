@@ -35,7 +35,6 @@ homeassistant:
 group:
   cabinet:
     name: Cabinet information
-    control: hidden
     entities:
       - sensor.cabinet_ups_status
       - sensor.cabinet_ups_input_voltage

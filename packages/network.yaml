@@ -16,7 +16,7 @@ iperf3:
     #   - upload
 
 sensor:
-  
+
   - platform: rest
     scan_interval: 86400
     resource: http://ip.jsontest.com
@@ -24,7 +24,7 @@ sensor:
     value_template: '{{ value_json.ip }}'
 
 #   - platform: iperf3
-#     hosts: 
+#     hosts:
 #       - host: 192.168.0.10
 #       - host: 192.168.0.22
 #     scan_interval: 10800  # 3 hours
@@ -109,7 +109,7 @@ device_tracker:
   #   new_device_defaults:
   #     track_new_devices: True
   #     hide_if_away: False
-    
+
   # - platform: tomato
   #   host: !secret device_tracker_tomato_host
   #   username: !secret device_tracker_tomato_username
@@ -126,7 +126,7 @@ device_tracker:
       gaetan_iphone: 192.168.0.32
       gaetan_macbookpro: 192.168.0.71
       aurelie_iphone: 192.168.0.31
-  
+
   - platform: nmap_tracker
     hosts: 192.168.0.0/24
     home_interval: 30
@@ -140,7 +140,7 @@ binary_sensor:
   - platform: ping
     host: 192.168.0.7
     name: R7000
-    
+
   - platform: ping
     host: 192.168.0.4
     name: Hue
@@ -162,7 +162,7 @@ homeassistant:
 
     input_boolean.update_speedtest:
       can_cancel: false
-    
+
     binary_sensor.R7000:
       friendly_name: Nighthawk R7000 Router
 
@@ -191,7 +191,6 @@ automation:
 group:
   network:
     name: Network
-    control: hidden
     entities:
       - binary_sensor.freebox
       - sensor.external_ip

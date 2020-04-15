@@ -8,7 +8,6 @@ homeassistant:
 group:
   presence:
     name: Presence
-    control: hidden
     entities:
       # - sensor.presence_map
       - device_tracker.aurelie_iphone

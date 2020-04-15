@@ -19,7 +19,6 @@ binary_sensor:
 group:
   date:
     name: Date
-    control: hidden
     entities:
       - sensor.date
       - sensor.time
@@ -29,5 +28,4 @@ group:
       - sun.sun
       - sensor.time
       - sensor.time_utc
-  
-  
+

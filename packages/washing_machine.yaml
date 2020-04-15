@@ -1,4 +1,4 @@
-# From: 
+# From:
 #  https://philhawthorne.com/making-dumb-dishwashers-and-washing-machines-smart-alerts-when-the-dishes-and-clothes-are-cleaned/
 
 # (pwr < 0.2)
@@ -14,7 +14,7 @@
 #  |                   | <------\
 # Running  <-----------/        |
 #  |                            |
-#  | ( 0.2 < pwr < 2)           | ( pwr > 12)  
+#  | ( 0.2 < pwr < 2)           | ( pwr > 12)
 #  |                            |
 # Finished ---->--------->------/
 #  |
@@ -274,12 +274,10 @@ homeassistant:
 group:
   washing_machine:
     name: Washing Machine
-    control: hidden
     entities:
       - sensor.washing_machine_status
 
   dbg_washing_machine:
     name: Washing Machine (DBG)
-    control: hidden
     entities:
       - sensor.washing_machine_energy_each_2_min

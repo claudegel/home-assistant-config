@@ -96,11 +96,11 @@ sensor:
   #       {%- endif -%}
   #     {%- endif -%}
 
-    
-  - name: Temp PiHole
-    platform: mqtt
-    state_topic: "home/pihole/cpu/temp"
-    unit_of_measurement: '°C'
+
+  # - name: Temp PiHole
+  #   platform: mqtt
+  #   state_topic: "home/pihole/cpu/temp"
+  #   unit_of_measurement: '°C'
 
 
 # Pi-Hole switch
@@ -124,7 +124,6 @@ binary_sensor:
 group:
   pihole:
     name: Pi-Hole (ad-blocker)
-    control: hidden
     entities:
       # - sensor.carlopihole
       - binary_sensor.pihole

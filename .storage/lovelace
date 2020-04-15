@@ -1316,30 +1316,6 @@
                         {
                             "entities": [
                                 {
-                                    "entity": "group.all_scripts",
-                                    "name": "Scripts"
-                                },
-                                {
-                                    "entity": "group.all_lights",
-                                    "name": "Lights"
-                                },
-                                {
-                                    "entity": "group.all_automations",
-                                    "name": "Automations"
-                                },
-                                {
-                                    "entity": "group.all_devices",
-                                    "name": "Devices"
-                                }
-                            ],
-                            "show_name": true,
-                            "show_state": true,
-                            "title": "All",
-                            "type": "glance"
-                        },
-                        {
-                            "entities": [
-                                {
                                     "entity": "device_tracker.epsond373aa",
                                     "name": "ET-7750"
                                 },

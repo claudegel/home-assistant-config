@@ -53,10 +53,10 @@ input_select:
   climate_season:
     name: Climate Season
     options:
-      # 'mode été' or 'hors gel': we are during summer, do not care about 
+      # 'mode été' or 'hors gel': we are during summer, do not care about
       # heating
       - 'Summer or Frost Protection'
-      # 'mode hiver': Optimize temperature to maintain confort at lowest cost 
+      # 'mode hiver': Optimize temperature to maintain confort at lowest cost
       - 'Winter'
     icon: mdi:weather-sunset-up
 
@@ -79,7 +79,7 @@ input_select:
       - Automatic mode change
       - Manual mode change
     icon: mdi:robot
-    
+
   heat_day_mode:
     name: Day mode (DEBUG)
     options:
@@ -343,7 +343,7 @@ automation:
           value: "12"
       - service: input_boolean.turn_off
         entity_id: input_boolean.reset_climate_values
-        
+
 
 group:
   home_climate:
@@ -354,14 +354,12 @@ group:
 
   homescreen_climate_control:
     name: Climate Control
-    control: hidden
     entities:
       - input_select.main_heat_mode
       - climate.thermostat_transmitter_heating
 
   climate_control_dbg:
     name: Climate Control Config
-    control: hidden
     entities:
       - input_select.climate_season
       - input_select.main_heat_mode
@@ -370,7 +368,6 @@ group:
 
   climate_control_tuning:
     name: Climate Tuning
-    control: hidden
     entities:
       - input_datetime.heat_time_weekday_morning
       - input_datetime.heat_time_weekend_morning

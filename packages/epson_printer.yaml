@@ -41,7 +41,6 @@ sensor:
 group:
   epson_printer:
     name: Epson Printer Info
-    control: hidden
     entities:
       - sensor.epson_et_7750_ink_level_black
       - sensor.epson_et_7750_ink_level_cyan

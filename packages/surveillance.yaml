@@ -33,11 +33,10 @@ binary_sensor:
 
 #------------------------------------------------------------
 
-    
+
 group:
   surveillance:
     name: Surveillance
-    control: hidden
     entities:
       - binary_sensor.camera_ip_1_motion
       - camera.camera_ip_1

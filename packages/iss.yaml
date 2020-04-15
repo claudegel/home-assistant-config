@@ -17,9 +17,8 @@ sensor:
 group:
   iss:
     name: International Space Station
-    control: hidden
     entities:
       - sensor.iss_next_rise
       - camera.iss
       - binary_sensor.iss
-      
+

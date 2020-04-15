@@ -1,7 +1,5 @@
 .default_view:
-  view: yes
   icon: mdi:home
-  control: hidden
   entities:
     - group.travels
     - weather.yweather
@@ -11,23 +9,19 @@
 
 
 familly_view:
-  view: yes
   icon: mdi:account-multiple
   entities:
     - group.presence
 
 
 surveillance_view:
-  view: yes
   icon: mdi:cctv
   entities:
     - group.surveillance
 
 
 measurement_view:
-  view: yes
   icon: mdi:ruler
-  control: hidden
   entities:
     - group.home_temperatures
     - group.home_climate
@@ -41,7 +35,6 @@ measurement_view:
 
 
 multimedia_view:
-  view: yes
   icon: mdi:play-network
   entities:
     - group.pvr
@@ -54,7 +47,6 @@ multimedia_view:
 
 
 weather_view:
-  view: yes
   icon: mdi:weather-partlycloudy
   entities:
     - group.current
@@ -64,7 +56,6 @@ weather_view:
 
 
 network_view:
-  view: yes
   icon: mdi:server-network
   entities:
     - group.cabinet
@@ -76,7 +67,6 @@ network_view:
 
 nas_view:
   icon: mdi:nas
-  view: yes
   entities:
     - group.nas_general
     - group.nas_storage
@@ -85,10 +75,9 @@ nas_view:
     - group.nas_volume3
 
 
-system_view: 
-  view: yes
+system_view:
   name: System
-  entities: 
+  entities:
     - group.date
     - group.ha_system
     - group.battery_levels

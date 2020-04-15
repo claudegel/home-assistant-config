@@ -118,7 +118,113 @@
                     "disable_new_entities": false
                 },
                 "title": "SSL Certificate Expiry",
+                "unique_id": "yokxx3cc.synology.me:32483",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "delay_secs": 0.4,
+                    "host": "192.168.0.53",
+                    "name": "Harmony Home Cinema"
+                },
+                "domain": "harmony",
+                "entry_id": "654c789bc95844a9b198862d23ec7a97",
+                "options": {
+                    "delay_secs": 0.4
+                },
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Harmony Home Cinema",
+                "unique_id": "13177575",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "alias": "ups",
+                    "host": "192.168.0.10",
+                    "name": "Cabinet UPS",
+                    "platform": "nut",
+                    "port": 3493,
+                    "resources": [
+                        "ups.status.display",
+                        "ups.status",
+                        "ups.load",
+                        "ups.delay.shutdown",
+                        "input.voltage",
+                        "battery.runtime",
+                        "battery.charge",
+                        "battery.charge.low",
+                        "output.voltage"
+                    ]
+                },
+                "domain": "nut",
+                "entry_id": "82ab042d92a54f569dc57b5f88cac3dc",
+                "options": {},
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "ups@192.168.0.10:3493",
                 "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "base_path": "/ipp/print",
+                    "host": "192.168.0.61",
+                    "name": "EPSON-ET7750",
+                    "port": 631,
+                    "ssl": true,
+                    "uuid": "cfe92100-67c4-11d4-a45f-f8d027d373aa",
+                    "verify_ssl": false
+                },
+                "domain": "ipp",
+                "entry_id": "8d70adff2842427eac1107329d25c5d2",
+                "options": {},
+                "source": "zeroconf",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "EPSON-ET7750",
+                "unique_id": "cfe92100-67c4-11d4-a45f-f8d027d373aa",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "host": "192.168.0.4"
+                },
+                "domain": "hue",
+                "entry_id": "4cf74e3892e24cd0aa69fc66e706b4bb",
+                "options": {},
+                "source": "ignore",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Ignored",
+                "unique_id": "800a7a96b658",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "host": "dw36edof.fbxos.fr",
+                    "port": "32643"
+                },
+                "domain": "freebox",
+                "entry_id": "4a0ead297eee4014856c6371a8f3ac30",
+                "options": {},
+                "source": "discovery",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "dw36edof.fbxos.fr",
+                "unique_id": "dw36edof.fbxos.fr",
                 "version": 1
             }
         ]
