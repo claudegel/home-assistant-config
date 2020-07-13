@@ -23,10 +23,10 @@ transmission:
   icon: mdi:download
   url: !secret panel_iframe_transmission_url
 
-  #sabnzbd:
-  #title: SabNzbd
-  #icon: mdi:download
-  #url: !secret panel_iframe_sabnzbd_url
+sabnzbd:
+  title: SabNzbd
+  icon: mdi:download
+  url: !secret panel_iframe_sabnzbd_url
 
   #domoticz:
   #title: Domoticz

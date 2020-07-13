@@ -1,0 +1,341 @@
+{
+    "data": {
+        "binary_sensor": {},
+        "deleted_ids": [],
+        "sensor": {
+            "8954db6259537b5167c9788994aaae81f60f31ed73a7ad91f75162b80e103de3_activity": {
+                "added": true,
+                "attributes": {
+                    "Confidence": "High",
+                    "Types": [
+                        "Stationary"
+                    ]
+                },
+                "icon": "mdi:human-male",
+                "name": "Activity",
+                "state": "Stationary",
+                "type": "sensor",
+                "unique_id": "activity",
+                "webhook_id": "8954db6259537b5167c9788994aaae81f60f31ed73a7ad91f75162b80e103de3"
+            },
+            "8954db6259537b5167c9788994aaae81f60f31ed73a7ad91f75162b80e103de3_battery_level": {
+                "added": true,
+                "attributes": {
+                    "Battery State": "Not Charging"
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-80",
+                "name": "Battery Level",
+                "state": 88,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "8954db6259537b5167c9788994aaae81f60f31ed73a7ad91f75162b80e103de3"
+            },
+            "8954db6259537b5167c9788994aaae81f60f31ed73a7ad91f75162b80e103de3_battery_state": {
+                "added": true,
+                "attributes": {
+                    "Battery Level": 88
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-80",
+                "name": "Battery State",
+                "state": "Not Charging",
+                "type": "sensor",
+                "unique_id": "battery_state",
+                "webhook_id": "8954db6259537b5167c9788994aaae81f60f31ed73a7ad91f75162b80e103de3"
+            },
+            "8954db6259537b5167c9788994aaae81f60f31ed73a7ad91f75162b80e103de3_connectivity_bssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi-off",
+                "name": "BSSID",
+                "state": "Not Connected",
+                "type": "sensor",
+                "unique_id": "connectivity_bssid",
+                "webhook_id": "8954db6259537b5167c9788994aaae81f60f31ed73a7ad91f75162b80e103de3"
+            },
+            "8954db6259537b5167c9788994aaae81f60f31ed73a7ad91f75162b80e103de3_connectivity_connection_type": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi",
+                "name": "Connection Type",
+                "state": "Wi-Fi",
+                "type": "sensor",
+                "unique_id": "connectivity_connection_type",
+                "webhook_id": "8954db6259537b5167c9788994aaae81f60f31ed73a7ad91f75162b80e103de3"
+            },
+            "8954db6259537b5167c9788994aaae81f60f31ed73a7ad91f75162b80e103de3_connectivity_ssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi-off",
+                "name": "SSID",
+                "state": "Not Connected",
+                "type": "sensor",
+                "unique_id": "connectivity_ssid",
+                "webhook_id": "8954db6259537b5167c9788994aaae81f60f31ed73a7ad91f75162b80e103de3"
+            },
+            "8954db6259537b5167c9788994aaae81f60f31ed73a7ad91f75162b80e103de3_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": "Midi-Pyr\u00e9n\u00e9es",
+                    "Areas Of Interest": "N/A",
+                    "Country": "France",
+                    "ISO Country Code": "FR",
+                    "Inland Water": "N/A",
+                    "Locality": "Portet-sur-Garonne",
+                    "Location": [
+                        43.517120361328125,
+                        1.3937913630913812
+                    ],
+                    "Name": "1 Place des Lilas",
+                    "Ocean": "N/A",
+                    "Postal Code": "31120",
+                    "Sub Administrative Area": "Haute-Garonne",
+                    "Sub Locality": "N/A",
+                    "Sub Thoroughfare": "1",
+                    "Thoroughfare": "Place des Lilas",
+                    "Time Zone": "Europe/Paris"
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "1 Place des Lilas\n31120 Portet-sur-Garonne\nFrance",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "8954db6259537b5167c9788994aaae81f60f31ed73a7ad91f75162b80e103de3"
+            },
+            "8954db6259537b5167c9788994aaae81f60f31ed73a7ad91f75162b80e103de3_last_update_trigger": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:cellphone-wireless",
+                "name": "Last Update Trigger",
+                "state": "Background Fetch",
+                "type": "sensor",
+                "unique_id": "last_update_trigger",
+                "webhook_id": "8954db6259537b5167c9788994aaae81f60f31ed73a7ad91f75162b80e103de3"
+            },
+            "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e_activity": {
+                "added": true,
+                "attributes": {
+                    "Confidence": "High",
+                    "Types": [
+                        "Unknown"
+                    ]
+                },
+                "icon": "mdi:help-circle",
+                "name": "Activity",
+                "state": "Unknown",
+                "type": "sensor",
+                "unique_id": "activity",
+                "webhook_id": "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e"
+            },
+            "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e_battery_level": {
+                "added": true,
+                "attributes": {
+                    "Battery State": "Not Charging",
+                    "Low Power Mode": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-70",
+                "name": "Battery Level",
+                "state": 73,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e"
+            },
+            "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e_battery_state": {
+                "added": true,
+                "attributes": {
+                    "Battery Level": 73,
+                    "Low Power Mode": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-70",
+                "name": "Battery State",
+                "state": "Not Charging",
+                "type": "sensor",
+                "unique_id": "battery_state",
+                "webhook_id": "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e"
+            },
+            "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e_connectivity_bssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi-star",
+                "name": "BSSID",
+                "state": "2c:30:33:f9:82:41",
+                "type": "sensor",
+                "unique_id": "connectivity_bssid",
+                "webhook_id": "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e"
+            },
+            "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e_connectivity_cellular_provider": {
+                "added": true,
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "N/A",
+                    "Carrier Name": "La Poste Mobile",
+                    "Current Radio Technology": "Long-Term Evolution (LTE)",
+                    "ISO Country Code": "fr",
+                    "Mobile Country Code": "208",
+                    "Mobile Network Code": "10"
+                },
+                "icon": "mdi:sim",
+                "name": "Cellular Provider",
+                "state": "La Poste Mobile",
+                "type": "sensor",
+                "unique_id": "connectivity_cellular_provider",
+                "webhook_id": "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e"
+            },
+            "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e_connectivity_connection_type": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi",
+                "name": "Connection Type",
+                "state": "Wi-Fi",
+                "type": "sensor",
+                "unique_id": "connectivity_connection_type",
+                "webhook_id": "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e"
+            },
+            "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e_connectivity_sim_1": {
+                "added": true,
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "0000000100000001",
+                    "Carrier Name": "La Poste Mobile",
+                    "Current Radio Technology": "Long-Term Evolution (LTE)",
+                    "ISO Country Code": "fr",
+                    "Mobile Country Code": "208",
+                    "Mobile Network Code": "10"
+                },
+                "icon": "mdi:sim",
+                "name": "SIM 1",
+                "state": "La Poste Mobile",
+                "type": "sensor",
+                "unique_id": "connectivity_sim_1",
+                "webhook_id": "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e"
+            },
+            "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e_connectivity_ssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi",
+                "name": "SSID",
+                "state": "ganesh",
+                "type": "sensor",
+                "unique_id": "connectivity_ssid",
+                "webhook_id": "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e"
+            },
+            "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": "Midi-Pyr\u00e9n\u00e9es",
+                    "Areas Of Interest": "N/A",
+                    "Country": "France",
+                    "ISO Country Code": "FR",
+                    "Inland Water": "N/A",
+                    "Locality": "Portet-sur-Garonne",
+                    "Location": [
+                        43.516693115234375,
+                        1.393621287413829
+                    ],
+                    "Name": "4 Rue Georges Clemenceau",
+                    "Ocean": "N/A",
+                    "Postal Code": "31120",
+                    "Sub Administrative Area": "Haute-Garonne",
+                    "Sub Locality": "N/A",
+                    "Sub Thoroughfare": "4",
+                    "Thoroughfare": "Rue Georges Clemenceau",
+                    "Time Zone": "Europe/Paris"
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "4 Rue Georges Clemenceau\n31120 Portet-sur-Garonne\nFrance",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e"
+            },
+            "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e_last_update_trigger": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:cellphone-wireless",
+                "name": "Last Update Trigger",
+                "state": "Launch",
+                "type": "sensor",
+                "unique_id": "last_update_trigger",
+                "webhook_id": "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e"
+            },
+            "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e_pedometer_avg_active_pace": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:speedometer",
+                "name": "Average Active Pace",
+                "state": 1,
+                "type": "sensor",
+                "unique_id": "pedometer_avg_active_pace",
+                "unit_of_measurement": "m/s",
+                "webhook_id": "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e"
+            },
+            "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e_pedometer_distance": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:hiking",
+                "name": "Distance",
+                "state": 2064,
+                "type": "sensor",
+                "unique_id": "pedometer_distance",
+                "unit_of_measurement": "m",
+                "webhook_id": "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e"
+            },
+            "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e_pedometer_floors_ascended": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:stairs-up",
+                "name": "Floors Ascended",
+                "state": 4,
+                "type": "sensor",
+                "unique_id": "pedometer_floors_ascended",
+                "unit_of_measurement": "floors",
+                "webhook_id": "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e"
+            },
+            "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e_pedometer_floors_descended": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:stairs-down",
+                "name": "Floors Descended",
+                "state": 5,
+                "type": "sensor",
+                "unique_id": "pedometer_floors_descended",
+                "unit_of_measurement": "floors",
+                "webhook_id": "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e"
+            },
+            "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e_pedometer_steps": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:walk",
+                "name": "Steps",
+                "state": 3157,
+                "type": "sensor",
+                "unique_id": "pedometer_steps",
+                "unit_of_measurement": "steps",
+                "webhook_id": "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e"
+            },
+            "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e_storage": {
+                "added": true,
+                "attributes": {
+                    "Available": "11,27 Go",
+                    "Available (Important)": "20,45 Go",
+                    "Available (Opportunistic)": "19,17 Go",
+                    "Total": "63,99 Go"
+                },
+                "icon": "mdi:database",
+                "name": "Storage",
+                "state": "17.61",
+                "type": "sensor",
+                "unique_id": "storage",
+                "unit_of_measurement": "% available",
+                "webhook_id": "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e"
+            }
+        }
+    },
+    "key": "mobile_app",
+    "version": 1
+}

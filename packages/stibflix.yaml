@@ -1,15 +1,4 @@
 sensor:
-  - platform: sonarr
-    api_key: !secret sensor_sonarr_api_key
-    host: 192.168.0.10
-    port: 32772
-    monitored_conditions:
-      - series
-      - upcoming
-      - diskspace
-      - wanted
-    days: 7
-
   - platform: radarr
     api_key: !secret sensor_radarr_api_key
     host: 192.168.0.10
@@ -139,9 +128,6 @@ group:
     name: Smart PVR
     entities:
       - sensor.radarr_movies
-      - sensor.sonarr_upcoming
-      - sensor.sonarr_series
-      - sensor.sonarr_diskspace
       - media_player.emby_kodi_osmc_2
       - media_player.home_cinema_salon_kodi
 

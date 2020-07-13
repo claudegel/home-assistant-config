@@ -14,13 +14,14 @@
                             "cards": [
                                 {
                                     "entities": [
-                                        "input_select.main_heat_mode"
+                                        {
+                                            "entity": "input_select.main_heat_mode"
+                                        },
+                                        {
+                                            "entity": "sensor.horstmann_secure_meters_hrt4_zw_thermostat_transmitter_temperature"
+                                        }
                                     ],
                                     "type": "entities"
-                                },
-                                {
-                                    "entity": "climate.thermostat_transmitter_heating",
-                                    "type": "thermostat"
                                 }
                             ],
                             "title": "Climate Control",
@@ -94,57 +95,6 @@
                         {
                             "cards": [
                                 {
-                                    "entity": "camera.camera_ip_1",
-                                    "type": "picture-entity"
-                                },
-                                {
-                                    "entities": [
-                                        {
-                                            "entity": "binary_sensor.camera_ip_1_motion",
-                                            "show_header_toggle": false
-                                        }
-                                    ],
-                                    "type": "entities"
-                                }
-                            ],
-                            "type": "vertical-stack"
-                        },
-                        {
-                            "cards": [
-                                {
-                                    "entities": [
-                                        {
-                                            "entity": "binary_sensor.kitchen_window",
-                                            "name": "Kitchen"
-                                        },
-                                        {
-                                            "entity": "binary_sensor.tv_room_window",
-                                            "name": "TV Room"
-                                        }
-                                    ],
-                                    "title": "Windows",
-                                    "type": "glance"
-                                },
-                                {
-                                    "entities": [
-                                        {
-                                            "entity": "binary_sensor.main_door",
-                                            "name": "Entrance"
-                                        },
-                                        {
-                                            "entity": "binary_sensor.garage_back_door",
-                                            "name": "Garage Backdoor"
-                                        }
-                                    ],
-                                    "title": "Doors",
-                                    "type": "glance"
-                                }
-                            ],
-                            "type": "vertical-stack"
-                        },
-                        {
-                            "cards": [
-                                {
                                     "entity": "camera.camera_ip_2",
                                     "type": "picture-entity"
                                 },
@@ -187,7 +137,7 @@
                                 {
                                     "entities": [
                                         {
-                                            "entity": "climate.thermostat_transmitter_heating",
+                                            "entity": "climate.horstmann_secure_meters_hrt4_zw_thermostat_transmitter_heating_1",
                                             "name": "Main Thermostat"
                                         },
                                         {
@@ -494,6 +444,18 @@
                                 }
                             ],
                             "type": "vertical-stack"
+                        },
+                        {
+                            "entities": [
+                                "zwave.horstmann_secure_meters_hrt4_zw_thermostat_transmitter_2",
+                                "switch.horstmann_secure_meters_hrt4_zw_thermostat_transmitter_switch",
+                                "sensor.horstmann_secure_meters_hrt4_zw_thermostat_transmitter_temperature_2"
+                            ],
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "climate.horstmann_secure_meters_hrt4_zw_thermostat_transmitter_heating_1",
+                            "type": "thermostat"
                         }
                     ],
                     "icon": "mdi:ruler",
@@ -1349,6 +1311,12 @@
                     "panel": false,
                     "path": "system_view",
                     "title": "System"
+                },
+                {
+                    "badges": [],
+                    "cards": [],
+                    "path": "tableau",
+                    "title": "Tableau"
                 }
             ]
         }

@@ -2,39 +2,6 @@
     "data": {
         "entries": [
             {
-                "connection_class": "cloud_push",
-                "data": {},
-                "domain": "ios",
-                "entry_id": "680812615272427c9d4a6f1d9a47fc9e",
-                "options": {},
-                "source": "import",
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "title": "Home Assistant iOS",
-                "unique_id": null,
-                "version": 1
-            },
-            {
-                "connection_class": "local_poll",
-                "data": {
-                    "port_mapping": false,
-                    "sensors": true,
-                    "ssdp_description": "http://192.168.0.1:5678/desc/root",
-                    "udn": "uuid:igd73616d61-6a65-7374-650a-f4cae541dfa2"
-                },
-                "domain": "upnp",
-                "entry_id": "382c2d95e68a473eb2098a616a39fa03",
-                "options": {},
-                "source": "discovery",
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "title": "Freebox Server",
-                "unique_id": null,
-                "version": 1
-            },
-            {
                 "connection_class": "local_poll",
                 "data": {
                     "port_mapping": false,
@@ -49,7 +16,7 @@
                 "system_options": {
                     "disable_new_entities": false
                 },
-                "title": "R7000 (Gateway)",
+                "title": "R7000 Wifi Router",
                 "unique_id": null,
                 "version": 1
             },
@@ -168,7 +135,7 @@
                 "system_options": {
                     "disable_new_entities": false
                 },
-                "title": "ups@192.168.0.10:3493",
+                "title": "UPS NAS",
                 "unique_id": null,
                 "version": 1
             },
@@ -177,7 +144,7 @@
                 "data": {
                     "base_path": "/ipp/print",
                     "host": "192.168.0.61",
-                    "name": "EPSON-ET7750",
+                    "name": "EPSON ET-7750",
                     "port": 631,
                     "ssl": true,
                     "uuid": "cfe92100-67c4-11d4-a45f-f8d027d373aa",
@@ -225,6 +192,256 @@
                 },
                 "title": "dw36edof.fbxos.fr",
                 "unique_id": "dw36edof.fbxos.fr",
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {},
+                "domain": "ios",
+                "entry_id": "f260578486204e8ba05e8fcde4a5a91a",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Home Assistant iOS",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {
+                    "app_data": {
+                        "push_token": "eYhJB1QrJjk:APA91bHKMHaqNGTehTrCTAcKTHVypmZGGObxEUzv7K80ule-jo_TAsgPMOUpjLUE_tvkfQop3ZR-9o9JvwVCyji50seLAvT6V13tSAtszitNeINxeMqTgGzIfmKQSXlslSwyc8kzmno9",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+                    },
+                    "app_id": "io.robbie.HomeAssistant",
+                    "app_name": "Home Assistant",
+                    "app_version": "2020.3.1 (1)",
+                    "device_id": "64f080f73bc346e188a269897ef90095",
+                    "device_name": "Stibphone2",
+                    "manufacturer": "Apple",
+                    "model": "iPhone 6s",
+                    "os_name": "iOS",
+                    "os_version": "13.5.1",
+                    "secret": "48265788028b819ab0ba70aa7b0e20779985d22c8d97bee6fd86dbc91633151f",
+                    "supports_encryption": true,
+                    "user_id": "badba4012aa64645805b91de4ac21cda",
+                    "webhook_id": "cd39c176de4474be5da57ad42206a574348101c37fc302228b94bc2a0427889e"
+                },
+                "domain": "mobile_app",
+                "entry_id": "c84f48c370d7425795a200e03eeab03f",
+                "options": {},
+                "source": "registration",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Stibphone2",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {
+                    "app_data": {
+                        "push_token": "eio1PVGHO10:APA91bEw83M0YUcb7S_t2EloICz8KIOx_UmOhAx-tyREWLhm6JylUJTSM_JTmc-1zefSEgS-HAI_aTYt11_oDbsY0QzdBADEc8Vw2ZEbFZ9F-vKiX4w65hfgMDIsIFCqJPRWEgO-wkK7",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+                    },
+                    "app_id": "io.robbie.HomeAssistant",
+                    "app_name": "Home Assistant",
+                    "app_version": "2.0.0 (69)",
+                    "device_id": "2c3e424541fa42959fa3bfca6032275e",
+                    "device_name": "iPad de Gaetan",
+                    "manufacturer": "Apple",
+                    "model": "iPad (7th generation)",
+                    "os_name": "iOS",
+                    "os_version": "13.4.1",
+                    "secret": "2220b35479a53bbc0340a85b115a0536d295ea19d9ec6103523e67739c568afc",
+                    "supports_encryption": true,
+                    "user_id": "badba4012aa64645805b91de4ac21cda",
+                    "webhook_id": "8954db6259537b5167c9788994aaae81f60f31ed73a7ad91f75162b80e103de3"
+                },
+                "domain": "mobile_app",
+                "entry_id": "cdae2d0e1fab4675b810ffd1740fecc3",
+                "options": {},
+                "source": "registration",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "iPad de Gaetan",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "alias": "ups",
+                    "host": "192.168.0.22",
+                    "name": "Home Cinema UPS",
+                    "password": "ups",
+                    "platform": "nut",
+                    "port": 3493,
+                    "resources": [
+                        "battery.charge",
+                        "battery.charge.low",
+                        "battery.runtime",
+                        "ups.beeper.status",
+                        "ups.delay.shutdown",
+                        "ups.load",
+                        "ups.status.display"
+                    ],
+                    "username": "upsmon"
+                },
+                "domain": "nut",
+                "entry_id": "acbcdf21a4a24ddf98eb43e8e1a8d319",
+                "options": {},
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "UPS Kodi",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_poll",
+                "data": {
+                    "host": "192.168.0.10",
+                    "mac": [
+                        "00-11-32-AA-63-CE",
+                        "00-11-32-AA-63-CD"
+                    ],
+                    "password": "8eIpdQFjSzsB3E4XvdRC",
+                    "port": "17001",
+                    "ssl": true,
+                    "username": "gaetan"
+                },
+                "domain": "synology_dsm",
+                "entry_id": "a358eca3409f4647bb434ae0180c6728",
+                "options": {},
+                "source": "ssdp",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "NAS",
+                "unique_id": "1930R5R2DQB1E",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "st": "urn:schemas-upnp-org:device:InternetGatewayDevice:1",
+                    "udn": "uuid:igd73616d61-6a65-7374-650a-f4cae541dfa2"
+                },
+                "domain": "upnp",
+                "entry_id": "16a213c630a245d89d914c8a6b333290",
+                "options": {},
+                "source": "ssdp",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Freebox Server",
+                "unique_id": "uuid:igd73616d61-6a65-7374-650a-f4cae541dfa2::urn:schemas-upnp-org:device:InternetGatewayDevice:1",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "api_key": "1e1d50c66c8c42b19df0b4335ed47880",
+                    "base_path": "/api",
+                    "host": "192.168.0.10",
+                    "platform": "sonarr",
+                    "port": 32772,
+                    "ssl": false,
+                    "unit": "GB",
+                    "upcoming_days": 7,
+                    "verify_ssl": false
+                },
+                "domain": "sonarr",
+                "entry_id": "894a33ac7173430e916ad5b36777a476",
+                "options": {
+                    "upcoming_days": 7,
+                    "wanted_max_items": 50
+                },
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "192.168.0.10",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_poll",
+                "data": {
+                    "country": "France"
+                },
+                "domain": "coronavirus",
+                "entry_id": "191fed5721a84b029248c17b2b6259cb",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "France",
+                "unique_id": "France",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "shopping_list",
+                "entry_id": "eff6994880a64740868b4c097bc5322c",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Shopping List",
+                "unique_id": "shopping_list",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {},
+                "domain": "speedtestdotnet",
+                "entry_id": "4d20de08df6346a8a126975b24c2e3b7",
+                "options": {
+                    "manual": false,
+                    "scan_interval": 30,
+                    "server_id": ""
+                },
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "SpeedTest",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_poll",
+                "data": {
+                    "token": "66d3030fb20f8ce6d0d1b863ac1cb164bb451c53"
+                },
+                "domain": "hacs",
+                "entry_id": "1a478eafbc074bc48c528752176b56e0",
+                "options": {
+                    "appdaemon": true,
+                    "country": "ALL",
+                    "debug": false,
+                    "experimental": false,
+                    "netdaemon": false,
+                    "release_limit": 5,
+                    "sidepanel_icon": "hacs:hacs",
+                    "sidepanel_title": "HACS"
+                },
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "",
+                "unique_id": null,
                 "version": 1
             }
         ]

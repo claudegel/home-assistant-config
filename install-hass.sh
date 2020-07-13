@@ -30,9 +30,13 @@ pip install --user --upgrade pip pipenv wheel
 
 source .venv/bin/activate
 pip3 install --upgrade \
-    homeassistant==$(cat .homeassistant.version) \
-    hass-configurator \
-    homeassistant-cli \
+    GitPython pyotp \
     pymysql
 
+pip3 install --upgrade \
+    hass-configurator \
+    homeassistant-cli \
+
+pip3 install --upgrade \
+    homeassistant==$(cat .homeassistant.version) \
     # custom_components/climate/pid_controller/

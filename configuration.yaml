@@ -36,6 +36,8 @@ influxdb: !include influxdb.yaml
 
 speedtestdotnet: !include speedtestdotnet.yaml
 
+default_config:
+mobile_app:
 ios:
 
 group: !include group.yaml
